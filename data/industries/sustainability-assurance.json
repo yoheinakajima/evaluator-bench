@@ -1,0 +1,45 @@
+{
+  "id": "sustainability-assurance",
+  "name": "Sustainability (ESG) reporting assurance",
+  "assurers": [
+    "Big Four",
+    "specialist assurance providers"
+  ],
+  "payer": "Reporting company pays the assurance provider.",
+  "access": "Company records and management representations.",
+  "publication": "Assurance statement published with the report; usually limited assurance.",
+  "ai_analogue": "Two decades of voluntary, company-paid, limited assurance before a mandate; independence rules borrowed wholesale from financial audit rather than designed for the domain.",
+  "milestones": [
+    {
+      "year": 1997,
+      "kind": "standards",
+      "event": "Global Reporting Initiative founded; voluntary reporting framework.",
+      "source": "https://en.wikipedia.org/wiki/Global_Reporting_Initiative"
+    },
+    {
+      "year": 2003,
+      "kind": "voluntary_assurance",
+      "event": "AA1000 Assurance Standard published; voluntary third-party assurance spreads.",
+      "source": "https://en.wikipedia.org/wiki/AccountAbility"
+    },
+    {
+      "year": 2015,
+      "kind": "trigger",
+      "event": "Volkswagen emissions scandal undermines self-reported environmental claims.",
+      "source": "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal"
+    },
+    {
+      "year": 2022,
+      "kind": "mandate",
+      "event": "EU Corporate Sustainability Reporting Directive requires limited assurance, phasing in from 2024.",
+      "source": "https://en.wikipedia.org/wiki/Corporate_Sustainability_Reporting_Directive"
+    },
+    {
+      "year": 2024,
+      "kind": "standards",
+      "event": "ISSA 5000 assurance standard issued.",
+      "source": "https://en.wikipedia.org/wiki/International_Auditing_and_Assurance_Standards_Board"
+    }
+  ],
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+}

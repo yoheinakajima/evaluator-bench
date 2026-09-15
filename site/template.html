@@ -154,6 +154,7 @@
   .dimblock h4{font-family:var(--sans);font-size:13.5px;font-weight:600;margin:0 0 2px}
   .prov{font-size:12.5px;color:var(--muted);margin-top:10px;max-width:64ch}
   .prov a{color:var(--muted)}
+  .ladder svg{max-width:100%;height:auto;display:block}
 </style>
 </head>
 <body>
@@ -165,6 +166,7 @@
     <a href="#rubric">Rubric</a>
     <a href="#signals">Signals</a>
     <a href="#cases">Cases</a>
+    <a href="#where">Where we are</a>
     <a href="#method">Method</a>
     <a href="https://github.com/yoheinakajima/evaluator-bench">Repo</a>
   </nav>
@@ -271,6 +273,15 @@
       <h2>Cases that set the bar</h2>
       <p class="lead">Seven engagements from the last two years, read for what they reveal about each dimension. Longer treatments and sources are in the repo under paper/.</p>
       <div class="cases" id="caseList"></div>
+    </div>
+  </section>
+
+  <section class="alt" id="where">
+    <div class="wrap">
+      <h2>Where we are</h2>
+      <p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder below marks the year each regime first reached each stage. Frontier AI reached five of seven stages in four years; oversight of the evaluators themselves is the empty cell.</p>
+      <div class="ladder" style="overflow-x:auto;margin-top:18px"><!--__TIMELINE_SVG__--></div>
+      <p class="lead" style="margin-top:14px">Read the row for financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. The pattern across regimes is that rules follow public failures within a few years, and the stretch before the first failure is where the shape of the regime is decided. Data and method are in the repo under <code>data/industries/</code> and <code>paper/</code>.</p>
     </div>
   </section>
 

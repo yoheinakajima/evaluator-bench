@@ -30,7 +30,8 @@ python -m bench verify        # integrity checks (the CONTRACT); CI runs this on
 python -m bench build         # graph -> graph/events.jsonl, dist/bench.json, dist/index.html
 python -m bench scores lab    # ranked table for a preset (lab | regulator | public | equal)
 python -m bench inspect metr  # provenance chain for one evaluator, optionally --dim A
-python -m bench industries    # cross-industry assurance-regime lifecycle table (paper seed)
+python -m bench industries    # cross-industry lifecycle table: trigger-to-rule lags
+python -m bench timeline      # stage ladder (Figure 1); build writes dist/timeline.svg
 ```
 
 ## The rubric
@@ -42,6 +43,10 @@ The rubric draws on the AI Evaluator Forum's AEF-1 operating conditions, the aud
 ## What a score is and is not
 
 A score is a reading of the public record at a date. It is not an endorsement and a low score is not an accusation; it means the record does not yet show the safeguards that would earn a higher one. Confidence tags (high, med, low) flag thin records. Independence is one axis; competence, domain coverage, and turnaround are others.
+
+## Where we are
+
+The site's "Where we are" section and `paper/figures/stage-ladder.svg` place frontier AI on a seven-stage ladder next to fifteen other assurance regimes coded in `data/industries/`. The paper draft that reads the two datasets together is `paper/draft.md`.
 
 ## Contributing evidence
 

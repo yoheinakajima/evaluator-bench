@@ -1,4 +1,4 @@
-"""python -m bench {build|verify|inspect|scores|industries}"""
+"""python -m bench {build|verify|inspect|scores|industries|timeline}"""
 from __future__ import annotations
 import sys
 
@@ -17,6 +17,8 @@ def main(argv=None) -> int:
         t = table(d["assessments"], d["presets"][preset]["weights"])
         for eid, v in sorted(t.items(), key=lambda x: -x[1]): print(f"{v:3d}  {d['evaluators'][eid]['name']}")
         return 0
+    if cmd == "timeline":
+        from .timeline import main as m; return m(argv[1:])
     if cmd == "industries":
         from .industries import main as m; return m(argv[1:])
     print(__doc__); return 0 if cmd in ("help", "-h", "--help") else 2

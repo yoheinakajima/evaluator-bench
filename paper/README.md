@@ -2,7 +2,7 @@
 
 Working title: **Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against Two Centuries of Assurance Regimes**
 
-Status: concept, 14 Sep 2026. Datasets seeded in this repo. Nothing here is written up yet.
+Status: draft v0.1 in `draft.md`, 14 Sep 2026. Datasets seeded in this repo; Dataset B needs primary-source verification and Dataset A needs a second coder.
 
 ## One paragraph
 

@@ -1,0 +1,51 @@
+{
+  "id": "platform-algorithm-audits",
+  "name": "Platform and hiring-algorithm audits",
+  "assurers": [
+    "DSA independent auditors",
+    "NYC Local Law 144 bias auditors"
+  ],
+  "payer": "Platform or employer pays the auditor.",
+  "access": "DSA: access to data and premises; LL144: employer-supplied data.",
+  "publication": "DSA audit reports published in redacted form; LL144 summaries public.",
+  "ai_analogue": "The nearest cousin: AI-system audits with statutory independence rules written at the start (no non-audit services in the prior year, rotation) rather than after a scandal.",
+  "milestones": [
+    {
+      "year": 2018,
+      "kind": "trigger",
+      "event": "Cambridge Analytica revelations.",
+      "source": "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal"
+    },
+    {
+      "year": 2021,
+      "kind": "mandate",
+      "event": "NYC Local Law 144 requires bias audits of automated employment decision tools (effective 2023).",
+      "source": "https://en.wikipedia.org/wiki/Local_Law_144"
+    },
+    {
+      "year": 2022,
+      "kind": "access_expansion",
+      "event": "DSA Article 40 grants vetted researchers data access to very large platforms.",
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+    },
+    {
+      "year": 2022,
+      "kind": "mandate",
+      "event": "EU Digital Services Act Article 37 requires annual independent audits of very large platforms.",
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+    },
+    {
+      "year": 2023,
+      "kind": "independence_rule",
+      "event": "DSA delegated regulation on audits: auditor independence, limits on prior non-audit services, rotation.",
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+    },
+    {
+      "year": 2025,
+      "kind": "trigger",
+      "event": "Published analysis of 116 LL144 bias audits finds shallow and inconsistent audits.",
+      "source": "https://dl.acm.org/doi/10.1145/3715275.3732004"
+    }
+  ],
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+}

@@ -18,10 +18,22 @@
       "source": "https://en.wikipedia.org/wiki/Insurance_Institute_for_Highway_Safety"
     },
     {
+      "year": 1965,
+      "kind": "trigger",
+      "event": "Unsafe at Any Speed and congressional hearings on auto safety.",
+      "source": "https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed"
+    },
+    {
       "year": 1966,
       "kind": "mandate",
       "event": "National Traffic and Motor Vehicle Safety Act; NHTSA formed 1970.",
       "source": "https://en.wikipedia.org/wiki/National_Traffic_and_Motor_Vehicle_Safety_Act"
+    },
+    {
+      "year": 1967,
+      "kind": "standards",
+      "event": "First Federal Motor Vehicle Safety Standards.",
+      "source": "https://en.wikipedia.org/wiki/Federal_Motor_Vehicle_Safety_Standards"
     },
     {
       "year": 1979,

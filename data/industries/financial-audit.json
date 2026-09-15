@@ -23,6 +23,12 @@
       "source": "https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1856"
     },
     {
+      "year": 1880,
+      "kind": "voluntary_assurance",
+      "event": "ICAEW chartered; audits voluntary in the UK between 1856 and 1900.",
+      "source": "https://en.wikipedia.org/wiki/Institute_of_Chartered_Accountants_in_England_and_Wales"
+    },
+    {
       "year": 1900,
       "kind": "mandate",
       "event": "UK Companies Act 1900 restores mandatory annual audit.",
@@ -33,6 +39,12 @@
       "kind": "mandate",
       "event": "US Securities Act and 1934 Exchange Act require independent audits for listed companies after the 1929 crash.",
       "source": "https://en.wikipedia.org/wiki/Securities_Act_of_1933"
+    },
+    {
+      "year": 1934,
+      "kind": "publication_rule",
+      "event": "Audited financial statements filed publicly with the SEC.",
+      "source": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934"
     },
     {
       "year": 1938,
@@ -47,10 +59,22 @@
       "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)"
     },
     {
+      "year": 1990,
+      "kind": "delegation",
+      "event": "Audit firms' consulting revenue from audit clients overtakes audit fees at large firms.",
+      "source": "https://en.wikipedia.org/wiki/Arthur_Andersen"
+    },
+    {
       "year": 2001,
       "kind": "trigger",
       "event": "Enron collapse; Arthur Andersen had provided audit and consulting services to the same client.",
       "source": "https://en.wikipedia.org/wiki/Enron_scandal"
+    },
+    {
+      "year": 2002,
+      "kind": "accreditation",
+      "event": "PCAOB registers and inspects audit firms.",
+      "source": "https://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board"
     },
     {
       "year": 2002,

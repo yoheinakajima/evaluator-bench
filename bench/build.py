@@ -121,13 +121,18 @@ def build(write: bool = True) -> dict:
     if write:
         DIST.mkdir(exist_ok=True)
         (DIST / "bench.json").write_text(json.dumps(bench, indent=1, ensure_ascii=False) + "\n")
-        _write_site(bench)
+        from .timeline import write as write_timeline
+        rows = write_timeline(DIST)
+        _write_site(bench, rows)
         _write_summary(g, bench)
     return {"graph": g, "bench": bench, "ids": ids}
 
-def _write_site(bench: dict) -> None:
+def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     tpl = (SITE / "template.html").read_text()
     html = tpl.replace("/*__BENCH_JSON__*/null", json.dumps(bench, ensure_ascii=False))
+    svg_path = DIST / "timeline.svg"
+    html = html.replace("<!--__TIMELINE_SVG__-->", svg_path.read_text() if svg_path.exists() else "")
+    html = html.replace("/*__TIMELINE_JSON__*/null", json.dumps(timeline_rows or [], ensure_ascii=False))
     (DIST / "index.html").write_text(html)
 
 def _write_summary(g: Graph, bench: dict) -> None:

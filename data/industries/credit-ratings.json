@@ -24,6 +24,12 @@
       "source": "https://en.wikipedia.org/wiki/Penn_Central_Transportation_Company"
     },
     {
+      "year": 1970,
+      "kind": "delegation",
+      "event": "Issuer-pays model makes the rated party the client.",
+      "source": "https://en.wikipedia.org/wiki/Credit_rating_agency"
+    },
+    {
       "year": 1975,
       "kind": "accreditation",
       "event": "SEC creates the NRSRO designation, embedding ratings in regulation.",

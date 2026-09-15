@@ -1,0 +1,46 @@
+{
+  "id": "dietary-supplements",
+  "name": "Dietary supplements (US)",
+  "assurers": [
+    "USP Verified",
+    "NSF",
+    "FDA cGMP inspection"
+  ],
+  "payer": "Manufacturer pays private verifiers; verification is voluntary.",
+  "access": "Voluntary submission of samples and facility audits.",
+  "publication": "Verification marks public; adverse event reports to FDA.",
+  "ai_analogue": "A regime that moved backward: pre-market review removed by statute, private verification never made mandatory, no oversight of the verifiers. Shows that a trigger does not guarantee reform.",
+  "milestones": [
+    {
+      "year": 1994,
+      "kind": "rollback",
+      "event": "DSHEA removes pre-market approval for supplements.",
+      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994"
+    },
+    {
+      "year": 2001,
+      "kind": "voluntary_assurance",
+      "event": "USP launches a voluntary supplement verification program.",
+      "source": "https://en.wikipedia.org/wiki/United_States_Pharmacopeia"
+    },
+    {
+      "year": 2003,
+      "kind": "trigger",
+      "event": "Ephedra-linked deaths, including a professional athlete.",
+      "source": "https://en.wikipedia.org/wiki/Ephedra"
+    },
+    {
+      "year": 2006,
+      "kind": "publication_rule",
+      "event": "Dietary Supplement and Nonprescription Drug Consumer Protection Act requires serious adverse event reporting.",
+      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_and_Nonprescription_Drug_Consumer_Protection_Act"
+    },
+    {
+      "year": 2007,
+      "kind": "standards",
+      "event": "FDA current good manufacturing practice rule for supplements.",
+      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994"
+    }
+  ],
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+}

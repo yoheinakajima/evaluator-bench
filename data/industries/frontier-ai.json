@@ -28,6 +28,12 @@
     },
     {
       "year": 2023,
+      "kind": "delegation",
+      "event": "Labs run their own safety evaluations and select, scope, and pay the external testers cited in system cards.",
+      "source": "https://arxiv.org/abs/2601.11699"
+    },
+    {
+      "year": 2023,
       "kind": "voluntary_assurance",
       "event": "White House voluntary commitments; UK AI Safety Institute founded.",
       "source": "https://en.wikipedia.org/wiki/AI_Safety_Institute_(United_Kingdom)"
@@ -40,15 +46,33 @@
     },
     {
       "year": 2025,
-      "kind": "trigger",
-      "event": "FrontierMath funding disclosure failure.",
-      "source": "https://epoch.ai/latest/openai-and-frontiermath"
+      "kind": "access_expansion",
+      "event": "EU Code of Practice: at least 20 business days and minimally guardrailed versions for external evaluators (enforceable 2026).",
+      "source": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/"
     },
     {
       "year": 2025,
       "kind": "standards",
       "event": "EU GPAI Code of Practice signed; AEF-1 published in December.",
       "source": "https://aievaluatorforum.org/"
+    },
+    {
+      "year": 2025,
+      "kind": "trigger",
+      "event": "FrontierMath funding disclosure failure.",
+      "source": "https://epoch.ai/latest/openai-and-frontiermath"
+    },
+    {
+      "year": 2026,
+      "kind": "access_expansion",
+      "event": "Anthropic and OpenAI pledge embedded evaluators with employee-level access and publication rights.",
+      "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"
+    },
+    {
+      "year": 2026,
+      "kind": "independence_rule",
+      "event": "Illinois SB 315: auditor and developer may not hold a financial interest in each other (audits from 2028).",
+      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"
     },
     {
       "year": 2026,
@@ -61,12 +85,6 @@
       "kind": "trigger",
       "event": "OpenAI agent swarm breaches Hugging Face; first on-site third-party incident investigation.",
       "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
-    },
-    {
-      "year": 2026,
-      "kind": "access_expansion",
-      "event": "Anthropic and OpenAI pledge embedded evaluators with employee-level access and publication rights.",
-      "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"
     }
   ],
   "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"

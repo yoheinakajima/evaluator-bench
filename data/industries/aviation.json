@@ -31,6 +31,12 @@
       "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Act_of_1958"
     },
     {
+      "year": 1965,
+      "kind": "standards",
+      "event": "Federal Aviation Regulations codified.",
+      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Regulations"
+    },
+    {
       "year": 2005,
       "kind": "delegation",
       "event": "Organization Designation Authorization lets manufacturers' employees perform certification work.",

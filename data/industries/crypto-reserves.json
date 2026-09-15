@@ -1,0 +1,45 @@
+{
+  "id": "crypto-reserves",
+  "name": "Crypto exchange proof of reserves",
+  "assurers": [
+    "accounting firms (attestations)",
+    "self-published cryptographic proofs"
+  ],
+  "payer": "Exchange pays the attesting firm.",
+  "access": "Snapshot of on-chain holdings and liability data supplied by the exchange.",
+  "publication": "Attestation letters published by the exchange.",
+  "ai_analogue": "Voluntary assurance that collapsed after a failure: the attesting firms withdrew rather than deepen access. A live example of assurance retreating when the assessed party controls scope and data.",
+  "milestones": [
+    {
+      "year": 2014,
+      "kind": "trigger",
+      "event": "Mt. Gox collapse.",
+      "source": "https://en.wikipedia.org/wiki/Mt._Gox"
+    },
+    {
+      "year": 2014,
+      "kind": "voluntary_assurance",
+      "event": "Exchanges begin publishing proof-of-reserve attestations.",
+      "source": "https://en.wikipedia.org/wiki/Proof_of_reserves"
+    },
+    {
+      "year": 2022,
+      "kind": "trigger",
+      "event": "FTX collapse; a prior attestation had not covered liabilities.",
+      "source": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
+    },
+    {
+      "year": 2022,
+      "kind": "rollback",
+      "event": "Accounting firms pause or withdraw proof-of-reserves work for crypto clients.",
+      "source": "https://en.wikipedia.org/wiki/Proof_of_reserves"
+    },
+    {
+      "year": 2023,
+      "kind": "mandate",
+      "event": "EU MiCA imposes safeguarding and reporting duties on crypto-asset service providers, applying from 2024.",
+      "source": "https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets"
+    }
+  ],
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+}

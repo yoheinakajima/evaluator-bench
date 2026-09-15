@@ -1,0 +1,338 @@
+[
+ {
+  "id": "financial-audit",
+  "name": "Financial statement audit",
+  "first": 1844,
+  "stages": {
+   "S1": 1880,
+   "S2": 1938,
+   "S3": 1844,
+   "S4": 1939,
+   "S5": 2002,
+   "S6": 2002,
+   "S7": 1934
+  },
+  "reached": 7,
+  "highest": "S7",
+  "rollback": true,
+  "delegation": true,
+  "span": 170,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 158
+ },
+ {
+  "id": "ship-classification",
+  "name": "Ship classification",
+  "first": 1760,
+  "stages": {
+   "S1": 1760,
+   "S2": 1999,
+   "S3": null,
+   "S4": null,
+   "S5": 1968,
+   "S6": 2009,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S6",
+  "rollback": false,
+  "delegation": false,
+  "span": 249,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 249
+ },
+ {
+  "id": "boilers",
+  "name": "Boilers and pressure vessels",
+  "first": 1866,
+  "stages": {
+   "S1": 1866,
+   "S2": 1905,
+   "S3": 1908,
+   "S4": 1914,
+   "S5": 1919,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 5,
+  "highest": "S5",
+  "rollback": false,
+  "delegation": false,
+  "span": 53,
+  "voluntary_to_mandate": 42,
+  "start_to_independence": null
+ },
+ {
+  "id": "product-safety",
+  "name": "Electrical and consumer product safety",
+  "first": 1894,
+  "stages": {
+   "S1": 1894,
+   "S2": 2007,
+   "S3": 1972,
+   "S4": 1903,
+   "S5": 1988,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 5,
+  "highest": "S5",
+  "rollback": false,
+  "delegation": false,
+  "span": 114,
+  "voluntary_to_mandate": 78,
+  "start_to_independence": null
+ },
+ {
+  "id": "pharmaceuticals",
+  "name": "Pharmaceutical safety and efficacy",
+  "first": 1906,
+  "stages": {
+   "S1": null,
+   "S2": 1937,
+   "S3": 1906,
+   "S4": 1962,
+   "S5": 1978,
+   "S6": 1998,
+   "S7": 2007
+  },
+  "reached": 6,
+  "highest": "S7",
+  "rollback": false,
+  "delegation": true,
+  "span": 101,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 92
+ },
+ {
+  "id": "aviation",
+  "name": "Aircraft certification",
+  "first": 1926,
+  "stages": {
+   "S1": null,
+   "S2": 1956,
+   "S3": 1926,
+   "S4": 1965,
+   "S5": null,
+   "S6": 2020,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S6",
+  "rollback": false,
+  "delegation": true,
+  "span": 94,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 94
+ },
+ {
+  "id": "credit-ratings",
+  "name": "Credit rating agencies",
+  "first": 1909,
+  "stages": {
+   "S1": 1909,
+   "S2": 1970,
+   "S3": null,
+   "S4": null,
+   "S5": 1975,
+   "S6": 2010,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S6",
+  "rollback": false,
+  "delegation": true,
+  "span": 101,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 101
+ },
+ {
+  "id": "nuclear",
+  "name": "Nuclear safety and safeguards",
+  "first": 1957,
+  "stages": {
+   "S1": 1979,
+   "S2": 1979,
+   "S3": 1957,
+   "S4": null,
+   "S5": null,
+   "S6": 1974,
+   "S7": 1970
+  },
+  "reached": 5,
+  "highest": "S7",
+  "rollback": false,
+  "delegation": false,
+  "span": 40,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 17
+ },
+ {
+  "id": "auto-safety",
+  "name": "Automobile crash safety",
+  "first": 1959,
+  "stages": {
+   "S1": 1959,
+   "S2": 1965,
+   "S3": 1966,
+   "S4": 1967,
+   "S5": null,
+   "S6": null,
+   "S7": 1979
+  },
+  "reached": 5,
+  "highest": "S7",
+  "rollback": false,
+  "delegation": false,
+  "span": 36,
+  "voluntary_to_mandate": 7,
+  "start_to_independence": null
+ },
+ {
+  "id": "food-safety",
+  "name": "Food safety",
+  "first": 1906,
+  "stages": {
+   "S1": 2000,
+   "S2": 1993,
+   "S3": 1906,
+   "S4": null,
+   "S5": 2011,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S5",
+  "rollback": false,
+  "delegation": false,
+  "span": 105,
+  "voluntary_to_mandate": null,
+  "start_to_independence": null
+ },
+ {
+  "id": "cybersecurity-assurance",
+  "name": "Cybersecurity assurance",
+  "first": 1985,
+  "stages": {
+   "S1": null,
+   "S2": 2013,
+   "S3": 2004,
+   "S4": 1985,
+   "S5": 1999,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S5",
+  "rollback": false,
+  "delegation": false,
+  "span": 28,
+  "voluntary_to_mandate": null,
+  "start_to_independence": null
+ },
+ {
+  "id": "sustainability-assurance",
+  "name": "Sustainability (ESG) reporting assurance",
+  "first": 1997,
+  "stages": {
+   "S1": 2003,
+   "S2": 2015,
+   "S3": 2022,
+   "S4": 1997,
+   "S5": null,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 4,
+  "highest": "S4",
+  "rollback": false,
+  "delegation": false,
+  "span": 27,
+  "voluntary_to_mandate": 19,
+  "start_to_independence": null
+ },
+ {
+  "id": "dietary-supplements",
+  "name": "Dietary supplements (US)",
+  "first": 1994,
+  "stages": {
+   "S1": 2001,
+   "S2": 2003,
+   "S3": null,
+   "S4": 2007,
+   "S5": null,
+   "S6": null,
+   "S7": 2006
+  },
+  "reached": 4,
+  "highest": "S7",
+  "rollback": true,
+  "delegation": false,
+  "span": 13,
+  "voluntary_to_mandate": null,
+  "start_to_independence": null
+ },
+ {
+  "id": "crypto-reserves",
+  "name": "Crypto exchange proof of reserves",
+  "first": 2014,
+  "stages": {
+   "S1": 2014,
+   "S2": 2014,
+   "S3": 2023,
+   "S4": null,
+   "S5": null,
+   "S6": null,
+   "S7": null
+  },
+  "reached": 3,
+  "highest": "S3",
+  "rollback": true,
+  "delegation": false,
+  "span": 9,
+  "voluntary_to_mandate": 9,
+  "start_to_independence": null
+ },
+ {
+  "id": "platform-algorithm-audits",
+  "name": "Platform and hiring-algorithm audits",
+  "first": 2018,
+  "stages": {
+   "S1": null,
+   "S2": 2018,
+   "S3": 2021,
+   "S4": null,
+   "S5": null,
+   "S6": 2023,
+   "S7": 2022
+  },
+  "reached": 4,
+  "highest": "S7",
+  "rollback": false,
+  "delegation": false,
+  "span": 7,
+  "voluntary_to_mandate": null,
+  "start_to_independence": 5
+ },
+ {
+  "id": "frontier-ai",
+  "name": "Frontier AI evaluation",
+  "first": 2020,
+  "stages": {
+   "S1": 2022,
+   "S2": 2025,
+   "S3": 2026,
+   "S4": 2025,
+   "S5": null,
+   "S6": 2026,
+   "S7": 2025
+  },
+  "reached": 6,
+  "highest": "S7",
+  "rollback": false,
+  "delegation": true,
+  "span": 6,
+  "voluntary_to_mandate": 4,
+  "start_to_independence": 6
+ }
+]
