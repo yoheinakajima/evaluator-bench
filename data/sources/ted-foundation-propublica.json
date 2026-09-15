@@ -1,0 +1,11 @@
+{
+ "id": "ted-foundation-propublica",
+ "title": "TED Foundation Inc (EIN 82-1934592) filings",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/organizations/821934592",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Four 990-PF XMLs grepped from the S3 mirror: 202242949349100909 (TY2021, 3 Part XV groups), 202322779349100017 (TY2022, 6), 202442359349100919 (TY2023, 1), 202502549349100435 (TY2024, 2: Aboriginal Housing Management $63,084; Zero Emissions Innovation Centre $37,169). No METR, RAND, Model Evaluation or Canary line."
+}

@@ -1,0 +1,11 @@
+{
+ "id": "edgar-fts-apollo-form-d",
+ "title": "EDGAR full-text search: \"Apollo Research\", form D, 2025-06-01 to 2026-09-15",
+ "publisher": "U.S. Securities and Exchange Commission",
+ "url": "https://efts.sec.gov/LATEST/search-index?q=%22Apollo%20Research%22&forms=D&dateRange=custom&startdt=2025-06-01&enddt=2026-09-15",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "0 hits. Also 0 hits without a form filter for \"Apollo Research PBC\", \"Apollo Research, PBC\" and \"Apollo Research\" AND \"Macroscopic\" (2025-01-01 to 2026-09-15); the EDGAR company-name search for 'apollo research' lists no filer."
+}

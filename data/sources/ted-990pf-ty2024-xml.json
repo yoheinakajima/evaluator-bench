@@ -1,0 +1,11 @@
+{
+ "id": "ted-990pf-ty2024-xml",
+ "title": "TED Foundation Inc 990-PF TY2024 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502549349100435_public.xml",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Two paid grants only; no METR, RAND or Canary."
+}

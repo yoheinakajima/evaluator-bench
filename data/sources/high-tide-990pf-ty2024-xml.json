@@ -1,0 +1,11 @@
+{
+ "id": "high-tide-990pf-ty2024-xml",
+ "title": "High Tide Foundation 990-PF TY2024 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202503179349100135_public.xml",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Part XV: THE RAND CORPORATION, PC, 'To support tTHE PROJECT CANARY' (as filed), 333,334. No METR line."
+}

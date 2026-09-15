@@ -305,5 +305,27 @@
   "quote": "Scale partnered with the U.S. Center for AI Standards and Innovation (CAISI), jointly developing new evaluation methods",
   "quote_source": "scale-framework",
   "note": "Co-producing evaluations with a vendor owned by a lab caps X at 3 (X.6); 49% exceeds the 20% control threshold used in F.1 and G.6. The partnership predates the Meta stake; whether it continued after June 2025 is a document request."
+ },
+ {
+  "evaluator": "caisi",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "caisi.17",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "The FY2026 Commerce-Justice-Science joint explanatory statement provides no less than $55,000,000 for NIST's AI research and measurement science and, within it, up to $10,000,000 to expand NIST's AI efforts through the U.S. Center for AI Standards and Innovation: appropriated public money.",
+  "sources": [
+   "cjs-fy2026-jes-division-a",
+   "caisi-funding",
+   "usaspending-caisi-search",
+   "nist-aisi-mou-2024"
+  ],
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.9",
+  "quote": "up to $ I 0,000,000 is to expand on N IST's A l e ffo 11s th ro ugh the U.S. Cente r fo r A l Standards and Innovation",
+  "quote_source": "cjs-fy2026-jes-division-a"
  }
 ]

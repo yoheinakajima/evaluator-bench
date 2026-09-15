@@ -1,0 +1,11 @@
+{
+ "id": "wayback-cdx-op-grants-p",
+ "title": "Wayback CDX index of openphilanthropy.org/grants/p* (status 200, one row per URL)",
+ "publisher": "Internet Archive",
+ "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/p*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "126 distinct 'p' slugs; both Palisade pages present; no pattern-labs slug. The 'i' query (101 slugs) has no irregular slug. CDX for openphilanthropy.org/grants/?organization-name=pattern-labs returns no capture."
+}

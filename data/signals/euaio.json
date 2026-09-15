@@ -251,5 +251,25 @@
   "rule": "S.4",
   "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
   "quote_source": "euaio-ai-act-92"
+ },
+ {
+  "evaluator": "euaio",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "euaio.14",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Commission Decision C(2024) 390 Article 8 funds the AI Office from DG CONNECT staff, Digital Europe Programme administrative appropriations, and DEP Specific Objective 2 'Artificial Intelligence' for operational expenditure, naming no non-Union source.",
+  "sources": [
+   "eurlex-ai-office-decision-pdf",
+   "euaio-office-decision"
+  ],
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.9",
+  "quote": "Operational expenditure of the Office shall be covered by the financial resources allocated to Specific Objective 2",
+  "quote_source": "eurlex-ai-office-decision-pdf"
  }
 ]

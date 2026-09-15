@@ -1,0 +1,11 @@
+{
+ "id": "good-ventures-propublica",
+ "title": "Good Ventures Foundation (EIN 46-1008520) filings",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Filing list; object ids used: 202341359349105939 (FY 2021-07-01 to 2022-06-30, 315 Part XV lines), 202441369349105564 (2022-07-01 to 2023-06-30, 464), 202501349349105365 (2023-07-01 to 2024-06-30, 493), 202641359349102829 (2024-07-01 to 2025-06-30, about 900 lines, read from ProPublica's gzipped full_text render). No line names METR or Model Evaluation in any of the four; ARC appears once (FY2023, $1,250,000, 'RESEARCH RELATED TO AI ALIGNMENT')."
+}

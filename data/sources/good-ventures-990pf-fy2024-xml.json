@@ -1,0 +1,11 @@
+{
+ "id": "good-ventures-990pf-fy2024-xml",
+ "title": "Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "493 Part XV paid-grant groups; no METR or ARC line; contains the Pattern Labs Tech Inc lines used in question 4 and SecureBio $507,000. Part XV paid during the year: PATTERN LABS TECH INC, 108 W 13TH ST STE 100, WILMINGTON DE 19801, status NC, 'DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY', 4,533,333. Part XV approved for future payment: same recipient and purpose, 2,266,667. Part VII-B expenditure responsibility statement: grant date 2024-03-05, amount 4,533,333, expended by grantee 2,639,613, reports 3/15/25. Part II investments, corporate stock: PATTERN LABS TECH INC, EOY book value 3,000,000, FMV 3,000,000. SECUREBIO INC, PC, 'PROJECT ON PATHOGEN EARLY WARNING SYSTEMS', 507,000."
+}

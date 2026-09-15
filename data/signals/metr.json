@@ -437,5 +437,78 @@
   "quote": "Do not invest in direct equity or debt of frontier AI companies or reasonable economic proxies for specific companies",
   "quote_source": "metr-coi-policy",
   "note": "Mandatory recusal plus disclosure of individual ties floors at 3 (P.5). P.8 (4) needs a cooling-off rule, which the policy lacks, and tier-1 evidence. Span verified with pdftotext; the CI normalizer cannot read PDFs. Caps from metr.09 (P.3) and metr.17 (P.4) still decide the value; see conflicts."
+ },
+ {
+  "evaluator": "metr",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "metr.24",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Bounded negatives re-derived from primary filings on 2026-09-15: no METR-named grant in Good Ventures 990-PF FY2022-2025, Pew 990 Schedule I FY2021-2025, Packard 990-PF TY2021-2024, the three Schmidt-family foundations TY2020-2024, or TED Foundation 990-PF TY2021-2024; ProPublica's full-text index of e-filed 990s names METR in eight filings only.",
+  "sources": [
+   "propublica-metr-fulltext",
+   "good-ventures-propublica",
+   "pew-propublica",
+   "packard-propublica",
+   "schmidt-fsi-propublica",
+   "packard-990pf-ty2024-xml",
+   "pew-990-fy2025-xml",
+   "propublica-api-schmidt-sciences",
+   "schmidt-family-propublica",
+   "schmidt-fsi-990pf-ty2024-xml",
+   "schmidt-operating-propublica",
+   "wayback-cdx-op-grants-m",
+   "metr-coefficient-grants-index"
+  ],
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.13",
+  "quote": "Nonprofits (1) People (0) Filings (8)",
+  "quote_source": "propublica-metr-fulltext"
+ },
+ {
+  "evaluator": "metr",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "metr.25",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.",
+  "sources": [
+   "vanguard-fy2025-schedi-render",
+   "propublica-metr-zip-search",
+   "vanguard-990-fy2023-xml",
+   "vanguard-990-fy2024-xml"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Vanguard Charitable Endowment Program — Form 990, Schedule I (2025) Malvern, PA",
+  "quote_source": "propublica-metr-zip-search"
+ },
+ {
+  "id": "metr.26",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "TED Foundation's 990-PFs show no grant to METR, RAND, or Canary in TY2021-2024, and the Audacious Project's own FAQ says TED itself does not fund grantees; the only filed Canary payments are Valhalla ($10M) and High Tide ($333,334) paying RAND directly in TY2024, with no METR line. METR's approximately $17M Audacious share is therefore confirmed at the RAND/Canary level but not, in any filing checked, at the METR level.",
+  "sources": [
+   "ted-foundation-propublica",
+   "ted-990pf-ty2024-xml",
+   "audacious-faq",
+   "valhalla-990pf-ty2024-xml",
+   "high-tide-990pf-ty2024-xml"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "bound": null,
+  "bound_note": "Documents an open question rather than asserting a value: the payer structure is confirmed (partners pay RAND directly; TED does not fund grantees), but METR's own Audacious share is not visible in any filing checked, so this neither raises nor lowers the funding value on its own.",
+  "rule": "0"
  }
 ]

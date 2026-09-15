@@ -263,5 +263,26 @@
   "quote": "The institute cannot fine, audit, or directly penalise model developers",
   "quote_source": "regulations-ai-aisi",
   "note": "Voluntary memoranda: 3 (S.4). Statutory scope power would be 4."
+ },
+ {
+  "evaluator": "ukaisi",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "ukaisi.15",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Alignment Project grants are contracted and paid by each funder directly to the host organisation; DSIT/AISI's own grants are statutory grants under section 5 of the Science and Technology Act 1965 managed by an AISI research lead, and other funders issue their own terms, so OpenAI's £5.6m is not received into AISI's budget even though AISI runs the selection.",
+  "sources": [
+   "alignment-project-cq-pdf",
+   "alignment-project-how-to-apply",
+   "alignment-project-gfa-example"
+  ],
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.9",
+  "quote": "the Funding Agreement (GFA) will be between the funder(s) and the host organisation only",
+  "quote_source": "alignment-project-cq-pdf"
  }
 ]

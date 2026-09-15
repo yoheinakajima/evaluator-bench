@@ -1,0 +1,11 @@
+{
+ "id": "good-ventures-990pf-fy2025-render",
+ "title": "Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render)",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Served gzip-encoded regardless of Accept-Encoding; decoded with gzip on 2026-09-15 (2,324,373 bytes; about 900 Part XV lines). No METR, Model Evaluation or ARC line; RAND general support lines ($2,000,000; $666,667; $2,500,000); Pattern Labs Tech Inc $2,266,667; SecureBio $1,400,000, $230,000 and $2,600,000. bench.review.fetch_text does not gunzip this endpoint, so no checkable span; the XML is not yet on the S3 mirror (404). Part XIV/XV paid during the year: PATTERN LABS TECH INC ... NC DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY 2,266,667 (the second tranche). Gzip-encoded endpoint; decoded locally; no fetch_text-checkable span. SECUREBIO INC: GENERAL SUPPORT 1,400,000; PUBLIC HEALTH EARLY WARNING SYSTEM FOR PANDEMIC PREPAREDNESS 230,000; GENERAL SUPPORT 2,600,000. Gzip-encoded endpoint, decoded locally; no fetch_text-checkable span."
+}

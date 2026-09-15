@@ -6,13 +6,13 @@ Built at 2026-09-15T00:00:00Z (frozen clock; run_id evaluator-bench-build; RULES
 |---|---|
 | assessment | 216 |
 | dimension | 8 |
-| entity | 114 |
+| entity | 115 |
 | evaluator | 27 |
-| negative_evidence | 21 |
+| negative_evidence | 27 |
 | score | 540 |
-| signal | 357 |
-| source | 194 |
+| signal | 369 |
+| source | 247 |
 
-Relations: 7127
+Relations: 7248
 
 Rebuild: `python -m bench build`. The event log is reproducible; a diff means data/ changed.

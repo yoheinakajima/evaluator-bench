@@ -1,0 +1,11 @@
+{
+ "id": "wayback-cdx-op-grants-m",
+ "title": "Wayback CDX index of openphilanthropy.org/grants/m* (status 200, one row per URL)",
+ "publisher": "Internet Archive",
+ "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/m*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "Queried letter by letter (a to z) on 2026-09-15: 2,737 distinct openphilanthropy.org/grants/<slug>/ pages with a 200 capture after dropping query-string and /page/ variants. No slug begins with metr or model-evaluation (the only 'metr' matches are ayni-institute-movement-ecology-and-metrics and center-for-welfare-metrics-...); no pattern-labs or irregular slug. Present: alignment-research-center-general-support (2), apollo-research-startup-funding, apollo-research-general-support, palisade-research-general-support (2024 and 2025), six securebio-* slugs."
+}

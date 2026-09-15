@@ -6,7 +6,8 @@
   "anchor": 3,
   "signals": [
    "caisi.01",
-   "caisi.10"
+   "caisi.10",
+   "caisi.17"
   ],
   "rationale": "Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.",
   "assessed": "2026-09-14",

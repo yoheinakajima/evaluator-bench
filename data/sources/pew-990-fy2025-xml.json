@@ -1,0 +1,11 @@
+{
+ "id": "pew-990-fy2025-xml",
+ "title": "The Pew Charitable Trusts 990, tax period 2024-07-01 to 2025-06-30 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202620849349301332_public.xml",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "535 Schedule I recipient groups; no METR line."
+}

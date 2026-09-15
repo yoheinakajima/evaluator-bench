@@ -1,0 +1,12 @@
+{
+ "id": "coefficient-site-search",
+ "title": "Site search",
+ "publisher": "Coefficient Giving",
+ "url": "https://coefficientgiving.org/search/",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "self",
+ "audit_status": "confirmed",
+ "note": "Read in a browser on 2026-09-15 because curl and fetch_text receive HTTP 403. The search box is labelled 'Find an article, person or page'; queries METR (152 results, mostly 'metrics'), Model Evaluation, Apollo Research (1 result: a staff bio), Pattern Labs (8), Irregular (25), Palisade and SecureBio return no grant records. The ?s=<term>&post_type=grants route redirects to the homepage. No fetch_text-checkable span. Browser read 2026-09-15: 'Pattern Labs' 8 results and 'Irregular' 25 results, all articles or staff pages, no grant record; the site no longer serves grant pages.",
+ "self_of": "coefficient"
+}

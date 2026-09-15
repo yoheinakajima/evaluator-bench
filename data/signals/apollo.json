@@ -277,5 +277,72 @@
   "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
   "quote_source": "apollo-pbc-round",
   "note": "F.4 caps at 1 only for a material investment (a priced round the fund led or co-led, or a stake of 5% or more); Macroscopic did not lead and its share is undisclosed, so the cap stays at 2 (equity from a lab investor bars anchor 3). Document request: Macroscopic's share of the round."
+ },
+ {
+  "evaluator": "apollo",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "apollo.16",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Coefficient / Open Philanthropy recommended $1,535,480 (June 2023, startup costs) and $2,178,700 (May 2024, general support) to Apollo per archived grant pages, with a further $696,000 (May 2026) in the removed index; Coefficient's principal funder is an Anthropic investor.",
+  "sources": [
+   "op-apollo-startup-2023",
+   "op-apollo-general-2024",
+   "apollo-manifund",
+   "wayback-cdx-op-grants-a"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Open Philanthropy recommended a grant of $2,178,700 to Apollo Research for general support.",
+  "quote_source": "op-apollo-general-2024"
+ },
+ {
+  "evaluator": "apollo",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "apollo.17",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "The January 2026 seed round's size and each investor's stake, including Macroscopic Ventures' (an Anthropic Series A and B investor), are undisclosed: no Form D in EDGAR, no share allotment at Companies House, and the PBC is a Delaware entity with no public cap table.",
+  "sources": [
+   "apollo-pbc-round",
+   "edgar-fts-apollo-form-d",
+   "ch-apollo-research-ai-filings",
+   "ch-apollo-research-ai-psc",
+   "ch-apollo-research-ai",
+   "ch-apollo-mr01"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.10",
+  "quote": "The round was oversubscribed.",
+  "quote_source": "apollo-pbc-round"
+ },
+ {
+  "evaluator": "apollo",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "apollo.18",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "The PBC board has three seats, of which the 3rd (and later 6th) are designated mission seats; only the first mission director, Daniel Kokotajlo, is named, and the remaining directors are not published on Apollo's pages or in Companies House (which shows only the UK subsidiary's directors, Hobbhahn and Akin).",
+  "sources": [
+   "apollo-pbc-round",
+   "ch-apollo-research-ai-officers",
+   "apollo-team"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "G.8",
+  "quote": "Our first mission director is Daniel Kokotajlo.",
+  "quote_source": "apollo-pbc-round"
  }
 ]

@@ -1,0 +1,11 @@
+{
+ "id": "propublica-metr-zip-search",
+ "title": "Filing text search: \"MODEL EVALUATION AND THREAT RESEARCH\" \"917231722\"",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22MODEL+EVALUATION+AND+THREAT+RESEARCH%22+%22917231722%22",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "Exactly one filing contains both METR's name and its ZIP+4 as written in the Vanguard row: Vanguard Charitable Endowment Program, Form 990 Schedule I (2025). fetch_text-checkable confirmation that the FY2025 Schedule I names METR; the amount is on the render above."
+}

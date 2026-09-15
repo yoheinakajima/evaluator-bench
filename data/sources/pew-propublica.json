@@ -1,0 +1,11 @@
+{
+ "id": "pew-propublica",
+ "title": "Pew Charitable Trusts (EIN 56-2307147) filings",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/organizations/562307147",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Five 990 XMLs grepped from the S3 mirror: 202221029349301247 (2020-07-01 to 2021-06-30, 439 Schedule I recipient groups), 202340889349301359 (to 2022-06-30, 407), 202440829349300334 (to 2023-06-30, 401), 202520859349300727 (to 2024-06-30, 391), 202620849349301332 (to 2025-06-30, 535). No METR, Model Evaluation or ARC line."
+}

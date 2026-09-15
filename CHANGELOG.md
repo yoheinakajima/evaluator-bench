@@ -1,3 +1,14 @@
+## 15 Sep 2026, late evening: re-derivation of eight open questions from primary records
+
+Recorded in `paper/audits/AUDIT-7.md`. Every fact traced to a URL opened 2026-09-15; raw pass in `leads/rederive.json`, applied by `leads/apply_rederive.py`.
+
+- **Settled**: Irregular/Pattern Labs' $6.8M grant, dated and purposed against a Good Ventures 990-PF, plus a previously unrecorded $3,000,000 equity stake; Palisade's two Open Philanthropy grants, which sum exactly to the figure a prior pass had incorrectly flagged as contradicted; SecureBio's full grant history, added to the ledger for the first time (six grants, ~$9.48M, of which $55,548 is in the AI focus area).
+- **METR's negatives re-derived from primary filings**: four of five confirmed or corrected against IRS e-file XML (Good Ventures, Pew, Packard, the three Schmidt-family foundations); the fifth (Coefficient's index) was replaced with two substitutes after the public index went offline in the November 2025 rebrand. METR's largest single confirmed grant is now on record: Vanguard Charitable, $4,000,000, FY2025 Schedule I, donor not public.
+- **EU AI Office funding settled by statute** (Commission Decision C/2024/1459, Article 8); **CAISI's public funding grounded** in the FY2026 Commerce-Justice-Science appropriations text; **UK AISI's Alignment Project payer structure clarified**: funds go directly to the host organisation under each funder's own agreement, not into AISI's core budget.
+- **Bounded-open, recorded as such rather than left untried**: Apollo's seed round size and Macroscopic Ventures' stake (no Form D in EDGAR, no share allotment at Companies House, a Delaware PBC with no public cap table); METR's Audacious/Canary share at the METR level (TED does not fund grantees directly; the traced partner payments go to RAND); CAISI's full lab-money negative (USAspending cannot see a CRADA or reimbursable agreement).
+- Two new rule codes: **F.13** (confirmed bounded negatives covering part of a funder base float the floor to 3, short of a 4) and **G.8** (a disclosed board structure with an undisclosed full membership caps governance at 3).
+- No stored assessment value moved; the pass strengthens the evidence behind existing values rather than changing them. Sources 194 -> 247 (232 confirmed); ledger transfers 84 -> 103 (70 confirmed); checked-and-not-found rows 21 -> 27; quoted signals 309/357 -> 320/369.
+
 # Evaluator Bench changelog
 
 ## 15 Sep 2026, later: scope, bands, the hidden number, evaluation credits, checked-and-not-found

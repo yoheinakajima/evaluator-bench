@@ -1,0 +1,12 @@
+{
+ "id": "apollo-team",
+ "title": "Team",
+ "publisher": "Apollo Research",
+ "url": "https://www.apolloresearch.ai/team",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "self",
+ "audit_status": "confirmed",
+ "note": "Footer gives 'EIN 93-4310599 DE, USA' (the Delaware PBC) and the EU transparency register number. The 'Directors & Advisors' filter renders no names to a text reader or fetch_text (2026-09-15).",
+ "self_of": "apollo"
+}

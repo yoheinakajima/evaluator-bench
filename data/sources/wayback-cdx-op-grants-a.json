@@ -1,0 +1,11 @@
+{
+ "id": "wayback-cdx-op-grants-a",
+ "title": "Wayback CDX index of openphilanthropy.org/grants/a* (status 200, one row per URL)",
+ "publisher": "Internet Archive",
+ "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/a*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "250 distinct slugs; includes both ARC and both Apollo Research grant pages."
+}

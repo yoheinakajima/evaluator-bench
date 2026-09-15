@@ -1,0 +1,12 @@
+{
+ "id": "audacious-faq",
+ "title": "FAQ",
+ "publisher": "The Audacious Project (TED)",
+ "url": "https://www.audaciousproject.org/faq",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "self",
+ "audit_status": "confirmed",
+ "note": "States that TED itself does not provide funding for grantees; funding comes from a pool of donors listed on the About page (which names Good Ventures among the partners).",
+ "self_of": "audacious"
+}

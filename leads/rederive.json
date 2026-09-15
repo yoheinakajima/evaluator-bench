@@ -1,0 +1,1854 @@
+[
+ {
+  "question": "1. METR negatives N01 to N05: re-derive each from the primary record",
+  "evaluator": "metr",
+  "dimension": "F",
+  "verdict": "partial",
+  "finding": "N02 to N05 re-derived and confirmed from the filers' e-filed XML (Good Ventures 990-PF FY2022 to FY2025, Pew 990 Schedule I FY2021 to FY2025, Packard 990-PF TY2021 to TY2024) and, for N03, from the three Schmidt-family foundations that do file (Schmidt Sciences itself is not a 990 filer, so N03's corpus is mis-specified: differs). N01 is unverifiable as written: the Coefficient grants index (coefficientgiving.org/grants/) is 404 in every Wayback capture since 2025-12-06 and 403/404 live, and the live site search indexes articles, people and pages only; the substitute corpus (2,737 archived openphilanthropy.org grant-page slugs) has no METR page while it has ARC, Apollo, Palisade and SecureBio pages, and ProPublica's full-text index names METR in only eight filings, none from the five filers.",
+  "sources": [
+   {
+    "id": "metr-coefficient-grants-index",
+    "title": "Grants (index page)",
+    "publisher": "Coefficient Giving",
+    "url": "https://coefficientgiving.org/grants/",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "unverifiable",
+    "note": "Re-fetch 2026-09-15: bench.review.fetch_text gets HTTP 404; curl with a browser user-agent gets HTTP 403 (site-wide bot block, also on /grants/apollo-research-general-support/ and similar slugs); Wayback CDX captures of /grants/ on 2025-12-06, 2025-12-07, 2025-12-19 and 2026-02-28 are all status 404; openphilanthropy.org/grants/ has 301'd to coefficientgiving.org/funds since 2025-11. The 2,911-row index cited by N01 is a third-party Algolia extract (kevinnbass coefficient_pages.csv CP06) that the public site no longer serves."
+   },
+   {
+    "id": "coefficient-site-search",
+    "title": "Site search",
+    "publisher": "Coefficient Giving",
+    "url": "https://coefficientgiving.org/search/",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Read in a browser on 2026-09-15 because curl and fetch_text receive HTTP 403. The search box is labelled 'Find an article, person or page'; queries METR (152 results, mostly 'metrics'), Model Evaluation, Apollo Research (1 result: a staff bio), Pattern Labs (8), Irregular (25), Palisade and SecureBio return no grant records. The ?s=<term>&post_type=grants route redirects to the homepage. No fetch_text-checkable span.",
+    "self_of": "coefficient"
+   },
+   {
+    "id": "wayback-cdx-op-grants-m",
+    "title": "Wayback CDX index of openphilanthropy.org/grants/m* (status 200, one row per URL)",
+    "publisher": "Internet Archive",
+    "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/m*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Queried letter by letter (a to z) on 2026-09-15: 2,737 distinct openphilanthropy.org/grants/<slug>/ pages with a 200 capture after dropping query-string and /page/ variants. No slug begins with metr or model-evaluation (the only 'metr' matches are ayni-institute-movement-ecology-and-metrics and center-for-welfare-metrics-...); no pattern-labs or irregular slug. Present: alignment-research-center-general-support (2), apollo-research-startup-funding, apollo-research-general-support, palisade-research-general-support (2024 and 2025), six securebio-* slugs."
+   },
+   {
+    "id": "wayback-cdx-op-grants-a",
+    "title": "Wayback CDX index of openphilanthropy.org/grants/a* (status 200, one row per URL)",
+    "publisher": "Internet Archive",
+    "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/a*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "250 distinct slugs; includes both ARC and both Apollo Research grant pages."
+   },
+   {
+    "id": "propublica-metr-fulltext",
+    "title": "Filing text search: \"Model Evaluation and Threat Research\"",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22Model+Evaluation+and+Threat+Research%22",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Corpus: e-filed 990-series returns from fiscal years 2014 forward. Eight filings name METR: Alignment Research Center 990 Schedules R, N, I, O (2024); METR's own 990 (2024); Founders Pledge Schedule I (2024); Silicon Valley Community Foundation Schedule I (2024); Vanguard Charitable Endowment Program Schedule I (2025). None from Good Ventures, Pew, Packard, any Schmidt-family foundation or TED Foundation. The ARC Schedule I snippet reads 'MODEL EVALUATION AND THREAT RESEARCH INC 440 N BARRANCA AVE 3345 COVINA CA 991219864 4477169 76766 BOOK' and Schedule R 'B 4553935 CASH'."
+   },
+   {
+    "id": "good-ventures-propublica",
+    "title": "Good Ventures Foundation (EIN 46-1008520) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Filing list; object ids used: 202341359349105939 (FY 2021-07-01 to 2022-06-30, 315 Part XV lines), 202441369349105564 (2022-07-01 to 2023-06-30, 464), 202501349349105365 (2023-07-01 to 2024-06-30, 493), 202641359349102829 (2024-07-01 to 2025-06-30, about 900 lines, read from ProPublica's gzipped full_text render). No line names METR or Model Evaluation in any of the four; ARC appears once (FY2023, $1,250,000, 'RESEARCH RELATED TO AI ALIGNMENT')."
+   },
+   {
+    "id": "good-ventures-990pf-fy2023-xml",
+    "title": "Good Ventures Foundation 990-PF, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441369349105564_public.xml",
+    "published": "2024",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "464 Part XV paid-grant groups; grep (case-insensitive) for 'model evaluation', 'metr': none; ARC $1,250,000 present; SecureBio $1,420,937 present."
+   },
+   {
+    "id": "good-ventures-990pf-fy2024-xml",
+    "title": "Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "493 Part XV paid-grant groups; no METR or ARC line; contains the Pattern Labs Tech Inc lines used in question 4 and SecureBio $507,000."
+   },
+   {
+    "id": "good-ventures-990pf-fy2025-render",
+    "title": "Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render)",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Served gzip-encoded regardless of Accept-Encoding; decoded with gzip on 2026-09-15 (2,324,373 bytes; about 900 Part XV lines). No METR, Model Evaluation or ARC line; RAND general support lines ($2,000,000; $666,667; $2,500,000); Pattern Labs Tech Inc $2,266,667; SecureBio $1,400,000, $230,000 and $2,600,000. bench.review.fetch_text does not gunzip this endpoint, so no checkable span; the XML is not yet on the S3 mirror (404)."
+   },
+   {
+    "id": "pew-propublica",
+    "title": "Pew Charitable Trusts (EIN 56-2307147) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/562307147",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Five 990 XMLs grepped from the S3 mirror: 202221029349301247 (2020-07-01 to 2021-06-30, 439 Schedule I recipient groups), 202340889349301359 (to 2022-06-30, 407), 202440829349300334 (to 2023-06-30, 401), 202520859349300727 (to 2024-06-30, 391), 202620849349301332 (to 2025-06-30, 535). No METR, Model Evaluation or ARC line."
+   },
+   {
+    "id": "pew-990-fy2025-xml",
+    "title": "The Pew Charitable Trusts 990, tax period 2024-07-01 to 2025-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202620849349301332_public.xml",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "535 Schedule I recipient groups; no METR line."
+   },
+   {
+    "id": "packard-propublica",
+    "title": "David and Lucile Packard Foundation (EIN 94-2278431) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/942278431",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Four 990-PF XMLs grepped: 202223199349107432 (TY2021, 1,400 Part XV groups), 202303149349102680 (TY2022, 1,158), 202433199349102603 (TY2023, 1,097), 202533209349100148 (TY2024, 1,029). No METR, Model Evaluation or ARC line."
+   },
+   {
+    "id": "packard-990pf-ty2024-xml",
+    "title": "David and Lucile Packard Foundation 990-PF TY2024 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202533209349100148_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "1,029 Part XV groups; no METR line."
+   },
+   {
+    "id": "propublica-api-schmidt-sciences",
+    "title": "Organization search: schmidt sciences",
+    "publisher": "ProPublica Nonprofit Explorer API",
+    "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=schmidt%20sciences",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Zero-result queries on this endpoint return HTTP 404 with the JSON body {\"total_results\":0,...}; read with curl on 2026-09-15 (a query for 'eric and wendy schmidt' returns HTTP 200 with two organizations). bench.review.fetch_text raises on the 404 status, so no checkable span. Conclusion: no filer named Schmidt Sciences; the Schmidt vehicles that file are the Eric and Wendy Schmidt Fund for Strategic Innovation (46-3460261), the Schmidt Family Foundation (20-4170342) and the Eric and Wendy Schmidt Operating Foundation (99-5077186)."
+   },
+   {
+    "id": "schmidt-fsi-propublica",
+    "title": "Eric and Wendy Schmidt Fund for Strategic Innovation (EIN 46-3460261) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Five 990-PF XMLs grepped (TY2020 to TY2024; 99, 106, 184, 233, 379 Part XV groups): no METR, Model Evaluation or ARC line."
+   },
+   {
+    "id": "schmidt-family-propublica",
+    "title": "Schmidt Family Foundation (EIN 20-4170342) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Five 990-PF XMLs grepped (TY2020 to TY2024; 378, 367, 629, 546, 695 Part XV groups): no METR, Model Evaluation or ARC line."
+   },
+   {
+    "id": "schmidt-operating-propublica",
+    "title": "Eric and Wendy Schmidt Operating Foundation (EIN 99-5077186) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/995077186",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "One 990-PF (short tax period 2024-09-11 to 2024-12-31, object 202512279349100406): zero Part XV grant groups."
+   },
+   {
+    "id": "schmidt-fsi-990pf-ty2024-xml",
+    "title": "Eric and Wendy Schmidt Fund for Strategic Innovation 990-PF TY2024 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202543219349108364_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "379 Part XV groups; no METR line."
+   }
+  ],
+  "spans": [
+   {
+    "source": "propublica-metr-fulltext",
+    "span": "Nonprofits (1) People (0) Filings (8)"
+   },
+   {
+    "source": "propublica-metr-fulltext",
+    "span": "Vanguard Charitable Endowment Program — Form 990, Schedule I (2025)"
+   },
+   {
+    "source": "good-ventures-990pf-fy2023-xml",
+    "span": "ALIGNMENT RESEARCH CENTER 440 N BARRANCA AVE 9807 COVINA CA 91723 PC RESEARCH RELATED TO AI ALIGNMENT 1250000"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "negatives",
+    "row_id": "N01",
+    "fields": {
+     "audit_status": "unverifiable",
+     "searched": "Coefficient grants index (third-party Algolia snapshot, 2,911 rows, 2026-09-11); the public index page no longer exists",
+     "notes": "re-derivation 2026-09-15: coefficientgiving.org/grants/ is HTTP 404 to fetch_text and 403 to browser-UA curl; all Wayback captures since 2025-12-06 are 404; the live site search indexes articles, people and pages only and returns no grant record for METR or Model Evaluation. The 2,911-row snapshot is kevinnbass's Algolia extract (coefficient_pages.csv CP06), not a public record. Substitute negatives: N22 (archived grant-page slugs) and N23 (ProPublica full-text corpus). Imported kevinnbass/metr-money-figure:M33."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "metr",
+     "claim": "no METR- or Model-Evaluation-named grant page among 2,737 archived openphilanthropy.org/grants/ slugs, while ARC (2), Apollo Research (2), Palisade Research (2) and SecureBio (6) pages are present",
+     "searched": "Wayback Machine CDX index of openphilanthropy.org/grants/*, status 200, collapsed by URL, queried by initial letter a to z; 2,737 distinct slugs after dropping query-string and /page/ variants",
+     "snapshot": "2026-09-15",
+     "source_url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/m*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+     "source_type": "index",
+     "audit_status": "confirmed",
+     "notes": "substitute for N01 after the public index was removed at the Nov 2025 rebrand; absence of a capture is not proof a page never existed"
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "metr",
+     "claim": "Model Evaluation and Threat Research appears in eight e-filed 990 filings only: ARC (Schedules R, N, I, O, 2024), METR's own 990 (2024), Founders Pledge Schedule I (2024), Silicon Valley Community Foundation Schedule I (2024), Vanguard Charitable Schedule I (2025); no filing by Good Ventures, Pew, Packard, a Schmidt-family foundation or TED Foundation names it",
+     "searched": "ProPublica Nonprofit Explorer full-text search of e-filed 990-series returns, fiscal years 2014 forward",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22Model+Evaluation+and+Threat+Research%22",
+     "source_type": "index",
+     "audit_status": "confirmed",
+     "notes": "corpus-wide; says nothing about grants routed through DAFs under other names or paid after the latest indexed filing"
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N02",
+    "fields": {
+     "audit_status": "confirmed",
+     "searched": "990-PF Part XV, fiscal years ending 30 June 2022 to 30 June 2025 (315, 464, 493 and about 900 paid-grant lines)",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+     "notes": "re-derived 2026-09-15 from IRS e-file XML objects 202341359349105939, 202441369349105564, 202501349349105365 (S3 mirror) and the gzipped ProPublica full_text render of 202641359349102829; case-insensitive grep for 'model evaluation' and 'metr': none; ARC $1,250,000 in FY2023 only. Imported kevinnbass/metr-money-figure:M104."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N03",
+    "fields": {
+     "claim": "no METR- or ARC-named grant in the 990-PFs of the three Schmidt-family filers (Eric and Wendy Schmidt Fund for Strategic Innovation TY2020 to TY2024; Schmidt Family Foundation TY2020 to TY2024; Eric and Wendy Schmidt Operating Foundation, short TY2024); Schmidt Sciences itself is not a 990 filer",
+     "searched": "990-PF Part XV of EINs 46-3460261 (5 filings), 20-4170342 (5 filings), 99-5077186 (1 filing)",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+     "audit_status": "confirmed",
+     "notes": "verdict differs from the imported wording: 'Schmidt Sciences 990-PF 2021 to 2024' does not exist as a corpus (ProPublica API search 'schmidt sciences' returns 0 organizations); the negative holds for the three foundations that do file. METR names Schmidt Sciences as a supporter; the vehicle is not visible in any 990. Imported kevinnbass/metr-money-figure:M99."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N04",
+    "fields": {
+     "audit_status": "confirmed",
+     "searched": "990 Schedule I, fiscal years ending 30 June 2021 to 30 June 2025 (439, 407, 401, 391, 535 recipient lines)",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/organizations/562307147",
+     "notes": "re-derived 2026-09-15 from IRS e-file XML objects 202221029349301247, 202340889349301359, 202440829349300334, 202520859349300727, 202620849349301332; no METR, Model Evaluation or ARC line. Imported kevinnbass/metr-money-figure:M98."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N05",
+    "fields": {
+     "audit_status": "confirmed",
+     "searched": "990-PF Part XV, tax years 2021 to 2024 (1,400, 1,158, 1,097, 1,029 paid-grant lines)",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/organizations/942278431",
+     "notes": "re-derived 2026-09-15 from IRS e-file XML objects 202223199349107432, 202303149349102680, 202433199349102603, 202533209349100148; no METR, Model Evaluation or ARC line. Imported kevinnbass/metr-money-figure:M97."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N21",
+    "fields": {
+     "audit_status": "unverifiable",
+     "notes": "the grants pages named in 'searched' no longer exist (coefficientgiving.org/grants/ 404 since 2025-12; openphilanthropy.org/grants/ 301s to /funds); keep the 80,000 Hours note as press corroboration only; see N22 and N23"
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "metr.24",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Bounded negatives re-derived from primary filings on 2026-09-15: no METR-named grant in Good Ventures 990-PF FY2022 to FY2025, Pew 990 Schedule I FY2021 to FY2025, Packard 990-PF TY2021 to TY2024, the three Schmidt-family foundations TY2020 to TY2024, or TED Foundation 990-PF TY2021 to TY2024; ProPublica's full-text index of e-filed 990s names METR in eight filings only (ARC, METR, Founders Pledge, SVCF, Vanguard Charitable).",
+    "sources": [
+     "propublica-metr-fulltext",
+     "good-ventures-propublica",
+     "pew-propublica",
+     "packard-propublica",
+     "schmidt-fsi-propublica"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "Nonprofits (1) People (0) Filings (8)",
+    "quote_source": "propublica-metr-fulltext"
+   }
+  ]
+ },
+ {
+  "question": "2. METR: Vanguard Charitable and Audacious Project (TED Foundation) Schedule I pages naming METR",
+  "evaluator": "metr",
+  "dimension": "F",
+  "verdict": "partial",
+  "finding": "Settled for Vanguard: its FY2025 990 (2024-07-01 to 2025-06-30) Schedule I row 15424 pays MODEL EVALUATION AND THREAT RESEARCH (EIN 99-1219864) $4,000,000 'FOR RECIPIENT'S EXEMPT PURPOSE', and the same filing pays ARC $1,500,000 (row 547); FY2023 and FY2024 pay ARC $201,000 and $1,000,000 and nothing to METR. Open for Audacious: TED Foundation's 990-PFs TY2021 to TY2024 carry 3, 6, 1 and 2 grant lines and none to METR, RAND or Canary; the Audacious FAQ says TED itself does not fund grantees, and the only filed Canary payments are partner grants to RAND (Valhalla $10,000,000; High Tide $333,334, both TY2024), so METR's approximately $17M share rests on METR's and RAND's own statements.",
+  "sources": [
+   {
+    "id": "vanguard-fy2025-schedi-render",
+    "title": "Vanguard Charitable Endowment Program 990, fiscal year ending June 2025, Schedule I (ProPublica full-text render)",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text/202621329349306657/IRS990ScheduleI",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Served gzip-encoded; decoded on 2026-09-15 (104,768,626 bytes, about 24,000 recipient rows). Row (15424): 'MODEL EVALUATION AND THREAT RESEARCH 440 N BARRANCA AVE 3345 COVINA , CA 917231722 99-1219864 501(C)3 4,000,000 FMV N/A FOR RECIPIENT'S EXEMPT PURPOSE'. Row (547): 'ALIGNMENT RESEARCH CENTER ... 86-3605182 501(C)3 1,500,000'. RAND Corporation $12,000 (row 19056). bench.review.fetch_text returns the undecoded gzip bytes for this endpoint, so the span is checkable only after gunzip; the XML is not yet on the S3 mirror."
+   },
+   {
+    "id": "propublica-metr-zip-search",
+    "title": "Filing text search: \"MODEL EVALUATION AND THREAT RESEARCH\" \"917231722\"",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22MODEL+EVALUATION+AND+THREAT+RESEARCH%22+%22917231722%22",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Exactly one filing contains both METR's name and its ZIP+4 as written in the Vanguard row: Vanguard Charitable Endowment Program, Form 990 Schedule I (2025). fetch_text-checkable confirmation that the FY2025 Schedule I names METR; the amount is on the render above."
+   },
+   {
+    "id": "vanguard-990-fy2024-xml",
+    "title": "Vanguard Charitable Endowment Program 990, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202511349349313096_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "24,269 Schedule I recipient groups; ALIGNMENT RESEARCH CENTER $1,000,000; RAND $48,000; no METR line (METR was spun out in April 2024)."
+   },
+   {
+    "id": "vanguard-990-fy2023-xml",
+    "title": "Vanguard Charitable Endowment Program 990, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441359349309439_public.xml",
+    "published": "2024",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "21,268 recipient groups; ALIGNMENT RESEARCH CENTER $201,000; no METR line."
+   },
+   {
+    "id": "ted-foundation-propublica",
+    "title": "TED Foundation Inc (EIN 82-1934592) filings",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/organizations/821934592",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Four 990-PF XMLs grepped from the S3 mirror: 202242949349100909 (TY2021, 3 Part XV groups), 202322779349100017 (TY2022, 6), 202442359349100919 (TY2023, 1), 202502549349100435 (TY2024, 2: Aboriginal Housing Management $63,084; Zero Emissions Innovation Centre $37,169). No METR, RAND, Model Evaluation or Canary line."
+   },
+   {
+    "id": "ted-990pf-ty2024-xml",
+    "title": "TED Foundation Inc 990-PF TY2024 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502549349100435_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Two paid grants only; no METR, RAND or Canary."
+   },
+   {
+    "id": "audacious-faq",
+    "title": "FAQ",
+    "publisher": "The Audacious Project (TED)",
+    "url": "https://www.audaciousproject.org/faq",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "States that TED itself does not provide funding for grantees; funding comes from a pool of donors listed on the About page (which names Good Ventures among the partners).",
+    "self_of": "audacious"
+   },
+   {
+    "id": "valhalla-990pf-ty2024-xml",
+    "title": "Valhalla Foundation 990-PF TY2024 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502559349100000_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Part XV: RAND CORPORATION, Santa Monica, PC, 'PROJECT CANARY, AN ARTIFICIAL INTELLIGENCE SAFETY INITIATIVE', 10,000,000. No METR line."
+   },
+   {
+    "id": "high-tide-990pf-ty2024-xml",
+    "title": "High Tide Foundation 990-PF TY2024 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202503179349100135_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Part XV: THE RAND CORPORATION, PC, 'To support tTHE PROJECT CANARY' (as filed), 333,334. No METR line."
+   }
+  ],
+  "spans": [
+   {
+    "source": "propublica-metr-zip-search",
+    "span": "Nonprofits (0) People (0) Filings (1)"
+   },
+   {
+    "source": "propublica-metr-zip-search",
+    "span": "Vanguard Charitable Endowment Program — Form 990, Schedule I (2025) Malvern, PA"
+   },
+   {
+    "source": "vanguard-990-fy2024-xml",
+    "span": "ALIGNMENT RESEARCH CENTER 440 N BARRANCA AVE 9807 COVINA CA 91723 863605182 501(C)3 1000000 FMV"
+   },
+   {
+    "source": "vanguard-990-fy2023-xml",
+    "span": "ALIGNMENT RESEARCH CENTER 440 N BARRANCA AVE COVINA CA 91723 863605182 501(C)3 201000 FMV"
+   },
+   {
+    "source": "ted-990pf-ty2024-xml",
+    "span": "ABORIGINAL HOUSING MANAGEMENT 615-100 PARK ROYAL WEST VANCOUVER BRITISH COLUMBIA CA V7T 1A2 NONE NC GENERAL SUPPORT"
+   },
+   {
+    "source": "audacious-faq",
+    "span": "While The Audacious Project is housed at TED, TED itself does not provide funding for grantees."
+   },
+   {
+    "source": "valhalla-990pf-ty2024-xml",
+    "span": "PROJECT CANARY, AN ARTIFICIAL INTELLIGENCE SAFETY INITIATIVE 10000000"
+   },
+   {
+    "source": "high-tide-990pf-ty2024-xml",
+    "span": "PROJECT CANARY 333334"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "T14",
+    "fields": {
+     "date": "FY2025 (2024-07-01 to 2025-06-30)",
+     "amount_usd": 4000000,
+     "source_url": "https://projects.propublica.org/nonprofits/full_text/202621329349306657/IRS990ScheduleI",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "notes": "Schedule I row (15424): MODEL EVALUATION AND THREAT RESEARCH, EIN 99-1219864, 4,000,000, FMV, FOR RECIPIENT'S EXEMPT PURPOSE; read 2026-09-15 from the gzipped ProPublica render (decoded locally). Same filing: ALIGNMENT RESEARCH CENTER 1,500,000 (row 547). Corroborated by the ProPublica full-text search for the name plus ZIP+4 917231722, which returns only this filing. Underlying donor not public. Imported kevinnbass/metr-money-figure:M87."
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "vanguard-charitable",
+     "to": "arc",
+     "date": "FY2025 (2024-07-01 to 2025-06-30)",
+     "amount_usd": 1500000,
+     "measure": "daf_grant",
+     "purpose": "990 Schedule I row 547; underlying donor not public",
+     "source_url": "https://projects.propublica.org/nonprofits/full_text/202621329349306657/IRS990ScheduleI",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "second-hop route for metr.21; FY2023 $201,000 and FY2024 $1,000,000 to ARC are in the S3 XMLs 202441359349309439 and 202511349349313096"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "valhalla",
+     "to": "rand",
+     "date": "2024",
+     "amount_usd": 10000000,
+     "measure": "grant",
+     "purpose": "PROJECT CANARY, AN ARTIFICIAL INTELLIGENCE SAFETY INITIATIVE (990-PF TY2024 Part XV)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502559349100000_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "Audacious partner paying RAND directly; no METR line in the filing; inside the $38M Canary commitment (T27), do not add to it"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "high-tide",
+     "to": "rand",
+     "date": "2024",
+     "amount_usd": 333334,
+     "measure": "grant",
+     "purpose": "'To support tTHE PROJECT CANARY' as filed (990-PF TY2024 Part XV)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202503179349100135_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "entity high-tide (High Tide Foundation, EIN 20-1164239, Audacious partner) is not yet in entities.csv; inside the $38M Canary commitment (T27)"
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "metr",
+     "claim": "no METR, RAND or Canary grant in TED Foundation Inc 990-PF Part XV, TY2021 to TY2024 (3, 6, 1 and 2 paid-grant lines)",
+     "searched": "TED Foundation Inc (EIN 82-1934592) 990-PF Part XV, four e-filed returns",
+     "snapshot": "2026-09-15",
+     "source_url": "https://projects.propublica.org/nonprofits/organizations/821934592",
+     "source_type": "filing",
+     "audit_status": "confirmed",
+     "notes": "consistent with the Audacious FAQ: TED does not fund grantees; partners pay directly (Valhalla and High Tide paid RAND in TY2024). TY2025 returns, due late 2026, are where further Canary payments would surface."
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "metr.25",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.",
+    "sources": [
+     "vanguard-fy2025-schedi-render",
+     "propublica-metr-zip-search"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Vanguard Charitable Endowment Program — Form 990, Schedule I (2025) Malvern, PA",
+    "quote_source": "propublica-metr-zip-search"
+   }
+  ]
+ },
+ {
+  "question": "3. Apollo Research: (a) Coefficient / Open Philanthropy grants vs the self-reported $1.5M; (b) seed round size and Macroscopic's share; (c) mission board seats",
+  "evaluator": "apollo",
+  "dimension": "F",
+  "verdict": "partial",
+  "finding": "(a) Two archived Open Philanthropy pages give $1,535,480 for startup costs (June 2023) and $2,178,700 general support (May 2024, 'follows our June 2023 support'); the $4,410,180 index total adds a $696,000 May 2026 'staff support' award that exists only in the removed Algolia index, and the Manifund $1.5M self-report equals the first grant alone. (b) Open: no Form D naming Apollo Research in EDGAR full-text search (2025-01-01 to 2026-09-15) and no share allotment at Companies House for Apollo Research AI Ltd (statement of capital GBP 0.01 at incorporation; PSC register says no registrable person); the PBC is a Delaware entity (EIN 93-4310599), which publishes no cap table; the only financing record is a fixed charge to HSBC Innovation Banking registered 9 December 2025. (c) Partial: the PBC post designates the 3rd and 6th board seats as mission seats, says the board currently has 3 seats, and names Daniel Kokotajlo as the first mission director; the other directors are not published (the UK subsidiary's directors are Hobbhahn and, from 15 March 2026, Christopher Akin; Lee Sharkey resigned that day).",
+  "sources": [
+   {
+    "id": "op-apollo-startup-2023",
+    "title": "Apollo Research — Startup Funding (Wayback capture 2023-09-12 of the Open Philanthropy grant page)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20230912095624/https://www.openphilanthropy.org/grants/apollo-research-startup-funding/",
+    "published": "2023-06",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Amount $1,535,480, award date June 2023, focus area Potential Risks from Advanced AI. The live coefficientgiving.org slug returned 404 in the 2026-08-30 capture."
+   },
+   {
+    "id": "op-apollo-general-2024",
+    "title": "Apollo Research — General Support (Wayback capture 2024-07-17 of the Open Philanthropy grant page)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20240717140504/https://www.openphilanthropy.org/grants/apollo-research-general-support/",
+    "published": "2024-05",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Amount $2,178,700, award date May 2024; 'This follows our June 2023 support'. No later Apollo grant page was ever captured (CDX, 2026-09-15); kevinnbass's Algolia extract lists a third award, $696,000 'Staff Support' dated 2026-05, which never had a public page."
+   },
+   {
+    "id": "apollo-pbc-round",
+    "title": "Apollo Research is becoming a PBC",
+    "publisher": "Apollo Research",
+    "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+    "published": "2026-01-20",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Re-fetched 2026-09-15 (existing source id). Seed round led by 50Y with Juniper, Macroscopic, Common Metal, SAIF, Srikar Varadaraj, Sarah Meyohas, Ocean Investment, Progress Fund, Bryan Johnson; 'The round was oversubscribed'; no amount, valuation or stake sizes. Mission seats: 3rd and 6th board seats; currently 3 seats; first mission director Daniel Kokotajlo.",
+    "self_of": "apollo"
+   },
+   {
+    "id": "apollo-team",
+    "title": "Team",
+    "publisher": "Apollo Research",
+    "url": "https://www.apolloresearch.ai/team",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Footer gives 'EIN 93-4310599 DE, USA' (the Delaware PBC) and the EU transparency register number. The 'Directors & Advisors' filter renders no names to a text reader or fetch_text (2026-09-15).",
+    "self_of": "apollo"
+   },
+   {
+    "id": "edgar-fts-apollo-form-d",
+    "title": "EDGAR full-text search: \"Apollo Research\", form D, 2025-06-01 to 2026-09-15",
+    "publisher": "U.S. Securities and Exchange Commission",
+    "url": "https://efts.sec.gov/LATEST/search-index?q=%22Apollo%20Research%22&forms=D&dateRange=custom&startdt=2025-06-01&enddt=2026-09-15",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "0 hits. Also 0 hits without a form filter for \"Apollo Research PBC\", \"Apollo Research, PBC\" and \"Apollo Research\" AND \"Macroscopic\" (2025-01-01 to 2026-09-15); the EDGAR company-name search for 'apollo research' lists no filer."
+   },
+   {
+    "id": "ch-apollo-research-ai",
+    "title": "APOLLO RESEARCH AI LTD (company 15289159), overview",
+    "publisher": "Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/15289159",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Incorporated 16 November 2023; active; accounts to 31 December 2024 (micro); SIC 62020. The other 'Apollo Research Ltd' (14070094) is an unrelated retail company, dissolved 9 June 2026."
+   },
+   {
+    "id": "ch-apollo-research-ai-filings",
+    "title": "APOLLO RESEARCH AI LTD filing history",
+    "publisher": "Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "No SH01 (return of allotment) or statement of capital after the incorporation statement of capital of GBP .01 (2023-11-16). MR01 registration of charge 152891590001 created 9 December 2025 (persons entitled: HSBC Innovation Banking; fixed charge). AP01 Christopher Akin appointed director 15 March 2026; TM01 Lee Sharkey terminated 15 March 2026."
+   },
+   {
+    "id": "ch-apollo-research-ai-officers",
+    "title": "APOLLO RESEARCH AI LTD officers",
+    "publisher": "Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/officers",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "3 officers, 1 resignation: Christopher Akin (appointed 15 March 2026, American), Marius Hobbhahn (appointed 16 November 2023), Lee Darren Sharkey (resigned 15 March 2026)."
+   },
+   {
+    "id": "ch-apollo-research-ai-psc",
+    "title": "APOLLO RESEARCH AI LTD persons with significant control",
+    "publisher": "Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/persons-with-significant-control",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "0 active PSCs; active statement that there is no registrable person or registrable relevant legal entity, notified 16 November 2023."
+   },
+   {
+    "id": "ch-apollo-mr01",
+    "title": "MR01 Registration of charge 152891590001 (PDF)",
+    "publisher": "Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history/MzQ5MzM2MjM4NWFkaXF6a2N4/document?format=pdf&download=0",
+    "published": "2025-12-10",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Persons entitled: HSBC INNOVATION BANKING; 'Contains fixed charge(s)'. A bank security, not an equity record."
+   },
+   {
+    "id": "apollo-manifund",
+    "title": "Apollo Research on Manifund",
+    "publisher": "Manifund",
+    "url": "https://manifund.org/apolloresearch",
+    "published": "2023",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Existing source id; self-reported about $1.5M from Open Philanthropy and about $500K from SFF. The $1.5M matches the June 2023 startup grant ($1,535,480) and predates the May 2024 grant.",
+    "self_of": "apollo"
+   }
+  ],
+  "spans": [
+   {
+    "source": "op-apollo-startup-2023",
+    "span": "Open Philanthropy recommended a grant of $1,535,480 to Apollo Research for startup costs."
+   },
+   {
+    "source": "op-apollo-startup-2023",
+    "span": "Amount: $1,535,480 Award Date: June 2023"
+   },
+   {
+    "source": "op-apollo-general-2024",
+    "span": "Open Philanthropy recommended a grant of $2,178,700 to Apollo Research for general support."
+   },
+   {
+    "source": "op-apollo-general-2024",
+    "span": "This follows our June 2023 support"
+   },
+   {
+    "source": "apollo-pbc-round",
+    "span": "The round was oversubscribed."
+   },
+   {
+    "source": "apollo-pbc-round",
+    "span": "Our first mission director is Daniel Kokotajlo."
+   },
+   {
+    "source": "apollo-pbc-round",
+    "span": "currently 3 seats) seats of the board of directors as “mission seats”"
+   },
+   {
+    "source": "apollo-team",
+    "span": "EIN 93-4310599 DE, USA"
+   },
+   {
+    "source": "ch-apollo-research-ai",
+    "span": "Incorporated on 16 November 2023"
+   },
+   {
+    "source": "ch-apollo-research-ai-filings",
+    "span": "Incorporation Statement of capital on 2023-11-16 GBP .01"
+   },
+   {
+    "source": "ch-apollo-research-ai-filings",
+    "span": "MR01 Registration of charge 152891590001, created on 9 December 2025"
+   },
+   {
+    "source": "ch-apollo-research-ai-officers",
+    "span": "Officers: 3 officers / 1 resignation"
+   },
+   {
+    "source": "ch-apollo-research-ai-officers",
+    "span": "Resigned on 15 March 2026"
+   },
+   {
+    "source": "ch-apollo-research-ai-psc",
+    "span": "no registrable person or registrable relevant legal entity in relation to the company"
+   },
+   {
+    "source": "ch-apollo-mr01",
+    "span": "HSBC INNOVATION BANKING"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "apollo",
+     "date": "2023-06",
+     "amount_usd": 1535480,
+     "measure": "recommendation",
+     "purpose": "startup costs (Open Philanthropy grant page, archived)",
+     "source_url": "https://web.archive.org/web/20230912095624/https://www.openphilanthropy.org/grants/apollo-research-startup-funding/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "equals Apollo's Manifund self-report of about $1.5M from Open Philanthropy; payment leg not visible under Apollo's name in Good Ventures 990-PF FY2024 (likely paid to the fiscal sponsor)"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "apollo",
+     "date": "2024-05",
+     "amount_usd": 2178700,
+     "measure": "recommendation",
+     "purpose": "general support (Open Philanthropy grant page, archived)",
+     "source_url": "https://web.archive.org/web/20240717140504/https://www.openphilanthropy.org/grants/apollo-research-general-support/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "page says it follows the June 2023 support"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "apollo",
+     "date": "2026-05",
+     "amount_usd": 696000,
+     "measure": "recommendation",
+     "purpose": "staff support, per the third-party Algolia extract of Coefficient's index; no public page ever captured",
+     "source_url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+     "source_type": "ledger",
+     "snapshot": "2026-09-11",
+     "audit_status": "imported",
+     "class": "cash",
+     "notes": "imported kevinnbass/metr-money-figure:EV02 notes; $1,535,480 + $2,178,700 + $696,000 = $4,410,180 = T08"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "T08",
+    "fields": {
+     "audit_status": "unverifiable",
+     "notes": "re-derivation 2026-09-15: the $4,410,180 cumulative decomposes into $1,535,480 (2023-06) and $2,178,700 (2024-05), both confirmed on archived Open Philanthropy pages, plus $696,000 (2026-05) that exists only in the removed index; the self-reported $1.5M on Manifund is the first grant alone, not a contradiction. Superseded by the three per-grant rows; keep out of sums."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "apollo",
+     "claim": "no Form D or other filing naming Apollo Research in EDGAR full-text search (2025-01-01 to 2026-09-15); no return of allotment (SH01) at Companies House for Apollo Research AI Ltd after its GBP 0.01 incorporation capital; PSC register states no registrable person",
+     "searched": "SEC EDGAR full-text search (forms D and unrestricted) and company-name search; Companies House filing history and PSC register for company 15289159 through 2026-04-10",
+     "snapshot": "2026-09-15",
+     "source_url": "https://efts.sec.gov/LATEST/search-index?q=%22Apollo%20Research%22&forms=D&dateRange=custom&startdt=2025-06-01&enddt=2026-09-15",
+     "source_type": "index",
+     "audit_status": "confirmed",
+     "notes": "the PBC is a Delaware entity (EIN 93-4310599) and Delaware publishes no cap table; seed round size and Macroscopic's stake therefore not derivable from public records; a fixed charge to HSBC Innovation Banking (MR01, 9 Dec 2025) is the only financing record on the UK subsidiary"
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "apollo.16",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient / Open Philanthropy recommended $1,535,480 (June 2023, startup costs) and $2,178,700 (May 2024, general support) to Apollo per archived grant pages, with a further $696,000 (May 2026) in the removed index; Coefficient's principal funder is an Anthropic investor.",
+    "sources": [
+     "op-apollo-startup-2023",
+     "op-apollo-general-2024",
+     "apollo-manifund"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Open Philanthropy recommended a grant of $2,178,700 to Apollo Research for general support.",
+    "quote_source": "op-apollo-general-2024"
+   },
+   {
+    "id": "apollo.17",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "The January 2026 seed round's size and each investor's stake, including Macroscopic Ventures' (an Anthropic Series A and B investor), are undisclosed: no Form D in EDGAR, no share allotment at Companies House, and the PBC is a Delaware entity with no public cap table.",
+    "sources": [
+     "apollo-pbc-round",
+     "edgar-fts-apollo-form-d",
+     "ch-apollo-research-ai-filings",
+     "ch-apollo-research-ai-psc"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.10",
+    "quote": "The round was oversubscribed.",
+    "quote_source": "apollo-pbc-round"
+   },
+   {
+    "id": "apollo.18",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "The PBC board has three seats, of which the 3rd (and later 6th) are designated mission seats; only the first mission director, Daniel Kokotajlo, is named, and the remaining directors are not published on Apollo's pages or in Companies House (which shows only the UK subsidiary's directors, Hobbhahn and Akin).",
+    "sources": [
+     "apollo-pbc-round",
+     "ch-apollo-research-ai-officers",
+     "apollo-team"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "G.7",
+    "quote": "Our first mission director is Daniel Kokotajlo.",
+    "quote_source": "apollo-pbc-round"
+   }
+  ]
+ },
+ {
+  "question": "4. Irregular / Pattern Labs: Coefficient index under both names; the $6.8M grant's existence, date and purpose",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "verdict": "settled",
+  "finding": "The grant exists and is in a primary filing: Good Ventures Foundation's 990-PF (the payer of Open Philanthropy recommendations) records a grant to PATTERN LABS TECH INC (Wilmington, DE; non-charity, expenditure responsibility) dated 2024-03-05 for $4,533,333, purpose 'DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY', paid in FY2024 (2023-07-01 to 2024-06-30) with $2,266,667 approved for future payment and paid in FY2025, total $6,800,000 (the index's $6,799,999, dated 2024-02-28). The same FY2024 filing lists PATTERN LABS TECH INC among Good Ventures' corporate stock holdings at $3,000,000 book and fair value, an equity stake. No public grant page ever existed under either name (no Wayback capture among 2,737 archived slugs; the live site search returns no grant record), and no line under 'Irregular' appears in any filing.",
+  "sources": [
+   {
+    "id": "good-ventures-990pf-fy2024-xml",
+    "title": "Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Part XV paid during the year: PATTERN LABS TECH INC, 108 W 13TH ST STE 100, WILMINGTON DE 19801, status NC, 'DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY', 4,533,333. Part XV approved for future payment: same recipient and purpose, 2,266,667. Part VII-B expenditure responsibility statement: grant date 2024-03-05, amount 4,533,333, expended by grantee 2,639,613, reports 3/15/25. Part II investments, corporate stock: PATTERN LABS TECH INC, EOY book value 3,000,000, FMV 3,000,000."
+   },
+   {
+    "id": "good-ventures-990pf-fy2025-render",
+    "title": "Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render)",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Part XIV/XV paid during the year: PATTERN LABS TECH INC ... NC DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY 2,266,667 (the second tranche). Gzip-encoded endpoint; decoded locally; no fetch_text-checkable span."
+   },
+   {
+    "id": "wayback-cdx-op-grants-p",
+    "title": "Wayback CDX index of openphilanthropy.org/grants/p* (status 200, one row per URL)",
+    "publisher": "Internet Archive",
+    "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/p*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "126 distinct 'p' slugs; both Palisade pages present; no pattern-labs slug. The 'i' query (101 slugs) has no irregular slug. CDX for openphilanthropy.org/grants/?organization-name=pattern-labs returns no capture."
+   },
+   {
+    "id": "coefficient-site-search",
+    "title": "Site search",
+    "publisher": "Coefficient Giving",
+    "url": "https://coefficientgiving.org/search/",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Browser read 2026-09-15: 'Pattern Labs' 8 results and 'Irregular' 25 results, all articles or staff pages, no grant record; the site no longer serves grant pages.",
+    "self_of": "coefficient"
+   },
+   {
+    "id": "kevinnbass-evaluators-csv",
+    "title": "evaluators.csv (row EV07)",
+    "publisher": "kevinnbass/metr-money-figure",
+    "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+    "published": "2026-09-14",
+    "retrieved": "2026-09-15",
+    "source_type": "ledger",
+    "audit_status": "confirmed",
+    "note": "Third-party ledger: Coefficient index name match 'Pattern Labs' $6,799,999 'Technological Risk Mitigation' 2024-02-28; no grant under 'Irregular'. Treated as a lead; the primary record is the Good Ventures filing."
+   }
+  ],
+  "spans": [
+   {
+    "source": "good-ventures-990pf-fy2024-xml",
+    "span": "PATTERN LABS TECH INC 108 W 13TH ST STE 100 WILMINGTON DE 19801 2024-03-05 4533333"
+   },
+   {
+    "source": "good-ventures-990pf-fy2024-xml",
+    "span": "NC DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY 4533333"
+   },
+   {
+    "source": "good-ventures-990pf-fy2024-xml",
+    "span": "NC DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY 2266667"
+   },
+   {
+    "source": "good-ventures-990pf-fy2024-xml",
+    "span": "PATTERN LABS TECH INC 3000000 3000000 PAYCHEX INC"
+   },
+   {
+    "source": "kevinnbass-evaluators-csv",
+    "span": "Coefficient name matched: 'Pattern Labs' $6,799,999 'Technological Risk Mitigation' 2024-02-28"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "irregular",
+     "date": "2024-03-05",
+     "amount_usd": 4533333,
+     "measure": "grant",
+     "purpose": "DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY (990-PF FY2024 Part XV, paid; expenditure-responsibility grant to PATTERN LABS TECH INC, a non-charity)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "first tranche of the $6.8M Coefficient-recommended award; grantee had expended $2,639,613 by its 3/15/25 report"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "irregular",
+     "date": "FY2025 (2024-07-01 to 2025-06-30)",
+     "amount_usd": 2266667,
+     "measure": "grant",
+     "purpose": "DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY (approved for future payment in FY2024; paid in FY2025 Part XV)",
+     "source_url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "second tranche; $4,533,333 + $2,266,667 = $6,800,000 (index $6,799,999)"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "irregular",
+     "date": "2024-06-30",
+     "amount_usd": 3000000,
+     "measure": "investment",
+     "purpose": "PATTERN LABS TECH INC listed among Good Ventures' corporate stock holdings at $3,000,000 book and fair value (990-PF FY2024 Part II)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "ownership",
+     "notes": "book value of the stake, not a round size; stake percentage undisclosed; Good Ventures' principal (Moskovitz) is an Anthropic investor"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "T09",
+    "fields": {
+     "audit_status": "confirmed",
+     "measure": "recommendation",
+     "date": "2024-02-28",
+     "notes": "re-derivation 2026-09-15: the index figure matches Good Ventures 990-PF payments to PATTERN LABS TECH INC ($4,533,333 grant dated 2024-03-05 in FY2024 plus $2,266,667 in FY2025 = $6,800,000); recommendation measure, the payments are the two filing rows; keep out of sums with them. Imported kevinnbass/metr-money-figure:EV07."
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N19",
+    "fields": {
+     "audit_status": "confirmed",
+     "claim": "no grant page under Pattern Labs or Irregular among 2,737 archived openphilanthropy.org/grants/ slugs, and no grant record for either name in Coefficient's live site search; the grant itself is recorded in Good Ventures' 990-PF under PATTERN LABS TECH INC",
+     "notes": "re-run 2026-09-15 under both names; the absence is of a public page, not of the grant (see the Good Ventures rows); imported T09 is not contradicted"
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "irregular.15",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Good Ventures Foundation, Coefficient's principal funder and an Anthropic investor's foundation, paid Pattern Labs Tech Inc $4,533,333 (grant dated 5 March 2024) and $2,266,667 (FY2025) for developing software tools, products and analysis focused on global security, and held a $3,000,000 stake in the company at 30 June 2024 per its 990-PF.",
+    "sources": [
+     "good-ventures-990pf-fy2024-xml",
+     "good-ventures-990pf-fy2025-render"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "PATTERN LABS TECH INC 108 W 13TH ST STE 100 WILMINGTON DE 19801 2024-03-05 4533333",
+    "quote_source": "good-ventures-990pf-fy2024-xml"
+   }
+  ]
+ },
+ {
+  "question": "5. Palisade Research: the two Coefficient / Open Philanthropy grant pages ($1,680,000 June 2024; $2,123,463 May 2025)",
+  "evaluator": "palisade",
+  "dimension": "F",
+  "verdict": "settled",
+  "finding": "Both pages are archived: 'Palisade Research — General Support', $1,680,000, award date June 2024, general support ('The grant amount was updated in August 2024'), and 'Palisade Research — General Support (2025)', two grants totaling $2,123,463, award date May 2025, general support ('This follows our June 2024 support'). Together they equal $3,803,463, the imported T10 figure, so T10 was not contradicted; T75 covers only the 2025 pair. Neither grant appears under Palisade's name in Good Ventures' 990-PF FY2024 or FY2025, so the payment leg (fiscal sponsor or another Open Philanthropy funding partner) stays open.",
+  "sources": [
+   {
+    "id": "op-palisade-2024",
+    "title": "Palisade Research — General Support (Wayback capture 2024-08-05 of the Open Philanthropy grant page)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20240805094803/https://www.openphilanthropy.org/grants/palisade-research-general-support/",
+    "published": "2024-06",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Amount $1,680,000; award date June 2024; general support; amount updated August 2024. Live coefficientgiving.org slug 404 in the 2026-08-30 capture."
+   },
+   {
+    "id": "op-palisade-2025",
+    "title": "Palisade Research — General Support (2025) (Wayback capture 2025-10-05 of the Open Philanthropy grant page)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20251005184735/https://www.openphilanthropy.org/grants/palisade-research-general-support-2025/",
+    "published": "2025-05",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Amount $2,123,463; award date May 2025; 'two grants totaling'; follows the June 2024 support."
+   }
+  ],
+  "spans": [
+   {
+    "source": "op-palisade-2024",
+    "span": "Open Philanthropy recommended a grant of $1,680,000 to Palisade Research for general support."
+   },
+   {
+    "source": "op-palisade-2024",
+    "span": "Amount: $1,680,000 Award Date: June 2024"
+   },
+   {
+    "source": "op-palisade-2024",
+    "span": "The grant amount was updated in August 2024."
+   },
+   {
+    "source": "op-palisade-2025",
+    "span": "Open Philanthropy recommended two grants totaling $2,123,463 to Palisade Research for general support."
+   },
+   {
+    "source": "op-palisade-2025",
+    "span": "Amount: $2,123,463 Award Date: May 2025"
+   },
+   {
+    "source": "op-palisade-2025",
+    "span": "This follows our June 2024 support"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "palisade",
+     "date": "2024-06",
+     "amount_usd": 1680000,
+     "measure": "recommendation",
+     "purpose": "general support (Open Philanthropy grant page, archived; amount updated August 2024)",
+     "source_url": "https://web.archive.org/web/20240805094803/https://www.openphilanthropy.org/grants/palisade-research-general-support/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "first of the two awards behind the $3,803,463 cumulative (T10)"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "T75",
+    "fields": {
+     "date": "2025-05",
+     "measure": "recommendation",
+     "purpose": "two grants totaling $2,123,463 for general support (Open Philanthropy grant page, archived)",
+     "source_url": "https://web.archive.org/web/20251005184735/https://www.openphilanthropy.org/grants/palisade-research-general-support-2025/",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "notes": "re-derived 2026-09-15 from the archived page; this is the 2025 pair only and does not contradict T10"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "T10",
+    "fields": {
+     "audit_status": "confirmed",
+     "measure": "recommendation",
+     "notes": "re-derivation 2026-09-15: $3,803,463 = $1,680,000 (June 2024) + $2,123,463 (May 2025, two grants), both on archived Open Philanthropy pages; the earlier 'contradicted' note was wrong. Keep superseded by the two per-award rows so it is not summed with them. Imported kevinnbass/metr-money-figure:EV19."
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "palisade.14",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.",
+    "sources": [
+     "op-palisade-2024",
+     "op-palisade-2025"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Open Philanthropy recommended two grants totaling $2,123,463 to Palisade Research for general support.",
+    "quote_source": "op-palisade-2025"
+   }
+  ]
+ },
+ {
+  "question": "6. SecureBio: Coefficient / Open Philanthropy grant amounts and dates",
+  "evaluator": "securebio",
+  "dimension": "F",
+  "verdict": "settled",
+  "finding": "Six archived Open Philanthropy grant pages: Biosecurity Research $1,420,937 over three years (November 2022); Pathogen Early Warning Project $570,000 (August 2023; updated October 2024 from $340,000); General Support $4,000,000 over three years (November 2024); Nucleic Acid Observatory $3,430,000 (February 2025); AI Benchmark Improvements $37,000 (March 2025); AI Biological Capabilities Dashboard $18,548 (March 2025), about $9.48M in all, of which only the two March 2025 awards ($55,548) sit in the AI focus area. Payments appear in Good Ventures' 990-PF under SECUREBIO INC: $1,420,937 (FY2023), $507,000 (FY2024), and $1,400,000, $230,000 and $2,600,000 (FY2025).",
+  "sources": [
+   {
+    "id": "op-securebio-biosecurity-2022",
+    "title": "SecureBio — Biosecurity Research (Wayback capture 2023-05-28)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20230528163412/https://www.openphilanthropy.org/grants/securebio-biosecurity-research/",
+    "published": "2022-11",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "$1,420,937 over three years; award date November 2022; focus area Biosecurity & Pandemic Preparedness."
+   },
+   {
+    "id": "op-securebio-early-warning-2023",
+    "title": "SecureBio — Pathogen Early Warning Project (Wayback capture 2025-06-19)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20250619192437/https://www.openphilanthropy.org/grants/securebio-pathogen-early-warning-project/",
+    "published": "2023-08",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "$570,000; award date August 2023; 'The grant amount was updated in October 2024' (the 2024-02-25 capture showed $340,000)."
+   },
+   {
+    "id": "op-securebio-general-2024",
+    "title": "SecureBio — General Support (Wayback capture 2025-05-13)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20250513041511/https://www.openphilanthropy.org/grants/securebio-general-support/",
+    "published": "2024-11",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "$4,000,000 over three years; award date November 2024; Biosecurity & Pandemic Preparedness."
+   },
+   {
+    "id": "op-securebio-nao-2025",
+    "title": "SecureBio — Nucleic Acid Observatory (Wayback capture 2025-04-26)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20250426075953/https://www.openphilanthropy.org/grants/securebio-nucleic-acid-observatory/",
+    "published": "2025-02",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "$3,430,000; award date February 2025; follows August 2023 support."
+   },
+   {
+    "id": "op-securebio-benchmark-2025",
+    "title": "SecureBio — AI Benchmark Improvements (Wayback capture 2025-07-11)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20250711085512/https://www.openphilanthropy.org/grants/securebio-ai-benchmark-improvements/",
+    "published": "2025-03",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "$37,000; award date March 2025; focus area Potential Risks from Advanced AI; expert baseline study for the Virology Capabilities Test."
+   },
+   {
+    "id": "op-securebio-dashboard-2025",
+    "title": "SecureBio — AI Biological Capabilities Dashboard (Wayback capture 2025-07-11)",
+    "publisher": "Open Philanthropy via Internet Archive",
+    "url": "https://web.archive.org/web/20250711091335/https://www.openphilanthropy.org/grants/securebio-ai-biological-capabilities-dashboard/",
+    "published": "2025-03",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Amount field $18,548, body text $18,550; award date March 2025; Potential Risks from Advanced AI."
+   },
+   {
+    "id": "good-ventures-990pf-fy2023-xml",
+    "title": "Good Ventures Foundation 990-PF, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441369349105564_public.xml",
+    "published": "2024",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "SECUREBIO INC, Cambridge MA, PC, 'RESEARCH AND ACTIVITIES FOR REDUCING RISKS FROM ADVANCED BIOTECHNOLOGIES', 1,420,937."
+   },
+   {
+    "id": "good-ventures-990pf-fy2024-xml",
+    "title": "Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+    "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+    "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "SECUREBIO INC, PC, 'PROJECT ON PATHOGEN EARLY WARNING SYSTEMS', 507,000."
+   },
+   {
+    "id": "good-ventures-990pf-fy2025-render",
+    "title": "Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render)",
+    "publisher": "ProPublica Nonprofit Explorer",
+    "url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "SECUREBIO INC: GENERAL SUPPORT 1,400,000; PUBLIC HEALTH EARLY WARNING SYSTEM FOR PANDEMIC PREPAREDNESS 230,000; GENERAL SUPPORT 2,600,000. Gzip-encoded endpoint, decoded locally; no fetch_text-checkable span."
+   }
+  ],
+  "spans": [
+   {
+    "source": "op-securebio-biosecurity-2022",
+    "span": "Open Philanthropy recommended a grant of $1,420,937 over three years to SecureBio"
+   },
+   {
+    "source": "op-securebio-biosecurity-2022",
+    "span": "Award Date: November 2022"
+   },
+   {
+    "source": "op-securebio-early-warning-2023",
+    "span": "Open Philanthropy recommended a grant of $570,000 to SecureBio"
+   },
+   {
+    "source": "op-securebio-early-warning-2023",
+    "span": "The grant amount was updated in October 2024"
+   },
+   {
+    "source": "op-securebio-general-2024",
+    "span": "Open Philanthropy recommended a grant of $4,000,000 over three years to SecureBio for general support."
+   },
+   {
+    "source": "op-securebio-general-2024",
+    "span": "Award Date: November 2024"
+   },
+   {
+    "source": "op-securebio-nao-2025",
+    "span": "Open Philanthropy recommended a grant of $3,430,000 to SecureBio to support its Nucleic Acid Observatory (NAO) program."
+   },
+   {
+    "source": "op-securebio-nao-2025",
+    "span": "Award Date: February 2025"
+   },
+   {
+    "source": "op-securebio-benchmark-2025",
+    "span": "Amount: $37,000 Award Date: March 2025"
+   },
+   {
+    "source": "op-securebio-dashboard-2025",
+    "span": "Amount: $18,548 Award Date: March 2025"
+   },
+   {
+    "source": "good-ventures-990pf-fy2023-xml",
+    "span": "PC RESEARCH AND ACTIVITIES FOR REDUCING RISKS FROM ADVANCED BIOTECHNOLOGIES 1420937"
+   },
+   {
+    "source": "good-ventures-990pf-fy2024-xml",
+    "span": "PC PROJECT ON PATHOGEN EARLY WARNING SYSTEMS 507000"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2022-11",
+     "amount_usd": 1420937,
+     "measure": "recommendation",
+     "purpose": "biosecurity research, three years (Open Philanthropy grant page, archived)",
+     "source_url": "https://web.archive.org/web/20230528163412/https://www.openphilanthropy.org/grants/securebio-biosecurity-research/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "paid by Good Ventures in FY2023 (see filing row)"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2023-08",
+     "amount_usd": 570000,
+     "measure": "recommendation",
+     "purpose": "pathogen early warning project (amount updated October 2024 from $340,000)",
+     "source_url": "https://web.archive.org/web/20250619192437/https://www.openphilanthropy.org/grants/securebio-pathogen-early-warning-project/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": ""
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2024-11",
+     "amount_usd": 4000000,
+     "measure": "recommendation",
+     "purpose": "general support over three years (Open Philanthropy grant page, archived)",
+     "source_url": "https://web.archive.org/web/20250513041511/https://www.openphilanthropy.org/grants/securebio-general-support/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "the 'Coefficient multi-year grant' in securebio.13"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2025-02",
+     "amount_usd": 3430000,
+     "measure": "recommendation",
+     "purpose": "Nucleic Acid Observatory program",
+     "source_url": "https://web.archive.org/web/20250426075953/https://www.openphilanthropy.org/grants/securebio-nucleic-acid-observatory/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "biosecurity program, not the AI evaluation team"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2025-03",
+     "amount_usd": 37000,
+     "measure": "recommendation",
+     "purpose": "AI benchmark improvements: expert baseline for the Virology Capabilities Test",
+     "source_url": "https://web.archive.org/web/20250711085512/https://www.openphilanthropy.org/grants/securebio-ai-benchmark-improvements/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "Potential Risks from Advanced AI focus area"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "coefficient",
+     "to": "securebio",
+     "date": "2025-03",
+     "amount_usd": 18548,
+     "measure": "recommendation",
+     "purpose": "AI biological capabilities dashboard (page body says $18,550)",
+     "source_url": "https://web.archive.org/web/20250711091335/https://www.openphilanthropy.org/grants/securebio-ai-biological-capabilities-dashboard/",
+     "source_type": "index",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "Potential Risks from Advanced AI focus area"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "securebio",
+     "date": "FY2023 (2022-07-01 to 2023-06-30)",
+     "amount_usd": 1420937,
+     "measure": "grant",
+     "purpose": "RESEARCH AND ACTIVITIES FOR REDUCING RISKS FROM ADVANCED BIOTECHNOLOGIES (990-PF Part XV)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441369349105564_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "payment leg of the November 2022 recommendation"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "securebio",
+     "date": "FY2024 (2023-07-01 to 2024-06-30)",
+     "amount_usd": 507000,
+     "measure": "grant",
+     "purpose": "PROJECT ON PATHOGEN EARLY WARNING SYSTEMS (990-PF Part XV)",
+     "source_url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "payment leg of the August 2023 recommendation (later updated to $570,000)"
+    }
+   },
+   {
+    "table": "transfers",
+    "row_id": "NEW",
+    "fields": {
+     "from": "good-ventures",
+     "to": "securebio",
+     "date": "FY2025 (2024-07-01 to 2025-06-30)",
+     "amount_usd": 4230000,
+     "measure": "grant",
+     "purpose": "three Part XV lines: GENERAL SUPPORT 1,400,000; PUBLIC HEALTH EARLY WARNING SYSTEM FOR PANDEMIC PREPAREDNESS 230,000; GENERAL SUPPORT 2,600,000",
+     "source_url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+     "source_type": "filing",
+     "snapshot": "2026-09-15",
+     "audit_status": "confirmed",
+     "class": "cash",
+     "notes": "split into three rows if the ledger prefers one line per filing entry; read from the gzipped ProPublica render"
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "securebio.24",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient / Open Philanthropy recommended six grants to SecureBio totaling about $9.48M from November 2022 to March 2025, including $4,000,000 general support over three years, paid by Good Ventures Foundation (an Anthropic investor's foundation) per its 990-PFs; only $55,548 of it sits in the AI focus area.",
+    "sources": [
+     "op-securebio-general-2024",
+     "op-securebio-benchmark-2025",
+     "good-ventures-990pf-fy2023-xml",
+     "good-ventures-990pf-fy2024-xml",
+     "good-ventures-990pf-fy2025-render"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Open Philanthropy recommended a grant of $4,000,000 over three years to SecureBio for general support.",
+    "quote_source": "op-securebio-general-2024"
+   }
+  ]
+ },
+ {
+  "question": "7. US CAISI and the EU AI Office: primary-source bounded negatives on lab money",
+  "evaluator": "caisi",
+  "dimension": "F",
+  "verdict": "partial",
+  "finding": "CAISI: the FY2026 Commerce-Justice-Science joint explanatory statement (docs.house.gov, 5 January 2026) provides no less than $55,000,000 for NIST's AI research and measurement science and, within it, up to $10,000,000 to expand NIST's AI efforts through the U.S. Center for AI Standards and Innovation, so the funding is appropriated public money; USAspending's award search returns nothing for 'Center for AI Standards and Innovation', 'CAISI' or 'AI Standards and Innovation' (FY2024 to 2026-09-15, all award types), but USAspending records federal outflows only and cannot show a lab paying NIST, and NIST's published agreement announcements (the August 2024 MOUs with Anthropic and OpenAI) describe an access framework with no payment terms; a NIST CRADA or reimbursable-agreement register was not searchable, so the negative is bounded to those two corpora. EU AI Office: settled, Commission Decision C(2024) 390 Article 8 funds the Office from DG CONNECT staff, Digital Europe Programme administrative appropriations and DEP Specific Objective 2 for operational expenditure, naming no non-Union source.",
+  "sources": [
+   {
+    "id": "cjs-fy2026-jes-division-a",
+    "title": "Division A - Commerce, Justice, Science, and Related Agencies Appropriations Act, 2026: joint explanatory statement (PDF)",
+    "publisher": "U.S. House of Representatives, docs.house.gov (Committee on Appropriations)",
+    "url": "https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf",
+    "published": "2026-01-05",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "NIST Scientific and Technical Research and Services, Artificial Intelligence paragraph. The PDF is scanned; pdftotext output is OCR-garbled, so the spans below reproduce the garbled text exactly as bench.review.fetch_text prints it (reads: 'The agreement provides no less than $55,000,000 for NIST's ongoing AI research and measurement science efforts. Within the funds provided, up to $10,000,000 is to expand on NIST's AI efforts through the U.S. Center for AI Standards and Innovation to advance AI research, standards, and testing'). congress.gov (S. Rept. 119-44, CRS R48643) and commerce.gov (NIST FY2026 budget submission) return HTTP 403 to fetch_text."
+   },
+   {
+    "id": "usaspending-caisi-search",
+    "title": "Award search API, spending_by_award (POST), keywords 'Center for AI Standards and Innovation' / 'CAISI' / 'AI Standards and Innovation'",
+    "publisher": "USAspending.gov",
+    "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+    "published": "2026-09-15",
+    "retrieved": "2026-09-15",
+    "source_type": "index",
+    "audit_status": "confirmed",
+    "note": "Three POST queries on 2026-09-15 (time period 2023-10-01 or 2024-10-01 to 2026-09-15; award types A, B, C, D and grants 02 to 11): results [] each time. USAspending records prime awards paid by federal agencies; a lab payment into NIST would be a reimbursable agreement or CRADA, which USAspending does not carry. POST-only endpoint; fetch_text cannot replay it."
+   },
+   {
+    "id": "nist-aisi-mou-2024",
+    "title": "U.S. AI Safety Institute Signs Agreements Regarding AI Safety Research, Testing and Evaluation With Anthropic and OpenAI",
+    "publisher": "NIST",
+    "url": "https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research",
+    "published": "2024-08-29",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Each company's Memorandum of Understanding establishes the framework for pre- and post-release model access and collaborative research; no payment, fee or cost-sharing term is stated. Page carries a June 2025 note that AISI was re-established as CAISI.",
+    "self_of": "caisi"
+   },
+   {
+    "id": "nist-caisi",
+    "title": "Center for AI Standards and Innovation (CAISI)",
+    "publisher": "NIST",
+    "url": "https://www.nist.gov/caisi",
+    "published": "2026",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Existing source id, re-fetched 2026-09-15: CAISI's goals include establishing voluntary agreements with private-sector developers and evaluators; the page lists a March 2026 CRADA with OpenMined (a nonprofit), no lab funding.",
+    "self_of": "caisi"
+   },
+   {
+    "id": "eurlex-ai-office-decision-pdf",
+    "title": "Commission Decision of 24 January 2024 establishing the European Artificial Intelligence Office, C/2024/1459 (Official Journal PDF)",
+    "publisher": "Publications Office of the European Union, EUR-Lex",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024D01459",
+    "published": "2024-02-14",
+    "retrieved": "2026-09-15",
+    "source_type": "filing",
+    "audit_status": "confirmed",
+    "note": "Article 8 Financing: (1) officials from DG CONNECT staff, (2) external statutory staff from a redeployment of Digital Europe Programme administrative support appropriations, (3) operational expenditure from DEP Specific Objective 2 'Artificial Intelligence'. Entered into force 21 February 2024. Complements the existing euaio-office-decision source (digital-strategy library page)."
+   }
+  ],
+  "spans": [
+   {
+    "source": "cjs-fy2026-jes-division-a",
+    "span": "T he agreement prov ides no less than $55,000,000 fo r N IST's ongoing A l research a nd measurement science efforts"
+   },
+   {
+    "source": "cjs-fy2026-jes-division-a",
+    "span": "up to $ I 0,000,000 is to expand on N IST's A l e ffo 11s th ro ugh the U.S. Cente r fo r A l Standards and Innovation"
+   },
+   {
+    "source": "nist-aisi-mou-2024",
+    "span": "Each company’s Memorandum of Understanding establishes the framework for the U.S. AI Safety Institute to receive access"
+   },
+   {
+    "source": "nist-caisi",
+    "span": "Establish voluntary agreements with private sector AI developers and evaluators"
+   },
+   {
+    "source": "eurlex-ai-office-decision-pdf",
+    "span": "Operational expenditure of the Office shall be covered by the financial resources allocated to Specific Objective 2"
+   },
+   {
+    "source": "eurlex-ai-office-decision-pdf",
+    "span": "redeployment of budget appropriations from the administrative support expenditure from the Digital Europe Programme"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "caisi",
+     "claim": "no award or agreement naming the Center for AI Standards and Innovation, CAISI or 'AI Standards and Innovation' in USAspending's award search (FY2024 to 2026-09-15, contracts and grants); NIST's published CAISI agreement announcements (Anthropic and OpenAI MOUs, August 2024) state no payment terms",
+     "searched": "USAspending spending_by_award API, three keyword queries, all award types; NIST news releases on CAISI agreements",
+     "snapshot": "2026-09-15",
+     "source_url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+     "source_type": "index",
+     "audit_status": "confirmed",
+     "notes": "bounded: USAspending carries federal outflows only, so it cannot show a lab paying NIST; NIST's CRADA and reimbursable-agreement records were not searchable; does not on its own satisfy F.9's filing-or-index negative for lab money"
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "NEW",
+    "fields": {
+     "evaluator": "euaio",
+     "claim": "Commission Decision C(2024) 390 Article 8 names only Union budget sources for the AI Office: DG CONNECT staff, Digital Europe Programme administrative appropriations for external staff, and DEP Specific Objective 2 for operational expenditure",
+     "searched": "Commission Decision of 24 January 2024 establishing the European AI Office, C/2024/1459, Article 8 (Official Journal PDF)",
+     "snapshot": "2026-09-15",
+     "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024D01459",
+     "source_type": "filing",
+     "audit_status": "confirmed",
+     "notes": "a legal act, not a ledger: it fixes the funding source but does not enumerate receipts; candidate filing-type negative for F.9/F.12 review of euaio.10"
+    }
+   },
+   {
+    "table": "negatives",
+    "row_id": "N18",
+    "fields": {
+     "notes": "re-check 2026-09-15: USAspending award search for CAISI/Center for AI Standards and Innovation returns no awards at all, so no CAISI contract to METR, Apollo or other private evaluators is visible there either; still imported pending a NIST procurement-record check"
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "caisi.17",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "The FY2026 Commerce-Justice-Science joint explanatory statement provides no less than $55,000,000 for NIST's AI research and measurement science and, within it, up to $10,000,000 to expand NIST's AI efforts through the U.S. Center for AI Standards and Innovation: appropriated public money.",
+    "sources": [
+     "cjs-fy2026-jes-division-a",
+     "caisi-funding"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "up to $ I 0,000,000 is to expand on N IST's A l e ffo 11s th ro ugh the U.S. Cente r fo r A l Standards and Innovation",
+    "quote_source": "cjs-fy2026-jes-division-a"
+   },
+   {
+    "id": "euaio.14",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Commission Decision C(2024) 390 Article 8 funds the AI Office from DG CONNECT staff, Digital Europe Programme administrative appropriations and DEP Specific Objective 2 'Artificial Intelligence' for operational expenditure, naming no non-Union source.",
+    "sources": [
+     "eurlex-ai-office-decision-pdf",
+     "euaio-office-decision"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "Operational expenditure of the Office shall be covered by the financial resources allocated to Specific Objective 2",
+    "quote_source": "eurlex-ai-office-decision-pdf"
+   }
+  ]
+ },
+ {
+  "question": "8. UK AISI: whether Alignment Project funds (including OpenAI money) are administered separately from AISI's evaluation work",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "verdict": "partial",
+  "finding": "AISI's own pages show the pool is not a single AISI-held fund: the Clarification Questions say the funding agreement is between the funder(s) and the host organisation only and funds are paid directly to the host organisation, the How to Apply page says the DSIT/AISI agreement is standard while 'other funders may issue different terms and conditions as part of their GFA', for-profits may receive venture investment rather than grants, and DSIT/AISI's own grants are made under section 5 of the Science and Technology Act 1965 with an 'AISI Research Lead' as grant manager; selection runs through Research Sponsors with a formal assessment panel independent of them. No page states whether the Alignment Project team is organisationally separate from AISI's evaluation teams, so separation from evaluation work is not established.",
+  "sources": [
+   {
+    "id": "alignment-project-how-to-apply",
+    "title": "How to apply",
+    "publisher": "The Alignment Project (UK AI Security Institute)",
+    "url": "https://alignmentproject.aisi.gov.uk/how-to-apply",
+    "published": "2025-07-30",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Applications through the DSIT Funding Portal; AISI notifies outcomes; payments monthly in arrears; 'The GFA for DSIT/AISI funded projects is standard and not subject to negotiation'; 'Other funders may issue different terms and conditions as part of their GFA'; contact aisialignmentproject@dsit.gov.uk.",
+    "self_of": "ukaisi"
+   },
+   {
+    "id": "alignment-project-cq-pdf",
+    "title": "The Alignment Project - Clarification Questions V2.0 (PDF)",
+    "publisher": "The Alignment Project (UK AI Security Institute)",
+    "url": "https://aisi.s3.eu-west-2.amazonaws.com/0825/The+Alignment+Project+-+Clarification+Questions+V2.0+(1).pdf",
+    "published": "2025-08",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "States the GFA is between the funder(s) and the host organisation only, funds are paid directly to the host organisation, the project is a coalition of funders some of which accept for-profit applicants, for-profits may receive venture capital investment while non-profits receive grants, eligible applications go to the Research Sponsors for review and a formal assessment panel independent of the Research Sponsors reviews full applications.",
+    "self_of": "ukaisi"
+   },
+   {
+    "id": "alignment-project-gfa-example",
+    "title": "Example of DSIT-AISI Grant Funding Agreement (PDF)",
+    "publisher": "Department for Science, Innovation and Technology / AI Security Institute",
+    "url": "https://aisi.s3.eu-west-2.amazonaws.com/0825/Example+of+DSIT-AISI+Grant+Funding+Agreement.pdf",
+    "published": "2025-08",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "'The Grant is made pursuant to section 5 of the Science and Technologies Act 1965' (sic); the Authority is the Secretary of State; grant manager 'AISI Research Lead'; monthly grant review and reporting.",
+    "self_of": "ukaisi"
+   },
+   {
+    "id": "alignment-project-about",
+    "title": "About the Alignment Project",
+    "publisher": "The Alignment Project (UK AI Security Institute)",
+    "url": "https://alignmentproject.aisi.gov.uk/about",
+    "published": "2025",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Existing source id, re-fetched 2026-09-15: 'A global fund of over £27 million'; backers include OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, Renaissance Philanthropy and public bodies; no statement about who administers the money or how it relates to AISI's evaluation teams.",
+    "self_of": "ukaisi"
+   },
+   {
+    "id": "aisi-alignment-60",
+    "title": "Funding 60 projects to advance AI alignment research",
+    "publisher": "UK AI Security Institute",
+    "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+    "published": "2026-02",
+    "retrieved": "2026-09-15",
+    "source_type": "self",
+    "audit_status": "confirmed",
+    "note": "Existing source id, re-fetched 2026-09-15: £27m total including £5.6m from OpenAI; Renaissance Philanthropy named among new partners; no administration statement.",
+    "self_of": "ukaisi"
+   }
+  ],
+  "spans": [
+   {
+    "source": "alignment-project-how-to-apply",
+    "span": "The GFA for DSIT/AISI funded projects is standard and not subject to negotiation."
+   },
+   {
+    "source": "alignment-project-how-to-apply",
+    "span": "Other funders may issue different terms and conditions as part of their GFA."
+   },
+   {
+    "source": "alignment-project-how-to-apply",
+    "span": "AISI will aim to notify applicants of the outcome within 3-5 weeks"
+   },
+   {
+    "source": "alignment-project-cq-pdf",
+    "span": "the Funding Agreement (GFA) will be between the funder(s) and the host organisation only"
+   },
+   {
+    "source": "alignment-project-cq-pdf",
+    "span": "funds will be directly paid to the host organisation"
+   },
+   {
+    "source": "alignment-project-cq-pdf",
+    "span": "For-profits may receive venture capital investment and not-for-profits receive grant funding."
+   },
+   {
+    "source": "alignment-project-cq-pdf",
+    "span": "a formal assessment panel, independent of the Research Sponsors, will review the full applications"
+   },
+   {
+    "source": "alignment-project-gfa-example",
+    "span": "The Grant is made pursuant to section 5 of the Science and Technologies Act 1965."
+   },
+   {
+    "source": "alignment-project-gfa-example",
+    "span": "Grant Manager AISI Research Lead"
+   },
+   {
+    "source": "alignment-project-about",
+    "span": "A global fund of over £27 million, dedicated to accelerating progress in AI alignment research."
+   },
+   {
+    "source": "aisi-alignment-60",
+    "span": "bring total funding available for alignment research to £27m, including £5.6m from OpenAI"
+   }
+  ],
+  "proposed_rows": [
+   {
+    "table": "transfers",
+    "row_id": "T46",
+    "fields": {
+     "notes": "re-check 2026-09-15: Alignment Project pages state the grant funding agreement is between the funder(s) and the host organisation and funds are paid directly to the host organisation; OpenAI's £5.6m therefore funds grants under OpenAI's (or its administrator's) own agreement rather than passing through AISI's budget; AISI runs selection. Keep as lab money into a pool AISI runs, not AISI income."
+    }
+   }
+  ],
+  "proposed_signals": [
+   {
+    "id": "ukaisi.15",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Alignment Project grants are contracted and paid by each funder directly to the host organisation; DSIT/AISI's own grants are statutory grants under section 5 of the Science and Technology Act 1965 managed by an AISI research lead, and other funders issue their own terms, so OpenAI's £5.6m is not received into AISI's budget even though AISI runs the selection.",
+    "sources": [
+     "alignment-project-cq-pdf",
+     "alignment-project-how-to-apply",
+     "alignment-project-gfa-example"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "the Funding Agreement (GFA) will be between the funder(s) and the host organisation only",
+    "quote_source": "alignment-project-cq-pdf"
+   }
+  ]
+ }
+]

@@ -8,7 +8,9 @@
    "apollo.02",
    "apollo.11",
    "apollo.12",
-   "apollo.15"
+   "apollo.15",
+   "apollo.16",
+   "apollo.17"
   ],
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v1.0",
@@ -26,7 +28,8 @@
    "apollo.03",
    "apollo.10",
    "apollo.13",
-   "apollo.14"
+   "apollo.14",
+   "apollo.18"
   ],
   "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
   "assessed": "2026-09-15",
