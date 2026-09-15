@@ -20,8 +20,10 @@ Independently re-fetched by me (2026-09-15):
 
 Grok-reported only (not independently re-fetched — flagged in row notes):
 - T22 (oaif->securebio $17.2M, was unaudited): SecureBio X post: "OpenAI Foundation has granted SecureBio Detection $17.2M".
-- T52 (meta->scale $14.3B): CNBC: Meta $14.3B for 49% of Scale (June 2025). Company-level investment, not eval funding. URL re-pointed off the Scale USAISI blog post.
-- T54 (nvidia->hfoai $12.93B): TNW/Fortune: Nvidia agreed to acquire Hugging Face for $12.93bn, announced 3 Sep 2026, pending close. Not evaluator grant funding.
+- T54 (nvidia->hfoai $12.93B): TNW/Fortune: Nvidia agreed to acquire Hugging Face for $12.93bn, announced 3 Sep 2026, pending close. Not evaluator grant funding. (My first browser task used a truncated TNW URL and 404'd; re-tasked with the full URL — pending.)
+
+Independently verified via delegated browser tasks (2026-09-15):
+- T52: CNBC (Jun 18 2025): "Meta has a 49% stake in Scale AI after investing $14.3 billion into the startup". 49% non-voting; deal closed the prior week; founder Alexandr Wang joined Meta. Company-level investment, not eval funding. (Truncated CNBC URL 404s; full article URL verified working.)
 
 Independently verified via delegated browser task (2026-09-15, TED notice 864574-2025 read live):
 - T41: LOT-0001 "CBRN Risk Modelling and Evaluation", tender value 1,434,080.00 EUR; winners FAR AI (leader), SecureBio, SaferAI; contract 4500135276, concluded 16/12/2025. Consortium lot total, not SaferAI's share.
