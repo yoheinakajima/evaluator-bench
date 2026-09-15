@@ -55,6 +55,10 @@ A score is a reading of the public record at a date. It is not an endorsement an
 
 The site's "Where we are" and "Paths" sections place frontier AI next to fifteen other assurance regimes coded in `data/industries/`: a stage ladder, ordered path strips with a nearest-analogue ranking, a trigger-response strength plot, and a mechanism matrix (who pays, selects, sees, publishes, oversees). `paper/CRITIQUE.md` records what was wrong with the first version and what changed. The paper draft is `paper/draft.md`.
 
+## Site structure
+
+`index.html` is the overview: the scored directory with adjustable weights, the stage ladder, the path, response, mechanism, exposure and funding-graph figures. Four index pages list each item type with summary data, and every entity, regime, and source has its own page. An entity page shows the scorecard (for evaluators), every ledger row in and out with source and audit status, one-hop neighbours, and the funding graph focused on that node. On any graph, hovering a name isolates it and its neighbours.
+
 ## Contributing evidence
 
 PRs change signals and sources, never scores directly. See `CONTRIBUTING.md`. A PR that changes an assessment without a signal on the same evaluator and dimension fails `verify`.
@@ -66,7 +70,7 @@ data/            sources, evaluators, signals, assessments, dimensions, presets,
 schema/          JSON Schema for each data type
 bench/           loader, verifier, ActiveGraph build, projections, CLI
 graph/           generated event log (committed; reproducible)
-dist/            generated site and JSON projection (committed; served by Pages)
+dist/            generated site (committed; served by Pages): index.html plus evaluators/, entities/, regimes/, sources/ index pages and a page per entity, regime, and source
 site/            HTML template
 paper/           paper concept, novelty check, related work, analysis notes
 tests/           pytest

@@ -142,6 +142,8 @@ def build(write: bool = True) -> dict:
         from .figures import write as write_figures
         write_figures(DIST, ROOT / "paper" / "figures")
         _write_site(bench, rows)
+        from .site import render_all
+        render_all(bench)
         _write_summary(g, bench)
     return {"graph": g, "bench": bench, "ids": ids}
 

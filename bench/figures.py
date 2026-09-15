@@ -170,10 +170,27 @@ def exposure_matrix() -> str:
     return "\n".join(o)
 
 
-def funding_graph() -> str:
-    """Figure 6: entities placed by distance from a lab, with money and role edges."""
+def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
+    """Figure 6: entities placed by distance from a lab, with money and role edges.
+
+    With ``focus`` set, the focused node, its one-hop neighbours and their edges
+    are drawn at full opacity and everything else is faded, which is the state
+    the hover interaction produces on the site. Nodes carry data-node and edges
+    carry data-from and data-to so a few lines of script can do the same live.
+    """
     from .ledger import load_ledger, distances
-    L = load_ledger(); E = L["entities"]; d = distances(L)
+    L = L or load_ledger(); E = L["entities"]; d = distances(L)
+    neigh = set()
+    if focus:
+        neigh.add(focus)
+        for t in L["transfers"]:
+            if t["from"] == focus: neigh.add(t["to"])
+            if t["to"] == focus: neigh.add(t["from"])
+        for r in L["relationships"]:
+            if r["subject"] == focus: neigh.add(r["object"])
+            if r["object"] == focus: neigh.add(r["subject"])
+    def nfade(e): return "" if (not focus or e in neigh) else ' opacity="0.12"'
+    def efade(a, b): return "" if (not focus or a == focus or b == focus) else ' opacity="0.08"'
     def col(e):
         k = E[e]["kind"]
         if k == "evaluator": return 5
@@ -188,10 +205,11 @@ def funding_graph() -> str:
     cw, pad, top, rh = 210, 12, 70, 19
     h = top + rh * max(len(v) for v in cols.values()) + 40; w = pad * 2 + cw * 6
     pos = {}
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="11">',
+    title = f"The funding graph around {E[focus]['name']}" if focus else "The funding graph, laid out by distance from a lab"
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" class="fundgraph" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="11">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
-         f'<text x="{pad}" y="22" font-size="16" fill="{INK}">The funding graph, laid out by distance from a lab</text>',
-         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles (investor, principal, board, employee, pays). Hover a line for the row; hover a name for its distance. Everything here is a row in data/ledger/.</text>']
+         f'<text x="{pad}" y="22" font-size="16" fill="{INK}">{_esc(title)}</text>',
+         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to isolate it and its neighbours; hover a line for the row. Every element is a row in data/ledger/.</text>']
     for c, names in cols.items():
         x = pad + c * cw
         o.append(f'<text x="{x}" y="{top - 12}" fill="{INK}" font-weight="600">{labels[c]}</text>')
@@ -202,17 +220,20 @@ def funding_graph() -> str:
         if t["from"] in pos and t["to"] in pos:
             (x1, y1), (x2, y2) = pos[t["from"]], pos[t["to"]]; x1 += min(len(nm(t["from"])) * 6, cw - 20); mx = (x1 + x2) / 2
             tip = f"{t['row_id']} {E[t['from']]['name']} to {E[t['to']]['name']}: {t['measure']}" + (f" ${float(t['amount_usd'])/1e6:.1f}M" if t["amount_usd"] else " (amount undisclosed)") + f", {t['date']}. {t['purpose']} [{t['audit_status']}]"
-            o.append(f'<path data-tip="{_esc(tip)}" d="M{x1},{y1 - 4} C{mx},{y1 - 4} {mx},{y2 - 4} {x2},{y2 - 4}" fill="none" stroke="#0F766E" stroke-width="{1.6 if t["audit_status"] == "confirmed" else 1}" stroke-opacity="{0.6 if t["audit_status"] == "confirmed" else 0.35}" stroke-dasharray="{"" if t["audit_status"] == "confirmed" else "4 3"}" style="cursor:pointer"/>')
+            o.append(f'<path class="edge" data-from="{t["from"]}" data-to="{t["to"]}" data-tip="{_esc(tip)}" d="M{x1},{y1 - 4} C{mx},{y1 - 4} {mx},{y2 - 4} {x2},{y2 - 4}" fill="none" stroke="#0F766E" stroke-width="{1.6 if t["audit_status"] == "confirmed" else 1}" stroke-opacity="{0.6 if t["audit_status"] == "confirmed" else 0.35}" stroke-dasharray="{"" if t["audit_status"] == "confirmed" else "4 3"}"{efade(t["from"], t["to"])} style="cursor:pointer"/>')
     for r in L["relationships"]:
         if r["subject"] in pos and r["object"] in pos and r["role"] in ("investor", "principal", "pays", "board", "employee", "observer", "founder", "advisor"):
-            (x1, y1), (x2, y2) = pos[r["subject"]], pos[r["object"]]
+            a, b = r["subject"], r["object"]
+            (x1, y1), (x2, y2) = pos[a], pos[b]
+            left = a if x1 <= x2 else b
             if x1 > x2: x1, x2, y1, y2 = x2, x1, y2, y1
-            x1 += min(len(nm(r["subject"] if pos[r["subject"]][0] <= pos[r["object"]][0] else r["object"])) * 6, cw - 20); mx = (x1 + x2) / 2
-            tip = f"{r['row_id']} {E[r['subject']]['name']}: {r['role']} at {E[r['object']]['name']}" + (f", {r['start']}" if r["start"] else "") + (f" to {r['end']}" if r["end"] else "") + f". {r['notes']} [{r['audit_status']}]"
-            o.append(f'<path data-tip="{_esc(tip)}" d="M{x1},{y1 - 4} C{mx},{y1 - 4} {mx},{y2 - 4} {x2},{y2 - 4}" fill="none" stroke="#B7791F" stroke-width="1" stroke-opacity="0.45" stroke-dasharray="{"" if r["audit_status"] == "confirmed" else "4 3"}" style="cursor:pointer"/>')
+            x1 += min(len(nm(left)) * 6, cw - 20); mx = (x1 + x2) / 2
+            tip = f"{r['row_id']} {E[a]['name']}: {r['role']} at {E[b]['name']}" + (f", {r['start']}" if r["start"] else "") + (f" to {r['end']}" if r["end"] else "") + f". {r['notes']} [{r['audit_status']}]"
+            o.append(f'<path class="edge" data-from="{a}" data-to="{b}" data-tip="{_esc(tip)}" d="M{x1},{y1 - 4} C{mx},{y1 - 4} {mx},{y2 - 4} {x2},{y2 - 4}" fill="none" stroke="#B7791F" stroke-width="1" stroke-opacity="0.45" stroke-dasharray="{"" if r["audit_status"] == "confirmed" else "4 3"}"{efade(a, b)} style="cursor:pointer"/>')
     for e, (x, y) in pos.items():
         dd = d.get(e); k = E[e]["kind"]
         tip = f"{E[e]['name']}: {k}; distance {'unattributed' if dd is None else int(dd)} from a lab. {E[e].get('notes','')}"
-        o.append(f'<g data-tip="{_esc(tip)}" style="cursor:pointer"><rect x="{x - 2}" y="{y - 12}" width="{min(len(nm(e)) * 6 + 6, cw - 14)}" height="15" fill="{PAPER}"/><text x="{x}" y="{y}" fill="{"#9B2C2C" if k == "lab" else INK}" font-weight="{"600" if k in ("lab", "evaluator") else "400"}">{_esc(nm(e))}</text></g>')
+        ring = f'<rect x="{x - 4}" y="{y - 13}" width="{min(len(nm(e)) * 6 + 10, cw - 10)}" height="17" fill="none" stroke="{INK}" stroke-width="1.2" rx="3"/>' if e == focus else ""
+        o.append(f'<g class="node" data-node="{e}" data-tip="{_esc(tip)}"{nfade(e)} style="cursor:pointer"><rect x="{x - 2}" y="{y - 12}" width="{min(len(nm(e)) * 6 + 6, cw - 14)}" height="15" fill="{PAPER}"/>{ring}<a href="{"../" if focus else ""}entity/{e}.html"><text x="{x}" y="{y}" fill="{"#9B2C2C" if k == "lab" else INK}" font-weight="{"600" if k in ("lab", "evaluator") or e == focus else "400"}">{_esc(nm(e))}</text></a></g>')
     o.append('</svg>')
     return "\n".join(o)
