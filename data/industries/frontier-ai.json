@@ -48,44 +48,71 @@
       "year": 2025,
       "kind": "access_expansion",
       "event": "EU Code of Practice: at least 20 business days and minimally guardrailed versions for external evaluators (enforceable 2026).",
-      "source": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/"
+      "source": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/",
+      "strength": 2
     },
     {
       "year": 2025,
       "kind": "standards",
       "event": "EU GPAI Code of Practice signed; AEF-1 published in December.",
-      "source": "https://aievaluatorforum.org/"
+      "source": "https://aievaluatorforum.org/",
+      "strength": 2
     },
     {
       "year": 2025,
       "kind": "trigger",
       "event": "FrontierMath funding disclosure failure.",
-      "source": "https://epoch.ai/latest/openai-and-frontiermath"
+      "source": "https://epoch.ai/latest/openai-and-frontiermath",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Benchmark funder and data access undisclosed under contract"
     },
     {
       "year": 2026,
       "kind": "access_expansion",
       "event": "Anthropic and OpenAI pledge embedded evaluators with employee-level access and publication rights.",
-      "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"
+      "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/",
+      "strength": 1
     },
     {
       "year": 2026,
       "kind": "independence_rule",
       "event": "Illinois SB 315: auditor and developer may not hold a financial interest in each other (audits from 2028).",
-      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"
+      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+      "strength": 2
     },
     {
       "year": 2026,
       "kind": "mandate",
       "event": "Illinois SB 315 mandates annual independent audits from 2028; EU Code enforceable in August.",
-      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"
+      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+      "strength": 3
     },
     {
       "year": 2026,
       "kind": "trigger",
       "event": "OpenAI agent swarm breaches Hugging Face; first on-site third-party incident investigation.",
-      "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+      "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Evaluation agents breached a third party; safeguards and monitoring failed"
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US/EU",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "note": "Mixed payers in practice (labs, philanthropy, governments); labs select and scope; embedded access pledged Sept 2026, not yet in force; nobody oversees evaluators."
+  }
 }

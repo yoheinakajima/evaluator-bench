@@ -23,32 +23,56 @@
       "year": 1903,
       "kind": "standards",
       "event": "UL publishes its first standard (tin-clad fire doors).",
-      "source": "https://en.wikipedia.org/wiki/UL_(safety_organization)"
+      "source": "https://en.wikipedia.org/wiki/UL_(safety_organization)",
+      "strength": 2
     },
     {
       "year": 1972,
       "kind": "mandate",
       "event": "Consumer Product Safety Act creates the CPSC.",
-      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Act"
+      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Act",
+      "strength": 3
     },
     {
       "year": 1988,
       "kind": "accreditation",
       "event": "OSHA Nationally Recognized Testing Laboratory program accredits third-party labs, ending single-lab dominance.",
-      "source": "https://www.osha.gov/nationally-recognized-testing-laboratory-program"
+      "source": "https://www.osha.gov/nationally-recognized-testing-laboratory-program",
+      "strength": 3
     },
     {
       "year": 2007,
       "kind": "trigger",
       "event": "Lead-paint toy recalls.",
-      "source": "https://en.wikipedia.org/wiki/2007_Chinese_export_recalls"
+      "source": "https://en.wikipedia.org/wiki/2007_Chinese_export_recalls",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Certified products found non-compliant; recalls of tens of millions of units"
     },
     {
       "year": 2008,
       "kind": "mandate",
       "event": "CPSIA requires third-party testing of children's products by CPSC-accepted laboratories.",
-      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Improvement_Act"
+      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Improvement_Act",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Manufacturer picks and pays an accredited lab; OSHA and CPSC accredit the labs."
+  }
 }

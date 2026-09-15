@@ -16,25 +16,30 @@
       "year": 1926,
       "kind": "mandate",
       "event": "Air Commerce Act: federal certification of aircraft and pilots.",
-      "source": "https://en.wikipedia.org/wiki/Air_Commerce_Act"
+      "source": "https://en.wikipedia.org/wiki/Air_Commerce_Act",
+      "strength": 3
     },
     {
       "year": 1956,
       "kind": "trigger",
       "event": "Grand Canyon mid-air collision.",
-      "source": "https://en.wikipedia.org/wiki/1956_Grand_Canyon_mid-air_collision"
+      "source": "https://en.wikipedia.org/wiki/1956_Grand_Canyon_mid-air_collision",
+      "harm": "deaths",
+      "trigger_criterion": "128 deaths"
     },
     {
       "year": 1958,
       "kind": "mandate",
       "event": "Federal Aviation Act creates the FAA.",
-      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Act_of_1958"
+      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Act_of_1958",
+      "strength": 3
     },
     {
       "year": 1965,
       "kind": "standards",
       "event": "Federal Aviation Regulations codified.",
-      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Regulations"
+      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Regulations",
+      "strength": 2
     },
     {
       "year": 2005,
@@ -46,14 +51,35 @@
       "year": 2018,
       "kind": "trigger",
       "event": "Boeing 737 MAX crashes (2018, 2019).",
-      "source": "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"
+      "source": "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings",
+      "harm": "deaths",
+      "trigger_criterion": "346 deaths across two crashes"
     },
     {
       "year": 2020,
       "kind": "delegation_reform",
       "event": "Aircraft Certification, Safety, and Accountability Act: FAA approval of ODA unit members, expanded whistleblower protection, limits on delegation.",
-      "source": "https://en.wikipedia.org/wiki/Aircraft_Certification,_Safety,_and_Accountability_Act"
+      "source": "https://en.wikipedia.org/wiki/Aircraft_Certification,_Safety,_and_Accountability_Act",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "none",
+      "oversees": "regulator"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "R",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Delegated certification staff now approved by the FAA after 2020."
+  }
 }

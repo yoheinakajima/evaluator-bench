@@ -16,19 +16,23 @@
       "year": 1906,
       "kind": "mandate",
       "event": "Federal Meat Inspection Act.",
-      "source": "https://en.wikipedia.org/wiki/Federal_Meat_Inspection_Act"
+      "source": "https://en.wikipedia.org/wiki/Federal_Meat_Inspection_Act",
+      "strength": 3
     },
     {
       "year": 1993,
       "kind": "trigger",
       "event": "Jack in the Box E. coli outbreak.",
-      "source": "https://en.wikipedia.org/wiki/1993_Jack_in_the_Box_E._coli_outbreak"
+      "source": "https://en.wikipedia.org/wiki/1993_Jack_in_the_Box_E._coli_outbreak",
+      "harm": "deaths",
+      "trigger_criterion": "4 deaths, hundreds ill"
     },
     {
       "year": 1996,
       "kind": "mandate",
       "event": "HACCP rule for meat and poultry.",
-      "source": "https://en.wikipedia.org/wiki/Hazard_analysis_and_critical_control_points"
+      "source": "https://en.wikipedia.org/wiki/Hazard_analysis_and_critical_control_points",
+      "strength": 3
     },
     {
       "year": 2000,
@@ -40,14 +44,35 @@
       "year": 2008,
       "kind": "trigger",
       "event": "Melamine adulteration in China.",
-      "source": "https://en.wikipedia.org/wiki/2008_Chinese_milk_scandal"
+      "source": "https://en.wikipedia.org/wiki/2008_Chinese_milk_scandal",
+      "harm": "deaths",
+      "trigger_criterion": "6 infant deaths, 300,000 ill"
     },
     {
       "year": 2011,
       "kind": "accreditation",
       "event": "FSMA authorizes FDA accreditation of third-party certification bodies.",
-      "source": "https://en.wikipedia.org/wiki/FDA_Food_Safety_Modernization_Act"
+      "source": "https://en.wikipedia.org/wiki/FDA_Food_Safety_Modernization_Act",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "none",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Producer pays private certifiers; FDA accredits them; government inspection alongside."
+  }
 }

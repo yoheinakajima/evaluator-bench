@@ -14,38 +14,64 @@
       "year": 2018,
       "kind": "trigger",
       "event": "Cambridge Analytica revelations.",
-      "source": "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal"
+      "source": "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Undisclosed data use affecting tens of millions of users"
     },
     {
       "year": 2021,
       "kind": "mandate",
       "event": "NYC Local Law 144 requires bias audits of automated employment decision tools (effective 2023).",
-      "source": "https://en.wikipedia.org/wiki/Local_Law_144"
+      "source": "https://en.wikipedia.org/wiki/Local_Law_144",
+      "strength": 3
     },
     {
       "year": 2022,
       "kind": "access_expansion",
       "event": "DSA Article 40 grants vetted researchers data access to very large platforms.",
-      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act",
+      "strength": 3
     },
     {
       "year": 2022,
       "kind": "mandate",
       "event": "EU Digital Services Act Article 37 requires annual independent audits of very large platforms.",
-      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act",
+      "strength": 3
     },
     {
       "year": 2023,
       "kind": "independence_rule",
       "event": "DSA delegated regulation on audits: auditor independence, limits on prior non-audit services, rotation.",
-      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"
+      "source": "https://en.wikipedia.org/wiki/Digital_Services_Act",
+      "strength": 3
     },
     {
       "year": 2025,
       "kind": "trigger",
       "event": "Published analysis of 116 LL144 bias audits finds shallow and inconsistent audits.",
-      "source": "https://dl.acm.org/doi/10.1145/3715275.3732004"
+      "source": "https://dl.acm.org/doi/10.1145/3715275.3732004",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Published audits found shallow and inconsistent"
     }
   ],
-  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper",
+  "jurisdiction": "EU/US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "none",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Platform pays and selects under independence constraints; Commission receives full reports."
+  }
 }

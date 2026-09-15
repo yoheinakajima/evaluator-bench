@@ -123,6 +123,8 @@ def build(write: bool = True) -> dict:
         (DIST / "bench.json").write_text(json.dumps(bench, indent=1, ensure_ascii=False) + "\n")
         from .timeline import write as write_timeline
         rows = write_timeline(DIST)
+        from .figures import write as write_figures
+        write_figures(DIST, ROOT / "paper" / "figures")
         _write_site(bench, rows)
         _write_summary(g, bench)
     return {"graph": g, "bench": bench, "ids": ids}
@@ -137,6 +139,9 @@ def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     inds = {p.stem: json.loads(p.read_text()) for p in (ROOT / "data" / "industries").glob("*.json")}
     ordered = [inds[k] for k in ORDER if k in inds] + [inds[k] for k in sorted(set(inds) - set(ORDER))]
     html = html.replace("/*__INDUSTRIES_JSON__*/null", json.dumps(ordered, ensure_ascii=False))
+    for name in ("paths", "responses", "mechanisms"):
+        fp = DIST / f"{name}.svg"
+        html = html.replace(f"<!--__FIG_{name.upper()}__-->", fp.read_text() if fp.exists() else "")
     html = html.replace("/*__STAGES_JSON__*/null", json.dumps({"stages": stages_meta(), "other": NON_STAGE_KINDS}, ensure_ascii=False))
     (DIST / "index.html").write_text(html)
 

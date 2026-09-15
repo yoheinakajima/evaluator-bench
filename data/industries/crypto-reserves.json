@@ -14,7 +14,9 @@
       "year": 2014,
       "kind": "trigger",
       "event": "Mt. Gox collapse.",
-      "source": "https://en.wikipedia.org/wiki/Mt._Gox"
+      "source": "https://en.wikipedia.org/wiki/Mt._Gox",
+      "harm": "financial_loss",
+      "trigger_criterion": "Losses above $1B"
     },
     {
       "year": 2014,
@@ -26,7 +28,9 @@
       "year": 2022,
       "kind": "trigger",
       "event": "FTX collapse; a prior attestation had not covered liabilities.",
-      "source": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
+      "source": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+      "harm": "financial_loss",
+      "trigger_criterion": "Losses above $1B; prior attestation omitted liabilities"
     },
     {
       "year": 2022,
@@ -38,8 +42,27 @@
       "year": 2023,
       "kind": "mandate",
       "event": "EU MiCA imposes safeguarding and reporting duties on crypto-asset service providers, applying from 2024.",
-      "source": "https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets"
+      "source": "https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets",
+      "strength": 2
     }
   ],
-  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper",
+  "jurisdiction": "International/EU",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "public",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "note": "Exchange picks and pays; attestations on exchange-supplied snapshots; MiCA adds custody duties."
+  }
 }

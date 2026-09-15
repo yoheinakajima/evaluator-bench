@@ -16,25 +16,37 @@
       "year": 1957,
       "kind": "mandate",
       "event": "IAEA established.",
-      "source": "https://en.wikipedia.org/wiki/International_Atomic_Energy_Agency"
+      "source": "https://en.wikipedia.org/wiki/International_Atomic_Energy_Agency",
+      "strength": 2
     },
     {
       "year": 1970,
       "kind": "access_expansion",
       "event": "NPT safeguards agreements give the IAEA inspection rights in signatory states.",
-      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"
+      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards",
+      "strength": 3
     },
     {
       "year": 1974,
       "kind": "independence_rule",
       "event": "Energy Reorganization Act splits the AEC into the NRC (regulation) and ERDA (promotion).",
-      "source": "https://en.wikipedia.org/wiki/Energy_Reorganization_Act_of_1974"
+      "source": "https://en.wikipedia.org/wiki/Energy_Reorganization_Act_of_1974",
+      "strength": 4
+    },
+    {
+      "year": 1978,
+      "kind": "access_expansion",
+      "event": "NRC resident inspector program places regulator staff permanently on site at every operating plant.",
+      "source": "https://en.wikipedia.org/wiki/Nuclear_Regulatory_Commission",
+      "strength": 3
     },
     {
       "year": 1979,
       "kind": "trigger",
       "event": "Three Mile Island accident.",
-      "source": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"
+      "source": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Partial meltdown; oversight failure documented by Kemeny Commission"
     },
     {
       "year": 1979,
@@ -46,14 +58,35 @@
       "year": 1991,
       "kind": "trigger",
       "event": "Iraq's undeclared program discovered after the Gulf War.",
-      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"
+      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Undeclared program missed by safeguards"
     },
     {
       "year": 1997,
       "kind": "access_expansion",
       "event": "Additional Protocol expands IAEA access to undeclared sites and information.",
-      "source": "https://en.wikipedia.org/wiki/Additional_Protocol"
+      "source": "https://en.wikipedia.org/wiki/Additional_Protocol",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "International/US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "R",
+      "access": "deep",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "R",
+      "access": "embedded",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "note": "Licensees pay NRC fees; resident inspectors sit on site; INPO peer reviews stay confidential and are tied to insurance."
+  }
 }

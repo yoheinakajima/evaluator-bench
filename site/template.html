@@ -193,6 +193,11 @@
   .ldetail .close{float:right;font-size:13px;background:none;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;color:var(--muted)}
   .ltip{position:fixed;z-index:20;max-width:320px;background:var(--ink);color:#fff;font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.18)}
   @media (hover:none){.ltip{display:none!important}}
+  .fig{overflow-x:auto;background:var(--panel);border:1px solid var(--rule);border-radius:6px;margin-top:12px}
+  .fig svg{display:block;max-width:100%;height:auto;min-width:640px}
+  .figlive{font-size:13.5px;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-top:none;border-radius:0 0 6px 6px;padding:8px 12px;max-width:100%;min-height:0}
+  .figlive:empty{display:none}
+  [data-tip]:hover rect,[data-tip]:hover circle{filter:brightness(1.12)}
 </style>
 </head>
 <body>
@@ -205,6 +210,7 @@
     <a href="#signals">Signals</a>
     <a href="#cases">Cases</a>
     <a href="#where">Where we are</a>
+    <a href="#paths">Paths</a>
     <a href="#method">Method</a>
     <a href="https://github.com/yoheinakajima/evaluator-bench">Repo</a>
   </nav>
@@ -230,6 +236,7 @@
       <div class="sliders" id="sliders"></div>
       <div class="weights-foot">
         <span id="wsum"></span>
+        <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="gate"> Gate on floors: any 0 caps the score at 40, any 1 at 60</label>
         <button class="linkbtn" id="reset">Reset to lab procurement</button>
       </div>
     </div>
@@ -331,7 +338,24 @@
         <a href="timeline.svg" download>Download the static figure</a>
       </div>
       <div id="ldetail" class="ldetail" hidden></div>
-      <p class="lead" style="margin-top:18px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules follow public failures within a few years; the stretch before the first failure is where a regime's shape is decided. The oversight column is the one AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
+      <p class="lead" style="margin-top:14px">A caveat the ladder cannot show: it records first arrivals, so a one-clause rule in one state fills a cell the same way Sarbanes-Oxley does, and it hides the order things happened in. The three views below fix both.</p>
+      <p class="lead" style="margin-top:10px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules follow public failures within a few years; the stretch before the first failure is where a regime's shape is decided. The oversight column is the one AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
+    </div>
+  </section>
+
+  <section id="paths">
+    <div class="wrap">
+      <h2>Paths, responses, and mechanisms</h2>
+      <p class="lead">Three views that keep the nuance the ladder drops. Hover or tap any glyph, point, or cell to read what it stands for and where it comes from.</p>
+      <h3 style="margin-top:22px">The order, not the calendar</h3>
+      <p class="lead">Each regime as a sequence of moves. Reversals show up in red, the assessed party absorbing the assessment function in amber. The right column ranks regimes by how closely their opening moves match frontier AI's so far, using edit distance over the sequences.</p>
+      <div class="fig" id="figPaths"><!--__FIG_PATHS__--></div><div class="figlive" aria-live="polite"></div>
+      <h3 style="margin-top:26px">Fast is not the same as strong</h3>
+      <p class="lead">Every trigger incident paired with the next rule that followed. Most responses arrive within three years, and most are mandates or standards rather than structural changes; the two structural responses in the set are the PCAOB after Enron and lab inspection under Good Laboratory Practice after the IBT fraud. Frontier AI's two responses so far score 2 and 1.</p>
+      <div class="fig" id="figResponses"><!--__FIG_RESPONSES__--></div><div class="figlive" aria-live="polite"></div>
+      <h3 style="margin-top:26px">Who pays, selects, sees, publishes, and watches</h3>
+      <p class="lead">The configuration the ladder cannot show. Read the AI row against the others: the only other regime with the same five-cell pattern is dietary supplements, the regime that removed pre-market review by statute.</p>
+      <div class="fig" id="figMech"><!--__FIG_MECHANISMS__--></div><div class="figlive" aria-live="polite"></div>
     </div>
   </section>
 
@@ -386,7 +410,11 @@ let filters = {domain:new Set(), type:new Set()}; let query = ""; let sortKey = 
 const expanded = new Set();
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function score(e){ let num=0, den=0; for(const d of DIMS){ num += weights[d.k]*(e.values[d.k]/4); den += weights[d.k]; } return den ? Math.round(num/den*100) : 0; }
+let gated = false;
+function rawScore(e, w){ let num=0, den=0; for(const d of DIMS){ num += w[d.k]*(e.values[d.k]/4); den += w[d.k]; } return den ? Math.round(num/den*100) : 0; }
+function score(e){ let v = rawScore(e, weights); if(gated){ const mn = Math.min(...DIMS.map(d=>e.values[d.k])); if(mn===0) v = Math.min(v,40); else if(mn===1) v = Math.min(v,60); } return v; }
+function floorOf(e){ let best=null; for(const d of DIMS){ if(best===null || e.values[d.k] < e.values[best.k]) best=d; } return `${best.label.toLowerCase()} ${e.values[best.k]}/4`; }
+function rangeOf(e){ const vs = Object.values(PRESETS).map(w=>rawScore(e,w)); return `${Math.min(...vs)} to ${Math.max(...vs)}`; }
 const band = v => v>=70?"":(v>=45?"mid":"low");
 const fmt = n => Number.isInteger(n)? String(n) : n.toFixed(1);
 
@@ -406,6 +434,7 @@ function setPreset(name){ activePreset = name; document.querySelectorAll(".chip[
 function applyPreset(name){ weights = {...PRESETS[name]}; setPreset(name); for(const d of DIMS){ $("#w_"+d.k).value = weights[d.k]; $("#o_"+d.k).textContent = fmt(weights[d.k]); } updateSum(); renderRows(); }
 document.querySelectorAll(".chip[data-preset]").forEach(b=>b.addEventListener("click",()=>applyPreset(b.dataset.preset)));
 $("#reset").addEventListener("click",()=>applyPreset("lab"));
+$("#gate").addEventListener("change",ev=>{ gated = ev.target.checked; renderRows(); });
 
 function renderFilterChips(){
   const dwrap=$("#domainFilters");
@@ -444,7 +473,7 @@ function renderRows(){
         <span class="name">${esc(e.name)}<small>${TYPES[e.type]}, ${esc(e.hq)}</small></span>
         <span class="tags">${e.domains.map(d=>`<span class="tag">${d}</span>`).join("")}</span>
         <span class="barwrap"><span class="bar ${band(v)}"><i style="width:${v}%"></i></span></span>
-        <span class="score">${v}<small>${nf} for, ${na} against</small></span>
+        <span class="score">${v}<small>floor ${floorOf(e)}</small></span>
         <span class="caret" aria-hidden="true">&#8964;</span>
       </button>
       <div class="row-detail" id="d_${e.id}">${detail(e)}</div>`;
@@ -474,7 +503,7 @@ function detail(e){
       <div class="meta">Confidence <span class="conf ${e.confidence}">${e.confidence}</span><span class="gid">${esc(e.graph_id)}</span></div>
       <p class="summary">${esc(e.summary)}</p>
       <div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>
-      <div class="prov">Scores by preset: ${Object.entries(e.scores).map(([k,v])=>`${esc(BENCH.presets[k].label)} ${v}`).join("; ")}. Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
+      <div class="prov">Range across presets: ${rangeOf(e)}. Weakest dimension: ${floorOf(e)}. Scores by preset: ${Object.entries(e.scores).map(([k,v])=>`${esc(BENCH.presets[k].label)} ${v}`).join("; ")}. Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
     </div>
     <div>${blocks}</div>
   </div>`;
@@ -548,6 +577,15 @@ const STAGEMETA = /*__STAGES_JSON__*/null;
     });
   }
   window.addEventListener("scroll", hideTip, {passive:true});
+  // figure tooltips: hover on pointer devices, tap writes the text under the figure on touch
+  document.querySelectorAll(".fig").forEach(fig=>{
+    const live = fig.nextElementSibling;
+    fig.querySelectorAll("[data-tip]").forEach(el=>{
+      el.addEventListener("mouseenter", ()=>showTip(el, esc(el.getAttribute("data-tip"))));
+      el.addEventListener("mouseleave", hideTip);
+      el.addEventListener("click", ()=>{ if(live){ live.textContent = el.getAttribute("data-tip"); } });
+    });
+  });
 })();
 </script>
 </body>

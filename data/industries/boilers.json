@@ -21,26 +21,49 @@
       "year": 1905,
       "kind": "trigger",
       "event": "Grover Shoe Factory boiler explosion kills 58.",
-      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"
+      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster",
+      "harm": "deaths",
+      "trigger_criterion": "58 deaths"
     },
     {
       "year": 1908,
       "kind": "mandate",
       "event": "Massachusetts enacts the first state boiler law.",
-      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"
+      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster",
+      "strength": 3
     },
     {
       "year": 1914,
       "kind": "standards",
       "event": "First ASME Boiler Code published.",
-      "source": "https://en.wikipedia.org/wiki/ASME_Boiler_and_Pressure_Vessel_Code"
+      "source": "https://en.wikipedia.org/wiki/ASME_Boiler_and_Pressure_Vessel_Code",
+      "strength": 2
     },
     {
       "year": 1919,
       "kind": "accreditation",
       "event": "National Board of Boiler and Pressure Vessel Inspectors commissions inspectors across jurisdictions.",
-      "source": "https://en.wikipedia.org/wiki/National_Board_of_Boiler_and_Pressure_Vessel_Inspectors"
+      "source": "https://en.wikipedia.org/wiki/National_Board_of_Boiler_and_Pressure_Vessel_Inspectors",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "O",
+      "selects": "O",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "O",
+      "selects": "O",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Insurer employs the inspector; National Board commissions inspectors."
+  }
 }

@@ -22,20 +22,42 @@
       "year": 1968,
       "kind": "accreditation",
       "event": "IACS founded to harmonize class societies.",
-      "source": "https://en.wikipedia.org/wiki/International_Association_of_Classification_Societies"
+      "source": "https://en.wikipedia.org/wiki/International_Association_of_Classification_Societies",
+      "strength": 2
     },
     {
       "year": 1999,
       "kind": "trigger",
       "event": "Erika sinks after changing class; 2002 Prestige sinks.",
-      "source": "https://en.wikipedia.org/wiki/MV_Erika"
+      "source": "https://en.wikipedia.org/wiki/MV_Erika",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Vessel changed class shortly before loss; oil spill"
     },
     {
       "year": 2009,
       "kind": "independence_rule",
       "event": "EU Regulation 391/2009 sets recognition and independence rules for classification societies acting for flag states.",
-      "source": "https://en.wikipedia.org/wiki/Classification_society"
+      "source": "https://en.wikipedia.org/wiki/Classification_society",
+      "strength": 3
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "International/EU",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "self-reg"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "summary",
+      "oversees": "regulator"
+    },
+    "note": "Owner picks and pays class; flag states and the EU recognize societies; IACS transfer rules."
+  }
 }

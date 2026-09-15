@@ -27,20 +27,42 @@
       "year": 2003,
       "kind": "trigger",
       "event": "Ephedra-linked deaths, including a professional athlete.",
-      "source": "https://en.wikipedia.org/wiki/Ephedra"
+      "source": "https://en.wikipedia.org/wiki/Ephedra",
+      "harm": "deaths",
+      "trigger_criterion": "Deaths linked to ephedra including a professional athlete"
     },
     {
       "year": 2006,
       "kind": "publication_rule",
       "event": "Dietary Supplement and Nonprescription Drug Consumer Protection Act requires serious adverse event reporting.",
-      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_and_Nonprescription_Drug_Consumer_Protection_Act"
+      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_and_Nonprescription_Drug_Consumer_Protection_Act",
+      "strength": 1
     },
     {
       "year": 2007,
       "kind": "standards",
       "event": "FDA current good manufacturing practice rule for supplements.",
-      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994"
+      "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994",
+      "strength": 2
     }
   ],
-  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "summary",
+      "oversees": "none"
+    },
+    "note": "Voluntary marks; no oversight of verifiers."
+  }
 }

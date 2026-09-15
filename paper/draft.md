@@ -1,6 +1,6 @@
 # Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against Two Centuries of Assurance Regimes
 
-Draft v0.1, 14 September 2026. All numbers regenerate from this repository at the pinned commit. Dataset B milestone years are spot-checked against secondary sources and need primary-source verification before submission.
+Draft v0.2, 14 September 2026. All numbers regenerate from this repository at the pinned commit. Dataset B milestone years are spot-checked against secondary sources and need primary-source verification before submission.
 
 ## Abstract
 
@@ -45,9 +45,15 @@ Milestones are coded by kind: voluntary_assurance, trigger, mandate, standards, 
 
 ## 4. Method
 
+Instrument strength and trigger criterion. Every rule milestone carries a strength from 1 (disclosure or voluntary text) to 4 (structural change: separation of functions, rotation, a new inspecting body, payment rerouted, delegation reclaimed). Every trigger carries a harm class and must meet a criterion set before looking at what followed: ten or more deaths, losses above one billion dollars, or a documented integrity failure of the assurance itself.
+
 Stage ladder. Seven stages are defined from milestone kinds: S1 voluntary assurance, S2 trigger, S3 mandate, S4 standards, S5 oversight of assessors, S6 independence rules (independence_rule, delegation_reform, payer_reform), S7 access and publication rules. A regime reaches a stage in the year of the first qualifying milestone. Delegation, payer shifts toward the assessed party, and rollbacks are recorded and displayed but do not advance a stage.
 
 Lags. For each trigger we compute the years to the next milestone of any rule kind (mandate, standards, accreditation, independence_rule, delegation_reform, payer_reform, publication_rule). For each regime we compute the interval from its first milestone to its first S6 milestone.
+
+Paths. Each regime's milestones are ordered by year and written as a sequence of kinds with consecutive repeats collapsed. Similarity between frontier AI's sequence and each regime's opening is one minus the normalized Levenshtein distance over openings of comparable length.
+
+Mechanisms. Each regime is coded before reform and now on who pays the assessor, who selects it, what it sees, what the public reads, and who oversees the assessor.
 
 Scores. Dataset A values are weighted under four presets (lab procurement, regulator selection, public trust, equal) and reported with the distribution per dimension and per organization type.
 
@@ -87,6 +93,20 @@ Across all 26, mean scores by dimension are scope control 2.9, method transparen
 
 Signals split 132 for and 95 against. The most frequent against-signal across organizations is that the developer pays for the evaluation of its own model. The most frequent for-signal is publication of a method or a tool.
 
+### 5.6 Paths: which history AI's path resembles
+
+Written as sequences, the regimes do not share a ladder. Financial audit reads mandate, rollback, voluntary, mandate, access, trigger, standards, delegation, trigger, oversight, independence. Nuclear opens with a mandate and adds voluntary peer review twenty years later. Dietary supplements opens with a rollback. Frontier AI's sequence so far is voluntary, delegation, voluntary, trigger, standards, access, trigger, mandate, independence, access.
+
+The opening most similar to AI's is credit ratings (similarity 0.50): voluntary assurance, then the assessed party becomes the client, then a trigger, then oversight without independence, then a second trigger, then independence rules. The next nearest are financial audit and crash safety (0.36 and 0.40) and crypto proof of reserves (0.40), which shares AI's voluntary-trigger opening and then collapsed. The comparison is over openings only and the sequences are short, so this is a hypothesis generator, not a result; it says the nearest analogue is the regime where regulators licensed a payer-conflicted assessor and then met 2008.
+
+### 5.7 Fast responses are mostly weak responses
+
+Pairing each trigger with the next rule and its strength changes the reading of the lag result. Sixteen of the twenty-four non-AI triggers were answered within three years, with a mean instrument strength of 2.9 on the 1 to 4 scale. Two of the sixteen were structural: the PCAOB after Enron, and inspection of testing labs under Good Laboratory Practice after the Industrial Bio-Test fraud. Two triggers were followed by nothing in the dataset (the Target breach; the 2025 analysis of hiring-tool audits). Frontier AI's two triggers have so far been answered by instruments of strength 2 and 1: the EU access floor and the embedded-evaluator pledges.
+
+### 5.8 Mechanisms: the AI row
+
+On the five mechanism questions, frontier AI today reads: the assessed party pays, the assessed party selects, access is shallow, the public reads summaries, and nobody oversees the assessors. Fourteen of the fifteen non-AI regimes have an oversight cell filled. The one other regime with AI's exact five-cell pattern is dietary supplements. The two regimes that moved payment and selection to a party with opposing exposure, boiler inspection and crash testing, are also the two where the assessed party never regained control of scope.
+
 ## 6. Discussion
 
 What the history predicts. If frontier AI follows the pattern in Dataset B, the two or three years after its first public failures are when its assurance regime takes shape, and the shape will be set by rules written in response to those failures rather than by the voluntary arrangements that preceded them. The instruments in motion now (the EU Code, Illinois SB 315, the embedded-evaluator pledges) fit the pattern in timing. They do not yet fill the S5 cell. Every mature regime in the dataset that kept a payer-conflicted model built an inspector of inspectors; AI has none, and the EU Code's "adequately qualified" and Illinois's "demonstrated competence" are the words regimes use before they build one.
@@ -96,6 +116,8 @@ Who pays the referee. The historical answer is that the referee is paid by the t
 Three design options the data point to, in increasing order of departure from current practice: (1) accredited lab-paid evaluation with a registry and inspection of evaluators, on the PCAOB and NRTL pattern; (2) mandatory publication of evaluator operating conditions per engagement, on the trial-registration pattern, which AEF-1 already specifies and no regulator yet requires; (3) an evaluator funded by parties exposed to model failure, on the boiler-insurance or IIHS pattern.
 
 ## 7. Limitations
+
+Triggers were partly selected with hindsight in v0; v0.2 adds an outcome-independent criterion but has not yet enumerated qualifying incidents that were followed by nothing, so the lag results remain biased toward responsiveness. Path similarity is computed over short sequences and openings only. Mechanism coding is single-coder and categorical.
 
 Dataset B uses year granularity and secondary sources in v0; ordering within a year is lost (Illinois SB 315 preceded the July 2026 incident). Regime selection is judgmental; the four added regimes reduce selection on success but do not remove it. Coding milestone kinds involves judgment at the margins (PDUFA is coded as a payer shift toward the assessed party rather than an independence reform). Dataset A scores public records only; private contract terms could raise or lower any score, and evaluators can move their scores by publishing their terms. Version 0 is single-coder. The AI section describes a moving target and is pinned to a date and a commit.
 
@@ -108,6 +130,9 @@ Frontier AI has compressed into four years a passage other industries took decad
 ## Figures and tables
 
 - Figure 1. Stage ladder: `paper/figures/stage-ladder.svg` (generated).
+- Figure 2. Path strips with similarity to AI: `paper/figures/paths.svg`.
+- Figure 3. Trigger-to-rule lag against instrument strength: `paper/figures/responses.svg`.
+- Figure 4. Mechanism matrix: `paper/figures/mechanisms.svg`.
 - Table 1. Trigger-to-rule lags: `python -m bench industries`.
 - Table 2. Dataset A scorecard under four presets: `python -m bench scores <preset>`.
 - Table 3. Per-dimension means by organization type: computed in `paper/NOTES.md`.

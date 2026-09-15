@@ -32,6 +32,7 @@ python -m bench scores lab    # ranked table for a preset (lab | regulator | pub
 python -m bench inspect metr  # provenance chain for one evaluator, optionally --dim A
 python -m bench industries    # cross-industry lifecycle table: trigger-to-rule lags
 python -m bench timeline      # stage ladder (Figure 1); build writes dist/timeline.svg
+python -m bench paths         # path signatures, nearest analogues to AI, trigger-response strength, mechanisms
 ```
 
 ## The rubric
@@ -46,7 +47,7 @@ A score is a reading of the public record at a date. It is not an endorsement an
 
 ## Where we are
 
-The site's "Where we are" section and `paper/figures/stage-ladder.svg` place frontier AI on a seven-stage ladder next to fifteen other assurance regimes coded in `data/industries/`. The paper draft that reads the two datasets together is `paper/draft.md`.
+The site's "Where we are" and "Paths" sections place frontier AI next to fifteen other assurance regimes coded in `data/industries/`: a stage ladder, ordered path strips with a nearest-analogue ranking, a trigger-response strength plot, and a mechanism matrix (who pays, selects, sees, publishes, oversees). `paper/CRITIQUE.md` records what was wrong with the first version and what changed. The paper draft is `paper/draft.md`.
 
 ## Contributing evidence
 

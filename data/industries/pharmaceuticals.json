@@ -16,25 +16,31 @@
       "year": 1906,
       "kind": "mandate",
       "event": "Pure Food and Drug Act: labeling and adulteration rules.",
-      "source": "https://en.wikipedia.org/wiki/Pure_Food_and_Drug_Act"
+      "source": "https://en.wikipedia.org/wiki/Pure_Food_and_Drug_Act",
+      "strength": 2
     },
     {
       "year": 1937,
       "kind": "trigger",
       "event": "Elixir sulfanilamide kills more than 100 people.",
-      "source": "https://en.wikipedia.org/wiki/Elixir_sulfanilamide"
+      "source": "https://en.wikipedia.org/wiki/Elixir_sulfanilamide",
+      "harm": "deaths",
+      "trigger_criterion": "More than 100 deaths"
     },
     {
       "year": 1938,
       "kind": "mandate",
       "event": "Federal Food, Drug, and Cosmetic Act: pre-market safety review.",
-      "source": "https://en.wikipedia.org/wiki/Federal_Food,_Drug,_and_Cosmetic_Act"
+      "source": "https://en.wikipedia.org/wiki/Federal_Food,_Drug,_and_Cosmetic_Act",
+      "strength": 3
     },
     {
       "year": 1961,
       "kind": "trigger",
       "event": "Thalidomide birth defects.",
-      "source": "https://en.wikipedia.org/wiki/Thalidomide_scandal"
+      "source": "https://en.wikipedia.org/wiki/Thalidomide_scandal",
+      "harm": "deaths",
+      "trigger_criterion": "Thousands of birth defects and deaths"
     },
     {
       "year": 1962,
@@ -46,25 +52,30 @@
       "year": 1962,
       "kind": "mandate",
       "event": "Kefauver-Harris Amendment: proof of efficacy, controlled trials, informed consent.",
-      "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment"
+      "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment",
+      "strength": 3
     },
     {
       "year": 1962,
       "kind": "standards",
       "event": "Adequate and well-controlled trials required as the evidentiary standard.",
-      "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment"
+      "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment",
+      "strength": 2
     },
     {
       "year": 1976,
       "kind": "trigger",
       "event": "Industrial Bio-Test Laboratories found to have falsified safety studies for hundreds of products.",
-      "source": "https://en.wikipedia.org/wiki/Industrial_Bio-Test_Laboratories"
+      "source": "https://en.wikipedia.org/wiki/Industrial_Bio-Test_Laboratories",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Testing lab falsified safety studies"
     },
     {
       "year": 1978,
       "kind": "accreditation",
       "event": "Good Laboratory Practice regulations govern the conduct and inspection of nonclinical testing labs.",
-      "source": "https://en.wikipedia.org/wiki/Good_laboratory_practice"
+      "source": "https://en.wikipedia.org/wiki/Good_laboratory_practice",
+      "strength": 4
     },
     {
       "year": 1992,
@@ -76,14 +87,34 @@
       "year": 1998,
       "kind": "independence_rule",
       "event": "FDA rule on financial disclosure by clinical investigators (21 CFR Part 54).",
-      "source": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-54"
+      "source": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-54",
+      "strength": 1
     },
     {
       "year": 2007,
       "kind": "publication_rule",
       "event": "FDAAA mandates trial registration and results reporting on ClinicalTrials.gov.",
-      "source": "https://en.wikipedia.org/wiki/Food_and_Drug_Administration_Amendments_Act_of_2007"
+      "source": "https://en.wikipedia.org/wiki/Food_and_Drug_Administration_Amendments_Act_of_2007",
+      "strength": 2
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "US",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "none",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "R",
+      "access": "deep",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "note": "Sponsor funds trials and user fees; FDA reviews and inspects labs under GLP; trials registered publicly."
+  }
 }

@@ -14,7 +14,8 @@
       "year": 1844,
       "kind": "mandate",
       "event": "UK Joint Stock Companies Act requires audited balance sheets; auditors need not be accountants.",
-      "source": "https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1844"
+      "source": "https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1844",
+      "strength": 3
     },
     {
       "year": 1856,
@@ -32,31 +33,37 @@
       "year": 1900,
       "kind": "mandate",
       "event": "UK Companies Act 1900 restores mandatory annual audit.",
-      "source": "https://en.wikipedia.org/wiki/Companies_Act_1900"
+      "source": "https://en.wikipedia.org/wiki/Companies_Act_1900",
+      "strength": 3
     },
     {
       "year": 1933,
       "kind": "mandate",
       "event": "US Securities Act and 1934 Exchange Act require independent audits for listed companies after the 1929 crash.",
-      "source": "https://en.wikipedia.org/wiki/Securities_Act_of_1933"
+      "source": "https://en.wikipedia.org/wiki/Securities_Act_of_1933",
+      "strength": 3
     },
     {
       "year": 1934,
       "kind": "publication_rule",
       "event": "Audited financial statements filed publicly with the SEC.",
-      "source": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934"
+      "source": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
+      "strength": 2
     },
     {
       "year": 1938,
       "kind": "trigger",
       "event": "McKesson & Robbins fraud: auditors had not verified inventory or receivables.",
-      "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)"
+      "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Audit failed to detect fabricated inventory and receivables"
     },
     {
       "year": 1939,
       "kind": "standards",
       "event": "First Statements on Auditing Procedure: physical inventory observation and receivables confirmation become required.",
-      "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)"
+      "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)",
+      "strength": 2
     },
     {
       "year": 1990,
@@ -68,26 +75,49 @@
       "year": 2001,
       "kind": "trigger",
       "event": "Enron collapse; Arthur Andersen had provided audit and consulting services to the same client.",
-      "source": "https://en.wikipedia.org/wiki/Enron_scandal"
+      "source": "https://en.wikipedia.org/wiki/Enron_scandal",
+      "harm": "financial_loss",
+      "trigger_criterion": "Losses above $1B; auditor complicit"
     },
     {
       "year": 2002,
       "kind": "accreditation",
       "event": "PCAOB registers and inspects audit firms.",
-      "source": "https://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board"
+      "source": "https://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board",
+      "strength": 4
     },
     {
       "year": 2002,
       "kind": "independence_rule",
       "event": "Sarbanes-Oxley: PCAOB created to inspect auditors; audit and most consulting separated; lead partner rotation every five years; audit committee independence.",
-      "source": "https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act"
+      "source": "https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act",
+      "strength": 4
     },
     {
       "year": 2014,
       "kind": "independence_rule",
       "event": "EU audit reform: mandatory firm rotation and a cap on non-audit fees for public-interest entities.",
-      "source": "https://en.wikipedia.org/wiki/Audit_Regulation_(EU)"
+      "source": "https://en.wikipedia.org/wiki/Audit_Regulation_(EU)",
+      "strength": 4
     }
   ],
-  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper",
+  "jurisdiction": "UK/US/EU",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "public",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "deep",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "note": "Audit committee of independent directors selects since 2002; PCAOB inspects auditors."
+  }
 }

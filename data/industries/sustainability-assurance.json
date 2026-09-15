@@ -14,7 +14,8 @@
       "year": 1997,
       "kind": "standards",
       "event": "Global Reporting Initiative founded; voluntary reporting framework.",
-      "source": "https://en.wikipedia.org/wiki/Global_Reporting_Initiative"
+      "source": "https://en.wikipedia.org/wiki/Global_Reporting_Initiative",
+      "strength": 1
     },
     {
       "year": 2003,
@@ -26,20 +27,42 @@
       "year": 2015,
       "kind": "trigger",
       "event": "Volkswagen emissions scandal undermines self-reported environmental claims.",
-      "source": "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal"
+      "source": "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal",
+      "harm": "integrity_failure",
+      "trigger_criterion": "Self-reported emissions data falsified"
     },
     {
       "year": 2022,
       "kind": "mandate",
       "event": "EU Corporate Sustainability Reporting Directive requires limited assurance, phasing in from 2024.",
-      "source": "https://en.wikipedia.org/wiki/Corporate_Sustainability_Reporting_Directive"
+      "source": "https://en.wikipedia.org/wiki/Corporate_Sustainability_Reporting_Directive",
+      "strength": 2
     },
     {
       "year": 2024,
       "kind": "standards",
       "event": "ISSA 5000 assurance standard issued.",
-      "source": "https://en.wikipedia.org/wiki/International_Auditing_and_Assurance_Standards_Board"
+      "source": "https://en.wikipedia.org/wiki/International_Auditing_and_Assurance_Standards_Board",
+      "strength": 2
     }
   ],
-  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"
+  "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper",
+  "jurisdiction": "EU/International",
+  "mechanisms": {
+    "before": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "public",
+      "oversees": "none"
+    },
+    "now": {
+      "pays": "A",
+      "selects": "A",
+      "access": "shallow",
+      "publishes": "public",
+      "oversees": "regulator"
+    },
+    "note": "Company picks and pays; limited assurance; audit regulators apply from 2024."
+  }
 }
