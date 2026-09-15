@@ -1,13 +1,13 @@
 {
  "distances": {
+  "thinking-machines": 0,
+  "anthropic": 0,
+  "amazon": 0,
+  "microsoft": 0,
   "meta": 0,
+  "openai": 0,
   "xai": 0,
   "google": 0,
-  "thinking-machines": 0,
-  "openai": 0,
-  "amazon": 0,
-  "anthropic": 0,
-  "microsoft": 0,
   "tallinn": 1,
   "moskovitz": 1,
   "macroscopic": 1,

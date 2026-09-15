@@ -149,7 +149,9 @@ def build(write: bool = True) -> dict:
 
 def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     tpl = (SITE / "template.html").read_text()
-    html = tpl.replace("/*__BENCH_JSON__*/null", json.dumps(bench, ensure_ascii=False))
+    from .site import release_banner
+    html = tpl.replace("<!--__RELEASE_BANNER__-->", release_banner(""))
+    html = html.replace("/*__BENCH_JSON__*/null", json.dumps(bench, ensure_ascii=False))
     svg_path = DIST / "timeline.svg"
     html = html.replace("<!--__TIMELINE_SVG__-->", svg_path.read_text() if svg_path.exists() else "")
     html = html.replace("/*__TIMELINE_JSON__*/null", json.dumps(timeline_rows or [], ensure_ascii=False))
