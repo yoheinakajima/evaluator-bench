@@ -1,3 +1,9 @@
+## 15 Sep 2026: Governance anchor 1 reworded (curator-level rubric fix)
+
+- **Governance anchor 1 reworded** (curator-level change, recorded in `paper/audits/AUDIT-8.md`): "VC-backed for-profit with no published COI policy" -> "Private for-profit with no published COI policy." Two of the six organizations at that anchor (EquiStamp, Nemesys) have undisclosed capital structures; the anchor no longer asserts venture backing without evidence. No values move.
+
+Note: the caisi.17 hand transcription is a separate, still-open correction (PR #5); it is not part of this change.
+
 ## 15 Sep 2026, late evening: re-derivation of eight open questions from primary records
 
 Recorded in `paper/audits/AUDIT-7.md`. Every fact traced to a URL opened 2026-09-15; raw pass in `leads/rederive.json`, applied by `leads/apply_rederive.py`.

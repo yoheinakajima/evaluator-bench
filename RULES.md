@@ -36,7 +36,7 @@ Anchors: 0 owned or controlled by a frontier developer or a lab investor (a stak
 
 ## 2. Governance (G)
 
-Anchors: 0 unit or subsidiary of a lab or a lab's investor; 1 venture-backed for-profit with no published conflict-of-interest policy; 2 for-profit or public benefit corporation with a published conflict policy; 3 nonprofit or public body with a conflict policy; 4 nonprofit or public body with a published conflict policy, an independent board, and external review.
+Anchors: 0 unit or subsidiary of a lab or a lab's investor; 1 private for-profit with no published conflict-of-interest policy; 2 for-profit or public benefit corporation with a published conflict policy; 3 nonprofit or public body with a conflict policy; 4 nonprofit or public body with a published conflict policy, an independent board, and external review.
 
 - **G.1 Legal form alone.** "Nonprofit", "academic", or "public body" with no published conflict policy floors at 2, not 3. Anchor 3 requires the policy.
 - **G.2 What counts as a conflict policy.** A published policy floors at 3 (nonprofit or public body) or 2 (for-profit or PBC) only if it names at least two of: recusal for financial interests, no outcome-contingent fees, no investments or side grants from evaluated labs, disclosure of lab-linked revenue. Statutory civil-service conflict rules count for a public body.
