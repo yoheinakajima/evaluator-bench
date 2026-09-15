@@ -7,7 +7,7 @@ license = {text = "Apache-2.0"}
 dependencies = ["activegraph==1.10.0", "jsonschema==4.26.0", "markdown==3.9"]
 
 [project.optional-dependencies]
-dev = ["pytest>=7"]
+dev = ["pytest>=7", "pyyaml>=6"]  # pyyaml: tests parse CITATION.cff as YAML
 dockets = ["epistemedia @ git+https://github.com/yoheinakajima/epistemedia"]  # optional: enables local docket validation; the build degrades gracefully without it
 
 [project.scripts]

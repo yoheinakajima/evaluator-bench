@@ -134,3 +134,11 @@ def test_unranked_entries_show_not_ranked_not_a_band():
 def test_critique_linked_from_method():
     html = (DIST / "method" / "index.html").read_text()
     assert "CRITIQUE.md" in html and "what the authors already know is weak" in html.lower()
+
+def test_citation_block_present():
+    import yaml
+    d = yaml.safe_load((ROOT / "CITATION.cff").read_text())
+    assert d["cff-version"] == "1.2.0"
+    assert d["license"] == "Apache-2.0"
+    html = (DIST / "paper" / "index.html").read_text()
+    assert "citblock" in html and "citbtn" in html and "Copy citation" in html
