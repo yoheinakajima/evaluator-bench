@@ -21,6 +21,9 @@ def _git(*a): return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, 
 def changed_signals(base: str) -> list[dict]:
     d = load(strict=False); out = []
     for path in _git("diff", "--name-only", base, "--", "data/signals").split():
+        # A deletion is part of the PR diff but has no working-tree payload to review.
+        if not (ROOT / path).is_file():
+            continue
         old = _git("show", f"{base}:{path}")
         try: old_ids = {s["id"]: s for s in json.loads(old)} if old.strip() else {}
         except json.JSONDecodeError: old_ids = {}
@@ -31,6 +34,9 @@ def changed_signals(base: str) -> list[dict]:
 def changed_assessments(base: str) -> list[tuple]:
     out = []
     for path in _git("diff", "--name-only", base, "--", "data/assessments").split():
+        # Deletions have no current assessment to compare or review.
+        if not (ROOT / path).is_file():
+            continue
         old = _git("show", f"{base}:{path}")
         old_v = {a["dimension"]: a for a in json.loads(old)} if old.strip() else {}
         for a in json.loads((ROOT / path).read_text()):

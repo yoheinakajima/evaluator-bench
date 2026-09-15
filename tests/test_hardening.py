@@ -39,6 +39,16 @@ def test_missing_dimensions_raise():
         score({k: 4 for k in "FGPASRMX"}, {"F": 0})
 
 
+def test_machine_review_skips_deleted_records(monkeypatch, tmp_path):
+    """A PR may retire a record; the review job must not try to read its deleted path."""
+    from bench import review
+    monkeypatch.setattr(review, "ROOT", tmp_path)
+    monkeypatch.setattr(review, "load", lambda strict=False: {"signals": {}})
+    monkeypatch.setattr(review, "_git", lambda *args: "data/signals/retired.json\ndata/assessments/retired.json\n")
+    assert review.changed_signals("base") == []
+    assert review.changed_assessments("base") == []
+
+
 def test_c10_tier1_gate_on_dataset():
     d = load.load()
     tiers = {s["id"]: s.get("source_type") for s in d["sources"].values()}
