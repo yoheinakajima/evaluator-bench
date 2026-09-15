@@ -31,3 +31,8 @@ def test_build_is_deterministic_for_dist():
         return h.hexdigest()
     build(write=True); a = digest(); build(write=True); b = digest()
     assert a == b
+
+def test_status_page_shows_hop0_next_to_hop01():
+    html = (DIST / "status" / "index.html").read_text()
+    assert 'direct inflow from a lab (hop 0)</td><td class="num">12 of 26' in html
+    assert 'hop 0 or 1)</td><td class="num">17 of 26' in html

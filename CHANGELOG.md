@@ -48,7 +48,9 @@ Correction window open through 29 Sep 2026.
 - **Fail-closed verifier.** JSONSchema is a hard dependency; duplicate ids,
   bad dates, and post-clock records are errors, not warnings.
 - **Single coder, LLM-assisted.** Built by one curator with Claude (Anthropic);
-  curator conflicts pending confirmation in DISCLOSURE.md.
+  curator disclosure completed 2026-09-15 in DISCLOSURE.md (small public
+  holdings in Google and Meta, private SpaceX holding with xAI exposure;
+  shared-funders field is best-effort "none known").
 
 ## Known limits (v0)
 

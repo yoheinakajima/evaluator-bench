@@ -1,102 +1,102 @@
 [
   {
-    "evaluator": "epoch",
-    "dimension": "F",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "dimension": "F",
+    "evaluator": "epoch",
+    "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (contract, imported row T35). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
     "signals": [
       "epoch.01",
       "epoch.05",
       "epoch.11",
       "epoch.13"
     ],
-    "rationale": "Anchor 2 on funding given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
+    "value": 2
   },
   {
-    "evaluator": "epoch",
-    "dimension": "G",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "G",
+    "evaluator": "epoch",
+    "rationale": "Anchor 3 on governance given the cited signals.",
     "signals": [
       "epoch.06"
     ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   },
   {
-    "evaluator": "epoch",
-    "dimension": "P",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "P",
+    "evaluator": "epoch",
+    "rationale": "Anchor 3 on personnel given the cited signals.",
     "signals": [
       "epoch.09"
     ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   },
   {
-    "evaluator": "epoch",
-    "dimension": "A",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "A",
+    "evaluator": "epoch",
+    "rationale": "Anchor 2 on access given the cited signals.",
     "signals": [
       "epoch.07"
     ],
-    "rationale": "Anchor 2 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 2
   },
   {
-    "evaluator": "epoch",
-    "dimension": "S",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "S",
+    "evaluator": "epoch",
+    "rationale": "Anchor 3 on scope given the cited signals.",
     "signals": [
       "epoch.08"
     ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   },
   {
-    "evaluator": "epoch",
-    "dimension": "R",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "R",
+    "evaluator": "epoch",
+    "rationale": "Anchor 2 on publication given the cited signals.",
     "signals": [
       "epoch.02",
       "epoch.03"
     ],
-    "rationale": "Anchor 2 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 2
   },
   {
-    "evaluator": "epoch",
-    "dimension": "M",
-    "value": 4,
     "anchor": 4,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "M",
+    "evaluator": "epoch",
+    "rationale": "Anchor 4 on methods given the cited signals.",
     "signals": [
       "epoch.04"
     ],
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 4
   },
   {
-    "evaluator": "epoch",
-    "dimension": "X",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "X",
+    "evaluator": "epoch",
+    "rationale": "Anchor 3 on products given the cited signals.",
     "signals": [
       "epoch.10"
     ],
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   }
 ]

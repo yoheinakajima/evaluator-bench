@@ -1,98 +1,98 @@
 [
   {
-    "evaluator": "mlcommons",
-    "dimension": "F",
-    "value": 1,
     "anchor": 1,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "F",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
     "signals": [
       "mlcommons.01"
     ],
-    "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 1
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "G",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "G",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 2 on governance given the cited signals.",
     "signals": [
       "mlcommons.04"
     ],
-    "rationale": "Anchor 2 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 2
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "P",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "P",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 2 on personnel given the cited signals.",
     "signals": [
       "mlcommons.07"
     ],
-    "rationale": "Anchor 2 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 2
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "A",
-    "value": 2,
     "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "A",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 2 on access given the cited signals.",
     "signals": [
       "mlcommons.03"
     ],
-    "rationale": "Anchor 2 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 2
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "S",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "S",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 3 on scope given the cited signals.",
     "signals": [
       "mlcommons.05"
     ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "R",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "R",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 3 on publication given the cited signals.",
     "signals": [
       "mlcommons.06"
     ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "M",
-    "value": 4,
     "anchor": 4,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "M",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 4 on methods given the cited signals.",
     "signals": [
       "mlcommons.02"
     ],
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 4
   },
   {
-    "evaluator": "mlcommons",
-    "dimension": "X",
-    "value": 3,
     "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "X",
+    "evaluator": "mlcommons",
+    "rationale": "Anchor 3 on products given the cited signals.",
     "signals": [
       "mlcommons.08"
     ],
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "value": 3
   }
 ]
