@@ -11,8 +11,8 @@ Built at 2026-09-14T00:00:00Z (frozen clock; run_id evaluator-bench-build)
 | negative_evidence | 18 |
 | score | 112 |
 | signal | 280 |
-| source | 86 |
+| source | 87 |
 
-Relations: 2773
+Relations: 2774
 
 Rebuild: `python -m bench build`. The event log is reproducible; a diff means data/ changed.

@@ -84,6 +84,12 @@ def main(argv=None) -> int:
         for e in errs: print("  -", e)
         return 1
     d = load(strict=False)
+    nq = sum(1 for s in d["signals"].values() if s.get("quote")); print(f"verify: quotes on {nq}/{len(d['signals'])} signals (a quote is an exact span from the source; fill them as sources are re-derived)")
+    for s in d["sources"].values():
+        if s.get("source_type") == "docket":
+            from .certificate import verify as cverify
+            slug = s["id"].replace("docket-", ""); errs = [e for e in cverify(slug) if not e.startswith("unsigned")]
+            print(f"verify: docket source {s['id']}: " + ("certificate binding valid" if not errs else "CERTIFICATE PROBLEM: " + "; ".join(errs)))
     print(f"verify: ok ({len(d['sources'])} sources, {len(d['signals'])} signals, {len(d['assessments'])} assessments, {len(d['evaluators'])} evaluators)")
     return 0
 

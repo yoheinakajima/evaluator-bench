@@ -9,7 +9,8 @@
       "apollo-norms"
     ],
     "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    "curator": "yohei/claude v0",
+    "quote": "We do not accept work where compensation is contingent upon the outcome"
   },
   {
     "id": "apollo.02",
@@ -119,7 +120,8 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+    "as_of": "2026-09-14",
+    "quote": "raised a Seed round led by 50Y"
   },
   {
     "id": "apollo.11",

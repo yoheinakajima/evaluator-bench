@@ -1,0 +1,51 @@
+{
+ "format": "epistemedia-certificate-v0.1",
+ "subject": {
+  "docket_slug": "metr-lab-money",
+  "question": "Does METR accept money from the frontier AI companies whose models it evaluates?",
+  "proposal_sha256": "3a4b2097c42e9ca0b57688c38315a362786d8613077ed560965b583c129e0869",
+  "proposal_id": "em:research-proposal:sha256:baab785aa55891240b95900e72685d33a3bbfb74ae1c043d61c217f3909bbbb2"
+ },
+ "verdict": "reviewed-as-bounded",
+ "scope": "Manual v0 review of a docket drafted from Evaluator Bench evidence; binds a verdict to proposal bytes; carries no evidential credit on epistemedia.org until submitted and reviewed there.",
+ "reviewer": {
+  "kind": "manual",
+  "identity": "Yohei Nakajima (Epistemedia operator)",
+  "model": null
+ },
+ "checks": [
+  {
+   "check": "structural-validation",
+   "result": "pass",
+   "note": "epistemedia research validate: only ready-for-review and artifact digests outstanding"
+  },
+  {
+   "check": "spans-read-against-source",
+   "result": "pass",
+   "note": "reviewer re-read each quoted span on the live page"
+  },
+  {
+   "check": "calculations-reproduced",
+   "result": "pass",
+   "note": "arithmetic checked by hand"
+  },
+  {
+   "check": "artifact-digests",
+   "result": "pending",
+   "note": "no byte-level captures yet"
+  },
+  {
+   "check": "independent-reviewer",
+   "result": "pending",
+   "note": "same operator as the drafting run; not independent"
+  }
+ ],
+ "issued_at": "2026-09-15T02:46:22Z",
+ "expires_at": null,
+ "signature": {
+  "alg": "none",
+  "value": null,
+  "note": "manual v0; unsigned. A signed certificate is issued by the realm's verifier key."
+ },
+ "certificate_id": "em:certificate:sha256:5ed1230b360b8efb165c1b15cd694897ec95ac131ef391118b3f7f55608cf6fb"
+}

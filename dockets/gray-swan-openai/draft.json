@@ -1,0 +1,337 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "Is Gray Swan independent of OpenAI when it evaluates OpenAI models?",
+ "scope": {
+  "included": "OpenAI's announcement of Zico Kolter's board appointment; Kolter's own biography; Gray Swan's Series A announcement; Forbes' 2024 report of a recusal.",
+  "excluded": "Contract terms between Gray Swan and OpenAI; revenue shares; whether recusal was applied in any specific engagement; other labs.",
+  "comparison_target": "The label 'external' or 'independent' evaluator as used for Gray Swan in system cards, compared with the governance and commercial ties on record."
+ },
+ "sources": [
+  {
+   "source_id": "src-oai-board",
+   "title": "Zico Kolter Joins OpenAI's Board of Directors",
+   "creators_or_org": "OpenAI",
+   "date": "2024-08",
+   "edition": "Live page, text extraction 2026-09-14",
+   "identifier": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+   "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-oai-appoint",
+     "locator": "Opening paragraph",
+     "quote": "the appointment of Zico Kolter to OpenAI’s Board of Directors",
+     "supports": "Board appointment."
+    },
+    {
+     "span_id": "span-oai-ssc",
+     "locator": "Subhead",
+     "quote": "Zico will also join the Safety & Security Committee",
+     "supports": "Committee membership."
+    }
+   ]
+  },
+  {
+   "source_id": "src-kolter-bio",
+   "title": "Bio",
+   "creators_or_org": "Zico Kolter",
+   "date": "2026",
+   "edition": "Personal page, text extraction 2026-09-14",
+   "identifier": "http://zkolter.github.io/bio/",
+   "url": "http://zkolter.github.io/bio/",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-bio-chair",
+     "locator": "Bio paragraph",
+     "quote": "he serves on the Board of OpenAI, where he chairs the Safety and Security Committee",
+     "supports": "Chairs the committee."
+    },
+    {
+     "span_id": "span-bio-gs",
+     "locator": "Bio paragraph",
+     "quote": "He is a co-founder and Chief Scientist of Gray Swan AI",
+     "supports": "Role at Gray Swan."
+    }
+   ]
+  },
+  {
+   "source_id": "src-gs-a",
+   "title": "Gray Swan announces Series A",
+   "creators_or_org": "Gray Swan",
+   "date": "2026-05-28",
+   "edition": "Press release page, text extraction 2026-09-14",
+   "identifier": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+   "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-gs-used",
+     "locator": "Opening line",
+     "quote": "used by Anthropic, OpenAI, and Meta",
+     "supports": "OpenAI is a client."
+    },
+    {
+     "span_id": "span-gs-cards",
+     "locator": "Body",
+     "quote": "cited in 11 recent frontier model system cards",
+     "supports": "Gray Swan appears in system cards as an evaluator."
+    },
+    {
+     "span_id": "span-gs-products",
+     "locator": "Body",
+     "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing",
+     "supports": "Gray Swan sells defense products."
+    }
+   ]
+  },
+  {
+   "source_id": "src-forbes-24",
+   "title": "Gray Swan AI Is Working With OpenAI to 'Red Team' Its Models",
+   "creators_or_org": "Forbes (Sarah Emerson)",
+   "date": "2024-10-29",
+   "edition": "Article, text extraction 2026-09-14",
+   "identifier": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+   "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-forbes-recuse",
+     "locator": "Body",
+     "quote": "he has recused himself from interactions between the two companies",
+     "supports": "Reported recusal."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "Gray Swan's co-founder and chief scientist sits on OpenAI's board and chairs its Safety and Security Committee, and OpenAI is a Gray Swan client cited in system cards.",
+   "interpretation": "A governance tie at the top of both organizations coexists with a vendor relationship.",
+   "warrant": "OpenAI's announcement, Kolter's biography and Gray Swan's release each state their part.",
+   "scope": {
+    "dataset_or_population": "Public statements by OpenAI, Kolter and Gray Swan",
+    "metric_scope": "Existence of roles and client relationship; not their terms",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "2024-08 appointment; 2026-05 release; bio as of 2026-09-14",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [],
+   "source_ids": [
+    "src-oai-board",
+    "src-kolter-bio",
+    "src-gs-a"
+   ],
+   "exact_span_ids": [
+    "span-oai-appoint",
+    "span-oai-ssc",
+    "span-bio-chair",
+    "span-bio-gs",
+    "span-gs-used",
+    "span-gs-cards"
+   ],
+   "dependency_ids": [
+    "dep-self"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "Roles as stated; no contract terms."
+  },
+  {
+   "result_id": "result-2",
+   "proposition": "Forbes reported in October 2024 that Kolter has recused himself from interactions between Gray Swan and OpenAI.",
+   "interpretation": "A personal recusal, reported by press; the firm's sale of defense products to the labs it tests is a separate, structural matter.",
+   "warrant": "Forbes states the recusal; the release lists the products.",
+   "scope": {
+    "dataset_or_population": "Forbes report and Gray Swan release",
+    "metric_scope": "Existence of a reported recusal; not its scope or enforcement",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "2024-10-29; 2026-05-28",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-2u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The recusal's written scope and whether it covers product sales are not on record.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-forbes-24",
+    "src-gs-a"
+   ],
+   "exact_span_ids": [
+    "span-forbes-recuse",
+    "span-gs-products"
+   ],
+   "dependency_ids": [
+    "dep-press"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "Press report of a recusal; no policy document."
+  }
+ ],
+ "calculations": [],
+ "counterevidence": [
+  {
+   "claim": "Gray Swan is an external evaluator of OpenAI models",
+   "evidence": "Its chief scientist chairs the OpenAI board committee that oversees safety decisions; it sells defense products to the labs it evaluates.",
+   "source_ids": [
+    "src-kolter-bio",
+    "src-gs-a"
+   ],
+   "exact_span_ids": [
+    "span-bio-chair",
+    "span-gs-products"
+   ],
+   "qualification": "External to OpenAI's staff; not independent of OpenAI's governance or of a vendor interest."
+  }
+ ],
+ "negative_results": [],
+ "dependencies": [
+  {
+   "dependency_id": "dep-self",
+   "kind": "source",
+   "description": "Result 1 rests on the parties' own statements.",
+   "source_ids": [
+    "src-oai-board",
+    "src-kolter-bio",
+    "src-gs-a"
+   ],
+   "exact_span_ids": [
+    "span-oai-appoint"
+   ]
+  },
+  {
+   "dependency_id": "dep-press",
+   "kind": "source",
+   "description": "The recusal is known only from a press report.",
+   "source_ids": [
+    "src-forbes-24"
+   ],
+   "exact_span_ids": [
+    "span-forbes-recuse"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-oai",
+   "source_id": "src-oai-board",
+   "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-bio",
+   "source_id": "src-kolter-bio",
+   "url": "http://zkolter.github.io/bio/",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-gs",
+   "source_id": "src-gs-a",
+   "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-forbes",
+   "source_id": "src-forbes-24",
+   "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "unknown",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "No contract terms or revenue shares.",
+  "Text extractions; digests pending."
+ ],
+ "unresolved": [
+  "Artifact SHA-256 per source.",
+  "Written scope of the recusal."
+ ],
+ "search_notes": [
+  "Prior art: none on epistemedia.org.",
+  "Origin: Evaluator Bench signals grayswan.01 to grayswan.04; ledger rows R27, R28, T21, T26."
+ ]
+}

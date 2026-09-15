@@ -1,0 +1,35 @@
+name: contribution-check
+on:
+  pull_request:
+    paths: ["data/**", "dockets/**", "bench/**", "site/**"]
+jobs:
+  verify-build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e ".[dev]"
+      - run: python -m bench verify
+      - run: python -m bench build
+      - run: git diff --exit-code -- graph/events.jsonl dist/bench.json
+      - run: pytest -q
+  machine-review:
+    runs-on: ubuntu-latest
+    needs: verify-build-test
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e .
+      - name: re-fetch cited sources and check quoted spans and claims
+        env: {ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}"}
+        run: python -m bench review --base origin/${{ github.base_ref }} --out review.md
+      - name: post report
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs'); const body = fs.existsSync('review.md') ? fs.readFileSync('review.md','utf8') : 'review produced no report';
+            await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body});

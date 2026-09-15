@@ -227,10 +227,12 @@
     "sources": [
       "metr-about",
       "sff-2025",
-      "propublica-metr-arc"
+      "propublica-metr-arc",
+      "docket-metr-lab-money"
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.5",
-    "as_of": "2026-09-14"
+    "as_of": "2026-09-14",
+    "quote": "METR has not accepted funding from AI companies"
   }
 ]

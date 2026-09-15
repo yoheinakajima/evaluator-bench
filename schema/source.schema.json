@@ -44,7 +44,8 @@
     "index",
     "ledger",
     "self",
-    "press"
+    "press",
+    "docket"
    ]
   },
   "audit_status": {
@@ -62,6 +63,9 @@
    "type": "string"
   },
   "discovered_via": {
+   "type": "string"
+  },
+  "certificate": {
    "type": "string"
   }
  }

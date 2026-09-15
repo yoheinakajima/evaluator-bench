@@ -191,6 +191,8 @@
   [data-tip]:hover rect,[data-tip]:hover circle{filter:brightness(1.12)}
   svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}
 
+  .card table.tbl{display:block;overflow-x:auto;max-width:100%}
+  @media (min-width:900px){.card table.tbl{display:table}}
   svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}
   svg.fundgraph .node{transition:opacity .15s ease}
   .tbl{width:100%;border-collapse:collapse;font-size:13.5px}

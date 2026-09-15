@@ -36,6 +36,9 @@ python -m bench paths         # path signatures, nearest analogues to AI, trigge
 python -m bench exposure      # ledger check and inflows by hop distance from a lab, per evaluator
 python -m bench audit T12 R10 # re-fetch cited sources, hash them into data/artifacts.csv (needs network)
 python -m bench docket build metr-lab-money   # Bench draft -> Epistemedia proposal; validate with `docket validate`
+python -m bench certificate verify metr-lab-money   # check a certificate still binds its proposal bytes
+python -m bench review --base origin/main     # machine review of a PR: re-fetch sources, check quotes, judge support (CI)
+python -m bench changelog --since v0.1        # what changed between two revisions (input to the annual paper)
 ```
 
 ## The rubric
@@ -66,7 +69,7 @@ Bench is an index with a scoring policy; Epistemedia (epistemedia.org) adjudicat
 
 ## Contributing evidence
 
-PRs change signals and sources, never scores directly. See `CONTRIBUTING.md`. A PR that changes an assessment without a signal on the same evaluator and dimension fails `verify`.
+PRs change signals, sources and ledger rows, never scores directly. Agents get step-by-step recipes in `AGENTS.md`; the PR template is machine-read; CI runs the verifier, the build, the drift check, the tests, and `bench review`, which re-fetches every cited source and checks quoted spans and claims. See `CONTRIBUTING.md`. A PR that changes an assessment without a signal on the same evaluator and dimension fails `verify`. Accepted evidence feeds the annual update paper (`paper/ANNUAL.md`), generated from `bench changelog` between two tagged commits.
 
 ## Layout
 

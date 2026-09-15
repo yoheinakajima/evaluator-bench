@@ -1,0 +1,403 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "Did Coefficient Giving (formerly Open Philanthropy) fund METR?",
+ "scope": {
+  "included": "METR's own list of funders; a third-party ledger's report on Coefficient's grants index and on ARC's 990 Schedule I; that ledger's own audit note on its rendered figure; ProPublica's summary of ARC's FY2024 finances.",
+  "excluded": "Grants from Coefficient to organizations METR shares people, offices or projects with, beyond the ARC spin-out transfer; donor-advised-fund donors; any judgment about influence.",
+  "comparison_target": "The rendered figure's 'Direct: $0' and the reading, common online, that Coefficient money reached METR, compared with what the index, the filings and METR's own page say."
+ },
+ "sources": [
+  {
+   "source_id": "src-metr-about",
+   "title": "About METR",
+   "creators_or_org": "METR",
+   "date": "2026-09-14",
+   "edition": "Live page, text extraction 2026-09-14",
+   "identifier": "https://metr.org/about",
+   "url": "https://metr.org/about",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-metr-funders",
+     "locator": "Funding section, list of supporters",
+     "quote": "foundations such as the Sijbrandij Foundation, The Pew Charitable Trusts, Schmidt Sciences, the Packard Foundation",
+     "supports": "METR's named foundation funders; Coefficient and Open Philanthropy are not among them."
+    }
+   ]
+  },
+  {
+   "source_id": "src-mmf",
+   "title": "metr-money-figure research ledger and audit",
+   "creators_or_org": "Kevin Bass (GitHub)",
+   "date": "2026-09-14",
+   "edition": "Git clone, commit f64df65a16400fd88a77536111851695acc9a928",
+   "identifier": "https://github.com/kevinnbass/metr-money-figure",
+   "url": "https://github.com/kevinnbass/metr-money-figure",
+   "media_type": "text/csv",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-mmf-m33",
+     "locator": "research/money_flows.csv row M33, notes",
+     "quote": "no direct grant in 2,911-row index snapshot 2026-09-11",
+     "supports": "Third-party report of a bounded search of Coefficient's index."
+    },
+    {
+     "span_id": "span-mmf-m01",
+     "locator": "research/money_flows.csv rows M01 and M02, amount_usd",
+     "quote": "265000",
+     "supports": "Coefficient grant to Alignment Research Center, 2022-03-01."
+    },
+    {
+     "span_id": "span-mmf-m02",
+     "locator": "research/money_flows.csv row M02, amount_usd",
+     "quote": "1250000",
+     "supports": "Coefficient grant to Alignment Research Center, 2022-11-18."
+    },
+    {
+     "span_id": "span-mmf-n54",
+     "locator": "research/finances.csv row N54",
+     "quote": "Schedule I: to Model Evaluation and Threat Research Inc",
+     "supports": "ARC's FY2024 990 reports a grant to METR."
+    },
+    {
+     "span_id": "span-mmf-n54-amt",
+     "locator": "research/finances.csv row N54, value_usd",
+     "quote": "4553935",
+     "supports": "Amount of the ARC to METR transfer."
+    },
+    {
+     "span_id": "span-mmf-audit",
+     "locator": "research/AUDIT-3A.md, opening paragraph",
+     "quote": "the unqualified “Direct: $0” is stronger than the record search can establish",
+     "supports": "The ledger's own audit flags the rendered figure's wording."
+    }
+   ]
+  },
+  {
+   "source_id": "src-pp-arc",
+   "title": "Alignment Research Center, Nonprofit Explorer organization summary (EIN 86-3605182)",
+   "creators_or_org": "ProPublica, from IRS Form 990 e-file data",
+   "date": "2025",
+   "edition": "Organization summary page, text extraction 2026-09-14, FY ending December 2024",
+   "identifier": "EIN 86-3605182",
+   "url": "https://projects.propublica.org/nonprofits/organizations/863605182",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-pp-arc-exp",
+     "locator": "Extracted Financial Data",
+     "quote": "Expenses $9,054,183",
+     "supports": "ARC's FY2024 expenses, consistent with a large grant out."
+    },
+    {
+     "span_id": "span-pp-arc-rev",
+     "locator": "Extracted Financial Data",
+     "quote": "Revenue $5,219,369",
+     "supports": "ARC's FY2024 revenue."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "A third-party ledger reports no METR-named grant in Coefficient Giving's 2,911-row index snapshot of 2026-09-11, and METR's own funder list on 2026-09-14 does not name Coefficient or Open Philanthropy.",
+   "interpretation": "Two independent absences: one in the funder's index as reported by a third party, one on the recipient's page. Neither is re-derived from the index in this docket.",
+   "warrant": "The ledger row states the search scope and result; METR's page lists its foundation funders.",
+   "scope": {
+    "dataset_or_population": "Coefficient grants index snapshot and METR's funder list",
+    "metric_scope": "Presence of a named grant; not routing through intermediaries",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "index snapshot 2026-09-11; page state 2026-09-14",
+    "tool_and_retrieval_path": "git clone and direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-1u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The index search is a third-party report; this docket has not re-run it.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-metr-about",
+    "src-mmf"
+   ],
+   "exact_span_ids": [
+    "span-metr-funders",
+    "span-mmf-m33"
+   ],
+   "dependency_ids": [
+    "dep-mmf"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "The negative rests on one third party's search; absence is bounded to that snapshot and search."
+  },
+  {
+   "result_id": "result-2",
+   "proposition": "Coefficient granted $1,515,000 to the Alignment Research Center in 2022 ($265,000 and $1,250,000), and ARC's FY2024 Form 990 Schedule I reports a $4,553,935 grant to Model Evaluation and Threat Research Inc.",
+   "interpretation": "Money from Coefficient reached METR's parent before the spin-out, and the parent transferred assets to METR at the spin-out. This is routing through a parent, not a grant to METR.",
+   "warrant": "The ledger rows carry the amounts and the filing line; ProPublica's ARC summary shows FY2024 expenses well above revenue, consistent with the transfer.",
+   "scope": {
+    "dataset_or_population": "Coefficient grants to ARC and ARC's Schedule I",
+    "metric_scope": "Amounts as recorded; does not trace what share of the transfer originated with Coefficient",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "2022 grants; FY2024 transfer",
+    "tool_and_retrieval_path": "git clone and direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "Coefficient to ARC versus ARC to METR",
+    "numerator": "1515000",
+    "denominator": "4553935",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-2u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The Schedule I line is reported by the ledger; the filing itself is not opened here.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-mmf",
+    "src-pp-arc"
+   ],
+   "exact_span_ids": [
+    "span-mmf-m01",
+    "span-mmf-m02",
+    "span-mmf-n54",
+    "span-mmf-n54-amt",
+    "span-pp-arc-exp",
+    "span-pp-arc-rev"
+   ],
+   "dependency_ids": [
+    "dep-mmf",
+    "dep-pp"
+   ],
+   "calculation_ids": [
+    "calc-arc-sum"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "The ARC transfer is an asset transfer at spin-out; its composition by original funder is not established."
+  },
+  {
+   "result_id": "result-3",
+   "proposition": "The ledger's own audit states that the rendered figure's unqualified 'Direct: $0' is stronger than the record search can establish.",
+   "interpretation": "The dataset behind the figure is more careful than the figure. Readers who take the figure's headline as a finding overstate what the rows support in either direction.",
+   "warrant": "The audit file says so in its opening paragraph.",
+   "scope": {
+    "dataset_or_population": "AUDIT-3A.md in the ledger repository",
+    "metric_scope": "Self-audit of a rendered figure",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "audit dated 2026-09-14",
+    "tool_and_retrieval_path": "git clone"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [],
+   "source_ids": [
+    "src-mmf"
+   ],
+   "exact_span_ids": [
+    "span-mmf-audit"
+   ],
+   "dependency_ids": [
+    "dep-mmf"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "The audit is by the same author as the figure; it is candid but not independent."
+  }
+ ],
+ "calculations": [
+  {
+   "calculation_id": "calc-arc-sum",
+   "equation": "265000 + 1250000 = 1515000",
+   "inputs": [
+    {
+     "input_id": "in-a",
+     "name": "grant 2022-03",
+     "origin": "source-span",
+     "source_id": "src-mmf",
+     "span_id": "span-mmf-m01",
+     "json_pointer": "/sources/1/exact_spans/1/quote",
+     "value": "265000"
+    },
+    {
+     "input_id": "in-b",
+     "name": "grant 2022-11",
+     "origin": "source-span",
+     "source_id": "src-mmf",
+     "span_id": "span-mmf-m02",
+     "json_pointer": "/sources/1/exact_spans/2/quote",
+     "value": "1250000"
+    }
+   ],
+   "output": "1515000",
+   "uncertainty": "exact",
+   "depends_on": []
+  }
+ ],
+ "counterevidence": [
+  {
+   "claim": "Coefficient money never reached METR",
+   "evidence": "Coefficient funded ARC in 2022 and ARC transferred $4.55M to METR at the 2024 spin-out.",
+   "source_ids": [
+    "src-mmf"
+   ],
+   "exact_span_ids": [
+    "span-mmf-m01",
+    "span-mmf-m02",
+    "span-mmf-n54-amt"
+   ],
+   "qualification": "Routing through a parent; share of the transfer attributable to Coefficient not established."
+  }
+ ],
+ "negative_results": [
+  {
+   "kind": "no-evidence-located",
+   "scope": "Coefficient Giving grants index, 2,911 rows, snapshot 2026-09-11, searched for METR under any name, as reported by the third-party ledger",
+   "result": "No METR-named grant reported",
+   "disposition": "Retained as reported; not re-derived; absence not converted to zero.",
+   "source_ids": [
+    "src-mmf"
+   ],
+   "exact_span_ids": [
+    "span-mmf-m33"
+   ],
+   "retrieval_attempt_ids": [
+    "attempt-mmf"
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "dependency_id": "dep-mmf",
+   "kind": "source",
+   "description": "Results 1 to 3 depend on one third-party ledger for the index search, the ARC grant amounts and the Schedule I line.",
+   "source_ids": [
+    "src-mmf"
+   ],
+   "exact_span_ids": [
+    "span-mmf-m33"
+   ]
+  },
+  {
+   "dependency_id": "dep-pp",
+   "kind": "source",
+   "description": "ARC's revenue and expense figures are ProPublica's extraction of the e-filed 990.",
+   "source_ids": [
+    "src-pp-arc"
+   ],
+   "exact_span_ids": [
+    "span-pp-arc-exp"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-metr",
+   "source_id": "src-metr-about",
+   "url": "https://metr.org/about",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-mmf",
+   "source_id": "src-mmf",
+   "url": "https://github.com/kevinnbass/metr-money-figure",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-pp",
+   "source_id": "src-pp-arc",
+   "url": "https://projects.propublica.org/nonprofits/organizations/863605182",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "unknown",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "The index search and the Schedule I line are reported by a third party and not re-derived here.",
+  "Text extractions of live pages; no Wayback captures; artifact digests pending."
+ ],
+ "unresolved": [
+  "Re-run the Coefficient index search and record the snapshot.",
+  "Open ARC's FY2024 990 Schedule I directly.",
+  "Artifact SHA-256 per source."
+ ],
+ "search_notes": [
+  "Prior art: no epistemedia.org docket concerns evaluator funding as of 2026-09-14.",
+  "Origin: Evaluator Bench ledger rows T01, T13, N01 and the metr-money-figure lead file."
+ ]
+}

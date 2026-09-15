@@ -1,4 +1,4 @@
-"""python -m bench {build|verify|inspect|scores|industries|timeline|paths|exposure|audit|docket}"""
+"""python -m bench {build|verify|inspect|scores|industries|timeline|paths|exposure|audit|docket|certificate|review|changelog}"""
 from __future__ import annotations
 import sys
 
@@ -17,6 +17,12 @@ def main(argv=None) -> int:
         t = table(d["assessments"], d["presets"][preset]["weights"])
         for eid, v in sorted(t.items(), key=lambda x: -x[1]): print(f"{v:3d}  {d['evaluators'][eid]['name']}")
         return 0
+    if cmd == "review":
+        from .review import main as m; return m(argv[1:])
+    if cmd == "changelog":
+        from .changelog import main as m; return m(argv[1:])
+    if cmd == "certificate":
+        from .certificate import main as m; return m(argv[1:])
     if cmd == "docket":
         from .docket import main as m; return m(argv[1:])
     if cmd == "audit":

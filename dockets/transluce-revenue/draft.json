@@ -1,0 +1,252 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "What share of Transluce's FY2025 revenue came from AI developers and from their employees?",
+ "scope": {
+  "included": "Transluce's published Independence and Transparency Policy as of its stated last update, 2026-08-27.",
+  "excluded": "Dollar amounts; donor names; revenue after FY2025; whether personal holdings were equity in the developers.",
+  "comparison_target": "The description 'independently funded' as applied to Transluce, compared with the shares the organization itself publishes."
+ },
+ "sources": [
+  {
+   "source_id": "src-tl-policy",
+   "title": "Independence and Transparency Policy",
+   "creators_or_org": "Transluce",
+   "date": "2026-08-27",
+   "edition": "Live page, text extraction 2026-09-14; page states last updated August 27, 2026",
+   "identifier": "https://transluce.org/independence-and-transparency-policy",
+   "url": "https://transluce.org/independence-and-transparency-policy",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-tl-openai",
+     "locator": "Policy item 2.1",
+     "quote": "Transluce received 6% of its revenue from the personal holdings of OpenAI employees",
+     "supports": "Share from OpenAI employees, FY2025."
+    },
+    {
+     "span_id": "span-tl-anthropic",
+     "locator": "Policy item 2.1",
+     "quote": "32% of its revenue from the personal holdings of Anthropic employees",
+     "supports": "Share from Anthropic employees, FY2025."
+    },
+    {
+     "span_id": "span-tl-noorg",
+     "locator": "Policy item 2.1",
+     "quote": "It received no revenue directly from AI developers as organizations",
+     "supports": "No organizational developer revenue, FY2025."
+    },
+    {
+     "span_id": "span-tl-nopaid",
+     "locator": "Policy item 2.2",
+     "quote": "Transluce has carried out no paid evaluations",
+     "supports": "No paid evaluations as of the update."
+    },
+    {
+     "span_id": "span-tl-updated",
+     "locator": "Page footer line",
+     "quote": "Last updated: August 27, 2026",
+     "supports": "Date of the policy text."
+    },
+    {
+     "span_id": "span-tl-recuse",
+     "locator": "Policy item 3.1",
+     "quote": "Transluce recuses any employee with a significant financial interest",
+     "supports": "Recusal rule for evaluations of a provider's systems."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "For the fiscal year ending December 31, 2025, Transluce reports 6% of revenue from the personal holdings of OpenAI employees and 32% from the personal holdings of Anthropic employees, no revenue directly from AI developers as organizations, and no paid evaluations as of a policy last updated August 27, 2026.",
+   "interpretation": "The organization's own disclosure. 'Independently funded' is accurate at the organizational level and incomplete at the level of who the individual donors work for.",
+   "warrant": "Each figure and statement appears verbatim in the policy.",
+   "scope": {
+    "dataset_or_population": "Transluce FY2025 revenue as self-reported",
+    "metric_scope": "Shares of revenue by donor employer class; dollars not stated",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "fiscal year ending 2025-12-31; policy dated 2026-08-27",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "OpenAI employees versus Anthropic employees versus developers as organizations",
+    "numerator": "38",
+    "denominator": "100",
+    "rate": "0.38"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-1u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "Whether the personal holdings were equity in the developers is not stated.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-tl-policy"
+   ],
+   "exact_span_ids": [
+    "span-tl-openai",
+    "span-tl-anthropic",
+    "span-tl-noorg",
+    "span-tl-nopaid",
+    "span-tl-updated"
+   ],
+   "dependency_ids": [
+    "dep-self"
+   ],
+   "calculation_ids": [
+    "calc-share"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "Self-report; no filing cross-check in this docket."
+  },
+  {
+   "result_id": "result-2",
+   "proposition": "Transluce's policy requires recusal of any employee with a significant financial interest in a system provider from evaluating that provider's systems.",
+   "interpretation": "A mitigation stated alongside the disclosure.",
+   "warrant": "The policy text states it.",
+   "scope": {
+    "dataset_or_population": "Transluce policy text",
+    "metric_scope": "Existence of a recusal rule; not its application",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "policy dated 2026-08-27",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [],
+   "source_ids": [
+    "src-tl-policy"
+   ],
+   "exact_span_ids": [
+    "span-tl-recuse"
+   ],
+   "dependency_ids": [
+    "dep-self"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "No record of the rule being applied is in this docket."
+  }
+ ],
+ "calculations": [
+  {
+   "calculation_id": "calc-share",
+   "equation": "6 + 32 = 38",
+   "inputs": [
+    {
+     "input_id": "in-o",
+     "name": "OpenAI employees share (percent)",
+     "origin": "source-span",
+     "source_id": "src-tl-policy",
+     "span_id": "span-tl-openai",
+     "json_pointer": "/sources/0/exact_spans/0/quote",
+     "value": "6"
+    },
+    {
+     "input_id": "in-a",
+     "name": "Anthropic employees share (percent)",
+     "origin": "source-span",
+     "source_id": "src-tl-policy",
+     "span_id": "span-tl-anthropic",
+     "json_pointer": "/sources/0/exact_spans/1/quote",
+     "value": "32"
+    }
+   ],
+   "output": "38",
+   "uncertainty": "exact as stated",
+   "depends_on": []
+  }
+ ],
+ "counterevidence": [
+  {
+   "claim": "Transluce is funded independently of the labs",
+   "evidence": "38% of FY2025 revenue came from employees of two labs, per its own policy.",
+   "source_ids": [
+    "src-tl-policy"
+   ],
+   "exact_span_ids": [
+    "span-tl-openai",
+    "span-tl-anthropic"
+   ],
+   "qualification": "Employees, not organizations; unrestricted donations."
+  }
+ ],
+ "negative_results": [],
+ "dependencies": [
+  {
+   "dependency_id": "dep-self",
+   "kind": "source",
+   "description": "Every result rests on one self-published policy page.",
+   "source_ids": [
+    "src-tl-policy"
+   ],
+   "exact_span_ids": [
+    "span-tl-updated"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-tl",
+   "source_id": "src-tl-policy",
+   "url": "https://transluce.org/independence-and-transparency-policy",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "unknown",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "Single self-published source.",
+  "Text extraction; digest pending."
+ ],
+ "unresolved": [
+  "Artifact SHA-256.",
+  "Dollar figures behind the shares (990 for 2025 when filed)."
+ ],
+ "search_notes": [
+  "Prior art: none on epistemedia.org.",
+  "Origin: Evaluator Bench signal transluce.09 and ledger rows T39, T40, N12."
+ ]
+}

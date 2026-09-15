@@ -1,0 +1,300 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "What does Illinois SB 315 require of third-party auditors of large frontier developers, and from when?",
+ "scope": {
+  "included": "Law-firm client alerts on SB 315 published July 2026 (Crowell & Moring, Latham & Watkins, Davis Wright Tremaine); the Akerman note on the signing date.",
+  "excluded": "The statutory text itself; enforcement practice; other states' laws.",
+  "comparison_target": "Summaries that say 'Illinois requires AI audits' compared with the threshold, the independence test and the start date in the alerts."
+ },
+ "sources": [
+  {
+   "source_id": "src-crowell",
+   "title": "Illinois AI Safety Measures Act SB 315: What Frontier AI Developers Must Do Before January 2028",
+   "creators_or_org": "Crowell & Moring LLP",
+   "date": "2026-07-08",
+   "edition": "Client alert, text extraction 2026-09-14",
+   "identifier": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+   "url": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-cr-annual",
+     "locator": "Independent Third-Party Audits paragraph",
+     "quote": "beginning January 1, 2028, large frontier developers to undergo annual audits by independent third parties",
+     "supports": "Annual audits from 2028."
+    },
+    {
+     "span_id": "span-cr-interest",
+     "locator": "Same paragraph",
+     "quote": "neither the auditor nor the large frontier developer may have a financial interest in the other party",
+     "supports": "The independence test."
+    },
+    {
+     "span_id": "span-cr-signed",
+     "locator": "Opening line",
+     "quote": "On July 6, 2026, Illinois Governor JB Pritzker signed SB 315",
+     "supports": "Signing date per Crowell."
+    }
+   ]
+  },
+  {
+   "source_id": "src-latham",
+   "title": "Illinois Joins Growing State-Level Effort to Regulate Frontier AI With New Safety Measures Act",
+   "creators_or_org": "Latham & Watkins",
+   "date": "2026-07-15",
+   "edition": "Client alert, text extraction 2026-09-14",
+   "identifier": "https://www.lw.com/en/insights/illinois-joins-growing-state-level-effort-to-regulate-frontier-ai-with-new-safety-measures-act",
+   "url": "https://www.lw.com/en/insights/illinois-joins-growing-state-level-effort-to-regulate-frontier-ai-with-new-safety-measures-act",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-lw-threshold",
+     "locator": "Body",
+     "quote": "frontier model developers that earned more than $500 million in revenue in the preceding year must retain an independent third party",
+     "supports": "Revenue threshold."
+    },
+    {
+     "span_id": "span-lw-signed",
+     "locator": "Opening paragraph",
+     "quote": "On July 7, 2026, Illinois Governor JB Pritzker signed Senate Bill 315",
+     "supports": "Signing date per Latham."
+    }
+   ]
+  },
+  {
+   "source_id": "src-dwt",
+   "title": "Illinois Enacts Frontier AI Safety Law",
+   "creators_or_org": "Davis Wright Tremaine",
+   "date": "2026-07-15",
+   "edition": "Client alert, text extraction 2026-09-14",
+   "identifier": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
+   "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-dwt-start",
+     "locator": "Body",
+     "quote": "the large frontier AI framework and audit obligations begin January 1, 2028",
+     "supports": "Start date of audit obligations."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "Under Illinois SB 315 as summarized by three law firms, large frontier developers (revenue above $500 million in the preceding year) must undergo annual audits by independent third parties beginning January 1, 2028, and neither auditor nor developer may hold a financial interest in the other.",
+   "interpretation": "The independence test is the financial-interest rule from financial audit; the obligation is annual and starts in 2028 for the largest developers only.",
+   "warrant": "Each element appears in at least one alert; the start date appears in two.",
+   "scope": {
+    "dataset_or_population": "SB 315 as summarized by Crowell, Latham and DWT",
+    "metric_scope": "Statutory requirements as summarized; not the text",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "alerts of July 2026; obligations from 2028-01-01",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "threshold and start date",
+    "numerator": "500000000",
+    "denominator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-1u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The statutory text has not been read directly.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-crowell",
+    "src-latham",
+    "src-dwt"
+   ],
+   "exact_span_ids": [
+    "span-cr-annual",
+    "span-cr-interest",
+    "span-lw-threshold",
+    "span-dwt-start"
+   ],
+   "dependency_ids": [
+    "dep-alerts"
+   ],
+   "calculation_ids": [
+    "calc-threshold"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "Secondary summaries by counsel; wording of the statute may differ."
+  },
+  {
+   "result_id": "result-2",
+   "proposition": "Two alerts give different signing dates for SB 315: July 6, 2026 (Crowell) and July 7, 2026 (Latham).",
+   "interpretation": "A one-day discrepancy in secondary sources; the bill record would settle it.",
+   "warrant": "Both dates are quoted from the alerts.",
+   "scope": {
+    "dataset_or_population": "Two law-firm alerts",
+    "metric_scope": "Reported signing date",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "July 2026",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "not reported",
+    "denominator": "not reported",
+    "numerator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-2u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The Illinois General Assembly record for the signing date has not been checked.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-crowell",
+    "src-latham"
+   ],
+   "exact_span_ids": [
+    "span-cr-signed",
+    "span-lw-signed"
+   ],
+   "dependency_ids": [
+    "dep-alerts"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable-no-derived-value",
+   "uncertainty": "Unresolved until the bill status page is read."
+  }
+ ],
+ "calculations": [
+  {
+   "calculation_id": "calc-threshold",
+   "equation": "identity: 500000000 = 500000000",
+   "inputs": [
+    {
+     "input_id": "in-thr",
+     "name": "revenue threshold in USD",
+     "origin": "source-span",
+     "source_id": "src-latham",
+     "span_id": "span-lw-threshold",
+     "json_pointer": "/sources/1/exact_spans/0/quote",
+     "value": "500000000"
+    }
+   ],
+   "output": "500000000",
+   "uncertainty": "identity mapping of the stated threshold",
+   "depends_on": []
+  }
+ ],
+ "counterevidence": [],
+ "negative_results": [],
+ "dependencies": [
+  {
+   "dependency_id": "dep-alerts",
+   "kind": "source",
+   "description": "All results rest on secondary legal summaries, not the enrolled bill.",
+   "source_ids": [
+    "src-crowell",
+    "src-latham",
+    "src-dwt"
+   ],
+   "exact_span_ids": [
+    "span-cr-annual"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-cr",
+   "source_id": "src-crowell",
+   "url": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-lw",
+   "source_id": "src-latham",
+   "url": "https://www.lw.com/en/insights/illinois-joins-growing-state-level-effort-to-regulate-frontier-ai-with-new-safety-measures-act",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-dwt",
+   "source_id": "src-dwt",
+   "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "unknown",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "No primary statutory text.",
+  "Digests pending."
+ ],
+ "unresolved": [
+  "Read the enrolled bill; settle the signing date.",
+  "Artifact SHA-256 per source."
+ ],
+ "search_notes": [
+  "Prior art: none on epistemedia.org.",
+  "Origin: Evaluator Bench sources crowell-sb315, lw-sb315, dwt-sb315 and Dataset B milestone frontier-ai 2026."
+ ]
+}

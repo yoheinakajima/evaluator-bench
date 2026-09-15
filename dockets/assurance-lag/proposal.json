@@ -1,0 +1,317 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "In the Evaluator Bench seed dataset of assurance regimes, how long after a trigger incident does the next rule arrive?",
+ "scope": {
+  "included": "The Dataset B seed in the Evaluator Bench repository at its v0.7 commit: sixteen regimes, milestone kinds, and the trigger-to-rule computation in bench/industries.py.",
+  "excluded": "Whether the dataset's milestones are correct against primary sources; whether the trigger selection is outcome-independent; regimes not in the seed.",
+  "comparison_target": "The sentence 'rules follow public failures within a few years' as it appears in the paper draft, compared with what the seed computation shows and what it depends on."
+ },
+ "sources": [
+  {
+   "source_id": "src-bench",
+   "title": "Evaluator Bench repository, data/industries and bench/industries.py",
+   "creators_or_org": "Evaluator Bench (yoheinakajima)",
+   "date": "2026-09-14",
+   "edition": "Git repository at the v0.7 commit",
+   "identifier": "https://github.com/yoheinakajima/evaluator-bench",
+   "url": "https://github.com/yoheinakajima/evaluator-bench",
+   "media_type": "text/plain",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-bench-out",
+     "locator": "Output of `python -m bench industries`, final line",
+     "quote": "Trigger to next rule, all non-AI regimes: n=20, median 2 years, max 10",
+     "supports": "The computed statistic."
+    },
+    {
+     "span_id": "span-bench-status",
+     "locator": "data/industries/*.json, status field",
+     "quote": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper",
+     "supports": "The dataset's own evidentiary status."
+    },
+    {
+     "span_id": "span-bench-crit",
+     "locator": "data/industries/README.md, trigger criterion paragraph",
+     "quote": "Incidents that met the criterion and were followed by no rule belong in the dataset too; adding them is the main open task",
+     "supports": "The known selection gap."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "Across 20 trigger incidents in 15 non-AI regimes in the Evaluator Bench seed dataset, the median lag from a trigger to the next rule of any kind is 2 years and the maximum is 10.",
+   "interpretation": "A property of the seed dataset, not of history: the milestones are from secondary sources and the triggers were partly selected knowing that rules followed.",
+   "warrant": "The statistic is the program's output on the committed data; the dataset says its own status.",
+   "scope": {
+    "dataset_or_population": "Evaluator Bench Dataset B seed, v0.7 commit",
+    "metric_scope": "Median and maximum lag over recorded triggers; not a population estimate",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "milestones 1760 to 2026 as coded",
+    "tool_and_retrieval_path": "git clone and script run"
+   },
+   "reported_value": {
+    "comparison": "trigger year to next rule year",
+    "numerator": "not reported",
+    "denominator": "20",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "result-1-atom-2",
+     "kind": "finding",
+     "status": "supported",
+     "text": "Across 20 trigger incidents in 15 non-AI regimes in the Evaluator Bench seed dataset, the median lag from a trigger to the next rule of any kind is 2 years and the maximum is 10.",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-3",
+     "kind": "comparison",
+     "status": "supported",
+     "text": "trigger year to next rule year",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-4",
+     "kind": "comparison",
+     "status": "supported",
+     "text": "20",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-5",
+     "kind": "comparison",
+     "status": "supported",
+     "text": "not reported",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-6",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "Evaluator Bench Dataset B seed, v0.7 commit",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-7",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "Median and maximum lag over recorded triggers; not a population estimate",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-8",
+     "kind": "date",
+     "status": "supported",
+     "text": "milestones 1760 to 2026 as coded",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-9",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "git clone and script run",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "result-1-atom-10",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "not applicable",
+     "source_ids": [
+      "src-bench"
+     ],
+     "exact_span_ids": [
+      "span-bench-out",
+      "span-bench-status",
+      "span-bench-crit"
+     ]
+    },
+    {
+     "atom_id": "atom-1u",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "Triggers followed by no rule are under-recorded, which biases the lag downward.",
+     "source_ids": [],
+     "exact_span_ids": []
+    }
+   ],
+   "source_ids": [
+    "src-bench"
+   ],
+   "exact_span_ids": [
+    "span-bench-out",
+    "span-bench-status",
+    "span-bench-crit"
+   ],
+   "dependency_ids": [
+    "dep-bench"
+   ],
+   "calculation_ids": [
+    "calc-n"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "Secondary sources; hindsight in trigger selection; year granularity."
+  }
+ ],
+ "calculations": [
+  {
+   "calculation_id": "calc-n",
+   "equation": "identity: 20 = 20",
+   "inputs": [
+    {
+     "input_id": "in-n",
+     "name": "number of trigger events",
+     "origin": "source-span",
+     "source_id": "src-bench",
+     "span_id": "span-bench-out",
+     "json_pointer": "/sources/0/exact_spans/0/quote",
+     "value": "20"
+    }
+   ],
+   "output": "20",
+   "uncertainty": "identity mapping of the reported count",
+   "depends_on": []
+  }
+ ],
+ "counterevidence": [
+  {
+   "claim": "Assurance rules follow public failures within a few years",
+   "evidence": "The dataset records that incidents followed by no rule are under-recorded; the statistic is computed over recorded triggers only.",
+   "source_ids": [
+    "src-bench"
+   ],
+   "exact_span_ids": [
+    "span-bench-crit"
+   ],
+   "qualification": "Selection bias acknowledged in the dataset itself."
+  }
+ ],
+ "negative_results": [],
+ "dependencies": [
+  {
+   "dependency_id": "dep-bench",
+   "kind": "method",
+   "description": "The result is a computation over a curated dataset whose rows cite secondary sources.",
+   "source_ids": [
+    "src-bench"
+   ],
+   "exact_span_ids": [
+    "span-bench-status"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-bench",
+   "source_id": "src-bench",
+   "url": "https://github.com/yoheinakajima/evaluator-bench",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "2026-09-15T02:45:42Z",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "Dataset-scoped claim; says nothing about history until milestones are verified and non-responded triggers are enumerated."
+ ],
+ "unresolved": [
+  "Primary-source verification of each milestone.",
+  "Enumeration of qualifying incidents with no rule."
+ ],
+ "search_notes": [
+  "Prior art: none on epistemedia.org.",
+  "Origin: Evaluator Bench paper draft section 5.2 and CRITIQUE.md items 3 and 4."
+ ],
+ "license": {
+  "bundle": "CC0-1.0",
+  "source_material": "Each source retains its recorded license and treatment; spans are quote-minimal."
+ }
+}

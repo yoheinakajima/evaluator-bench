@@ -10,7 +10,8 @@
       "kolter-bio"
     ],
     "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    "curator": "yohei/claude v0",
+    "quote": "he chairs the Safety and Security Committee"
   },
   {
     "id": "grayswan.02",
@@ -22,7 +23,8 @@
       "forbes-grayswan-2024"
     ],
     "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    "curator": "yohei/claude v0",
+    "quote": "he has recused himself from interactions between the two companies"
   },
   {
     "id": "grayswan.03",
@@ -47,7 +49,8 @@
       "grayswan-seriesa"
     ],
     "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    "curator": "yohei/claude v0",
+    "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing"
   },
   {
     "id": "grayswan.05",

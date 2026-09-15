@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Evaluator Bench: an evidence-linked directory of third-party evaluators for frontier AI, with an independence score you can take apart and a ledger of who pays whom.">
 <title>Evaluator Bench: find and score third-party evaluators for frontier AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -506,8 +507,8 @@ function renderRows(){
 function srcLine(s){
   return `<span class="sigsrc">${s.sources.map((id,i)=>{const x=SRC[id]; return `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)})${tierBadge(x)}<span class="gid">${esc(s.source_graph_ids[i])}</span>`;}).join(" ")}</span>`;
 }
-const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press"};
-function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] : "tier not set"; const st = x.audit_status || "unaudited"; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>`; }
+const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press",docket:"reviewed docket"};
+function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] : "tier not set"; const st = x.audit_status || "unaudited"; const cert = x.certificate ? `<span class="gid" style="color:var(--teal);border-color:var(--teal)" title="${esc(x.certificate)}">Epistemedia reviewed (manual v0)</span>` : ""; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>${cert}`; }
 function detail(e){
   const blocks = DIMS.map(d=>{
     const a=e.assessments[d.k]; const s=a.value; const cls = s>=3?"":(s==2?"mid":"low");
@@ -614,9 +615,7 @@ const STAGEMETA = /*__STAGES_JSON__*/null;
   });
 })();
 
-// ---- ledger data (population stats only; browsing moved to entity pages)
-const LEDGER = /*__LEDGER_JSON__*/null;
-const DIST = /*__DIST_JSON__*/null;
+// ---- population stats (the ledger itself is browsed on entity pages)
 (function(){
   // population stats
   if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators; const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
