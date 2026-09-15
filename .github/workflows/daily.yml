@@ -46,4 +46,4 @@ jobs:
       - name: file the spot-check as an issue if anything failed
         env: {GH_TOKEN: "${{ github.token }}"}
         run: |
-          if grep -q "FETCH FAILED" spotcheck.md; then gh issue create --title "Daily spot-check: a confirmed source failed to fetch ($(date +%F))" --body-file spotcheck.md --label audit || true; fi
+          if grep -q "FETCH FAILED" spotcheck.md; then gh issue create --title "Daily spot-check: a confirmed source failed to fetch ($(date +%F))" --body-file spotcheck.md || true; fi

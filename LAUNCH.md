@@ -6,7 +6,7 @@ State at v0: the repository builds, verifies, and tests clean; the site has 200-
 
 ## Before the repository is public
 
-1. **Push and enable Pages.** `git remote add origin git@github.com:yoheinakajima/evaluator-bench.git && git push -u origin main --tags`. In repository settings, set Pages to deploy from GitHub Actions; `.github/workflows/pages.yml` publishes `dist/`. Every link on the site already assumes this repository path.
+1. **Push and enable Pages.** The already-created GitHub repository contains only its boilerplate initial commit, so fetch it and replace it with the prepared history using `git push --force-with-lease -u origin main`, then `git push origin v0`. In repository settings, set Pages to deploy from GitHub Actions; `.github/workflows/pages.yml` publishes `dist/`. Every link on the site already assumes this repository path.
 2. **Keep `DISCLOSURE.md` current.** Filled by the curator 2026-09-15. The Method section and the Status page link to it; the shared-funders field is a best-effort "none known" and must be updated if that changes.
 3. **Add the `ANTHROPIC_API_KEY` secret** so the machine-review job can run the model check on pull requests. Without it the job still re-fetches sources and checks quotes.
 4. **Publish as a preview with a two-week window.** `python -m bench release --stage preview --until <date fourteen days after the push>` and rebuild; every page carries the banner. This is the first publication, presented as one batch of initial research. No notices go to individual organizations for it: the preview window, the contribute page, and the right-of-reply issue template are the channel for everyone. When the window closes: `python -m bench changelog --since <preview commit>` becomes the launch-round section, then `python -m bench release --stage published --tag v0`, rebuild, tag. From then on, a published score that moves by more than one anchor triggers `bench outreach <id>` and a fourteen-day wait before the next tag.
@@ -15,7 +15,7 @@ State at v0: the repository builds, verifies, and tests clean; the site has 200-
 
 - Pull requests: CI runs `verify`, `build`, the drift check, the tests, and `bench review` (re-fetch, span check, model judgment) automatically. Merging is a person's decision; CODEOWNERS requires a maintainer on `data/`, `dockets/`, the verifier and the CONTRACT.
 - Daily: `.github/workflows/daily.yml` runs at 13:17 UTC. It re-runs the machine review on every open pull request and posts the report, and spot-checks five confirmed sources for fetch failures, opening an issue if one fails. It runs on GitHub's schedule, not in a chat session, so it does not depend on anyone being present. To have a model judge support on each PR, set `ANTHROPIC_API_KEY` in repository secrets; without it the review still checks quotes.
-- Branch protection: require the `contribution-check` workflow to pass before merging, and require one review.
+- Branch protection: require the always-run `verify` workflow to pass before merging, and require one review.
 
 ## First week after publishing
 
