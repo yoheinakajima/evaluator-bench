@@ -64,6 +64,25 @@
   },
   "as_of": {
    "type": "string"
+  },
+  "bound": {
+   "oneOf": [
+    {"type": "null"},
+    {"type": "object", "additionalProperties": false, "properties": {"cap": {"type": "integer", "minimum": 0, "maximum": 4}}, "required": ["cap"]},
+    {"type": "object", "additionalProperties": false, "properties": {"floor": {"type": "integer", "minimum": 0, "maximum": 4}}, "required": ["floor"]}
+   ]
+  },
+  "bound_note": {
+   "type": "string"
+  },
+  "rule": {
+   "type": "string"
+  },
+  "quote_source": {
+   "type": "string"
+  },
+  "note": {
+   "type": "string"
   }
  }
 }

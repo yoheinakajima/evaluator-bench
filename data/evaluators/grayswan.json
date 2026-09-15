@@ -11,5 +11,10 @@
  "confidence": "high",
  "summary": "Crowdsourced adversarial testing (Arena) plus Shade and Cygnal defense products; cited in 11 recent system cards.",
  "what_would_move_the_score": "Structural separation of the evaluation business, and independent governance for the OpenAI-related conflict beyond personal recusal.",
- "role": "vendor"
+ "role": "vendor",
+ "dissent": {
+  "lower": "Personnel (1 to 0). The co-founder and chief scientist chairs OpenAI's Safety and Security Committee, which oversees the very releases in which Gray Swan is cited. The only evidence of recusal is one 2024 press sentence describing a personal arrangement; no written policy, scope, or administrator is public. P.1 gives 0 where a recusal is not documented, and a single unverifiable press line is thin documentation.",
+  "higher": "Role incompatibility (0 to 1). The record documents that labs use Gray Swan's platform and are named in its system-card citations, but not that any lab buys Cygnal, the runtime defense product; lab use may be limited to Arena and Shade, which are testing services. X.1's 0 requires a defense or monitoring product sold to an evaluated lab; on the documented facts, anchor 1 (services to labs) fits."
+ },
+ "list_group": "commercial"
 }

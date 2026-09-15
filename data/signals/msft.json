@@ -1,112 +1,166 @@
 [
-  {
-    "id": "msft.01",
-    "evaluator": "msft",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Microsoft is a major OpenAI investor and a frontier developer with its own CAISI agreement.",
-    "sources": [
-      "csa-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "msft.01",
+  "evaluator": "msft",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Microsoft is a major OpenAI investor and a frontier developer with its own CAISI agreement.",
+  "sources": [
+   "csa-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "msft.02",
-    "evaluator": "msft",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Business unit of a frontier developer.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.1",
+  "quote": "Google (DeepMind), Microsoft, and xAI signed agreements with the US Center for AI Standards and Innovation (CAISI)",
+  "quote_source": "csa-caisi"
+ },
+ {
+  "id": "msft.02",
+  "evaluator": "msft",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Business unit of a frontier developer.",
+  "sources": [
+   "ms-redteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "msft.03",
-    "evaluator": "msft",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Findings for other labs are rarely published under the team's own name.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.6",
+  "quote": "guidance and best practices from the industry leading Microsoft AI Red Team",
+  "quote_source": "ms-redteam"
+ },
+ {
+  "id": "msft.03",
+  "evaluator": "msft",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Findings for other labs are rarely published under the team's own name.",
+  "sources": [
+   "ms-redteam",
+   "ms-redteam-100"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "msft.04",
-    "evaluator": "msft",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes methodology (PyRIT) openly.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.3",
+  "quote": "Microsoft’s AI red team is excited to share our whitepaper",
+  "quote_source": "ms-redteam-100"
+ },
+ {
+  "id": "msft.04",
+  "evaluator": "msft",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes methodology (PyRIT) openly.",
+  "sources": [
+   "ms-redteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "msft.05",
-    "evaluator": "msft",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Deep access when engaged.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1",
+  "quote": "Microsoft's Open Automation Framework to Red Team Generative AI Systems (PyRIT)",
+  "quote_source": "ms-redteam"
+ },
+ {
+  "id": "msft.05",
+  "evaluator": "msft",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Deep access when engaged.",
+  "sources": [
+   "ms-redteam",
+   "ms-redteam-100"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "msft.06",
-    "evaluator": "msft",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Employees of a lab.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.5",
+  "quote": "red teaming has become a key part of Microsoft’s approach to generative AI product development",
+  "quote_source": "ms-redteam-100"
+ },
+ {
+  "id": "msft.06",
+  "evaluator": "msft",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Employees of a lab.",
+  "sources": [
+   "ms-redteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "msft.07",
-    "evaluator": "msft",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by engagement.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.7",
+  "quote": "guidance and best practices from the industry leading Microsoft AI Red Team",
+  "quote_source": "ms-redteam"
+ },
+ {
+  "id": "msft.07",
+  "evaluator": "msft",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by engagement.",
+  "sources": [
+   "ms-redteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "msft.08",
-    "evaluator": "msft",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells AI products.",
-    "sources": [
-      "ms-redteam"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.2"
+ },
+ {
+  "id": "msft.08",
+  "evaluator": "msft",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells AI products.",
+  "sources": [
+   "ms-redteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "msft.09",
-    "evaluator": "msft",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Microsoft's AI red team has operated since 2018 as an internal function and reports having red-teamed more than 100 generative AI products; it is separate from product teams, not from the developer.",
-    "sources": [
-      "ms-redteam",
-      "ms-redteam-100"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v0-final",
-    "as_of": "2025-01-13"
-  }
+  "rule": "X.2",
+  "quote": "What is Azure AI Content Safety?",
+  "quote_source": "ms-redteam"
+ },
+ {
+  "id": "msft.09",
+  "evaluator": "msft",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Microsoft's AI red team has operated since 2018 as an internal function and reports having red-teamed more than 100 generative AI products; it is separate from product teams, not from the developer.",
+  "sources": [
+   "ms-redteam",
+   "ms-redteam-100"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0-final",
+  "as_of": "2025-01-13",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "G.6",
+  "quote": "The AI red team was formed in 2018 to address the growing landscape of AI safety and security risks",
+  "quote_source": "ms-redteam-100"
+ }
 ]

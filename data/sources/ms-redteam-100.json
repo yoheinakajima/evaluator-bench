@@ -5,7 +5,8 @@
   "url": "https://www.microsoft.com/en-us/security/blog/2025/01/13/3-takeaways-from-red-teaming-100-generative-ai-products/",
   "published": "2025-01-13",
   "retrieved": "2026-09-15",
-  "note": "Microsoft's internal AI red team, formed 2018, has red-teamed more than 100 generative AI products.",
+  "note": "Microsoft's internal AI red team, formed 2018, has red-teamed more than 100 generative AI products. [audit 2026-09-15] re-fetched; the Security Blog post states the team was formed in 2018 and has red-teamed more than 100 products.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed",
+  "self_of": "msft"
 }

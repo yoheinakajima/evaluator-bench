@@ -1,105 +1,102 @@
 [
-  {
-    "evaluator": "grayswan",
-    "dimension": "F",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "grayswan.03",
-      "grayswan.06"
-    ],
-    "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "G",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "grayswan.05",
-      "grayswan.11"
-    ],
-    "rationale": "Anchor 1 on governance given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "P",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "grayswan.01",
-      "grayswan.02",
-      "grayswan.12"
-    ],
-    "rationale": "Anchor 1 on personnel given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Whether Hudson River Trading, Samsung Next or Snowflake Ventures hold frontier-lab stakes."
-    ]
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "grayswan.07"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "S",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "grayswan.10"
-    ],
-    "rationale": "Anchor 2 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "R",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "grayswan.09"
-    ],
-    "rationale": "Anchor 2 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "grayswan.08"
-    ],
-    "rationale": "Anchor 2 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "grayswan",
-    "dimension": "X",
-    "value": 0,
-    "anchor": 0,
-    "signals": [
-      "grayswan.04"
-    ],
-    "rationale": "Anchor 0 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "grayswan",
+  "dimension": "F",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "grayswan.03",
+   "grayswan.06"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "G",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "grayswan.05",
+   "grayswan.11",
+   "grayswan.14"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "P",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "grayswan.01",
+   "grayswan.02",
+   "grayswan.12"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Request from Gray Swan a copy or description of the recusal arrangement governing the chief scientist's role between Gray Swan and OpenAI's board and Safety and Security Committee (date adopted, scope, who administers it), as reported by Forbes on 29 October 2024. Per RULES 12 this goes to the person before publication.",
+   "Request from Gray Swan (or from the funds) a statement of whether Wing, Madrona, Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next or Magarac Venture Partners hold equity in a frontier developer. The public record shows Snowflake's Anthropic tie as a $200M commercial partnership (3 Dec 2025), not equity."
+  ]
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "A",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "grayswan.07"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "S",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "grayswan.10"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "grayswan.09"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "grayswan.08"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "X",
+  "value": 0,
+  "anchor": 0,
+  "signals": [
+   "grayswan.04",
+   "grayswan.15"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

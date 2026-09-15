@@ -11,5 +11,10 @@
  "confidence": "high",
  "summary": "Scheming and deception specialist; ran evaluations for every major lab; converted to a public benefit corporation in January 2026.",
  "what_would_move_the_score": "Disclose revenue concentration by client and separate the product business from the evaluation practice.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Funding could be 1. Apollo asks the parties it evaluates to pay fair market value, says it ran evaluations for all major labs in 2025, and publishes no revenue split; its 2024 self-report named only about $2M of philanthropy, and its 2026 seed round included Macroscopic Ventures, an Anthropic Series A and B investor. If lab fees are the principal revenue, F.5 caps at 1, and a material lab-investor stake would cap at 1 under F.4.",
+  "higher": "Funding could be 3. Apollo's norms bar outcome-contingent pay and side grants or investments from evaluated labs; the PBC post says it remains partly philanthropy-supported, and the index records about $4.4M from Coefficient and $1.1M from SFF. A published cap holding lab revenue at or below 10% of annual revenue, with market rates and publication rights, would lift the F.3 cap to 3, the anchor for mostly philanthropic money with some lab-linked pooled funds."
+ },
+ "list_group": "referee"
 }

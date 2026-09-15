@@ -1,102 +1,106 @@
 [
-  {
-    "evaluator": "nemesys",
-    "dimension": "F",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "nemesys.01",
-      "nemesys.02"
-    ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "G",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.03"
-    ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "P",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.04"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "A",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.05"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "S",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.06"
-    ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "R",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.07"
-    ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.08"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "nemesys",
-    "dimension": "X",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "nemesys.09"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
+ {
+  "evaluator": "nemesys",
+  "dimension": "F",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.01",
+   "nemesys.02"
+  ],
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4",
+  "resolution": {
+   "rule": "F.5",
+   "value": 1,
+   "note": "Lab revenue is the only revenue disclosed; the public subcontract is real but its share is not public. F.5 decides: 1."
   }
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "G",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.03"
+  ],
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "nemesys.04"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.05"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "S",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.06"
+  ],
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "R",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.07"
+  ],
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "nemesys.08"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "X",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "nemesys.09"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ }
 ]

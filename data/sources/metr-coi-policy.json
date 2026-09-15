@@ -1,0 +1,12 @@
+{
+  "id": "metr-coi-policy",
+  "title": "Conflict of interest policy (version 1.0)",
+  "publisher": "METR",
+  "url": "https://metr.org/coi-policy.pdf",
+  "published": "2026-08-28",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "PDF (172 KB, about 17k characters via pdftotext) linked from metr.org/about as \"Our current conflict of interest policy\". Staff disclosure form, three conflict tiers with external-disclosure requirements, provisional recusal, ban on direct equity or debt in frontier AI companies, board ineligibility for frontier-company employees, declining donations made by or at the direction of frontier AI companies or their employees, free compute credits acceptable, and \"To date, we have not received payment for work on company-identifying risk assessments\". No cooling-off period. fetch_text cannot extract PDF text; spans verified against pdftotext output on 2026-09-15.",
+  "self_of": "metr"
+}

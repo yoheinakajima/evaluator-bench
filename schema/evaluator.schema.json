@@ -79,6 +79,15 @@
         "ranked",
         "watchlist"
       ]
+    },
+    "dissent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lower", "higher"],
+      "properties": {"lower": {"type": "string"}, "higher": {"type": "string"}}
+    },
+    "list_group": {
+      "enum": ["referee", "government", "commercial"]
     }
   }
 }

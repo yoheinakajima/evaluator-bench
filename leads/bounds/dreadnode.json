@@ -1,0 +1,284 @@
+{
+ "evaluator": "dreadnode",
+ "signals": {
+  "dreadnode.01": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+   "quote_source": "dreadnode-google-gemini3",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-google-gemini3": "ok",
+    "dreadnode-time-gdm-pledge": "ok"
+   },
+   "note": "The cited source resolves to the DeepMind homepage. Google's Gemini 3 launch post names Dreadnode among independent assessors, and Time reports a DeepMind spokesperson saying Gemini 2.5 Pro was shared with 'a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis'. That documents a pre-release external engagement (anchor 1); nothing documents safeguards off, extended time, helpful-only, weights, logs or on-site access. The stored 3 is unsupported.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-google-gemini3",
+    "dreadnode-time-gdm-pledge"
+   ]
+  },
+  "dreadnode.02": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "announced its $14 million Series A funding round, led by Decibel",
+   "quote_source": "dreadnode-seriesa",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-seriesa": "ok",
+    "dreadnode-securityweek": "ok"
+   },
+   "note": "Anchor 1: venture-backed (Series A led by Decibel with Next Frontier Capital, In-Q-Tel, Sands Capital, Indie VC) for-profit with no published conflict policy found. Own page is the admission of venture backing.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-seriesa",
+    "dreadnode-securityweek"
+   ]
+  },
+  "dreadnode.03": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.3",
+   "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+   "quote_source": "dreadnode-time-gdm-pledge",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-time-gdm-pledge": "ok",
+    "dreadnode-arxiv-airtbench": "ok"
+   },
+   "note": "Nothing of the Gemini engagement reaches the public beyond the lab naming the firm (R.3 first clause: 1). The organization publishes its own research on other work (AIRTBench, arXiv 2506.14682, with a public code repository), so R.3's second clause caps at 2, not the stored 1.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-time-gdm-pledge",
+    "dreadnode-arxiv-airtbench"
+   ]
+  },
+  "dreadnode.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.1 (second sentence)",
+   "quote": "two new products — Strikes and Spyglass — that form the core of its platform",
+   "quote_source": "dreadnode-securityweek",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-seriesa": "ok",
+    "dreadnode-securityweek": "ok"
+   },
+   "note": "Products (Strikes, Spyglass, Crucible) sold to unspecified parties in the evaluated ecosystem cap at 2 until a lab customer is documented; X.2 (services to a lab for money) is not documented either, since Google's post says only that it 'obtained' assessments. The stored 1 needs a document showing a paid lab engagement or a lab purchase. Document request: commercial terms of the Google DeepMind engagement.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-seriesa",
+    "dreadnode-securityweek"
+   ]
+  },
+  "dreadnode.05": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+   "quote_source": "dreadnode-google-gemini3",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-google-gemini3": "ok"
+   },
+   "note": "By anchor text 'labs pay per engagement' is anchor 2 (F.3). Payment is not documented in any source; F.5 (lab revenue as principal revenue) is not shown, and the capital structure is disclosed (Series A) while the client base is not (F.10 would cap at 3). The stored 1 has no documented basis.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-google-gemini3"
+   ]
+  },
+  "dreadnode.06": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)"
+   },
+   "note": "Undisclosed ties and no published recusal policy: anchor 3 requires P.5, so cap 2. A negative cannot be quoted; a cap of 2 needs no span. Founders' prior lab employment (a co-founder led NVIDIA's AI red team per press) is a P.3/P.4 lead needing a source before it is claimed."
+  },
+  "dreadnode.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2",
+   "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+   "quote_source": "dreadnode-time-gdm-pledge",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-time-gdm-pledge": "ok"
+   },
+   "note": "The lab shares the model with experts it selects; no documented right to add questions caps at 2. Gap: Google's external-testing programme is lab-scoped (anchor 1), but no rule assigns cap 1 without a documented lab right to decline findings or exclude questions.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-time-gdm-pledge"
+   ]
+  },
+  "dreadnode.08": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+   "quote_source": "dreadnode-google-gemini3",
+   "fetch": {
+    "gdm-gemini-testing": "ok; page loads but it is the deepmind.google homepage and does not mention Dreadnode (no supporting span)",
+    "dreadnode-google-gemini3": "ok"
+   },
+   "note": "For the Gemini engagement only a name reaches the public (summaries at most: 1). The claim's 'no public methodology' is contradicted at the organization level by AIRTBench (open benchmark paper and code), carried as new signal dreadnode.09; the conflict is resolved under the M assessment.",
+   "sources": [
+    "gdm-gemini-testing",
+    "dreadnode-google-gemini3"
+   ]
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "dreadnode-google-gemini3",
+   "title": "A new era of intelligence with Gemini 3",
+   "publisher": "Google",
+   "url": "https://blog.google/products/gemini/gemini-3/",
+   "published": "2025-11-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Lab-published launch post (third-party primary document, typed self per repo precedent for lab pages such as openai-kolter-board and gdm-gemini-testing). Fetched 2026-09-15; span 'obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more' present. This is the document the existing gdm-gemini-testing record describes; that record's URL points at the homepage and should be retargeted here or dropped."
+  },
+  {
+   "id": "dreadnode-time-gdm-pledge",
+   "title": "Exclusive: 60 U.K. Lawmakers Accuse Google of Breaking AI Safety Pledge",
+   "publisher": "Time",
+   "url": "https://time.com/7313320/google-deepmind-gemini-ai-safety-pledge/",
+   "published": "2025-08-29",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; span 'a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis' present (DeepMind spokesperson on Gemini 2.5 Pro sharing). Independent editorial corroboration of the Dreadnode engagement.",
+   "press_kind": "primary"
+  },
+  {
+   "id": "dreadnode-seriesa",
+   "title": "Dreadnode Secures $14M to Build AI Systems that Advance the State of Offensive Security",
+   "publisher": "Dreadnode",
+   "url": "https://dreadnode.io/company/newsroom/series-a/",
+   "published": "2025-02-25",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; spans present: 'announced its $14 million Series A funding round, led by Decibel'; 'The company reveals two new advanced offensive AI solutions—Strikes and Spyglass'. Own-page admission of venture backing and of the product line."
+  },
+  {
+   "id": "dreadnode-securityweek",
+   "title": "Offensive AI Startup Dreadnode Secures $14M to Stress-Test AI Systems",
+   "publisher": "SecurityWeek",
+   "url": "https://www.securityweek.com/offensive-ai-startup-dreadnode-secures-14m-to-stress-test-ai-systems/",
+   "published": "2025-02-25",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; span 'two new products — Strikes and Spyglass — that form the core of its platform' present. Non-self corroboration of the round and products.",
+   "press_kind": "primary"
+  },
+  {
+   "id": "dreadnode-arxiv-airtbench",
+   "title": "AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models",
+   "publisher": "arXiv (Dreadnode authors)",
+   "url": "https://arxiv.org/abs/2506.14682",
+   "published": "2025-06-17",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Paper by Dreadnode staff (Dawson, Mulla, Landers, Caldwell); self-published research. Fetched 2026-09-15; span 'challenges from the Crucible challenge environment on the Dreadnode platform' present. Reports results on Claude 3.7 Sonnet, Gemini 2.5 Pro, GPT-4.5 and others: a published evaluation of frontier models."
+  },
+  {
+   "id": "dreadnode-github-airtbench",
+   "title": "dreadnode/AIRTBench-Code",
+   "publisher": "GitHub (Dreadnode)",
+   "url": "https://github.com/dreadnode/AIRTBench-Code",
+   "published": "2025-06",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Code repository for AIRTBench, Apache-2.0 badge; fetched 2026-09-15 (page title 'Code Repository for: AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models'). Supports M.1 (open code) for the organization's own benchmark."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "dreadnode.09",
+   "evaluator": "dreadnode",
+   "dimension": "M",
+   "direction": "for",
+   "claim": "Publishes AIRTBench, an AI red-teaming benchmark with open code (Apache-2.0) and results on Claude 3.7 Sonnet, Gemini 2.5 Pro and GPT-4.5; the Gemini engagement itself remains closed.",
+   "sources": [
+    "dreadnode-arxiv-airtbench",
+    "dreadnode-github-airtbench"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "M.1",
+   "quote": "challenges from the Crucible challenge environment on the Dreadnode platform",
+   "quote_source": "dreadnode-arxiv-airtbench",
+   "note": "Needed because dreadnode.08's claim ('no public methodology') is contradicted at the organization level; M.1 gives 3 for open code alone. Rule 9 does not hold this floor down: AIRTBench is a published evaluation of frontier models. Conflicts with the cap of 1 on dreadnode.08; see the M resolution."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Google selects and shares with external experts at its discretion (A.3); nothing statutory or contractually enforceable is documented."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "Only the lab's naming of the firm reaches the public; engagement terms bar or do not provide for independent publication."
+  },
+  "M": {
+   "resolution": {
+    "rule": "M.2",
+    "value": 2,
+    "note": "Floor 3 (dreadnode.09, M.1: open benchmark code) against cap 1 (dreadnode.08: the frontier-lab engagement is closed). The organization's methods are public in prose and in an open self-directed benchmark, so it is not 'summaries only'; but the evaluation work this ledger scores, the Gemini engagement, publishes no methods, so open code for a separate benchmark does not reach anchor 3 for the organization. Anchor 2, methods described in prose, is the organization-level reading, and matches how Gray Swan (papers plus partly public Arena) and Scale (partly public leaderboards, closed government work) are scored. Gap: RULES has no rule for combining engagement-level closure with open self-directed benchmarks."
+   }
+  }
+ },
+ "dissent": {
+  "lower": "Publication rights (1 to 0). Nothing from the Gemini engagement has reached the public: no summary, no finding, only the firm's name in Google's launch post and a spokesperson's sentence to Time. A name mention is not a lab-edited summary. Anchor 0 reads 'no publication, or lab approval required', and on the documented record there is no publication at all.",
+  "higher": "Access depth (1 to 2). Google's external-testing programme shares pre-release models with selected experts for structured testing over a period before launch, and Dreadnode was named for both Gemini 2.5 Pro and Gemini 3. If the engagement ran for weeks against a pre-release checkpoint, that is extended-time access, anchor 2, rather than a one-off pre-release API test."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [
+  {
+   "dimension": "M",
+   "floor": 3,
+   "cap": 1,
+   "resolution": {
+    "rule": "M.2",
+    "value": 2,
+    "note": "See assessments.M.resolution: engagement-level closure (cap 1) against open self-directed benchmark code (floor 3); resolved at anchor 2, methods described in prose, consistent with Gray Swan and Scale."
+   }
+  }
+ ],
+ "notes": [
+  "Every original Dreadnode signal cites gdm-gemini-testing, whose URL is https://deepmind.google/ (the homepage); it does not mention Dreadnode. The document the record describes is Google's Gemini 3 launch post (added as dreadnode-google-gemini3) and the Gemini 2.5 Pro model-card claim reported by Time (dreadnode-time-gdm-pledge). gdm-gemini-testing is kept in each source list so it does not become uncited (C5); the curator should retarget its URL or drop it.",
+  "Derived values under these bounds (leads policy): F 2, G 1, P 2, A 1, S 2, R 2, M 2 (resolved), X 2. Divergence from stored: F 1 -> 2 (no documented lab payment, F.3), A 3 -> 1 (only pre-release external testing documented), R 1 -> 2 (R.3 second clause), M 1 -> 2 (resolution), X 1 -> 2 (no lab customer documented, X.1). Confidence on this record is low and the divergences reflect what the sources document, not a view of the firm.",
+  "The on-disk PLACEHOLDER bounds mirror the stored values and differ from these on dreadnode.01, .03, .04, .05 and .08."
+ ]
+}

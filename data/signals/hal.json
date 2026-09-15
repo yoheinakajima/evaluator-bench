@@ -1,112 +1,203 @@
 [
-  {
-    "id": "hal.01",
-    "evaluator": "hal",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "No lab money; academic.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "hal.01",
+  "evaluator": "hal",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "No lab money; academic.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "hal.02",
-    "evaluator": "hal",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open code and logs.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.11"
+ },
+ {
+  "id": "hal.02",
+  "evaluator": "hal",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open code and logs.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "hal.03",
-    "evaluator": "hal",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Results published without review.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1",
+  "quote": "HAL is an open-source project and we welcome contributions from the community",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.03",
+  "evaluator": "hal",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Results published without review.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "hal.04",
-    "evaluator": "hal",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Public API access only.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.5",
+  "quote": "The standardized, cost-aware, and third-party leaderboard for evaluating agents",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.04",
+  "evaluator": "hal",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Public API access only.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "hal.05",
-    "evaluator": "hal",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "University-hosted; AEF member.",
-    "sources": [
-      "hal",
-      "aef-launch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.6",
+  "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.05",
+  "evaluator": "hal",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "University-hosted; AEF member.",
+  "sources": [
+   "hal",
+   "aef-launch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "hal.06",
-    "evaluator": "hal",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Academic staff.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "By the SAgE team at Princeton University",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.06",
+  "evaluator": "hal",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Academic staff.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "hal.07",
-    "evaluator": "hal",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Own benchmark design.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6",
+  "quote": "Sayash Kapoor Princeton University Benedikt Stroebl Princeton University",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.07",
+  "evaluator": "hal",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Own benchmark design.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "hal.08",
-    "evaluator": "hal",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No products.",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "We have paused updating HAL leaderboard with new models and are currently focusing on measuring reliability in AI agents",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.08",
+  "evaluator": "hal",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No products.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "hal.09",
-    "evaluator": "hal",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).",
-    "sources": [
-      "hal"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  }
+  "rule": "X.7",
+  "quote": "HAL is an open-source project",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.09",
+  "evaluator": "hal",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.11",
+  "quote": "HAL is funded by Coefficient Giving , Schmidt Sciences , the Princeton AI Lab",
+  "quote_source": "hal"
+ },
+ {
+  "id": "hal.10",
+  "evaluator": "hal",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "HAL is funded by Coefficient Giving, whose principal is an Anthropic investor, and receives API credits from OpenAI and Google to evaluate their models.",
+  "sources": [
+   "hal",
+   "anthropic-series-a"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+  "quote_source": "hal",
+  "note": "F.6 caps Coefficient money at 3 ('HAL is funded by Coefficient Giving , Schmidt Sciences'; Moskovitz participated in Anthropic's Series A). The lab API credits are undisclosed in-kind with no dependency statement, a gap in F.2; by anchor text they exclude 'no lab money'."
+ },
+ {
+  "id": "hal.11",
+  "evaluator": "hal",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "HAL's author list includes a co-author affiliated with xAI, and its acknowledgments name staff at Anthropic, Google DeepMind and UK AISI; no contributor recusal or cooling-off rule is published.",
+  "sources": [
+   "hal"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "P.4",
+  "quote": "Yifei Zhou xAI",
+  "quote_source": "hal",
+  "note": "A lab employee among the project's contributors with no recusal rule caps at 2 (P.4 by analogy; P.3 if the affiliation followed the contribution). Public role only; the open question is a document request."
+ }
 ]

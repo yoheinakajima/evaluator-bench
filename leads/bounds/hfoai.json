@@ -1,0 +1,182 @@
+{
+ "evaluator": "hfoai",
+ "signals": {
+  "hfoai.01": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "G.6",
+   "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "tnw-hf-nvidia": "ok"
+   },
+   "note": "An agreed acquisition by a lab investor is ownership at 20% or more (G.6); the deal is agreed, not closed, and the card should say so. Gap: the cited source documents Nvidia's Anthropic stake only as 'in talks' (not closed); Nvidia's existing stakes in frontier developers (OpenAI, xAI) are public but need a source in this record."
+  },
+  "hfoai.02": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "A.6",
+   "quote": "Hugging Face has asked to become one of the outside auditors of the AI labs",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "tnw-hf-nvidia": "ok",
+    "techmeme-hf": "ok"
+   },
+   "note": "No engagement yet: 0 (A.6; Rule 9 floors access at 0 for an organization with no published evaluation). Both sources confirmed press; Techmeme corroborates ('asking to be part of the “embedded evaluators')."
+  },
+  "hfoai.03": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.10",
+   "quote": "Nobody has said who pays the embedded evaluators",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "tnw-hf-nvidia": "ok",
+    "zvi-pace": "ok; page loads; no Hugging Face mention, carries the Hwang 'independent, knowledgeable, or sustainably funded. Pick two' framing only"
+   },
+   "note": "Undisclosed funding and client terms cap at 2 (F.10). The 0 on F is carried by hfoai.10 (F.1)."
+  },
+  "hfoai.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "9",
+   "quote": "won't be solved behind the closed doors of a handful of frontier labs",
+   "quote_source": "techmeme-hf",
+   "fetch": {
+    "techmeme-hf": "ok"
+   },
+   "note": "A pledge is not an evaluation: with no published evaluation of a frontier model the organization takes no floor above 2 on publication (Rule 9). The cited source carries an openness statement, not a commitment to publish findings; the claim's 'would be published openly' is not verbatim in it. Stored 3 falls to 2."
+  },
+  "hfoai.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "9",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "techmeme-hf": "ok; page loads but says nothing about tooling (no supporting span)"
+   },
+   "note": "Rule 9 holds the floor at 2 until an evaluation is published; M.1 (open code, 3) would also need a source documenting the initiative's tooling, which the cited page does not. Stored 3 falls to 2."
+  },
+  "hfoai.06": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2 (anchor text)",
+   "quote": "Neither lab has said who gets in, on what terms, or who decides",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "tnw-hf-nvidia": "ok"
+   },
+   "note": "Gap: no engagement exists, so no scope has been set; by anchor text an unannounced arrangement supports at most 'scope negotiated per engagement' (2), and Rule 9 by analogy allows nothing above 2. Recorded as a gap."
+  },
+  "hfoai.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.4",
+   "quote": "Nvidia was in talks to put up to $10bn into Anthropic’s IPO as an anchor investor",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "tnw-hf-nvidia": "ok"
+   },
+   "note": "After the acquisition the initiative's leadership answers to a lab investor's board; P.4 caps one-hop-from-a-lab seats at 2 regardless of recusal. P.7 does not apply (no leader has moved to a lab). The Anthropic stake is reported as negotiations, not closed."
+  },
+  "hfoai.08": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.1 (second sentence)",
+   "quote": "Instant setup for growing teams $20 /month per user",
+   "quote_source": "hfoai-hf-pricing",
+   "fetch": {
+    "tnw-hf-nvidia": "ok; page loads but does not describe Hugging Face's commercial products (no supporting span)",
+    "hfoai-hf-pricing": "ok"
+   },
+   "note": "A commercial platform sold to unspecified parties in the ecosystem caps at 2 until a lab customer is documented (X.1); labs host models on the Hub for free, which X.4 says does not make them customers. Hugging Face's pricing page (own page) added for the products fact.",
+   "sources": [
+    "tnw-hf-nvidia",
+    "hfoai-hf-pricing"
+   ]
+  },
+  "hfoai.09": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "F.1",
+   "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+   "quote_source": "tnw-hf-nvidia",
+   "fetch": {
+    "evaluators-ledger": "ok (GitHub page loads; unverifiable status unchanged)",
+    "tnw-hf-nvidia": "ok"
+   },
+   "note": "Ownership by a lab investor is 0 (F.1). While evaluators-ledger (unverifiable) is cited, C14 clamps this signal to 1..3; the effective 0 is carried by hfoai.10. The Series D participants (Google, Amazon, Nvidia) are not documented as leads or 5% holders, so F.4 is not triggered by that round on this record (ledger T53 records Salesforce as lead)."
+  },
+  "hfoai.10": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "F.1",
+   "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000",
+   "quote_source": "fortune-hf-nvidia",
+   "fetch": {
+    "fortune-hf-nvidia": "ok",
+    "tnw-hf-nvidia": "ok"
+   },
+   "note": "Agreed acquisition by a lab investor: 0 under F.1, with a span from confirmed non-self press (C15, C17). Not closed as of the source dates."
+  }
+ },
+ "existing_quote_checks": {
+  "hfoai.01": "found",
+  "hfoai.10": "found (fortune-hf-nvidia; not found in tnw-hf-nvidia, whose wording is 'Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn')"
+ },
+ "new_sources": [
+  {
+   "id": "hfoai-hf-pricing",
+   "title": "Hugging Face – Pricing",
+   "publisher": "Hugging Face",
+   "url": "https://huggingface.co/pricing",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Own page; fetched 2026-09-15; span 'Instant setup for growing teams $20 /month per user' present (Team plan), with PRO and Enterprise tiers. Documents commercial products for X."
+  }
+ ],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "unknown",
+   "note": "No engagement exists; the requested access is to Anthropic's voluntary embedded-evaluator programme, which would be lab-controlled if granted."
+  },
+  "R": {
+   "mechanism": "self-imposed",
+   "note": "An own pledge to openness, untested by any engagement; no lab or statute constrains it yet."
+  }
+ },
+ "dissent": {
+  "lower": "Role incompatibility (2 to 1). Hugging Face sells PRO, Team and Enterprise plans and paid inference to the same ecosystem it proposes to audit, and frontier developers distribute models through the Hub. If any evaluated lab is a paying Enterprise Hub or inference customer, anchor 1 (sells products or services to labs) applies rather than the 2 that holds only until a lab customer is documented.",
+  "higher": "Access depth (0 to 1). Anthropic committed on 12 September to give third-party evaluators permanent, employee-level access, OpenAI said it would match, and Hugging Face asked to join within hours with a named lead. If admitted, the initiative's first engagement would begin above public-API access. The record shows a live programme and a pending request, not a refusal."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [],
+ "notes": [
+  "Derived values under these bounds (leads policy): F 0, G 0, P 2, A 0, S 2, R 2, M 2, X 2. Divergence from stored: F 1 -> 0 (F.1 via hfoai.10, all-confirmed sources with a span; consistent with G already at 0 on the same fact), R 3 -> 2 and M 3 -> 2 (Rule 9: no published evaluation).",
+  "No PLACEHOLDER bounds were present on the hfoai signals file when read."
+ ]
+}

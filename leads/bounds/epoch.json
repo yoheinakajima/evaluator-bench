@@ -1,0 +1,339 @@
+{
+ "evaluator": "epoch",
+ "signals": {
+  "epoch.01": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+   "quote_source": "epoch-clarify",
+   "fetch": {
+    "epoch-clarify": "ok",
+    "decoder-epoch": "ok via curl (fetch_text 403)"
+   },
+   "note": "OpenAI commissioned and paid for the benchmark: a lab paying per engagement (F.3). Not F.5: Epoch discloses a non-lab base (Coefficient $25.1M). The existing quote is on epoch-clarify but not on the Decoder page, which paraphrases."
+  },
+  "epoch.02": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.2",
+   "quote": "Per our agreement, we needed OpenAI’s permission before publicly disclosing their involvement",
+   "quote_source": "epoch-clarify",
+   "fetch": {
+    "techcrunch-epoch": "ok",
+    "epoch-clarify": "ok"
+   },
+   "note": "Rule gap: no R rule covers a lab holding approval over disclosure of its own funding role. By anchor text this is a lab review with a material redaction (anchor 2); Epoch disclosed after the fact, so not anchor 1. R.2 is the nearest rule (lab-controlled content, disclosed afterwards) and is cited by analogy. TechCrunch span also available: 'many contributors to the FrontierMath benchmark weren’t informed of OpenAI’s involvement until it was made public'."
+  },
+  "epoch.03": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.1",
+   "quote": "We are finalizing a 50-problem set for which OpenAI will only receive the problem statements and not the solutions",
+   "quote_source": "epoch-clarify",
+   "fetch": {
+    "epoch-clarify": "ok"
+   },
+   "note": "Rule gap: a holdout set is a method-integrity fact, not a publication right. By anchor text it supports only that Epoch publishes its own evaluations (anchor 2). R.1 not met: no redaction statement. Cited by analogy."
+  },
+  "epoch.04": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "techcrunch-epoch": "ok"
+   },
+   "note": "TechCrunch says nothing about Epoch's compute or capability data; no supporting span exists on the cited page. Open data alone is 3 under M.1; a 4 needs open tasks plus a third-party re-run or factsheets, and FrontierMath's tasks are owned by OpenAI and mostly closed. Recommend re-sourcing to epoch.ai/data."
+  },
+  "epoch.05": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+   "quote_source": "techcrunch-epoch",
+   "fetch": {
+    "techcrunch-epoch": "ok"
+   },
+   "note": "Anchor 3 text: mostly philanthropic with lab-linked pooled funds. Open Philanthropy (Coefficient) money is capped at 3 by F.6 (principal is an Anthropic investor), so this floor cannot exceed 3. Conflicts with the F.3 caps; see resolution."
+  },
+  "epoch.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+   "quote_source": "techcrunch-epoch",
+   "fetch": {
+    "techcrunch-epoch": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1). The transparency page was checked for a G.2 policy: it commits to disclosing sponsorship and data-access agreements (one G.2 element) and to editorial independence, but names no recusal rule, no bar on lab investments (it invests in AI stocks), and no contingent-fee rule. Derived G is 2, not the stored 3."
+  },
+  "epoch.07": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+   "quote_source": "epoch-clarify",
+   "fetch": {
+    "epoch-clarify": "ok"
+   },
+   "note": "Rule gap and dimension mismatch: the claim is about ownership of the evaluation asset, not access depth, and no A rule maps it. By anchor text the record documents only pre-release API access (see epoch.18); nothing at safeguards-off, extended-window or weights level is documented, so the cap is 1. Lifts to 2 if Epoch documents safeguards-off or extended-window access."
+  },
+  "epoch.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "Epoch AI is free to conduct and publish evaluations of any models using the FrontierMath problem set",
+   "quote_source": "epoch-clarify",
+   "fetch": {
+    "epoch-clarify": "ok"
+   },
+   "note": "Self-directed benchmark runs with no engagement to refuse floor at 3 (S.5); no incident or sign-off rights."
+  },
+  "epoch.09": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "techcrunch-epoch": "ok"
+   },
+   "note": "'No lab roles found' floors at 2 (P.6); the cited TechCrunch article contains no statement about roles, so no span exists. Derived P is 2, not the stored 3."
+  },
+  "epoch.10": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "techcrunch-epoch": "ok"
+   },
+   "note": "Claim matches anchor 4, but TechCrunch does not state it and Epoch's own transparency page lists paid consultations for OpenAI, Google DeepMind, xAI and Anthropic (see epoch.16). Held to 3 by C15/C16 and overridden by the X.3 cap; recommend superseding this signal with epoch.16."
+  },
+  "epoch.11": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "Google DeepMind 2026 Evaluating the AI co-mathematician on FrontierMath 2025 Model Evaluations",
+   "quote_source": "epoch-transparency",
+   "fetch": {
+    "epoch-transparency": "ok",
+    "coefficient-index": "failed: 404 via fetch_text, 403 via curl"
+   },
+   "note": "Paying lab clients cap at 2 (F.3). The Tallinn DAF gift ('Jaan Tallinn General Support January 2025 $600,000 USD DAF donation') and the Coefficient grants each cap at 3 under F.6; F.3 is the tighter cap. The Coefficient index page cannot be fetched."
+  },
+  "epoch.12": {
+   "bound": null,
+   "bound_note": "Informational: a funding-transparency page is not evidence about method transparency; no M anchor or rule maps it. Recommend re-dimensioning to F (for) where the disclosure counts toward anchor 4's 'disclosed'.",
+   "rule": "M.2",
+   "quote": "Here, we list only donations of $70,000 USD or more",
+   "quote_source": "epoch-transparency",
+   "fetch": {
+    "epoch-transparency": "ok"
+   },
+   "note": "Rule gap: no rule declares a mis-dimensioned signal informational; recorded as null rather than inventing an M floor from a funding disclosure."
+  },
+  "epoch.13": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark",
+   "quote_source": "epoch-transparency-page",
+   "fetch": {
+    "epoch-transparency-page": "ok"
+   },
+   "note": "Same page as epoch-transparency (both source records point at epoch.ai/about/transparency). Paying clients OpenAI, Google DeepMind, xAI and Anthropic cap at 2 (F.3); also on the page: 'April 2025 $8,500,000 USD' and 'Survival & Flourishing Fund General Support May 2026 $195,000 USD'."
+  },
+  "epoch.14": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "X.5",
+   "quote": "We invest part of our funds in semiconductor and AI stocks as part of a diversified portfolio",
+   "quote_source": "epoch-transparency-page",
+   "fetch": {
+    "epoch-transparency-page": "ok"
+   },
+   "note": "Diversified portfolio that may include listed developers: 3 (X.5)."
+  },
+  "epoch.15": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "We aim to charge prices at least on par with industry consultants",
+   "quote_source": "epoch-transparency-page",
+   "fetch": {
+    "epoch-transparency-page": "ok"
+   },
+   "note": "Market rates and a disclosure commitment beside a disclosed non-lab base is anchor 2. The F.3 relief to a cap of 3 needs a published 10% ceiling on lab revenue, which the page does not state."
+  }
+ },
+ "existing_quote_checks": {
+  "epoch.01": "found (epoch-clarify); not found (decoder-epoch); suggested for decoder-epoch: Epoch AI, which developed the benchmark, had signed an agreement preventing them from revealing OpenAI's financial support",
+  "epoch.14": "found",
+  "epoch.15": "found"
+ },
+ "new_sources": [
+  {
+   "id": "epoch-gpt54-frontiermath",
+   "title": "GPT-5.4 set a new record on FrontierMath",
+   "publisher": "Epoch AI (Substack)",
+   "url": "https://epochai.substack.com/p/gpt-54-set-a-new-record-on-frontiermath",
+   "published": "2026-03-05",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "States 'We had pre-release access to evaluate the model' and that FrontierMath was funded by OpenAI. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "epoch-musespark-x",
+   "title": "Epoch AI on X: pre-release access to Meta's Muse Spark",
+   "publisher": "Epoch AI (X)",
+   "url": "https://x.com/EpochAIResearch/status/2041947954202988757",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "'We had pre-release access to Meta’s new Muse Spark model and evaluated it on FrontierMath.' Fetched 2026-09-15; span present."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "epoch.16",
+   "evaluator": "epoch",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "Epoch's transparency page lists paid consultation and evaluation work for OpenAI (2024 to 2026), Google DeepMind (2024 to 2026), xAI (2025) and an Anthropic pilot (2024).",
+   "sources": [
+    "epoch-transparency-page"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "X.3",
+   "quote": "OpenAI 2026 FrontierMath Data Audit",
+   "quote_source": "epoch-transparency-page",
+   "note": "Paid consultation clients listed on a transparency page count (X.3). Also on the page: 'xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark'. Derived X is 2, not the stored 3."
+  },
+  {
+   "id": "epoch.17",
+   "evaluator": "epoch",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.",
+   "sources": [
+    "epoch-clarify"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.6",
+   "quote": "OpenAI commissioned Epoch AI to produce 300 advanced math problems for AI evaluation",
+   "quote_source": "epoch-clarify",
+   "note": "A lab-commissioned evaluation asset used to evaluate that lab is co-production in the sense of S.6 (cap 3). Not binding today (floor is 3) but rule-required."
+  },
+  {
+   "id": "epoch.18",
+   "evaluator": "epoch",
+   "dimension": "A",
+   "direction": "for",
+   "claim": "Epoch reports pre-release access to evaluate GPT-5.4 (March 2026) and Meta's Muse Spark on FrontierMath.",
+   "sources": [
+    "epoch-gpt54-frontiermath",
+    "epoch-musespark-x"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 1
+   },
+   "rule": "A.1",
+   "quote": "We had pre-release access to evaluate the model",
+   "quote_source": "epoch-gpt54-frontiermath",
+   "note": "Deepest documented engagement is pre-release API access; no safeguards-off, extended-window, or weights-level access is documented, so anchor 1 (A.1)."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "lab-controlled"
+  },
+  "F": {
+   "resolution": {
+    "rule": "F.3",
+    "value": 2,
+    "note": "Per-engagement lab fees (OpenAI commissioned FrontierMath; OpenAI, Google DeepMind, xAI and Anthropic are paying clients) beside a disclosed non-lab base cap at 2 under F.3; the anchor-3 floor from 'primarily philanthropic' does not override a fee cap, and F.6 already holds the philanthropic base itself at 3."
+   }
+  },
+  "X": {
+   "resolution": {
+    "rule": "X.3",
+    "value": 2,
+    "note": "Paid consultation clients on the transparency page cap at 2 (X.3); the 'no commercial products' floor is unsourced and contradicted by Epoch's own client list."
+   }
+  }
+ },
+ "dissent": {
+  "lower": "Funding should be 1. OpenAI commissioned and owns FrontierMath, the asset Epoch's reputation rests on, and held approval over disclosing that fact for a year. OpenAI, Google DeepMind, xAI and Anthropic are all paying clients, the revenue split is undisclosed, and Epoch invests in AI stocks. 'Every major lab' as clients with an undisclosed share reads as F.5's material lab revenue, not F.3's occasional fee.",
+  "higher": "Funding should be 3. Coefficient's $25.1M over eight grants dwarfs client fees, and Epoch discloses every donation above $70,000 and every client by name and year. It charges at least consultant rates so labs do not get subsidised work, keeps a 50-problem holdout OpenAI cannot see, and publishes evaluations of every lab's models on the same benchmark, including results OpenAI did not commission."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [
+  {
+   "dimension": "F",
+   "floor": 3,
+   "cap": 2,
+   "resolution": {
+    "rule": "F.3",
+    "value": 2,
+    "note": "F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6."
+   }
+  },
+  {
+   "dimension": "X",
+   "floor": 3,
+   "cap": 2,
+   "resolution": {
+    "rule": "X.3",
+    "value": 2,
+    "note": "epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page."
+   }
+  }
+ ]
+}

@@ -1,0 +1,295 @@
+{
+ "evaluator": "ukaisi",
+ "signals": {
+  "ukaisi.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "internal technical research directorate within the Department for Science, Innovation and Technology",
+   "quote_source": "regulations-ai-aisi",
+   "fetch": {
+    "regulations-ai-aisi": "ok",
+    "ukaisi-about": "ok"
+   },
+   "note": "Public funding floors F at 3 (F.9). A 4 needs a confirmed bounded negative in a filing or index and no material lab in-kind (F.9, F.12); none on file. Added the institute's own About page for the GBP 66m core budget (\"£66m in funding per financial year\").",
+   "sources": [
+    "regulations-ai-aisi",
+    "ukaisi-about"
+   ]
+  },
+  "ukaisi.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "An open-source framework for large language model evaluations",
+   "quote_source": "ukaisi-inspect",
+   "fetch": {
+    "csa-aisi-trends": "ok",
+    "ukaisi-inspect": "ok"
+   },
+   "note": "The cited CSA note does not mention Inspect at all; added the Inspect documentation site as the source that supports the claim. Open code alone is 3 (M.1); a 4 needs open tasks plus third-party re-runs or per-evaluation factsheets, which the Frontier AI Trends Report does not provide (per-model evaluations are not published). Strict reading: floor 3, not 4.",
+   "sources": [
+    "csa-aisi-trends",
+    "ukaisi-inspect"
+   ]
+  },
+  "ukaisi.03": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": "AISI found universal jailbreaks across every tested system",
+   "quote_source": "csa-aisi-trends",
+   "fetch": {
+    "csa-aisi-trends": "ok"
+   },
+   "note": "An adverse finding reached the public, but only in aggregate, unattributed to any model. For a public body R is scored on what reaches the public: aggregated trends is 2 (R.4). R.5 needs no lab pre-publication review plus an attributed adverse finding; not documented."
+  },
+  "ukaisi.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": "evaluation work that would otherwise remain confidential between the Institute and individual AI labs",
+   "quote_source": "csa-aisi-trends",
+   "fetch": {
+    "csa-aisi-trends": "ok"
+   },
+   "note": "Aggregated trends reach the public; per-model results do not: cap 2 (R.4). Mechanism tagged statutory per R.4 so it is not read as a lab holding the pen."
+  },
+  "ukaisi.05": {
+   "bound": null,
+   "bound_note": "A.3: \"the lab can decline to renew\" is recorded as a mechanism (lab-controlled), not as a cap.",
+   "rule": "A.3",
+   "quote": "the bill had not yet been introduced to Parliament",
+   "quote_source": "csa-aisi-trends",
+   "fetch": {
+    "csa-aisi-trends": "ok",
+    "regulations-ai-aisi": "ok"
+   },
+   "note": "regulations.ai: \"creates no statutory enforcement powers\". Informational for A; the same fact caps S at 3 (see new signal ukaisi.14, S.4)."
+  },
+  "ukaisi.06": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.4",
+   "quote": "running pre-deployment and post-deployment evaluations of the most capable models released by major AI developers",
+   "quote_source": "csa-aisi-trends",
+   "fetch": {
+    "aiwiki-ukaisi": "failed: HTTP 429 then Vercel Security Checkpoint (JavaScript-only)",
+    "csa-aisi-trends": "ok"
+   },
+   "note": "Government testing agreements: 3 (A.4). aiwiki.ai is behind a Vercel security checkpoint and cannot be fetched by the normalizer; the CSA note carries the span."
+  },
+  "ukaisi.07": {
+   "bound": null,
+   "bound_note": "P.3: two-way hiring caps at 2, but \"a statutory post-employment rule for the body's staff lifts the cap\"; the Business Appointment Rules (new signal ukaisi.13) lift it. Absent ukaisi.13 this signal caps P at 2.",
+   "rule": "P.3",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "csa-aisi-trends": "ok"
+   },
+   "note": "The cited CSA note contains nothing about staff moving between the institute and labs; the claim is unsupported by its only source. No span. A press source documenting specific moves is needed before this signal counts for anything."
+  },
+  "ukaisi.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+   "quote_source": "regulations-ai-aisi",
+   "fetch": {
+    "regulations-ai-aisi": "ok",
+    "ukaisi-civil-service-code": "ok"
+   },
+   "note": "Public body; statutory civil-service conflict rules count as a conflict policy (G.2): the Civil Service Code (statutory guidance under the Constitutional Reform and Governance Act 2010) bars misuse of position for private interests and gifts that compromise judgement. Added as a second source. G.7 four needs tier-1 evidence of an independent board and external review; none.",
+   "sources": [
+    "regulations-ai-aisi",
+    "ukaisi-civil-service-code"
+   ]
+  },
+  "ukaisi.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.4",
+   "quote": "AISI’s voluntary testing arrangements with frontier developers remain the primary mechanism",
+   "quote_source": "csa-aisi-trends",
+   "fetch": {
+    "csa-aisi-trends": "ok"
+   },
+   "note": "Voluntary memoranda: 3 (S.4). The same rule makes 3 a ceiling; recorded as new against-signal ukaisi.14."
+  },
+  "ukaisi.10": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+   "quote_source": "regulations-ai-aisi",
+   "fetch": {
+    "regulations-ai-aisi": "ok",
+    "ukaisi-about": "ok"
+   },
+   "note": "Anchor 4 (no commercial products) matches a government research directorate. X.7 asks for a bounded statement of no commercial products plus a second source; the second source is added (institute About page, self, confirmed; regulations.ai is press, confirmed, so C16 is met) but no literal \"no products\" statement exists for a public body. Rule gap: X.7 should accept legal form for public bodies; if read literally the floor is 3 under X.4 (Inspect is open and free).",
+   "sources": [
+    "regulations-ai-aisi",
+    "ukaisi-about"
+   ]
+  },
+  "ukaisi.11": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "OpenAI, Microsoft, Amazon Web Services (AWS), Schmidt Sciences, Anthropic",
+   "quote_source": "alignment-project-about",
+   "fetch": {
+    "aisi-grants": "ok",
+    "alignment-project-about": "ok",
+    "ukaisi-about": "ok"
+   },
+   "note": "Administering a grant pool that includes lab money caps F at 3 (F.9). The cited aisi.gov.uk/grants page is the institute's outbound grants page and names no backer; the backer list is on alignmentproject.aisi.gov.uk/about (added), and the GBP 66m core budget is on aisi.gov.uk/about (added: \"£66m in funding per financial year\").",
+   "sources": [
+    "aisi-grants",
+    "alignment-project-about",
+    "ukaisi-about"
+   ]
+  },
+  "ukaisi.12": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "including £5.6m from OpenAI",
+   "quote_source": "aisi-alignment-60",
+   "fetch": {
+    "aisi-alignment-60": "ok",
+    "alignment-project-about": "ok",
+    "openai-alignment-project": "failed: HTTP 403 Forbidden (curl returns a 43-char block page)"
+   },
+   "note": "Same fact as ukaisi.11 with the OpenAI amount: cap 3 (F.9). The OpenAI page returns 403 to the normalizer."
+  }
+ },
+ "existing_quote_checks": {
+  "ukaisi.03": "found",
+  "ukaisi.12": "found"
+ },
+ "new_sources": [
+  {
+   "id": "ukaisi-about",
+   "title": "About the AI Security Institute",
+   "publisher": "UK AI Security Institute",
+   "url": "https://www.aisi.gov.uk/about",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Institute About page: \"research organisation within the UK government's Department for Science, Innovation and Technology\"; \"£66m in funding per financial year\". Fetched 2026-09-15 with the CI normalizer; spans present."
+  },
+  {
+   "id": "ukaisi-inspect",
+   "title": "Inspect: an open-source framework for large language model evaluations",
+   "publisher": "UK AI Security Institute",
+   "url": "https://inspect.aisi.org.uk/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Inspect documentation: \"An open-source framework for large language model evaluations\"; \"developed by the UK AI Security Institute and Meridian Labs\". Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "ukaisi-civil-service-code",
+   "title": "The Civil Service Code",
+   "publisher": "GOV.UK (Cabinet Office)",
+   "url": "https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code",
+   "published": "2015-03-16",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Statutory guidance under Part 1 of the Constitutional Reform and Governance Act 2010; typed filing as a primary legal instrument, not a self-publication of the institute. Bars misuse of official position for private interests and gifts that compromise judgement. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "ukaisi-bar-crown",
+   "title": "Business Appointment Rules for Crown Servants: guidance",
+   "publisher": "GOV.UK (Cabinet Office)",
+   "url": "https://www.gov.uk/government/publications/business-appointment-rules-for-crown-servants/business-appointment-rules-for-crown-servants-guidance",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Post-employment rules for civil servants: one year after leaving for grade 6 and below, two years for SCS1/SCS2 and above. Typed filing as a primary legal instrument. Fetched 2026-09-15; span present."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "ukaisi.13",
+   "evaluator": "ukaisi",
+   "dimension": "P",
+   "direction": "for",
+   "claim": "AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.",
+   "sources": [
+    "ukaisi-civil-service-code",
+    "ukaisi-bar-crown",
+    "ukaisi-about"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "P.5",
+   "quote": "two years after leaving Crown service, if you are grade SCS1 or SCS2",
+   "quote_source": "ukaisi-bar-crown",
+   "note": "Statutory post-employment rules count as cooling-off (P.3) and lift the two-way-hiring cap; the Code is a published mandatory conflict rule (P.5). Individual lab ties are declared to the department, not published, so 3 not 4 (P.8 needs disclosed ties and no equity with tier-1 evidence)."
+  },
+  {
+   "id": "ukaisi.14",
+   "evaluator": "ukaisi",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.",
+   "sources": [
+    "regulations-ai-aisi",
+    "csa-aisi-trends"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.4",
+   "quote": "The institute cannot fine, audit, or directly penalise model developers",
+   "quote_source": "regulations-ai-aisi",
+   "note": "Voluntary memoranda: 3 (S.4). Statutory scope power would be 4."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "statutory"
+  }
+ },
+ "dissent": {
+  "lower": "Publication (R) at 2 could be 1. The public record shows per-model findings from more than thirty tested systems have never been published; the only public output is one aggregated Trends Report, and CSA describes the underlying work as confidential between the Institute and individual labs. Under R.4 a public body that publishes nothing per model scores 1, and one aggregate report in two years is close to nothing per model.",
+  "higher": "Publication (R) at 2 could be 3. The Trends Report published an adverse finding against every lab at once: a universal jailbreak in every system tested. The joint evaluations with CAISI produced public write-ups of ChatGPT Agent vulnerabilities and Constitutional Classifier bypasses. No lab-edited summary is documented, and the anchor-3 text (publishes, security-only redaction) is closer to that record than lab-edited summaries."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

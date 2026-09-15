@@ -2,11 +2,12 @@
   "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15",
   "id": "aisi-alignment-60",
-  "note": "\u00a312m additional funding bringing the Alignment Project to \u00a327m, including \u00a35.6m from OpenAI. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+  "note": "£12m additional funding bringing the Alignment Project to £27m, including £5.6m from OpenAI. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
   "published": "2026-02",
   "publisher": "UK AI Security Institute",
   "retrieved": "2026-09-15",
   "source_type": "self",
   "title": "Funding 60 projects to advance AI alignment research",
-  "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research"
+  "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+  "self_of": "ukaisi"
 }

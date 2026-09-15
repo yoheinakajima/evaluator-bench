@@ -1,0 +1,136 @@
+{
+  "generated": "2026-09-15",
+  "method": "bench.review.fetch_text; every span verified as an exact substring (<=120 chars) of the normalized fetched text",
+  "records": [
+    {
+      "id": "anthropic-pace-frontier",
+      "title": "We Must Pace the Frontier",
+      "publisher": "Dario Amodei (Anthropic CEO), darioamodei.com",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "published": "2026-09-12",
+      "retrieved": "2026-09-15",
+      "source_type": "self",
+      "audit_status": "confirmed",
+      "note": "The essay behind the 'Pace the Frontier' plan. It is hosted on the CEO's personal domain, not anthropic.com; no anthropic.com post on the commitment was found by site search or URL probing as of 2026-09-15 (anthropic.com/news lists only an Aug 2026 alignment/security post that says Anthropic is 'planning to work with METR for an independent review'). The page carries no date metadata; the date is taken from the announcement post x.com/DarioAmodei/status/2098773920774074715 (2026-09-12), which links to it. Fetched 2026-09-15 with bench.review.fetch_text, SHA-256 62b8af679fe1...; the essay says 'employee-like', the X post says 'employee-level'. The space before ')' in the METR span comes from the normalizer stripping the link tag.",
+      "spans": [
+        {
+          "supports": "employee-level access for independent evaluators",
+          "span": "Each frontier AI company commits to giving ongoing, employee-like access to a team of embedded third-party evaluators"
+        },
+        {
+          "supports": "METR named",
+          "span": "a team of embedded third-party evaluators (such as METR )"
+        },
+        {
+          "supports": "unilateral commitment",
+          "span": "Anthropic is unilaterally committing to this step now."
+        },
+        {
+          "supports": "employee-level access (terms)",
+          "span": "Desks in our offices, access badges, and company laptops."
+        },
+        {
+          "supports": "employee-level access (terms)",
+          "span": "Access to workspaces, tools, and permissions mostly comparable to what internal risk assessment teams have."
+        },
+        {
+          "supports": "publish without editorial control",
+          "span": "publish key findings about risk levels, incidents, practices, and the access they received or didn’t receive"
+        },
+        {
+          "supports": "publish without editorial control",
+          "span": "without editorial control by Anthropic"
+        },
+        {
+          "supports": "publish without editorial control (redaction limit)",
+          "span": "but we can’t redact findings just because they are unfavorable"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-amodei-x-pace-frontier",
+      "title": "Dario Amodei on X: 'We Must Pace the Frontier ... We'll provide third-party evaluators with permanent, employee-level access'",
+      "publisher": "Dario Amodei (Anthropic CEO), X",
+      "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+      "published": "2026-09-12",
+      "retrieved": "2026-09-15",
+      "source_type": "self",
+      "audit_status": "confirmed",
+      "note": "Announcement post (4:30 PM, Sep 12, 2026 per the page). fetch_text reads x.com status pages through their server-rendered title/OG text, so CI can check these spans (SHA-256 a9e72bbe0e27...). This is the 'employee-level' wording the paper uses; METR is not named in the post itself, only in the essay it links.",
+      "spans": [
+        {
+          "supports": "employee-level access for independent evaluators",
+          "span": "We’ll provide third-party evaluators with permanent, employee-level access to our systems"
+        },
+        {
+          "supports": "unilateral commitment",
+          "span": "Anthropic is unilaterally committing to the first of these steps."
+        },
+        {
+          "supports": "date",
+          "span": "2026-09-12"
+        }
+      ]
+    },
+    {
+      "id": "openai-altman-embedded-pledge",
+      "title": "Sam Altman on X: 'I agree with Dario that we need to pace the frontier ... we will do the same'",
+      "publisher": "Sam Altman (OpenAI CEO), X",
+      "url": "https://x.com/sama/status/2098811563415150910",
+      "published": "2026-09-12",
+      "retrieved": "2026-09-15",
+      "source_type": "self",
+      "audit_status": "confirmed",
+      "note": "Quote-post of Amodei's announcement, same day. No openai.com post matching the pledge was found on or before 2026-09-15: openai.com/news and its RSS carry nothing on embedded evaluators; openai.com/index/strengthening-safety-with-external-testing/ (linked by Unite.AI) is dated November 19, 2025 and describes the existing external-testing programme (it names METR's time-horizon evaluation and SecureBio's VCT, and says third-party work is published 'after we reviewed it for confidentiality and accuracy', i.e. not the no-editorial-control commitment); openai.com/index/third-party-cyber-evaluations-involving-openai-models/ returned HTTP 403 to fetch_text, WebFetch and curl (see fetch_failures). Altman's post does not name METR and does not mention publication rights; 'we will do the same' refers to Amodei's employee-level-access commitment. Fetched 2026-09-15 with fetch_text, SHA-256 2c80308418be....",
+      "spans": [
+        {
+          "supports": "employee-level access for independent evaluators",
+          "span": "Committing to having independent evaluators with employee-like access is a great idea, and we will do the same."
+        },
+        {
+          "supports": "matches Anthropic within hours",
+          "span": "I agree with Dario that we need to pace the frontier."
+        },
+        {
+          "supports": "details pending",
+          "span": "We'll have more to share soon."
+        },
+        {
+          "supports": "date",
+          "span": "2026-09-12"
+        }
+      ]
+    }
+  ],
+  "fetch_failures": [
+    {
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+      "failure": "HTTP 403 to fetch_text and WebFetch; curl with browser headers returns 'Enable JavaScript and cookies to continue'",
+      "confirmed_via_other_route": null
+    },
+    {
+      "url": "https://openai.com/index/strengthening-safety-with-external-testing/",
+      "failure": "intermittent: fetch_text succeeded twice (November 19, 2025 page, 342k chars) and returned HTTP 403 once",
+      "confirmed_via_other_route": "content read on a successful fetch; pre-dates the pledge and is not the commitment"
+    }
+  ],
+  "not_found": [
+    {
+      "looked_for": "anthropic.com post on the Pace the Frontier / embedded-evaluator commitment",
+      "tried": [
+        "site:anthropic.com search",
+        "anthropic.com/news index",
+        "URL probes: /news/pace-the-frontier, /news/we-must-pace-the-frontier, /news/embedded-evaluators, /news/third-party-evaluator-access"
+      ],
+      "result": "none found as of 2026-09-15; the primary text is on darioamodei.com and the @DarioAmodei X post"
+    },
+    {
+      "looked_for": "openai.com post matching Altman's pledge",
+      "tried": [
+        "site:openai.com search",
+        "openai.com/news index and RSS"
+      ],
+      "result": "none found on or before 2026-09-15; Altman's post says 'We'll have more to share soon'"
+    }
+  ]
+}

@@ -12,5 +12,10 @@
  "confidence": "med",
  "summary": "Regulator behind the GPAI Code of Practice; external-evaluator obligations enforceable since August 2026.",
  "what_would_move_the_score": "An accreditation pathway for external evaluators and a public reporting schema.",
- "role": "government"
+ "role": "government",
+ "dissent": {
+  "lower": "Scope (S) at 2 could be 1. The public record shows the Office has run no evaluation of any frontier model; the only scope it has exercised is a procurement of technical assistance whose deliverables are shaped by the Code that signatory labs themselves negotiated. Until the Office uses Article 92, the labs effectively define what is tested through their own Safety and Security Model Reports, which is the anchor-1 picture.",
+  "higher": "Scope (S) at 2 could be 3. Article 92 gives the Office the legal power to evaluate any general-purpose model and to compel access, including source code, with fines for refusal, and enforcement has been live since August 2026. The Office set the six risk lots of the tender itself. A body that writes the questions and can compel answers is at least anchor 3; section 9 holds it down only for lack of a published run."
+ },
+ "list_group": "government"
 }

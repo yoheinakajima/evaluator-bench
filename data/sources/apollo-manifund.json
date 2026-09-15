@@ -8,5 +8,6 @@
   "retrieved": "2026-09-15",
   "source_type": "self",
   "title": "Apollo Research on Manifund",
-  "url": "https://manifund.org/apolloresearch"
+  "url": "https://manifund.org/apolloresearch",
+  "self_of": "apollo"
 }

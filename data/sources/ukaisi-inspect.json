@@ -1,0 +1,12 @@
+{
+  "id": "ukaisi-inspect",
+  "title": "Inspect: an open-source framework for large language model evaluations",
+  "publisher": "UK AI Security Institute",
+  "url": "https://inspect.aisi.org.uk/",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Inspect documentation: \"An open-source framework for large language model evaluations\"; \"developed by the UK AI Security Institute and Meridian Labs\". Fetched 2026-09-15; span present.",
+  "self_of": "ukaisi"
+}

@@ -6,10 +6,12 @@ State at v0: the repository builds, verifies, and tests clean; the site has 200-
 
 ## Before the repository is public
 
-1. **Push and enable Pages.** The already-created GitHub repository contains only its boilerplate initial commit, so fetch it and replace it with the prepared history using `git push --force-with-lease -u origin main`, then `git push origin v0`. In repository settings, set Pages to deploy from GitHub Actions; `.github/workflows/pages.yml` publishes `dist/`. Every link on the site already assumes this repository path.
+1. **Pages and HTTPS.** Pages deploys from GitHub Actions (`.github/workflows/pages.yml` publishes `dist/`); the custom domain evaluatorbench.com is set and HTTPS is enforced (done 2026-09-15).
+   Original step: **Push and enable Pages.** The already-created GitHub repository contains only its boilerplate initial commit, so fetch it and replace it with the prepared history using `git push --force-with-lease -u origin main`, then `git push origin v0`. In repository settings, set Pages to deploy from GitHub Actions; `.github/workflows/pages.yml` publishes `dist/`. Every link on the site already assumes this repository path.
 2. **Keep `DISCLOSURE.md` current.** Filled by the curator 2026-09-15. The Method section and the Status page link to it; the shared-funders field is a best-effort "none known" and must be updated if that changes.
 3. **Add the `ANTHROPIC_API_KEY` secret** so the machine-review job can run the model check on pull requests. Without it the job still re-fetches sources and checks quotes.
-4. **Publish as a preview with a two-week window.** `python -m bench release --stage preview --until <date fourteen days after the push>` and rebuild; every page carries the banner. This is the first publication, presented as one batch of initial research. No notices go to individual organizations for it: the preview window, the contribute page, and the right-of-reply issue template are the channel for everyone. When the window closes: `python -m bench changelog --since <preview commit>` becomes the launch-round section, then `python -m bench release --stage published --tag v0`, rebuild, tag. From then on, a published score that moves by more than one anchor triggers `bench outreach <id>` and a fourteen-day wait before the next tag.
+4. **Run the gates.** `python -m bench gates` lists what stands between the preview and a citable tag: a quoted span on every binding signal, a second coder on every extreme, a dated contact for every ranked organization and named person, RULES.md published with every conflict resolved, the byline and competence chip on the homepage. `bench release --stage published` refuses while any gate fails. `bench outreach --all` writes the packets; sending them and filling `data/outreach-log.csv` is a person's job. The funder-overlap check in DISCLOSURE.md is also a person's job and is due before the freeze.
+5. **Publish as a preview with a two-week window.** `python -m bench release --stage preview --until <date fourteen days after the push>` and rebuild; every page carries the banner. This is the first publication, presented as one batch of initial research. No notices go to individual organizations for it: the preview window, the contribute page, and the right-of-reply issue template are the channel for everyone. When the window closes: `python -m bench changelog --since <preview commit>` becomes the launch-round section, then `python -m bench release --stage published --tag v0`, rebuild, tag. From then on, a published score that moves by more than one anchor triggers `bench outreach <id>` and a fourteen-day wait before the next tag.
 
 ## Reviews and the heartbeat
 
@@ -25,7 +27,7 @@ State at v0: the repository builds, verifies, and tests clean; the site has 200-
 
 ## First month
 
-8. **Public correction instead of a second coder.** Version 0 has one coder. The check is that everything is published and anyone can file a correction; accepted changes are reported in the annual update with the row that moved them.
+8. **Second coder.** Version 0.1 has one coder. A human second coder, not another lab's model, codes every extreme and the top ten and bottom six before the freeze (`data/coding/second-coder.csv`), the full population by v0.2; agreement is shown on the status page. Public correction continues alongside: everything is published and anyone can file a correction; accepted changes are reported in the annual update with the row that moved them.
 9. **Primary sources for Dataset B.** Replace the Wikipedia citations milestone by milestone; the `status` field on each regime says so until done.
 10. **Announce with the agent prompt** on the Contribute page, so the first contributions arrive in the format the CI expects.
 

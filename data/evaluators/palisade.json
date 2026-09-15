@@ -11,5 +11,10 @@
  "confidence": "med",
  "summary": "Independent capability-elicitation research on released models: shutdown resistance, self-replication, offensive cyber.",
  "what_would_move_the_score": "Pre-release access on published terms would raise the access score without touching the others.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Access should be 0. Every published Palisade study (shutdown resistance, specification gaming, self-replication, Badllama) ran on released models through public APIs or open weights; no system card names Palisade as a pre-release tester and no engagement with a lab is on record. 'Little' pre-deployment access, with none documented, is anchor 0, and the 1 rests only on the claim's wording.",
+  "higher": "Access should be 2. Palisade's work is cited by Anthropic's CEO and briefed to Congress, and labs have responded to its findings; if any developer supplied early checkpoints or extended API windows for the shutdown or hacking studies, that is anchor 2. The record says 'little', not none, and a single documented pre-release run with extended time would move it."
+ },
+ "list_group": "referee"
 }

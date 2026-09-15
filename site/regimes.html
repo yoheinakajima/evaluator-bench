@@ -1,0 +1,100 @@
+<div class="pagehead"><h1>Where we are</h1><p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder marks the year each regime first reached each stage. Tap a cell to see the milestone behind it and its source; tap a regime name for its full history.</p>
+<p class="lead"><b>Caveat.</b> Dataset B is coded from secondary sources at year granularity, with primary-source verification still to do, and its trigger incidents were selected with hindsight. The lag pattern below is a description of the coded record, not a finding about how regimes behave. The ladder records first arrivals, so a one-clause rule in one state fills a cell the same way Sarbanes-Oxley does; the three views after it keep the order and the strength of each move.</p></div>
+<div class="lwrap">
+  <div id="ladder" class="lgrid" role="grid" aria-label="Stage ladder"></div>
+</div>
+<div class="llegend">
+  <span><i class="sw s0"></i> under 10 years into the regime</span>
+  <span><i class="sw s1"></i> 10 to 50</span>
+  <span><i class="sw s2"></i> over 50</span>
+  <span><i class="sw sn"></i> not reached</span>
+  <span><i class="dot"></i> rollback</span>
+  <span><i class="ring"></i> assessed party absorbed the assessment</span>
+  <a href="../timeline.svg" download>Download the static figure</a>
+</div>
+<div id="ldetail" class="ldetail" hidden></div>
+<p class="lead" style="margin-top:14px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules have followed public failures within a few years in the coded record; the stretch before the first failure is where a regime's shape is decided. The oversight and independence-rule columns are the ones AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
+
+<h2 style="margin-top:30px">Paths, responses, and mechanisms</h2>
+<p class="lead">Three views that keep the nuance the ladder drops. Hover or tap any glyph, point, or cell to read what it stands for and where it comes from.</p>
+<h3 style="margin-top:22px">The order, not the calendar</h3>
+<p class="lead">Each regime as a sequence of moves. Reversals show up in red, the assessed party absorbing the assessment function in amber. The right column ranks regimes by how closely their opening moves match frontier AI's so far, using edit distance over the sequences. Two regimes tie for nearest, the sequences are short, and the coding is coarse: a hypothesis generator, not a prediction.</p>
+<div class="fig" id="figPaths"><!--__FIG_PATHS__--></div><div class="figlive" aria-live="polite"></div><p class="scrollhint">Scroll sideways to see the rest of the figure.</p>
+<h3 style="margin-top:26px">Fast is not the same as strong</h3>
+<p class="lead">Every trigger incident paired with the next rule that followed. Most responses arrive within three years, and most are mandates or standards rather than structural changes; the two structural responses in the set are the PCAOB after Enron and lab inspection under Good Laboratory Practice after the IBT fraud. Frontier AI's two responses so far score 2 and 1. Triggers were selected with hindsight, so the speed is a property of the coded record.</p>
+<div class="fig" id="figResponses"><!--__FIG_RESPONSES__--></div><div class="figlive" aria-live="polite"></div><p class="scrollhint">Scroll sideways to see the rest of the figure.</p>
+<h3 style="margin-top:26px">Who pays, selects, sees, publishes, and watches</h3>
+<p class="lead">The configuration the ladder cannot show. Read the AI row against the others: the only other regime with the same five-cell pattern is dietary supplements, the regime that removed pre-market review by statute. The match is on a coarse categorical coding, so it is suggestive rather than conclusive.</p>
+<div class="fig" id="figMech"><!--__FIG_MECHANISMS__--></div><div class="figlive" aria-live="polite"></div><p class="scrollhint">Scroll sideways to see the rest of the figure.</p>
+
+<h2 style="margin-top:30px">The sixteen regimes</h2>
+<!--__REGIMES_TABLE__-->
+
+<script>
+const TIMELINE = /*__TIMELINE_JSON__*/null;
+const INDUSTRIES = /*__INDUSTRIES_JSON__*/null;
+const STAGEMETA = /*__STAGES_JSON__*/null;
+const REPO = "https://github.com/yoheinakajima/evaluator-bench/blob/main/";
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+(function ladder(){
+  if(!TIMELINE || !INDUSTRIES || !STAGEMETA) return;
+  const byId = Object.fromEntries(INDUSTRIES.map(o=>[o.id,o]));
+  const stages = STAGEMETA.stages; const other = STAGEMETA.other;
+  const grid = $("#ladder"); const detail = $("#ldetail");
+  let tip = null; let pressed = null;
+  const shade = (yr, first) => { const g = yr - first; return g < 10 ? "s0" : (g <= 50 ? "s1" : "s2"); };
+  const kindLabel = k => k.replace(/_/g," ");
+  function milestonesFor(reg, code){ const st = stages.find(s=>s.code===code); return reg.milestones.filter(m=>st.kinds.includes(m.kind)).sort((a,b)=>a.year-b.year); }
+  function showTip(el, html){ hideTip(); tip = document.createElement("div"); tip.className="ltip"; tip.innerHTML=html; document.body.appendChild(tip);
+    const r = el.getBoundingClientRect(); let x = r.left, y = r.bottom + 6; if(x + 330 > window.innerWidth) x = Math.max(8, window.innerWidth - 330); tip.style.left = x+"px"; tip.style.top = y+"px"; }
+  function hideTip(){ if(tip){ tip.remove(); tip=null; } }
+  function press(btn){ if(pressed) pressed.setAttribute("aria-pressed","false"); pressed = btn; if(btn) btn.setAttribute("aria-pressed","true"); }
+  function openCell(reg, row, code, btn){
+    press(btn); const st = stages.find(s=>s.code===code); const ms = milestonesFor(reg, code); const yr = row.stages[code];
+    const items = ms.length ? ms.map(m=>`<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(kindLabel(m.kind))}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`).join("")
+      : `<li>No milestone of this kind is recorded for this regime. If one exists, add it in <a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a>.</li>`;
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}: ${esc(st.label)}${yr?", "+yr:""}</h3>
+      <div class="sub">${esc(st.desc)}${yr?` This regime reached it ${yr - row.first} years after its first recorded milestone (${row.first}).`:""}</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function openRegime(reg, row, btn){
+    press(btn); const ms = [...reg.milestones].sort((a,b)=>a.year-b.year||a.kind.localeCompare(b.kind));
+    const items = ms.map(m=>{ const st = stages.find(s=>s.kinds.includes(m.kind)); const tag = st ? st.label : kindLabel(m.kind);
+      return `<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(tag)}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`; }).join("");
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}</h3>
+      <div class="sub">${esc(reg.ai_analogue)} Stages reached: ${row.reached} of 7${row.rollback?"; includes a rollback":""}${row.delegation?"; the assessed party absorbed the assessment function at some point":""}.</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function context(reg){ return `<div class="ctx"><div><b>Who pays</b>${esc(reg.payer)}</div><div><b>Access</b>${esc(reg.access)}</div><div><b>Publication</b>${esc(reg.publication)}</div><div><b>Data file</b><a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a> (${esc(reg.status||"")})</div></div>`; }
+  function show(){ detail.hidden = false; detail.querySelector(".close").addEventListener("click",()=>{ detail.hidden = true; press(null); }); if(detail.scrollIntoView) detail.scrollIntoView({block:"nearest"}); }
+  const head = document.createElement("div"); head.className="lrow lhead";
+  head.innerHTML = `<div class="lname">Regime</div>` + stages.map(s=>`<div class="lcell" data-code="${s.code}">${s.label}</div>`).join("") + `<div class="lbar">Voluntary to mandate</div>`;
+  grid.appendChild(head);
+  head.querySelectorAll(".lcell").forEach(h=>{ const s = stages.find(x=>x.code===h.dataset.code); h.addEventListener("mouseenter",()=>showTip(h, `<b>${esc(s.label)}.</b> ${esc(s.desc)}<br><span style="opacity:.75">Milestone kinds: ${s.kinds.map(kindLabel).join(", ")}</span>`)); h.addEventListener("mouseleave",hideTip); });
+  for(const row of TIMELINE){
+    const reg = byId[row.id]; if(!reg) continue;
+    const r = document.createElement("div"); r.className = "lrow" + (row.id==="frontier-ai" ? " ai" : "");
+    const marks = (row.delegation?`<i class="ring" title="assessed party absorbed the assessment"></i>`:"") + (row.rollback?`<i class="dot" title="rollback"></i>`:"");
+    let html = `<div class="lname"><button type="button" aria-pressed="false"><span>${esc(reg.name)}</span><span class="marks">${marks}</span></button></div>`;
+    for(const s of stages){
+      const yr = row.stages[s.code];
+      html += `<div class="lcell"><button type="button" class="${yr?shade(yr,row.first):"sn"}" data-code="${s.code}" aria-pressed="false" aria-label="${esc(reg.name)}, ${esc(s.label)}${yr?", "+yr:", not reached"}">${yr||"·"}</button></div>`;
+    }
+    const vm = row.voluntary_to_mandate;
+    html += `<div class="lbar">${vm!=null?`<i style="width:${Math.max(3,Math.min(90,vm*1.1))}px"></i>${vm} y`:""}</div>`;
+    r.innerHTML = html; grid.appendChild(r);
+    r.querySelector(".lname button").addEventListener("click", ev=>openRegime(reg,row,ev.currentTarget));
+    r.querySelectorAll(".lcell button").forEach(b=>{
+      const code = b.dataset.code; const ms = milestonesFor(reg, code);
+      b.addEventListener("click", ()=>openCell(reg,row,code,b));
+      b.addEventListener("mouseenter", ()=>{ const s = stages.find(x=>x.code===code); const first = ms[0];
+        showTip(b, first ? `<b>${esc(reg.name)}, ${esc(s.label)} ${first.year}.</b> ${esc(first.event)}${ms.length>1?` <span style="opacity:.75">(+${ms.length-1} more)</span>`:""}` : `<b>${esc(reg.name)}, ${esc(s.label)}.</b> Not reached in the dataset.`); });
+      b.addEventListener("mouseleave", hideTip);
+    });
+  }
+  window.addEventListener("scroll", hideTip, {passive:true});
+})();
+</script>

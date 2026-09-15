@@ -1,119 +1,183 @@
 [
-  {
-    "id": "nemesys.01",
-    "evaluator": "nemesys",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Paid assessor for Amazon per the Nova papers; private LLC with no funding disclosed.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+ {
+  "id": "nemesys.01",
+  "evaluator": "nemesys",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Paid assessor for Amazon per the Nova papers; private LLC with no funding disclosed.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "nemesys.02",
-    "evaluator": "nemesys",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "EU Lot 1 subcontractor under the FAR.AI consortium.",
-    "sources": [
-      "ted-864574"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "F.5",
+  "quote": "We share input prompts and corresponding model outputs with third-party assessors (e.g., Nemesys, METR)",
+  "quote_source": "nemesys-nova-html"
+ },
+ {
+  "id": "nemesys.02",
+  "evaluator": "nemesys",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "EU Lot 1 subcontractor under the FAR.AI consortium.",
+  "sources": [
+   "ted-864574",
+   "nemesys-far-blog"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "nemesys.03",
-    "evaluator": "nemesys",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "No policy published.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "F.3",
+  "quote": "Nemesys Insights (chemical, biological, radiological, and nuclear threats)",
+  "quote_source": "nemesys-far-blog"
+ },
+ {
+  "id": "nemesys.03",
+  "evaluator": "nemesys",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "No policy published.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-site"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "nemesys.04",
-    "evaluator": "nemesys",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Leadership from a university red-team center; lab ties not established.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "G.2",
+  "quote": "Nemesys Insights, LLC is a strategic analysis and advisory company",
+  "quote_source": "nemesys-site"
+ },
+ {
+  "id": "nemesys.04",
+  "evaluator": "nemesys",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Leadership from a university red-team center; lab ties not established.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-ourstory",
+   "nemesys-ourteam"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "nemesys.05",
-    "evaluator": "nemesys",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Access through client engagement.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "P.6",
+  "quote": "promote the tools and techniques developed by the Center for Advanced Red Teaming (CART)",
+  "quote_source": "nemesys-ourstory"
+ },
+ {
+  "id": "nemesys.05",
+  "evaluator": "nemesys",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Access through client engagement.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "nemesys.06",
-    "evaluator": "nemesys",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by the lab client.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "A.1",
+  "quote": "Nemesys Insights executed an Exploratory Critical-Capability Threshold Analysis",
+  "quote_source": "nemesys-nova-html"
+ },
+ {
+  "id": "nemesys.06",
+  "evaluator": "nemesys",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by the lab client.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "nemesys.07",
-    "evaluator": "nemesys",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Findings appear inside the lab's papers.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "S.1",
+  "quote": "their final assessment of whether the model is safe and remains within the defined thresholds for public release",
+  "quote_source": "nemesys-nova-html"
+ },
+ {
+  "id": "nemesys.07",
+  "evaluator": "nemesys",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Findings appear inside the lab's papers.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "nemesys.08",
-    "evaluator": "nemesys",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "Methods described in the lab's papers only.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "R.3",
+  "quote": "reviewed results on test sets, scoring rubrics, and safety-judge notes to verify our internal findings",
+  "quote_source": "nemesys-nova-html"
+ },
+ {
+  "id": "nemesys.08",
+  "evaluator": "nemesys",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "Methods described in the lab's papers only.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "nemesys.09",
-    "evaluator": "nemesys",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Consults for a lab.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  }
+  "rule": "M.2",
+  "quote": "They selected 120 \"uplift indicator\" prompts—60 in synthetic biology and 60 in microbiology/delivery systems",
+  "quote_source": "nemesys-nova-html"
+ },
+ {
+  "id": "nemesys.09",
+  "evaluator": "nemesys",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Consults for a lab.",
+  "sources": [
+   "evaluators-ledger",
+   "nemesys-nova2-html"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
+  },
+  "rule": "X.2",
+  "quote": "we worked with Nemesys Insights to conduct a large-scale, independent uplift study",
+  "quote_source": "nemesys-nova2-html"
+ }
 ]

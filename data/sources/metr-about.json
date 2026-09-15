@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "States METR has not accepted funding from AI companies; notes reliance on free tokens.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "self_of": "metr"
 }

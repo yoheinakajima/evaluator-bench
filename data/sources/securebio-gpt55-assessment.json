@@ -1,0 +1,12 @@
+{
+  "id": "securebio-gpt55-assessment",
+  "title": "SecureBio's pre-release assessment of OpenAI's GPT-5.5",
+  "publisher": "SecureBio",
+  "url": "https://securebio.org/blog/gpt-5-5-pre-release-assessment/",
+  "published": "2026-04-09",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Access to two pre-release checkpoints April 2 to 9, 2026 with API-level biological content filtering disabled; VCT and other benchmarks described. Fetched 2026-09-15; spans present.",
+  "self_of": "securebio"
+}

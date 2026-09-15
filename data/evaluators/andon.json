@@ -10,5 +10,10 @@
  "confidence": "low",
  "summary": "Long-horizon agent evaluations (Vending-Bench) and autonomous deployments; Anthropic Project Vend partner.",
  "what_would_move_the_score": "Funding disclosure and a COI policy would move this from low to medium confidence quickly.",
- "role": "referee"
+ "role": "vendor",
+ "dissent": {
+  "lower": "Role incompatibility (X) at 1 could be 0. Andon sells Pion, a platform for running businesses autonomously, and deploys agents inside Anthropic and xAI offices while grading those labs' models on Vending-Bench; its own site says \"Safety from humans in the loop is a mirage\" and pitches the deployments as the safety layer. If a lab buys that layer, it is a monitoring product sold to an evaluated lab, which is anchor 0.",
+  "higher": "Role incompatibility (X) at 1 could be 2. No payment from any lab is documented: Anthropic describes Project Vend as a research partnership, the ledger records no fee, and Pion has no named customer. Absent a priced engagement, the record supports research collaboration with labs rather than services sold to them, which is closer to the anchor-2 consulting picture than to a vendor relationship."
+ },
+ "list_group": "commercial"
 }

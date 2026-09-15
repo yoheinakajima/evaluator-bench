@@ -1,101 +1,102 @@
 [
-  {
-    "evaluator": "equistamp",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "equistamp.01",
-      "equistamp.02"
-    ],
-    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "G",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.03"
-    ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "P",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.04"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "A",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.05"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "equistamp.06"
-    ],
-    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "R",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.07"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.08"
-    ],
-    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "equistamp",
-    "dimension": "X",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "equistamp.09"
-    ],
-    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  }
+ {
+  "evaluator": "equistamp",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "equistamp.01",
+   "equistamp.02"
+  ],
+  "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "G",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "equistamp.03"
+  ],
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "equistamp.04"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "equistamp.05"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "unknown",
+  "evidence_limited": true
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "S",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "equistamp.06"
+  ],
+  "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "equistamp.07"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4",
+  "mechanism": "unknown"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "equistamp.08"
+  ],
+  "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "X",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "equistamp.09"
+  ],
+  "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ }
 ]

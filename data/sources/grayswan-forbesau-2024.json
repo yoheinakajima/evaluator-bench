@@ -1,0 +1,12 @@
+{
+ "id": "grayswan-forbesau-2024",
+ "title": "This hacker team is bulletproofing AI models for companies like OpenAI and Anthropic",
+ "publisher": "Forbes Australia",
+ "url": "https://www.forbes.com.au/news/innovation/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai-and-anthropic/",
+ "published": "2024-11-07",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Syndicated copy of the Forbes (29 Oct 2024) article; fetched 2026-09-15 with fetch_text; span 'he has recused himself from interactions between the two companies' present verbatim. Fetchable where forbes.com is not.",
+ "press_kind": "primary"
+}

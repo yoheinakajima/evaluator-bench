@@ -1,98 +1,97 @@
 [
-  {
-    "anchor": 1,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "F",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (founding participation row T63; not a grant). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
-    "signals": [
-      "mlcommons.01"
-    ],
-    "value": 1
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "G",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 2 on governance given the cited signals.",
-    "signals": [
-      "mlcommons.04"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "P",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 2 on personnel given the cited signals.",
-    "signals": [
-      "mlcommons.07"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "A",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 2 on access given the cited signals.",
-    "signals": [
-      "mlcommons.03"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "S",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "signals": [
-      "mlcommons.05"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "R",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "signals": [
-      "mlcommons.06"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 4,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "M",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "signals": [
-      "mlcommons.02"
-    ],
-    "value": 4
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "X",
-    "evaluator": "mlcommons",
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "signals": [
-      "mlcommons.08"
-    ],
-    "value": 3
-  }
+ {
+  "anchor": 1,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "F",
+  "evaluator": "mlcommons",
+  "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (founding participation row T63; not a grant). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+  "signals": [
+   "mlcommons.01"
+  ],
+  "value": 1
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "G",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.04"
+  ],
+  "value": 2
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "P",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.07"
+  ],
+  "value": 2,
+  "open_questions": [
+   "Request from MLCommons the board conflict-of-interest and recusal policy that applies to directors employed by member companies whose systems are benchmarked, including any recusal recorded for the President on AILuminate grading decisions."
+  ]
+ },
+ {
+  "anchor": 0,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "A",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.03",
+   "mlcommons.10"
+  ],
+  "value": 0,
+  "mechanism": "lab-controlled"
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "S",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.05"
+  ],
+  "value": 3
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "R",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.06"
+  ],
+  "value": 2,
+  "mechanism": "self-imposed"
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "M",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.02"
+  ],
+  "value": 3
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "X",
+  "evaluator": "mlcommons",
+  "signals": [
+   "mlcommons.08"
+  ],
+  "value": 3
+ }
 ]

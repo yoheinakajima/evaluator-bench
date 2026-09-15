@@ -1,0 +1,12 @@
+{
+ "id": "andon-project-vend",
+ "title": "Project Vend: Can Claude run a small shop? (And why does that matter?)",
+ "publisher": "Anthropic",
+ "url": "https://www.anthropic.com/research/project-vend-1",
+ "published": "2025-06-27",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Anthropic's research post: \"Anthropic partnered with Andon Labs, an AI safety evaluation company, to have Claude Sonnet 3.7 operate a small, automated store in the Anthropic office\". The evaluated lab's document; typed press primary for want of a lab-document type. Fetched 2026-09-15; span present (normalizer inserts a space before the comma after \"Andon Labs\").",
+ "press_kind": "primary"
+}

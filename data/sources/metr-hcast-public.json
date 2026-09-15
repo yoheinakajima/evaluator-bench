@@ -1,0 +1,12 @@
+{
+  "id": "metr-hcast-public",
+  "title": "METR/hcast-public (GitHub README)",
+  "publisher": "METR (GitHub)",
+  "url": "https://github.com/METR/hcast-public",
+  "published": "2025",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "\"This repo contains source code for a subset of the tasks used in the HCAST: Human-Calibrated Autonomy Software Tasks paper\"; tasks conform to the METR Task Standard. Supports anchor 3 (tasks partly open); the rest of the suite is withheld, and no third-party re-run is documented, so M.1 does not reach 4.",
+  "self_of": "metr"
+}

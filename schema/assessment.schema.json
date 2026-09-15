@@ -8,7 +8,6 @@
   "value",
   "anchor",
   "signals",
-  "rationale",
   "assessed"
  ],
  "additionalProperties": false,
@@ -63,6 +62,18 @@
   },
   "evidence_limited": {
    "type": "boolean"
+  },
+  "unevidenced": {
+   "type": "boolean"
+  },
+  "mechanism": {
+   "enum": ["statutory", "lab-controlled", "self-imposed", "unknown"]
+  },
+  "resolution": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["rule", "value", "note"],
+   "properties": {"rule": {"type": "string"}, "value": {"type": "integer", "minimum": 0, "maximum": 4}, "note": {"type": "string"}}
   }
  }
 }

@@ -1,98 +1,107 @@
 [
-  {
-    "evaluator": "humane",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "humane.02"
-    ],
-    "rationale": "Anchor 3 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+ {
+  "evaluator": "humane",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "humane.02"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "G",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "humane.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "humane.05",
+   "humane.10"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "open_questions": [
+   "Request to Humane Intelligence: the board and advisory-group conflict-of-interest policy, and whether advisory-group members employed by a model developer recuse from evaluations involving that developer's models.",
+   "Request to Humane Intelligence: whether any cooling-off rule applies to directors previously employed by a model developer, and the dates of the board president's OpenAI employment as stated in the published bio."
+  ]
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "humane.03"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled",
+  "evidence_limited": true
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "humane.06"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "R",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "humane.01"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "self-imposed"
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "humane.07"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "humane",
+  "dimension": "X",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "humane.08",
+   "humane.09"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "resolution": {
+   "rule": "X.1",
+   "value": 2,
+   "note": "humane.08's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.1 cap; X.1 decides because the paid-services statement is on the organization's own page."
   },
-  {
-    "evaluator": "humane",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "humane.04"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "humane.05"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "A",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "humane.03"
-    ],
-    "rationale": "Anchor 1 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "humane.06"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "R",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "humane.01"
-    ],
-    "rationale": "Anchor 4 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "humane.07"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "humane",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "humane.08"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+  "open_questions": [
+   "Request to Humane Intelligence: a list of paid red-teaming and contextual-evaluation clients since 2024, or a statement of whether any client is a frontier developer."
+  ]
+ }
 ]

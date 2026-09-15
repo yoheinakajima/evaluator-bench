@@ -1,0 +1,12 @@
+{
+  "id": "equistamp-site",
+  "title": "EquiStamp - Research Operations for AI Safety",
+  "publisher": "EquiStamp",
+  "url": "https://equistamp.com/",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Company site: evaluation implementation, data annotation, red/blue teaming for AI safety organizations; \"in the process of becoming a Public Benefit Corporation\"; clients and partners list. No conflict-of-interest policy on the page. Fetched 2026-09-15; spans present.",
+  "self_of": "equistamp"
+}

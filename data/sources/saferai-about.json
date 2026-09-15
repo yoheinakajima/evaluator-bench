@@ -8,5 +8,6 @@
   "retrieved": "2026-09-15",
   "source_type": "self",
   "title": "About",
-  "url": "https://www.safer-ai.org/about"
+  "url": "https://www.safer-ai.org/about",
+  "self_of": "saferai"
 }

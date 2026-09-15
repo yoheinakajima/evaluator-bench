@@ -1,0 +1,12 @@
+{
+  "id": "openai-altman-embedded-pledge",
+  "title": "Sam Altman on X: 'I agree with Dario that we need to pace the frontier ... we will do the same'",
+  "publisher": "Sam Altman (OpenAI CEO), X",
+  "url": "https://x.com/sama/status/2098811563415150910",
+  "published": "2026-09-12",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Quote-post of Amodei's announcement, same day. No openai.com post matching the pledge was found on or before 2026-09-15: openai.com/news and its RSS carry nothing on embedded evaluators; openai.com/index/strengthening-safety-with-external-testing/ (linked by Unite.AI) is dated November 19, 2025 and describes the existing external-testing programme (it names METR's time-horizon evaluation and SecureBio's VCT, and says third-party work is published 'after we reviewed it for confidentiality and accuracy', i.e. not the no-editorial-control commitment); openai.com/index/third-party-cyber-evaluations-involving-openai-models/ returned HTTP 403 to fetch_text, WebFetch and curl (see fetch_failures). Altman's post does not name METR and does not mention publication rights; 'we will do the same' refers to Amodei's employee-level-access commitment. Fetched 2026-09-15 with fetch_text, SHA-256 2c80308418be....",
+  "self_of": "openai"
+}

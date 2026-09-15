@@ -12,5 +12,10 @@
  "confidence": "high",
  "summary": "Builds and runs evaluations for CAISI and other governments; Meta acquired 49% in 2025.",
  "what_would_move_the_score": "Ownership separation of the evaluation unit; until then the ceiling is low.",
- "role": "vendor"
+ "role": "vendor",
+ "dissent": {
+  "lower": "Personnel (1 to 0). The founder joined Meta as an executive under the $14.3B ownership transaction and, by Scale's own announcement, keeps his seat on Scale's board. No recusal is documented anywhere in the public record. P.7 routes leadership that moved to a lab under an ownership transaction to P.1, which gives 0 without a recusal; P.4 separately caps a lab employee on the evaluator's board at 2.",
+  "higher": "Funding (0 to 1). Meta's 49% stake is non-voting, Scale's own announcement calls it a minority of outstanding equity, and the interim CEO stated Scale 'remains, unequivocally, an independent company'. If the 20% threshold in F.1 is read as requiring control rather than economic interest, the record supports anchor 1: a material investment from a frontier developer without voting power."
+ },
+ "list_group": "commercial"
 }

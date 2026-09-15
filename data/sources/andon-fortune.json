@@ -1,0 +1,12 @@
+{
+ "id": "andon-fortune",
+ "title": "Anthropic's office launched an AI-run vending machine. It evolved into AI-run stores and cafes within a year",
+ "publisher": "Fortune",
+ "url": "https://fortune.com/2026/06/02/anthropic-office-vending-machine-ai-agents-vendo-andon-lukas-petersson/",
+ "published": "2026-06-02",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Named outlet; co-founder Lukas Petersson quoted on the Anthropic deployment (Vendo). Does not mention xAI. Fetched 2026-09-15; span present in the article metadata.",
+ "press_kind": "primary"
+}

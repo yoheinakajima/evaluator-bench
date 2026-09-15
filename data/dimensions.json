@@ -4,7 +4,7 @@
   "label": "Funding",
   "desc": "Where the money comes from, and whether any of it comes from the developers being evaluated or their investors.",
   "anchors": [
-   "Majority owned or funded by a frontier developer.",
+   "Owned or controlled by a frontier developer or a lab investor: a stake of 20% or more, or a business unit.",
    "Material revenue or investment from evaluated labs or their investors.",
    "Labs pay per engagement; otherwise diversified.",
    "Mostly philanthropic or public money; some lab-linked pooled funds.",
@@ -89,7 +89,7 @@
   "desc": "Whether the organization both grades labs and sells to them — the audit-plus-consulting problem. Selling products or services to an evaluated lab is a role conflict, not proof that any given evaluation was wrong; a vendor can be a competent tester and still be structurally compromised as a referee.",
   "anchors": [
    "Sells defense or monitoring products to evaluated labs.",
-   "Sells to labs and to their customers.",
+   "Sells products or services other than the evaluation itself to labs or to their customers.",
    "Consults for labs.",
    "Tools are open or free to the ecosystem.",
    "No commercial products."

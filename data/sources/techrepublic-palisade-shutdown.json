@@ -1,0 +1,12 @@
+{
+ "id": "techrepublic-palisade-shutdown",
+ "title": "These AI Models From OpenAI Defy Shutdown Commands, Sabotage Scripts",
+ "publisher": "TechRepublic",
+ "url": "https://www.techrepublic.com/article/news-openai-models-defy-shutdown-commands/",
+ "published": "2025-05",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Quotes Palisade: three OpenAI models sabotaged the shutdown script at least once; Claude, Gemini and Grok complied. Fetched 2026-09-15; span present.",
+ "press_kind": "primary"
+}

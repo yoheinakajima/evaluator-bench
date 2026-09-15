@@ -1,0 +1,327 @@
+{
+ "evaluator": "euaio",
+ "signals": {
+  "euaio.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.2",
+   "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
+   "quote_source": "euaio-ai-act-92",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-ai-act-92": "ok"
+   },
+   "note": "Access resting on statute floors at 3 even if not yet exercised (A.2); mechanism statutory. Added Article 92 (power to conduct evaluations, request access including source code, fines for non-compliance). Section 9 and A.6 would floor at 0 with no published evaluation, but A.2 is the specific rule and says \"even if not yet exercised\". metr-regs: \"the European AI Office will begin enforcement in August 2026\".",
+   "sources": [
+    "metr-regs",
+    "euaio-ai-act-92"
+   ]
+  },
+  "euaio.02": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "S.4; section 9",
+   "quote": "FAR AI was selected by the European Commission's AI Office to lead CBRN risk research under tender EC-CNECT/2025/OP/0032",
+   "quote_source": "longtermwiki-far",
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "Statutory scope power is 4 (S.4), but section 9 (track record) says an organization with no published evaluation of a frontier model \"takes no floor above 2 on scope, publication, or methods\". No AI Office evaluation of a frontier model has been published as of 2026-09-15 (contracts began January 2026; enforcement August 2026). Floor held at 2. Stored value 4 would move to 2 until an evaluation is published."
+  },
+  "euaio.03": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "S.4; section 9",
+   "quote": "A developer should engage independent external evaluators for each new frontier model",
+   "quote_source": "metr-regs",
+   "fetch": {
+    "metr-regs": "ok",
+    "arxiv-access-taxonomy": "ok"
+   },
+   "note": "The Code sets evaluator access terms (helpful-only versions, at least twenty business days); as scope-setting this is statutory (S.4) but section 9 holds the floor at 2 until an evaluation is published. arXiv page: the Code \"calls for appropriate access\"."
+  },
+  "euaio.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": "Signatories commit to reporting to the AI Office information about their model",
+   "quote_source": "euaio-cop-text",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-cop-text": "ok"
+   },
+   "note": "Reports to a regulator only: 2 (R.4); mechanism statutory. Added the Code of Practice text (Commitment 7, Safety and Security Model Reports).",
+   "sources": [
+    "metr-regs",
+    "euaio-cop-text"
+   ]
+  },
+  "euaio.05": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "the pool of qualified evaluators remains thin",
+   "quote_source": "techpolicy-aef1",
+   "fetch": {
+    "techpolicy-aef1": "ok"
+   },
+   "note": "No public reporting schema; what exists is prose in the Code: cap 2 (M.2). Section 9 independently holds any M floor at 2."
+  },
+  "euaio.06": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "established within the Commission as part of the administrative structure of the Directorate-General",
+   "quote_source": "euaio-office-decision",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-office-decision": "ok"
+   },
+   "note": "Public funding floors at 3 (F.9). metr-regs says nothing about funding; added the Commission Decision establishing the Office (self, confirmed).",
+   "sources": [
+    "metr-regs",
+    "euaio-office-decision"
+   ]
+  },
+  "euaio.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "established within the European Commission as the foundation for a single AI governance system",
+   "quote_source": "euaio-ai-office-page",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-ai-office-page": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1); the conflict policy that lifts it to 3 is the Staff Regulations, carried by new signal euaio.12.",
+   "sources": [
+    "metr-regs",
+    "euaio-ai-office-page"
+   ]
+  },
+  "euaio.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": "Article 16 of the old staff regulations included a two-year notification period after staff leave their EU job",
+   "quote_source": "euaio-ceo-staffregs",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-ceo-staffregs": "ok",
+    "euaio-staff-regs": "failed: EUR-Lex returns an empty body to the normalizer and to curl"
+   },
+   "note": "metr-regs does not mention EU staff rules; added the Staff Regulations (Art. 11a conflicts, Art. 16 post-employment: two-year notification, one-year lobbying ban for senior officials) via EUR-Lex (unaudited: the site returns an empty body to the normalizer) and a Corporate Europe Observatory article that quotes the provisions (press aggregator, confirmed). Statutory post-employment rule counts as cooling-off (P.3); published mandatory conflict procedure floors at 3 (P.5). 4 would need tier-1 evidence of disclosed ties and no equity (P.8).",
+   "sources": [
+    "metr-regs",
+    "euaio-ceo-staffregs",
+    "euaio-staff-regs"
+   ]
+  },
+  "euaio.09": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": "It also enforces the rules for GPAI models and supports the governance bodies in Member States",
+   "quote_source": "euaio-ai-office-page",
+   "fetch": {
+    "metr-regs": "ok",
+    "euaio-ai-office-page": "ok",
+    "euaio-newsletter-77": "ok"
+   },
+   "note": "Anchor 4 matches a Commission regulator. Added the Office's own page and a non-self press source (newsletter: tender \"as authorised by Articles 89, 92 and 93 in the AI Act\") for C16. X.7's bounded no-products statement does not exist for a public body (rule gap, same as ukaisi.10, caisi.08).",
+   "sources": [
+    "metr-regs",
+    "euaio-ai-office-page",
+    "euaio-newsletter-77"
+   ]
+  },
+  "euaio.10": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "The €9,080,000 tender is divided into six lots",
+   "quote_source": "euaio-newsletter-77",
+   "fetch": {
+    "ted-864574": "ok (URL is the TED homepage; the notice text is not on the page)",
+    "euaio-newsletter-77": "ok"
+   },
+   "note": "No confirmed bounded negative in a filing or index: cap 3 (F.9, F.12). The cited ted-864574 URL is the TED homepage and carries no notice text; added the EU AI Act Newsletter (press aggregator) which states the tender total. EUR 7.37M awarded vs EUR 9.08M budgeted.",
+   "sources": [
+    "ted-864574",
+    "euaio-newsletter-77"
+   ]
+  },
+  "euaio.11": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "S.4; section 9",
+   "quote": "This tender has been split into six lots",
+   "quote_source": "euaio-tender-call",
+   "fetch": {
+    "ted-864574-notice": "failed: empty body (JavaScript-rendered notice page; curl also empty)",
+    "ted-864574": "ok (URL is the TED homepage; the notice text is not on the page)",
+    "euaio-tender-call": "ok",
+    "euaio-newsletter-77": "ok"
+   },
+   "note": "The Office sets evaluator scope by tender (S.3/S.4) but section 9 holds the floor at 2 until an evaluation is published. The TED notice page is JavaScript-rendered and returns an empty body; added the Commission's tender announcement (self) and the newsletter (press aggregator).",
+   "sources": [
+    "ted-864574-notice",
+    "ted-864574",
+    "euaio-tender-call",
+    "euaio-newsletter-77"
+   ]
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "euaio-ai-act-92",
+   "title": "Article 92: Power to conduct evaluations (AI Act Service Desk)",
+   "publisher": "European Commission (AI Act Service Desk)",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-92",
+   "published": "2024-07-12",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Regulation (EU) 2024/1689 Article 92 text on the Commission's official service desk: the AI Office may conduct evaluations and request access through APIs or other technical means including source code; providers must comply or face fines. Typed filing as a primary legal instrument. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "euaio-office-decision",
+   "title": "Commission Decision Establishing the European AI Office",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/library/commission-decision-establishing-european-ai-office",
+   "published": "2024-01-24",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "The Office is established within the Commission in the administrative structure of DG CONNECT, subject to its annual management plan. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "euaio-ai-office-page",
+   "title": "European AI Office",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Office description: established within the Commission; enforces GPAI rules; powers include conducting evaluations, requesting information and measures, applying sanctions. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "euaio-ceo-staffregs",
+   "title": "New EU Staff Regulations adopted: Small steps on revolving door, giant leaps still needed",
+   "publisher": "Corporate Europe Observatory",
+   "url": "https://corporateeurope.org/en/revolving-doors/2013/07/new-eu-staff-regulations-adopted-small-steps-revolving-door-giant-leaps",
+   "published": "2013-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Describes Staff Regulations Article 11 (conflict-of-interest screening) and Article 16 (two-year post-employment notification; one-year lobbying cooling-off for senior officials). NGO analysis, typed press aggregator. Fetched 2026-09-15; spans present.",
+   "press_kind": "aggregator"
+  },
+  {
+   "id": "euaio-staff-regs",
+   "title": "Staff Regulations of Officials of the European Union (consolidated text)",
+   "publisher": "EUR-Lex",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01962R0031-20240101",
+   "published": "2024-01-01",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "unaudited",
+   "note": "Regulation No 31 (EEC), 11 (EAEC) consolidated: Article 11a (conflict of interest), Article 16 (activities after leaving the service). EUR-Lex returns an empty body to the CI normalizer and to curl; not verified by fetch. Cited for the primary text; the CEO article carries the confirmed spans."
+  },
+  {
+   "id": "euaio-newsletter-77",
+   "title": "The EU AI Act Newsletter #77: AI Office Tender",
+   "publisher": "EU AI Act Newsletter (Substack)",
+   "url": "https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-77-ai-office",
+   "published": "2025-05",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "States the EUR 9,080,000 technical-assistance tender is divided into six lots under Articles 89, 92 and 93 of the AI Act. Newsletter, typed press aggregator. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  },
+  {
+   "id": "euaio-tender-call",
+   "title": "Forthcoming call for tenders: Artificial Intelligence Act - Technical Assistance for AI Safety",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/forthcoming-call-tenders-artificial-intelligence-act-technical-assistance-ai-safety",
+   "published": "2025-04-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Commission announcement: tender split into six lots (CBRN, cyber offence, loss of control, harmful manipulation, sociotechnical, agentic evaluations) to support monitoring of compliance and assessment of GPAI systemic risks. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "euaio-cop-text",
+   "title": "General-Purpose AI Code of Practice: Safety and Security chapter (mirror)",
+   "publisher": "code-of-practice.ai (Alexander Zacherl mirror of the Commission text)",
+   "url": "https://code-of-practice.ai/?section=safety-security",
+   "published": "2025-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Verbatim mirror of the Code's Safety and Security chapter: Commitment 7 Safety and Security Model Reports submitted to the AI Office; Measure on independent external evaluators. Third-party mirror, typed press aggregator; the Commission PDF is the authoritative text. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "euaio.12",
+   "evaluator": "euaio",
+   "dimension": "G",
+   "direction": "for",
+   "claim": "AI Office staff are Commission officials bound by the EU Staff Regulations, which require screening of actual or potential conflicts of interest (Article 11a) and restrict post-employment activity for two years (Article 16).",
+   "sources": [
+    "euaio-ceo-staffregs",
+    "euaio-staff-regs"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "G.2",
+   "quote": "a concrete procedure for properly screening new staff for actual or potential conflicts of interest",
+   "quote_source": "euaio-ceo-staffregs",
+   "note": "Statutory civil-service conflict rules count as a conflict policy for a public body (G.2): floor 3. G.7 four needs tier-1 evidence of an independent board and external review; none."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "statutory"
+  },
+  "R": {
+   "mechanism": "statutory"
+  }
+ },
+ "dissent": {
+  "lower": "Scope (S) at 2 could be 1. The public record shows the Office has run no evaluation of any frontier model; the only scope it has exercised is a procurement of technical assistance whose deliverables are shaped by the Code that signatory labs themselves negotiated. Until the Office uses Article 92, the labs effectively define what is tested through their own Safety and Security Model Reports, which is the anchor-1 picture.",
+  "higher": "Scope (S) at 2 could be 3. Article 92 gives the Office the legal power to evaluate any general-purpose model and to compel access, including source code, with fines for refusal, and enforcement has been live since August 2026. The Office set the six risk lots of the tender itself. A body that writes the questions and can compel answers is at least anchor 3; section 9 holds it down only for lack of a published run."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

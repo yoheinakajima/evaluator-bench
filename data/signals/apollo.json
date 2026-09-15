@@ -1,183 +1,281 @@
 [
-  {
-    "id": "apollo.01",
-    "evaluator": "apollo",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Published four-rule COI policy: no outcome-contingent pay, no side grants or investments from evaluated labs, recusal for financial interests, no misrepresentation.",
-    "sources": [
-      "apollo-norms"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "We do not accept work where compensation is contingent upon the outcome"
+ {
+  "id": "apollo.01",
+  "evaluator": "apollo",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Published four-rule COI policy: no outcome-contingent pay, no side grants or investments from evaluated labs, recusal for financial interests, no misrepresentation.",
+  "sources": [
+   "apollo-norms"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "We do not accept work where compensation is contingent upon the outcome",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.02",
-    "evaluator": "apollo",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.",
-    "sources": [
-      "apollo-norms"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote_source": "apollo-norms"
+ },
+ {
+  "id": "apollo.02",
+  "evaluator": "apollo",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.",
+  "sources": [
+   "apollo-norms"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "apollo.03",
-    "evaluator": "apollo",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.",
-    "sources": [
-      "apollo-pbc"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.3",
+  "quote": "we generally request that the parties for whom we conduct work compensate us at a fair market value for the work",
+  "quote_source": "apollo-norms"
+ },
+ {
+  "id": "apollo.03",
+  "evaluator": "apollo",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.",
+  "sources": [
+   "apollo-pbc"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "apollo.04",
-    "evaluator": "apollo",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Record of adverse findings published, including in-context scheming and evaluation awareness.",
-    "sources": [
-      "apollo-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "Apollo is spinning off from our fiscal sponsor into a Public Benefit Corporation (PBC)",
+  "quote_source": "apollo-pbc"
+ },
+ {
+  "id": "apollo.04",
+  "evaluator": "apollo",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Record of adverse findings published, including in-context scheming and evaluation awareness.",
+  "sources": [
+   "apollo-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.05",
-    "evaluator": "apollo",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Recusal rule for any individual with a financial interest in an evaluated organization.",
-    "sources": [
-      "apollo-norms"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.7",
+  "quote": "published the first evidence that frontier models can scheme in context",
+  "quote_source": "apollo-about"
+ },
+ {
+  "id": "apollo.05",
+  "evaluator": "apollo",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Recusal rule for any individual with a financial interest in an evaluated organization.",
+  "sources": [
+   "apollo-norms"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.06",
-    "evaluator": "apollo",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.",
-    "sources": [
-      "apollo-about",
-      "apollo-first-year"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.5",
+  "quote": "We recuse any individual who is considered to have a financial interest in an organization we are evaluating",
+  "quote_source": "apollo-norms"
+ },
+ {
+  "id": "apollo.06",
+  "evaluator": "apollo",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.",
+  "sources": [
+   "apollo-about",
+   "apollo-first-year"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.07",
-    "evaluator": "apollo",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator.",
-    "sources": [
-      "apollo-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "partnered with OpenAI to test their o1 model before public deployment",
+  "quote_source": "apollo-about"
+ },
+ {
+  "id": "apollo.07",
+  "evaluator": "apollo",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator.",
+  "sources": [
+   "apollo-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "apollo.08",
-    "evaluator": "apollo",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells Watcher, a monitoring product, into the ecosystem it evaluates.",
-    "sources": [
-      "apollo-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.6",
+  "quote": "partnered with OpenAI to study anti-scheming interventions on frontier models",
+  "quote_source": "apollo-about"
+ },
+ {
+  "id": "apollo.08",
+  "evaluator": "apollo",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells Watcher, a monitoring product, into the ecosystem it evaluates.",
+  "sources": [
+   "apollo-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "apollo.09",
-    "evaluator": "apollo",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes evaluation methodology and papers; differential publishing policy documented.",
-    "sources": [
-      "apollo-norms"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.1",
+  "quote": "building an AI security tool to monitor frontier AI agents",
+  "quote_source": "apollo-about"
+ },
+ {
+  "id": "apollo.09",
+  "evaluator": "apollo",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes evaluation methodology and papers; differential publishing policy documented.",
+  "sources": [
+   "apollo-norms"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.10",
-    "evaluator": "apollo",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.",
-    "sources": [
-      "apollo-pbc-round"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "raised a Seed round led by 50Y"
+  "rule": "M.2",
+  "quote": "We engage in differential publishing",
+  "quote_source": "apollo-norms"
+ },
+ {
+  "id": "apollo.10",
+  "evaluator": "apollo",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.",
+  "sources": [
+   "apollo-pbc-round"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "raised a Seed round led by 50Y",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "apollo.11",
-    "evaluator": "apollo",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "SFF recommendations of about $1.1M and Coefficient grants of about $4.4M per the index snapshot; both funders are one to two steps from an Anthropic investor.",
-    "sources": [
-      "evaluators-ledger",
-      "coefficient-index"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "G.3",
+  "quote_source": "apollo-pbc-round"
+ },
+ {
+  "id": "apollo.11",
+  "evaluator": "apollo",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "SFF recommendations of about $1.1M and Coefficient grants of about $4.4M per the index snapshot; both funders are one to two steps from an Anthropic investor.",
+  "sources": [
+   "evaluators-ledger",
+   "coefficient-index"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "apollo.12",
-    "evaluator": "apollo",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Self-reported philanthropic base: about $1.5M from Open Philanthropy and about $500K from SFF at the time of its Manifund listing; a later index total of $4.41M is recorded as an imported row and the two figures are not reconciled.",
-    "sources": [
-      "apollo-manifund",
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+  "rule": "F.6"
+ },
+ {
+  "id": "apollo.12",
+  "evaluator": "apollo",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Self-reported philanthropic base: about $1.5M from Open Philanthropy and about $500K from SFF at the time of its Manifund listing; a later index total of $4.41M is recorded as an imported row and the two figures are not reconciled.",
+  "sources": [
+   "apollo-manifund",
+   "evaluators-ledger"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.13",
-    "evaluator": "apollo",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Mission seats on the PBC board are held by directors independent of the company and its funders, with a mandate to prioritize mission.",
-    "sources": [
-      "apollo-pbc-mission"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "held by \"mission directors\" who are independent to Apollo Research PBC and our funders"
+  "rule": "F.5",
+  "quote_source": "apollo-manifund"
+ },
+ {
+  "id": "apollo.13",
+  "evaluator": "apollo",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Mission seats on the PBC board are held by directors independent of the company and its funders, with a mandate to prioritize mission.",
+  "sources": [
+   "apollo-pbc-mission"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "quote": "who are independent to Apollo Research PBC and our funders",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "apollo.14",
-    "evaluator": "apollo",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.",
-    "sources": [
-      "premieralts-macroscopic",
-      "apollo-pbc-round"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026"
-  }
+  "rule": "G.2",
+  "quote_source": "apollo-pbc-mission"
+ },
+ {
+  "id": "apollo.14",
+  "evaluator": "apollo",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.",
+  "sources": [
+   "premieralts-macroscopic",
+   "apollo-pbc-round"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "G.3",
+  "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+  "quote_source": "apollo-pbc-round"
+ },
+ {
+  "id": "apollo.15",
+  "evaluator": "apollo",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.",
+  "sources": [
+   "apollo-pbc-round",
+   "premieralts-macroscopic"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "F.4",
+  "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+  "quote_source": "apollo-pbc-round",
+  "note": "F.4 caps at 1 only for a material investment (a priced round the fund led or co-led, or a stake of 5% or more); Macroscopic did not lead and its share is undisclosed, so the cap stays at 2 (equity from a lab investor bars anchor 3). Document request: Macroscopic's share of the round."
+ }
 ]

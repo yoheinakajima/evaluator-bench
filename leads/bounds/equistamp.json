@@ -1,0 +1,219 @@
+{
+ "evaluator": "equistamp",
+ "signals": {
+  "equistamp.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "none (anchor 3 by text)",
+   "quote": "organisations that won contracts: EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio",
+   "quote_source": "equistamp-substack",
+   "fetch": {
+    "ted-864574": "ok (URL is the TED homepage; the notice text is not on the page)",
+    "evaluators-ledger": "ok",
+    "nemesys-far-blog": "ok",
+    "equistamp-substack": "ok"
+   },
+   "note": "Named clients are public bodies (EU AI Office, UK AISI) and philanthropically funded evaluators (METR, Redwood); no lab money found: anchor 3 by text; no F rule floors a private contractor on public and philanthropic clients (gap). The revenue mix is undisclosed, so this floor rests on the disclosed part only. TED URL is the homepage (no span); TED notice is JavaScript-only. FAR.AI blog: \"Equistamp (evaluation engineering)\" as Lot 1 subcontractor. Substack author is EquiStamp's head of legal (disclosed), so it is not independent of the company.",
+   "sources": [
+    "ted-864574",
+    "evaluators-ledger",
+    "nemesys-far-blog",
+    "equistamp-substack"
+   ]
+  },
+  "equistamp.02": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.10",
+   "quote": "We're in the process of becoming a Public Benefit Corporation",
+   "quote_source": "equistamp-site",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "equistamp-site": "ok"
+   },
+   "note": "Private company with undisclosed capital structure caps at 3 (F.10); client base is partly disclosed so not the 2 case.",
+   "sources": [
+    "evaluators-ledger",
+    "equistamp-site"
+   ]
+  },
+  "equistamp.03": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "equistamp-site": "ok"
+   },
+   "note": "For-profit (becoming a PBC) with no published conflict policy: anchor 2 requires the policy, so cap 1 (G.1, G.2). Absence cannot be quoted; equistamp.com fetched 2026-09-15 and searched for conflict, recusal and policy terms with no hit. Added the site (self, confirmed) so the cap is admissible.",
+   "sources": [
+    "evaluators-ledger",
+    "equistamp-site"
+   ]
+  },
+  "equistamp.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "evaluators-ledger": "ok"
+   },
+   "note": "No recusal policy or disclosure of ties: 3 is unavailable (P.5), cap 2 (P.6). The ledger notes the CEO is ex-Amazon (a Nova developer); if confirmed that is hiring from a lab without a cooling-off rule (P.3, also cap 2). Only source is the unverifiable ledger; quote null."
+  },
+  "equistamp.05": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "A.6",
+   "quote": "We build and run evaluations, baselines, and benchmarks",
+   "quote_source": "equistamp-site",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "equistamp-site": "ok"
+   },
+   "note": "No engagement with a lab and no published evaluation of a frontier model: 0 (A.6; section 9). The span shows the work is evaluation engineering for clients, not lab-granted access; absence of access cannot be quoted, so C15 will hold the cap at 1 unless a curator accepts the site span as the admission. Mechanism unknown.",
+   "sources": [
+    "evaluators-ledger",
+    "equistamp-site"
+   ]
+  },
+  "equistamp.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "S.3; section 9",
+   "quote": "technical assistance aimed at supporting the monitoring of compliance",
+   "quote_source": "euaio-tender-call",
+   "fetch": {
+    "ted-864574": "ok (URL is the TED homepage; the notice text is not on the page)",
+    "euaio-tender-call": "ok"
+   },
+   "note": "Regulator as client setting scope by tender is 3 (S.3), but section 9 allows no floor above 2 on scope for an organization with no published evaluation of a frontier model. Floor 2; stored 3 would move to 2. Added the Commission tender announcement (self for euaio; third party to EquiStamp).",
+   "sources": [
+    "ted-864574",
+    "euaio-tender-call"
+   ]
+  },
+  "equistamp.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "ted-864574": "ok (URL is the TED homepage; the notice text is not on the page)"
+   },
+   "note": "Deliverables go to a regulator; nothing public: the regulator-only case is 2 by analogy to R.4 (written for public bodies; gap for contractors). The TED homepage carries no span."
+  },
+  "equistamp.08": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "evaluators-ledger": "ok"
+   },
+   "note": "Services described in prose on the site; no evaluation methods published: cap 2 (M.2). Ledger only; quote null."
+  },
+  "equistamp.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "EquiStamp provides evaluation implementation, data annotation, and project operations for AI safety labs",
+   "quote_source": "equistamp-site",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "equistamp-site": "ok"
+   },
+   "note": "Sells services, but to evaluators and governments, not to labs; the tools it builds for clients (HCAST, ControlArena) are open: 3 (X.4). Not 4 (commercial services exist). \"AI safety labs\" on the site means safety organizations, not frontier developers. Added the site (self, confirmed) so the floor is admissible; stored 2 (evidence-limited) would move to 3.",
+   "sources": [
+    "evaluators-ledger",
+    "equistamp-site"
+   ]
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "equistamp-site",
+   "title": "EquiStamp - Research Operations for AI Safety",
+   "publisher": "EquiStamp",
+   "url": "https://equistamp.com/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Company site: evaluation implementation, data annotation, red/blue teaming for AI safety organizations; \"in the process of becoming a Public Benefit Corporation\"; clients and partners list. No conflict-of-interest policy on the page. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "equistamp-substack",
+   "title": "Isolating \"AI Safety\" to an ideological niche will backfire against fundamental rights",
+   "publisher": "Stress Testing Reality (Substack, Katalina Hernández)",
+   "url": "https://stresstestingreality.substack.com/p/isolating-ai-safety-to-an-ideological",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Names EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio, Clarity AI Research and CeSIA as winners of Lots 1, 3 and 4 of the EUR 9 million AI Office tender. Author discloses an ongoing relationship with EquiStamp (head of legal), so not independent of the company. Newsletter, typed press aggregator. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  },
+  {
+   "id": "nemesys-far-blog",
+   "title": "FAR.AI Selected to Lead EU AI Act CBRN Risk Consortium",
+   "publisher": "FAR.AI",
+   "url": "https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium",
+   "published": "2026-02-02",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Consortium lead's announcement naming subcontractors: GovAI, Nemesys Insights (CBRN), Equistamp (evaluation engineering). Published by FAR.AI, not by EquiStamp or Nemesys; typed self following the ledger convention for partner-org pages (T62). Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "euaio-tender-call",
+   "title": "Forthcoming call for tenders: Artificial Intelligence Act - Technical Assistance for AI Safety",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/forthcoming-call-tenders-artificial-intelligence-act-technical-assistance-ai-safety",
+   "published": "2025-04-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Commission announcement: tender split into six lots to support monitoring of compliance and assessment of GPAI systemic risks. Same record as in leads/bounds/euaio.json. Fetched 2026-09-15; span present."
+  }
+ ],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "unknown"
+  },
+  "R": {
+   "mechanism": "unknown"
+  }
+ },
+ "dissent": {
+  "lower": "Governance (G) at 1 could be 0. The public record offers no case: nothing shows a lab or lab investor holding any stake in EquiStamp, and the company says it is converting to a public benefit corporation. The only lower reading is evidentiary, not substantive: with no funding or ownership disclosure at all, a 20% lab stake cannot be excluded, and the ledger relies on the company's own site.",
+  "higher": "Governance (G) at 1 could be 2. EquiStamp states a public benefit commitment to advance AI safety research over profit and is converting to a PBC, whose charter would bind directors to that purpose; its named clients are evaluators and governments, not labs. Anchor 2 asks for a published conflict policy; a PBC charter with a stated public benefit is the nearest published instrument and the company is not venture-backed on any record."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

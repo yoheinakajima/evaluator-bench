@@ -1,11 +1,12 @@
 {
   "audit_status": "confirmed",
   "id": "openai-kolter-board",
-  "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: grayswan.01 \u2014 needs curator review [verify 2026-09-15 grok-pass] 'Zico will also join the Safety & Security Committee' \u2014 JOIN, not chair. Do not cite for the chair claim.",
+  "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: grayswan.01 — needs curator review [verify 2026-09-15 grok-pass] 'Zico will also join the Safety & Security Committee' — JOIN, not chair. Do not cite for the chair claim.",
   "published": "2024-08",
   "publisher": "OpenAI",
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Zico Kolter Joins OpenAI's Board of Directors",
-  "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/"
+  "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+  "self_of": "openai"
 }

@@ -11,5 +11,10 @@
  "confidence": "med",
  "summary": "Think tank with CBRN and security expertise; AEF founding member.",
  "what_would_move_the_score": "More public model-level findings.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Publication should be 1. RAND's frontier-model work reaches the public mainly through METR's Canary summaries and government-restricted reports; no RAND-authored adverse finding about a named lab's model is on record, and the RAND-Irregular model-theft paper is generic. Findings that surface only as another organization's summaries are R.3's lab-summarized citations in all but name.",
+  "higher": "Publication should be 3. RAND's research-integrity page commits to free and open publication of findings, disclosure of every funding source, and policies for intellectual independence; thousands of reports are free on rand.org. What is withheld is classified by government, not redacted by any lab, and R.4 tags that mechanism statutory rather than as lab control."
+ },
+ "list_group": "referee"
 }

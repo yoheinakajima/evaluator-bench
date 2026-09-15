@@ -1,0 +1,304 @@
+{
+ "evaluator": "averi",
+ "signals": {
+  "averi.01": {
+   "bound": {
+    "floor": 0
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "The pilot tested Gemini 2.5 Flash-Lite using never-before-used prompts from the MLCommons safety benchmark family",
+   "quote_source": "averi-pilot",
+   "fetch": {
+    "averi-pilot": "ok"
+   },
+   "note": "Score what was granted (A.1): the pilot queried Gemini 2.5 Flash-Lite, a model publicly released in July 2025, inside a trusted execution environment that hid the weights from AVERI. That is public-model access under a privacy protocol, anchor 0 (stored 3 read the enclave as depth). No pre-release, safeguards-off, helpful-only, log or on-site access is documented. C6 needs an against-signal to store 0; new signal averi.16 supplies it."
+  },
+  "averi.02": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "AVERI is a 501(c)(3), US-based non-profit think tank",
+   "quote_source": "averi-launch",
+   "fetch": {
+    "averi-launch": "ok",
+    "averi-about": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1). The published conflict rules that lift a nonprofit to 3 are on the about page and carried by new signal averi.13. SB 315 endorsement and AEF-1 co-authorship are on averi-about (\"we provided feedback on and endorsed the legislation that became SB 315 in Illinois\")."
+  },
+  "averi.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "converts what we learn into auditing standards, policy analysis, and open source tools",
+   "quote_source": "averi-pilot",
+   "fetch": {
+    "averi-pilot": "ok",
+    "arxiv-frontier-auditing": "ok"
+   },
+   "note": "Open tooling and published pilot and framework reports is anchor 3; M.1 needs open code and open tasks plus a third-party re-run or factsheets for 4 (stored 4). The pilot's prompts and outputs were kept private. arXiv span: \"We describe four AI Assurance Levels (AALs)\"."
+  },
+  "averi.04": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "P.3",
+   "quote": "I hope that AVERI will also benefit from the practical experiences I had at OpenAI",
+   "quote_source": "averi-launch",
+   "fetch": {
+    "averi-launch": "ok"
+   },
+   "note": "Hiring from an evaluated lab (the founder left OpenAI in October 2024) caps at 2 under P.3 unless a cooling-off rule applies; the about page says that under AVERI's policies he is recused from directly auditing OpenAI until two years after departure, which functions as an applied cooling-off, so the cap is lifted to 3. P.8 bars 4 without a standing rule and tier-1 evidence. \"Several staff come from labs\" is not in the cited source."
+  },
+  "averi.05": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "S.4",
+   "quote": "some companies have chosen to conduct voluntary pilots with AVERI and other organizations",
+   "quote_source": "averi-about",
+   "fetch": {
+    "averi-about": "ok",
+    "averi-pilot": "ok"
+   },
+   "note": "Voluntary pilots without incident-investigation or sign-off rights: at most 3 (S.4 voluntary memoranda: 3; S.5). AVERI chose the benchmark (\"We chose to use the AILuminate benchmark\"), so the lab did not define tasks, which keeps it above 2."
+  },
+  "averi.06": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "Our funders include the AI Underwriting Company, Coefficient Giving, Craig Falls, Geoff Ralston, Good Forever Foundation",
+   "quote_source": "averi-about",
+   "fetch": {
+    "averi-about": "ok"
+   },
+   "note": "Funders are named without amounts and no bounded negative sits in a filing or index, so 4 is unavailable (F.12); the span is the list that shows names without shares."
+  },
+  "averi.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.2",
+   "quote": "We provided Google DeepMind with a confidential report of the findings",
+   "quote_source": "averi-pilot",
+   "fetch": {
+    "averi-pilot": "ok"
+   },
+   "note": "AVERI published its own pilot report, but the findings went to Google DeepMind confidentially and the public post summarizes process (\"types of successes and failure modes\") without results. That is at most anchor 2 (publishes; broad withholding), not the stored 3. No rule covers findings withheld in full with a public process report; R.2 is the nearest and the gap is recorded. New against-signal averi.15 carries the cap."
+  },
+  "averi.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "We convert insights from these processes into open source tools",
+   "quote_source": "averi-about",
+   "fetch": {
+    "averi-about": "ok"
+   },
+   "note": "Open tools: 3 (X.4). X.7 needs a bounded statement of no commercial products with a span and a second source for 4 (stored 4); the page states no cash compensation from frontier companies but not \"no commercial products\", and API credits are accepted \"as donations or compensation\"."
+  },
+  "averi.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "No donor makes up a majority of our funding",
+   "quote_source": "averi-funding",
+   "fetch": {
+    "averi-funding": "ok"
+   },
+   "note": "Existing quote found. Named funders with a no-majority rule support 3; F.6 (Coefficient), F.7 (lab-employee donations) and F.2 (API credits) each cap at 3."
+  },
+  "averi.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": "Miles is recused from directly auditing OpenAI until two years after his October 2024 departure",
+   "quote_source": "averi-funding",
+   "fetch": {
+    "averi-funding": "ok"
+   },
+   "note": "Existing quote \"recused from directly auditing OpenAI for at least two years\" not found; corrected span above. Mandatory recusal plus disclosure of individual ties floors at 3 (P.5); P.8 needs a standing cooling-off rule and tier-1 evidence for 4."
+  },
+  "averi.11": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "Our funders include the AI Underwriting Company, Coefficient Giving",
+   "quote_source": "averi-funding",
+   "fetch": {
+    "averi-funding": "ok",
+    "apollo-pbc-round": "ok"
+   },
+   "note": "A grant from a funder whose principal is an Anthropic investor caps at 3 (F.6); AIUC (seeded by an Anthropic co-founder, ledger R23 imported) and Halcyon are two steps out."
+  },
+  "averi.12": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million",
+   "quote_source": "fortune-averi",
+   "fetch": {
+    "fortune-averi": "ok",
+    "averi-funding": "ok"
+   },
+   "note": "Existing quote found on Fortune (press, primary). Anchor 3; N20 (no discrete Coefficient grant page) is unaudited."
+  }
+ },
+ "existing_quote_checks": {
+  "averi.09": "found",
+  "averi.10": "not found; suggested: Miles is recused from directly auditing OpenAI until two years after his October 2024 departure",
+  "averi.12": "found"
+ },
+ "new_sources": [],
+ "new_signals": [
+  {
+   "id": "averi.13",
+   "evaluator": "averi",
+   "dimension": "G",
+   "direction": "for",
+   "claim": "Published conflict-of-interest rules: all employees, board members and contractors disclose conflicts on starting and biannually; material conflicts trigger mandatory recusal or declining the engagement; no cash donations or compensation are accepted from frontier AI companies or their executives; lab API credits and lab-employee donations are disclosed; the most significant conflicts are disclosed publicly.",
+   "sources": [
+    "averi-funding"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "G.2",
+   "quote": "mitigation steps may include recusing personnel from projects or declining an engagement entirely",
+   "quote_source": "averi-funding",
+   "note": "G.2: a nonprofit with a published policy naming at least two of recusal for financial interests, no side money from evaluated labs, and disclosure of lab-linked revenue floors at 3. G.7 (4) needs tier-1 evidence of an independent board and external review."
+  },
+  {
+   "id": "averi.14",
+   "evaluator": "averi",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "AVERI accepts and has received donations from current and former non-executive employees and alumni of frontier AI companies; amounts are not disclosed.",
+   "sources": [
+    "averi-funding",
+    "fortune-averi"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.7",
+   "quote": "several non-executive employees and alumni of frontier AI companies",
+   "quote_source": "averi-funding",
+   "note": "F.7: undisclosed amounts carry no bound, but a policy that permits lab-employee donations caps at 3. Fortune corroborates (\"donations from current and former non-executive employees of frontier AI companies\")."
+  },
+  {
+   "id": "averi.15",
+   "evaluator": "averi",
+   "dimension": "R",
+   "direction": "against",
+   "claim": "The findings of the only completed pilot were delivered to Google DeepMind as a confidential report; the public pilot report describes the protocol and the types of successes and failure modes without quantitative results, prompts or outputs.",
+   "sources": [
+    "averi-pilot"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "R.2",
+   "quote": "We provided Google DeepMind with a confidential report of the findings",
+   "quote_source": "averi-pilot",
+   "note": "Anchor 2 at most: publication with the findings withheld. No rule names this case (R.2 covers editorial feedback, R.3 system-card-only); recorded as a gap and capped by the anchor text."
+  },
+  {
+   "id": "averi.16",
+   "evaluator": "averi",
+   "dimension": "A",
+   "direction": "against",
+   "claim": "AVERI's only completed engagement evaluated Gemini 2.5 Flash-Lite, a publicly released model, inside a secure enclave that hid the weights; no pre-release, safeguards-off, helpful-only, log or on-site access has been documented.",
+   "sources": [
+    "averi-pilot",
+    "averi-about"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 0
+   },
+   "rule": "A.1",
+   "quote": "The pilot tested Gemini 2.5 Flash-Lite",
+   "quote_source": "averi-pilot",
+   "note": "A.1 scores what was granted: public-model access is anchor 0. C17: an against-signal from the organization's own page with a span is an admission against interest, so the 0 is effective. Flagged for review: the stored 3 read the enclave protocol as access depth."
+  },
+  {
+   "id": "averi.17",
+   "evaluator": "averi",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "AVERI has received API credits \"as donations or compensation\" from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI and Thinking Machines Lab; amounts are undisclosed.",
+   "sources": [
+    "averi-funding"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": null,
+   "rule": "F.11",
+   "quote": "We've received API credits as donations or compensation from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI",
+   "quote_source": "averi-funding",
+   "note": "F.11: undisclosed in-kind credits with no dependency statement carry no funding bound; recorded on the access mechanism. The page says credits came \"as donations or compensation\": credits received as compensation for pilot work would be per-engagement lab payment in kind (F.3, cap 2). Document request: which labs provided credits as compensation and for which engagement. Bound left null pending that document.",
+   "bound_note": "F.11: undisclosed in-kind credits without a dependency statement set no funding bound; recorded on the access mechanism. Null pending a document on which credits were compensation for pilot work (F.3 would then cap at 2)."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Pilots are voluntary and the lab chooses to take part; no statute or enforceable agreement. Derived 0 (floor 0 from averi.01; cap 0 from averi.16 with an own-page span), not the stored 3."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "Findings were delivered confidentially under the pilot's reciprocal-confidentiality terms agreed with the lab. Derived 2, not the stored 3."
+  },
+  "F": {
+   "note": "Derived 3: floors 3, caps 3 (F.6, F.7, F.12); averi.17 informational under F.11 pending the compensation document."
+  },
+  "G": {
+   "note": "Derived 3 via averi.13 (G.2); averi.02 alone would give 2."
+  },
+  "P": {
+   "note": "Derived 3: floor 3 (P.5) and cap 3 (P.3 lifted by the applied two-year recusal). No conflict."
+  },
+  "S": {
+   "note": "Derived 3 (cap 3; no floor)."
+  },
+  "M": {
+   "note": "Derived 3, not the stored 4 (M.1)."
+  },
+  "X": {
+   "note": "Derived 3, not the stored 4 (X.7 unmet)."
+  }
+ },
+ "dissent": {
+  "lower": "Access is at the floor; no lower notch exists. The public record supports 0: AVERI's only completed engagement queried Gemini 2.5 Flash-Lite, a model public since July 2025, inside an enclave that hid the weights from the auditors, and the report says the pilot addressed some but not all ways a developer could tamper with the evaluation. No pre-release checkpoint, safeguards-off run, log or on-site access appears anywhere on the record.",
+  "higher": "Access could be 1. AVERI reports API credits from six labs \"as donations or compensation\" and says it is pursuing pilots on whether companies follow their own safety and security frameworks; Google DeepMind ran a proprietary model for it inside a trusted execution environment it did not control. A nonpublic endpoint or pre-release checkpoint in the current pilots would meet anchor 1, and the enclave protocol is a documented route to deeper access."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

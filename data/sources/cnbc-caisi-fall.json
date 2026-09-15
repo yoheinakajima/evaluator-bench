@@ -8,5 +8,6 @@
   "note": "Chris Fall resigned three months after appointment; NIST director acting. [verify 2026-09-15 grok-pass] Chris Fall resigned as CAISI head after ~3 months; Raman acting.",
   "source_type": "press",
   "audit_status": "confirmed",
-  "found_by": "deep research pass 2026-09-15"
+  "found_by": "deep research pass 2026-09-15",
+  "press_kind": "primary"
 }

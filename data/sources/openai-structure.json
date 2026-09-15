@@ -1,0 +1,12 @@
+{
+  "id": "openai-structure",
+  "title": "Our Structure",
+  "publisher": "OpenAI",
+  "url": "https://openai.com/our-structure/",
+  "published": "2025-10",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "'the OpenAI Foundation holds a 26% equity stake in OpenAI Group'. Self-published by the lab, not by SecureBio. Fetched 2026-09-15; span present.",
+  "self_of": "openai"
+}

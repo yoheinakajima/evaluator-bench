@@ -7,5 +7,6 @@
   "retrieved": "2026-09-15",
   "note": "The OpenAI Foundation has granted SecureBio Detection $17.2M; grant restricted to Detection; AI evaluation team separate; policy to evaluate models solely on their merits.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "self_of": "securebio"
 }

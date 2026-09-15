@@ -1,140 +1,242 @@
 [
-  {
-    "id": "palisade.01",
-    "evaluator": "palisade",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Philanthropically funded; no lab contracts found.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "palisade.01",
+  "evaluator": "palisade",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Philanthropically funded; no lab contracts found.",
+  "sources": [
+   "palisade",
+   "propublica-palisade-990",
+   "palisade-donate"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "palisade.02",
-    "evaluator": "palisade",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets its own questions and publishes without lab review.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.11",
+  "quote": "Contributions $2,887,428 89.3%",
+  "quote_source": "propublica-palisade-990"
+ },
+ {
+  "id": "palisade.02",
+  "evaluator": "palisade",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets its own questions and publishes without lab review.",
+  "sources": [
+   "palisade"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "palisade.03",
-    "evaluator": "palisade",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes findings unwelcome to labs, including shutdown resistance and self-replication.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5"
+ },
+ {
+  "id": "palisade.03",
+  "evaluator": "palisade",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes findings unwelcome to labs, including shutdown resistance and self-replication.",
+  "sources": [
+   "palisade",
+   "computerworld-palisade-shutdown",
+   "techrepublic-palisade-shutdown"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "palisade.04",
-    "evaluator": "palisade",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes code and transcripts.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.5",
+  "quote": "the first time AI models have been observed preventing themselves from being shut down despite explicit instructions",
+  "quote_source": "palisade"
+ },
+ {
+  "id": "palisade.04",
+  "evaluator": "palisade",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes code and transcripts.",
+  "sources": [
+   "palisade",
+   "palisade-shutdown",
+   "palisade-selfrep"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "palisade.05",
-    "evaluator": "palisade",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Little pre-deployment access; most work is on released models.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1",
+  "quote": "View Published Paper Code Access Paper",
+  "quote_source": "palisade-shutdown"
+ },
+ {
+  "id": "palisade.05",
+  "evaluator": "palisade",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Little pre-deployment access; most work is on released models.",
+  "sources": [
+   "palisade"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "palisade.06",
-    "evaluator": "palisade",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1"
+ },
+ {
+  "id": "palisade.06",
+  "evaluator": "palisade",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit.",
+  "sources": [
+   "palisade",
+   "palisade-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "palisade.07",
-    "evaluator": "palisade",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "No lab board roles found.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "Palisade Research is a nonprofit based in Berkeley, California",
+  "quote_source": "palisade-about"
+ },
+ {
+  "id": "palisade.07",
+  "evaluator": "palisade",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "No lab board roles found.",
+  "sources": [
+   "palisade"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "palisade.08",
-    "evaluator": "palisade",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "palisade"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6"
+ },
+ {
+  "id": "palisade.08",
+  "evaluator": "palisade",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "palisade"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "palisade.09",
-    "evaluator": "palisade",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.",
-    "sources": [
-      "coefficient-index",
-      "metr-money-figure"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.3",
-    "as_of": "2026-09-11"
+  "rule": "X.7"
+ },
+ {
+  "id": "palisade.09",
+  "evaluator": "palisade",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.",
+  "sources": [
+   "coefficient-index",
+   "metr-money-figure"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.3",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "palisade.10",
-    "evaluator": "palisade",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "F.6"
+ },
+ {
+  "id": "palisade.10",
+  "evaluator": "palisade",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.",
+  "sources": [
+   "evaluators-ledger",
+   "palisade-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "palisade.11",
-    "evaluator": "palisade",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Coefficient Giving's database records two grants totaling $2,123,463 for general support; the imported index total of $3,803,463 is marked differs pending reconciliation.",
-    "sources": [
-      "op-palisade",
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
-  }
+  "rule": "P.3",
+  "quote": "In 2022, Jeffrey was helping to build out the security team at Anthropic",
+  "quote_source": "palisade-about"
+ },
+ {
+  "id": "palisade.11",
+  "evaluator": "palisade",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Coefficient Giving's database records two grants totaling $2,123,463 for general support; the imported index total of $3,803,463 is marked differs pending reconciliation.",
+  "sources": [
+   "op-palisade",
+   "evaluators-ledger"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "quote": "$2,123,463 2025-05",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote_source": "evaluators-ledger"
+ },
+ {
+  "id": "palisade.12",
+  "evaluator": "palisade",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Palisade's FY2024 Form 990 reports $344,829 (10.7% of revenue) from program services; the counterparty is not disclosed.",
+  "sources": [
+   "propublica-palisade-990"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "X.7",
+  "quote": "Program Services $344,829 10.7%",
+  "quote_source": "propublica-palisade-990",
+  "note": "Rule gap: no X rule covers undisclosed program-service revenue. By anchor text a bounded 'no commercial products' (4) is not established while service revenue exists, so the cap is 3 pending a document request naming the counterparty; X.1 would cap at 2 only if the services were sold into the evaluated ecosystem."
+ },
+ {
+  "id": "palisade.13",
+  "evaluator": "palisade",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "SFF recommended $1,133,000 to Palisade in 2025 (plus a $928,000 matching pledge); SFF's funder Jaan Tallinn led Anthropic's Series A.",
+  "sources": [
+   "sff-2025",
+   "anthropic-series-a"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Palisade Research Main: $477,000 Freedom: $441,000 Fairness: $0 Mean: $216,000 $1,133,000",
+  "quote_source": "sff-2025",
+  "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger row T66 records the transfer; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'."
+ }
 ]

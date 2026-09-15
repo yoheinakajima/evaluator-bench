@@ -1,0 +1,12 @@
+{
+  "id": "hfoai-hf-pricing",
+  "title": "Hugging Face – Pricing",
+  "publisher": "Hugging Face",
+  "url": "https://huggingface.co/pricing",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Own page; fetched 2026-09-15; span 'Instant setup for growing teams $20 /month per user' present (Team plan), with PRO and Enterprise tiers. Documents commercial products for X.",
+  "self_of": "hfoai"
+}

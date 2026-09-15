@@ -1,0 +1,423 @@
+{
+ "evaluator": "metr",
+ "signals": {
+  "metr.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.8",
+   "quote": "METR refuses funding from frontier AI companies and bans donations directed by their staff",
+   "quote_source": "alphasignal-metr-71m",
+   "fetch": {
+    "metr-about": "ok",
+    "alphasignal-metr-71m": "ok",
+    "metr-funding-2026": "ok"
+   },
+   "note": "Anchor 3, not 4: the no-lab-money rule is younger than 24 months and its wording has moved (F.8), and F.12 needs a confirmed bounded negative in a filing or index, a tier-1 source, and a second source; the negatives on file are imported. The same rule appears on metr-funding-2026 (self) and alphasignal (press), so the signal already has a non-self confirmed source."
+  },
+  "metr.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "including the Pew Charitable Trusts and several foundations outside the usual network",
+   "quote_source": "itbb-watchdogs",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "Diversified philanthropic base supports anchor 3; a 4 needs the F.12 gates. Pew is also named on metr-funding-2026."
+  },
+  "metr.03": {
+   "bound": null,
+   "bound_note": "F.11: free tokens whose amount is undisclosed and which METR describes as significant but not as something it depends on carry no funding bound; the fact is recorded on the access mechanism (lab-controlled).",
+   "rule": "F.11",
+   "quote": "though we make use of significant free tokens, which we use for evaluations, research, and engineering",
+   "quote_source": "metr-about",
+   "fetch": {
+    "metr-about": "ok"
+   },
+   "note": "If \"significant free tokens\" is read as a dependency statement, F.2 caps at 3 instead; the F value is 3 either way (F.6, F.8). metr-funding-2026 says frontier AI companies currently provide a significant amount of free tokens."
+  },
+  "metr.04": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "A.5",
+   "quote": "worked on premises at OpenAI over a total of six days",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok",
+    "techtimes-metr-hf": "ok"
+   },
+   "note": "On-site incident investigation is anchor 4 under A.5. C16 is met: two confirmed sources, techtimes-metr-hf is press (primary). Mechanism: OpenAI granted the access for this engagement and set the window (metr.06)."
+  },
+  "metr.05": {
+   "bound": null,
+   "bound_note": "A.1 and section 9: the Anthropic essay and the OpenAI match are pledges naming METR as the example embedded evaluator; no embedded engagement is documented as granted, so the signal is informational until access under the program is documented.",
+   "rule": "A.1",
+   "quote": "give ongoing, employee-like access to a team of third-party evaluators (the essay names METR as an example)",
+   "quote_source": "unite-altman-match",
+   "fetch": {
+    "unite-altman-match": "ok",
+    "marktechpost-pace": "ok via curl"
+   },
+   "note": "If a desk-and-badge engagement is later documented it is anchor 4 under A.5; metr.04 already floors A at 4 on the OpenAI incident work."
+  },
+  "metr.06": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "S.1",
+   "quote": "OpenAI defined the investigation period as June 26th through July 13th",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "pebblous-scope": "ok",
+    "metr-hf-investigation": "ok"
+   },
+   "note": "Lab-set window and excluded questions in the most recent major engagement cap at 3 (S.1). The report also says the compromise of OpenAI infrastructure and its remediation were out of scope; pebblous-scope corroborates that three of the standard incident questions were dropped."
+  },
+  "metr.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "Redaction summary statement: Except where explicitly noted in this post, OpenAI redacted no additional information",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok",
+    "marktechpost-pace": "ok via curl"
+   },
+   "note": "Own 91-page report with a public redaction statement, but the redaction right covered any non-public information, not security only, so R.1 is not met and R.7 floors at 2. The R.2 cap of 3 on metr.08 sets the value at 3. The no-payment statement belongs to F and X."
+  },
+  "metr.08": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "R.2",
+   "quote": "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok"
+   },
+   "note": "Editorial feedback incorporated and disclosed, with what changed named in general terms, caps at 3 under R.2 (2 if undisclosed). The redaction right covered any non-public information, broader than security, which also bars R.1-style 4."
+  },
+  "metr.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.3",
+   "quote": "Joe Benton, announced this week that he is joining the independent AI safety organization METR",
+   "quote_source": "wapo-examiner-benton",
+   "fetch": {
+    "wapo-examiner-benton": "ok"
+   },
+   "note": "Documented hiring from an evaluated lab. The August 2026 conflict-of-interest policy (metr-coi-policy, new source) has no cooling-off period (the only 12-month rule concerns personal relationships), so the P.3 cap is not lifted."
+  },
+  "metr.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "Our current conflict of interest policy is here",
+   "quote_source": "metr-about",
+   "fetch": {
+    "metr-about": "ok"
+   },
+   "note": "The page links a published policy (metr.org/coi-policy.pdf, version 1.0, 28 August 2026) that names recusal for financial interests, a ban on direct equity in frontier AI companies, declining donations from labs and their employees, and external disclosure of unmitigated conflicts: more than the two items G.2 requires, so a nonprofit floors at 3. G.7 (4) needs tier-1 evidence of an independent board and external review; the FY2024 990 lists directors but not independence or review.",
+   "sources": [
+    "metr-about",
+    "metr-coi-policy"
+   ]
+  },
+  "metr.11": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "This repo contains source code for a subset of the tasks used in the HCAST",
+   "quote_source": "metr-hcast-public",
+   "fetch": {
+    "metr-about": "ok"
+   },
+   "note": "Open code and a partly open task suite is anchor 3. M.1 requires open code and open tasks plus a third-party re-run or per-evaluation factsheets for 4; hcast-public releases a subset of tasks and no third-party re-run is cited. metr-about itself has no task-suite statement; its nearest span is \"where possible, we publish all of our research and risk assessments\".",
+   "sources": [
+    "metr-about",
+    "metr-hcast-public"
+   ]
+  },
+  "metr.12": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "metr-about": "ok"
+   },
+   "note": "metr-about carries no statement about commercial products, so no span; X.7 needs a bounded statement with a span and a second source for 4. New signal metr.22 carries the tier-1 evidence (FY2024 990: program services $0) and the COI policy statement that no payment has been received for company-identifying risk assessments."
+  },
+  "metr.13": {
+   "bound": null,
+   "bound_note": "A.3: voluntary, revocable access is recorded as the mechanism (lab-controlled), not as a cap.",
+   "rule": "A.3",
+   "quote": "that access is voluntary. Companies grant it because they choose to, not because any law or agreement requires it",
+   "quote_source": "itbb-watchdogs",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": ""
+  },
+  "metr.14": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.8",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "metr-donor-rule-history": "failed: Wayback calendar page is a JavaScript shell (HTTP 200, no capture text)"
+   },
+   "note": "A donor rule younger than 24 months and amended more than once in a 24-month window floors at most 3 (F.8); as an against-signal it caps at 3. Source is a Wayback calendar page whose captures load by JavaScript, so no span; the September 2025 footnote and the current wording are on metr-about (metr.18). The mention of a named donor is handled under the people policy (see open_question_rewrites)."
+  },
+  "metr.15": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "The accounts at SVCF and NPT that pay Coefficient-recommended grants are unattributed",
+   "quote_source": "metr-money-figure",
+   "fetch": {
+    "coefficient-index": "failed: HTTP 404 at coefficientgiving.org/grants/ (curl returns a 35-char stub)",
+    "metr-990-fy2024": "ok",
+    "metr-money-figure": "ok"
+   },
+   "note": "Pooled and donor-advised inflows whose underlying donors are not public, plus SFF recommendations funded by an Anthropic Series A investor, cap at 3 under F.6. The span is from the third-party ledger README (tier 2); the index is a 404 and the ProPublica HTML has no Schedule I. Sources are mixed (index imported), so C14 clamps the cap to no lower than 1, which does not bind."
+  },
+  "metr.16": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "No direct Coefficient grant to METR appears in the checked index and filings",
+   "quote_source": "metr-money-figure",
+   "fetch": {
+    "coefficient-index": "failed: HTTP 404 at coefficientgiving.org/grants/ (curl returns a 35-char stub)",
+    "metr-money-figure": "ok"
+   },
+   "note": "Bounded negatives exist but are imported rows (N01 to N05) awaiting re-derivation; C8 and F.12 need a confirmed negative in a filing or index for 4. The quoted span is the third-party ledger summarizing its own checks, not the index itself."
+  },
+  "metr.17": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.4",
+   "quote": "Adam Gleave (Director)",
+   "quote_source": "metr-990-fy2024",
+   "fetch": {
+    "metr-team": "failed: cited URL returns only a client-side redirect stub to /about#our-team (92 chars); the team list is on metr.org/about",
+    "metr-990-fy2024": "ok",
+    "metr-money-figure": "ok"
+   },
+   "note": "A director who founded a lab contractor (FAR.AI, paid by OpenAI for red-teaming) and an advisor who is a partner at a lab investor (a16z: Thinking Machines seed, xAI) cap at 2 regardless of recusal (P.4). The 990 span confirms the director role; the advisor list is on metr.org/about (metr-team now only redirects there), where the live text reads \"Adam Gleave Advisor and Board Member Alec Radford Advisor Marco Mascorro Advisor\". Suggest repointing metr-team to https://metr.org/about."
+  },
+  "metr.18": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.8",
+   "quote": "METR has not accepted funding from AI companies",
+   "quote_source": "metr-about",
+   "fetch": {
+    "metr-about": "ok",
+    "sff-2025": "ok",
+    "propublica-metr-arc": "ok"
+   },
+   "note": "Existing quote found on metr-about. The current wording (cannot accept donations made by or at the direction of frontier AI company employees) is tighter than September 2025, but the rule is under 24 months old, so F.8 holds the floor at 3."
+  },
+  "metr.19": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "In the last 6 months, METR raised commitments of around $71 million",
+   "quote_source": "metr-funding-2026",
+   "fetch": {
+    "metr-funding-2026": "ok"
+   },
+   "note": "Existing quote found. Self-published only; anchor 3."
+  },
+  "metr.20": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "Approximately $17 million of this will support work at METR.",
+   "quote_source": "metr-audacious-2024",
+   "fetch": {
+    "metr-audacious-2024": "ok"
+   },
+   "note": "Existing quote found. The Audacious Project is a funder collective whose members are partly public (ledger R71 to R76, unaudited); pooled money caps at 3 under F.6."
+  },
+  "metr.21": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "provided $4,553,935 in grants in 2024",
+   "quote_source": "instrumentl-arc-990",
+   "fetch": {
+    "instrumentl-arc-990": "ok",
+    "op-longview": "failed: openphilanthropy.org grant URL redirects to a generic coefficientgiving.org fund page; grant text absent",
+    "op-constellation": "failed: openphilanthropy.org grant URL redirects to a generic coefficientgiving.org page; grant text absent"
+   },
+   "note": "Existing quote \"contributed $4,553,935 in grants during 2024\" not found; corrected span from Instrumentl above. Second-hop philanthropic routes (ARC seeded by Coefficient; Longview and Constellation grants) cap at 3 under F.6. The two Open Philanthropy grant URLs now redirect to generic Coefficient pages, so their figures are unverified from the cited URLs."
+  }
+ },
+ "existing_quote_checks": {
+  "metr.18": "found",
+  "metr.19": "found",
+  "metr.20": "found",
+  "metr.21": "not found; suggested: provided $4,553,935 in grants in 2024"
+ },
+ "new_sources": [
+  {
+   "id": "metr-coi-policy",
+   "title": "Conflict of interest policy (version 1.0)",
+   "publisher": "METR",
+   "url": "https://metr.org/coi-policy.pdf",
+   "published": "2026-08-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "PDF (172 KB, about 17k characters via pdftotext) linked from metr.org/about as \"Our current conflict of interest policy\". Staff disclosure form, three conflict tiers with external-disclosure requirements, provisional recusal, ban on direct equity or debt in frontier AI companies, board ineligibility for frontier-company employees, declining donations made by or at the direction of frontier AI companies or their employees, free compute credits acceptable, and \"To date, we have not received payment for work on company-identifying risk assessments\". No cooling-off period. fetch_text cannot extract PDF text; spans verified against pdftotext output on 2026-09-15."
+  },
+  {
+   "id": "metr-hcast-public",
+   "title": "METR/hcast-public (GitHub README)",
+   "publisher": "METR (GitHub)",
+   "url": "https://github.com/METR/hcast-public",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "\"This repo contains source code for a subset of the tasks used in the HCAST: Human-Calibrated Autonomy Software Tasks paper\"; tasks conform to the METR Task Standard. Supports anchor 3 (tasks partly open); the rest of the suite is withheld, and no third-party re-run is documented, so M.1 does not reach 4."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "metr.22",
+   "evaluator": "metr",
+   "dimension": "X",
+   "direction": "for",
+   "claim": "FY2024 Form 990 (filed 16 November 2025) reports $0 program service revenue against $13.6M of contributions, and the August 2026 conflict-of-interest policy states METR has to date received no payment for work on company-identifying risk assessments; the only earned income named is a technical-assistance contract with the European AI Office.",
+   "sources": [
+    "metr-990-fy2024",
+    "metr-coi-policy"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 4
+   },
+   "rule": "X.7",
+   "quote": "Contributions $13,603,035 99.7% Program Services $0",
+   "quote_source": "metr-990-fy2024",
+   "note": "X.7 needs a bounded statement of no commercial products with a span and a second source: the filing (tier 1) supplies both the bounded negative and the provenance; the policy PDF supplies the organization's own statement (\"To date, we have not received payment for work on company-identifying risk assessments\"). A regulator technical-assistance contract is not a commercial product."
+  },
+  {
+   "id": "metr.23",
+   "evaluator": "metr",
+   "dimension": "P",
+   "direction": "for",
+   "claim": "Published conflict-of-interest policy (version 1.0, 28 August 2026): staff under consideration for a company-identifying risk assessment must disclose conflicts, tiered conflicts require external disclosure in the report, provisional recusal applies during review, staff may not hold direct equity or debt in frontier AI companies, and frontier-company employees are ineligible for the board. No post-employment cooling-off period.",
+   "sources": [
+    "metr-coi-policy"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "P.5",
+   "quote": "Do not invest in direct equity or debt of frontier AI companies or reasonable economic proxies for specific companies",
+   "quote_source": "metr-coi-policy",
+   "note": "Mandatory recusal plus disclosure of individual ties floors at 3 (P.5). P.8 (4) needs a cooling-off rule, which the policy lacks, and tier-1 evidence. Span verified with pdftotext; the CI normalizer cannot read PDFs. Caps from metr.09 (P.3) and metr.17 (P.4) still decide the value; see conflicts."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Access rests on OpenAI's agreement to the incident engagement and on Anthropic's unilateral pledge; no statute or enforceable agreement (A.2) is on the record. Derived value 4 (metr.04)."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "OpenAI held a contractual right to redact any non-public information and gave editorial feedback that METR incorporated and disclosed. Derived 3 from the R.2 cap (metr.08); the floor is 2 under R.7 because redactions were not security-only."
+  },
+  "P": {
+   "resolution": {
+    "rule": "P.4",
+    "value": 2,
+    "note": "The new policy signal (metr.23) floors at 3 under P.5, but P.4 caps at 2 regardless of recusal for a director who founded a lab contractor and an advisor who is a partner at a lab investor, and P.3 caps at 2 because the policy has no cooling-off period for hires from evaluated labs. Caps decide; the conflict stays on the card."
+   }
+  },
+  "F": {
+   "note": "Derived 3: caps of 3 from metr.14 (F.8), metr.15, metr.20, metr.21 (F.6); floors of 3; metr.03 informational under F.11. No conflict."
+  },
+  "G": {
+   "note": "Derived 3 (G.2) with the policy PDF added to metr.10."
+  },
+  "M": {
+   "note": "Derived 3, not the stored 4: M.1 needs open tasks plus a third-party re-run or factsheets; hcast-public is a subset."
+  },
+  "X": {
+   "note": "Derived 4 via metr.22 (filing-tier bounded negative with span); metr.12 alone would hold at 3."
+  },
+  "S": {
+   "note": "Derived 3 (metr.06 cap under S.1; no floor)."
+  }
+ },
+ "dissent": {
+  "lower": "Personnel could be 1. A METR director founded FAR.AI, which OpenAI pays for red-teaming; a METR advisor is an a16z partner while a16z backs xAI and Thinking Machines; another advisor advises Thinking Machines; former advisors moved to Anthropic and to the OpenAI Foundation board; a former Anthropic researcher joined in September 2026. If advisors count as leaders, P.2 caps advisory roles at labs at 1, and the August 2026 policy has no cooling-off period.",
+  "higher": "Personnel could be 3. The August 2026 conflict-of-interest policy requires staff disclosure before any company-identifying risk assessment, applies provisional recusal, bans direct equity in frontier AI companies, and bars frontier-company employees from the board; advisor and director affiliations are listed on the team page. Anchor 3 asks for a recusal policy and disclosure of lab ties, and both are now published; the one-hop seats are advisory, not lab roles."
+ },
+ "open_question_rewrites": {
+  "F": [
+   "Request from METR the date and vehicle of the gift acknowledged on metr.org/about under \"many others, such as David Farhi\", and the text of the donor rule in force on that date; request from the donor a copy of the acknowledgment letter. (Replaces the fourth F open question, which framed the timing of a named person's gift as unresolved.)",
+   "Request the Schedule I pages of the Vanguard Charitable and Audacious Project filings naming METR, and the Coefficient index rows checked, so that N01 to N05 can move from imported to confirmed."
+  ],
+  "P": [
+   "Request from METR the August 2026 policy's treatment of post-employment cooling-off for hires from frontier AI companies (none appears in version 1.0) and dated captures of the team page showing current versus former advisor roles."
+  ]
+ },
+ "conflicts": [
+  {
+   "dimension": "P",
+   "floor": 3,
+   "cap": 2,
+   "resolution": {
+    "rule": "P.4",
+    "value": 2,
+    "note": "P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide."
+   }
+  }
+ ]
+}

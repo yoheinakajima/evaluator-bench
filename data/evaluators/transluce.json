@@ -12,5 +12,10 @@
  "confidence": "high",
  "summary": "Nonprofit oversight-tools lab; convenes the AI Evaluator Forum that wrote AEF-1.",
  "what_would_move_the_score": "Routine pre-release access under AEF-1 terms.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Funding could be 1. In FY2025, 38% of Transluce's revenue came from the personal holdings of Anthropic and OpenAI employees, which are lab equity by another name; anchor 1 is material revenue or investment from evaluated labs or their investors, and 38% is material by any accounting test. The policy permits such donations, and the donors are not named or bounded in size.",
+  "higher": "Funding could be 3. No revenue came from developers as organizations, no evaluation has been paid, the employee donations were unrestricted and are disclosed by share each year under a published policy aligned to AEF-1, and the remainder is philanthropy and government contracts including an EU AI Office consortium seat. Anchor 3 is mostly philanthropic or public money with some lab-linked funds, which describes 62% of the base."
+ },
+ "list_group": "referee"
 }

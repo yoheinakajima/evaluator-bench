@@ -1,0 +1,12 @@
+{
+  "id": "dreadnode-github-airtbench",
+  "title": "dreadnode/AIRTBench-Code",
+  "publisher": "GitHub (Dreadnode)",
+  "url": "https://github.com/dreadnode/AIRTBench-Code",
+  "published": "2025-06",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Code repository for AIRTBench, Apache-2.0 badge; fetched 2026-09-15 (page title 'Code Repository for: AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models'). Supports M.1 (open code) for the organization's own benchmark.",
+  "self_of": "dreadnode"
+}

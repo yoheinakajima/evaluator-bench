@@ -1,0 +1,12 @@
+{
+ "id": "nemesys-nova2-html",
+ "title": "Evaluating Nova 2.0 Lite model under Amazon's Frontier Model Safety Framework (arXiv 2601.19134v1, HTML)",
+ "publisher": "Amazon (arXiv)",
+ "url": "https://arxiv.org/html/2601.19134v1",
+ "published": "2026-01",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Amazon's report on Nova 2.0 Lite: \"we worked with Nemesys Insights to conduct a large-scale, independent uplift study\" with nearly 800 participants. Lab document; typed press primary. Normalizer gets HTTP 406; fetched via curl 2026-09-15; span present.",
+ "press_kind": "primary"
+}

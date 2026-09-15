@@ -1,0 +1,248 @@
+{
+ "evaluator": "irregular",
+ "signals": {
+  "irregular.01": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.4",
+   "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+   "quote_source": "techcrunch-irregular",
+   "fetch": {
+    "techcrunch-irregular": "ok",
+    "sequoia-irregular": "ok",
+    "irregular-xai-series-b": "ok"
+   },
+   "note": "F.4: a priced round led by a fund that has invested in a frontier developer caps at 1. The 'major OpenAI investor' half of the claim is not supported by either cited source; xAI's own Series B page (added) lists Sequoia Capital among its investors, which satisfies F.4 ('a fund that has invested in a frontier developer'). F.1 not met: Sequoia's own stake is undisclosed and the whole $80M round is about 18% of the $450M post-money. The existing quote ('Formerly known as Pattern Labs') is present in TechCrunch but does not support the claim; replaced.",
+   "sources": [
+    "techcrunch-irregular",
+    "sequoia-irregular",
+    "irregular-xai-series-b"
+   ]
+  },
+  "irregular.02": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+   "quote_source": "newswire-irregular",
+   "fetch": {
+    "newswire-irregular": "ok"
+   },
+   "note": "F.5: lab revenue is the only revenue disclosed (no non-lab base is named; 'the UK government ... use Irregular's SOLVE framework' documents use, not payment), so cap 1."
+  },
+  "irregular.03": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+   "quote_source": "techcrunch-irregular",
+   "fetch": {
+    "techcrunch-irregular": "ok"
+   },
+   "note": "Anchor 1: venture-backed for-profit with no published policy meeting G.2. G.3 (Sequoia's xAI stake) would independently cap at 2."
+  },
+  "irregular.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.1 (second sentence)",
+   "quote": "to develop the defenses needed before deployment",
+   "quote_source": "newswire-irregular",
+   "fetch": {
+    "newswire-irregular": "ok"
+   },
+   "note": "A defense product planned for the evaluated ecosystem caps at 2 until a lab customer for that product is documented; the source describes developing defenses 'side by side' with OpenAI and Anthropic, not a documented sale of runtime controls. The cap of 1 on X is carried by new signal irregular.13 (X.2, paid evaluation services to labs). Document request: whether any evaluated lab purchases runtime security controls."
+  },
+  "irregular.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "By embedding directly with these cutting-edge research labs",
+   "quote_source": "sequoia-irregular",
+   "fetch": {
+    "sequoia-irregular": "ok"
+   },
+   "note": "Documented: pre-deployment evaluations of advanced models, repeated across several system cards (GPT-4, o3, o4-mini, GPT-5, Claude), which is anchor 2 (extended engagement). 'Embedding directly' is investor prose and does not document weights, helpful-only, logs or on-site access (anchor 3); the stored 3 needs a system-card passage on the access mode."
+  },
+  "irregular.06": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "F.5 (anchor text)",
+   "quote": "the UK government and Anthropic use Irregular's SOLVE framework",
+   "quote_source": "newswire-irregular",
+   "fetch": {
+    "newswire-irregular": "ok"
+   },
+   "note": "Gap: the source documents framework use by a government, not a paying client; use of a free framework is not revenue diversification, so by anchor text the fact supports no more than anchor 1. A documented paid government contract would support anchor 2 (F.3 base)."
+  },
+  "irregular.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "the UK government and Anthropic both use the company’s SOLVE framework",
+   "quote_source": "sequoia-irregular",
+   "fetch": {
+    "sequoia-irregular": "ok"
+   },
+   "note": "A published scoring framework is methods in prose (2); no open tasks or code documented (3)."
+  },
+  "irregular.08": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "R.3 (anchor 1)",
+   "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+   "quote_source": "sequoia-irregular",
+   "fetch": {
+    "techcrunch-irregular": "ok",
+    "sequoia-irregular": "ok"
+   },
+   "note": "As a for-signal, publication via lab system cards supports anchor 1 (lab-edited summaries reach the public). The same fact is an R.3 cap, carried by new signal irregular.14."
+  },
+  "irregular.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2; S.6",
+   "quote": "The company also co-authored a whitepaper with Anthropic",
+   "quote_source": "newswire-irregular",
+   "fetch": {
+    "sequoia-irregular": "ok",
+    "newswire-irregular": "ok"
+   },
+   "note": "No documented right to add questions in lab engagements caps at 2 (S.2); co-authoring a whitepaper with Anthropic while evaluating Claude independently caps at 3 (S.6). The Sequoia page says nothing about scope; Newswire added for the co-authorship span. A cap of 2 does not need a span to be effective.",
+   "sources": [
+    "sequoia-irregular",
+    "newswire-irregular"
+   ]
+  },
+  "irregular.10": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": "By embedding directly with these cutting-edge research labs",
+   "quote_source": "sequoia-irregular",
+   "fetch": {
+    "sequoia-irregular": "ok"
+   },
+   "note": "Anchor 3 requires a published mandatory recusal rule plus disclosure of lab ties (P.5); none found, so cap 2. No two-way hiring is documented (P.3 not applied)."
+  },
+  "irregular.11": {
+   "bound": null,
+   "bound_note": "Superseded signals support nothing (RULES 0).",
+   "rule": "0 (superseded)",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "coefficient-index": "failed: HTTP 404 via fetch_text, 403 via curl (coefficientgiving.org/grants blocks non-browser clients)"
+   },
+   "note": "Superseded by irregular.12; supports nothing under RULES 0. The Coefficient grants index is not fetchable by the CI normalizer. The imported ledger text (evaluators-ledger) records the lead: 'Pattern Labs' $6,799,999 'Technological Risk Mitigation' 2024-02-28."
+  },
+  "irregular.12": {
+   "bound": null,
+   "bound_note": "Informational: neither floor nor cap; recorded as a gap.",
+   "rule": "F.6 (informational)",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "coefficient-home": "ok",
+    "evaluators-ledger": "ok"
+   },
+   "note": "Gap: a bounded negative on philanthropic grants sets no funding floor for a venture-backed company and lifts no cap (the F.4 cap of 1 stands regardless); RULES 0 allows null only under a named rule, and no F rule classifies this case. A negative cannot be quoted; coefficient-home loads but is the funder's home page. The evaluators-ledger page (unverifiable) still shows the Pattern Labs row, so the reconciliation under the old name remains open."
+  }
+ },
+ "existing_quote_checks": {
+  "irregular.01": "found (techcrunch-irregular; not found in sequoia-irregular). The span does not support the claim; suggested: a round led by Sequoia Capital and Redpoint Ventures"
+ },
+ "new_sources": [
+  {
+   "id": "irregular-xai-series-b",
+   "title": "Series B funding round",
+   "publisher": "xAI",
+   "url": "https://x.ai/news/series-b",
+   "published": "2024-05-26",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Third-party primary document (a frontier developer's own funding post), typed self per repo precedent. Fetched 2026-09-15; span 'with participation from key investors including Valor Equity Partners, Vy Capital, Andreessen Horowitz, Sequoia Capital' present. Establishes Sequoia Capital as an investor in a frontier developer for F.4/G.3."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "irregular.13",
+   "evaluator": "irregular",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses.",
+   "sources": [
+    "newswire-irregular"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 1
+   },
+   "rule": "X.2",
+   "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+   "quote_source": "newswire-irregular",
+   "note": "Needed to apply X.2 (evaluation services delivered to an evaluated lab for money: 1); irregular.04 concerns the planned defense product and caps only at 2."
+  },
+  {
+   "id": "irregular.14",
+   "evaluator": "irregular",
+   "dimension": "R",
+   "direction": "against",
+   "claim": "Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).",
+   "sources": [
+    "sequoia-irregular",
+    "newswire-irregular"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "R.3",
+   "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+   "quote_source": "sequoia-irregular",
+   "note": "Needed to apply R.3: system-card-only publication caps at 1, or at 2 where the organization also publishes its own reports on other work (Newswire: 'The company also co-authored a whitepaper with Anthropic'; RAND paper)."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Per-engagement access the lab can decline to renew (A.3); nothing statutory or contractually enforceable is documented."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "Per-model findings appear only in lab-authored system cards."
+  }
+ },
+ "dissent": {
+  "lower": "Role incompatibility (1 to 0). Irregular says it works side by side with OpenAI and Anthropic 'to develop the defenses needed before deployment' and describes a roadmap of runtime security controls for the same customers it evaluates. If any evaluated lab pays for those defenses, X.1 places the company at 0: it would be selling the fix to the party it grades.",
+  "higher": "Funding (1 to 2). The revenue disclosed is 'millions' from lab partnerships, but the UK government uses the SOLVE framework and the company markets to enterprises beyond the labs. If a non-lab revenue base is documented, per-engagement lab fees beside that base cap at 2 under F.3 rather than 1 under F.5."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [],
+ "notes": [
+  "Derived values under these bounds (leads policy): F 1, G 1, P 2, A 2, S 2, R 2, M 2, X 1. Divergence from stored: A 3 -> 2 (anchor 3 undocumented). R stays 2 only because new signal irregular.14 carries the R.3 cap; without it the sole for-signal floors R at 1.",
+  "The on-disk PLACEHOLDER bounds differ here on irregular.04 (cap 2, not 1; the X.2 cap moves to irregular.13), irregular.05 (floor 2, not 3), irregular.08 (floor 1, not 2), irregular.11 (null, superseded) and irregular.12 (null, informational)."
+ ]
+}

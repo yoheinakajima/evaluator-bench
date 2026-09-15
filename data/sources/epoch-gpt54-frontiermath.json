@@ -1,0 +1,12 @@
+{
+  "id": "epoch-gpt54-frontiermath",
+  "title": "GPT-5.4 set a new record on FrontierMath",
+  "publisher": "Epoch AI (Substack)",
+  "url": "https://epochai.substack.com/p/gpt-54-set-a-new-record-on-frontiermath",
+  "published": "2026-03-05",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "States 'We had pre-release access to evaluate the model' and that FrontierMath was funded by OpenAI. Fetched 2026-09-15; span present.",
+  "self_of": "epoch"
+}

@@ -1,0 +1,203 @@
+{
+ "evaluator": "humane",
+ "signals": {
+  "humane.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "R.5",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "humane-int": "ok (no publication-policy text quotable)"
+   },
+   "note": "Open publication of public exercises supports anchor 3; R.5 needs a published adverse finding for 4 and none is cited. Paid contextual evaluations for clients are not shown to be published. Derived R is 3, not the stored 4."
+  },
+  "humane.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "Humane Intelligence would not be able to do its important work without the support of our funders",
+   "quote_source": "humane-int",
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "Rule gap: the homepage names no government partner or funder; philanthropic support (Omidyar Network seed funding per omidyar.com) and government partnerships fit anchor 3. F.9 cited by analogy. Paid services to undisclosed clients are recorded on X (humane.09)."
+  },
+  "humane.03": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "A.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "humane-int": "ok (no access text)"
+   },
+   "note": "'Public-model access only' is anchor 0; no span, so C15 holds the cap at 1, matching the stored 1."
+  },
+  "humane.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "Humane Intelligence is a 501(c)(3) nonprofit dedicated to breaking down barriers to AI deployment for social good",
+   "quote_source": "humane-int",
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1). Bylaws are linked in the footer but no conflict policy is published. Derived G is 2, not the stored 3."
+  },
+  "humane.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "'No lab roles found' floors at 2 (P.6); the board and advisory page shows an advisory-group member employed at Meta and a board president formerly at OpenAI (humane.10). Derived P is 2, not the stored 3."
+  },
+  "humane.06": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "We collaboratively design and run rigorous evaluations",
+   "quote_source": "humane-int",
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "Self-designed public exercises with no engagement to refuse: 3 (S.5). Client-commissioned contextual evaluations are scoped with the client (anchor 2) but no cap signal documents a lab-set scope."
+  },
+  "humane.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "using our own software, which we are releasing under an open source software license in 2026",
+   "quote_source": "humane-int",
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "Methods described in prose; the software release is planned, not delivered, and no open tasks or code are cited: 2 (M.2). Derived M is 2, not the stored 3."
+  },
+  "humane.08": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "humane-int": "ok"
+   },
+   "note": "Contradicted by the same page: red teaming and contextual evaluations are offered as paid services and a web application is described as 'Our Product' (humane.09). Held to 3 by C15/C16 and overridden by the X.1 cap; recommend superseding."
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "humane-board",
+   "title": "Board & Advisory - Humane Intelligence",
+   "publisher": "Humane Intelligence",
+   "url": "https://www.humane-intelligence.org/board-advisory/",
+   "published": "2026-07",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Board of directors and advisory group with bios: board president previously on OpenAI's Human Data team; advisory-group member is a Senior Research Scientist at Meta. Fetched 2026-09-15; spans present."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "humane.09",
+   "evaluator": "humane",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "Humane Intelligence sells red-teaming events and contextual evaluations as paid services using its own software, and invites clients to 'hire us'; the client list is not published.",
+   "sources": [
+    "humane-int"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "X.1",
+   "quote": "Humane Intelligence offers red teaming events as a paid service using our own software",
+   "quote_source": "humane-int",
+   "note": "Products or services sold to unspecified parties in the evaluated ecosystem cap at 2 until a lab customer is documented (X.1); the card carries a document request for the client list. Also on the page: 'Humane Intelligence designs and runs contextual evals as a paid service'."
+  },
+  {
+   "id": "humane.10",
+   "evaluator": "humane",
+   "dimension": "P",
+   "direction": "against",
+   "claim": "Humane Intelligence's advisory group includes a Senior Research Scientist at Meta, and its board president previously worked on OpenAI's Human Data team; no recusal or cooling-off rule is published.",
+   "sources": [
+    "humane-board"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "P.4",
+   "quote": "Dr. Diego Garcia-Olano Senior Research Scientist, Meta",
+   "quote_source": "humane-board",
+   "note": "An advisor employed by a lab caps at 2 regardless of recusal (P.4); a director hired from a lab without a cooling-off rule also caps at 2 (P.3; 'He was previously a member of OpenAI’s Human Data team'). Public roles only; the open question is a document request."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "self-imposed"
+  },
+  "X": {
+   "resolution": {
+    "rule": "X.1",
+    "value": 2,
+    "note": "Paid red-teaming and evaluation services to an undisclosed client base cap at 2 until a lab customer is documented or excluded; the 'no commercial products' floor is contradicted by the organization's own services page."
+   }
+  }
+ },
+ "dissent": {
+  "lower": "Access should be 0. No pre-release access is documented anywhere: the public exercises, bias bounties and NIST and IMDA partnerships tested deployed models, no system card names Humane Intelligence as a pre-release tester, and no lab engagement is on record. The card shows 1 only because the anchor-0 claim lacks a quoted span (C15), not because anything above public access was ever granted.",
+  "higher": "Access should be 2. Humane Intelligence co-ran the NIST ARIA pilot and the Singapore IMDA multilingual red-teaming exercise, in which participating developers supplied models under government programs; A.4 treats government testing agreements as 3. If those exercises gave structured access beyond the public API, even with safeguards on, the documented engagement is at least anchor 2."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request to Humane Intelligence: the board and advisory-group conflict-of-interest policy, and whether advisory-group members employed by a model developer recuse from evaluations involving that developer's models.",
+   "Request to Humane Intelligence: whether any cooling-off rule applies to directors previously employed by a model developer, and the dates of the board president's OpenAI employment as stated in the published bio."
+  ],
+  "X": [
+   "Request to Humane Intelligence: a list of paid red-teaming and contextual-evaluation clients since 2024, or a statement of whether any client is a frontier developer."
+  ]
+ },
+ "conflicts": [
+  {
+   "dimension": "X",
+   "floor": 3,
+   "cap": 2,
+   "resolution": {
+    "rule": "X.1",
+    "value": 2,
+    "note": "humane.08's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.1 cap; X.1 decides because the paid-services statement is on the organization's own page."
+   }
+  }
+ ]
+}

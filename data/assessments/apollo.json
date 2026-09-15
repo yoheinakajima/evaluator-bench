@@ -1,111 +1,107 @@
 [
-  {
-    "evaluator": "apollo",
-    "dimension": "F",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "apollo.02",
-      "apollo.11",
-      "apollo.12"
-    ],
-    "rationale": "Anchor 2 on funding given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Reconcile the self-reported $1.5M with the index total of $4.41M by date."
-    ]
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "G",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "apollo.01",
-      "apollo.03",
-      "apollo.10",
-      "apollo.13",
-      "apollo.14"
-    ],
-    "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Round size and Macroscopic's share.",
-      "Who holds the mission seats."
-    ]
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "apollo.05"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "apollo.06"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "apollo.07"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "R",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "apollo.04"
-    ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "apollo.09"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "apollo",
-    "dimension": "X",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "apollo.08"
-    ],
-    "rationale": "Anchor 2 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "apollo",
+  "dimension": "F",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.02",
+   "apollo.11",
+   "apollo.12",
+   "apollo.15"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Reconcile the self-reported $1.5M with the index total of $4.41M by date."
+  ]
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "G",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.01",
+   "apollo.03",
+   "apollo.10",
+   "apollo.13",
+   "apollo.14"
+  ],
+  "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Round size and Macroscopic's share.",
+   "Who holds the mission seats."
+  ]
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.05"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "A",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.06"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "apollo.07"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "unknown"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.09"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "X",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "apollo.08"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

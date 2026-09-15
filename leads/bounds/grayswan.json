@@ -1,0 +1,254 @@
+{
+ "evaluator": "grayswan",
+ "signals": {
+  "grayswan.01": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "Cap depends on the recusal fact carried by grayswan.02.",
+   "rule": "P.1",
+   "quote": "he chairs the Safety and Security Committee",
+   "quote_source": "kolter-bio",
+   "fetch": {
+    "openai-kolter-board": "ok",
+    "kolter-bio": "ok"
+   },
+   "note": "P.1 second branch: a board and committee seat at an evaluated lab caps at 1 with a personal recusal (documented in grayswan.02) and at 0 without one; if the recusal cannot be re-verified the cap falls to 0 (the span and confirmed non-self corroboration in grayswan.12 would satisfy C15/C17). The OpenAI post says he will 'join' the committee and calls him 'Chief Technical Advisor at Gray Swan'; the 'chairs' fact rests on kolter-bio (his own page) and wikipedia-kolter. Suggested span for openai-kolter-board: 'Zico will also join the Board’s Safety and Security Committee'."
+  },
+  "grayswan.02": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "P.1",
+   "quote": "he has recused himself from interactions between the two companies",
+   "quote_source": "grayswan-forbesau-2024",
+   "fetch": {
+    "forbes-grayswan-2024": "failed: HTTP 403 via fetch_text and curl (forbes.com JavaScript wall: 'Please enable JS and disable any ad blocker')",
+    "grayswan-forbesau-2024": "ok"
+   },
+   "note": "A personal recusal is anchor 1 ('informal recusal'); P.5 (published mandatory recusal rule plus disclosure) is not met, so no floor above 1. The forbes.com URL is unfetchable; the identical article on Forbes Australia carries the span verbatim and is added as a second, fetchable source.",
+   "sources": [
+    "forbes-grayswan-2024",
+    "grayswan-forbesau-2024"
+   ]
+  },
+  "grayswan.03": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "Gray Swan, The AI Security Company Trusted by Every Major Frontier Lab, Raises $40M Series A",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok",
+    "forbes-grayswan-2026": "failed: HTTP 403 via fetch_text and curl (forbes.com JavaScript wall: 'Please enable JS and disable any ad blocker')"
+   },
+   "note": "F.5: 'every major lab' with no other base named caps at 1. The same release names 'global enterprises' as a category and Snowflake as an integration partner but names no enterprise customer and no revenue share; if a non-lab base is documented, F.3 caps at 2 instead. F.4 checked: no round participant is documented as an equity investor in a frontier developer (Snowflake's Anthropic tie is a $200M commercial partnership, 3 Dec 2025, not equity; see grayswan-snowflake-anthropic). Document request: revenue share by customer type."
+  },
+  "grayswan.04": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "X.1",
+   "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok",
+    "madrona-grayswan": "ok"
+   },
+   "note": "Guardrail/monitoring product (Cygnal: 'Real-time AI monitoring and protection') sold by the evaluator whose platform is 'used by Anthropic, OpenAI, and Meta'; the organization's own page is the admission (C17). Madrona (confirmed press) added as second source: 'They are deployed inside the labs building the most consequential AI systems in the world'; Latent Space (lead) reports Shade was the tool Anthropic used to evaluate its models.",
+   "sources": [
+    "grayswan-seriesa",
+    "madrona-grayswan"
+   ]
+  },
+  "grayswan.05": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "today announced a $40 million Series A round co-led by Wing Venture Capital and Madrona",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok"
+   },
+   "note": "Anchor 1: venture-backed for-profit with no published policy meeting G.2's two-of-four test. The span supports venture backing; the absence of a policy is a bounded negative and cannot be quoted."
+  },
+  "grayswan.06": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "F.5 (anchor text)",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "forbes-grayswan-2026": "failed: HTTP 403 via fetch_text and curl (forbes.com JavaScript wall: 'Please enable JS and disable any ad blocker')"
+   },
+   "note": "Gap: no F rule makes breadth across labs a floor; diversification among labs is not diversification away from labs, and F.5 reads 'every major lab' against. By anchor text the fact supports no more than anchor 1. Forbes is unfetchable; no span."
+  },
+  "grayswan.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "Gray Swan’s benchmarks are embedded into the safety evaluation processes",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok",
+    "madrona-grayswan": "ok"
+   },
+   "note": "Documented: pre-release engagement ('before they are released to the public'), continuous rather than one-off (Arena 'is a continuous global competition'; Madrona: 'runs more than 15,000 researchers against frontier models before release'), which is anchor 2 (extended time). Anchor 3 (helpful-only, weights, logs, on-site) is not documented in any cited source; the stored 3 needs a system-card passage describing the access mode. A stricter reader could hold this at 1. Madrona added as a second source.",
+   "sources": [
+    "grayswan-seriesa",
+    "madrona-grayswan"
+   ]
+  },
+  "grayswan.08": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "Research Published papers and findings from our research team",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "forbes-grayswan-2026": "failed: HTTP 403 via fetch_text and curl (forbes.com JavaScript wall: 'Please enable JS and disable any ad blocker')",
+    "grayswan-seriesa": "ok"
+   },
+   "note": "Published papers are methods in prose (2). M.3 (leaderboard with open tasks and logs) is not documented in cited sources. Forbes is unfetchable; the Gray Swan release (research page listing) added as a fetchable source.",
+   "sources": [
+    "forbes-grayswan-2026",
+    "grayswan-seriesa"
+   ]
+  },
+  "grayswan.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.3",
+   "quote": "Gray Swan is a leading security evaluator cited in 11 recent frontier model system cards",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok"
+   },
+   "note": "Findings on lab models reach the public as system-card citations (R.3 first clause, 1); the organization also publishes its own research on other work, so the cap is 2 (R.3 second clause)."
+  },
+  "grayswan.10": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2",
+   "quote": "AI Red-Teaming Dedicated adversarial assessment, scoped to your deployment",
+   "quote_source": "grayswan-seriesa",
+   "fetch": {
+    "grayswan-seriesa": "ok"
+   },
+   "note": "No documented right to add questions in lab engagements caps at 2. Gap: 'scoped to your deployment' reads as client-defined scope (anchor 1), but no rule assigns cap 1 for vendor engagements absent a documented lab right to decline findings or exclude questions. Document request: engagement terms with a lab."
+  },
+  "grayswan.11": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "G.2 (anchor text); G.3 not triggered",
+   "quote": "serves on the board of OpenAI",
+   "quote_source": "madrona-grayswan",
+   "fetch": {
+    "madrona-grayswan": "ok",
+    "dealroom-grayswan": "failed: HTTP 403 via fetch_text and curl (Cloudflare 'Just a moment' JavaScript challenge)"
+   },
+   "note": "A venture round caps a for-profit at anchor 2 by anchor text (anchors 3 and 4 require a nonprofit or public body); G.3 (cap 2) would need a participant that has invested in a frontier developer, and none is documented (Snowflake: commercial partnership, not equity). The cap of 1 on G is carried by grayswan.05. The OpenAI board fact belongs to P (grayswan.01/.12)."
+  },
+  "grayswan.12": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "P.1",
+   "quote": "became chair of its safety and security committee",
+   "quote_source": "wikipedia-kolter",
+   "fetch": {
+    "wikipedia-kolter": "ok"
+   },
+   "note": "Same seat as grayswan.01; cap 1 given the personal recusal in grayswan.02. Wikipedia (confirmed press) is the non-self corroboration for the 'chairs' fact. The Schmidt Sciences funding is personal research funding, informational here."
+  }
+ },
+ "existing_quote_checks": {
+  "grayswan.01": "found (kolter-bio; not found in openai-kolter-board, which says 'join' — suggested for that source: Zico will also join the Board’s Safety and Security Committee)",
+  "grayswan.02": "not found; suggested: he has recused himself from interactions between the two companies (span is verbatim in the Forbes Australia mirror added as grayswan-forbesau-2024; forbes.com returns 403 so the original cannot be checked)",
+  "grayswan.04": "found",
+  "grayswan.11": "found (madrona-grayswan; dealroom-grayswan unfetchable, Cloudflare 403)",
+  "grayswan.12": "found"
+ },
+ "new_sources": [
+  {
+   "id": "grayswan-forbesau-2024",
+   "title": "This hacker team is bulletproofing AI models for companies like OpenAI and Anthropic",
+   "publisher": "Forbes Australia",
+   "url": "https://www.forbes.com.au/news/innovation/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai-and-anthropic/",
+   "published": "2024-11-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Syndicated copy of the Forbes (29 Oct 2024) article; fetched 2026-09-15 with fetch_text; span 'he has recused himself from interactions between the two companies' present verbatim. Fetchable where forbes.com is not.",
+   "press_kind": "primary"
+  },
+  {
+   "id": "grayswan-snowflake-anthropic",
+   "title": "Snowflake and Anthropic Announce $200 Million Partnership to Bring Agentic AI to Global Enterprises",
+   "publisher": "Snowflake",
+   "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/",
+   "published": "2025-12-03",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Third-party primary document (company press release), typed self per repo precedent for lab/investor pages. Fetched 2026-09-15; states a 'multi-year, $200 million agreement' making Claude available in Snowflake, a commercial commitment, not an equity stake. Closes the open question on Snowflake Ventures as a lab investor: no equity documented."
+  },
+  {
+   "id": "grayswan-latentspace-2026",
+   "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+   "publisher": "Latent Space",
+   "url": "https://www.latent.space/p/gray-swan",
+   "published": "2026-06-22",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Podcast/newsletter page; fetched 2026-09-15; span 'the adversarial red teaming tool that Anthropic used to evaluate the robustness of their models' present (Shade). Lead for X.1: a lab using the evaluator's product.",
+   "press_kind": "aggregator"
+  }
+ ],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Access rests on per-lab engagements the lab can decline to renew (A.3); no statute or court-enforceable agreement documented."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "Per-model findings reach the public only through lab-authored system cards; no evaluator publication of adverse findings on a lab model documented."
+  }
+ },
+ "dissent": {
+  "lower": "Personnel (1 to 0). The co-founder and chief scientist chairs OpenAI's Safety and Security Committee, which oversees the very releases in which Gray Swan is cited. The only evidence of recusal is one 2024 press sentence describing a personal arrangement; no written policy, scope, or administrator is public. P.1 gives 0 where a recusal is not documented, and a single unverifiable press line is thin documentation.",
+  "higher": "Role incompatibility (0 to 1). The record documents that labs use Gray Swan's platform and are named in its system-card citations, but not that any lab buys Cygnal, the runtime defense product; lab use may be limited to Arena and Shade, which are testing services. X.1's 0 requires a defense or monitoring product sold to an evaluated lab; on the documented facts, anchor 1 (services to labs) fits."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request from Gray Swan a copy or description of the recusal arrangement governing the chief scientist's role between Gray Swan and OpenAI's board and Safety and Security Committee (date adopted, scope, who administers it), as reported by Forbes on 29 October 2024. Per RULES 12 this goes to the person before publication.",
+   "Request from Gray Swan (or from the funds) a statement of whether Wing, Madrona, Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next or Magarac Venture Partners hold equity in a frontier developer. The public record shows Snowflake's Anthropic tie as a $200M commercial partnership (3 Dec 2025), not equity."
+  ]
+ },
+ "conflicts": [],
+ "notes": [
+  "Derived values under these bounds (leads policy): F 1, G 1, P 1, A 2, S 2, R 2, M 2, X 0. Divergence from stored: A 3 -> 2 (anchor 3 undocumented).",
+  "The signals file on disk now carries PLACEHOLDER bounds mirroring the stored values; the bounds here were set from the rules and differ on grayswan.07 (floor 2, not 3) and grayswan.11 (cap 2, not 1)."
+ ]
+}

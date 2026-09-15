@@ -1,0 +1,223 @@
+{
+ "evaluator": "scale",
+ "signals": {
+  "scale.01": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "F.1",
+   "quote": "Meta has a 49% stake in Scale after its $14.3 billion investment",
+   "quote_source": "cnbc-scale-meta",
+   "fetch": {
+    "longtermwiki-audit": "ok; page loads but does not mention Meta's stake (no supporting span)",
+    "scale-framework": "ok; page loads but does not mention Meta (no supporting span)",
+    "cnbc-scale-meta": "ok",
+    "scale-next-phase": "ok"
+   },
+   "note": "F.1: a frontier developer holding 20% or more (voting or not) caps at 0. Neither originally cited source mentions the Meta stake; CNBC (confirmed press) and Scale's own June 2025 announcement ('Meta will hold a minority of Scale’s outstanding equity', an admission) are added so the 0 rests on a quoted span from confirmed, non-self sources (C15, C17).",
+   "sources": [
+    "longtermwiki-audit",
+    "scale-framework",
+    "cnbc-scale-meta",
+    "scale-next-phase"
+   ]
+  },
+  "scale.02": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "Scale has worked with the world's leading AI model builders",
+   "quote_source": "scale-framework",
+   "fetch": {
+    "scale-framework": "ok"
+   },
+   "note": "Anchor 1: venture-backed for-profit with no published policy meeting G.2. The placeholder cap of 0 on this signal is not what its claim supports; the 0 on G is carried by scale.10 under G.6 (ownership)."
+  },
+  "scale.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.4",
+   "quote": "Scale AI SEAL : Safety, Evaluation, and Alignment Lab; first third-party evaluator authorized by US AISI",
+   "quote_source": "longtermwiki-audit",
+   "fetch": {
+    "longtermwiki-audit": "ok",
+    "scale-framework": "ok"
+   },
+   "note": "A.4 assigns 3 to government testing agreements, and Scale's CAISI partnership (Feb 2025) is one. Gap: A.4 is written for the body holding the agreement; a vendor's lab-granted access under it is not documented here, the same wiki's table lists SEAL's access level as 'Public API', and Scale's own page describes pre-deployment access agreements as something 'model builders formalize' with CAISI. A.2 (enforceable access) is not met: CAISI agreements are voluntary. Document request: the access terms of the CAISI-Scale agreement."
+  },
+  "scale.04": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "X.2",
+   "quote": "Meta has been one of Scale AI's biggest customers",
+   "quote_source": "cnbc-scale-meta",
+   "fetch": {
+    "scale-framework": "ok",
+    "cnbc-scale-meta": "ok"
+   },
+   "note": "Data and evaluation services delivered to evaluated labs for money (CNBC: data preparation for OpenAI, Google, Microsoft; Meta a top customer). CNBC added as source for the span.",
+   "sources": [
+    "scale-framework",
+    "cnbc-scale-meta"
+   ]
+  },
+  "scale.05": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "P.7 (via P.1)",
+   "quote": "a deal that included the departure of Scale AI founder Alexandr Wang for the social media company",
+   "quote_source": "cnbc-scale-meta",
+   "fetch": {
+    "longtermwiki-audit": "ok; page loads but does not mention Wang or the move (no supporting span)",
+    "cnbc-scale-meta": "ok",
+    "scale-next-phase": "ok"
+   },
+   "note": "P.7: leadership that moved to a lab under an ownership transaction is 0 or 1 by P.1, which gives 1 with a personal recusal and 0 without one; no recusal is documented. Scale's own announcement adds that the founder 'will continue to serve as a director on the Scale Board of Directors' while employed by Meta (new signal scale.11, P.4 cap 2 regardless of recusal). This moves P from the stored 1 to 0 unless a recusal document is produced.",
+   "sources": [
+    "longtermwiki-audit",
+    "cnbc-scale-meta",
+    "scale-next-phase"
+   ]
+  },
+  "scale.06": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2",
+   "quote": "The government defines the risk domains it wants evaluated",
+   "quote_source": "scale-framework",
+   "fetch": {
+    "scale-framework": "ok"
+   },
+   "note": "No documented right to add questions caps at 2. S.3 alone would give 3 for the government work (regulator as client setting scope); the lab-client engagements ('the world's leading AI model builders') have no documented evaluator-set scope, so the lower cap holds. Gap: the rules do not say which engagement governs when a vendor serves both."
+  },
+  "scale.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4 (by analogy)",
+   "quote": "The government provides subject matter expertise and interprets the results for policy and standards",
+   "quote_source": "scale-framework",
+   "fetch": {
+    "scale-framework": "ok"
+   },
+   "note": "Results of government evaluations reach the government client only (reports to a regulator only: 2); Scale publishes SEAL leaderboards on its own work, so not 1. Gap: R.4 is written for public bodies; applied by analogy to a contractor whose client is the government."
+  },
+  "scale.08": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "Scale Labs builds the benchmarks and conducts the technical testing",
+   "quote_source": "scale-framework",
+   "fetch": {
+    "scale-framework": "ok"
+   },
+   "note": "Government benchmarks are closed; SEAL leaderboards (not mentioned in the cited source) publish rankings with methods in prose and mostly private task sets, and no third-party re-runs or open logs are documented (M.3 not met). Cap 2."
+  },
+  "scale.09": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "F.1",
+   "quote": "Meta has a 49% stake in Scale after its $14.3 billion investment",
+   "quote_source": "cnbc-scale-meta",
+   "fetch": {
+    "evaluators-ledger": "ok (GitHub page loads; unverifiable status unchanged)",
+    "cnbc-scale-meta": "ok"
+   },
+   "note": "Same fact as scale.01 with a fetchable press source added ('though the social media company will not have any voting power' covers the non-voting part). While evaluators-ledger (unverifiable) remains cited, C14 clamps this signal to 1..3 and the effective 0 is carried by scale.01; the curator may drop the ledger from this signal's sources (it stays cited elsewhere) to lift the clamp.",
+   "sources": [
+    "evaluators-ledger",
+    "cnbc-scale-meta"
+   ]
+  },
+  "scale.10": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "G.6",
+   "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion",
+   "quote_source": "cnbc-scale-meta",
+   "fetch": {
+    "cnbc-scale-meta": "ok"
+   },
+   "note": "Ownership at 20% or more by a lab is 0; confirmed press with span. The reported client departures (OpenAI 'wrapping up its work with Scale AI') are informational."
+  }
+ },
+ "existing_quote_checks": {
+  "scale.10": "found"
+ },
+ "new_sources": [
+  {
+   "id": "scale-next-phase",
+   "title": "Scale AI Announces Next Phase of Company’s Evolution",
+   "publisher": "Scale AI",
+   "url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution",
+   "published": "2025-06-12",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Scale's own announcement of the Meta investment. Fetched 2026-09-15; spans present: 'Wang will continue to serve as a director on the Scale Board of Directors'; 'Following its investment, Meta will hold a minority of Scale’s outstanding equity'; 'Scale’s founder, Alexandr Wang, is joining Meta to work on Meta’s AI efforts'. Admission against interest for F, G and P."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "scale.11",
+   "evaluator": "scale",
+   "dimension": "P",
+   "direction": "against",
+   "claim": "After joining Meta, the founder continues to serve as a director on Scale's board, per Scale's own announcement of the investment.",
+   "sources": [
+    "scale-next-phase"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "P.4",
+   "quote": "Wang will continue to serve as a director on the Scale Board of Directors",
+   "quote_source": "scale-next-phase",
+   "note": "Needed to apply P.4: a board member who is an employee of a lab caps at 2 regardless of recusal. Admission on the organization's own page."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "CAISI's testing agreements are voluntary (CSA: 'the center can only assess models that developers choose to share'), and Scale's own lab engagements are contractual; nothing statutory."
+  },
+  "R": {
+   "mechanism": "self-imposed",
+   "note": "Non-publication of government results follows the client contract Scale chose, not a statute and not a lab holding the pen; SEAL results are published at Scale's discretion."
+  }
+ },
+ "dissent": {
+  "lower": "Personnel (1 to 0). The founder joined Meta as an executive under the $14.3B ownership transaction and, by Scale's own announcement, keeps his seat on Scale's board. No recusal is documented anywhere in the public record. P.7 routes leadership that moved to a lab under an ownership transaction to P.1, which gives 0 without a recusal; P.4 separately caps a lab employee on the evaluator's board at 2.",
+  "higher": "Funding (0 to 1). Meta's 49% stake is non-voting, Scale's own announcement calls it a minority of outstanding equity, and the interim CEO stated Scale 'remains, unequivocally, an independent company'. If the 20% threshold in F.1 is read as requiring control rather than economic interest, the record supports anchor 1: a material investment from a frontier developer without voting power."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request from Scale AI the board-recusal terms, if any, that apply to Alexandr Wang's continuing directorship while he is employed by Meta (Scale announcement, 12 June 2025), and whether he sits on any committee reviewing evaluation work. Per RULES 12 this goes to the person before publication."
+  ]
+ },
+ "conflicts": [],
+ "notes": [
+  "Derived values under these bounds (leads policy): F 0, G 0, P 0, A 3, S 2, R 2, M 2, X 1. Divergence from stored: P 1 -> 0 (P.7 via P.1, no recusal documented).",
+  "The on-disk PLACEHOLDER bounds differ on scale.02 (cap 1, not 0) and scale.05 (cap 0, not 1)."
+ ]
+}

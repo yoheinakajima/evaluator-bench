@@ -1,0 +1,12 @@
+{
+  "id": "grayswan-snowflake-anthropic",
+  "title": "Snowflake and Anthropic Announce $200 Million Partnership to Bring Agentic AI to Global Enterprises",
+  "publisher": "Snowflake",
+  "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/",
+  "published": "2025-12-03",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Third-party primary document (company press release), typed self per repo precedent for lab/investor pages. Fetched 2026-09-15; states a 'multi-year, $200 million agreement' making Claude available in Snowflake, a commercial commitment, not an equity stake. Closes the open question on Snowflake Ventures as a lab investor: no equity documented.",
+  "self_of": "snowflake-ventures"
+}

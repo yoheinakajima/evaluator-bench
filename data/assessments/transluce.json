@@ -14,7 +14,12 @@
   "open_questions": [
    "Whether employee donors are named or bounded in size.",
    "How the 38% moves in FY2026."
-  ]
+  ],
+  "resolution": {
+   "rule": "F.7",
+   "value": 2,
+   "note": "Transluce's disclosed FY2025 revenue includes 38% from the personal holdings of Anthropic and OpenAI employees, above the 10% threshold; F.7 caps at 2 despite the government and philanthropic base."
+  }
  },
  {
   "evaluator": "transluce",
@@ -50,45 +55,43 @@
   "signals": [
    "transluce.06"
   ],
-  "rationale": "Anchor 2 on access given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "transluce",
   "dimension": "S",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "transluce.07"
   ],
-  "rationale": "Anchor 4 on scope given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "transluce",
   "dimension": "R",
-  "value": 4,
-  "anchor": 4,
+  "value": 2,
+  "anchor": 2,
   "signals": [
    "transluce.02"
   ],
-  "rationale": "Anchor 4 on publication given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "self-imposed"
  },
  {
   "evaluator": "transluce",
   "dimension": "M",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "transluce.08"
   ],
-  "rationale": "Anchor 4 on methods given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "transluce",
@@ -98,7 +101,6 @@
   "signals": [
    "transluce.05"
   ],
-  "rationale": "Anchor 3 on products given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  }

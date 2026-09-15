@@ -1,15 +1,20 @@
 {
-  "confidence": "low",
-  "domains": [
-    "bio",
-    "misuse",
-    "assurance"
-  ],
-  "hq": "Albany, US",
-  "id": "nemesys",
-  "name": "Nemesys Insights",
-  "role": "vendor",
-  "summary": "Red-teaming firm led by the director of a university red-teaming center; paid assessor on Amazon's Nova model papers; subcontractor on the EU Lot 1 CBRN consortium. Paid contracting work for labs and governments makes this a vendor, not an independent referee.",
-  "type": "private",
-  "what_would_move_the_score": "Funding disclosure and a published policy on lab clients."
+ "confidence": "low",
+ "domains": [
+  "bio",
+  "misuse",
+  "assurance"
+ ],
+ "hq": "Albany, US",
+ "id": "nemesys",
+ "name": "Nemesys Insights",
+ "role": "vendor",
+ "summary": "Red-teaming firm led by the director of a university red-teaming center; paid assessor on Amazon's Nova model papers; subcontractor on the EU Lot 1 CBRN consortium. Paid contracting work for labs and governments makes this a vendor, not an independent referee.",
+ "type": "private",
+ "what_would_move_the_score": "Funding disclosure and a published policy on lab clients.",
+ "dissent": {
+  "lower": "Publication (R) at 1 could be 0. The public record shows no Nemesys-authored report on any model; every finding appears inside Amazon's own technical reports, which Amazon wrote, framed and released. Amazon \"shares input prompts and corresponding model outputs\" with the assessor and asks for a verdict against its own thresholds. Where the lab both commissions the work and holds the only pen, anchor 0 (lab approval required) is the closer description.",
+  "higher": "Publication (R) at 1 could be 2. Amazon's reports name Nemesys, describe its 120-prompt threshold analysis and its 800-participant uplift study, and print its conclusion; the assessor's method and verdict reached the public in the lab's paper rather than as a bare citation. That is nearer to a published finding with lab review than to lab-edited summaries only."
+ },
+ "list_group": "commercial"
 }

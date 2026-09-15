@@ -1,0 +1,12 @@
+{
+  "id": "nemesys-ourstory",
+  "title": "Our Story",
+  "publisher": "Nemesys Insights",
+  "url": "https://www.nemesysinsights.com/ourstory",
+  "published": "2025",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Founded by six researchers to promote tools developed by the Center for Advanced Red Teaming (CART) at the University at Albany. Fetched 2026-09-15; span present.",
+  "self_of": "nemesys"
+}

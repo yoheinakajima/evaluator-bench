@@ -1,0 +1,12 @@
+{
+  "id": "mlcommons-ailuminate",
+  "title": "AILuminate",
+  "publisher": "MLCommons",
+  "url": "https://mlcommons.org/ailuminate/",
+  "published": "2026-04-27",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Benchmark page: \"MLCommons is a 501c6 non-profit organization\"; sponsors; AI Risk & Reliability working-group contributor list naming Amazon, Anthropic, Cohere, Google, Google DeepMind, Meta FAIR, Microsoft, OpenAI. Fetched 2026-09-15; spans present.",
+  "self_of": "mlcommons"
+}

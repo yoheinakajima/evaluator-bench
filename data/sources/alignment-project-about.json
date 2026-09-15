@@ -2,11 +2,12 @@
   "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15",
   "id": "alignment-project-about",
-  "note": "Backers: UK AISI, Canadian AISI, CIFAR, Australian AISI, OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, AI Safety Tactical Opportunities Fund, Halcyon Futures, Safe AI Fund, Sympatico Ventures, UKRI, ARIA; administered with Renaissance Philanthropy. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 \u2014 needs curator review [verify 2026-09-15 grok-pass] Fund >GBP 27M; backers incl. OpenAI, Microsoft, AWS, Anthropic, Schmidt, AISI/CAISI/CIFAR; no per-backer split.",
+  "note": "Backers: UK AISI, Canadian AISI, CIFAR, Australian AISI, OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, AI Safety Tactical Opportunities Fund, Halcyon Futures, Safe AI Fund, Sympatico Ventures, UKRI, ARIA; administered with Renaissance Philanthropy. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 — needs curator review [verify 2026-09-15 grok-pass] Fund >GBP 27M; backers incl. OpenAI, Microsoft, AWS, Anthropic, Schmidt, AISI/CAISI/CIFAR; no per-backer split.",
   "published": "2026",
   "publisher": "UK AI Security Institute",
   "retrieved": "2026-09-15",
   "source_type": "self",
   "title": "About the Alignment Project",
-  "url": "https://alignmentproject.aisi.gov.uk/about"
+  "url": "https://alignmentproject.aisi.gov.uk/about",
+  "self_of": "ukaisi"
 }

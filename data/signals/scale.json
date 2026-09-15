@@ -1,127 +1,211 @@
 [
-  {
-    "id": "scale.01",
-    "evaluator": "scale",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Nearly half owned by Meta, itself a frontier developer.",
-    "sources": [
-      "longtermwiki-audit",
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "scale.01",
+  "evaluator": "scale",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Nearly half owned by Meta, itself a frontier developer.",
+  "sources": [
+   "longtermwiki-audit",
+   "scale-framework",
+   "cnbc-scale-meta",
+   "scale-next-phase"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "scale.02",
-    "evaluator": "scale",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Primary business is selling data and evaluation services to the labs; no public COI policy addressing the Meta relationship.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.1",
+  "quote": "Meta has a 49% stake in Scale after its $14.3 billion investment",
+  "quote_source": "cnbc-scale-meta"
+ },
+ {
+  "id": "scale.02",
+  "evaluator": "scale",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Primary business is selling data and evaluation services to the labs; no public COI policy addressing the Meta relationship.",
+  "sources": [
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "scale.03",
-    "evaluator": "scale",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Government-defined risk domains and access agreements; first private evaluator authorized by the US institute.",
-    "sources": [
-      "longtermwiki-audit",
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "Scale has worked with the world's leading AI model builders",
+  "quote_source": "scale-framework"
+ },
+ {
+  "id": "scale.03",
+  "evaluator": "scale",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Government-defined risk domains and access agreements; first private evaluator authorized by the US institute.",
+  "sources": [
+   "longtermwiki-audit",
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "scale.04",
-    "evaluator": "scale",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells data and evaluation services to labs.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.4",
+  "quote": "Scale AI SEAL : Safety, Evaluation, and Alignment Lab; first third-party evaluator authorized by US AISI",
+  "quote_source": "longtermwiki-audit"
+ },
+ {
+  "id": "scale.04",
+  "evaluator": "scale",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells data and evaluation services to labs.",
+  "sources": [
+   "scale-framework",
+   "cnbc-scale-meta"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "scale.05",
-    "evaluator": "scale",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Leadership moved to Meta with the 2025 investment.",
-    "sources": [
-      "longtermwiki-audit"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.2",
+  "quote": "Meta has been one of Scale AI's biggest customers",
+  "quote_source": "cnbc-scale-meta"
+ },
+ {
+  "id": "scale.05",
+  "evaluator": "scale",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Leadership moved to Meta with the 2025 investment.",
+  "sources": [
+   "longtermwiki-audit",
+   "cnbc-scale-meta",
+   "scale-next-phase"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "scale.06",
-    "evaluator": "scale",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by government or lab clients.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.7 (via P.1)",
+  "quote": "a deal that included the departure of Scale AI founder Alexandr Wang for the social media company",
+  "quote_source": "cnbc-scale-meta"
+ },
+ {
+  "id": "scale.06",
+  "evaluator": "scale",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by government or lab clients.",
+  "sources": [
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "scale.07",
-    "evaluator": "scale",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Results for governments not public.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.2",
+  "quote": "The government defines the risk domains it wants evaluated",
+  "quote_source": "scale-framework"
+ },
+ {
+  "id": "scale.07",
+  "evaluator": "scale",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Results for governments not public.",
+  "sources": [
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "scale.08",
-    "evaluator": "scale",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "Benchmarks partly public (SEAL leaderboards); government evaluations closed.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.4 (by analogy)",
+  "quote": "The government provides subject matter expertise and interprets the results for policy and standards",
+  "quote_source": "scale-framework"
+ },
+ {
+  "id": "scale.08",
+  "evaluator": "scale",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "Benchmarks partly public (SEAL leaderboards); government evaluations closed.",
+  "sources": [
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "scale.09",
-    "evaluator": "scale",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Meta paid $14.3B for a 49% non-voting stake in June 2025; the founder moved to Meta.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "M.2",
+  "quote": "Scale Labs builds the benchmarks and conducts the technical testing",
+  "quote_source": "scale-framework"
+ },
+ {
+  "id": "scale.09",
+  "evaluator": "scale",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Meta paid $14.3B for a 49% non-voting stake in June 2025; the founder moved to Meta.",
+  "sources": [
+   "evaluators-ledger",
+   "cnbc-scale-meta"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "scale.10",
-    "evaluator": "scale",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Meta holds a 49% stake after a $14.3B investment; the founder left for Meta and an interim CEO was named; Google, OpenAI and xAI reportedly reduced engagements.",
-    "sources": [
-      "cnbc-scale-meta"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2025-06-18",
-    "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion"
-  }
+  "rule": "F.1",
+  "quote": "Meta has a 49% stake in Scale after its $14.3 billion investment",
+  "quote_source": "cnbc-scale-meta"
+ },
+ {
+  "id": "scale.10",
+  "evaluator": "scale",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Meta holds a 49% stake after a $14.3B investment; the founder left for Meta and an interim CEO was named; Google, OpenAI and xAI reportedly reduced engagements.",
+  "sources": [
+   "cnbc-scale-meta"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2025-06-18",
+  "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "G.6",
+  "quote_source": "cnbc-scale-meta"
+ },
+ {
+  "id": "scale.11",
+  "evaluator": "scale",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "After joining Meta, the founder continues to serve as a director on Scale's board, per Scale's own announcement of the investment.",
+  "sources": [
+   "scale-next-phase"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "P.4",
+  "quote": "Wang will continue to serve as a director on the Scale Board of Directors",
+  "quote_source": "scale-next-phase",
+  "note": "Needed to apply P.4: a board member who is an employee of a lab caps at 2 regardless of recusal. Admission on the organization's own page."
+ }
 ]

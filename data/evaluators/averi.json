@@ -9,5 +9,10 @@
  "confidence": "med",
  "summary": "Standards body for frontier AI auditing; ran the first double-blind enclave evaluation of a proprietary model.",
  "what_would_move_the_score": "Funder disclosure and a first audit under statutory terms.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Access is at the floor; no lower notch exists. The public record supports 0: AVERI's only completed engagement queried Gemini 2.5 Flash-Lite, a model public since July 2025, inside an enclave that hid the weights from the auditors, and the report says the pilot addressed some but not all ways a developer could tamper with the evaluation. No pre-release checkpoint, safeguards-off run, log or on-site access appears anywhere on the record.",
+  "higher": "Access could be 1. AVERI reports API credits from six labs \"as donations or compensation\" and says it is pursuing pilots on whether companies follow their own safety and security frameworks; Google DeepMind ran a proprietary model for it inside a trusted execution environment it did not control. A nonpublic endpoint or pre-release checkpoint in the current pilots would meet anchor 1, and the enclave protocol is a documented route to deeper access."
+ },
+ "list_group": "referee"
 }

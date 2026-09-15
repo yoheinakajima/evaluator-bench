@@ -1,98 +1,99 @@
 [
-  {
-    "evaluator": "dreadnode",
-    "dimension": "F",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "dreadnode.05"
-    ],
-    "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+ {
+  "evaluator": "dreadnode",
+  "dimension": "F",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.05"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "G",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "dreadnode.02"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.06"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "dreadnode.01"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "S",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.07"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.03"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.08",
+   "dreadnode.09"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "resolution": {
+   "rule": "M.2",
+   "value": 2,
+   "note": "See assessments.M.resolution: engagement-level closure (cap 1) against open self-directed benchmark code (floor 3); resolved at anchor 2, methods described in prose, consistent with Gray Swan and Scale."
   },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "G",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "dreadnode.02"
-    ],
-    "rationale": "Anchor 1 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "P",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "dreadnode.06"
-    ],
-    "rationale": "Anchor 2 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "dreadnode.01"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "S",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "dreadnode.07"
-    ],
-    "rationale": "Anchor 2 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "R",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "dreadnode.03"
-    ],
-    "rationale": "Anchor 1 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "M",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "dreadnode.08"
-    ],
-    "rationale": "Anchor 1 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "dreadnode",
-    "dimension": "X",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "dreadnode.04"
-    ],
-    "rationale": "Anchor 1 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+  "evidence_limited": true
+ },
+ {
+  "evaluator": "dreadnode",
+  "dimension": "X",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "dreadnode.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ }
 ]

@@ -10,5 +10,10 @@
  "confidence": "low",
  "summary": "Private evaluation-services company; leads two EU AI Office technical-assistance lots (loss of control with METR and Epoch; harmful manipulation with Transluce). Clients named are evaluators and governments.",
  "what_would_move_the_score": "Funding and ownership disclosure; a lab-money policy.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Governance (G) at 1 could be 0. The public record offers no case: nothing shows a lab or lab investor holding any stake in EquiStamp, and the company says it is converting to a public benefit corporation. The only lower reading is evidentiary, not substantive: with no funding or ownership disclosure at all, a 20% lab stake cannot be excluded, and the ledger relies on the company's own site.",
+  "higher": "Governance (G) at 1 could be 2. EquiStamp states a public benefit commitment to advance AI safety research over profit and is converting to a PBC, whose charter would bind directors to that purpose; its named clients are evaluators and governments, not labs. Anchor 2 asks for a published conflict policy; a PBC charter with a stated public benefit is the nearest published instrument and the company is not venture-backed on any record."
+ },
+ "list_group": "referee"
 }

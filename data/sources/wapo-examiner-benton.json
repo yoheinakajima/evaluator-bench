@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "Former Anthropic researcher Joe Benton joins METR. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Amodei pacing + embedded evaluators; Altman 'we will do the same'; Benton -> METR; Sanders-Casar.",
   "source_type": "press",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "press_kind": "primary"
 }

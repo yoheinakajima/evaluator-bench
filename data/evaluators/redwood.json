@@ -11,5 +11,10 @@
  "confidence": "med",
  "summary": "AI control research group; contributed a contractor to the METR incident investigation.",
  "what_would_move_the_score": "A diversified funder list and a stated policy on co-authoring with labs it evaluates.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Personnel could be 1. Redwood's chief scientist co-authored the alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude run jointly with the developer, and then worked inside OpenAI as a METR contractor; no recusal or cooling-off policy is published. Anchor 1 describes leaders with working roles at labs and informal recusal, and the record shows the roles but not the recusal.",
+  "higher": "Personnel could be 3. No board, advisory, or equity position at a lab appears in the record; the OpenAI incident work took no payment beyond API credits; the co-authored paper was research, not an evaluation engagement, and Anthropic named four independent reviewers. Anchor 3 asks for a recusal policy and disclosed ties; the ties are disclosed in the paper itself, and a published recusal rule would complete the anchor."
+ },
+ "list_group": "referee"
 }

@@ -1,138 +1,255 @@
 [
-  {
-    "id": "euaio.01",
-    "evaluator": "euaio",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Legal power to compel; the only body whose access does not depend on goodwill.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "euaio.01",
+  "evaluator": "euaio",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Legal power to compel; the only body whose access does not depend on goodwill.",
+  "sources": [
+   "metr-regs",
+   "euaio-ai-act-92"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "euaio.02",
-    "evaluator": "euaio",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Contracts its own evaluators (FAR.AI-led consortium) rather than relying on lab-chosen ones.",
-    "sources": [
-      "longtermwiki-far"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.2",
+  "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
+  "quote_source": "euaio-ai-act-92"
+ },
+ {
+  "id": "euaio.02",
+  "evaluator": "euaio",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Contracts its own evaluators (FAR.AI-led consortium) rather than relying on lab-chosen ones.",
+  "sources": [
+   "longtermwiki-far"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "euaio.03",
-    "evaluator": "euaio",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Code sets the access floor: helpful-only versions where security allows, at least 20 business days, external evaluators for each new frontier model.",
-    "sources": [
-      "metr-regs",
-      "arxiv-access-taxonomy"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.3",
+  "quote": "FAR AI was selected by the European Commission's AI Office to lead CBRN risk research under tender EC-CNECT/2025/OP/0032",
+  "quote_source": "longtermwiki-far"
+ },
+ {
+  "id": "euaio.03",
+  "evaluator": "euaio",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Code sets the access floor: helpful-only versions where security allows, at least 20 business days, external evaluators for each new frontier model.",
+  "sources": [
+   "metr-regs",
+   "arxiv-access-taxonomy"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "euaio.04",
-    "evaluator": "euaio",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Safety and Security Model Reports are submitted to the Office, not the public.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.4",
+  "quote": "A developer should engage independent external evaluators for each new frontier model",
+  "quote_source": "metr-regs"
+ },
+ {
+  "id": "euaio.04",
+  "evaluator": "euaio",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Safety and Security Model Reports are submitted to the Office, not the public.",
+  "sources": [
+   "metr-regs",
+   "euaio-cop-text"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "euaio.05",
-    "evaluator": "euaio",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "No accreditation pathway or public reporting schema yet; thin evaluator bench.",
-    "sources": [
-      "techpolicy-aef1"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.4",
+  "quote": "Signatories commit to reporting to the AI Office information about their model",
+  "quote_source": "euaio-cop-text"
+ },
+ {
+  "id": "euaio.05",
+  "evaluator": "euaio",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "No accreditation pathway or public reporting schema yet; thin evaluator bench.",
+  "sources": [
+   "techpolicy-aef1"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "euaio.06",
-    "evaluator": "euaio",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Public funding.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.2",
+  "quote": "the pool of qualified evaluators remains thin",
+  "quote_source": "techpolicy-aef1"
+ },
+ {
+  "id": "euaio.06",
+  "evaluator": "euaio",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Public funding.",
+  "sources": [
+   "metr-regs",
+   "euaio-office-decision"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "euaio.07",
-    "evaluator": "euaio",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Regulator with statutory basis.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.9",
+  "quote": "established within the Commission as part of the administrative structure of the Directorate-General",
+  "quote_source": "euaio-office-decision"
+ },
+ {
+  "id": "euaio.07",
+  "evaluator": "euaio",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Regulator with statutory basis.",
+  "sources": [
+   "metr-regs",
+   "euaio-ai-office-page"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "euaio.08",
-    "evaluator": "euaio",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Civil-service conflict rules.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "established within the European Commission as the foundation for a single AI governance system",
+  "quote_source": "euaio-ai-office-page"
+ },
+ {
+  "id": "euaio.08",
+  "evaluator": "euaio",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Civil-service conflict rules.",
+  "sources": [
+   "metr-regs",
+   "euaio-ceo-staffregs",
+   "euaio-staff-regs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "euaio.09",
-    "evaluator": "euaio",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "metr-regs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.5",
+  "quote": "Article 16 of the old staff regulations included a two-year notification period after staff leave their EU job",
+  "quote_source": "euaio-ceo-staffregs"
+ },
+ {
+  "id": "euaio.09",
+  "evaluator": "euaio",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "metr-regs",
+   "euaio-ai-office-page",
+   "euaio-newsletter-77"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "euaio.10",
-    "evaluator": "euaio",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.",
-    "sources": [
-      "ted-864574"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "X.7",
+  "quote": "It also enforces the rules for GPAI models and supports the governance bodies in Member States",
+  "quote_source": "euaio-ai-office-page"
+ },
+ {
+  "id": "euaio.10",
+  "evaluator": "euaio",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.",
+  "sources": [
+   "ted-864574",
+   "euaio-newsletter-77"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "euaio.11",
-    "evaluator": "euaio",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Contract notice TED 864574-2025, Technical Assistance for AI Safety, published 26 December 2025; contractors self-report include METR, FAR.AI, SecureBio, SaferAI and Epoch.",
-    "sources": [
-      "ted-864574-notice",
-      "ted-864574"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2025-12-26"
-  }
+  "rule": "F.12",
+  "quote": "The €9,080,000 tender is divided into six lots",
+  "quote_source": "euaio-newsletter-77"
+ },
+ {
+  "id": "euaio.11",
+  "evaluator": "euaio",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Contract notice TED 864574-2025, Technical Assistance for AI Safety, published 26 December 2025; contractors self-report include METR, FAR.AI, SecureBio, SaferAI and Epoch.",
+  "sources": [
+   "ted-864574-notice",
+   "ted-864574",
+   "euaio-tender-call",
+   "euaio-newsletter-77"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2025-12-26",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "S.3",
+  "quote": "This tender has been split into six lots",
+  "quote_source": "euaio-tender-call"
+ },
+ {
+  "id": "euaio.12",
+  "evaluator": "euaio",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "AI Office staff are Commission officials bound by the EU Staff Regulations, which require screening of actual or potential conflicts of interest (Article 11a) and restrict post-employment activity for two years (Article 16).",
+  "sources": [
+   "euaio-ceo-staffregs",
+   "euaio-staff-regs"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "G.2",
+  "quote": "a concrete procedure for properly screening new staff for actual or potential conflicts of interest",
+  "quote_source": "euaio-ceo-staffregs",
+  "note": "Statutory civil-service conflict rules count as a conflict policy for a public body (G.2): floor 3. G.7 four needs tier-1 evidence of an independent board and external review; none."
+ },
+ {
+  "id": "euaio.13",
+  "evaluator": "euaio",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "The AI Office holds the legal power under the AI Act to evaluate general-purpose models with systemic risk and to compel access and information; scope for those evaluations is set by the regulator, not the developer.",
+  "sources": [
+   "metr-regs",
+   "euaio-ai-act-92"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "as_of": "2026-09-15",
+  "bound": {
+   "floor": 4
+  },
+  "rule": "S.4",
+  "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
+  "quote_source": "euaio-ai-act-92"
+ }
 ]

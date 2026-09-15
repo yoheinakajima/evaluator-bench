@@ -2,16 +2,20 @@
 
 The checks are the CONTRACT (see CONTRACT.md). What the verifier actually
 guarantees: structural integrity (ids resolve, citations exist, values are
-anchors), evidence-tier gates (a 4 on F/G/P needs tier-1 evidence; a 4 on F
-needs a confirmed bounded negative), ledger hygiene (supersession targets
-exist, disputed rows never enter sums), and date discipline (no record dated
-after the frozen evidence clock). It does NOT guarantee that a cited source
-supports the claim's wording, that weights are the right weights, or that a
-score is true; that is what public review and the contribution path are for.
+anchors), that every stored value is the derivation of its signals' bounds
+under RULES.md (C22 to C24), evidence-tier gates (a 4 on F/G/P needs tier-1
+evidence; a 4 on F needs a confirmed bounded negative), role derivation (C25),
+source classification (C26), ledger hygiene, and date discipline. It does NOT
+guarantee that a cited source supports the claim's wording, that weights are
+the right weights, or that a score is true; that is what public review and
+the contribution path are for.
 """
 from __future__ import annotations
 import sys
 from .load import load, DIMS, EVIDENCE_CLOCK
+
+LEDGER_ALIAS = {"farai": "far-ai", "grayswan": "gray-swan"}
+
 
 def run(data: dict | None = None) -> list[str]:
     d = data or load(strict=False)
@@ -20,16 +24,18 @@ def run(data: dict | None = None) -> list[str]:
     dims = {x["key"]: x for x in d["dimensions"]}
     # C1: every source has url + retrieved date
     for s in src.values():
-        if not s.get("url","").startswith("http"): errs.append(f"C1 source {s['id']}: url missing or not http")
+        if not s.get("url", "").startswith("http"): errs.append(f"C1 source {s['id']}: url missing or not http")
         if not s.get("retrieved"): errs.append(f"C1 source {s['id']}: retrieved date missing")
     # C2: every signal cites >=1 existing source and names an existing evaluator + dimension
     for s in sig.values():
         if s["evaluator"] not in ev: errs.append(f"C2 signal {s['id']}: unknown evaluator {s['evaluator']}")
         if s["dimension"] not in dims: errs.append(f"C2 signal {s['id']}: unknown dimension {s['dimension']}")
-        if s["direction"] not in ("for","against"): errs.append(f"C2 signal {s['id']}: direction must be for/against")
+        if s["direction"] not in ("for", "against"): errs.append(f"C2 signal {s['id']}: direction must be for/against")
         if not s.get("sources"): errs.append(f"C2 signal {s['id']}: cites no source")
         for x in s.get("sources", []):
             if x not in src: errs.append(f"C2 signal {s['id']}: unknown source {x}")
+        if s.get("superseded_by") and s["superseded_by"] not in sig: errs.append(f"C2 signal {s['id']}: superseded_by target missing")
+        if s.get("quote_source") and s["quote_source"] not in s.get("sources", []): errs.append(f"C2 signal {s['id']}: quote_source is not one of its sources")
     # C3: every assessment cites >=1 signal on the same evaluator and dimension; value in 0..4 and == anchor
     seen = {}
     for a in ass:
@@ -46,20 +52,22 @@ def run(data: dict | None = None) -> list[str]:
             if not s: errs.append(f"C3 assessment {key}: unknown signal {sid}"); continue
             if s["evaluator"] != a["evaluator"]: errs.append(f"C3 assessment {key}: signal {sid} belongs to {s['evaluator']}")
             if s["dimension"] != a["dimension"]: errs.append(f"C3 assessment {key}: signal {sid} is on dimension {s['dimension']}")
-        if not a.get("rationale"): errs.append(f"C3 assessment {key}: rationale missing")
     # C4: every evaluator has all 8 dimensions assessed and >=1 signal
     for e in ev.values():
         for k in DIMS:
             if (e["id"], k) not in seen: errs.append(f"C4 evaluator {e['id']}: no assessment for {k}")
         if not any(s["evaluator"] == e["id"] for s in sig.values()): errs.append(f"C4 evaluator {e['id']}: no signals")
-        if e.get("confidence") not in ("high","med","low"): errs.append(f"C4 evaluator {e['id']}: confidence must be high/med/low")
+        if e.get("confidence") not in ("high", "med", "low"): errs.append(f"C4 evaluator {e['id']}: confidence must be high/med/low")
         if e.get("type") not in d["types"]: errs.append(f"C4 evaluator {e['id']}: unknown type {e.get('type')}")
-        if e.get("role") not in ("referee","government","vendor","benchmark","lab-team","expected-entrant"):
+        if e.get("type") == "hypothetical": errs.append(f"C4 evaluator {e['id']}: hypothetical composites are never scored (RULES 11)")
+        if e.get("role") not in ("referee", "government", "vendor", "benchmark", "lab-team", "expected-entrant"):
             errs.append(f"C4 evaluator {e['id']}: unknown role {e.get('role')}")
-        if e.get("status", "ranked") not in ("ranked","watchlist"):
+        if e.get("status", "ranked") not in ("ranked", "watchlist"):
             errs.append(f"C4 evaluator {e['id']}: unknown status {e.get('status')}")
         if e.get("status") == "watchlist" and e.get("role") != "expected-entrant":
             errs.append(f"C4 evaluator {e['id']}: watchlist entries must have role expected-entrant")
+        if not e.get("dissent") or not e["dissent"].get("lower") or not e["dissent"].get("higher"):
+            errs.append(f"C4 evaluator {e['id']}: dissent (lower and higher) missing")
     # C5: no orphan sources
     used = {x for s in sig.values() for x in s.get("sources", [])}
     for sid in src:
@@ -85,29 +93,14 @@ def run(data: dict | None = None) -> list[str]:
     # C9: every evaluator is an entity in the ledger, so nobody is exempt from exposure
     for eid_ in ev:
         if LEDGER_ALIAS.get(eid_, eid_) not in in_ledger: errs.append(f"C9 evaluator {eid_}: no ledger entity (add to data/ledger/entities.csv)")
-    # C14: extremes need live evidence. A value of 0 or 4 needs at least one non-superseded signal
-    # on that dimension whose sources are all confirmed; a value of 1 or 3 needs at least one signal
-    # with a confirmed or unaudited source. Signals whose every source is imported, unverifiable,
-    # or differs support nothing. An assessment that cannot meet the rule is set to the nearest
-    # supportable value and marked evidence_limited; the site shows the mark.
-    for a in ass:
-        sigs = [d["signals"][i] for i in a["signals"] if i in d["signals"] and not d["signals"][i].get("superseded_by")]
-        st = lambda sid: d["sources"].get(sid, {}).get("audit_status", "unaudited")
-        conf = [s for s in sigs if s["sources"] and all(st(x) == "confirmed" for x in s["sources"])]
-        live = [s for s in sigs if any(st(x) in ("confirmed", "unaudited") for x in s["sources"])]
-        v = a["value"]
-        if v in (0, 4) and not conf: errs.append(f"C14 assessment ({a['evaluator']}, {a['dimension']}): value {v} needs a signal whose sources are all confirmed; set to {1 if v == 0 else 3} and mark evidence_limited")
-        elif v in (1, 3) and not live: errs.append(f"C14 assessment ({a['evaluator']}, {a['dimension']}): value {v} needs a signal with a confirmed or unaudited source; set to 2 and mark evidence_limited")
-    # C10: PROCESS tier rule — a 4 on F/G/P needs tier-1 evidence (filing or index)
-    # on at least one cited signal. Self pages and press cannot anchor a 4.
+    # C10: PROCESS tier rule: a 4 on F/G/P needs tier-1 evidence (filing or index) on at least one cited signal
     for a in ass:
         if a["dimension"] in ("F", "G", "P") and a["value"] == 4:
             tiers = {src[s2]["source_type"] for s in a.get("signals", []) if s in sig
                      for s2 in sig[s].get("sources", []) if s2 in src}
             if not (tiers & {"filing", "index"}):
                 errs.append(f"C10 assessment ({a['evaluator']}, {a['dimension']}): value 4 needs a tier-1 (filing/index) source on a cited signal; found {sorted(tiers) or 'none'}")
-    # C11: dates are plausible (YYYY, YYYY-MM, or YYYY-MM-DD) and no record is dated
-    # after the frozen evidence clock
+    # C11: dates are plausible and no record is dated after the frozen evidence clock
     import datetime, re
     def _d(v):
         for fmt, rx in (("%Y-%m-%d", r"^\d{4}-\d{2}-\d{2}$"), ("%Y-%m", r"^\d{4}-\d{2}$"), ("%Y", r"^\d{4}$")):
@@ -126,15 +119,54 @@ def run(data: dict | None = None) -> list[str]:
             v = s.get(k)
             if v and _d(v) is None: errs.append(f"C11 signal {s['id']}: bad date {k}={v!r}")
             elif v and _d(v) > clock: errs.append(f"C11 signal {s['id']}: {k}={v} after evidence clock {EVIDENCE_CLOCK}")
-    # C12: presets are complete and sum to 100 — weights are a modeling choice, but they
-    # must at least be coherent; silent weight changes are a headline risk
+    # C12: presets are complete, sum to 100, and carry a derivation paragraph
     for pname, p in d["presets"].items():
         w = p.get("weights", {})
         if set(w) != set(DIMS): errs.append(f"C12 preset {pname}: weights must cover exactly {DIMS}")
         if abs(sum(w.values()) - 100) > 1e-9: errs.append(f"C12 preset {pname}: weights sum to {sum(w.values())}, not 100")
+        if len(p.get("derivation", "")) < 40: errs.append(f"C12 preset {pname}: derivation paragraph missing (RULES 13)")
+    # C22: every signal declares a bound and the rule behind it (RULES 0); direction and bound agree
+    for s in sig.values():
+        if "bound" not in s: errs.append(f"C22 signal {s['id']}: no bound declared (cap for against, floor for for, or null with bound_note)"); continue
+        b = s["bound"]
+        if s.get("rule") == "PLACEHOLDER": errs.append(f"C22 signal {s['id']}: placeholder bound; assign the anchor under RULES.md")
+        if b is None:
+            if not s.get("bound_note"): errs.append(f"C22 signal {s['id']}: null bound needs a bound_note naming the rule that makes it informational")
+            continue
+        if s["direction"] == "against" and "cap" not in b: errs.append(f"C22 signal {s['id']}: an against-signal must set a cap")
+        if s["direction"] == "for" and "floor" not in b: errs.append(f"C22 signal {s['id']}: a for-signal must set a floor")
+        if not s.get("rule"): errs.append(f"C22 signal {s['id']}: rule code missing")
+    # C23/C24: the stored value and evidence_limited flag are the derivation under the leads-included policy
+    from .policy import derive
+    for a in ass:
+        key = (a["evaluator"], a["dimension"])
+        r = derive(a, sig, src, "leads")
+        if r["conflict"] and not a.get("resolution"):
+            errs.append(f"C23 assessment {key}: floor {max(f['n'] for f in r['floors'])} exceeds cap {min(c['n'] for c in r['caps'])}; add a resolution naming the rule (RULES 0)")
+        if a.get("resolution") and not r["conflict"]:
+            errs.append(f"C23 assessment {key}: has a resolution but no conflict; remove it")
+        if r["value"] is None:
+            if not a.get("unevidenced"): errs.append(f"C23 assessment {key}: no signal sets a bound even with leads included; mark it unevidenced: true (the stored value is kept as the last reading and never shown)")
+        elif a.get("unevidenced"):
+            errs.append(f"C23 assessment {key}: marked unevidenced but the bounds derive {r['value']}")
+        elif r["value"] != a["value"]:
+            errs.append(f"C23 assessment {key}: stored value {a['value']} but the bounds derive {r['value']} ({r['rationale'][:160]})")
+        if bool(a.get("evidence_limited")) != bool(r["evidence_limited"]):
+            errs.append(f"C24 assessment {key}: evidence_limited should be {r['evidence_limited']} (held: {'; '.join(r['held']) or 'none'})")
+    # C25: role is derived from type and role-incompatibility (RULES 10); list_group, if stored, agrees
+    from .roles import derive_role, list_group
+    xval = {(a["evaluator"], a["dimension"]): a["value"] for a in ass}
+    for e in ev.values():
+        want = derive_role(e, xval.get((e["id"], "X")))
+        if e.get("role") != want: errs.append(f"C25 evaluator {e['id']}: role {e.get('role')} but RULES 10 derives {want}")
+        if e.get("list_group") and e["list_group"] != list_group(e, want): errs.append(f"C25 evaluator {e['id']}: list_group should be {list_group(e, want)}")
+    # C26: press sources say whether they are primary or aggregator; nothing else carries press_kind
+    for s in src.values():
+        if s.get("source_type") == "press" and s.get("press_kind") not in ("primary", "aggregator"): errs.append(f"C26 source {s['id']}: press source needs press_kind primary|aggregator")
+        if s.get("source_type") != "press" and s.get("press_kind"): errs.append(f"C26 source {s['id']}: press_kind only on press sources")
+        if s.get("source_type") == "self" and not s.get("self_of"): errs.append(f"C26 source {s['id']}: a self-published source names whose statement it is (self_of)")
     return errs
 
-LEDGER_ALIAS = {"farai": "far-ai", "grayswan": "gray-swan"}
 
 def main(argv=None) -> int:
     errs = run()
@@ -144,6 +176,9 @@ def main(argv=None) -> int:
         return 1
     d = load(strict=False)
     nq = sum(1 for s in d["signals"].values() if s.get("quote")); print(f"verify: quotes on {nq}/{len(d['signals'])} signals (a quote is an exact span from the source; fill them as sources are re-derived)")
+    from .policy import derive
+    held = [f"{a['evaluator']}.{a['dimension']}" for a in d["assessments"] if derive(a, d["signals"], d["sources"], "leads")["evidence_limited"]]
+    print(f"verify: {len(held)} assessment(s) held at a supportable anchor by C14/C15/C16: {', '.join(held) or 'none'}")
     for s in d["sources"].values():
         if s.get("source_type") == "docket":
             # C13 fail closed: a docket-type source may never be 'confirmed' without an
@@ -163,6 +198,7 @@ def main(argv=None) -> int:
         return 1
     print(f"verify: ok ({len(d['sources'])} sources, {len(d['signals'])} signals, {len(d['assessments'])} assessments, {len(d['evaluators'])} evaluators)")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())

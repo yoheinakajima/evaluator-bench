@@ -1,106 +1,109 @@
 [
-  {
-    "evaluator": "caisi",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "caisi.01",
-      "caisi.10"
-    ],
-    "rationale": "Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4",
-    "open_questions": [
-      "Add a confirmed bounded negative from a primary source to restore anchor 4."
-    ]
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "caisi.03",
-      "caisi.09",
-      "caisi.11"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "caisi.05"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "caisi.02",
-      "caisi.12"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "caisi.06",
-      "caisi.13"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "R",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "caisi.04"
-    ],
-    "rationale": "Anchor 1 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "caisi.07"
-    ],
-    "rationale": "Anchor 2 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "caisi",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "caisi.08"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+ {
+  "evaluator": "caisi",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.01",
+   "caisi.10"
+  ],
+  "rationale": "Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4",
+  "open_questions": [
+   "Add a confirmed bounded negative from a primary source to restore anchor 4."
+  ]
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.03",
+   "caisi.09",
+   "caisi.11",
+   "caisi.15"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "P",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.05",
+   "caisi.14"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "A",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.02",
+   "caisi.12"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0-final",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.06",
+   "caisi.13"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0-final"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "caisi.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "statutory"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "caisi.07"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "X",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "caisi.08",
+   "caisi.16"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "resolution": {
+   "rule": "X.6",
+   "value": 3,
+   "note": "The specific co-production rule (X.6) decides over the general legal-form floor: 3."
   }
+ }
 ]

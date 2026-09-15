@@ -8,5 +8,6 @@
   "note": "Meta 49% stake after $14.3B investment; interim CEO Jason Droege; Wang to Meta. [verify 2026-09-15 grok-pass] Full slug .../scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html. Meta $14.3B for 49%; Droege: 'unequivocally an independent company'. [verify 2026-09-15] independently read via browser task: 'Meta has a 49% stake in Scale AI after investing $14.3 billion into the startup' (CNBC, Jun 18 2025). 49% non-voting; deal closed the prior week; founder Alexandr Wang joined Meta.",
   "source_type": "press",
   "audit_status": "confirmed",
-  "found_by": "deep research pass 2026-09-15"
+  "found_by": "deep research pass 2026-09-15",
+  "press_kind": "primary"
 }

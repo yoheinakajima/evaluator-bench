@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "FY2025: 6% of revenue from OpenAI employees' personal holdings, 32% from Anthropic employees', unrestricted; no revenue from developers as organizations; no paid evaluations; recusal for financial interest; no equity; disclosure in outputs; AEF-1 2.3 aligned.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "self_of": "transluce"
 }

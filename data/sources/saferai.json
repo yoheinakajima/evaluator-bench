@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "SaferAI",
-  "url": "https://www.safer-ai.org/"
+  "url": "https://www.safer-ai.org/",
+  "self_of": "saferai"
 }

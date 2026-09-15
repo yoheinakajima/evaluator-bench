@@ -1,6 +1,58 @@
 {
-  "lab":       {"label":"Lab procurement",      "weights":{"F":18,"G":8,"P":10,"A":20,"S":16,"R":14,"M":9,"X":5}},
-  "regulator": {"label":"Regulator or auditor", "weights":{"F":15,"G":10,"P":10,"A":20,"S":20,"R":15,"M":10,"X":0}},
-  "public":    {"label":"Public trust",         "weights":{"F":25,"G":15,"P":15,"A":5,"S":10,"R":20,"M":5,"X":5}},
-  "equal":     {"label":"Equal weights",        "weights":{"F":12.5,"G":12.5,"P":12.5,"A":12.5,"S":12.5,"R":12.5,"M":12.5,"X":12.5}}
+ "lab": {
+  "label": "Lab procurement",
+  "weights": {
+   "F": 18,
+   "G": 8,
+   "P": 10,
+   "A": 20,
+   "S": 16,
+   "R": 14,
+   "M": 9,
+   "X": 5
+  },
+  "derivation": "Persona: a lab procurement lead choosing an outside evaluator whose report will be cited in a system card. Weights follow what a reader of that card will test the report against: access depth (20) and scope control (16) because a shallow or lab-scoped engagement is the first thing a critic checks; funding (18) and publication rights (14) because AEF-1's operating conditions and Illinois SB 315's financial-interest test both turn on them; personnel (10), method transparency (9), governance (8), and role incompatibility (5) round it out. Fixed in bench/seed_v0.py on 15 September 2026 before the population pass of the same day; not registered outside this repository, so it is the confirmatory preset, not a pre-registered one."
+ },
+ "regulator": {
+  "label": "Regulator or auditor",
+  "weights": {
+   "F": 15,
+   "G": 10,
+   "P": 10,
+   "A": 20,
+   "S": 20,
+   "R": 15,
+   "M": 10,
+   "X": 0
+  },
+  "derivation": "Persona: a regulator or accredited auditor selecting an evaluator under a mandate. Scope control and access rise to 20 each because a regulator can compel both and will want to see them exercised; publication rights (15) and funding (15) follow the financial-audit independence rules SB 315 imports; governance (10), personnel (10), and methods (10) are the usual accreditation checks. Role incompatibility is 0 here because an audit mandate can forbid product sales outright rather than score them."
+ },
+ "public": {
+  "label": "Public trust",
+  "weights": {
+   "F": 25,
+   "G": 15,
+   "P": 15,
+   "A": 5,
+   "S": 10,
+   "R": 20,
+   "M": 5,
+   "X": 5
+  },
+  "derivation": "Persona: a reader deciding whether to trust a published finding. Funding (25), publication rights (20), governance (15), and personnel (15) dominate because the public cannot inspect an engagement and can only ask who paid, who could edit, and who sits where. Scope (10), access (5), methods (5), and role incompatibility (5) matter less to trust in a finding that has already been published."
+ },
+ "equal": {
+  "label": "Equal weights",
+  "weights": {
+   "F": 12.5,
+   "G": 12.5,
+   "P": 12.5,
+   "A": 12.5,
+   "S": 12.5,
+   "R": 12.5,
+   "M": 12.5,
+   "X": 12.5
+  },
+  "derivation": "Every dimension at 12.5. A sensitivity check that asks how much the ranking depends on any persona's priorities; it is not a claim that the dimensions matter equally."
+ }
 }

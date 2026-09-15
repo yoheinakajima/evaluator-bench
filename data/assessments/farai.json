@@ -1,104 +1,106 @@
 [
-  {
-    "evaluator": "farai",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.01",
-      "farai.02",
-      "farai.10",
-      "farai.12",
-      "farai.14"
-    ],
-    "rationale": "Anchor 3 on funding given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.05"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.07"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.06"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.03",
-      "farai.11",
-      "farai.13"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "R",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.04"
-    ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.08"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "farai",
-    "dimension": "X",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "farai.09"
-    ],
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+ {
+  "evaluator": "farai",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "farai.01",
+   "farai.02",
+   "farai.10",
+   "farai.12",
+   "farai.14",
+   "farai.17",
+   "farai.16"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "G",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "farai.05"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "farai.07"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "farai.06"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "farai.03",
+   "farai.11",
+   "farai.13"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "farai.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "self-imposed"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "farai.08"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "X",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "farai.09",
+   "farai.15"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "resolution": {
+   "rule": "X.3",
+   "value": 2,
+   "note": "FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free."
   }
+ }
 ]

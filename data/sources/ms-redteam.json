@@ -5,7 +5,8 @@
   "url": "https://learn.microsoft.com/en-us/security/ai-red-team/",
   "published": "2026",
   "retrieved": "2026-09-15",
-  "note": "Replaces a dead security-blog topic URL. Internal lab team since 2018; independent of the product organization inside Microsoft, not of the developer. Related: 3 takeaways from red teaming 100 generative AI products (Jan 2025 blog).",
+  "note": "Replaces a dead security-blog topic URL. Internal lab team since 2018; independent of the product organization inside Microsoft, not of the developer. Related: 3 takeaways from red teaming 100 generative AI products (Jan 2025 blog). [audit 2026-09-15] re-fetched; Microsoft Learn hub is live with PyRIT and describes the team as an internal function of the developer.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed",
+  "self_of": "msft"
 }

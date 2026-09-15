@@ -8,8 +8,9 @@ def test_pages_exist():
     L = load_ledger()
     for eid in L["entities"]:
         assert (DIST / "entity" / f"{eid}.html").exists(), eid
-    for name in ("evaluators", "entities", "regimes", "sources"):
+    for name in ("evaluators", "entities", "regimes", "sources", "ledger", "rubric", "cases", "method", "exclusions", "status", "contribute", "dockets", "paper"):
         assert (DIST / name / "index.html").exists()
+    assert (DIST / "og.png").exists()
     assert (DIST / "style.css").exists() and (DIST / "site.js").exists()
 
 def test_focus_fades_non_neighbours():
@@ -44,19 +45,38 @@ def test_evidence_summary_is_generated_from_the_current_projection():
     import json
     from bench.site import evidence_summary
     bench = json.loads((DIST / "bench.json").read_text())
-    assert evidence_summary(bench) in (DIST / "index.html").read_text()
+    assert evidence_summary(bench) in (DIST / "method" / "index.html").read_text()
 
-def test_evidence_limited_is_enforced_and_marked():
-    import json
+
+def test_homepage_carries_byline_competence_and_policies():
+    html = (DIST / "index.html").read_text()
+    assert 'id="byline"' in html and "Not quality, coverage, or competence" in html
+    assert '"default_policy": "standard"' in html and 'rel="canonical"' in html and 'property="og:image"' in html
+    assert ".bar{display:block" in html, "the independence bar must render (it was inline with zero height)"
+
+
+def test_status_statistics_cover_ranked_only():
+    html = (DIST / "status" / "index.html").read_text()
+    assert "covers the 26 ranked organizations" in html
+    ledger = (DIST / "ledger" / "index.html").read_text()
+    assert "RANKED = " in ledger and "Watchlist entries are excluded" in ledger
+
+def test_evidence_limited_is_computed_and_marked():
+    """Every stored value is its leads-included derivation; the evidence_limited flag is the
+    computed 'held' state (C14 clamps, C15 spans, C16 second sources), never typed by hand."""
     from bench.load import load
+    from bench.policy import derive
     d = load(strict=False)
     st = lambda sid: d["sources"].get(sid, {}).get("audit_status", "unaudited")
     for a in d["assessments"]:
-        sigs = [d["signals"][i] for i in a["signals"] if i in d["signals"] and not d["signals"][i].get("superseded_by")]
-        conf = any(s["sources"] and all(st(x) == "confirmed" for x in s["sources"]) for s in sigs)
-        live = any(any(st(x) in ("confirmed", "unaudited") for x in s["sources"]) for s in sigs)
-        if a["value"] in (0, 4): assert conf, (a["evaluator"], a["dimension"])
-        if a["value"] in (1, 3): assert live, (a["evaluator"], a["dimension"])
+        r = derive(a, d["signals"], d["sources"], "leads")
+        if a.get("unevidenced"):
+            assert r["value"] is None, (a["evaluator"], a["dimension"]); continue
+        assert r["value"] == a["value"], (a["evaluator"], a["dimension"])
+        assert bool(a.get("evidence_limited")) == r["evidence_limited"], (a["evaluator"], a["dimension"])
+        if a["value"] in (0, 4):
+            bind = [d["signals"][i] for i in r["binding"]]
+            assert all(s.get("quote") and all(st(x) == "confirmed" for x in s["sources"]) for s in bind), (a["evaluator"], a["dimension"])
     marked = [a for a in d["assessments"] if a.get("evidence_limited")]
     assert len(marked) >= 7 and all(a["value"] in (1, 2, 3) for a in marked)
 

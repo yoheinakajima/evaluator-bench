@@ -1,0 +1,12 @@
+{
+  "id": "dreadnode-arxiv-airtbench",
+  "title": "AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models",
+  "publisher": "arXiv (Dreadnode authors)",
+  "url": "https://arxiv.org/abs/2506.14682",
+  "published": "2025-06-17",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Paper by Dreadnode staff (Dawson, Mulla, Landers, Caldwell); self-published research. Fetched 2026-09-15; span 'challenges from the Crucible challenge environment on the Dreadnode platform' present. Reports results on Claude 3.7 Sonnet, Gemini 2.5 Pro, GPT-4.5 and others: a published evaluation of frontier models.",
+  "self_of": "dreadnode"
+}

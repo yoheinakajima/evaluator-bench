@@ -9,7 +9,13 @@
    "far-30m"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.12",
+  "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.02",
@@ -21,7 +27,13 @@
    "far-30m"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "the AI Safety Fund (AISF), supported by the Frontier Model Forum (FMF)",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.03",
@@ -33,7 +45,13 @@
    "longtermwiki-far"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "S.3",
+  "quote": "FAR AI was selected by the European Commission's AI Office to lead Lot 1 (CBRN Risk Modelling and Evaluation)",
+  "quote_source": "longtermwiki-far"
  },
  {
   "id": "farai.04",
@@ -45,7 +63,13 @@
    "far-30m"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
+  },
+  "rule": "R.7",
+  "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.05",
@@ -57,7 +81,13 @@
    "far-30m"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
+  },
+  "rule": "G.1",
+  "quote": "FAR.AI is an independent nonprofit research organization",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.06",
@@ -69,7 +99,13 @@
    "longtermwiki-far"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 1
+  },
+  "rule": "A.1",
+  "quote": "FAR AI began red-teaming leading language models for frontier labs in Q4 2023, including red-teaming of GPT-4",
+  "quote_source": "longtermwiki-far"
  },
  {
   "id": "farai.07",
@@ -81,7 +117,11 @@
    "longtermwiki-far"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "P.3"
  },
  {
   "id": "farai.08",
@@ -93,7 +133,13 @@
    "far-30m"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
+  },
+  "rule": "M.2",
+  "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.09",
@@ -105,7 +151,13 @@
    "longtermwiki-far"
   ],
   "recorded": "2026-09-14",
-  "curator": "yohei/claude v0"
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "X.4",
+  "quote": "FAR AI conducts empirical technical AI safety research without developing or deploying AI products of its own",
+  "quote_source": "longtermwiki-far"
  },
  {
   "id": "farai.10",
@@ -119,7 +171,12 @@
   "recorded": "2026-09-14",
   "curator": "yohei/claude v0.4",
   "as_of": "2026-09-14",
-  "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue"
+  "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.3",
+  "quote_source": "far-transparency"
  },
  {
   "id": "farai.11",
@@ -132,7 +189,11 @@
   ],
   "recorded": "2026-09-14",
   "curator": "yohei/claude v0.4",
-  "as_of": "2026-09-14"
+  "as_of": "2026-09-14",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "S.3"
  },
  {
   "id": "farai.12",
@@ -147,7 +208,12 @@
   "recorded": "2026-09-15",
   "curator": "yohei/claude v1.0",
   "as_of": "2025-09",
-  "quote": "a grant of $28,675,000 over three years to FAR.AI"
+  "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote_source": "far-30m"
  },
  {
   "id": "farai.13",
@@ -160,7 +226,12 @@
   ],
   "recorded": "2026-09-15",
   "curator": "yohei/claude v1.0",
-  "as_of": "2026"
+  "as_of": "2026",
+  "bound": null,
+  "rule": "S.3",
+  "bound_note": "Section 9 (mis-dimensioned facts): a grant is a funding fact; informational on S and re-recorded on F as farai.17 (F.6). The regulator-client fact is already carried by farai.03 and farai.11.",
+  "quote": "The grant funds the evaluations FAR.AI is now developing for the EU AI Office's consortium on manipulation",
+  "quote_source": "founderspledge-frontier"
  },
  {
   "id": "farai.14",
@@ -174,6 +245,68 @@
   "recorded": "2026-09-15",
   "curator": "yohei/claude v1.0",
   "as_of": "2026-09-15",
-  "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
+  "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.3",
+  "quote_source": "longtermwiki-far-cap"
+ },
+ {
+  "id": "farai.15",
+  "evaluator": "farai",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "FAR.AI's transparency page publishes a consulting policy whose clients include companies building frontier AI models, charged at market rates, with revenue from for-profit developers capped at 10% of annual revenue; TY2024 earned revenue was $429K.",
+  "sources": [
+   "far-transparency"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "X.3",
+  "quote": "we charge market rates to for-profit developers to avoid subsidizing private actors",
+  "quote_source": "far-transparency",
+  "note": "X.3: paid consultation or framework work for a lab caps at 2, and consulting clients on a transparency page count. Tension noted with section 10 (lab fees for the evaluation itself change funding, not class); the page frames this as consulting, not evaluation."
+ },
+ {
+  "id": "farai.17",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+  "sources": [
+   "founderspledge-frontier"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "FAR.AI Integrity Team ($500,000)",
+  "quote_source": "founderspledge-frontier",
+  "note": "F.6: grants through donor-advised funds whose underlying donors are not public cap at 3. Re-recorded from farai.13 under section 9."
+ },
+ {
+  "id": "farai.16",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.",
+  "sources": [
+   "far-transparency"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.3",
+  "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue",
+  "quote_source": "far-transparency",
+  "note": "F.3: labs paying per engagement caps at 2, lifted to 3 by a published 10% cap at market rates with publication rights retained. Recorded as the against-side of farai.10 so the cap exists in the derivation."
  }
 ]

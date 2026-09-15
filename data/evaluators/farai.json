@@ -12,5 +12,10 @@
  "confidence": "high",
  "summary": "Red-teaming and adversarial-robustness nonprofit; leads the EU AI Office CBRN risk-modelling contract.",
  "what_would_move_the_score": "Disclose the AI Safety Fund share of budget and whether lab-funded pools are excluded from evaluation work.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Access could be 0. No cited source records the terms of any lab engagement: the wiki says FAR.AI began red-teaming leading models for frontier labs in late 2023 and that publicly confirmed engagements include OpenAI, but neither it nor the $30M post shows pre-release checkpoints, safeguards off, or logs. Anchor 0 is public API only, and that is all the record demonstrates; the EU contract is a regulator engagement, not lab access.",
+  "higher": "Access could be 2. OpenAI's GPT-5 system card credits FAR.AI with 80 hours of red-teaming before release, and pre-release red-teamers typically test early checkpoints under relaxed safeguards; the transparency page describes engagements with companies building frontier models under NDA. If the engagement terms show safeguards off or extended windows, anchor 2 applies, and helpful-only or log access would reach 3."
+ },
+ "list_group": "referee"
 }

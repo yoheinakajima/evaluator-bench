@@ -1,130 +1,187 @@
 [
-  {
-    "id": "hfoai.01",
-    "evaluator": "hfoai",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap.",
-    "sources": [
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn"
+ {
+  "id": "hfoai.01",
+  "evaluator": "hfoai",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap.",
+  "sources": [
+   "tnw-hf-nvidia"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "hfoai.02",
-    "evaluator": "hfoai",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "No track record as an evaluator; no access yet.",
-    "sources": [
-      "tnw-hf-nvidia",
-      "techmeme-hf"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.6",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.02",
+  "evaluator": "hfoai",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "No track record as an evaluator; no access yet.",
+  "sources": [
+   "tnw-hf-nvidia",
+   "techmeme-hf"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "hfoai.03",
-    "evaluator": "hfoai",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Who pays, who selects, and on what terms is unresolved.",
-    "sources": [
-      "tnw-hf-nvidia",
-      "zvi-pace"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.6",
+  "quote": "Hugging Face has asked to become one of the outside auditors of the AI labs",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.03",
+  "evaluator": "hfoai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Who pays, who selects, and on what terms is unresolved.",
+  "sources": [
+   "tnw-hf-nvidia",
+   "zvi-pace"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "hfoai.04",
-    "evaluator": "hfoai",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "States findings would be published openly; open-source culture.",
-    "sources": [
-      "techmeme-hf"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.10",
+  "quote": "Nobody has said who pays the embedded evaluators",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.04",
+  "evaluator": "hfoai",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "States findings would be published openly; open-source culture.",
+  "sources": [
+   "techmeme-hf"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "hfoai.05",
-    "evaluator": "hfoai",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Public tooling.",
-    "sources": [
-      "techmeme-hf"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "9",
+  "quote": "won't be solved behind the closed doors of a handful of frontier labs",
+  "quote_source": "techmeme-hf"
+ },
+ {
+  "id": "hfoai.05",
+  "evaluator": "hfoai",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Public tooling.",
+  "sources": [
+   "techmeme-hf"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "hfoai.06",
-    "evaluator": "hfoai",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Terms not announced.",
-    "sources": [
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "9"
+ },
+ {
+  "id": "hfoai.06",
+  "evaluator": "hfoai",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Terms not announced.",
+  "sources": [
+   "tnw-hf-nvidia"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "hfoai.07",
-    "evaluator": "hfoai",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Would be owned by a lab investor.",
-    "sources": [
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.2 (anchor text)",
+  "quote": "Neither lab has said who gets in, on what terms, or who decides",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.07",
+  "evaluator": "hfoai",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Would be owned by a lab investor.",
+  "sources": [
+   "tnw-hf-nvidia"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "hfoai.08",
-    "evaluator": "hfoai",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Commercial platform.",
-    "sources": [
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.4",
+  "quote": "Nvidia was in talks to put up to $10bn into Anthropic’s IPO as an anchor investor",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.08",
+  "evaluator": "hfoai",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Commercial platform.",
+  "sources": [
+   "tnw-hf-nvidia",
+   "hfoai-hf-pricing"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "hfoai.09",
-    "evaluator": "hfoai",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner.",
-    "sources": [
-      "evaluators-ledger",
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "X.1 (second sentence)",
+  "quote": "Instant setup for growing teams $20 /month per user",
+  "quote_source": "hfoai-hf-pricing"
+ },
+ {
+  "id": "hfoai.09",
+  "evaluator": "hfoai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner.",
+  "sources": [
+   "evaluators-ledger",
+   "tnw-hf-nvidia"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "hfoai.10",
-    "evaluator": "hfoai",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026.",
-    "sources": [
-      "fortune-hf-nvidia",
-      "tnw-hf-nvidia"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-11",
-    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
-  }
+  "rule": "F.1",
+  "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+  "quote_source": "tnw-hf-nvidia"
+ },
+ {
+  "id": "hfoai.10",
+  "evaluator": "hfoai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026.",
+  "sources": [
+   "fortune-hf-nvidia",
+   "tnw-hf-nvidia"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-11",
+  "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "F.1",
+  "quote_source": "fortune-hf-nvidia"
+ }
 ]

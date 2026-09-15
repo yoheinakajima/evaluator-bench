@@ -7,5 +7,6 @@
   "retrieved": "2026-09-15",
   "note": "Google DeepMind, Microsoft and xAI signed early-access agreements on 5 May 2026; OpenAI and Anthropic since September 2025; more than 40 evaluations completed; access includes versions with guardrails stripped back; DeepSeek V4 Pro evaluated without developer cooperation.",
   "source_type": "press",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "press_kind": "primary"
 }

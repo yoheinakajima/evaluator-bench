@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Loads. Coefficient components ~$28.675M, $6.65M, $2.16M, $1.7M + $12M regrant; FY2024 rev $24.3M; dev-revenue cap 10%; 2025 commitments >$30M. Tier-2 lead for T03 components, not a filing.",
   "source_type": "press",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "press_kind": "aggregator"
 }

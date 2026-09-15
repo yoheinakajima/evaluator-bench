@@ -7,40 +7,43 @@
   "signals": [
    "palisade.01",
    "palisade.09",
-   "palisade.11"
+   "palisade.11",
+   "palisade.13"
   ],
   "rationale": "Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.",
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v1.0",
   "open_questions": [
-   "Check Palisade's Form 990 Schedule of contributors and any lab-money policy statement.",
-   "Reconcile $2,123,463 (grants database) with $3,803,463 (index snapshot)."
+   "Request to Palisade Research: the Form 990 Schedule B or a donor list naming contributors above $5,000 for 2024 and 2025, and any policy on accepting money from AI developers.",
+   "Request to Coefficient Giving: the grant pages for the two Palisade Research general-support grants ($1,680,000 June 2024; $2,123,463 May 2025) so the $2,123,463 figure can be verified against the superseded $3,803,463 index total."
   ]
  },
  {
   "evaluator": "palisade",
   "dimension": "G",
-  "value": 3,
-  "anchor": 3,
+  "value": 2,
+  "anchor": 2,
   "signals": [
    "palisade.06"
   ],
-  "rationale": "Anchor 3 on governance given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "palisade",
   "dimension": "P",
-  "value": 3,
-  "anchor": 3,
+  "value": 2,
+  "anchor": 2,
   "signals": [
    "palisade.07",
    "palisade.10"
   ],
   "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. Provisional readings are open to public correction through the contribution path.",
   "assessed": "2026-09-15",
-  "assessor": "yohei/claude v0"
+  "assessor": "rules v0.1 (RULES.md)",
+  "open_questions": [
+   "Request to Palisade Research: a written statement of any cooling-off or recusal rule for staff formerly employed by evaluated developers, and the start and end dates of the executive director's Anthropic employment as published on the about page."
+  ]
  },
  {
   "evaluator": "palisade",
@@ -50,21 +53,20 @@
   "signals": [
    "palisade.05"
   ],
-  "rationale": "Anchor 1 on access given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "palisade",
   "dimension": "S",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "palisade.02"
   ],
-  "rationale": "Anchor 4 on scope given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "palisade",
@@ -74,9 +76,9 @@
   "signals": [
    "palisade.03"
   ],
-  "rationale": "Anchor 4 on publication given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "self-imposed"
  },
  {
   "evaluator": "palisade",
@@ -86,20 +88,19 @@
   "signals": [
    "palisade.04"
   ],
-  "rationale": "Anchor 3 on methods given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
  {
   "evaluator": "palisade",
   "dimension": "X",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
-   "palisade.08"
+   "palisade.08",
+   "palisade.12"
   ],
-  "rationale": "Anchor 4 on products given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  }
 ]

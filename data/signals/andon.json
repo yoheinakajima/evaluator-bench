@@ -1,126 +1,210 @@
 [
-  {
-    "id": "andon.01",
-    "evaluator": "andon",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes candid results, including misalignment findings on the best-scoring models.",
-    "sources": [
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "andon.01",
+  "evaluator": "andon",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes candid results, including misalignment findings on the best-scoring models.",
+  "sources": [
+   "andon-site",
+   "andon-publications"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "andon.02",
-    "evaluator": "andon",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Benchmarks (Vending-Bench) cited in model cards across labs.",
-    "sources": [
-      "tooldir-andon"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.7",
+  "quote": "Opus 5 on Vending-Bench: Once Again the Best Capitalist, Once Again Misaligned",
+  "quote_source": "andon-publications"
+ },
+ {
+  "id": "andon.02",
+  "evaluator": "andon",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Benchmarks (Vending-Bench) cited in model cards across labs.",
+  "sources": [
+   "tooldir-andon"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": null,
+  "rule": "section 9",
+  "bound_note": "Section 9 (mis-dimensioned fact): being cited in model cards is a track-record fact, not method transparency; informational on M. The methods fact is re-recorded as new signal andon.11 (M.2, floor 2).",
+  "quote": "Vending-Bench results are cited in frontier-lab model cards and press",
+  "quote_source": "tooldir-andon"
+ },
+ {
+  "id": "andon.03",
+  "evaluator": "andon",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed.",
+  "sources": [
+   "andon-site",
+   "tooldir-andon"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "andon.03",
-    "evaluator": "andon",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed.",
-    "sources": [
-      "andon-site",
-      "tooldir-andon"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.10",
+  "quote": "Introducing Pion: Run and grow real businesses autonomously",
+  "quote_source": "andon-site"
+ },
+ {
+  "id": "andon.04",
+  "evaluator": "andon",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "No published COI policy found.",
+  "sources": [
+   "andon-site",
+   "andon-yc"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "andon.04",
-    "evaluator": "andon",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "No published COI policy found.",
-    "sources": [
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "Winter 2024 Active Machine Learning AI San Francisco",
+  "quote_source": "andon-yc"
+ },
+ {
+  "id": "andon.05",
+  "evaluator": "andon",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Access through partnerships (Anthropic Project Vend); not routine pre-release.",
+  "sources": [
+   "tooldir-andon",
+   "andon-project-vend"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "andon.05",
-    "evaluator": "andon",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Access through partnerships (Anthropic Project Vend); not routine pre-release.",
-    "sources": [
-      "tooldir-andon"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "Anthropic partnered with Andon Labs , an AI safety evaluation company",
+  "quote_source": "andon-project-vend"
+ },
+ {
+  "id": "andon.06",
+  "evaluator": "andon",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Designs its own long-horizon tasks.",
+  "sources": [
+   "andon-site"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "andon.06",
-    "evaluator": "andon",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Designs its own long-horizon tasks.",
-    "sources": [
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "The data comes from our deployment of real-world autonomous organizations",
+  "quote_source": "andon-site"
+ },
+ {
+  "id": "andon.07",
+  "evaluator": "andon",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Undisclosed.",
+  "sources": [
+   "andon-site"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "andon.07",
-    "evaluator": "andon",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Undisclosed.",
-    "sources": [
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6"
+ },
+ {
+  "id": "andon.08",
+  "evaluator": "andon",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells a commercial agent platform.",
+  "sources": [
+   "andon-site",
+   "andon-pion"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "andon.08",
-    "evaluator": "andon",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells a commercial agent platform.",
-    "sources": [
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.1",
+  "quote": "Agents that run any company fully autonomously",
+  "quote_source": "andon-pion"
+ },
+ {
+  "id": "andon.09",
+  "evaluator": "andon",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found.",
+  "sources": [
+   "andon-pitchbook",
+   "andon-yc"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "andon.09",
-    "evaluator": "andon",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found.",
-    "sources": [
-      "andon-pitchbook"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "F.10",
+  "quote": "Andon Labs has raised $500K.",
+  "quote_source": "andon-pitchbook"
+ },
+ {
+  "id": "andon.10",
+  "evaluator": "andon",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Operates AI-run vending and retail deployments inside Anthropic and xAI offices as commercial partnerships while benchmarking those labs' models.",
+  "sources": [
+   "tooldir-andon",
+   "andon-site",
+   "andon-project-vend",
+   "andon-fortune"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "andon.10",
-    "evaluator": "andon",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Operates AI-run vending and retail deployments inside Anthropic and xAI offices as commercial partnerships while benchmarking those labs' models.",
-    "sources": [
-      "tooldir-andon",
-      "andon-site"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  }
+  "rule": "X.2",
+  "quote": "offering custom evaluations and deployments to AI labs and agent builders",
+  "quote_source": "tooldir-andon"
+ },
+ {
+  "id": "andon.11",
+  "evaluator": "andon",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Vending-Bench is described in a public paper (arXiv 2502.15840); the simulated environment is run by Andon as a service and its code is not published.",
+  "sources": [
+   "andon-vending-paper",
+   "andon-site"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 2
+  },
+  "rule": "M.2",
+  "quote": "In this paper, we present Vending-Bench, a simulated environment",
+  "quote_source": "andon-vending-paper",
+  "note": "Methods described in prose: 2 (M.2). A public repository of the environment or tasks would floor at 3 (M.1). Re-records the methods half of andon.02, which sits on M with a track-record fact."
+ }
 ]

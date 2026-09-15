@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Center for AI Standards and Innovation",
-  "url": "https://www.nist.gov/caisi"
+  "url": "https://www.nist.gov/caisi",
+  "self_of": "caisi"
 }

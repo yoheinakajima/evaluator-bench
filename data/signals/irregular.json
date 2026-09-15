@@ -1,153 +1,259 @@
 [
-  {
-    "id": "irregular.01",
-    "evaluator": "irregular",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "$80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.",
-    "sources": [
-      "techcrunch-irregular",
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "Formerly known as Pattern Labs"
+ {
+  "id": "irregular.01",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "$80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.",
+  "sources": [
+   "techcrunch-irregular",
+   "sequoia-irregular",
+   "irregular-xai-series-b"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "irregular.02",
-    "evaluator": "irregular",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Millions in annual revenue from the labs it evaluates.",
-    "sources": [
-      "newswire-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.4",
+  "quote_source": "techcrunch-irregular"
+ },
+ {
+  "id": "irregular.02",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Millions in annual revenue from the labs it evaluates.",
+  "sources": [
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "irregular.03",
-    "evaluator": "irregular",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Venture-backed for-profit; no published COI or recusal policy found.",
-    "sources": [
-      "techcrunch-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.5",
+  "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+  "quote_source": "newswire-irregular"
+ },
+ {
+  "id": "irregular.03",
+  "evaluator": "irregular",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Venture-backed for-profit; no published COI or recusal policy found.",
+  "sources": [
+   "techcrunch-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "irregular.04",
-    "evaluator": "irregular",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Growth plan is to sell runtime security controls into the same customers it evaluates.",
-    "sources": [
-      "newswire-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+  "quote_source": "techcrunch-irregular"
+ },
+ {
+  "id": "irregular.04",
+  "evaluator": "irregular",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Growth plan is to sell runtime security controls into the same customers it evaluates.",
+  "sources": [
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "irregular.05",
-    "evaluator": "irregular",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.",
-    "sources": [
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.1 (second sentence)",
+  "quote": "to develop the defenses needed before deployment",
+  "quote_source": "newswire-irregular"
+ },
+ {
+  "id": "irregular.05",
+  "evaluator": "irregular",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.",
+  "sources": [
+   "sequoia-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "irregular.06",
-    "evaluator": "irregular",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Government clients (UK) alongside labs.",
-    "sources": [
-      "newswire-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "By embedding directly with these cutting-edge research labs",
+  "quote_source": "sequoia-irregular"
+ },
+ {
+  "id": "irregular.06",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Government clients (UK) alongside labs.",
+  "sources": [
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 1
   },
-  {
-    "id": "irregular.07",
-    "evaluator": "irregular",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.",
-    "sources": [
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.5 (anchor text)",
+  "quote": "the UK government and Anthropic use Irregular's SOLVE framework",
+  "quote_source": "newswire-irregular"
+ },
+ {
+  "id": "irregular.07",
+  "evaluator": "irregular",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.",
+  "sources": [
+   "sequoia-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "irregular.08",
-    "evaluator": "irregular",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Findings appear in system cards for o3, o4-mini, GPT-5 and Claude models.",
-    "sources": [
-      "techcrunch-irregular",
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.2",
+  "quote": "the UK government and Anthropic both use the company’s SOLVE framework",
+  "quote_source": "sequoia-irregular"
+ },
+ {
+  "id": "irregular.08",
+  "evaluator": "irregular",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Findings appear in system cards for o3, o4-mini, GPT-5 and Claude models.",
+  "sources": [
+   "techcrunch-irregular",
+   "sequoia-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 1
   },
-  {
-    "id": "irregular.09",
-    "evaluator": "irregular",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by lab engagements; no public account of evaluator-set scope.",
-    "sources": [
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.3 (anchor 1)",
+  "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+  "quote_source": "sequoia-irregular"
+ },
+ {
+  "id": "irregular.09",
+  "evaluator": "irregular",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by lab engagements; no public account of evaluator-set scope.",
+  "sources": [
+   "sequoia-irregular",
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "irregular.10",
-    "evaluator": "irregular",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Markets itself as embedded with the labs; no recusal or cooling-off policy found.",
-    "sources": [
-      "sequoia-irregular"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.2; S.6",
+  "quote": "The company also co-authored a whitepaper with Anthropic",
+  "quote_source": "newswire-irregular"
+ },
+ {
+  "id": "irregular.10",
+  "evaluator": "irregular",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Markets itself as embedded with the labs; no recusal or cooling-off policy found.",
+  "sources": [
+   "sequoia-irregular"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "irregular.11",
-    "evaluator": "irregular",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "A Coefficient Giving grant of about $6.8M appears in the index for a venture-backed company; purpose to be verified.",
-    "sources": [
-      "coefficient-index"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11",
-    "superseded_by": "irregular.12"
+  "rule": "P.5",
+  "quote": "By embedding directly with these cutting-edge research labs",
+  "quote_source": "sequoia-irregular"
+ },
+ {
+  "id": "irregular.11",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "A Coefficient Giving grant of about $6.8M appears in the index for a venture-backed company; purpose to be verified.",
+  "sources": [
+   "coefficient-index"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "superseded_by": "irregular.12",
+  "bound": null,
+  "rule": "0 (superseded)",
+  "bound_note": "Superseded signals support nothing (RULES 0)."
+ },
+ {
+  "id": "irregular.12",
+  "evaluator": "irregular",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "A search of Coefficient Giving's grants pages under the name Irregular found no grant (snapshot 2026-09-15); the imported row citing $6.8M under Pattern Labs is unreconciled and marked differs.",
+  "sources": [
+   "coefficient-home",
+   "evaluators-ledger"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "bound": null,
+  "rule": "F.6 (informational)",
+  "bound_note": "Informational: neither floor nor cap; recorded as a gap."
+ },
+ {
+  "id": "irregular.13",
+  "evaluator": "irregular",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses.",
+  "sources": [
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "irregular.12",
-    "evaluator": "irregular",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "A search of Coefficient Giving's grants pages under the name Irregular found no grant (snapshot 2026-09-15); the imported row citing $6.8M under Pattern Labs is unreconciled and marked differs.",
-    "sources": [
-      "coefficient-home",
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15"
-  }
+  "rule": "X.2",
+  "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+  "quote_source": "newswire-irregular",
+  "note": "Needed to apply X.2 (evaluation services delivered to an evaluated lab for money: 1); irregular.04 concerns the planned defense product and caps only at 2."
+ },
+ {
+  "id": "irregular.14",
+  "evaluator": "irregular",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).",
+  "sources": [
+   "sequoia-irregular",
+   "newswire-irregular"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "R.3",
+  "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+  "quote_source": "sequoia-irregular",
+  "note": "Needed to apply R.3: system-card-only publication caps at 1, or at 2 where the organization also publishes its own reports on other work (Newswire: 'The company also co-authored a whitepaper with Anthropic'; RAND paper)."
+ }
 ]

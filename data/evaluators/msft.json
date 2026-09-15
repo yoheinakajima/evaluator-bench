@@ -11,5 +11,10 @@
  "confidence": "med",
  "summary": "External red team for other labs' models; not independent of Big Tech.",
  "what_would_move_the_score": "Not a candidate for an independence-critical role; useful as a supplementary red team.",
- "role": "lab-team"
+ "role": "lab-team",
+ "dissent": {
+  "lower": "Governance (1 to 0). The Microsoft AI Red Team is an internal function formed in 2018 inside a frontier developer, described on Microsoft's own Learn hub and Security Blog; G.6 and F.1 place a business unit of a developer at 0. Only the unaudited status of two pages that load and say exactly this holds the value at 1; both are the organization's own admissions.",
+  "higher": "Publication rights (1 to 2). The team publishes under its own name: a whitepaper on lessons from red teaming more than 100 generative AI products, case studies, and the open-source PyRIT toolkit. R.3's second clause caps an organization that publishes its own reports on other work at 2, not 1, even where findings on other labs' models stay inside system cards."
+ },
+ "list_group": "commercial"
 }

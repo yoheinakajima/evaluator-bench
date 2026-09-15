@@ -1,4 +1,57 @@
-# Evaluator Bench v0 changelog
+# Evaluator Bench changelog
+
+## v0.1 candidate, 15 Sep 2026 (evening): values derived, evidence policies, bands, gates
+
+Follows `paper/PLAN-v0.1.md`, written the same day against the v0 preview and two independent reviews. Nothing in the data was deleted; every v0 signal is still here with a bound and a rule attached.
+
+### What changed in how a value is made
+
+- **Bounds and rules.** Every signal now declares the anchor it supports (`bound`: a cap for an against-signal, a floor for a for-signal) and the `RULES.md` rule code that says so. The stored value is the derivation: the smallest cap or, with no cap, the largest floor. The verifier fails on a stored value that disagrees with its derivation (C22, C23) or an `evidence_limited` flag that disagrees with the computed held state (C24). The 170 boilerplate rationales ("Anchor N on X given the cited signals") are gone; the derivation text is generated on every card and the curator's prose, where it exists, sits beside it.
+- **RULES.md.** Written tie-breaks per dimension, applied to every organization the same way: a 20% stake is ownership (F.1, G.6), in-kind lab compute counts only above a materiality threshold (F.2), lab fees cap funding at 2 unless a published 10% cap applies (F.3), pooled and lab-investor-linked philanthropy caps at 3 (F.6), legal form alone floors governance at 2 (G.1), "no lab roles found" floors personnel at 2 (P.6), a 4 on scope needs incident or sign-off rights (S.5), a 4 on publication needs no lab pre-review plus a published adverse finding (R.5), a 4 on methods needs a third-party re-run or factsheets (M.1), paid consultation for a lab caps role incompatibility at 2 (X.3). The anchor texts for funding 0 and role incompatibility 1 were amended to match.
+- **Extremes need spans and second sources.** A 0 is effective only with a quoted span from a confirmed source (C15, C17). A 4 is effective only with a span and a tier-1 or tier-2 source or two independent sources with one not the evaluator's own (C15, C16). Bounds that fail are held at 1 or 3 and the card says which rule held them. In v0, 32 assessments sat at 0 or 4; 29 rested on a single signal, 28 without a span, 24 only on the organization's own statements.
+- **Evidence policies.** The reader chooses what counts: leads included, standard (at least one confirmed source; the default), against interest (an evaluator's own statements count only against it), verified spans, primary only. A dimension with no admissible signal renders as a dash and is excluded from the score; coverage is shown beside every number. Self-published sources now name whose statement they are (`self_of`), so a lab's own statement about an evaluator is not discounted as that evaluator's self-report.
+- **Bands replace numeric caps.** Any evidenced 0 is a disqualifying floor, any 1 a conditional floor, otherwise clear; the band sorts first and the number ranks within it. The 40 and 60 caps are gone.
+- **Roles are derived** (RULES 10) from type and the role-incompatibility value; list placement (referees, government, commercial and first-party) follows. Andon Labs and EquiStamp move from referee to vendor under the rule.
+- **The hypothetical Big Four composite is no longer scored.** Its six SB 315 sources, cited by nothing else, were removed; the discussion of the large assurance firms moved to the paper.
+- **Population criteria and a checked candidate list** (`data/exclusions.json`, RULES 11): 45 candidates, 21 in scope for the next batch, including several evaluators named in current system cards.
+- **Weights carry derivations**; "pre-registered" is dropped because no timestamped registration exists outside the repository.
+
+### Evidence work
+
+- A bound, a rule, and where the page could be fetched a quoted span, on every signal; second sources sought for every floor of 4; mechanism tags on access and publication; a dissent (one notch lower, one notch higher) on every card; open questions about named people rewritten as document requests (RULES 12).
+- Corpus-wide quote audit: 36 of 43 existing spans found verbatim; 6 replaced with spans that are on the page today (Apollo curly quotes; AVERI recusal wording; FAR.AI, METR, Palisade after Open Philanthropy pages moved to coefficientgiving.org); one Forbes page behind a bot wall, archived. The SecureBio "OpenAI covered the GPT-5.5 evaluation" quote was not on the cited page; the signal is re-scoped to the GPT-6 Astra and GPT-5.6 Sol reports, which carry the sentence, with SecureBio's principles page as the CI-checkable source.
+- Primary sources for the September 2026 pledges replace the aggregators: Anthropic's commitment (essay and announcement) covers access, METR by name, and publication without editorial control; OpenAI's chief executive's statement covers access only. The paper's opening paragraph is corrected accordingly.
+- Press sources are split into primary and aggregator; MarkTechPost and a law-firm alert were recoded from self to press.
+
+### Site
+
+- Homepage: byline and holdings beside the scores; competence chip; evidence-policy selector; three lists by derived role with a one-list toggle; band and coverage on every row; sort by weakest dimension; a four-paragraph guide; the regimes work moved to its own page with the Dataset B caveat on the figure. The essay sections moved to topic pages: rubric and rules, cases, method, money, population.
+- Cards: the derivation and the binding signal on every dimension, values under each policy, held and conflict flags, mechanism tags, dissent, and "what would move the score, and by how much" computed from the weights.
+- Status page: the gates for a citable tag, what counts under each policy, the right-of-reply log (organizations and named people), and the second-coder log. Every statistic covers the ranked population only.
+- Fixed: HTTPS now enforced on the custom domain; the independence bar rendered at zero height; no favicon, Open Graph, or canonical tags; phone navigation hid nine of eleven links; figures scrolled sideways with no cue.
+
+### Process
+
+- `bench gates` lists what stands between the preview and a citable tag; `bench release --stage published` refuses while any gate fails.
+- `bench outreach --all` writes right-of-reply packets for every ranked organization and every named person; `data/outreach-log.csv` records contact; sending is a human action.
+- `bench review --all` re-fetches every quoted source; `bench scores --policy --by-type` prints band-first tables.
+- Disclosure: shared funders are marked "not yet checked" rather than "none known"; the check is scheduled before the freeze. One coder; a second coder on every extreme is a gate.
+
+### Numbers at this build
+
+- 27 organizations (26 ranked, 1 watchlist); 357 signals (309 with a quoted span); 194 sources; 216 assessments, 1 unevidenced even with leads included (Redwood personnel).
+- Ranked population, standard policy, lab preset: 8 clear, 12 conditional, 6 disqualifying; METR 79 to Scale 36. Unevidenced assessments under standard 6 of 208; against interest 52; verified spans 27; primary only 187.
+- 94 values moved when the rules were applied to the v0 record; 12 floor-cap conflicts resolved by a named rule; 13 assessments held at a supportable anchor by the span or second-source tests.
+- Gates: 23 binding signals still without a span; 16 extremes awaiting a second coder; 53 reply packets generated, none sent.
+
+### Known limits (v0.1 candidate)
+
+- Single coder with AI assistance; the rules are the curator's rules. Second coder pending.
+- Under the primary-only policy almost nothing is evidenced; that is the finding, shown as a table.
+- Dataset B unchanged: secondary sources, year granularity, hindsight-selected triggers.
+- Paper section 5.5 and the abstract's third result are regenerated from the build at the pinned commit.
+
+## v0, 15 Sep 2026 (initial release)
 
 v0, 15 Sep 2026. Initial public release: an evidence-linked, event-sourced
 directory of third-party evaluators for frontier AI, built on ActiveGraph.
