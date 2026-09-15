@@ -149,7 +149,7 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
         sigs = [s for s in ev["signals"] if s["dimension"] == k]
         items = "".join(f'<li class="{s["direction"]}">{esc(s["claim"])}<br>{" ".join(_src_link(x, bench) for x in s["sources"])}<span class="gid">{esc(s.get("as_of") or s["recorded"])}</span></li>' for s in sigs)
         oq = "".join(f"<li>Open: {esc(q)}</li>" for q in a.get("open_questions", []))
-        rows.append(f'<div class="dimrow"><div><div class="v">{esc(dm["label"])} {a["value"]}/4</div><div class="anchor">{esc(dm["anchors"][a["value"]])}</div><div class="anchor" style="margin-top:4px">evidence: {esc(a.get("evidence_tier","unknown"))}</div></div><div><div style="font-size:13.5px">{esc(a["rationale"])}</div><ul>{items}{oq}</ul></div></div>')
+        rows.append(f'<div class="dimrow"><div><div class="v">{esc(dm["label"])} {a["value"]}/4</div><div class="anchor">{esc(dm["anchors"][a["value"]])}</div><div class="anchor" style="margin-top:4px">evidence: {esc(a.get("evidence_tier","unknown"))}</div>{'<div class="gid" style="margin-top:4px;color:#7A4E0E;border-color:#7A4E0E">evidence-limited: held at a supportable value</div>' if a.get("evidence_limited") else ''}</div><div><div style="font-size:13.5px">{esc(a["rationale"])}</div><ul>{items}{oq}</ul></div></div>')
     ex = C["ex"].get(LEDGER_ALIAS.get(ev["id"], ev["id"]))
     exp = ""
     if ex:
@@ -157,7 +157,7 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
         ties = ", ".join(f'{esc(t["via"])} ({esc(t["role"])}, distance {t["distance"]}, {esc(t["status"])})' for t in ex["lab_tied_seats"]) or "none within two steps recorded"
         exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(b) if b else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " quarantined: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}. Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Bounded negatives on file: {len(ex["negatives"])}.</p></div>'
     return f"""<div class="card"><h3>Scorecard</h3><p style="font-size:13.5px">{esc(ev['summary'])}</p>
-      <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}. Scores by preset: {scores}. Weakest dimension: {esc(dims[floor_k]['label'].lower())} {ev['values'][floor_k]}/4.</p>
+      <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}. Scores by preset: {scores}. Weakest dimension: {esc(dims[floor_k]['label'].lower())} {ev['values'][floor_k]}/4.{(' Evidence-limited on ' + str(sum(1 for a in ev['assessments'].values() if a.get('evidence_limited'))) + ' dimension(s): values held at the nearest supportable anchor until a live source is confirmed.') if any(a.get('evidence_limited') for a in ev['assessments'].values()) else ''}</p>
       <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>
       {''.join(rows)}</div>{exp}"""
 
@@ -302,6 +302,8 @@ def status_index(bench: dict, C: dict) -> str:
     ex_all = C["ex"].values()
     ev_by_ledger = {LEDGER_ALIAS.get(e["id"], e["id"]): e for e in bench["evaluators"]}
     ex = [x for x in ex_all if ev_by_ledger.get(x["id"], {}).get("status", "ranked") == "ranked"]
+    from .ledger import hop0_split
+    split = hop0_split(list(ex))
     near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); direct = sum(1 for x in ex if "hop0" in x["buckets"]); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
     quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
     body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])}; event-log digest {esc(commit)}.</p></div>
@@ -312,7 +314,10 @@ def status_index(bench: dict, C: dict) -> str:
       <tr><td>Ledger transfers</td><td class="num">{len(tr)} ({conf} confirmed, {imp} imported)</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Bounded negatives</td><td class="num">{len(L['negatives'])}</td></tr>
       <tr><td>Entities</td><td class="num">{len(L['entities'])}</td></tr><tr><td>Regimes</td><td class="num">{len(C['regs'])}</td></tr></table></div>
     <div class="card"><h3>Exposure</h3><table class="tbl">
-      <tr><td>Ranked evaluators with a direct inflow from a lab (hop 0)</td><td class="num">{direct} of {len(ex)}</td></tr>
+      <tr><td>Ranked evaluators with a direct lab tie (hop 0), any kind</td><td class="num">{direct} of {len(ex)}</td></tr>
+      <tr><td>of which: lab cash or in-kind for evaluation work</td><td class="num">{split['funding']}</td></tr>
+      <tr><td>of which: a lab owns a stake or is acquiring the evaluator</td><td class="num">{split['ownership']}</td></tr>
+      <tr><td>of which: no-fee partnership or membership only</td><td class="num">{split['partnership']}</td></tr>
       <tr><td>Ranked evaluators with an inflow from a lab or a lab-tied party (hop 0 or 1)</td><td class="num">{near} of {len(ex)}</td></tr>
       <tr><td>Funding sources with a second hop traced</td><td class="num">{traced} of {srcn}</td></tr></table>
       <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. Scores are readings of the public record at the build date, not endorsements.</p></div></div>

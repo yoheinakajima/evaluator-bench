@@ -128,6 +128,7 @@
     "direction": "against",
     "claim": "The OpenAI Foundation granted SecureBio Detection $17.2M; the Foundation's endowment is a stake of roughly a quarter of OpenAI PBC with a near-identical board.",
     "sources": [
+      "securebio-oaif",
       "securebio-x-oaif",
       "securebio-x-oaif"
     ],
@@ -143,6 +144,7 @@
     "direction": "for",
     "claim": "The grant is restricted to Detection work; the AI evaluation team has separate leadership, budgets and deliverables.",
     "sources": [
+      "securebio-oaif",
       "securebio-substack-detection"
     ],
     "recorded": "2026-09-15",
@@ -163,5 +165,19 @@
     "curator": "yohei/claude v1.0",
     "as_of": "2026-01",
     "quote": "broadened our government-facing portfolio with a US CAISI Bio R&D contract"
+  },
+  {
+    "id": "securebio.14",
+    "evaluator": "securebio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "SecureBio states the OpenAI Foundation grant places no constraints on what any part of SecureBio can research, publish or say, and its AI team's policy is to evaluate models solely on their merits.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2026-08-20",
+    "quote": "it places no constraints on what any part of SecureBio can research, publish, or say"
   }
 ]

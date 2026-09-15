@@ -85,6 +85,19 @@ def run(data: dict | None = None) -> list[str]:
     # C9: every evaluator is an entity in the ledger, so nobody is exempt from exposure
     for eid_ in ev:
         if LEDGER_ALIAS.get(eid_, eid_) not in in_ledger: errs.append(f"C9 evaluator {eid_}: no ledger entity (add to data/ledger/entities.csv)")
+    # C14: extremes need live evidence. A value of 0 or 4 needs at least one non-superseded signal
+    # on that dimension whose sources are all confirmed; a value of 1 or 3 needs at least one signal
+    # with a confirmed or unaudited source. Signals whose every source is imported, unverifiable,
+    # or differs support nothing. An assessment that cannot meet the rule is set to the nearest
+    # supportable value and marked evidence_limited; the site shows the mark.
+    for a in ass:
+        sigs = [d["signals"][i] for i in a["signals"] if i in d["signals"] and not d["signals"][i].get("superseded_by")]
+        st = lambda sid: d["sources"].get(sid, {}).get("audit_status", "unaudited")
+        conf = [s for s in sigs if s["sources"] and all(st(x) == "confirmed" for x in s["sources"])]
+        live = [s for s in sigs if any(st(x) in ("confirmed", "unaudited") for x in s["sources"])]
+        v = a["value"]
+        if v in (0, 4) and not conf: errs.append(f"C14 assessment ({a['evaluator']}, {a['dimension']}): value {v} needs a signal whose sources are all confirmed; set to {1 if v == 0 else 3} and mark evidence_limited")
+        elif v in (1, 3) and not live: errs.append(f"C14 assessment ({a['evaluator']}, {a['dimension']}): value {v} needs a signal with a confirmed or unaudited source; set to 2 and mark evidence_limited")
     # C10: PROCESS tier rule — a 4 on F/G/P needs tier-1 evidence (filing or index)
     # on at least one cited signal. Self pages and press cannot anchor a 4.
     for a in ass:

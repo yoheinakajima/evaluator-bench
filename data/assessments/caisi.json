@@ -47,11 +47,12 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "caisi.02"
+      "caisi.02",
+      "caisi.12"
     ],
     "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final"
   },
   {
     "evaluator": "caisi",
@@ -59,11 +60,12 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "caisi.06"
+      "caisi.06",
+      "caisi.13"
     ],
     "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final"
   },
   {
     "evaluator": "caisi",

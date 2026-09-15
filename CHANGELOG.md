@@ -52,6 +52,14 @@ Correction window open through 29 Sep 2026.
   holdings in Google and Meta, private SpaceX holding with xAI exposure;
   shared-funders field is best-effort "none known").
 
+## Late fixes before v0 (15 Sep 2026, evening)
+
+- Ledger: T13 (ARC to METR $4,553,935) moved from unverifiable to unaudited on two 990 extracts; T15/T16 re-pointed from the Nonprofit Explorer home page to the Founders Pledge e-file XML and the SVCF filer page; T22 (OpenAI Foundation to SecureBio $17.2M) confirmed on SecureBio's own post; T07 (Coefficient to Epoch) confirmed against Epoch's own list, which sums to $25,113,611 including a July 2026 grant made after the snapshot ($24,513,611 without it, the row's figure; the earlier differs flag rested on a mis-sum); T41/T48/T60 relabeled as consortium lot totals; Bass repository path corrected to the master branch; dead Microsoft red-team URL replaced.
+- New: CAISI early-access agreements with five labs (CSA note); Epoch discloses investing in semiconductor and AI stocks; SecureBio's no-constraints statement.
+- Transfer rows carry a `class`; the hop-0 count is reported by kind: 8 of 26 with lab cash or in-kind, 2 ownership, 2 partnership-only.
+- C14: extremes need live evidence. Seven assessments (EquiStamp G and X, Nemesys G, S and R, Microsoft F and G) are held at supportable values and marked evidence-limited; scores moved by 1 to 6 points.
+- Dockets page reads a committed validation record bound to the proposal digest.
+
 ## Known limits (v0)
 
 - 2026-09-15 verification pass: all 38 imported ledger rows re-derived from

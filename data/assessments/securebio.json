@@ -12,7 +12,7 @@
     ],
     "rationale": "Anchor 2 on funding given the cited signals.",
     "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
+    "assessor": "yohei/claude v0-final",
     "open_questions": [
       "Coefficient grant amount to SecureBio."
     ]
@@ -61,11 +61,12 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "securebio.05"
+      "securebio.05",
+      "securebio.14"
     ],
     "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final"
   },
   {
     "evaluator": "securebio",

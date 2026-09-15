@@ -2,26 +2,29 @@
   {
     "evaluator": "msft",
     "dimension": "F",
-    "value": 0,
-    "anchor": 0,
+    "value": 1,
+    "anchor": 1,
     "signals": [
       "msft.01"
     ],
-    "rationale": "Anchor 0 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "rationale": "Anchor 0 on funding given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final",
+    "evidence_limited": true
   },
   {
     "evaluator": "msft",
     "dimension": "G",
-    "value": 0,
-    "anchor": 0,
+    "value": 1,
+    "anchor": 1,
     "signals": [
-      "msft.02"
+      "msft.02",
+      "msft.09"
     ],
-    "rationale": "Anchor 0 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "rationale": "Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final",
+    "evidence_limited": true
   },
   {
     "evaluator": "msft",

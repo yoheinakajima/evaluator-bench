@@ -19,3 +19,4 @@ Invariants. `python -m bench verify` enforces them; CI blocks merges that break 
 15. Dates must be YYYY, YYYY-MM, or YYYY-MM-DD, and no record may be dated after the frozen evidence clock (C11).
 16. Every preset's weights cover exactly the eight dimensions and sum to 100 (C12).
 17. A `docket`-type source may never carry `audit_status: confirmed` without an independent, signed certificate from review at epistemedia.org by someone other than the drafter; `verify` fails closed (C13).
+14. Extremes need live evidence (C14). A value of 0 or 4 requires a non-superseded signal whose sources are all `confirmed`; 1 or 3 requires a signal with a `confirmed` or `unaudited` source. Assessments held at a supportable value carry `evidence_limited: true`. Transfer rows carry a `class` (cash, in_kind, ownership, partnership); population counts of direct lab ties are reported by class, and an acquisition or a no-fee partnership is never reported as lab funding.

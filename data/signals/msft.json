@@ -94,5 +94,19 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.09",
+    "evaluator": "msft",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Microsoft's AI red team has operated since 2018 as an internal function and reports having red-teamed more than 100 generative AI products; it is separate from product teams, not from the developer.",
+    "sources": [
+      "ms-redteam",
+      "ms-redteam-100"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2025-01-13"
   }
 ]

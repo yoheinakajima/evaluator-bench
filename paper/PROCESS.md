@@ -67,3 +67,14 @@ Non-public individuals; private communications; screenshots of paywalled pages; 
 ## 10. Disclosure
 
 Curators state their own relationships to evaluators and labs in the repository. The same disclosure the rubric asks of evaluators.
+
+## 12. What unverified evidence may do to a score
+
+Every source and ledger row carries an audit status. The status limits what a value can be, not just what a sum may include:
+
+- `confirmed`: re-derived from the cited source by a curator or the audit step. Supports any value, subject to the tier rule (a 4 on Funding, Governance or Personnel needs tier-1 evidence, C10).
+- `unaudited`: cited from retrieved text or a search result; page not fetched in full here. Supports values 1 to 3 only.
+- `imported`: copied from another project's ledger. Supports nothing on its own; it is a lead.
+- `differs`, `unverifiable`, `superseded`: quarantined. Support nothing and are excluded from every sum and figure; they stay visible with both values so the disagreement is on the record.
+
+A value of 0 or 4 therefore needs at least one non-superseded signal whose sources are all confirmed; a value of 1 or 3 needs at least one signal with a confirmed or unaudited source; 2 is always supportable (C14). When an assessment cannot meet this, the verifier fails and the curator sets the value to the nearest supportable anchor and marks it `evidence_limited`. The rationale keeps the reading the record would give if the sources held up, and the site shows the mark. The value moves back the moment a live source is confirmed. This keeps a weakly sourced extreme from moving a ranking in either direction, without pretending the weak evidence does not exist.

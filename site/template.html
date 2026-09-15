@@ -553,7 +553,7 @@ function detail(e){
     const sigs=e.signals.filter(x=>x.dimension===d.k);
     return `<div class="dimblock">
       <div class="dim ${cls}"><span><h4>${d.label}</h4></span><span class="meter" aria-label="${d.label} ${s} of 4">${[0,1,2,3].map(i=>`<b class="${i<s?"on":""}"></b>`).join("")}</span><span class="w">${s}/4, w ${fmt(weights[d.k])}<span class="gid">${esc(a.graph_id)}</span></span></div>
-      <div class="anchor">Anchor ${s}: ${esc(d.anchors[s])}</div>
+      <div class="anchor">Anchor ${s}: ${esc(d.anchors[s])}${a.evidence_limited?` <span class="gid" style="color:#7A4E0E;border-color:#7A4E0E" title="Held at the nearest supportable anchor: the cited sources are imported or unaudited only">evidence-limited</span>`:""}</div>
       <div class="ev ${sigs.length?"":"for"}"><ul>${sigs.map(x=>`<li class="${x.direction}" style="--c:${x.direction==="for"?"var(--teal)":"var(--ox)"}"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${x.direction==="for"?"var(--teal)":"var(--ox)"};position:absolute;left:0;top:8px"></span>${esc(x.claim)}<span class="gid">${esc(x.graph_id)}</span>${srcLine(x)}</li>`).join("")}</ul></div>
     </div>`;
   }).join("");

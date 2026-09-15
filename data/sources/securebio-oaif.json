@@ -1,11 +1,11 @@
 {
   "id": "securebio-oaif",
-  "title": "Thoughts on Taking OpenAI Foundation Funding",
-  "publisher": "EA Forum (Jeff Kaufman)",
-  "url": "https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding",
-  "published": "2026-08",
-  "retrieved": "2026-09-14",
-  "note": "OpenAI Foundation grant to Detection division; OpenAI PBC paid for GPT-5.5 eval; firewall and resignation commitment; OAIF board overlap. Cited from a search snippet; not re-fetched in full.",
+  "title": "Building a three-day early-warning system for novel pathogens",
+  "publisher": "SecureBio",
+  "url": "https://securebio.org/blog/three-day-early-warning-system/",
+  "published": "2026-08-20",
+  "retrieved": "2026-09-15",
+  "note": "The OpenAI Foundation has granted SecureBio Detection $17.2M; grant restricted to Detection; AI evaluation team separate; policy to evaluate models solely on their merits.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed"
 }

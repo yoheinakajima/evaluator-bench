@@ -73,6 +73,9 @@
      "by_measure": {
       "in_kind": 400000.0
      },
+     "classes": [
+      "in_kind"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -86,6 +89,9 @@
       "grant": 220000.0,
       "recommendation": 752000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 3,
@@ -97,20 +103,27 @@
     },
     "unattributed": {
      "by_measure": {
-      "commitment": 17000000.0
+      "commitment": 17000000.0,
+      "daf_grant": 184000.0,
+      "transfer": 4553935.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 1,
+     "rows": 3,
      "sources": [
-      "audacious"
+      "arc",
+      "audacious",
+      "founders-pledge"
      ],
      "undisclosed": 0
     }
    },
    "confirmed_rows": 5,
    "id": "metr",
-   "inflow_rows": 5,
+   "inflow_rows": 7,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -196,16 +209,16 @@
     }
    ],
    "quarantined_ids": [
-    "T13",
     "T14",
-    "T15",
     "T16"
    ],
-   "quarantined_rows": 4,
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 4,
-    "traced": 4,
-    "untraced": []
+    "sources": 6,
+    "traced": 5,
+    "untraced": [
+     "Founders Pledge"
+    ]
    },
    "status": "ranked"
   },
@@ -215,6 +228,9 @@
      "by_measure": {
       "recommendation": 1022000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -227,6 +243,9 @@
      "by_measure": {
       "commitment": 38000000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -260,6 +279,9 @@
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -272,6 +294,9 @@
      "by_measure": {
       "recommendation": 919000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "grant 28675000 USD",
@@ -286,6 +311,9 @@
     },
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "contract 1434080 EUR"
@@ -300,6 +328,9 @@
      "by_measure": {
       "grant": 500000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -337,6 +368,9 @@
      "by_measure": {
       "daf_grant": 1330000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -347,6 +381,9 @@
     },
     "hop2": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "grant 36566000 USD",
@@ -382,6 +419,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -394,6 +434,9 @@
      "by_measure": {
       "investment": 80000000.0
      },
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -440,6 +483,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -452,6 +498,9 @@
      "by_measure": {
       "investment": 40000000.0
      },
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -485,6 +534,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -497,6 +549,9 @@
      "by_measure": {
       "grant": 17200000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -509,6 +564,9 @@
      "by_measure": {
       "recommendation": 754000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -538,6 +596,9 @@
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -548,6 +609,9 @@
     },
     "unattributed": {
      "by_measure": {},
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -590,6 +654,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 4,
@@ -605,6 +672,9 @@
      "by_measure": {
       "daf_grant": 600000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -615,14 +685,18 @@
     },
     "hop2": {
      "by_measure": {
+      "grant": 24513611.0,
       "recommendation": 195000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "grant 8500000 USD",
       "detail of T06, not additive"
      ],
-     "rows": 2,
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
@@ -630,17 +704,15 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 3,
+   "confirmed_rows": 4,
    "id": "epoch",
-   "inflow_rows": 7,
+   "inflow_rows": 8,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Epoch AI",
    "negatives": [],
-   "quarantined_ids": [
-    "T07"
-   ],
-   "quarantined_rows": 1,
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 7,
     "traced": 7,
@@ -655,6 +727,9 @@
       "grant": 2123463.0,
       "recommendation": 1133000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -688,6 +763,9 @@
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -699,6 +777,9 @@
     },
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -749,6 +830,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "partnership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -782,6 +866,9 @@
      "by_measure": {
       "grant": 7500000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -792,6 +879,9 @@
     },
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -830,6 +920,9 @@
      "by_measure": {
       "grant": 25000000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -872,6 +965,9 @@
    "buckets": {
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "contract 7373017 EUR"
@@ -910,6 +1006,9 @@
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -920,6 +1019,9 @@
     },
     "hop2": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -931,6 +1033,9 @@
     },
     "unattributed": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -975,6 +1080,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -987,6 +1095,9 @@
      "by_measure": {
       "recommendation": 311000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -997,6 +1108,9 @@
     },
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "contract 1434080 EUR"
@@ -1039,6 +1153,9 @@
      "by_measure": {
       "investment": 14300000000.0
      },
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -1083,6 +1200,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "partnership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -1121,6 +1241,9 @@
      "by_measure": {
       "investment": 12930000000.0
      },
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -1183,6 +1306,9 @@
      "by_measure": {
       "recommendation": 1389000.0
      },
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
@@ -1212,6 +1338,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "ownership"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -1320,6 +1449,9 @@
    "buckets": {
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [
       "contract 1167484 EUR"
@@ -1358,6 +1490,9 @@
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
@@ -1368,6 +1503,9 @@
     },
     "public": {
      "by_measure": {},
+     "classes": [
+      "cash"
+     ],
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,

@@ -15,14 +15,15 @@
   {
     "evaluator": "equistamp",
     "dimension": "G",
-    "value": 1,
-    "anchor": 1,
+    "value": 2,
+    "anchor": 2,
     "signals": [
       "equistamp.03"
     ],
-    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final",
+    "evidence_limited": true
   },
   {
     "evaluator": "equistamp",
@@ -87,13 +88,14 @@
   {
     "evaluator": "equistamp",
     "dimension": "X",
-    "value": 3,
-    "anchor": 3,
+    "value": 2,
+    "anchor": 2,
     "signals": [
       "equistamp.09"
     ],
-    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final",
+    "evidence_limited": true
   }
 ]

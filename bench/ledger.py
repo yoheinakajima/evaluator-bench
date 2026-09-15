@@ -54,6 +54,7 @@ def validate(L: dict) -> list[str]:
         if not t["source_url"].startswith("http"): errs.append(f"L1 transfer {t['row_id']}: source_url")
         if t["source_type"] not in SOURCE_TYPES: errs.append(f"L1 transfer {t['row_id']}: source_type")
         if t["audit_status"] not in AUDIT: errs.append(f"L1 transfer {t['row_id']}: audit_status")
+        if t.get("class") and t["class"] not in ("cash", "in_kind", "ownership", "partnership"): errs.append(f"L1 transfer {t['row_id']}: class")
         if t["amount_usd"] and not t["amount_usd"].replace(".", "").isdigit(): errs.append(f"L1 transfer {t['row_id']}: amount_usd must be numeric or empty")
         if t.get("currency", "") not in ("", "USD", "EUR"): errs.append(f"L1 transfer {t['row_id']}: bad currency {t.get('currency')}")
         if t.get("round_total", "") not in ("", "yes"): errs.append(f"L1 transfer {t['row_id']}: bad round_total {t.get('round_total')}")
@@ -104,6 +105,19 @@ def distances(L: dict) -> dict[str, float]:
             if best < d.get(e, 9e9): d[e] = best; changed = True
     return d
 
+def hop0_split(evs: list[dict]) -> dict:
+    """Count evaluators with a direct lab tie by the kind of tie, so a company sale or a $0 membership is never reported as lab funding."""
+    out = {"funding": 0, "ownership": 0, "partnership": 0, "any": 0}
+    for x in evs:
+        b = x["buckets"].get("hop0")
+        if not b: continue
+        cls = set(b.get("classes", []))
+        out["any"] += 1
+        if cls & {"cash", "in_kind"}: out["funding"] += 1
+        if "ownership" in cls: out["ownership"] += 1
+        if "partnership" in cls and not (cls & {"cash", "in_kind", "ownership"}): out["partnership"] += 1
+    return out
+
 def exposure(L: dict | None = None) -> list[dict]:
     L = L or load_ledger(); E = L["entities"]; d = distances(L)
     out = []
@@ -115,8 +129,8 @@ def exposure(L: dict | None = None) -> list[dict]:
         buckets: dict[str, dict] = {}
         for t in rows:
             hop = d.get(t["from"]); key = "public" if E[t["from"]]["kind"] == "public" else ("unattributed" if hop is None else f"hop{int(hop)}")
-            b = buckets.setdefault(key, {"rows": 0, "by_measure": defaultdict(float), "undisclosed": 0, "imported_unsummed": 0, "non_usd": [], "sources": []})
-            b["rows"] += 1; b["sources"].append(t["from"])
+            b = buckets.setdefault(key, {"rows": 0, "by_measure": defaultdict(float), "undisclosed": 0, "imported_unsummed": 0, "non_usd": [], "sources": [], "classes": []})
+            b["rows"] += 1; b["sources"].append(t["from"]); b["classes"].append(t.get("class") or ("ownership" if t["measure"] == "investment" else ("in_kind" if t["measure"] == "in_kind" else "cash")))
             if not t["amount_usd"]: b["undisclosed"] += 1
             elif summable(t): b["by_measure"][t["measure"]] += float(t["amount_usd"])
             elif t.get("audit_status") == "imported": b["imported_unsummed"] += 1
@@ -134,7 +148,7 @@ def exposure(L: dict | None = None) -> list[dict]:
         out.append(dict(id=eid, name=e["name"], status=e.get("status", "ranked"), kind_note=e.get("notes",""), inflow_rows=len(rows),
                         quarantined_rows=len(quarantined),
                         quarantined_ids=sorted(t["row_id"] for t in quarantined),
-                        buckets={k: {"rows": v["rows"], "undisclosed": v["undisclosed"], "imported_unsummed": v["imported_unsummed"], "non_usd": v["non_usd"], "by_measure": dict(v["by_measure"]), "sources": sorted(set(v["sources"]))} for k, v in sorted(buckets.items())},
+                        buckets={k: {"rows": v["rows"], "undisclosed": v["undisclosed"], "imported_unsummed": v["imported_unsummed"], "non_usd": v["non_usd"], "by_measure": dict(v["by_measure"]), "sources": sorted(set(v["sources"])), "classes": sorted(set(v["classes"]))} for k, v in sorted(buckets.items())},
                         lab_tied_seats=[dict(person=r["subject"], role=r["role"] + (" (former)" if r.get("end") else ""), via=E[r["subject"]]["name"], distance=int(d[r["subject"]]), status=r["audit_status"]) for r in ties],
                         negatives=[dict(claim=n["claim"], searched=n["searched"], snapshot=n["snapshot"], status=n["audit_status"]) for n in negs],
                         confirmed_rows=sum(1 for t in rows if t["audit_status"] == "confirmed"),
@@ -162,9 +176,11 @@ def main(argv=None) -> int:
     evs = [x for x in ex]
     coef = sum(1 for x in evs if any("coefficient" in b["sources"] for b in x["buckets"].values()))
     near = sum(1 for x in evs if any(k in ("hop0", "hop1") for k in x["buckets"]))
+    split = hop0_split(evs)
     rows = sum(x["inflow_rows"] for x in evs); conf = sum(x["confirmed_rows"] for x in evs)
     quar = sum(x["quarantined_rows"] for x in evs)
     print(f"\nPopulation: {len(evs)} evaluators; {coef} with Coefficient Giving inflows; {near} with an inflow from a lab or a lab-tied party; {conf}/{rows} inflow rows confirmed; {quar} rows quarantined (differs/unverifiable/superseded, excluded from sums).")
+    print(f"Direct lab ties (hop 0), by kind: {split['funding']} with lab cash or in-kind for evaluation work; {split['ownership']} where a lab owns a stake or is acquiring the evaluator; {split['partnership']} with a no-fee partnership or membership only. Any: {split['any']}.")
     print("Dollar sums: confirmed + unaudited USD rows only. Imported figures are not re-derived and are never summed; components are detail, not additive.")
     if "--json" in (argv or []):
         (DATA.parent / "dist").mkdir(exist_ok=True)

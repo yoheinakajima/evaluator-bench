@@ -1,11 +1,11 @@
 {
   "id": "ms-redteam",
-  "title": "Microsoft AI Red Team",
+  "title": "Microsoft AI Red Team (Microsoft Learn)",
   "publisher": "Microsoft",
-  "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
+  "url": "https://learn.microsoft.com/en-us/security/ai-red-team/",
   "published": "2026",
-  "retrieved": "2026-09-14",
-  "note": "PyRIT methodology; red-teaming practice. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Topic URL 404s; needs a current Microsoft Security blog post slug. Sole cite for msft.02-msft.08 \u2014 those signals rest on a dead cite until re-pointed.",
+  "retrieved": "2026-09-15",
+  "note": "Replaces a dead security-blog topic URL. Internal lab team since 2018; independent of the product organization inside Microsoft, not of the developer. Related: 3 takeaways from red teaming 100 generative AI products (Jan 2025 blog).",
   "source_type": "self",
-  "audit_status": "unverifiable"
+  "audit_status": "unaudited"
 }

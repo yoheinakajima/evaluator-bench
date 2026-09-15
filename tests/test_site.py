@@ -32,10 +32,27 @@ def test_build_is_deterministic_for_dist():
     build(write=True); a = digest(); build(write=True); b = digest()
     assert a == b
 
-def test_status_page_shows_hop0_next_to_hop01():
+def test_status_page_shows_hop0_by_kind():
     html = (DIST / "status" / "index.html").read_text()
-    assert 'direct inflow from a lab (hop 0)</td><td class="num">12 of 26' in html
+    assert 'direct lab tie (hop 0), any kind</td><td class="num">12 of 26' in html
+    assert 'lab cash or in-kind for evaluation work</td><td class="num">8' in html
+    assert 'owns a stake or is acquiring the evaluator</td><td class="num">2' in html
+    assert 'no-fee partnership or membership only</td><td class="num">2' in html
     assert 'hop 0 or 1)</td><td class="num">17 of 26' in html
+
+def test_evidence_limited_is_enforced_and_marked():
+    import json
+    from bench.load import load
+    d = load(strict=False)
+    st = lambda sid: d["sources"].get(sid, {}).get("audit_status", "unaudited")
+    for a in d["assessments"]:
+        sigs = [d["signals"][i] for i in a["signals"] if i in d["signals"] and not d["signals"][i].get("superseded_by")]
+        conf = any(s["sources"] and all(st(x) == "confirmed" for x in s["sources"]) for s in sigs)
+        live = any(any(st(x) in ("confirmed", "unaudited") for x in s["sources"]) for s in sigs)
+        if a["value"] in (0, 4): assert conf, (a["evaluator"], a["dimension"])
+        if a["value"] in (1, 3): assert live, (a["evaluator"], a["dimension"])
+    marked = [a for a in d["assessments"] if a.get("evidence_limited")]
+    assert len(marked) >= 7 and all(a["value"] in (1, 2, 3) for a in marked)
 
 def test_docket_status_is_recorded_not_computed():
     from bench.docket import recorded_status

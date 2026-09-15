@@ -161,5 +161,33 @@
     "recorded": "2026-09-15",
     "curator": "yohei/claude v1.0",
     "as_of": "2026"
+  },
+  {
+    "id": "epoch.14",
+    "evaluator": "epoch",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Epoch states it invests part of its funds in semiconductor and AI stocks as part of a diversified portfolio.",
+    "sources": [
+      "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2026",
+    "quote": "We invest part of our funds in semiconductor and AI stocks as part of a diversified portfolio"
+  },
+  {
+    "id": "epoch.15",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Epoch says it charges lab and industry clients at least industry-consultant rates so it is not subsidising their work, and commits to disclosing sponsorship and data-access agreements; its eight Coefficient grants sum to $25.1M by its own list.",
+    "sources": [
+      "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2026",
+    "quote": "We aim to charge prices at least on par with industry consultants"
   }
 ]

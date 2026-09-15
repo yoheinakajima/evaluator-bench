@@ -1,0 +1,11 @@
+{
+  "id": "csa-caisi-five-labs",
+  "title": "CAISI Frontier Testing Agreements Reach Five Labs",
+  "publisher": "Cloud Security Alliance (research note)",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/",
+  "published": "2026-05-05",
+  "retrieved": "2026-09-15",
+  "note": "Google DeepMind, Microsoft and xAI signed early-access agreements on 5 May 2026; OpenAI and Anthropic since September 2025; more than 40 evaluations completed; access includes versions with guardrails stripped back; DeepSeek V4 Pro evaluated without developer cooperation.",
+  "source_type": "press",
+  "audit_status": "confirmed"
+}
