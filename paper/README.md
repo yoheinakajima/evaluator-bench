@@ -32,7 +32,7 @@ The gap is empirical and it is two-sided. Nobody has coded the frontier evaluato
 Claims the paper should make:
 
 1. An open, evidence-linked scorecard of frontier AI evaluators on eight independence dimensions, rebuilt from an append-only log so every number traces to a source and a date. (Dataset A: this repo, 26 ranked evaluators plus a 2-entry watchlist, 289 signals citing 114 public sources as of v0.4.)
-2. A coded lifecycle dataset of assurance regimes across eleven non-AI industries: first voluntary assurance, trigger incidents, mandates, independence rules, accreditation, payer reforms, publication rules. (Dataset B: `data/industries/`, seed of 12 regimes.)
+2. A coded lifecycle dataset of sixteen assurance regimes (fifteen non-AI industries plus frontier AI): first voluntary assurance, trigger incidents, mandates, independence rules, accreditation, payer reforms, publication rules. (Dataset B: `data/industries/`.)
 3. Three findings the seed already suggests and the full dataset should test:
    - Rules follow triggers fast; drift before the first trigger is slow. In the seed, the median lag from a trigger incident to the next rule is about two years, while the interval from first voluntary assurance to the first independence rule runs from two decades to two centuries.
    - Who pays is almost never changed. Regimes made payer-conflicted assurance tolerable with standards, inspection of assurers, rotation, liability, and public ratings. The exceptions that removed the conflict routed payment through insurers (boilers) or funded assessors from a party with opposite incentives (auto crash ratings).

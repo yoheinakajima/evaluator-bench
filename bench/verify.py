@@ -133,7 +133,7 @@ def main(argv=None) -> int:
     nq = sum(1 for s in d["signals"].values() if s.get("quote")); print(f"verify: quotes on {nq}/{len(d['signals'])} signals (a quote is an exact span from the source; fill them as sources are re-derived)")
     for s in d["sources"].values():
         if s.get("source_type") == "docket":
-            # Fail closed: a docket-type source may never be 'confirmed' without an
+            # C13 fail closed: a docket-type source may never be 'confirmed' without an
             # independent, signed certificate from review at epistemedia.org by
             # someone other than the drafter (see paper/CERTIFICATION.md).
             cert = s.get("certificate")
@@ -144,6 +144,10 @@ def main(argv=None) -> int:
                 slug = s["id"].replace("docket-", "")
                 cerrs = cverify(slug)
                 if cerrs: errs.append(f"docket source {s['id']}: CERTIFICATE PROBLEM: " + "; ".join(cerrs))
+    if errs:
+        print(f"verify: {len(errs)} problem(s)")
+        for e in errs: print("  -", e)
+        return 1
     print(f"verify: ok ({len(d['sources'])} sources, {len(d['signals'])} signals, {len(d['assessments'])} assessments, {len(d['evaluators'])} evaluators)")
     return 0
 

@@ -126,3 +126,43 @@ def test_watchlist_excluded_from_rankings():
     watch = list(watch.values())
     for e in watch:
         assert e["role"] == "expected-entrant"
+
+
+def test_verify_fails_closed_on_uncertified_docket(monkeypatch, capsys):
+    """A docket-type source claiming 'confirmed' with no independent certificate
+    must make verify.main() return 1, not print 'verify: ok' (C13)."""
+    d = load.load(strict=False)
+    d["sources"] = dict(d["sources"])
+    d["sources"]["docket-bad"] = {
+        "id": "docket-bad", "title": "bad docket", "url": "https://example.com/x",
+        "retrieved": "2026-09-15", "source_type": "docket", "audit_status": "confirmed",
+    }
+    monkeypatch.setattr(verify, "load", lambda strict=False: d)
+    assert verify.main() == 1
+    out = capsys.readouterr().out
+    assert "verify: ok" not in out
+    assert "docket-bad" in out
+
+
+def test_superseded_rows_labeled():
+    """Rows with a superseding row carry audit_status 'superseded', not a
+    live status (T10 -> T75, T81 -> T21)."""
+    L = load_ledger()
+    rows = {t["row_id"]: t for t in L["transfers"]}
+    for rid, live in (("T10", "T75"), ("T81", "T21")):
+        assert rows[rid]["audit_status"] == "superseded", rid
+        assert rows[rid]["superseded_by"] == live, rid
+        assert not evidential(rows[rid])
+
+
+def test_watchlist_excluded_from_status_denominator():
+    """The 'lab-tied' headline stat covers the ranked population only (17/26),
+    not 17/28."""
+    from bench.ledger import exposure
+    from bench.verify import LEDGER_ALIAS
+    d = load.load(strict=False)
+    ranked = {LEDGER_ALIAS.get(e["id"], e["id"]) for e in d["evaluators"].values() if e.get("status", "ranked") == "ranked"}
+    assert len(ranked) == 26
+    ex = exposure()
+    near = sum(1 for x in ex if x["id"] in ranked and any(k in ("hop0", "hop1") for k in x["buckets"]))
+    assert near == 17

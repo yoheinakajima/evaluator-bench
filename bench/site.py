@@ -44,6 +44,7 @@ def money(t: dict) -> str:
     if t.get("component_of"): flags.append(f"detail of {t['component_of']} — not additive")
     if t.get("round_total"): flags.append("round total, not one investor's check")
     if t.get("audit_status") in ("differs", "unverifiable"): flags.append("quarantined — excluded from sums")
+    if t.get("superseded_by"): flags.append(f"superseded by {t['superseded_by']} — excluded from sums")
     if t.get("audit_status") == "imported": flags.append("imported figure, not re-derived — never summed")
     if not t["amount_usd"]: base = "undisclosed"
     else:
@@ -302,7 +303,10 @@ def status_index(bench: dict, C: dict) -> str:
     ev = ROOT / "graph" / "events.jsonl"; commit = hashlib.sha256(ev.read_bytes()).hexdigest()[:12] if ev.exists() else "unknown"
     tr = L["transfers"]; conf = sum(1 for t in tr if t["audit_status"] == "confirmed"); imp = sum(1 for t in tr if t["audit_status"] == "imported")
     srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
-    ex = C["ex"].values(); near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
+    ex_all = C["ex"].values()
+    ev_by_ledger = {LEDGER_ALIAS.get(e["id"], e["id"]): e for e in bench["evaluators"]}
+    ex = [x for x in ex_all if ev_by_ledger.get(x["id"], {}).get("status", "ranked") == "ranked"]
+    near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
     quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
     body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])}; event-log digest {esc(commit)}.</p></div>
     <div class="cols">
@@ -312,7 +316,7 @@ def status_index(bench: dict, C: dict) -> str:
       <tr><td>Ledger transfers</td><td class="num">{len(tr)} ({conf} confirmed, {imp} imported)</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Bounded negatives</td><td class="num">{len(L['negatives'])}</td></tr>
       <tr><td>Entities</td><td class="num">{len(L['entities'])}</td></tr><tr><td>Regimes</td><td class="num">{len(C['regs'])}</td></tr></table></div>
     <div class="card"><h3>Exposure</h3><table class="tbl">
-      <tr><td>Evaluators with an inflow from a lab or a lab-tied party</td><td class="num">{near} of {len(list(C['ex']))}</td></tr>
+      <tr><td>Ranked evaluators with an inflow from a lab or a lab-tied party</td><td class="num">{near} of {len(ex)}</td></tr>
       <tr><td>Funding sources with a second hop traced</td><td class="num">{traced} of {srcn}</td></tr></table>
       <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. Scores are readings of the public record at the build date, not endorsements.</p></div></div>
     <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Replies from named organizations are filed as signals; after first publication, a score that moves by more than one anchor triggers a record packet to that organization (<code>bench outreach</code>).</p>

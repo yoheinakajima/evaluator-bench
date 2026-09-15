@@ -14,3 +14,8 @@ Invariants. `python -m bench verify` enforces them; CI blocks merges that break 
 10. Money and roles are rows in `data/ledger/` before they are claims in signals. Rows carry `source_type` and `audit_status`. Rows are never summed across measures. Undisclosed amounts are counted, not valued.
 11. A "none found" is a bounded negative in `data/ledger/negatives.csv` naming the corpus, snapshot date, and source. A 4 on funding requires a confirmed negative in a filing or index (C8).
 12. `imported` rows satisfy no gate. Promotion to `confirmed` requires a re-fetch by a named person on a date, recorded in an audit file.
+13. Every evaluator is an entity in the ledger; nobody is exempt from exposure (C9).
+14. A 4 on Funding, Governance, or Personnel requires tier-1 (filing or index) evidence on a cited signal (C10).
+15. Dates must be YYYY, YYYY-MM, or YYYY-MM-DD, and no record may be dated after the frozen evidence clock (C11).
+16. Every preset's weights cover exactly the eight dimensions and sum to 100 (C12).
+17. A `docket`-type source may never carry `audit_status: confirmed` without an independent, signed certificate from review at epistemedia.org by someone other than the drafter; `verify` fails closed (C13).

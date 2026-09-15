@@ -656,9 +656,9 @@ const STAGEMETA = /*__STAGES_JSON__*/null;
 // ---- population stats (the ledger itself is browsed on entity pages)
 (function(){
   // population stats
-  if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators.filter(x=>(x.status||"ranked")==="ranked"); const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
+  if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators.filter(x=>(x.status||"ranked")==="ranked"); const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const hop0 = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
     const traced = evs.reduce((a,x)=>a+x.second_hop.traced,0), srcs = evs.reduce((a,x)=>a+x.second_hop.sources,0);
-    $("#popstats").textContent = `${evs.length} evaluators. ${near} have at least one inflow from a lab or a lab-tied party. ${coef} have Coefficient Giving inflows. ${conf} of ${rows} inflow rows are confirmed from the cited source; the rest are imported leads. The ledger says something about who is behind ${traced} of ${srcs} funding sources (second hop).`; }
+    $("#popstats").textContent = `${evs.length} evaluators. ${near} have at least one inflow from a lab or a lab-tied party (${hop0} direct from a lab, hop 0). ${coef} have Coefficient Giving inflows. ${conf} of ${rows} inflow rows are confirmed from the cited source; the rest are imported leads. The ledger says something about who is behind ${traced} of ${srcs} funding sources (second hop).`; }
 })();
 </script>
 <script src="site.js"></script>
