@@ -66,8 +66,10 @@ def test_certificate_manual_issue_refused():
 def test_quarantined_rows_excluded_from_exposure():
     L = load_ledger()
     by_id = {t["row_id"]: t for t in L["transfers"]}
-    # T10 superseded, T81 superseded, T54/T02 unverifiable: none may be evidential
-    for rid in ("T10", "T81", "T54", "T02"):
+    # T10 superseded, T81 superseded, T02 unverifiable: none may be evidential.
+    # T54 was quarantined until the 2026-09-15 grok pass confirmed the $12.93bn
+    # figure on TNW/Fortune, so it is evidential now and no longer belongs here.
+    for rid in ("T10", "T81", "T02"):
         assert not evidential(by_id[rid]), rid
     ex = {x["id"]: x for x in exposure(L)}
     # every counted inflow row is evidential: no leakage from quarantined rows
@@ -156,9 +158,11 @@ def test_superseded_rows_labeled():
 
 
 def test_watchlist_excluded_from_status_denominator():
-    """The 'lab-tied' headline stat covers the ranked population only (14/26),
-    not 14/28. Figure fell from 17 on 2026-09-15 when the imported-row
-    verification pass quarantined 23 unsupported rows."""
+    """The 'lab-tied' headline stat covers the ranked population only (17/26),
+    not 17/28. Figure fell from 17 to 14 on 2026-09-15 when the imported-row
+    verification pass quarantined 23 unsupported rows, then rose back to 17
+    when the grok pass confirmed three more direct lab ties (T52 Meta->Scale,
+    T56 Anthropic->Andon, T63 Google->MLCommons) — now on confirmed evidence."""
     from bench.ledger import exposure
     from bench.verify import LEDGER_ALIAS
     d = load.load(strict=False)
@@ -166,4 +170,4 @@ def test_watchlist_excluded_from_status_denominator():
     assert len(ranked) == 26
     ex = exposure()
     near = sum(1 for x in ex if x["id"] in ranked and any(k in ("hop0", "hop1") for k in x["buckets"]))
-    assert near == 14
+    assert near == 17

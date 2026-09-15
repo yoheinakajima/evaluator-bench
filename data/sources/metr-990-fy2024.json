@@ -5,7 +5,7 @@
   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
   "published": "2025",
   "retrieved": "2026-09-14",
-  "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M. ProPublica summary re-fetched 2026-09-14: revenue $13,639,155, contributions $13,603,035.",
+  "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M. ProPublica summary re-fetched 2026-09-14: revenue $13,639,155, contributions $13,603,035. [verify 2026-09-15 grok-pass] Org card FY2024 revenue $13,639,155; no Schedule I in HTML \u2014 grant-by-grant needs the PDF.",
   "source_type": "filing",
   "audit_status": "confirmed",
   "imported_from": "kevinnbass/metr-money-figure:finances.csv N01-N22"

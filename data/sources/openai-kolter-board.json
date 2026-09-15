@@ -1,7 +1,7 @@
 {
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "id": "openai-kolter-board",
-  "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: grayswan.01 \u2014 needs curator review",
+  "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: grayswan.01 \u2014 needs curator review [verify 2026-09-15 grok-pass] 'Zico will also join the Safety & Security Committee' \u2014 JOIN, not chair. Do not cite for the chair claim.",
   "published": "2024-08",
   "publisher": "OpenAI",
   "retrieved": "2026-09-14",

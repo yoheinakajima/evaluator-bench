@@ -2,10 +2,10 @@
   "id": "far-30m",
   "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
   "publisher": "FAR.AI",
-  "url": "https://far.ai/news/30m-multi-funder-support",
+  "url": "https://www.far.ai/blog/30m-multi-funder-support",
   "published": "2026-07-16",
   "retrieved": "2026-09-14",
-  "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum). Cited from a search snippet; not re-fetched in full.",
+  "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Live at /blog/ (not /news/). 'over $30M in funding commitments throughout 2025' from Coefficient, Schmidt, SFF, CSET, AISF \u2014 2025 commitments, not a cumulative.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed"
 }

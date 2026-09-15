@@ -5,7 +5,7 @@
   "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
   "published": "2026",
   "retrieved": "2026-09-14",
-  "note": "PyRIT methodology; red-teaming practice. Cited from a search snippet; not re-fetched in full.",
+  "note": "PyRIT methodology; red-teaming practice. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Topic URL 404s; needs a current Microsoft Security blog post slug. Sole cite for msft.02-msft.08 \u2014 those signals rest on a dead cite until re-pointed.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "audit_status": "unverifiable"
 }

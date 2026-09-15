@@ -34,5 +34,5 @@ def test_build_is_deterministic_for_dist():
 
 def test_status_page_shows_hop0_next_to_hop01():
     html = (DIST / "status" / "index.html").read_text()
-    assert 'direct inflow from a lab (hop 0)</td><td class="num">9 of 26' in html
-    assert 'hop 0 or 1)</td><td class="num">14 of 26' in html
+    assert 'direct inflow from a lab (hop 0)</td><td class="num">12 of 26' in html
+    assert 'hop 0 or 1)</td><td class="num">17 of 26' in html

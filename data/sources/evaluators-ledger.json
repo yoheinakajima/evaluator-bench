@@ -5,8 +5,8 @@
   "url": "https://github.com/kevinnbass/metr-money-figure/blob/main/research/evaluators.csv",
   "published": "2026-09-14",
   "retrieved": "2026-09-14",
-  "note": "Parallel scorecard with index totals per evaluator; imported as leads.",
+  "note": "Parallel scorecard with index totals per evaluator; imported as leads. [verify 2026-09-15 grok-pass] Cited blob path 404s (file moved in kevinnbass/metr-money-figure). Import origin, not a confirm; do not cite this path for new claims.",
   "source_type": "ledger",
-  "audit_status": "imported",
+  "audit_status": "unverifiable",
   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
 }

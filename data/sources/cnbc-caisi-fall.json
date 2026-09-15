@@ -5,8 +5,8 @@
   "url": "https://www.cnbc.com/2026/07/20/trumps-head-of-ai-safety-agency-caisi-resigns-after-months-on-job.html",
   "published": "2026-07-20",
   "retrieved": "2026-09-15",
-  "note": "Chris Fall resigned three months after appointment; NIST director acting.",
+  "note": "Chris Fall resigned three months after appointment; NIST director acting. [verify 2026-09-15 grok-pass] Chris Fall resigned as CAISI head after ~3 months; Raman acting.",
   "source_type": "press",
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15"
 }

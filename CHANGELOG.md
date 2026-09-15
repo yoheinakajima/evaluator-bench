@@ -9,8 +9,8 @@ Correction window open through 29 Sep 2026.
 - 26 ranked evaluators + a 2-entry watchlist (`big4`, `hfoai` — expected
   entrants, scored on the same rubric but excluded from rankings and
   homepage statistics).
-- 123 sources, 308 signals, 224 assessments; 39 signals carry exact quotes.
-- 84 ledger transfer rows, of which 51 are evidential; 38 confirmed.
+- 120 sources, 308 signals, 224 assessments; 39 signals carry exact quotes.
+- 84 ledger transfer rows, of which 60 are evidential; 48 confirmed.
 - Eight independence dimensions: Funding, Governance, Personnel, Access depth
   (lab-granted), Scope control, Publication rights, Method transparency,
   Role incompatibility.
@@ -57,9 +57,18 @@ Correction window open through 29 Sep 2026.
 - 2026-09-15 verification pass: all 38 imported ledger rows re-derived from
   their cited sources — 12 confirmed, 5 differ from the cited figure, 23
   quarantined as unverifiable (cited pages do not support the recorded
-  figures). Exposure figures recomputed on confirmed-only rows: 9 of 26
-  direct lab inflow (was 12), 14 of 26 lab-or-lab-tied (was 17). 79 of 123
-  sources confirmed reachable; 41 sources still unchecked (fetch failures).
+  figures). 79 of 123 sources confirmed reachable; 41 sources still unchecked
+  (fetch failures).
+- 2026-09-15 grok follow-up pass: re-fetched the quarantined rows against
+  better sources. 10 more rows confirmed (T22, T36, T41, T46, T48, T52, T54,
+  T56, T60, T63), T07 moved to differs (Epoch's own list contradicts $24.5M).
+  Exposure recomputed: 12 of 26 direct lab ties (was 9), 17 of 26 lab-or-
+  lab-tied (was 14) — the three new hop-0 ties are Meta's $14.3B Scale
+  acquisition (company sale, not eval funding), Anthropic's no-fee Andon
+  partnership, and Google's MLCommons founding participation (no amount).
+  ~25 previously unfetched sources confirmed; 5 dead cites documented
+  (saferai-jobs, resultsense-aisi, ms-redteam topic URL, evaluators-ledger
+  path, metr-donor-rule-history wildcard).
 - Dataset A is single-coded; Dataset B milestone years are coded from
   secondary sources and need primary-source verification.
 - The trigger-lag and path-similarity results are hindsight-selected and

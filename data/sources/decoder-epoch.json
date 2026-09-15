@@ -1,7 +1,7 @@
 {
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "id": "decoder-epoch",
-  "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: epoch.01 \u2014 needs curator review",
+  "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: epoch.01 \u2014 needs curator review [verify 2026-09-15 grok-pass] Full slug .../openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/. Confirms OpenAI funded FrontierMath (paper thanks OpenAI); no amount.",
   "published": "2025-01-19",
   "publisher": "The Decoder",
   "retrieved": "2026-09-14",

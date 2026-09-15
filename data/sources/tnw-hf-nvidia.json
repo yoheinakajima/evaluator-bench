@@ -5,7 +5,7 @@
   "url": "https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators",
   "published": "2026-09-14",
   "retrieved": "2026-09-14",
-  "note": "Nvidia acquiring Hugging Face ($12.93B); Nvidia in talks to anchor Anthropic IPO (up to $10B); no terms announced. Cited from a search snippet; not re-fetched in full.",
+  "note": "Nvidia acquiring Hugging Face ($12.93B); Nvidia in talks to anchor Anthropic IPO (up to $10B); no terms announced. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] 'Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn'.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed"
 }

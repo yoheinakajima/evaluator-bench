@@ -1,8 +1,8 @@
 {
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15",
   "id": "rand-audacious-2024",
-  "note": "Commitment of approximately $38 million to RAND and METR for Canary. [verify 2026-09-15] reachable BUT span(s) not found: metr.20 \u2014 needs curator review",
+  "note": "Commitment of approximately $38 million to RAND and METR for Canary. [verify 2026-09-15] reachable BUT span(s) not found: metr.20 \u2014 needs curator review [verify 2026-09-15 grok-pass] 'approximately $38 million to RAND and METR for Canary'. METR-only $17M is NOT on this page (that is METR's own post).",
   "published": "2024-10-09",
   "publisher": "RAND",
   "retrieved": "2026-09-15",

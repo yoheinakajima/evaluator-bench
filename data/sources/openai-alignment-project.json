@@ -1,8 +1,8 @@
 {
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15",
   "id": "openai-alignment-project",
-  "note": "OpenAI states its funding does not create a new program or selection process nor influence the existing process. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 \u2014 needs curator review",
+  "note": "OpenAI states its funding does not create a new program or selection process nor influence the existing process. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 \u2014 needs curator review [verify 2026-09-15 grok-pass] OpenAI $7.5M (~GBP 5.6M) into the Alignment Project fund.",
   "published": "2026",
   "publisher": "OpenAI",
   "retrieved": "2026-09-15",

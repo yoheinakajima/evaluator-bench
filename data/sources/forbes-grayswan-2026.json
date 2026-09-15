@@ -5,7 +5,7 @@
   "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
   "published": "2026-05-28",
   "retrieved": "2026-09-14",
-  "note": "$200M valuation; clients OpenAI, Anthropic, Google DeepMind, Meta, xAI, ByteDance. Cited from a search snippet; not re-fetched in full.",
+  "note": "$200M valuation; clients OpenAI, Anthropic, Google DeepMind, Meta, xAI, ByteDance. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Series A $40M, $200M valuation; 15k arena users; labs + Snowflake.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed"
 }

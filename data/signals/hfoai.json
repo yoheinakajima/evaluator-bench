@@ -117,10 +117,10 @@
     "evaluator": "hfoai",
     "dimension": "F",
     "direction": "against",
-    "claim": "Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026 while reported in talks to invest up to $10 billion in Anthropic's IPO.",
+    "claim": "Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026.",
     "sources": [
       "fortune-hf-nvidia",
-      "bloomberg-nvidia-anthropic"
+      "tnw-hf-nvidia"
     ],
     "recorded": "2026-09-15",
     "curator": "yohei/claude v1.0",

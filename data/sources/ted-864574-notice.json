@@ -5,8 +5,8 @@
   "url": "https://ted.europa.eu/en/notice/-/detail/864574-2025",
   "published": "2025-12-26",
   "retrieved": "2026-09-15",
-  "note": "Contract notice; lot detail not extracted.",
+  "note": "Contract notice; lot detail not extracted. [verify 2026-09-15 grok-pass] Award values: all contracts 7,373,017.50 EUR; LOT-0003 EquiStamp 1,167,484.00 EUR (consortium w/ METR, Epoch), contract 4500137790, concluded 15/12/2025; LOT-0001 1,434,080.00 EUR (FAR AI lead; SaferAI named winner).",
   "source_type": "filing",
-  "audit_status": "unaudited",
+  "audit_status": "confirmed",
   "found_by": "deep research pass 2026-09-15"
 }

@@ -5,7 +5,7 @@
   "url": "https://www.washingtonexaminer.com/policy/technology/4724950/anthropic-ceo-pitch-ai-slow-down-plan/",
   "published": "2026-09-12",
   "retrieved": "2026-09-14",
-  "note": "Former Anthropic researcher Joe Benton joins METR. Cited from a search snippet; not re-fetched in full.",
+  "note": "Former Anthropic researcher Joe Benton joins METR. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Amodei pacing + embedded evaluators; Altman 'we will do the same'; Benton -> METR; Sanders-Casar.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "audit_status": "confirmed"
 }
