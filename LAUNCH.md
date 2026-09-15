@@ -5,7 +5,7 @@ State at v0.9: the repository builds, verifies, and tests clean; the site has 20
 ## Before the repository is public
 
 1. **Push and enable Pages.** `git remote add origin git@github.com:yoheinakajima/evaluator-bench.git && git push -u origin main --tags`. In repository settings, set Pages to deploy from GitHub Actions; `.github/workflows/pages.yml` publishes `dist/`. Every link on the site already assumes this repository path.
-2. **Fill `DISCLOSURE.md`.** Four bracketed fields. The Method section and the Status page link to it; an empty disclosure on a site about independence is the first thing a reader will notice.
+2. **Keep `DISCLOSURE.md` current.** Filled by the curator 2026-09-15. The Method section and the Status page link to it; the shared-funders field is a best-effort "none known" and must be updated if that changes.
 3. **Add the `ANTHROPIC_API_KEY` secret** so the machine-review job can run the model check on pull requests. Without it the job still re-fetches sources and checks quotes.
 4. **Publish as a preview with a two-week window.** `python -m bench release --stage preview --until <date fourteen days after the push>` and rebuild; every page carries the banner. This is the first publication, presented as one batch of initial research. No notices go to individual organizations for it: the preview window, the contribute page, and the right-of-reply issue template are the channel for everyone. When the window closes: `python -m bench changelog --since <preview commit>` becomes the launch-round section, then `python -m bench release --stage published --tag v0`, rebuild, tag. From then on, a published score that moves by more than one anchor triggers `bench outreach <id>` and a fourteen-day wait before the next tag.
 
