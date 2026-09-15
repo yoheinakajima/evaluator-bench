@@ -22,7 +22,7 @@
 - 28 of 68 inflow rows confirmed; 40 remain imported. Every imported row names its origin row id.
 - Three evaluators (CAISI, EU AI Office, HAL) sit at funding 3 solely because no confirmed bounded negative exists; the gate is uniform, the readings are provisional, and each open question names the document that restores 4.
 - Dataset B years are spot-checked against secondary sources; no milestone has a primary source yet.
-- The six dockets pass Epistemedia's validator except the two networked steps. The one certificate is manual v0 and unsigned.
+- The six dockets pass Epistemedia's validator except the two networked steps. (A self-issued certificate existed at the time of this review; it was removed before v0, and the verifier now rejects any docket source claiming confirmation without independent review.)
 
 ## Tests
 
