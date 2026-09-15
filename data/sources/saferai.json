@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "saferai",
-  "title": "SaferAI",
-  "publisher": "SaferAI",
-  "url": "https://www.safer-ai.org/",
+  "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026",
+  "publisher": "SaferAI",
   "retrieved": "2026-09-14",
-  "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "SaferAI",
+  "url": "https://www.safer-ai.org/"
 }

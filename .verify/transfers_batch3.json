@@ -1,0 +1,92 @@
+[
+ {
+  "row_id": "T05",
+  "from": "coefficient",
+  "to": "longview",
+  "measure": "grant",
+  "amount": "26251590",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T13",
+  "from": "arc",
+  "to": "metr",
+  "measure": "transfer",
+  "amount": "4553935",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/organizations/863605182",
+  "note": ""
+ },
+ {
+  "row_id": "T17",
+  "from": "audacious",
+  "to": "metr",
+  "measure": "commitment",
+  "amount": "17000000",
+  "currency": "",
+  "source_url": "https://metr.org/blog/2024-10-09-new-support-through-the-audacious-project/",
+  "note": ""
+ },
+ {
+  "row_id": "T33",
+  "from": "sff",
+  "to": "apollo",
+  "measure": "recommendation",
+  "amount": "1133500",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/",
+  "note": ""
+ },
+ {
+  "row_id": "T38",
+  "from": "tallinn",
+  "to": "redwood",
+  "measure": "daf_grant",
+  "amount": "1330000",
+  "currency": "",
+  "source_url": "https://jaan.info/philanthropy/donations.csv",
+  "note": ""
+ },
+ {
+  "row_id": "T42",
+  "from": "eu-budget",
+  "to": "far-ai",
+  "measure": "contract",
+  "amount": "1434080",
+  "currency": "EUR",
+  "source_url": "https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium",
+  "note": ""
+ },
+ {
+  "row_id": "T47",
+  "from": "us-gov",
+  "to": "caisi",
+  "measure": "grant",
+  "amount": "10000000",
+  "currency": "",
+  "source_url": "https://ifp.org/funding-for-caisi/",
+  "note": ""
+ },
+ {
+  "row_id": "T56",
+  "from": "anthropic",
+  "to": "andon",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://tooldirectory.ai/tools/andon-labs",
+  "note": ""
+ },
+ {
+  "row_id": "T61",
+  "from": "amazon",
+  "to": "nemesys",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://arxiv.org/pdf/2507.06260",
+  "note": ""
+ }
+]

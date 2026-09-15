@@ -1,11 +1,11 @@
 {
+  "audit_status": "unaudited",
   "id": "decoder-epoch",
-  "title": "OpenAI quietly funded independent math benchmark",
-  "publisher": "The Decoder",
-  "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
+  "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: epoch.01 \u2014 needs curator review",
   "published": "2025-01-19",
+  "publisher": "The Decoder",
   "retrieved": "2026-09-14",
-  "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "OpenAI quietly funded independent math benchmark",
+  "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/"
 }

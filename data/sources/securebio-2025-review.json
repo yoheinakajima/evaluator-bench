@@ -1,12 +1,12 @@
 {
+  "audit_status": "confirmed",
+  "found_by": "deep research pass 2026-09-15",
   "id": "securebio-2025-review",
-  "title": "SecureBio AI: 2025 in Review",
-  "publisher": "SecureBio",
-  "url": "https://securebio.org/blog/securebio-ai-2025-in-review/",
+  "note": "Coefficient multi-year grant; AI Safety Fund grants; US CAISI Bio R&D contract; EU AI Office contract; cited by five labs. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
   "published": "2026-01",
+  "publisher": "SecureBio",
   "retrieved": "2026-09-15",
-  "note": "Coefficient multi-year grant; AI Safety Fund grants; US CAISI Bio R&D contract; EU AI Office contract; cited by five labs.",
   "source_type": "self",
-  "audit_status": "unaudited",
-  "found_by": "deep research pass 2026-09-15"
+  "title": "SecureBio AI: 2025 in Review",
+  "url": "https://securebio.org/blog/securebio-ai-2025-in-review/"
 }

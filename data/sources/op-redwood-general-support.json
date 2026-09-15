@@ -1,12 +1,12 @@
 {
+  "audit_status": "confirmed",
+  "found_by": "deep research pass 2026-09-15",
   "id": "op-redwood-general-support",
-  "title": "Redwood Research General Support",
-  "publisher": "Open Philanthropy / Coefficient Giving",
-  "url": "https://www.openphilanthropy.org/grants/redwood-research-general-support/",
+  "note": "$36,566,000 for work on AI control and alignment faking; earlier $10M (2021) and $10M (2022). [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
   "published": "2025-11",
+  "publisher": "Open Philanthropy / Coefficient Giving",
   "retrieved": "2026-09-15",
-  "note": "$36,566,000 for work on AI control and alignment faking; earlier $10M (2021) and $10M (2022).",
   "source_type": "index",
-  "audit_status": "unaudited",
-  "found_by": "deep research pass 2026-09-15"
+  "title": "Redwood Research General Support",
+  "url": "https://www.openphilanthropy.org/grants/redwood-research-general-support/"
 }

@@ -1,12 +1,12 @@
 {
+  "audit_status": "confirmed",
   "id": "epoch-transparency",
-  "title": "Transparency",
-  "publisher": "Epoch AI",
-  "url": "https://epoch.ai/about/transparency",
+  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV03",
+  "note": "Donations above $70K listed; Google DeepMind and OpenAI as paying consultation clients; Tallinn DAF $600K. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026",
+  "publisher": "Epoch AI",
   "retrieved": "2026-09-14",
-  "note": "Donations above $70K listed; Google DeepMind and OpenAI as paying consultation clients; Tallinn DAF $600K.",
   "source_type": "self",
-  "audit_status": "imported",
-  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV03"
+  "title": "Transparency",
+  "url": "https://epoch.ai/about/transparency"
 }

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "founderspledge-frontier",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "longtermwiki-far-cap",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "csa-caisi",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "op-longview",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "metr-donor-rule-history",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "averi-launch",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "arxiv-access-taxonomy",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "resultsense-aisi",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "transluce-job",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "op-far-general-support",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "slashdot-sb315",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "aisi-alignment-60",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "securebio-x-oaif",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "lw-sb315",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "far-30m",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "metr-regs",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "evaluators-ledger",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "madrona-grayswan",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "decoder-epoch",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "pebblous-scope",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "wapo-examiner-benton",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "averi-pilot",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "cnbc-caisi-fall",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "bloomberg-nvidia-anthropic",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "mlcommons",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "dealroom-grayswan",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "fortune-averi",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "securebio-oaif",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  },
+  {
+    "id": "saferai-jobs",
+    "verdict": "unattempted",
+    "note": "browser fetch service failed on first attempt (tool_failure, browser_open failed); further fetches disallowed this turn. No page text retrieved, no quote checks performed.",
+    "quote_checks": []
+  }
+]

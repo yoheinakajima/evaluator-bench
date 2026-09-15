@@ -1,0 +1,293 @@
+[
+ {
+  "id": "founderspledge-frontier",
+  "url": "https://www.founderspledge.com/research/frontier-ai-grantmaking",
+  "publisher": "Founders Pledge",
+  "title": "Frontier AI grantmaking",
+  "quotes": []
+ },
+ {
+  "id": "longtermwiki-far-cap",
+  "url": "https://www.longtermwiki.com/wiki/E138",
+  "publisher": "Longterm Wiki",
+  "title": "FAR AI",
+  "quotes": [
+   {
+    "signal": "farai.14",
+    "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
+   }
+  ]
+ },
+ {
+  "id": "csa-caisi",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/",
+  "publisher": "Cloud Security Alliance",
+  "title": "CAISI Frontier Testing Agreements Reach Five Labs",
+  "quotes": []
+ },
+ {
+  "id": "op-longview",
+  "url": "https://www.openphilanthropy.org/grants/longview-philanthropy-nuclear-security-grantmaking/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Longview Philanthropy grants",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "metr-donor-rule-history",
+  "url": "https://web.archive.org/web/2025*/metr.org/about",
+  "publisher": "Internet Archive",
+  "title": "METR donor rule wording over time (Wayback captures of metr.org/about and /donate)",
+  "quotes": []
+ },
+ {
+  "id": "averi-launch",
+  "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
+  "publisher": "Miles Brundage (Substack)",
+  "title": "The Launch of AVERI",
+  "quotes": []
+ },
+ {
+  "id": "arxiv-access-taxonomy",
+  "url": "https://arxiv.org/abs/2601.11916",
+  "publisher": "arXiv",
+  "title": "Expanding External Access to Frontier AI Models for Dangerous Capability Evaluations (arXiv 2601.11916)",
+  "quotes": []
+ },
+ {
+  "id": "resultsense-aisi",
+  "url": "https://www.resultsense.com/insights/2026-09-08-openai-mandated-safety-bars-uk-aisi-enforcement-gap/",
+  "publisher": "Resultsense",
+  "title": "OpenAI asked for enforceable safety bars. Britain built the auditor and withheld the powers",
+  "quotes": []
+ },
+ {
+  "id": "transluce-job",
+  "url": "https://theeconomicmisfit.com/2026/04/18/governance-policy-fellow-at-transluce/",
+  "publisher": "The Economic Misfit (job listing)",
+  "title": "Governance & Policy Fellow at Transluce",
+  "quotes": []
+ },
+ {
+  "id": "op-far-general-support",
+  "url": "https://www.openphilanthropy.org/grants/far-ai-general-support/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "FAR.AI General Support (2022)",
+  "quotes": [
+   {
+    "signal": "farai.12",
+    "quote": "a grant of $28,675,000 over three years to FAR.AI"
+   }
+  ]
+ },
+ {
+  "id": "slashdot-sb315",
+  "url": "https://yro.slashdot.org/story/26/05/28/186254/trump-loses-more-control-over-ai-regulation-as-illinois-passes-landmark-law",
+  "publisher": "Slashdot",
+  "title": "Illinois Passes Landmark AI Law",
+  "quotes": [
+   {
+    "signal": "big4.09",
+    "quote": "Governor J.B. Pritzker signed SB 315 into law on July 6, 2026"
+   }
+  ]
+ },
+ {
+  "id": "aisi-alignment-60",
+  "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+  "publisher": "UK AI Security Institute",
+  "title": "Funding 60 projects to advance AI alignment research",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "securebio-x-oaif",
+  "url": "https://x.com/SecureBio/status/2090455180445614509",
+  "publisher": "SecureBio",
+  "title": "SecureBio on X: OpenAI Foundation grant",
+  "quotes": [
+   {
+    "signal": "securebio.11",
+    "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M"
+   },
+   {
+    "signal": "securebio.11",
+    "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M"
+   }
+  ]
+ },
+ {
+  "id": "lw-sb315",
+  "url": "https://www.lw.com/en/insights/illinois-joins-growing-state-level-effort-to-regulate-frontier-ai-with-new-safety-measures-act",
+  "publisher": "Latham & Watkins",
+  "title": "Illinois Joins Growing State-Level Effort",
+  "quotes": []
+ },
+ {
+  "id": "far-30m",
+  "url": "https://far.ai/news/30m-multi-funder-support",
+  "publisher": "FAR.AI",
+  "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
+  "quotes": [
+   {
+    "signal": "farai.12",
+    "quote": "a grant of $28,675,000 over three years to FAR.AI"
+   }
+  ]
+ },
+ {
+  "id": "metr-regs",
+  "url": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/",
+  "publisher": "METR",
+  "title": "Frontier AI safety regulations: A reference for lab staff",
+  "quotes": []
+ },
+ {
+  "id": "evaluators-ledger",
+  "url": "https://github.com/kevinnbass/metr-money-figure/blob/main/research/evaluators.csv",
+  "publisher": "Kevin Bass (GitHub)",
+  "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+  "quotes": [
+   {
+    "signal": "palisade.11",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
+   },
+   {
+    "signal": "apollo.12",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+   }
+  ]
+ },
+ {
+  "id": "madrona-grayswan",
+  "url": "https://www.madrona.com/gray-swan-series-a/",
+  "publisher": "Madrona",
+  "title": "Why We Are Co-Leading Gray Swan's Series A",
+  "quotes": [
+   {
+    "signal": "grayswan.11",
+    "quote": "serves on the board of OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "decoder-epoch",
+  "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
+  "publisher": "The Decoder",
+  "title": "OpenAI quietly funded independent math benchmark",
+  "quotes": [
+   {
+    "signal": "epoch.01",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "pebblous-scope",
+  "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
+  "publisher": "Pebblous",
+  "title": "What METR's OpenAI Agent Investigation Left Out",
+  "quotes": []
+ },
+ {
+  "id": "wapo-examiner-benton",
+  "url": "https://www.washingtonexaminer.com/policy/technology/4724950/anthropic-ceo-pitch-ai-slow-down-plan/",
+  "publisher": "Washington Examiner",
+  "title": "Anthropic CEO pitches AI slow-down plan",
+  "quotes": []
+ },
+ {
+  "id": "averi-pilot",
+  "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
+  "publisher": "AVERI",
+  "title": "AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model",
+  "quotes": []
+ },
+ {
+  "id": "cnbc-caisi-fall",
+  "url": "https://www.cnbc.com/2026/07/20/trumps-head-of-ai-safety-agency-caisi-resigns-after-months-on-job.html",
+  "publisher": "CNBC",
+  "title": "Trump's head of AI safety agency CAISI resigns after months on job",
+  "quotes": [
+   {
+    "signal": "caisi.11",
+    "quote": "resigned from his role as director just three months after he was picked for the job"
+   }
+  ]
+ },
+ {
+  "id": "bloomberg-nvidia-anthropic",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-11/nvidia-in-talks-to-invest-up-to-10b-in-anthropic-ipo-reuters",
+  "publisher": "Bloomberg",
+  "title": "Nvidia Mulls $10 Billion Anthropic IPO Backing, Reuters Says",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "mlcommons",
+  "url": "https://mlcommons.org/",
+  "publisher": "MLCommons",
+  "title": "MLCommons AI Safety / AILuminate",
+  "quotes": []
+ },
+ {
+  "id": "dealroom-grayswan",
+  "url": "https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai",
+  "publisher": "Dealroom",
+  "title": "Gray Swan raises $40M Series A to secure frontier AI",
+  "quotes": [
+   {
+    "signal": "grayswan.11",
+    "quote": "serves on the board of OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "fortune-averi",
+  "url": "https://fortune.com/2026/01/15/former-openai-policy-chief-creates-nonprofit-institute-calls-for-independent-safety-audits-of-frontier-ai-models/",
+  "publisher": "Fortune",
+  "title": "Former OpenAI policy chief debuts new institute called AVERI",
+  "quotes": [
+   {
+    "signal": "averi.12",
+    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million"
+   }
+  ]
+ },
+ {
+  "id": "securebio-oaif",
+  "url": "https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding",
+  "publisher": "EA Forum (Jeff Kaufman)",
+  "title": "Thoughts on Taking OpenAI Foundation Funding",
+  "quotes": [
+   {
+    "signal": "securebio.01",
+    "quote": "OpenAI PBC covered SecureBio's costs for the GPT 5.5 evaluation"
+   }
+  ]
+ },
+ {
+  "id": "saferai-jobs",
+  "url": "https://www.safer-ai.org/jobs/frontier-ai-risk-management-research-engineer",
+  "publisher": "SaferAI",
+  "title": "Frontier AI Risk Management Research Engineer",
+  "quotes": [
+   {
+    "signal": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
+   }
+  ]
+ }
+]

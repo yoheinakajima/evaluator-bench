@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "techmeme-hf",
-  "title": "Hugging Face Open Alignment Initiative",
-  "publisher": "Techmeme",
-  "url": "https://www.techmeme.com/260912/p13",
+  "note": "Initiative led by Thomas Wolf; request to join embedded evaluators. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-09-12",
+  "publisher": "Techmeme",
   "retrieved": "2026-09-14",
-  "note": "Initiative led by Thomas Wolf; request to join embedded evaluators. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "Hugging Face Open Alignment Initiative",
+  "url": "https://www.techmeme.com/260912/p13"
 }

@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "metr-funding-2026",
-  "title": "Funding update",
-  "publisher": "METR",
-  "url": "https://metr.org/blog/2026-08-14-funding-update/",
+  "note": "Independence framing; growth in philanthropic commitments. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
   "published": "2026-08-14",
+  "publisher": "METR",
   "retrieved": "2026-09-14",
-  "note": "Independence framing; growth in philanthropic commitments. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "Funding update",
+  "url": "https://metr.org/blog/2026-08-14-funding-update/"
 }

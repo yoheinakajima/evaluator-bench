@@ -1,0 +1,266 @@
+[
+ {
+  "id": "op-palisade",
+  "url": "https://www.openphilanthropy.org/grants/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Palisade Research grants",
+  "quotes": [
+   {
+    "signal": "palisade.11",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
+   }
+  ]
+ },
+ {
+  "id": "longtermwiki-far",
+  "url": "https://www.longtermwiki.com/wiki/E138",
+  "publisher": "Longterm Wiki",
+  "title": "FAR AI",
+  "quotes": []
+ },
+ {
+  "id": "dwt-sb315",
+  "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
+  "publisher": "Davis Wright Tremaine",
+  "title": "Illinois Enacts Frontier AI Safety Law",
+  "quotes": []
+ },
+ {
+  "id": "techpolicy-aef1",
+  "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/",
+  "publisher": "TechPolicy.Press",
+  "title": "The EU's Real AI Leverage Is Making Compliance the Path of Least Resistance",
+  "quotes": []
+ },
+ {
+  "id": "rand-audacious-2024",
+  "url": "https://www.rand.org/news/press/2024/10/09.html",
+  "publisher": "RAND",
+  "title": "RAND AI Security Project Receives Funding Commitment Through The Audacious Project",
+  "quotes": [
+   {
+    "signal": "rand.10",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
+   },
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "ifp-caisi-funding",
+  "url": "https://ifp.org/funding-for-caisi/",
+  "publisher": "Institute for Progress",
+  "title": "What Will It Cost for the US to Be Ready for the Next Big AI Breakthrough?",
+  "quotes": [
+   {
+    "signal": "caisi.11",
+    "quote": "resigned from his role as director just three months after he was picked for the job"
+   }
+  ]
+ },
+ {
+  "id": "techcrunch-epoch",
+  "url": "https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai",
+  "publisher": "TechCrunch",
+  "title": "AI benchmarking organization criticized for waiting to disclose funding from OpenAI",
+  "quotes": []
+ },
+ {
+  "id": "crowell-sb315",
+  "url": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
+  "publisher": "Crowell & Moring",
+  "title": "Illinois AI Safety Measures Act SB 315",
+  "quotes": []
+ },
+ {
+  "id": "aisi-grants",
+  "url": "https://www.aisi.gov.uk/grants",
+  "publisher": "UK AI Security Institute",
+  "title": "Alignment Project grants",
+  "quotes": []
+ },
+ {
+  "id": "openai-kolter-board",
+  "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+  "publisher": "OpenAI",
+  "title": "Zico Kolter Joins OpenAI's Board of Directors",
+  "quotes": [
+   {
+    "signal": "grayswan.01",
+    "quote": "he chairs the Safety and Security Committee"
+   }
+  ]
+ },
+ {
+  "id": "regulations-ai-aisi",
+  "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025",
+  "publisher": "Regulations.ai",
+  "title": "AI Security Institute (renaming)",
+  "quotes": []
+ },
+ {
+  "id": "ted-864574-notice",
+  "url": "https://ted.europa.eu/en/notice/-/detail/864574-2025",
+  "publisher": "Tenders Electronic Daily",
+  "title": "TED notice 864574-2025: Artificial Intelligence Act: Technical Assistance for AI Safety",
+  "quotes": []
+ },
+ {
+  "id": "unite-altman-match",
+  "url": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/",
+  "publisher": "Unite.AI",
+  "title": "Altman Says OpenAI Will Match Anthropic's Embedded Evaluator Pledge",
+  "quotes": []
+ },
+ {
+  "id": "forbes-grayswan-2024",
+  "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+  "publisher": "Forbes",
+  "title": "Gray Swan AI Is Working With OpenAI to Red Team Its Models",
+  "quotes": [
+   {
+    "signal": "grayswan.02",
+    "quote": "he has recused himself from interactions between the two companies"
+   }
+  ]
+ },
+ {
+  "id": "fortune-hf-nvidia",
+  "url": "https://fortune.com/2026/09/03/hugging-face-goes-from-a-scrappy-startup-named-after-an-emoji-to-13-billion-nvidia-acquisition/",
+  "publisher": "Fortune",
+  "title": "Hugging Face goes from a scrappy startup to $13 billion Nvidia acquisition",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "metr-funding-2026",
+  "url": "https://metr.org/blog/2026-08-14-funding-update/",
+  "publisher": "METR",
+  "title": "Funding update",
+  "quotes": [
+   {
+    "signal": "metr.19",
+    "quote": "In the last 6 months, METR raised commitments of around $71 million"
+   }
+  ]
+ },
+ {
+  "id": "palisade",
+  "url": "https://palisaderesearch.org/",
+  "publisher": "Palisade Research",
+  "title": "Palisade Research",
+  "quotes": []
+ },
+ {
+  "id": "metr-money-figure",
+  "url": "https://github.com/kevinnbass/metr-money-figure",
+  "publisher": "Kevin Bass (GitHub)",
+  "title": "metr-money-figure research ledger and audits",
+  "quotes": []
+ },
+ {
+  "id": "techcrunch-irregular",
+  "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models",
+  "publisher": "TechCrunch",
+  "title": "Irregular raises $80M to secure frontier AI models",
+  "quotes": [
+   {
+    "signal": "irregular.01",
+    "quote": "Formerly known as Pattern Labs"
+   }
+  ]
+ },
+ {
+  "id": "far-transparency",
+  "url": "https://www.far.ai/transparency",
+  "publisher": "FAR.AI",
+  "title": "Transparency",
+  "quotes": [
+   {
+    "signal": "farai.10",
+    "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue"
+   }
+  ]
+ },
+ {
+  "id": "newswire-irregular",
+  "url": "https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai",
+  "publisher": "Newswire",
+  "title": "Irregular Raises $80 Million",
+  "quotes": []
+ },
+ {
+  "id": "apollo-about",
+  "url": "https://www.apolloresearch.ai/about",
+  "publisher": "Apollo Research",
+  "title": "About",
+  "quotes": []
+ },
+ {
+  "id": "aiwiki-ukaisi",
+  "url": "https://aiwiki.ai/wiki/uk_aisi",
+  "publisher": "AI Wiki",
+  "title": "UK AI Security Institute",
+  "quotes": []
+ },
+ {
+  "id": "longtermwiki-audit",
+  "url": "https://www.longtermwiki.com/wiki/E450",
+  "publisher": "Longterm Wiki",
+  "title": "Third-Party Model Auditing",
+  "quotes": []
+ },
+ {
+  "id": "averi-about",
+  "url": "https://www.averi.org/about",
+  "publisher": "AVERI",
+  "title": "About",
+  "quotes": []
+ },
+ {
+  "id": "epoch-transparency-page",
+  "url": "https://epoch.ai/about/transparency",
+  "publisher": "Epoch AI",
+  "title": "Transparency",
+  "quotes": []
+ },
+ {
+  "id": "instrumentl-arc-990",
+  "url": "https://www.instrumentl.com/990-report/alignment-research-center",
+  "publisher": "Instrumentl",
+  "title": "Alignment Research Center 990 report",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "cais",
+  "url": "https://safe.ai/",
+  "publisher": "CAIS",
+  "title": "Center for AI Safety",
+  "quotes": []
+ },
+ {
+  "id": "coefficient-wiki",
+  "url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
+  "publisher": "Wikipedia",
+  "title": "Coefficient Giving",
+  "quotes": []
+ },
+ {
+  "id": "ms-redteam",
+  "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
+  "publisher": "Microsoft",
+  "title": "Microsoft AI Red Team",
+  "quotes": []
+ }
+]

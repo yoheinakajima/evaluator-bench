@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "averi-pilot",
-  "title": "AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model",
-  "publisher": "AVERI",
-  "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
+  "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-08",
+  "publisher": "AVERI",
   "retrieved": "2026-09-14",
-  "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model",
+  "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval"
 }

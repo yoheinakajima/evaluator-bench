@@ -1,0 +1,281 @@
+[
+ {
+  "id": "aef-transparency",
+  "url": "https://t.co/Nm0RMxOWzw",
+  "publisher": "AI Evaluator Forum",
+  "title": "Evaluation Transparency Letter",
+  "quotes": []
+ },
+ {
+  "id": "aisi-alignment-60",
+  "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+  "publisher": "UK AI Security Institute",
+  "title": "Funding 60 projects to advance AI alignment research",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "aiwiki-ukaisi",
+  "url": "https://aiwiki.ai/wiki/uk_aisi",
+  "publisher": "AI Wiki",
+  "title": "UK AI Security Institute",
+  "quotes": []
+ },
+ {
+  "id": "andon-pitchbook",
+  "url": "https://pitchbook.com/profiles/company/541549-09",
+  "publisher": "PitchBook",
+  "title": "Andon Labs profile",
+  "quotes": []
+ },
+ {
+  "id": "apollo-norms",
+  "url": "https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/",
+  "publisher": "Apollo Research",
+  "title": "Our Norms on Security, Science Communication and Conflicts of Interest",
+  "quotes": [
+   {
+    "signal": "apollo.01",
+    "quote": "We do not accept work where compensation is contingent upon the outcome"
+   }
+  ]
+ },
+ {
+  "id": "apollo-pbc-mission",
+  "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+  "publisher": "Apollo Research",
+  "title": "Apollo Research is becoming a PBC (governance)",
+  "quotes": [
+   {
+    "signal": "apollo.13",
+    "quote": "held by \"mission directors\" who are independent to Apollo Research PBC and our funders"
+   }
+  ]
+ },
+ {
+  "id": "apollo-pbc-round",
+  "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+  "publisher": "Apollo Research",
+  "title": "Apollo Research is becoming a PBC (investment section)",
+  "quotes": [
+   {
+    "signal": "apollo.10",
+    "quote": "raised a Seed round led by 50Y"
+   }
+  ]
+ },
+ {
+  "id": "arxiv-access-taxonomy",
+  "url": "https://arxiv.org/abs/2601.11916",
+  "publisher": "arXiv",
+  "title": "Expanding External Access to Frontier AI Models for Dangerous Capability Evaluations (arXiv 2601.11916)",
+  "quotes": []
+ },
+ {
+  "id": "averi-funding",
+  "url": "https://www.averi.org/about",
+  "publisher": "AVERI",
+  "title": "About (funding and conflicts)",
+  "quotes": [
+   {
+    "signal": "averi.09",
+    "quote": "No donor makes up a majority of our funding"
+   },
+   {
+    "signal": "averi.10",
+    "quote": "recused from directly auditing OpenAI for at least two years"
+   },
+   {
+    "signal": "averi.12",
+    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million"
+   }
+  ]
+ },
+ {
+  "id": "averi-launch",
+  "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
+  "publisher": "Miles Brundage (Substack)",
+  "title": "The Launch of AVERI",
+  "quotes": []
+ },
+ {
+  "id": "averi-pilot",
+  "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
+  "publisher": "AVERI",
+  "title": "AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model",
+  "quotes": []
+ },
+ {
+  "id": "bloomberg-nvidia-anthropic",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-11/nvidia-in-talks-to-invest-up-to-10b-in-anthropic-ipo-reuters",
+  "publisher": "Bloomberg",
+  "title": "Nvidia Mulls $10 Billion Anthropic IPO Backing, Reuters Says",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "cnbc-caisi-fall",
+  "url": "https://www.cnbc.com/2026/07/20/trumps-head-of-ai-safety-agency-caisi-resigns-after-months-on-job.html",
+  "publisher": "CNBC",
+  "title": "Trump's head of AI safety agency CAISI resigns after months on job",
+  "quotes": [
+   {
+    "signal": "caisi.11",
+    "quote": "resigned from his role as director just three months after he was picked for the job"
+   }
+  ]
+ },
+ {
+  "id": "cnbc-scale-meta",
+  "url": "https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html",
+  "publisher": "CNBC",
+  "title": "Scale AI not winding down following Meta deal, interim CEO says",
+  "quotes": [
+   {
+    "signal": "scale.10",
+    "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion"
+   }
+  ]
+ },
+ {
+  "id": "coefficient-index",
+  "url": "https://coefficientgiving.org/grants/",
+  "publisher": "Coefficient Giving",
+  "title": "Coefficient Giving grants index",
+  "quotes": [
+   {
+    "signal": "rand.10",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
+   }
+  ]
+ },
+ {
+  "id": "csa-caisi",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/",
+  "publisher": "Cloud Security Alliance",
+  "title": "CAISI Frontier Testing Agreements Reach Five Labs",
+  "quotes": []
+ },
+ {
+  "id": "dealroom-grayswan",
+  "url": "https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai",
+  "publisher": "Dealroom",
+  "title": "Gray Swan raises $40M Series A to secure frontier AI",
+  "quotes": [
+   {
+    "signal": "grayswan.11",
+    "quote": "serves on the board of OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "decoder-epoch",
+  "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
+  "publisher": "The Decoder",
+  "title": "OpenAI quietly funded independent math benchmark",
+  "quotes": [
+   {
+    "signal": "epoch.01",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "evaluators-ledger",
+  "url": "https://github.com/kevinnbass/metr-money-figure/blob/main/research/evaluators.csv",
+  "publisher": "Kevin Bass (GitHub)",
+  "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+  "quotes": [
+   {
+    "signal": "palisade.11",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
+   },
+   {
+    "signal": "apollo.12",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+   }
+  ]
+ },
+ {
+  "id": "far-30m",
+  "url": "https://far.ai/news/30m-multi-funder-support",
+  "publisher": "FAR.AI",
+  "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
+  "quotes": [
+   {
+    "signal": "farai.12",
+    "quote": "a grant of $28,675,000 over three years to FAR.AI"
+   }
+  ]
+ },
+ {
+  "id": "forbes-grayswan-2024",
+  "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+  "publisher": "Forbes",
+  "title": "Gray Swan AI Is Working With OpenAI to Red Team Its Models",
+  "quotes": [
+   {
+    "signal": "grayswan.02",
+    "quote": "he has recused himself from interactions between the two companies"
+   }
+  ]
+ },
+ {
+  "id": "forbes-grayswan-2026",
+  "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
+  "publisher": "Forbes",
+  "title": "This AI Startup's Army of 15,000 Hackers",
+  "quotes": []
+ },
+ {
+  "id": "fortune-averi",
+  "url": "https://fortune.com/2026/01/15/former-openai-policy-chief-creates-nonprofit-institute-calls-for-independent-safety-audits-of-frontier-ai-models/",
+  "publisher": "Fortune",
+  "title": "Former OpenAI policy chief debuts new institute called AVERI",
+  "quotes": [
+   {
+    "signal": "averi.12",
+    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million"
+   }
+  ]
+ },
+ {
+  "id": "fortune-hf-nvidia",
+  "url": "https://fortune.com/2026/09/03/hugging-face-goes-from-a-scrappy-startup-named-after-an-emoji-to-13-billion-nvidia-acquisition/",
+  "publisher": "Fortune",
+  "title": "Hugging Face goes from a scrappy startup to $13 billion Nvidia acquisition",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "founderspledge-frontier",
+  "url": "https://www.founderspledge.com/research/frontier-ai-grantmaking",
+  "publisher": "Founders Pledge",
+  "title": "Frontier AI grantmaking",
+  "quotes": []
+ },
+ {
+  "id": "longtermwiki-far-cap",
+  "url": "https://www.longtermwiki.com/wiki/E138",
+  "publisher": "Longterm Wiki",
+  "title": "FAR AI",
+  "quotes": [
+   {
+    "signal": "farai.14",
+    "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
+   }
+  ]
+ }
+]

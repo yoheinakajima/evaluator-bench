@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "aef-transparency",
-  "title": "Evaluation Transparency Letter",
-  "publisher": "AI Evaluator Forum",
-  "url": "https://t.co/Nm0RMxOWzw",
+  "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026",
+  "publisher": "AI Evaluator Forum",
   "retrieved": "2026-09-14",
-  "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "title": "Evaluation Transparency Letter",
+  "url": "https://t.co/Nm0RMxOWzw"
 }

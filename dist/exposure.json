@@ -4,18 +4,15 @@
   "aisf": 1,
   "aiuc": 2,
   "amazon": 0,
-  "andon": 1,
   "anthropic": 0,
   "anthropic-employees": 1,
   "apollo": 2,
-  "arc": 3,
   "averi": 2,
   "brundage": 1,
   "cais": 3,
   "chowdhury": 1,
   "christiano": 2,
   "coefficient": 2,
-  "constellation": 3,
   "dattani": 2,
   "delangue": 2,
   "deshaw": 1,
@@ -30,7 +27,6 @@
   "gray-swan": 1,
   "hendrycks": 4,
   "hfoai": 1,
-  "hilton": 4,
   "irregular": 1,
   "karnofsky": 1,
   "kolter": 1,
@@ -45,7 +41,7 @@
   "meta": 0,
   "metr": 1,
   "microsoft": 0,
-  "mlcommons": 1,
+  "mlcommons": 2,
   "moskovitz": 1,
   "msft": 1,
   "nemesys": 1,
@@ -86,9 +82,10 @@
     },
     "hop2": {
      "by_measure": {
-      "recommendation": 548000.0
+      "grant": 220000.0,
+      "recommendation": 752000.0
      },
-     "imported_unsummed": 2,
+     "imported_unsummed": 0,
      "non_usd": [],
      "rows": 3,
      "sources": [
@@ -97,33 +94,22 @@
      ],
      "undisclosed": 0
     },
-    "hop3": {
-     "by_measure": {},
-     "imported_unsummed": 1,
+    "unattributed": {
+     "by_measure": {
+      "commitment": 17000000.0
+     },
+     "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
      "sources": [
-      "arc"
-     ],
-     "undisclosed": 0
-    },
-    "unattributed": {
-     "by_measure": {},
-     "imported_unsummed": 4,
-     "non_usd": [],
-     "rows": 4,
-     "sources": [
-      "audacious",
-      "founders-pledge",
-      "svcf",
-      "vanguard-charitable"
+      "audacious"
      ],
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 2,
+   "confirmed_rows": 5,
    "id": "metr",
-   "inflow_rows": 9,
+   "inflow_rows": 5,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -208,16 +194,17 @@
      "status": "unaudited"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T13",
+    "T14",
+    "T15",
+    "T16"
+   ],
+   "quarantined_rows": 4,
    "second_hop": {
-    "sources": 8,
-    "traced": 5,
-    "untraced": [
-     "Founders Pledge",
-     "Silicon Valley Community Foundation",
-     "Vanguard Charitable"
-    ]
+    "sources": 4,
+    "traced": 4,
+    "untraced": []
    },
    "status": "ranked"
   },
@@ -227,28 +214,19 @@
      "by_measure": {
       "recommendation": 1022000.0
      },
-     "imported_unsummed": 1,
+     "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 2,
+     "rows": 1,
      "sources": [
-      "coefficient",
       "sff"
      ],
      "undisclosed": 0
     },
-    "public": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "us-gov"
-     ],
-     "undisclosed": 0
-    },
     "unattributed": {
-     "by_measure": {},
-     "imported_unsummed": 1,
+     "by_measure": {
+      "commitment": 38000000.0
+     },
+     "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
      "sources": [
@@ -257,20 +235,22 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 1,
+   "confirmed_rows": 2,
    "id": "rand",
-   "inflow_rows": 4,
+   "inflow_rows": 2,
    "kind_note": "Canary joint project with METR",
    "lab_tied_seats": [],
    "name": "RAND Corporation",
    "negatives": [],
    "quarantined_ids": [
-    "T02"
+    "T02",
+    "T58",
+    "T59"
    ],
-   "quarantined_rows": 1,
+   "quarantined_rows": 3,
    "second_hop": {
-    "sources": 4,
-    "traced": 4,
+    "sources": 2,
+    "traced": 2,
     "untraced": []
    },
    "status": "ranked"
@@ -291,12 +271,12 @@
      "by_measure": {
       "recommendation": 919000.0
      },
-     "imported_unsummed": 2,
+     "imported_unsummed": 0,
      "non_usd": [
       "grant 28675000 USD",
       "detail of T03, not additive"
      ],
-     "rows": 4,
+     "rows": 2,
      "sources": [
       "coefficient",
       "sff"
@@ -305,8 +285,10 @@
     },
     "public": {
      "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
+     "imported_unsummed": 0,
+     "non_usd": [
+      "contract 1434080 EUR"
+     ],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -327,15 +309,18 @@
      "undisclosed": 1
     }
    },
-   "confirmed_rows": 3,
+   "confirmed_rows": 4,
    "id": "far-ai",
-   "inflow_rows": 8,
+   "inflow_rows": 6,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "FAR.AI",
    "negatives": [],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T03",
+    "T43"
+   ],
+   "quarantined_rows": 2,
    "second_hop": {
     "sources": 6,
     "traced": 5,
@@ -348,8 +333,10 @@
   {
    "buckets": {
     "hop1": {
-     "by_measure": {},
-     "imported_unsummed": 1,
+     "by_measure": {
+      "daf_grant": 1330000.0
+     },
+     "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
      "sources": [
@@ -359,31 +346,33 @@
     },
     "hop2": {
      "by_measure": {},
-     "imported_unsummed": 2,
+     "imported_unsummed": 0,
      "non_usd": [
       "grant 36566000 USD",
       "detail of T04, not additive"
      ],
-     "rows": 3,
+     "rows": 1,
      "sources": [
-      "coefficient",
-      "sff"
+      "coefficient"
      ],
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 0,
+   "confirmed_rows": 1,
    "id": "redwood",
-   "inflow_rows": 4,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Redwood Research",
    "negatives": [],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T04",
+    "T39"
+   ],
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 3,
-    "traced": 3,
+    "sources": 2,
+    "traced": 2,
     "untraced": []
    },
    "status": "ranked"
@@ -556,16 +545,6 @@
      ],
      "undisclosed": 1
     },
-    "hop2": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "sff"
-     ],
-     "undisclosed": 0
-    },
     "unattributed": {
      "by_measure": {},
      "imported_unsummed": 0,
@@ -579,7 +558,7 @@
    },
    "confirmed_rows": 2,
    "id": "apollo",
-   "inflow_rows": 3,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -593,12 +572,13 @@
    "name": "Apollo Research",
    "negatives": [],
    "quarantined_ids": [
-    "T08"
+    "T08",
+    "T33"
    ],
-   "quarantined_rows": 1,
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 3,
-    "traced": 2,
+    "sources": 2,
+    "traced": 1,
     "untraced": [
      "Fifty Years (50Y)"
     ]
@@ -620,26 +600,16 @@
      ],
      "undisclosed": 4
     },
-    "hop1": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "tallinn"
-     ],
-     "undisclosed": 0
-    },
     "hop2": {
      "by_measure": {
       "recommendation": 195000.0
      },
-     "imported_unsummed": 1,
+     "imported_unsummed": 0,
      "non_usd": [
       "grant 8500000 USD",
       "detail of T06, not additive"
      ],
-     "rows": 3,
+     "rows": 2,
      "sources": [
       "coefficient",
       "sff"
@@ -647,18 +617,21 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 1,
+   "confirmed_rows": 2,
    "id": "epoch",
-   "inflow_rows": 8,
+   "inflow_rows": 6,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Epoch AI",
    "negatives": [],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T07",
+    "T36"
+   ],
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 7,
-    "traced": 7,
+    "sources": 6,
+    "traced": 6,
     "untraced": []
    },
    "status": "ranked"
@@ -670,9 +643,9 @@
       "grant": 2123463.0,
       "recommendation": 1133000.0
      },
-     "imported_unsummed": 1,
+     "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 3,
+     "rows": 2,
      "sources": [
       "coefficient",
       "sff"
@@ -682,15 +655,16 @@
    },
    "confirmed_rows": 1,
    "id": "palisade",
-   "inflow_rows": 3,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Palisade Research",
    "negatives": [],
    "quarantined_ids": [
-    "T10"
+    "T10",
+    "T37"
    ],
-   "quarantined_rows": 1,
+   "quarantined_rows": 2,
    "second_hop": {
     "sources": 2,
     "traced": 2,
@@ -722,7 +696,7 @@
      "undisclosed": 1
     }
    },
-   "confirmed_rows": 2,
+   "confirmed_rows": 3,
    "id": "transluce",
    "inflow_rows": 3,
    "kind_note": "",
@@ -760,32 +734,22 @@
    "status": "ranked"
   },
   {
-   "buckets": {
-    "hop0": {
-     "by_measure": {},
-     "imported_unsummed": 0,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "anthropic"
-     ],
-     "undisclosed": 1
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "andon",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Andon Labs",
    "negatives": [],
    "quarantined_ids": [
-    "T55"
+    "T55",
+    "T56"
    ],
-   "quarantined_rows": 1,
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 1,
-    "traced": 1,
+    "sources": 0,
+    "traced": 0,
     "untraced": []
    },
    "status": "ranked"
@@ -796,11 +760,11 @@
      "by_measure": {},
      "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 2,
+     "rows": 1,
      "sources": [
       "openai"
      ],
-     "undisclosed": 2
+     "undisclosed": 1
     },
     "public": {
      "by_measure": {},
@@ -813,9 +777,9 @@
      "undisclosed": 1
     }
    },
-   "confirmed_rows": 0,
+   "confirmed_rows": 1,
    "id": "ukaisi",
-   "inflow_rows": 3,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "UK AI Security Institute",
@@ -827,8 +791,10 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T46"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
     "sources": 2,
     "traced": 2,
@@ -840,9 +806,9 @@
    "buckets": {
     "public": {
      "by_measure": {
-      "grant": 15000000.0
+      "grant": 25000000.0
      },
-     "imported_unsummed": 1,
+     "imported_unsummed": 0,
      "non_usd": [],
      "rows": 2,
      "sources": [
@@ -851,7 +817,7 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 0,
+   "confirmed_rows": 1,
    "id": "caisi",
    "inflow_rows": 2,
    "kind_note": "",
@@ -881,21 +847,10 @@
    "status": "ranked"
   },
   {
-   "buckets": {
-    "public": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "eu-budget"
-     ],
-     "undisclosed": 0
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "euaio",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "EU AI Office",
@@ -907,11 +862,13 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T48"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 1,
-    "traced": 1,
+    "sources": 0,
+    "traced": 0,
     "untraced": []
    },
    "status": "ranked"
@@ -997,28 +954,18 @@
      "by_measure": {
       "recommendation": 311000.0
      },
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 2,
-     "sources": [
-      "sff"
-     ],
-     "undisclosed": 0
-    },
-    "public": {
-     "by_measure": {},
      "imported_unsummed": 0,
      "non_usd": [],
      "rows": 1,
      "sources": [
-      "eu-budget"
+      "sff"
      ],
-     "undisclosed": 1
+     "undisclosed": 0
     }
    },
    "confirmed_rows": 1,
    "id": "saferai",
-   "inflow_rows": 4,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "SaferAI",
@@ -1030,31 +977,23 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T40",
+    "T41"
+   ],
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 3,
-    "traced": 3,
+    "sources": 2,
+    "traced": 2,
     "untraced": []
    },
    "status": "ranked"
   },
   {
-   "buckets": {
-    "hop0": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "meta"
-     ],
-     "undisclosed": 0
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "scale",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -1074,31 +1013,22 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T52"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 1,
-    "traced": 1,
+    "sources": 0,
+    "traced": 0,
     "untraced": []
    },
    "status": "ranked"
   },
   {
-   "buckets": {
-    "hop0": {
-     "by_measure": {},
-     "imported_unsummed": 0,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "google"
-     ],
-     "undisclosed": 1
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "mlcommons",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "MLCommons",
@@ -1110,31 +1040,22 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T63"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 1,
-    "traced": 1,
+    "sources": 0,
+    "traced": 0,
     "untraced": []
    },
    "status": "ranked"
   },
   {
-   "buckets": {
-    "unattributed": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "salesforce-ventures"
-     ],
-     "undisclosed": 0
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "hfoai",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -1169,15 +1090,14 @@
     }
    ],
    "quarantined_ids": [
+    "T53",
     "T54"
    ],
-   "quarantined_rows": 1,
+   "quarantined_rows": 2,
    "second_hop": {
-    "sources": 1,
+    "sources": 0,
     "traced": 0,
-    "untraced": [
-     "Salesforce Ventures"
-    ]
+    "untraced": []
    },
    "status": "ranked"
   },
@@ -1321,21 +1241,10 @@
    "status": "ranked"
   },
   {
-   "buckets": {
-    "public": {
-     "by_measure": {},
-     "imported_unsummed": 1,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "eu-budget"
-     ],
-     "undisclosed": 0
-    }
-   },
+   "buckets": {},
    "confirmed_rows": 0,
    "id": "equistamp",
-   "inflow_rows": 1,
+   "inflow_rows": 0,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "EquiStamp",
@@ -1347,11 +1256,13 @@
      "status": "imported"
     }
    ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
+   "quarantined_ids": [
+    "T60"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 1,
-    "traced": 1,
+    "sources": 0,
+    "traced": 0,
     "untraced": []
    },
    "status": "ranked"
@@ -1379,7 +1290,7 @@
      "undisclosed": 1
     }
    },
-   "confirmed_rows": 0,
+   "confirmed_rows": 2,
    "id": "nemesys",
    "inflow_rows": 2,
    "kind_note": "",

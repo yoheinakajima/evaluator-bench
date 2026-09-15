@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "rand-aef",
-  "title": "RAND and the AI Evaluator Forum",
-  "publisher": "RAND",
-  "url": "https://www.rand.org/",
+  "note": "Founding AEF member; CBRN expertise; RAND-Irregular model theft paper. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
   "published": "2026",
+  "publisher": "RAND",
   "retrieved": "2026-09-14",
-  "note": "Founding AEF member; CBRN expertise; RAND-Irregular model theft paper. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "RAND and the AI Evaluator Forum",
+  "url": "https://www.rand.org/"
 }

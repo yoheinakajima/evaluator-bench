@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "averi-funding",
-  "title": "About (funding and conflicts)",
-  "publisher": "AVERI",
-  "url": "https://www.averi.org/about",
+  "note": "Funders: AIUC, Coefficient, Falls, Ralston, Good Forever, Fathom, Halcyon, Sympatico, non-executive lab employees; no donor majority; recusal rules; Brundage recused from auditing OpenAI two years; sold eligible shares; API credits offered by six labs. [verify 2026-09-15] reachable BUT span(s) not found: averi.10; averi.12 \u2014 needs curator review",
   "published": "2026",
+  "publisher": "AVERI",
   "retrieved": "2026-09-14",
-  "note": "Funders: AIUC, Coefficient, Falls, Ralston, Good Forever, Fathom, Halcyon, Sympatico, non-executive lab employees; no donor majority; recusal rules; Brundage recused from auditing OpenAI two years; sold eligible shares; API credits offered by six labs.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "title": "About (funding and conflicts)",
+  "url": "https://www.averi.org/about"
 }

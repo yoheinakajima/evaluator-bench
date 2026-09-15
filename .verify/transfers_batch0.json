@@ -1,0 +1,102 @@
+[
+ {
+  "row_id": "T01",
+  "from": "coefficient",
+  "to": "arc",
+  "measure": "grant",
+  "amount": "1515000",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T06",
+  "from": "coefficient",
+  "to": "constellation",
+  "measure": "grant",
+  "amount": "22950000",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T14",
+  "from": "vanguard-charitable",
+  "to": "metr",
+  "measure": "daf_grant",
+  "amount": "4000000",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/organizations/232888152",
+  "note": ""
+ },
+ {
+  "row_id": "T18",
+  "from": "longview",
+  "to": "metr",
+  "measure": "grant",
+  "amount": "220000",
+  "currency": "",
+  "source_url": "https://www.givingwhatwecan.org/charities/arc-evals",
+  "note": ""
+ },
+ {
+  "row_id": "T35",
+  "from": "google",
+  "to": "epoch",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://epoch.ai/about/transparency",
+  "note": ""
+ },
+ {
+  "row_id": "T39",
+  "from": "sff",
+  "to": "redwood",
+  "measure": "recommendation",
+  "amount": "2372000",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/",
+  "note": ""
+ },
+ {
+  "row_id": "T43",
+  "from": "sff",
+  "to": "far-ai",
+  "measure": "recommendation",
+  "amount": "5593577",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/",
+  "note": ""
+ },
+ {
+  "row_id": "T48",
+  "from": "eu-budget",
+  "to": "euaio",
+  "measure": "contract",
+  "amount": "7373017",
+  "currency": "EUR",
+  "source_url": "https://ted.europa.eu/",
+  "note": ""
+ },
+ {
+  "row_id": "T58",
+  "from": "coefficient",
+  "to": "rand",
+  "measure": "grant",
+  "amount": "76955751",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T62",
+  "from": "eu-budget",
+  "to": "nemesys",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium",
+  "note": ""
+ }
+]

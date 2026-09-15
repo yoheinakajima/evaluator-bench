@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "newswire-irregular",
-  "title": "Irregular Raises $80 Million",
-  "publisher": "Newswire",
-  "url": "https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai",
+  "note": "Millions in annual revenue; works with OpenAI and Anthropic; runtime security roadmap. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2025-09-17",
+  "publisher": "Newswire",
   "retrieved": "2026-09-14",
-  "note": "Millions in annual revenue; works with OpenAI and Anthropic; runtime security roadmap. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "Irregular Raises $80 Million",
+  "url": "https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai"
 }

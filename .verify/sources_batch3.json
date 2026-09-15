@@ -1,0 +1,300 @@
+[
+ {
+  "id": "founderspledge-frontier",
+  "url": "https://www.founderspledge.com/research/frontier-ai-grantmaking",
+  "publisher": "Founders Pledge",
+  "title": "Frontier AI grantmaking",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "audacious-project",
+  "url": "https://www.audaciousproject.org/",
+  "publisher": "TED",
+  "title": "The Audacious Project",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "scale-framework",
+  "url": "https://scale.com/blog/ai-evaluation-framework-national-security",
+  "publisher": "Scale AI",
+  "title": "Why the U.S. Needs an Independent AI Evaluation Framework for National Security",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "securebio-2025-review",
+  "url": "https://securebio.org/blog/securebio-ai-2025-in-review/",
+  "publisher": "SecureBio",
+  "title": "SecureBio AI: 2025 in Review",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "securebio.13",
+    "quote": "broadened our government-facing portfolio with a US CAISI Bio R&D contract"
+   }
+  ]
+ },
+ {
+  "id": "dwt-sb315",
+  "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
+  "publisher": "Davis Wright Tremaine",
+  "title": "Illinois Enacts Frontier AI Safety Law",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "csa-caisi",
+  "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/",
+  "publisher": "Cloud Security Alliance",
+  "title": "CAISI Frontier Testing Agreements Reach Five Labs",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "techpolicy-aef1",
+  "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/",
+  "publisher": "TechPolicy.Press",
+  "title": "The EU's Real AI Leverage Is Making Compliance the Path of Least Resistance",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "rand-audacious-2024",
+  "url": "https://www.rand.org/news/press/2024/10/09.html",
+  "publisher": "RAND",
+  "title": "RAND AI Security Project Receives Funding Commitment Through The Audacious Project",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "rand.10",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
+   },
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "epoch-transparency",
+  "url": "https://epoch.ai/about/transparency",
+  "publisher": "Epoch AI",
+  "title": "Transparency",
+  "audit_status": "imported",
+  "quotes": []
+ },
+ {
+  "id": "nist-caisi",
+  "url": "https://www.nist.gov/caisi",
+  "publisher": "NIST",
+  "title": "Center for AI Standards and Innovation",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "ted-864574",
+  "url": "https://ted.europa.eu/",
+  "publisher": "Tenders Electronic Daily",
+  "title": "TED 864574-2025 Technical Assistance for AI Safety",
+  "audit_status": "imported",
+  "quotes": []
+ },
+ {
+  "id": "apollo-manifund",
+  "url": "https://manifund.org/apolloresearch",
+  "publisher": "Manifund",
+  "title": "Apollo Research on Manifund",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "apollo.12",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+   }
+  ]
+ },
+ {
+  "id": "openai-kolter-board",
+  "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+  "publisher": "OpenAI",
+  "title": "Zico Kolter Joins OpenAI's Board of Directors",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "grayswan.01",
+    "quote": "he chairs the Safety and Security Committee"
+   }
+  ]
+ },
+ {
+  "id": "slashdot-sb315",
+  "url": "https://yro.slashdot.org/story/26/05/28/186254/trump-loses-more-control-over-ai-regulation-as-illinois-passes-landmark-law",
+  "publisher": "Slashdot",
+  "title": "Illinois Passes Landmark AI Law",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "big4.09",
+    "quote": "Governor J.B. Pritzker signed SB 315 into law on July 6, 2026"
+   }
+  ]
+ },
+ {
+  "id": "zvi-pace",
+  "url": "https://thezvi.substack.com/p/we-must-pace-the-frontier",
+  "publisher": "Zvi Mowshowitz",
+  "title": "We Must Pace The Frontier",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "forbes-grayswan-2024",
+  "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+  "publisher": "Forbes",
+  "title": "Gray Swan AI Is Working With OpenAI to Red Team Its Models",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "grayswan.02",
+    "quote": "he has recused himself from interactions between the two companies"
+   }
+  ]
+ },
+ {
+  "id": "far-30m",
+  "url": "https://far.ai/news/30m-multi-funder-support",
+  "publisher": "FAR.AI",
+  "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "farai.12",
+    "quote": "a grant of $28,675,000 over three years to FAR.AI"
+   }
+  ]
+ },
+ {
+  "id": "caisi-funding",
+  "url": "https://ifp.org/funding-for-caisi/",
+  "publisher": "Institute for Progress",
+  "title": "Funding for CAISI",
+  "audit_status": "imported",
+  "quotes": []
+ },
+ {
+  "id": "metr-money-figure",
+  "url": "https://github.com/kevinnbass/metr-money-figure",
+  "publisher": "Kevin Bass (GitHub)",
+  "title": "metr-money-figure research ledger and audits",
+  "audit_status": "imported",
+  "quotes": []
+ },
+ {
+  "id": "decoder-epoch",
+  "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
+  "publisher": "The Decoder",
+  "title": "OpenAI quietly funded independent math benchmark",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "epoch.01",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "coefficient-index",
+  "url": "https://coefficientgiving.org/grants/",
+  "publisher": "Coefficient Giving",
+  "title": "Coefficient Giving grants index",
+  "audit_status": "imported",
+  "quotes": [
+   {
+    "signal": "rand.10",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
+   }
+  ]
+ },
+ {
+  "id": "apollo-about",
+  "url": "https://www.apolloresearch.ai/about",
+  "publisher": "Apollo Research",
+  "title": "About",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "cnbc-caisi-fall",
+  "url": "https://www.cnbc.com/2026/07/20/trumps-head-of-ai-safety-agency-caisi-resigns-after-months-on-job.html",
+  "publisher": "CNBC",
+  "title": "Trump's head of AI safety agency CAISI resigns after months on job",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "caisi.11",
+    "quote": "resigned from his role as director just three months after he was picked for the job"
+   }
+  ]
+ },
+ {
+  "id": "kolter-bio",
+  "url": "http://zkolter.github.io/bio/",
+  "publisher": "Zico Kolter",
+  "title": "Bio",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "grayswan.01",
+    "quote": "he chairs the Safety and Security Committee"
+   }
+  ]
+ },
+ {
+  "id": "epoch-transparency-page",
+  "url": "https://epoch.ai/about/transparency",
+  "publisher": "Epoch AI",
+  "title": "Transparency",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "fortune-averi",
+  "url": "https://fortune.com/2026/01/15/former-openai-policy-chief-creates-nonprofit-institute-calls-for-independent-safety-audits-of-frontier-ai-models/",
+  "publisher": "Fortune",
+  "title": "Former OpenAI policy chief debuts new institute called AVERI",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "averi.12",
+    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million"
+   }
+  ]
+ },
+ {
+  "id": "alignment-project-about",
+  "url": "https://alignmentproject.aisi.gov.uk/about",
+  "publisher": "UK AI Security Institute",
+  "title": "About the Alignment Project",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "ms-redteam",
+  "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
+  "publisher": "Microsoft",
+  "title": "Microsoft AI Red Team",
+  "audit_status": "unaudited",
+  "quotes": []
+ }
+]

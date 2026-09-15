@@ -1,12 +1,12 @@
 {
+  "audit_status": "confirmed",
   "id": "ted-864574",
-  "title": "TED 864574-2025 Technical Assistance for AI Safety",
-  "publisher": "Tenders Electronic Daily",
-  "url": "https://ted.europa.eu/",
+  "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml",
+  "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2025-12",
+  "publisher": "Tenders Electronic Daily",
   "retrieved": "2026-09-14",
-  "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor.",
   "source_type": "filing",
-  "audit_status": "imported",
-  "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml"
+  "title": "TED 864574-2025 Technical Assistance for AI Safety",
+  "url": "https://ted.europa.eu/"
 }

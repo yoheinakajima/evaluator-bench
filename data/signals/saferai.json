@@ -1,142 +1,141 @@
 [
   {
-    "id": "saferai.01",
-    "evaluator": "saferai",
+    "claim": "Publishes critical ratings of lab frameworks with scores attached.",
+    "curator": "yohei/claude v0",
     "dimension": "R",
     "direction": "for",
-    "claim": "Publishes critical ratings of lab frameworks with scores attached.",
+    "evaluator": "saferai",
+    "id": "saferai.01",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.02",
-    "evaluator": "saferai",
+    "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
+    "curator": "yohei/claude v0",
     "dimension": "S",
     "direction": "for",
-    "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
+    "evaluator": "saferai",
+    "id": "saferai.02",
+    "recorded": "2026-09-14",
     "sources": [
       "longtermwiki-far",
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.03",
-    "evaluator": "saferai",
+    "claim": "No lab revenue found.",
+    "curator": "yohei/claude v0",
     "dimension": "F",
     "direction": "for",
-    "claim": "No lab revenue found.",
+    "evaluator": "saferai",
+    "id": "saferai.03",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.04",
-    "evaluator": "saferai",
+    "claim": "Limited pre-deployment model access to date.",
+    "curator": "yohei/claude v0",
     "dimension": "A",
     "direction": "against",
-    "claim": "Limited pre-deployment model access to date.",
+    "evaluator": "saferai",
+    "id": "saferai.04",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.05",
-    "evaluator": "saferai",
+    "claim": "Nonprofit.",
+    "curator": "yohei/claude v0",
     "dimension": "G",
     "direction": "for",
-    "claim": "Nonprofit.",
+    "evaluator": "saferai",
+    "id": "saferai.05",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.06",
-    "evaluator": "saferai",
+    "claim": "No lab roles found.",
+    "curator": "yohei/claude v0",
     "dimension": "P",
     "direction": "for",
-    "claim": "No lab roles found.",
+    "evaluator": "saferai",
+    "id": "saferai.06",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.07",
-    "evaluator": "saferai",
+    "claim": "Rating methodology published.",
+    "curator": "yohei/claude v0",
     "dimension": "M",
     "direction": "for",
-    "claim": "Rating methodology published.",
+    "evaluator": "saferai",
+    "id": "saferai.07",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.08",
-    "evaluator": "saferai",
+    "claim": "No commercial products.",
+    "curator": "yohei/claude v0",
     "dimension": "X",
     "direction": "for",
-    "claim": "No commercial products.",
+    "evaluator": "saferai",
+    "id": "saferai.08",
+    "recorded": "2026-09-14",
     "sources": [
       "saferai"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+    ]
   },
   {
-    "id": "saferai.09",
-    "evaluator": "saferai",
+    "as_of": "2026-09-11",
+    "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+    "curator": "yohei/claude v0.4",
     "dimension": "X",
     "direction": "against",
-    "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+    "evaluator": "saferai",
+    "id": "saferai.09",
+    "recorded": "2026-09-14",
     "sources": [
       "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+    ]
   },
   {
-    "id": "saferai.10",
-    "evaluator": "saferai",
+    "as_of": "2026-09-11",
+    "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+    "curator": "yohei/claude v0.4",
     "dimension": "F",
     "direction": "for",
-    "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+    "evaluator": "saferai",
+    "id": "saferai.10",
+    "recorded": "2026-09-14",
     "sources": [
       "evaluators-ledger",
       "ted-864574"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+    ]
   },
   {
-    "id": "saferai.11",
-    "evaluator": "saferai",
+    "as_of": "2026-09-15",
+    "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
+    "curator": "yohei/claude v1.0",
     "dimension": "X",
     "direction": "against",
-    "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
+    "evaluator": "saferai",
+    "id": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company",
+    "recorded": "2026-09-15",
     "sources": [
       "saferai-about",
-      "saferai-jobs",
-      "g42-framework"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "We've contributed to frameworks for G42 and a major AI company"
+      "saferai-jobs"
+    ]
   }
 ]

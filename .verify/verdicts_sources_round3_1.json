@@ -1,0 +1,241 @@
+[
+ {
+  "id": "longtermwiki-far",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "lw-sb315",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "madrona-grayswan",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "grayswan.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "metr-990-fy2024",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "metr-about",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "metr.18",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "metr-donor-rule-history",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "metr-regs",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "metr-team",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "mlcommons",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "ms-redteam",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "op-far-general-support",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "farai.12",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "op-longview",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "metr.21",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "pebblous-scope",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "propublica-metr-arc",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "metr.18",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "resultsense-aisi",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "saferai-jobs",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "saferai.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "securebio-oaif",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "securebio.01",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "securebio-x-oaif",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "securebio.11",
+    "quote_found": false
+   },
+   {
+    "signal": "securebio.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "sff-2025",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "metr.18",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "slashdot-sb315",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "big4.09",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "ted-864574-notice",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "tnw-coefficient-ipo",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "tnw-hf-nvidia",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "hfoai.01",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "transluce-about",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "transluce.10",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "transluce-job",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ },
+ {
+  "id": "transluce-policy",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": [
+   {
+    "signal": "transluce.09",
+    "quote_found": false
+   },
+   {
+    "signal": "transluce.10",
+    "quote_found": false
+   },
+   {
+    "signal": "transluce.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "wapo-examiner-benton",
+  "verdict": "unattempted",
+  "note": "browser.open hard-failed (terminal for this turn); 0 of 27 fetched, no quote spans checked",
+  "quote_checks": []
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "row_id": "T04",
+  "from": "coefficient",
+  "to": "redwood",
+  "measure": "grant",
+  "amount": "63086000",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T11",
+  "from": "sff",
+  "to": "metr",
+  "measure": "recommendation",
+  "amount": "204000",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/sff-2024-recommendations",
+  "note": ""
+ },
+ {
+  "row_id": "T16",
+  "from": "svcf",
+  "to": "metr",
+  "measure": "daf_grant",
+  "amount": "20000",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/",
+  "note": ""
+ },
+ {
+  "row_id": "T30",
+  "from": "eu-budget",
+  "to": "transluce",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://transluce.org/2025-fundraiser",
+  "note": ""
+ },
+ {
+  "row_id": "T37",
+  "from": "sff",
+  "to": "palisade",
+  "measure": "recommendation",
+  "amount": "2079627",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/",
+  "note": ""
+ },
+ {
+  "row_id": "T41",
+  "from": "eu-budget",
+  "to": "saferai",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.safer-ai.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T46",
+  "from": "openai",
+  "to": "ukaisi",
+  "measure": "grant",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.aisi.gov.uk/grants",
+  "note": ""
+ },
+ {
+  "row_id": "T53",
+  "from": "salesforce-ventures",
+  "to": "hfoai",
+  "measure": "investment",
+  "amount": "235000000",
+  "currency": "",
+  "source_url": "https://techcrunch.com/2023/08/24/",
+  "note": ""
+ },
+ {
+  "row_id": "T60",
+  "from": "eu-budget",
+  "to": "equistamp",
+  "measure": "contract",
+  "amount": "1167484",
+  "currency": "EUR",
+  "source_url": "https://ted.europa.eu/",
+  "note": ""
+ }
+]

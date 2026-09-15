@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "techcrunch-irregular",
-  "title": "Irregular raises $80M to secure frontier AI models",
-  "publisher": "TechCrunch",
-  "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models",
+  "note": "Formerly Pattern Labs; Sequoia and Redpoint lead; $450M valuation; cited in o3, o4-mini, Claude 3.7 evaluations. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
   "published": "2025-09-17",
+  "publisher": "TechCrunch",
   "retrieved": "2026-09-14",
-  "note": "Formerly Pattern Labs; Sequoia and Redpoint lead; $450M valuation; cited in o3, o4-mini, Claude 3.7 evaluations. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "Irregular raises $80M to secure frontier AI models",
+  "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models"
 }

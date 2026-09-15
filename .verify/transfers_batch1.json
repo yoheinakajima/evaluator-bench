@@ -1,0 +1,102 @@
+[
+ {
+  "row_id": "T03",
+  "from": "coefficient",
+  "to": "far-ai",
+  "measure": "grant",
+  "amount": "59347676",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T07",
+  "from": "coefficient",
+  "to": "epoch",
+  "measure": "grant",
+  "amount": "24513611",
+  "currency": "",
+  "source_url": "https://coefficientgiving.org/",
+  "note": ""
+ },
+ {
+  "row_id": "T15",
+  "from": "founders-pledge",
+  "to": "metr",
+  "measure": "daf_grant",
+  "amount": "184000",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/",
+  "note": ""
+ },
+ {
+  "row_id": "T27",
+  "from": "audacious",
+  "to": "rand",
+  "measure": "commitment",
+  "amount": "38000000",
+  "currency": "",
+  "source_url": "https://www.rand.org/news/press/2024/10/09.html",
+  "note": ""
+ },
+ {
+  "row_id": "T36",
+  "from": "tallinn",
+  "to": "epoch",
+  "measure": "daf_grant",
+  "amount": "600000",
+  "currency": "",
+  "source_url": "https://epoch.ai/about/transparency",
+  "note": ""
+ },
+ {
+  "row_id": "T40",
+  "from": "sff",
+  "to": "saferai",
+  "measure": "recommendation",
+  "amount": "745800",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/",
+  "note": ""
+ },
+ {
+  "row_id": "T45",
+  "from": "uk-gov",
+  "to": "ukaisi",
+  "measure": "grant",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.aisi.gov.uk/about",
+  "note": ""
+ },
+ {
+  "row_id": "T52",
+  "from": "meta",
+  "to": "scale",
+  "measure": "investment",
+  "amount": "14300000000",
+  "currency": "",
+  "source_url": "https://scale.com/blog/first-independent-model-evaluator-for-the-usaisi",
+  "note": ""
+ },
+ {
+  "row_id": "T59",
+  "from": "us-gov",
+  "to": "rand",
+  "measure": "contract",
+  "amount": "488777692",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/organizations/951958142",
+  "note": ""
+ },
+ {
+  "row_id": "T63",
+  "from": "google",
+  "to": "mlcommons",
+  "measure": "grant",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://mlcommons.org/about-us/",
+  "note": ""
+ }
+]

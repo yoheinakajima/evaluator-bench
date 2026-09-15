@@ -1,12 +1,12 @@
 {
-  "id": "instrumentl-arc-990",
-  "title": "Alignment Research Center 990 report",
-  "publisher": "Instrumentl",
-  "url": "https://www.instrumentl.com/990-report/alignment-research-center",
-  "published": "2025",
-  "retrieved": "2026-09-15",
-  "note": "Reports ARC contributed $4,553,935 in grants during 2024 (single grant); secondary extraction of the e-filed 990.",
-  "source_type": "ledger",
   "audit_status": "unaudited",
-  "found_by": "deep research pass 2026-09-15"
+  "found_by": "deep research pass 2026-09-15",
+  "id": "instrumentl-arc-990",
+  "note": "Reports ARC contributed $4,553,935 in grants during 2024 (single grant); secondary extraction of the e-filed 990. [verify 2026-09-15] reachable BUT span(s) not found: metr.21 \u2014 needs curator review",
+  "published": "2025",
+  "publisher": "Instrumentl",
+  "retrieved": "2026-09-15",
+  "source_type": "ledger",
+  "title": "Alignment Research Center 990 report",
+  "url": "https://www.instrumentl.com/990-report/alignment-research-center"
 }

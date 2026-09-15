@@ -1,12 +1,12 @@
 {
+  "audit_status": "confirmed",
   "id": "far-transparency",
-  "title": "Transparency",
-  "publisher": "FAR.AI",
-  "url": "https://www.far.ai/transparency",
+  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV09",
+  "note": "Revenue from for-profit AI developers capped at 10% of annual revenue; market rates; right to publish retained; 990 TY2024 earned revenue $429K of $24.3M. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
   "published": "2026",
+  "publisher": "FAR.AI",
   "retrieved": "2026-09-14",
-  "note": "Revenue from for-profit AI developers capped at 10% of annual revenue; market rates; right to publish retained; 990 TY2024 earned revenue $429K of $24.3M.",
   "source_type": "self",
-  "audit_status": "imported",
-  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV09"
+  "title": "Transparency",
+  "url": "https://www.far.ai/transparency"
 }

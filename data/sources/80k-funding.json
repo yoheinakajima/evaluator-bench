@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "80k-funding",
-  "title": "It looks like there are some good funding opportunities in AI safety right now",
-  "publisher": "80,000 Hours",
-  "url": "https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/",
+  "note": "CAIS advises xAI, not receiving OP money; SFF grants; METR not receiving OP recently; SecureBio SFF grant. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
   "published": "2025-10-13",
+  "publisher": "80,000 Hours",
   "retrieved": "2026-09-14",
-  "note": "CAIS advises xAI, not receiving OP money; SFF grants; METR not receiving OP recently; SecureBio SFF grant. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "It looks like there are some good funding opportunities in AI safety right now",
+  "url": "https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/"
 }

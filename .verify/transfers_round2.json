@@ -1,0 +1,110 @@
+[
+ {
+  "row_id": "T16",
+  "from": "svcf",
+  "to": "metr",
+  "measure": "daf_grant",
+  "amount": "20000",
+  "currency": "",
+  "source_url": "https://projects.propublica.org/nonprofits/"
+ },
+ {
+  "row_id": "T30",
+  "from": "eu-budget",
+  "to": "transluce",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://transluce.org/2025-fundraiser"
+ },
+ {
+  "row_id": "T37",
+  "from": "sff",
+  "to": "palisade",
+  "measure": "recommendation",
+  "amount": "2079627",
+  "currency": "",
+  "source_url": "https://survivalandflourishing.fund/"
+ },
+ {
+  "row_id": "T38",
+  "from": "tallinn",
+  "to": "redwood",
+  "measure": "daf_grant",
+  "amount": "1330000",
+  "currency": "",
+  "source_url": "https://jaan.info/philanthropy/donations.csv"
+ },
+ {
+  "row_id": "T41",
+  "from": "eu-budget",
+  "to": "saferai",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.safer-ai.org/"
+ },
+ {
+  "row_id": "T42",
+  "from": "eu-budget",
+  "to": "far-ai",
+  "measure": "contract",
+  "amount": "1434080",
+  "currency": "EUR",
+  "source_url": "https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium"
+ },
+ {
+  "row_id": "T46",
+  "from": "openai",
+  "to": "ukaisi",
+  "measure": "grant",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://www.aisi.gov.uk/grants"
+ },
+ {
+  "row_id": "T47",
+  "from": "us-gov",
+  "to": "caisi",
+  "measure": "grant",
+  "amount": "10000000",
+  "currency": "",
+  "source_url": "https://ifp.org/funding-for-caisi/"
+ },
+ {
+  "row_id": "T53",
+  "from": "salesforce-ventures",
+  "to": "hfoai",
+  "measure": "investment",
+  "amount": "235000000",
+  "currency": "",
+  "source_url": "https://techcrunch.com/2023/08/24/"
+ },
+ {
+  "row_id": "T56",
+  "from": "anthropic",
+  "to": "andon",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://tooldirectory.ai/tools/andon-labs"
+ },
+ {
+  "row_id": "T60",
+  "from": "eu-budget",
+  "to": "equistamp",
+  "measure": "contract",
+  "amount": "1167484",
+  "currency": "EUR",
+  "source_url": "https://ted.europa.eu/"
+ },
+ {
+  "row_id": "T61",
+  "from": "amazon",
+  "to": "nemesys",
+  "measure": "contract",
+  "amount": "",
+  "currency": "",
+  "source_url": "https://arxiv.org/pdf/2507.06260"
+ }
+]

@@ -1,0 +1,236 @@
+[
+ {
+  "id": "op-palisade",
+  "verdict": "reachable",
+  "note": "Page loads but has been restructured: now the Coefficient Giving 'Funds' overview page, not a grants database listing. Quoted Palisade grant span absent.",
+  "quote_checks": [
+   {
+    "signal": "palisade.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "longtermwiki-far",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": []
+ },
+ {
+  "id": "dwt-sb315",
+  "verdict": "reachable",
+  "note": "DWT alert 'Illinois Enacts Frontier AI Safety Law' (SB 315) loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "techpolicy-aef1",
+  "verdict": "reachable",
+  "note": "Full TechPolicy.Press article loads; content matches cited topic (EU AI leverage / AEF-1 mentioned). No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "rand-audacious-2024",
+  "verdict": "reachable",
+  "note": "RAND press release loads; $38M to RAND and METR for Canary confirmed in text. The $17M-to-METR figure does not appear on this page.",
+  "quote_checks": [
+   {
+    "signal": "rand.10",
+    "quote_found": true
+   },
+   {
+    "signal": "metr.20",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "ifp-caisi-funding",
+  "verdict": "reachable",
+  "note": "IFP article on CAISI funding loads; content matches cited topic. The resignation quote does not appear anywhere in the fetched text.",
+  "quote_checks": [
+   {
+    "signal": "caisi.11",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "techcrunch-epoch",
+  "verdict": "reachable",
+  "note": "TechCrunch article on Epoch AI / OpenAI FrontierMath disclosure loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "crowell-sb315",
+  "verdict": "reachable",
+  "note": "Crowell client alert on Illinois SB 315 loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "aisi-grants",
+  "verdict": "reachable",
+  "note": "UK AI Security Institute grants page loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "openai-kolter-board",
+  "verdict": "reachable",
+  "note": "OpenAI announcement loads. It says Kolter will 'join' the Safety and Security Committee; the word 'chairs' does not appear \u2014 the quoted span is not on this page.",
+  "quote_checks": [
+   {
+    "signal": "grayswan.01",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "regulations-ai-aisi",
+  "verdict": "reachable",
+  "note": "Regulations.AI page on UK AI Security Institute loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "ted-864574-notice",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": []
+ },
+ {
+  "id": "unite-altman-match",
+  "verdict": "reachable",
+  "note": "Unite.AI article on Altman's embedded-evaluator pledge loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "forbes-grayswan-2024",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": [
+   {
+    "signal": "grayswan.02",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "fortune-hf-nvidia",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": [
+   {
+    "signal": "hfoai.10",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "metr-funding-2026",
+  "verdict": "reachable",
+  "note": "METR funding update loads; the $71M commitments sentence appears verbatim in the first paragraph.",
+  "quote_checks": [
+   {
+    "signal": "metr.19",
+    "quote_found": true
+   }
+  ]
+ },
+ {
+  "id": "palisade",
+  "verdict": "reachable",
+  "note": "Palisade Research homepage loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "metr-money-figure",
+  "verdict": "reachable",
+  "note": "GitHub repo page loads; content matches cited topic (METR money figure research). No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "techcrunch-irregular",
+  "verdict": "reachable",
+  "note": "TechCrunch article on Irregular's $80M raise loads; 'Formerly known as Pattern Labs' appears verbatim.",
+  "quote_checks": [
+   {
+    "signal": "irregular.01",
+    "quote_found": true
+   }
+  ]
+ },
+ {
+  "id": "far-transparency",
+  "verdict": "reachable",
+  "note": "FAR.AI transparency page loads; the 10%-of-total-annual-revenue cap sentence appears verbatim in the consulting-policy financials section.",
+  "quote_checks": [
+   {
+    "signal": "farai.10",
+    "quote_found": true
+   }
+  ]
+ },
+ {
+  "id": "newswire-irregular",
+  "verdict": "reachable",
+  "note": "Newswire press release on Irregular's $80M raise loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "apollo-about",
+  "verdict": "reachable",
+  "note": "Apollo Research about page loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "aiwiki-ukaisi",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": []
+ },
+ {
+  "id": "longtermwiki-audit",
+  "verdict": "reachable",
+  "note": "Longterm Wiki E450 'Third-Party Model Auditing' page loads with relevant content. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "averi-about",
+  "verdict": "reachable",
+  "note": "AVERI about page loads with full mission/funding/independence content. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "epoch-transparency-page",
+  "verdict": "reachable",
+  "note": "Epoch AI transparency page loads with funders and collaborations lists. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "instrumentl-arc-990",
+  "verdict": "reachable",
+  "note": "Instrumentl ARC 990 page loads but renders only a generic 'What are Form 990s?' explainer; the actual 990 figures are JS-gated and absent from the fetched text. Quoted grant figure not found.",
+  "quote_checks": [
+   {
+    "signal": "metr.21",
+    "quote_found": false
+   }
+  ]
+ },
+ {
+  "id": "cais",
+  "verdict": "reachable",
+  "note": "Center for AI Safety homepage loads; content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "coefficient-wiki",
+  "verdict": "reachable",
+  "note": "Wikipedia 'Coefficient Giving' article loads (confirms Open Philanthropy rename); content matches cited topic. No quotes to check.",
+  "quote_checks": []
+ },
+ {
+  "id": "ms-redteam",
+  "verdict": "blocked",
+  "note": "Fetch service could not retrieve the page (browser_open tool failure); not retried per runtime guidance. No content observed.",
+  "quote_checks": []
+ }
+]

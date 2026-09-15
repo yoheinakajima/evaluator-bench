@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "apollo-first-year",
-  "title": "The First Year of Apollo Research",
-  "publisher": "Apollo Research",
-  "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
+  "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2024",
+  "publisher": "Apollo Research",
   "retrieved": "2026-09-14",
-  "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "The First Year of Apollo Research",
+  "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research"
 }

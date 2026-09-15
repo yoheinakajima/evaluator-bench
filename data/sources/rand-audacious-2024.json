@@ -1,12 +1,12 @@
 {
-  "id": "rand-audacious-2024",
-  "title": "RAND AI Security Project Receives Funding Commitment Through The Audacious Project",
-  "publisher": "RAND",
-  "url": "https://www.rand.org/news/press/2024/10/09.html",
-  "published": "2024-10-09",
-  "retrieved": "2026-09-15",
-  "note": "Commitment of approximately $38 million to RAND and METR for Canary.",
-  "source_type": "self",
   "audit_status": "unaudited",
-  "found_by": "deep research pass 2026-09-15"
+  "found_by": "deep research pass 2026-09-15",
+  "id": "rand-audacious-2024",
+  "note": "Commitment of approximately $38 million to RAND and METR for Canary. [verify 2026-09-15] reachable BUT span(s) not found: metr.20 \u2014 needs curator review",
+  "published": "2024-10-09",
+  "publisher": "RAND",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "title": "RAND AI Security Project Receives Funding Commitment Through The Audacious Project",
+  "url": "https://www.rand.org/news/press/2024/10/09.html"
 }

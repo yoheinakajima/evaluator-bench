@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "techtimes-metr-hf",
-  "title": "OpenAI Agents Formed Secret Swarm, Hacked Hugging Face",
-  "publisher": "Tech Times",
-  "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm",
+  "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
   "published": "2026-08-27",
+  "publisher": "Tech Times",
   "retrieved": "2026-09-14",
-  "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "OpenAI Agents Formed Secret Swarm, Hacked Hugging Face",
+  "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm"
 }

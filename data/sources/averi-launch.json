@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "averi-launch",
-  "title": "The Launch of AVERI",
-  "publisher": "Miles Brundage (Substack)",
-  "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
+  "note": "501(c)(3); founder formerly OpenAI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-01-15",
+  "publisher": "Miles Brundage (Substack)",
   "retrieved": "2026-09-14",
-  "note": "501(c)(3); founder formerly OpenAI. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "The Launch of AVERI",
+  "url": "https://milesbrundage.substack.com/p/the-launch-of-averi"
 }

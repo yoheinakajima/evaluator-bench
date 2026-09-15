@@ -1,0 +1,13 @@
+[
+ {
+  "id": "decoder-epoch",
+  "verdict": "reachable",
+  "note": "page fetched 2026-09-15; article on OpenAI/FrontierMath funding matches citation",
+  "quote_checks": [
+   {
+    "signal": "epoch.01",
+    "quote_found": false
+   }
+  ]
+ }
+]

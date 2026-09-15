@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "alphasignal-metr-71m",
-  "title": "METR raises $71M to independently stress-test AI",
-  "publisher": "AlphaSignal",
-  "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai",
+  "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-08",
+  "publisher": "AlphaSignal",
   "retrieved": "2026-09-14",
-  "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "METR raises $71M to independently stress-test AI",
+  "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai"
 }

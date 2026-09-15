@@ -1,0 +1,301 @@
+[
+ {
+  "id": "op-palisade",
+  "url": "https://www.openphilanthropy.org/grants/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Palisade Research grants",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "palisade.11",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
+   }
+  ]
+ },
+ {
+  "id": "arxiv-frontier-auditing",
+  "url": "https://arxiv.org/abs/2601.11699",
+  "publisher": "arXiv",
+  "title": "Frontier AI Auditing: Toward Rigorous Third-Party Assessment (arXiv 2601.11699)",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "akerman-sb315",
+  "url": "https://www.akerman.com/en/perspectives/illinois-sb-315-a-state-strategy-for-enduring-national-ai-safety-standards.html",
+  "publisher": "Akerman LLP",
+  "title": "Illinois SB 315: A State Strategy for Enduring National AI Safety Standards",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "big4.09",
+    "quote": "Governor J.B. Pritzker signed SB 315 into law on July 6, 2026"
+   }
+  ]
+ },
+ {
+  "id": "sequoia-irregular",
+  "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/",
+  "publisher": "Sequoia Capital",
+  "title": "Partnering with Irregular",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "irregular.01",
+    "quote": "Formerly known as Pattern Labs"
+   }
+  ]
+ },
+ {
+  "id": "op-redwood-general-support",
+  "url": "https://www.openphilanthropy.org/grants/redwood-research-general-support/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Redwood Research General Support",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "humane-int",
+  "url": "https://www.humane-intelligence.org/",
+  "publisher": "Humane Intelligence",
+  "title": "Humane Intelligence",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "wikipedia-kolter",
+  "url": "https://en.wikipedia.org/wiki/Zico_Kolter",
+  "publisher": "Wikipedia",
+  "title": "Zico Kolter",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "grayswan.12",
+    "quote": "became chair of its safety and security committee"
+   }
+  ]
+ },
+ {
+  "id": "cnbc-scale-meta",
+  "url": "https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html",
+  "publisher": "CNBC",
+  "title": "Scale AI not winding down following Meta deal, interim CEO says",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "scale.10",
+    "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion"
+   }
+  ]
+ },
+ {
+  "id": "techtimes-metr-hf",
+  "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm",
+  "publisher": "Tech Times",
+  "title": "OpenAI Agents Formed Secret Swarm, Hacked Hugging Face",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "aef-launch",
+  "url": "https://aievaluatorforum.org/",
+  "publisher": "AI Evaluator Forum",
+  "title": "AI Evaluator Forum launch and AEF-1",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "saferai-about",
+  "url": "https://www.safer-ai.org/about",
+  "publisher": "SaferAI",
+  "title": "About",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
+   }
+  ]
+ },
+ {
+  "id": "gdm-gemini-testing",
+  "url": "https://deepmind.google/",
+  "publisher": "Google DeepMind",
+  "title": "Gemini model documentation, external testing",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "g42-framework",
+  "url": "https://www.g42.ai/resources/news/g42-publishes-its-frontier-ai-safety-framework",
+  "publisher": "G42",
+  "title": "G42 publishes its Frontier AI Safety Framework",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
+   }
+  ]
+ },
+ {
+  "id": "regulations-ai-aisi",
+  "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025",
+  "publisher": "Regulations.ai",
+  "title": "AI Security Institute (renaming)",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "aisi-alignment-60",
+  "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+  "publisher": "UK AI Security Institute",
+  "title": "Funding 60 projects to advance AI alignment research",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "hal",
+  "url": "https://hal.cs.princeton.edu/",
+  "publisher": "Princeton",
+  "title": "Holistic Agent Leaderboard",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "fortune-hf-nvidia",
+  "url": "https://fortune.com/2026/09/03/hugging-face-goes-from-a-scrappy-startup-named-after-an-emoji-to-13-billion-nvidia-acquisition/",
+  "publisher": "Fortune",
+  "title": "Hugging Face goes from a scrappy startup to $13 billion Nvidia acquisition",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "metr-regs",
+  "url": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/",
+  "publisher": "METR",
+  "title": "Frontier AI safety regulations: A reference for lab staff",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "epoch-clarify",
+  "url": "https://epoch.ai/latest/openai-and-frontiermath",
+  "publisher": "Epoch AI",
+  "title": "Clarifying the creation and use of the FrontierMath benchmark",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "epoch.01",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "techcrunch-irregular",
+  "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models",
+  "publisher": "TechCrunch",
+  "title": "Irregular raises $80M to secure frontier AI models",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "irregular.01",
+    "quote": "Formerly known as Pattern Labs"
+   }
+  ]
+ },
+ {
+  "id": "pebblous-scope",
+  "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
+  "publisher": "Pebblous",
+  "title": "What METR's OpenAI Agent Investigation Left Out",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "stackaware-sb315",
+  "url": "https://blog.stackaware.com/p/illinois-sb-315-iso-42001-internal-audit-ai-hyperscaler",
+  "publisher": "StackAware",
+  "title": "How AI hyperscalers can use ISO 42001 internal audit to comply with Illinois SB 315",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "aiwiki-ukaisi",
+  "url": "https://aiwiki.ai/wiki/uk_aisi",
+  "publisher": "AI Wiki",
+  "title": "UK AI Security Institute",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "bloomberg-nvidia-anthropic",
+  "url": "https://www.bloomberg.com/news/articles/2026-09-11/nvidia-in-talks-to-invest-up-to-10b-in-anthropic-ipo-reuters",
+  "publisher": "Bloomberg",
+  "title": "Nvidia Mulls $10 Billion Anthropic IPO Backing, Reuters Says",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "hfoai.10",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000"
+   }
+  ]
+ },
+ {
+  "id": "forbes-grayswan-2026",
+  "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
+  "publisher": "Forbes",
+  "title": "This AI Startup's Army of 15,000 Hackers",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "instrumentl-arc-990",
+  "url": "https://www.instrumentl.com/990-report/alignment-research-center",
+  "publisher": "Instrumentl",
+  "title": "Alignment Research Center 990 report",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "securebio-oaif",
+  "url": "https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding",
+  "publisher": "EA Forum (Jeff Kaufman)",
+  "title": "Thoughts on Taking OpenAI Foundation Funding",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "securebio.01",
+    "quote": "OpenAI PBC covered SecureBio's costs for the GPT 5.5 evaluation"
+   }
+  ]
+ },
+ {
+  "id": "openai-alignment-project",
+  "url": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+  "publisher": "OpenAI",
+  "title": "Advancing independent research on AI alignment",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ }
+]

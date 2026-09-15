@@ -1,0 +1,512 @@
+[
+ {
+  "evaluator": "irregular",
+  "dimension": "F",
+  "signal": "irregular.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "P",
+  "signal": "irregular.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "A",
+  "signal": "irregular.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "S",
+  "signal": "irregular.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "M",
+  "signal": "irregular.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "big4",
+  "dimension": "A",
+  "signal": "big4.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "G",
+  "signal": "caisi.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "G",
+  "signal": "caisi.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "A",
+  "signal": "caisi.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "caisi",
+  "dimension": "R",
+  "signal": "caisi.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "X",
+  "signal": "saferai.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "scale",
+  "dimension": "G",
+  "signal": "scale.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "rand",
+  "dimension": "F",
+  "signal": "rand.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "rand",
+  "dimension": "F",
+  "signal": "rand.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "F",
+  "signal": "hfoai.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "F",
+  "signal": "hfoai.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "G",
+  "signal": "hfoai.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "P",
+  "signal": "hfoai.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "S",
+  "signal": "hfoai.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "hfoai",
+  "dimension": "X",
+  "signal": "hfoai.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "redwood",
+  "dimension": "F",
+  "signal": "redwood.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "F",
+  "signal": "nemesys.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "G",
+  "signal": "nemesys.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "P",
+  "signal": "nemesys.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "A",
+  "signal": "nemesys.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "S",
+  "signal": "nemesys.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "R",
+  "signal": "nemesys.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "M",
+  "signal": "nemesys.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "nemesys",
+  "dimension": "X",
+  "signal": "nemesys.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "F",
+  "signal": "msft.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "G",
+  "signal": "msft.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "P",
+  "signal": "msft.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "A",
+  "signal": "msft.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "S",
+  "signal": "msft.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "R",
+  "signal": "msft.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "M",
+  "signal": "msft.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "X",
+  "signal": "msft.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "F",
+  "signal": "metr.14",
+  "support": "weak"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "F",
+  "signal": "metr.21",
+  "support": "weak"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "P",
+  "signal": "metr.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "F",
+  "signal": "palisade.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "P",
+  "signal": "palisade.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "F",
+  "signal": "securebio.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "F",
+  "signal": "securebio.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "F",
+  "signal": "securebio.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "G",
+  "signal": "securebio.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "A",
+  "signal": "securebio.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "S",
+  "signal": "securebio.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "X",
+  "signal": "securebio.10",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "F",
+  "signal": "equistamp.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "G",
+  "signal": "equistamp.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "P",
+  "signal": "equistamp.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "A",
+  "signal": "equistamp.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "M",
+  "signal": "equistamp.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "equistamp",
+  "dimension": "X",
+  "signal": "equistamp.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "F",
+  "signal": "euaio.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "G",
+  "signal": "euaio.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "P",
+  "signal": "euaio.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "A",
+  "signal": "euaio.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "S",
+  "signal": "euaio.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "R",
+  "signal": "euaio.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "euaio",
+  "dimension": "X",
+  "signal": "euaio.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "F",
+  "signal": "mlcommons.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "G",
+  "signal": "mlcommons.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "P",
+  "signal": "mlcommons.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "S",
+  "signal": "mlcommons.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "R",
+  "signal": "mlcommons.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "mlcommons",
+  "dimension": "X",
+  "signal": "mlcommons.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "F",
+  "signal": "farai.01",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "F",
+  "signal": "farai.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "F",
+  "signal": "farai.12",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "F",
+  "signal": "farai.14",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "G",
+  "signal": "farai.05",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "P",
+  "signal": "farai.07",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "A",
+  "signal": "farai.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "S",
+  "signal": "farai.03",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "S",
+  "signal": "farai.13",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "R",
+  "signal": "farai.04",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "M",
+  "signal": "farai.08",
+  "support": "weak"
+ },
+ {
+  "evaluator": "farai",
+  "dimension": "X",
+  "signal": "farai.09",
+  "support": "weak"
+ },
+ {
+  "evaluator": "apollo",
+  "dimension": "F",
+  "signal": "apollo.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "F",
+  "signal": "grayswan.06",
+  "support": "weak"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "G",
+  "signal": "grayswan.11",
+  "support": "weak"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "P",
+  "signal": "grayswan.02",
+  "support": "weak"
+ },
+ {
+  "evaluator": "grayswan",
+  "dimension": "M",
+  "signal": "grayswan.08",
+  "support": "weak"
+ }
+]

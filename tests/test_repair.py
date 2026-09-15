@@ -156,8 +156,9 @@ def test_superseded_rows_labeled():
 
 
 def test_watchlist_excluded_from_status_denominator():
-    """The 'lab-tied' headline stat covers the ranked population only (17/26),
-    not 17/28."""
+    """The 'lab-tied' headline stat covers the ranked population only (14/26),
+    not 14/28. Figure fell from 17 on 2026-09-15 when the imported-row
+    verification pass quarantined 23 unsupported rows."""
     from bench.ledger import exposure
     from bench.verify import LEDGER_ALIAS
     d = load.load(strict=False)
@@ -165,4 +166,4 @@ def test_watchlist_excluded_from_status_denominator():
     assert len(ranked) == 26
     ex = exposure()
     near = sum(1 for x in ex if x["id"] in ranked and any(k in ("hop0", "hop1") for k in x["buckets"]))
-    assert near == 17
+    assert near == 14

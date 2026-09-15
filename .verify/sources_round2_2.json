@@ -1,0 +1,270 @@
+[
+ {
+  "id": "audacious-project",
+  "url": "https://www.audaciousproject.org/",
+  "publisher": "TED",
+  "title": "The Audacious Project",
+  "quotes": [
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "sequoia-irregular",
+  "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/",
+  "publisher": "Sequoia Capital",
+  "title": "Partnering with Irregular",
+  "quotes": [
+   {
+    "signal": "irregular.01",
+    "quote": "Formerly known as Pattern Labs"
+   }
+  ]
+ },
+ {
+  "id": "saferai",
+  "url": "https://www.safer-ai.org/",
+  "publisher": "SaferAI",
+  "title": "SaferAI",
+  "quotes": []
+ },
+ {
+  "id": "cnbc-scale-meta",
+  "url": "https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html",
+  "publisher": "CNBC",
+  "title": "Scale AI not winding down following Meta deal, interim CEO says",
+  "quotes": [
+   {
+    "signal": "scale.10",
+    "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion"
+   }
+  ]
+ },
+ {
+  "id": "epoch-transparency",
+  "url": "https://epoch.ai/about/transparency",
+  "publisher": "Epoch AI",
+  "title": "Transparency",
+  "quotes": []
+ },
+ {
+  "id": "nist-caisi",
+  "url": "https://www.nist.gov/caisi",
+  "publisher": "NIST",
+  "title": "Center for AI Standards and Innovation",
+  "quotes": []
+ },
+ {
+  "id": "ted-864574",
+  "url": "https://ted.europa.eu/",
+  "publisher": "Tenders Electronic Daily",
+  "title": "TED 864574-2025 Technical Assistance for AI Safety",
+  "quotes": []
+ },
+ {
+  "id": "apollo-manifund",
+  "url": "https://manifund.org/apolloresearch",
+  "publisher": "Manifund",
+  "title": "Apollo Research on Manifund",
+  "quotes": [
+   {
+    "signal": "apollo.12",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+   }
+  ]
+ },
+ {
+  "id": "g42-framework",
+  "url": "https://www.g42.ai/resources/news/g42-publishes-its-frontier-ai-safety-framework",
+  "publisher": "G42",
+  "title": "G42 publishes its Frontier AI Safety Framework",
+  "quotes": [
+   {
+    "signal": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
+   }
+  ]
+ },
+ {
+  "id": "marktechpost-pace",
+  "url": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/",
+  "publisher": "MarkTechPost",
+  "title": "Anthropic's 3-Step 'Pace the Frontier' Plan",
+  "quotes": []
+ },
+ {
+  "id": "tnw-hf-nvidia",
+  "url": "https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators",
+  "publisher": "TNW",
+  "title": "Hugging Face's Open Alignment Initiative wants lab access",
+  "quotes": [
+   {
+    "signal": "hfoai.01",
+    "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn"
+   }
+  ]
+ },
+ {
+  "id": "zvi-pace",
+  "url": "https://thezvi.substack.com/p/we-must-pace-the-frontier",
+  "publisher": "Zvi Mowshowitz",
+  "title": "We Must Pace The Frontier",
+  "quotes": []
+ },
+ {
+  "id": "hal",
+  "url": "https://hal.cs.princeton.edu/",
+  "publisher": "Princeton",
+  "title": "Holistic Agent Leaderboard",
+  "quotes": []
+ },
+ {
+  "id": "metr-audacious-2024",
+  "url": "https://metr.org/blog/2024-10-09-new-support-through-the-audacious-project/",
+  "publisher": "METR",
+  "title": "New Support Through The Audacious Project",
+  "quotes": [
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "tnw-coefficient-ipo",
+  "url": "https://thenextweb.com/news/coefficient-giving-ai-safety-funding-ipo-correlation",
+  "publisher": "TNW",
+  "title": "The nonprofit that investigated OpenAI's rogue agents runs on a $36m grant",
+  "quotes": []
+ },
+ {
+  "id": "caisi-funding",
+  "url": "https://ifp.org/funding-for-caisi/",
+  "publisher": "Institute for Progress",
+  "title": "Funding for CAISI",
+  "quotes": []
+ },
+ {
+  "id": "epoch-clarify",
+  "url": "https://epoch.ai/latest/openai-and-frontiermath",
+  "publisher": "Epoch AI",
+  "title": "Clarifying the creation and use of the FrontierMath benchmark",
+  "quotes": [
+   {
+    "signal": "epoch.01",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "apollo-first-year",
+  "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
+  "publisher": "Apollo Research",
+  "title": "The First Year of Apollo Research",
+  "quotes": []
+ },
+ {
+  "id": "techmeme-hf",
+  "url": "https://www.techmeme.com/260912/p13",
+  "publisher": "Techmeme",
+  "title": "Hugging Face Open Alignment Initiative",
+  "quotes": []
+ },
+ {
+  "id": "coefficient-index",
+  "url": "https://coefficientgiving.org/grants/",
+  "publisher": "Coefficient Giving",
+  "title": "Coefficient Giving grants index",
+  "quotes": [
+   {
+    "signal": "rand.10",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
+   }
+  ]
+ },
+ {
+  "id": "stackaware-sb315",
+  "url": "https://blog.stackaware.com/p/illinois-sb-315-iso-42001-internal-audit-ai-hyperscaler",
+  "publisher": "StackAware",
+  "title": "How AI hyperscalers can use ISO 42001 internal audit to comply with Illinois SB 315",
+  "quotes": []
+ },
+ {
+  "id": "op-constellation",
+  "url": "https://www.openphilanthropy.org/grants/constellation-programmatic-activities-and-operating-expenses/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Constellation Programmatic Activities and Operating Expenses",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "transluce-manifund",
+  "url": "https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai",
+  "publisher": "Manifund",
+  "title": "Transluce: Fund Scalable Democratic Oversight of AI",
+  "quotes": []
+ },
+ {
+  "id": "kolter-bio",
+  "url": "http://zkolter.github.io/bio/",
+  "publisher": "Zico Kolter",
+  "title": "Bio",
+  "quotes": [
+   {
+    "signal": "grayswan.01",
+    "quote": "he chairs the Safety and Security Committee"
+   }
+  ]
+ },
+ {
+  "id": "forbes-grayswan-2026",
+  "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
+  "publisher": "Forbes",
+  "title": "This AI Startup's Army of 15,000 Hackers",
+  "quotes": []
+ },
+ {
+  "id": "alphasignal-metr-71m",
+  "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai",
+  "publisher": "AlphaSignal",
+  "title": "METR raises $71M to independently stress-test AI",
+  "quotes": []
+ },
+ {
+  "id": "metr-hf-investigation",
+  "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+  "publisher": "METR",
+  "title": "Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident",
+  "quotes": []
+ },
+ {
+  "id": "alignment-project-about",
+  "url": "https://alignmentproject.aisi.gov.uk/about",
+  "publisher": "UK AI Security Institute",
+  "title": "About the Alignment Project",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ },
+ {
+  "id": "openai-alignment-project",
+  "url": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+  "publisher": "OpenAI",
+  "title": "Advancing independent research on AI alignment",
+  "quotes": [
+   {
+    "signal": "ukaisi.12",
+    "quote": "including \u00a35.6m from OpenAI"
+   }
+  ]
+ }
+]

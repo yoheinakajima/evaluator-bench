@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "regulations-ai-aisi",
-  "title": "AI Security Institute (renaming)",
-  "publisher": "Regulations.ai",
-  "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025",
+  "note": "No statutory enforcement powers; voluntary testing. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-09",
+  "publisher": "Regulations.ai",
   "retrieved": "2026-09-14",
-  "note": "No statutory enforcement powers; voluntary testing. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "AI Security Institute (renaming)",
+  "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025"
 }

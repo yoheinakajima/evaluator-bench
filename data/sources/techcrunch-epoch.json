@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "techcrunch-epoch",
-  "title": "AI benchmarking organization criticized for waiting to disclose funding from OpenAI",
-  "publisher": "TechCrunch",
-  "url": "https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai",
+  "note": "Primarily Open Philanthropy funded; disclosure timing. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2025-01-19",
+  "publisher": "TechCrunch",
   "retrieved": "2026-09-14",
-  "note": "Primarily Open Philanthropy funded; disclosure timing. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "AI benchmarking organization criticized for waiting to disclose funding from OpenAI",
+  "url": "https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai"
 }

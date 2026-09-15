@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "unite-altman-match",
-  "title": "Altman Says OpenAI Will Match Anthropic's Embedded Evaluator Pledge",
-  "publisher": "Unite.AI",
-  "url": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/",
+  "note": "OpenAI commits to employee-like access for independent evaluators; METR named as example. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-09-12",
+  "publisher": "Unite.AI",
   "retrieved": "2026-09-14",
-  "note": "OpenAI commits to employee-like access for independent evaluators; METR named as example. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "Altman Says OpenAI Will Match Anthropic's Embedded Evaluator Pledge",
+  "url": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"
 }

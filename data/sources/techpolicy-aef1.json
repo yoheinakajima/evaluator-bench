@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "techpolicy-aef1",
-  "title": "The EU's Real AI Leverage Is Making Compliance the Path of Least Resistance",
-  "publisher": "TechPolicy.Press",
-  "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/",
+  "note": "AEF-1 covers independence, access depth, transparency; thin evaluator pool. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026-02-26",
+  "publisher": "TechPolicy.Press",
   "retrieved": "2026-09-14",
-  "note": "AEF-1 covers independence, access depth, transparency; thin evaluator pool. Cited from a search snippet; not re-fetched in full.",
   "source_type": "press",
-  "audit_status": "unaudited"
+  "title": "The EU's Real AI Leverage Is Making Compliance the Path of Least Resistance",
+  "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/"
 }

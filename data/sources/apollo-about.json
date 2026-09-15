@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "apollo-about",
-  "title": "About",
-  "publisher": "Apollo Research",
-  "url": "https://www.apolloresearch.ai/about",
+  "note": "Ran evaluations for all major labs; partnered with OpenAI on anti-scheming; Watcher product. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
   "published": "2026",
+  "publisher": "Apollo Research",
   "retrieved": "2026-09-14",
-  "note": "Ran evaluations for all major labs; partnered with OpenAI on anti-scheming; Watcher product. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "About",
+  "url": "https://www.apolloresearch.ai/about"
 }

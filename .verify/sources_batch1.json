@@ -1,0 +1,284 @@
+[
+ {
+  "id": "securebio-substack-detection",
+  "url": "https://securebio.substack.com/p/building-a-three-day-early-warning",
+  "publisher": "SecureBio (Substack)",
+  "title": "Building a three-day early-warning system for novel pathogens",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "securebio.12",
+    "quote": "This grant is restricted to where it may only fund our Detection work"
+   }
+  ]
+ },
+ {
+  "id": "itbb-watchdogs",
+  "url": "https://itbb.substack.com/p/who-funds-the-watchdogs",
+  "publisher": "Inside The Black Box (Substack)",
+  "title": "Who Funds the AI Safety Watchdogs",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "apollo-pbc",
+  "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+  "publisher": "Apollo Research",
+  "title": "Apollo Research is becoming a PBC",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "tooldir-andon",
+  "url": "https://tooldirectory.ai/tools/andon-labs",
+  "publisher": "tooldirectory.ai",
+  "title": "Andon Labs, agent safety evaluations",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "grayswan-seriesa",
+  "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+  "publisher": "Gray Swan",
+  "title": "Gray Swan announces Series A",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "grayswan.04",
+    "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing"
+   }
+  ]
+ },
+ {
+  "id": "rand-aef",
+  "url": "https://www.rand.org/",
+  "publisher": "RAND",
+  "title": "RAND and the AI Evaluator Forum",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "saferai",
+  "url": "https://www.safer-ai.org/",
+  "publisher": "SaferAI",
+  "title": "SaferAI",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "op-longview",
+  "url": "https://www.openphilanthropy.org/grants/longview-philanthropy-nuclear-security-grantmaking/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Longview Philanthropy grants",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "metr-donor-rule-history",
+  "url": "https://web.archive.org/web/2025*/metr.org/about",
+  "publisher": "Internet Archive",
+  "title": "METR donor rule wording over time (Wayback captures of metr.org/about and /donate)",
+  "audit_status": "imported",
+  "quotes": []
+ },
+ {
+  "id": "averi-launch",
+  "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
+  "publisher": "Miles Brundage (Substack)",
+  "title": "The Launch of AVERI",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "arxiv-access-taxonomy",
+  "url": "https://arxiv.org/abs/2601.11916",
+  "publisher": "arXiv",
+  "title": "Expanding External Access to Frontier AI Models for Dangerous Capability Evaluations (arXiv 2601.11916)",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "resultsense-aisi",
+  "url": "https://www.resultsense.com/insights/2026-09-08-openai-mandated-safety-bars-uk-aisi-enforcement-gap/",
+  "publisher": "Resultsense",
+  "title": "OpenAI asked for enforceable safety bars. Britain built the auditor and withheld the powers",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "transluce-job",
+  "url": "https://theeconomicmisfit.com/2026/04/18/governance-policy-fellow-at-transluce/",
+  "publisher": "The Economic Misfit (job listing)",
+  "title": "Governance & Policy Fellow at Transluce",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "marktechpost-pace",
+  "url": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/",
+  "publisher": "MarkTechPost",
+  "title": "Anthropic's 3-Step 'Pace the Frontier' Plan",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "ted-864574-notice",
+  "url": "https://ted.europa.eu/en/notice/-/detail/864574-2025",
+  "publisher": "Tenders Electronic Daily",
+  "title": "TED notice 864574-2025: Artificial Intelligence Act: Technical Assistance for AI Safety",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "securebio-x-oaif",
+  "url": "https://x.com/SecureBio/status/2090455180445614509",
+  "publisher": "SecureBio",
+  "title": "SecureBio on X: OpenAI Foundation grant",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "securebio.11",
+    "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M"
+   },
+   {
+    "signal": "securebio.11",
+    "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M"
+   }
+  ]
+ },
+ {
+  "id": "metr-audacious-2024",
+  "url": "https://metr.org/blog/2024-10-09-new-support-through-the-audacious-project/",
+  "publisher": "METR",
+  "title": "New Support Through The Audacious Project",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR."
+   }
+  ]
+ },
+ {
+  "id": "metr-funding-2026",
+  "url": "https://metr.org/blog/2026-08-14-funding-update/",
+  "publisher": "METR",
+  "title": "Funding update",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.19",
+    "quote": "In the last 6 months, METR raised commitments of around $71 million"
+   }
+  ]
+ },
+ {
+  "id": "evaluators-ledger",
+  "url": "https://github.com/kevinnbass/metr-money-figure/blob/main/research/evaluators.csv",
+  "publisher": "Kevin Bass (GitHub)",
+  "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+  "audit_status": "imported",
+  "quotes": [
+   {
+    "signal": "palisade.11",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
+   },
+   {
+    "signal": "apollo.12",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF"
+   }
+  ]
+ },
+ {
+  "id": "apollo-first-year",
+  "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
+  "publisher": "Apollo Research",
+  "title": "The First Year of Apollo Research",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "far-transparency",
+  "url": "https://www.far.ai/transparency",
+  "publisher": "FAR.AI",
+  "title": "Transparency",
+  "audit_status": "imported",
+  "quotes": [
+   {
+    "signal": "farai.10",
+    "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue"
+   }
+  ]
+ },
+ {
+  "id": "wapo-examiner-benton",
+  "url": "https://www.washingtonexaminer.com/policy/technology/4724950/anthropic-ceo-pitch-ai-slow-down-plan/",
+  "publisher": "Washington Examiner",
+  "title": "Anthropic CEO pitches AI slow-down plan",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "op-constellation",
+  "url": "https://www.openphilanthropy.org/grants/constellation-programmatic-activities-and-operating-expenses/",
+  "publisher": "Open Philanthropy / Coefficient Giving",
+  "title": "Constellation Programmatic Activities and Operating Expenses",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "metr.21",
+    "quote": "contributed $4,553,935 in grants during 2024"
+   }
+  ]
+ },
+ {
+  "id": "longtermwiki-audit",
+  "url": "https://www.longtermwiki.com/wiki/E450",
+  "publisher": "Longterm Wiki",
+  "title": "Third-Party Model Auditing",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "mlcommons",
+  "url": "https://mlcommons.org/",
+  "publisher": "MLCommons",
+  "title": "MLCommons AI Safety / AILuminate",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "alphasignal-metr-71m",
+  "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai",
+  "publisher": "AlphaSignal",
+  "title": "METR raises $71M to independently stress-test AI",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "cais",
+  "url": "https://safe.ai/",
+  "publisher": "CAIS",
+  "title": "Center for AI Safety",
+  "audit_status": "unaudited",
+  "quotes": []
+ },
+ {
+  "id": "saferai-jobs",
+  "url": "https://www.safer-ai.org/jobs/frontier-ai-risk-management-research-engineer",
+  "publisher": "SaferAI",
+  "title": "Frontier AI Risk Management Research Engineer",
+  "audit_status": "unaudited",
+  "quotes": [
+   {
+    "signal": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
+   }
+  ]
+ }
+]

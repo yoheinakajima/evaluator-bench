@@ -1,11 +1,11 @@
 {
+  "audit_status": "confirmed",
   "id": "grayswan-seriesa",
-  "title": "Gray Swan announces Series A",
-  "publisher": "Gray Swan",
-  "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+  "note": "$40M; Wing and Madrona; cited in 11 system cards; Cygnal, Shade, Arena products. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
   "published": "2026-05-28",
+  "publisher": "Gray Swan",
   "retrieved": "2026-09-14",
-  "note": "$40M; Wing and Madrona; cited in 11 system cards; Cygnal, Shade, Arena products. Cited from a search snippet; not re-fetched in full.",
   "source_type": "self",
-  "audit_status": "unaudited"
+  "title": "Gray Swan announces Series A",
+  "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a"
 }
