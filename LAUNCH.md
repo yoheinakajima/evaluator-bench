@@ -1,5 +1,7 @@
 # Launch checklist
 
+v0 is presented as one batch of initial research with a public correction window; corrections after that go through the contribution path and feed the first annual update. Evidence that cannot be re-derived is held, marked, and excluded from figures (PROCESS section 12); it does not move a ranking.
+
 State at v0.9: the repository builds, verifies, and tests clean; the site has 200-odd pages with navigation to every item type, a Contribute page with human and agent instructions, a Dockets page, and a Status page. What follows is what a person has to do that a build cannot.
 
 ## Before the repository is public
