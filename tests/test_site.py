@@ -36,3 +36,10 @@ def test_status_page_shows_hop0_next_to_hop01():
     html = (DIST / "status" / "index.html").read_text()
     assert 'direct inflow from a lab (hop 0)</td><td class="num">12 of 26' in html
     assert 'hop 0 or 1)</td><td class="num">17 of 26' in html
+
+def test_docket_status_is_recorded_not_computed():
+    from bench.docket import recorded_status
+    for d in (ROOT / "dockets").iterdir():
+        if d.is_dir() and (d / "proposal.json").exists():
+            assert "not installed" not in recorded_status(d.name)
+            assert (d / "validation.json").exists(), d.name
