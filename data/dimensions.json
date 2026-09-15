@@ -17,7 +17,7 @@
   "desc": "Legal form, board, and whether a conflict-of-interest policy is published.",
   "anchors": [
    "Unit or subsidiary of a lab or a lab's investor.",
-   "VC-backed for-profit with no published COI policy.",
+   "Private for-profit with no published COI policy.",
    "For-profit or PBC with a published COI policy.",
    "Nonprofit or public body with a COI policy.",
    "Nonprofit or public body, published COI policy, independent board, external review."
