@@ -1,4 +1,4 @@
-"""python -m bench {build|verify|inspect|scores|industries|timeline|paths}"""
+"""python -m bench {build|verify|inspect|scores|industries|timeline|paths|exposure}"""
 from __future__ import annotations
 import sys
 
@@ -17,6 +17,8 @@ def main(argv=None) -> int:
         t = table(d["assessments"], d["presets"][preset]["weights"])
         for eid, v in sorted(t.items(), key=lambda x: -x[1]): print(f"{v:3d}  {d['evaluators'][eid]['name']}")
         return 0
+    if cmd == "exposure":
+        from .ledger import main as m; return m(argv[1:])
     if cmd == "paths":
         from .paths import main as m; return m(argv[1:])
     if cmd == "timeline":

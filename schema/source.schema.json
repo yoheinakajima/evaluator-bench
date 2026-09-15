@@ -1,5 +1,65 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"source","type":"object",
- "required":["id","title","publisher","url","retrieved"],"additionalProperties":false,
- "properties":{"id":{"type":"string","pattern":"^[a-z0-9][a-z0-9.-]*$"},"title":{"type":"string"},"publisher":{"type":"string"},
-  "url":{"type":"string","pattern":"^https?://"},"published":{"type":"string"},"retrieved":{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},
-  "note":{"type":"string"},"archive":{"type":"string"}}}
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "source",
+ "type": "object",
+ "required": [
+  "id",
+  "title",
+  "publisher",
+  "url",
+  "retrieved"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "title": {
+   "type": "string"
+  },
+  "publisher": {
+   "type": "string"
+  },
+  "url": {
+   "type": "string",
+   "pattern": "^https?://"
+  },
+  "published": {
+   "type": "string"
+  },
+  "retrieved": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "note": {
+   "type": "string"
+  },
+  "archive": {
+   "type": "string"
+  },
+  "source_type": {
+   "enum": [
+    "filing",
+    "index",
+    "ledger",
+    "self",
+    "press"
+   ]
+  },
+  "audit_status": {
+   "enum": [
+    "imported",
+    "confirmed",
+    "differs",
+    "unverifiable"
+   ]
+  },
+  "imported_from": {
+   "type": "string"
+  },
+  "capture": {
+   "type": "string"
+  }
+ }
+}

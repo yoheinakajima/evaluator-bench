@@ -1,0 +1,12 @@
+{
+  "id": "metr-donor-rule-history",
+  "title": "METR donor rule wording over time (Wayback captures of metr.org/about and /donate)",
+  "publisher": "Internet Archive",
+  "url": "https://web.archive.org/web/2025*/metr.org/about",
+  "published": "2024-2026",
+  "retrieved": "2026-09-14",
+  "note": "No lab-money rule on the April 2024 page; a footnote about compensation for evaluations appears April 2025; 'has not accepted funding from AI companies' plus free credits language from August 2025; Sept 2025 footnote says open to donations from individual lab employees.",
+  "source_type": "ledger",
+  "audit_status": "imported",
+  "imported_from": "kevinnbass/metr-money-figure:donor_rule.csv DR01-DR12"
+}

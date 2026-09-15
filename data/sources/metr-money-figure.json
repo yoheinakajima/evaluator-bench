@@ -1,0 +1,11 @@
+{
+  "id": "metr-money-figure",
+  "title": "metr-money-figure research ledger and audits",
+  "publisher": "Kevin Bass (GitHub)",
+  "url": "https://github.com/kevinnbass/metr-money-figure",
+  "published": "2026-09-14",
+  "retrieved": "2026-09-14",
+  "note": "Third-party investigative ledger: 150 money-flow rows, 990 e-file object ids, SFF and Tallinn ledgers, DAF Schedule I rows, Wayback captures, four internal audits with per-row verdicts. Its own audit flags overclaims in the rendered figure's legend and 'Direct: $0' wording. Treated here as leads, not findings.",
+  "source_type": "ledger",
+  "audit_status": "imported"
+}

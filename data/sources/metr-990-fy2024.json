@@ -1,0 +1,12 @@
+{
+  "id": "metr-990-fy2024",
+  "title": "METR FY2024 Form 990 (EIN 99-1219864)",
+  "publisher": "ProPublica Nonprofit Explorer",
+  "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
+  "published": "2025",
+  "retrieved": "2026-09-14",
+  "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M.",
+  "source_type": "filing",
+  "audit_status": "imported",
+  "imported_from": "kevinnbass/metr-money-figure:finances.csv N01-N22"
+}

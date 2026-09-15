@@ -31,3 +31,7 @@ Written 14 Sep 2026 after the first full build. Kept so reviewers can see what t
 - Splitting bundled regimes (cybersecurity into its schemes; AI into model evals, org audits, and government testing).
 - A second coder on strength, harm class, and mechanisms, with agreement reported.
 - Anchors that separate legal form from conduct in the governance dimension.
+
+## v0.3 addendum: the money side was thin
+
+A third-party ledger (kevinnbass/metr-money-figure) showed what tier-1 evidence looks like for the funding and personnel dimensions: 990 e-file object ids, funder index snapshots with row counts, DAF Schedule I rows, Wayback captures of policy wording, and per-row audit verdicts with hashed artifacts. Against that, v0.2 scored funding from press and self-statements and had no representation of second-order exposure (funders who hold lab equity, board members whose organizations are lab contractors) or of bounded negatives. v0.3 adds the ledger, the exposure projection, and a verify gate. The scores it changed moved down, which is the direction a stricter evidence standard should push a self-reported "no lab money" claim. The same ledger's own audit also shows the other failure mode: a rendered figure that overclaims what its rows support. The rows are the product; the picture is a reading.

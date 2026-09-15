@@ -94,5 +94,19 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.09",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.",
+    "sources": [
+      "coefficient-index",
+      "metr-money-figure"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2026-09-11"
   }
 ]

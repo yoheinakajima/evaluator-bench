@@ -1,0 +1,6 @@
+row_id,evaluator,claim,searched,snapshot,source_url,source_type,audit_status,notes
+N01,metr,no grant from Coefficient Giving to METR under any name,"Coefficient grants index, 2,911 rows",2026-09-11,https://coefficientgiving.org/grants/,index,imported,searched organization_name and title for METR / Model Evaluation; only ARC (pre-spin-out) hits; imported kevinnbass/metr-money-figure:M33
+N02,metr,no METR-named grant in Good Ventures Foundation 990-PF Part XV,990-PF FY2022 to FY2025,2026-09-14,https://projects.propublica.org/nonprofits/organizations/461008520,filing,imported,imported kevinnbass/metr-money-figure:M104
+N03,metr,no METR-named grant in Schmidt Sciences 990-PF 2021 to 2024,990-PF Part XV,2026-09-14,https://projects.propublica.org/nonprofits/,filing,imported,METR names Schmidt Sciences as a supporter; timing or vehicle unresolved; imported kevinnbass/metr-money-figure:M99
+N04,metr,no METR-named grant in Pew Charitable Trusts 990 Schedule I FY2021 to FY2025,990 Schedule I,2026-09-14,https://projects.propublica.org/nonprofits/,filing,imported,imported kevinnbass/metr-money-figure:M98
+N05,metr,no METR-named grant in Packard Foundation 990-PF 2021 to 2024,990-PF Part XV,2026-09-14,https://projects.propublica.org/nonprofits/,filing,imported,imported kevinnbass/metr-money-figure:M97

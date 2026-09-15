@@ -2,16 +2,24 @@
   {
     "evaluator": "metr",
     "dimension": "F",
-    "value": 4,
-    "anchor": 4,
+    "value": 3,
+    "anchor": 3,
     "signals": [
       "metr.01",
       "metr.02",
-      "metr.03"
+      "metr.03",
+      "metr.14",
+      "metr.15",
+      "metr.16"
     ],
-    "rationale": "Anchor 4 on funding given the cited signals.",
+    "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.3",
+    "open_questions": [
+      "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
+      "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
+      "Confirm the donor-rule capture history against the Wayback Machine directly."
+    ]
   },
   {
     "evaluator": "metr",
@@ -28,14 +36,19 @@
   {
     "evaluator": "metr",
     "dimension": "P",
-    "value": 3,
-    "anchor": 3,
+    "value": 2,
+    "anchor": 2,
     "signals": [
-      "metr.09"
+      "metr.09",
+      "metr.17"
     ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "rationale": "Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.3",
+    "open_questions": [
+      "Fetch dated captures of metr.org/team to confirm current versus former roles.",
+      "Ask METR whether a recusal or cooling-off policy exists."
+    ]
   },
   {
     "evaluator": "metr",

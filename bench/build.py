@@ -85,6 +85,20 @@ def build(write: bool = True) -> dict:
         g.add_relation(o.id, ids[f"dim:{a['dimension']}"], "on", actor="build")
         values.setdefault(a["evaluator"], {})[a["dimension"]] = a["value"]
         assess_events.setdefault(a["evaluator"], []).append(created[o.id])
+    # ledger: entities, transfers, relationships, negatives (row-level provenance)
+    from .ledger import load_ledger
+    L = load_ledger()
+    for eid_, ent in L["entities"].items():
+        o = g.add_object("entity", ent, actor="curator"); ids[f"ent:{eid_}"] = o.id
+    for t in L["transfers"]:
+        rel_data = {k: v for k, v in t.items() if k not in ("from", "to")}
+        g.add_relation(ids[f"ent:{t['from']}"], ids[f"ent:{t['to']}"], "funds", rel_data, actor="curator")
+    for r in L["relationships"]:
+        rel_data = {k: v for k, v in r.items() if k not in ("subject", "object")}
+        g.add_relation(ids[f"ent:{r['subject']}"], ids[f"ent:{r['object']}"], r["role"], rel_data, actor="curator")
+    for nrow in L["negatives"]:
+        o = g.add_object("negative_evidence", nrow, actor="curator")
+        g.add_relation(o.id, ids[f"ent:{nrow['evaluator']}"], "bounds", actor="build")
     # scores (one per evaluator per preset)
     scores: dict[str, dict[str, int]] = {}
     for eid, vals in values.items():
@@ -123,6 +137,8 @@ def build(write: bool = True) -> dict:
         (DIST / "bench.json").write_text(json.dumps(bench, indent=1, ensure_ascii=False) + "\n")
         from .timeline import write as write_timeline
         rows = write_timeline(DIST)
+        from .ledger import exposure, distances
+        (DIST / "exposure.json").write_text(json.dumps({"distances": distances(L), "evaluators": exposure(L)}, indent=1))
         from .figures import write as write_figures
         write_figures(DIST, ROOT / "paper" / "figures")
         _write_site(bench, rows)
@@ -142,6 +158,8 @@ def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     for name in ("paths", "responses", "mechanisms"):
         fp = DIST / f"{name}.svg"
         html = html.replace(f"<!--__FIG_{name.upper()}__-->", fp.read_text() if fp.exists() else "")
+    ex_path = DIST / "exposure.json"
+    html = html.replace("/*__EXPOSURE_JSON__*/null", ex_path.read_text() if ex_path.exists() else "null")
     html = html.replace("/*__STAGES_JSON__*/null", json.dumps({"stages": stages_meta(), "other": NON_STAGE_KINDS}, ensure_ascii=False))
     (DIST / "index.html").write_text(html)
 

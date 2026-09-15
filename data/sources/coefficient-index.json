@@ -1,0 +1,12 @@
+{
+  "id": "coefficient-index",
+  "title": "Coefficient Giving grants index",
+  "publisher": "Coefficient Giving",
+  "url": "https://coefficientgiving.org/grants/",
+  "published": "2026-09-11",
+  "retrieved": "2026-09-14",
+  "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+  "source_type": "index",
+  "audit_status": "imported",
+  "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+}

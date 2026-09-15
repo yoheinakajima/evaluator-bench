@@ -11,3 +11,6 @@ Invariants. `python -m bench verify` enforces them; CI blocks merges that break 
 7. `graph/events.jsonl` is generated with a frozen clock and a fixed run id. It is committed. A rebuild on unchanged data must be byte-identical; CI checks this.
 8. Signals are append-only in spirit. To retract a claim, add `superseded_by` pointing at the replacing signal rather than deleting, unless the original was a curation error.
 9. The seed script `bench/seed_v0.py` is history. Edits go to `data/` directly.
+10. Money and roles are rows in `data/ledger/` before they are claims in signals. Rows carry `source_type` and `audit_status`. Rows are never summed across measures. Undisclosed amounts are counted, not valued.
+11. A "none found" is a bounded negative in `data/ledger/negatives.csv` naming the corpus, snapshot date, and source. A 4 on funding requires a confirmed negative in a filing or index (C8).
+12. `imported` rows satisfy no gate. Promotion to `confirmed` requires a re-fetch by a named person on a date, recorded in an audit file.

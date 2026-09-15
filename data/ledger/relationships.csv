@@ -1,0 +1,37 @@
+row_id,subject,role,object,start,end,source_url,source_type,retrieved,audit_status,notes
+R01,tallinn,investor,anthropic,2021,,https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems,self,2026-09-14,confirmed,Series A lead per Anthropic release
+R02,moskovitz,investor,anthropic,2021,,https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems,self,2026-09-14,confirmed,named Series A investor; stake later donated to a foundation vehicle per Forbes
+R03,macroscopic,investor,anthropic,2021,,https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems,self,2026-09-14,confirmed,named as Center for Emerging Risk Research
+R04,tallinn,observer,anthropic,,,https://metr.org/about,press,2026-09-14,imported,by his own account per Postimees interview; imported kevinnbass/metr-money-figure:ST41; verify against the interview
+R05,moskovitz,observer,anthropic,,,https://stratechery.com/,press,2026-09-14,imported,"by his own account, Stratechery Oct 2025; imported kevinnbass/metr-money-figure:ST118; verify against the interview"
+R06,moskovitz,principal,coefficient,,,https://en.wikipedia.org/wiki/Coefficient_Giving,press,2026-09-14,confirmed,board of Coefficient Giving
+R07,moskovitz,principal,good-ventures,,,https://en.wikipedia.org/wiki/Coefficient_Giving,press,2026-09-14,confirmed,
+R08,tallinn,principal,sff,,,https://survivalandflourishing.fund/,self,2026-09-14,confirmed,funder column names Tallinn
+R09,good-ventures,pays,coefficient,,,https://coefficientgiving.org/,self,2026-09-14,imported,Coefficient names Good Ventures Foundation and SVCF/NPT accounts as funding partners; imported kevinnbass/metr-money-figure:ST105
+R10,gleave,board,metr,,,https://metr.org/team/,self,2026-09-14,imported,advisor and board member; FY2024 990 lists as director; imported kevinnbass/metr-money-figure:B05
+R11,gleave,founder,far-ai,2022,,https://far.ai/,self,2026-09-14,confirmed,
+R12,far-ai,contractor,openai,2025,,https://openai.com/index/gpt-5-system-card/,self,2026-09-14,imported,GPT-5 system card: FAR.AI conducted 80 hours of red-teaming; imported kevinnbass/metr-money-figure:B17
+R13,mascorro,advisor,metr,,,https://metr.org/team/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:B08
+R14,a16z,investor,thinking-machines,2025-07,,https://techcrunch.com/2025/07/15/,press,2026-09-14,imported,a16z led the $2B seed; imported kevinnbass/metr-money-figure:M134
+R15,mascorro,principal,a16z,,,https://a16z.com/,self,2026-09-14,imported,partner; imported kevinnbass/metr-money-figure:B08
+R16,radford,advisor,metr,,,https://metr.org/team/,self,2026-09-14,imported,ex-OpenAI; advises Thinking Machines; imported kevinnbass/metr-money-figure:B07
+R17,karnofsky,advisor,metr,,2024-12,https://metr.org/team/,self,2026-09-14,imported,"former unpaid advisor, listed through Dec 2024; imported kevinnbass/metr-money-figure:B12"
+R18,karnofsky,employee,anthropic,2025,,https://www.anthropic.com/,press,2026-09-14,imported,now at Anthropic; imported kevinnbass/metr-money-figure:B12
+R19,christiano,board,metr,2023-12,2024-04,https://metr.org/team/,self,2026-09-14,imported,former; imported kevinnbass/metr-money-figure:B11
+R20,christiano,board,oaif,2026-09,,https://openai.com/index/paul-christiano-joins-openai-foundation-board/,self,2026-09-14,imported,OpenAI Foundation board; imported kevinnbass/metr-money-figure:C01
+R21,dattani,board,metr,,,https://metr.org/team/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:B06
+R22,dattani,principal,aiuc,,,https://www.aiuc.com/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:B06
+R23,mann,investor,aiuc,2025-07,,https://www.prnewswire.com/,press,2026-09-14,imported,seed investor; Anthropic co-founder; imported kevinnbass/metr-money-figure:EV22
+R24,mann,founder,anthropic,2021,,https://www.anthropic.com/,self,2026-09-14,confirmed,
+R25,sequoia,investor,openai,,,https://sequoiacap.com/,press,2026-09-14,confirmed,widely reported OpenAI backer
+R26,sequoia,investor,irregular,2025-09,,https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models,press,2026-09-14,confirmed,
+R27,kolter,principal,gray-swan,,,http://zkolter.github.io/bio/,self,2026-09-14,confirmed,"co-founder, chief scientist"
+R28,kolter,board,openai,2024-08,,https://openai.com/index/zico-kolter-joins-openais-board-of-directors/,self,2026-09-14,confirmed,chairs Safety and Security Committee
+R29,macroscopic,investor,apollo,,,https://macroscopic.org/grants,self,2026-09-14,imported,"impact investment, self-reported; imported kevinnbass/metr-money-figure:M141"
+R30,farhi,donor,metr,,,https://metr.org/about,self,2026-09-14,imported,"named among individual donors on metr.org/about (Dec 2025 capture); OpenAI technical lead; imported kevinnbass/metr-money-figure:DR12,DR13"
+R31,farhi,employee,openai,2018,,https://openai.com/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:DR13
+R32,constellation,office_host,metr,,,https://metr.org/about,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:M126
+R33,arc,parent,metr,2022,2024-04,https://metr.org/about,self,2026-09-14,confirmed,
+R34,oaif,investor,openai,,,https://openai.com/,self,2026-09-14,confirmed,foundation endowment is a stake in OpenAI Group PBC; boards largely overlap
+R35,openai,pays,aisf,2023,,https://far.ai/news/30m-multi-funder-support,self,2026-09-14,confirmed,AI Safety Fund is supported by the Frontier Model Forum members
+R36,anthropic,pays,aisf,2023,,https://far.ai/news/30m-multi-funder-support,self,2026-09-14,confirmed,as above

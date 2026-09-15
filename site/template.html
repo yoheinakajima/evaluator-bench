@@ -379,6 +379,8 @@
 
 <script>
 const BENCH = /*__BENCH_JSON__*/null;
+const EXPOSURE = /*__EXPOSURE_JSON__*/null;
+const LEDGER_ID = {metr:"metr",rand:"rand",farai:"far-ai",redwood:"redwood",irregular:"irregular",grayswan:"gray-swan",securebio:"securebio",apollo:"apollo",epoch:"epoch",palisade:"palisade"};
 const DIMS = BENCH.dimensions.map(d=>({k:d.key,label:d.label,desc:d.desc,anchors:d.anchors}));
 const PRESETS = Object.fromEntries(Object.entries(BENCH.presets).map(([k,v])=>[k,v.weights]));
 const TYPES = BENCH.types;
@@ -497,12 +499,14 @@ function detail(e){
       <div class="ev ${sigs.length?"":"for"}"><ul>${sigs.map(x=>`<li class="${x.direction}" style="--c:${x.direction==="for"?"var(--teal)":"var(--ox)"}"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${x.direction==="for"?"var(--teal)":"var(--ox)"};position:absolute;left:0;top:8px"></span>${esc(x.claim)}<span class="gid">${esc(x.graph_id)}</span>${srcLine(x)}</li>`).join("")}</ul></div>
     </div>`;
   }).join("");
+  const ex = EXPOSURE && EXPOSURE.evaluators ? EXPOSURE.evaluators.find(x=>x.id===LEDGER_ID[e.id]) : null;
+  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move" style="margin-top:10px"><b>Traced money and ties.</b> ${ex.inflow_rows} inflow rows (${ex.confirmed_rows} confirmed, rest imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":"hop "+k.slice(3)}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Bounded negatives on file: "+ex.negatives.length+".":""} Hop 0 is a lab; hop 1 a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. Amounts are summed only within one measure and one hop. <a href="${REPO}data/ledger/">Ledger</a>.</div>` : "";
   const dataLinks = `<a href="${REPO}data/evaluators/${e.id}.json">evaluator</a>, <a href="${REPO}data/signals/${e.id}.json">signals</a>, <a href="${REPO}data/assessments/${e.id}.json">assessments</a>, <a href="${REPO}graph/events.jsonl">event log</a>`;
   return `<div class="detail-grid">
     <div>
       <div class="meta">Confidence <span class="conf ${e.confidence}">${e.confidence}</span><span class="gid">${esc(e.graph_id)}</span></div>
       <p class="summary">${esc(e.summary)}</p>
-      <div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>
+      <div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>${money}
       <div class="prov">Range across presets: ${rangeOf(e)}. Weakest dimension: ${floorOf(e)}. Scores by preset: ${Object.entries(e.scores).map(([k,v])=>`${esc(BENCH.presets[k].label)} ${v}`).join("; ")}. Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
     </div>
     <div>${blocks}</div>

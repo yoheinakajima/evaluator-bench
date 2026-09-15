@@ -1,0 +1,44 @@
+id,name,kind,notes
+metr,METR,evaluator,
+arc,Alignment Research Center,intermediary,METR's parent until the Apr 2024 spin-out
+coefficient,Coefficient Giving (formerly Open Philanthropy),funder,recommends grants; paid by Good Ventures Foundation and funding partners
+good-ventures,Good Ventures Foundation,funder,Moskovitz and Tuna foundation
+sff,Survival and Flourishing Fund,funder,S-process recommendations; principal funder Jaan Tallinn
+tallinn,Jaan Tallinn,person,
+moskovitz,Dustin Moskovitz,person,
+longview,Longview Philanthropy,intermediary,pooled fund; regrants
+audacious,The Audacious Project (TED),funder,pooled multi-year commitments
+rand,RAND Corporation,evaluator,Canary joint project with METR
+far-ai,FAR.AI,evaluator,
+redwood,Redwood Research,evaluator,
+constellation,Constellation Research Center,intermediary,Berkeley office METR works from
+vanguard-charitable,Vanguard Charitable,daf,
+founders-pledge,Founders Pledge,daf,
+svcf,Silicon Valley Community Foundation,daf,
+anthropic,Anthropic,lab,
+openai,OpenAI,lab,
+thinking-machines,Thinking Machines Lab,lab,
+sequoia,Sequoia Capital,investor,
+redpoint,Redpoint Ventures,investor,
+irregular,Irregular (formerly Pattern Labs),evaluator,
+gray-swan,Gray Swan,evaluator,
+wing,Wing Venture Capital,investor,
+madrona,Madrona,investor,
+oaif,OpenAI Foundation,funder,endowment is a stake in OpenAI Group PBC
+securebio,SecureBio,evaluator,
+aisf,AI Safety Fund (Frontier Model Forum),funder,pooled fund financed by frontier labs
+macroscopic,Macroscopic Ventures (formerly Center for Emerging Risk Research),investor,Anthropic Series A and B investor; grants and impact investments
+apollo,Apollo Research,evaluator,
+epoch,Epoch AI,evaluator,
+palisade,Palisade Research,evaluator,
+a16z,Andreessen Horowitz,investor,
+aiuc,Artificial Intelligence Underwriting Company,intermediary,insurance-backed certification
+gleave,Adam Gleave,person,FAR.AI founder
+mascorro,Marco Mascorro,person,a16z partner
+radford,Alec Radford,person,ex-OpenAI
+karnofsky,Holden Karnofsky,person,
+christiano,Paul Christiano,person,
+dattani,Rajiv Dattani,person,
+mann,Ben Mann,person,Anthropic co-founder
+kolter,Zico Kolter,person,Gray Swan co-founder and chief scientist
+farhi,David Farhi,person,OpenAI technical lead

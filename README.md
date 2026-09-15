@@ -33,6 +33,7 @@ python -m bench inspect metr  # provenance chain for one evaluator, optionally -
 python -m bench industries    # cross-industry lifecycle table: trigger-to-rule lags
 python -m bench timeline      # stage ladder (Figure 1); build writes dist/timeline.svg
 python -m bench paths         # path signatures, nearest analogues to AI, trigger-response strength, mechanisms
+python -m bench exposure      # ledger check and inflows by hop distance from a lab, per evaluator
 ```
 
 ## The rubric
@@ -40,6 +41,10 @@ python -m bench paths         # path signatures, nearest analogues to AI, trigge
 Eight dimensions, each 0 to 4 with written anchors in `data/dimensions.json`: funding, governance, personnel, access depth, scope control, publication rights, method transparency, product conflicts. Presets in `data/presets.json` weight them for lab procurement, regulator selection, or public trust. The site lets a reader move the weights and watch the ranking change.
 
 The rubric draws on the AI Evaluator Forum's AEF-1 operating conditions, the auditor-independence rules Illinois SB 315 imports from financial audit, and the Charnock et al. access taxonomy. Two dimensions the field tends to skip are included: who owns the evaluator, and whether it sells remediation to the companies it grades.
+
+## Ledger and exposure
+
+Funding, governance, and personnel claims rest on `data/ledger/`: one transfer or role per row, source type and audit status on every row, bounded "none found" rows with the corpus and snapshot date. `python -m bench exposure` reports each evaluator's inflows by measure and by hop distance from a frontier lab, and lists board, advisor, donor, and investor ties within two hops. The process is in `paper/PROCESS.md`; open questions in `paper/OPEN-QUESTIONS.md`.
 
 ## What a score is and is not
 

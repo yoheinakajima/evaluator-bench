@@ -160,5 +160,62 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "metr.14",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "The no-lab-money rule is recent and its wording has moved: absent from the April 2024 page, a compensation footnote in April 2025, 'has not accepted funding from AI companies' with free-credit language from August 2025, and a September 2025 footnote that donations from individual lab employees are accepted. An OpenAI technical lead is named among individual donors.",
+    "sources": [
+      "metr-donor-rule-history"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2025-12"
+  },
+  {
+    "id": "metr.15",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.",
+    "sources": [
+      "coefficient-index",
+      "metr-990-fy2024",
+      "metr-money-figure"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "metr.16",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Bounded negatives on file: no METR-named grant in Coefficient's 2,911-row index (snapshot 2026-09-11) or in the Good Ventures, Schmidt Sciences, Pew, and Packard filings checked; all imported and awaiting re-derivation.",
+    "sources": [
+      "coefficient-index",
+      "metr-money-figure"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "metr.17",
+    "evaluator": "metr",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Board and advisors carry lab ties one or two steps out: a director who founded FAR.AI, which is paid by OpenAI for red-teaming; an advisor who is an a16z partner, the firm that led Thinking Machines' seed; an ex-OpenAI advisor who advises Thinking Machines; a director who leads an insurance-certification startup seeded by an Anthropic co-founder. Former advisors moved to Anthropic and to the OpenAI Foundation board.",
+    "sources": [
+      "metr-team",
+      "metr-990-fy2024",
+      "metr-money-figure"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2026-09-14"
   }
 ]

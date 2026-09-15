@@ -57,6 +57,18 @@ def run(data: dict | None = None) -> list[str]:
         dirs = {sig[s]["direction"] for s in a.get("signals", []) if s in sig}
         if a["value"] == 4 and "for" not in dirs: errs.append(f"C6 assessment {(a['evaluator'],a['dimension'])}: value 4 without a 'for' signal")
         if a["value"] == 0 and "against" not in dirs: errs.append(f"C6 assessment {(a['evaluator'],a['dimension'])}: value 0 without an 'against' signal")
+    # C7: ledger integrity
+    try:
+        from .ledger import load_ledger, validate as lvalidate
+        L = load_ledger(); errs += lvalidate(L)
+        neg_ok = {n["evaluator"] for n in L["negatives"] if n["source_type"] in ("filing", "index") and n["audit_status"] == "confirmed"}
+        in_ledger = {e for e, x in L["entities"].items() if x["kind"] == "evaluator"}
+    except Exception as ex:  # pragma: no cover
+        errs.append(f"C7 ledger failed to load: {ex}"); neg_ok = set(); in_ledger = set()
+    # C8: a 4 on funding needs a confirmed bounded negative in a primary filing or index
+    for a in ass:
+        if a["dimension"] == "F" and a["value"] == 4 and a["evaluator"] in in_ledger and a["evaluator"] not in neg_ok:
+            errs.append(f"C8 assessment ({a['evaluator']}, F): value 4 requires a confirmed negative-evidence row in data/ledger/negatives.csv")
     return errs
 
 def main(argv=None) -> int:

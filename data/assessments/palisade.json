@@ -2,14 +2,18 @@
   {
     "evaluator": "palisade",
     "dimension": "F",
-    "value": 4,
-    "anchor": 4,
+    "value": 3,
+    "anchor": 3,
     "signals": [
-      "palisade.01"
+      "palisade.01",
+      "palisade.09"
     ],
-    "rationale": "Anchor 4 on funding given the cited signals.",
+    "rationale": "Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.3",
+    "open_questions": [
+      "Check Palisade's Form 990 Schedule of contributors and any lab-money policy statement."
+    ]
   },
   {
     "evaluator": "palisade",

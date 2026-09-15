@@ -1,0 +1,417 @@
+{
+ "distances": {
+  "openai": 0,
+  "thinking-machines": 0,
+  "anthropic": 0,
+  "tallinn": 1,
+  "moskovitz": 1,
+  "macroscopic": 1,
+  "far-ai": 1,
+  "a16z": 1,
+  "karnofsky": 1,
+  "mann": 1,
+  "sequoia": 1,
+  "kolter": 1,
+  "farhi": 1,
+  "oaif": 1,
+  "metr": 1,
+  "coefficient": 2,
+  "good-ventures": 2,
+  "sff": 2,
+  "longview": 3,
+  "rand": 3,
+  "redwood": 3,
+  "constellation": 3,
+  "irregular": 1,
+  "gray-swan": 1,
+  "securebio": 1,
+  "aisf": 1,
+  "apollo": 2,
+  "epoch": 3,
+  "palisade": 3,
+  "aiuc": 2,
+  "gleave": 2,
+  "mascorro": 2,
+  "christiano": 2,
+  "dattani": 2,
+  "arc": 3
+ },
+ "evaluators": [
+  {
+   "id": "metr",
+   "name": "METR",
+   "inflow_rows": 9,
+   "buckets": {
+    "hop0": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "in_kind": 400000.0
+     },
+     "sources": [
+      "openai"
+     ]
+    },
+    "hop2": {
+     "rows": 2,
+     "undisclosed": 0,
+     "by_measure": {
+      "recommendation": 752000.0
+     },
+     "sources": [
+      "sff"
+     ]
+    },
+    "hop3": {
+     "rows": 2,
+     "undisclosed": 0,
+     "by_measure": {
+      "transfer": 4553935.0,
+      "grant": 220000.0
+     },
+     "sources": [
+      "arc",
+      "longview"
+     ]
+    },
+    "unattributed": {
+     "rows": 4,
+     "undisclosed": 0,
+     "by_measure": {
+      "daf_grant": 4204000.0,
+      "commitment": 17000000.0
+     },
+     "sources": [
+      "audacious",
+      "founders-pledge",
+      "svcf",
+      "vanguard-charitable"
+     ]
+    }
+   },
+   "lab_tied_seats": [
+    {
+     "person": "gleave",
+     "role": "board",
+     "via": "Adam Gleave",
+     "distance": 2,
+     "status": "imported"
+    },
+    {
+     "person": "mascorro",
+     "role": "advisor",
+     "via": "Marco Mascorro",
+     "distance": 2,
+     "status": "imported"
+    },
+    {
+     "person": "karnofsky",
+     "role": "advisor (former)",
+     "via": "Holden Karnofsky",
+     "distance": 1,
+     "status": "imported"
+    },
+    {
+     "person": "christiano",
+     "role": "board (former)",
+     "via": "Paul Christiano",
+     "distance": 2,
+     "status": "imported"
+    },
+    {
+     "person": "dattani",
+     "role": "board",
+     "via": "Rajiv Dattani",
+     "distance": 2,
+     "status": "imported"
+    },
+    {
+     "person": "farhi",
+     "role": "donor",
+     "via": "David Farhi",
+     "distance": 1,
+     "status": "imported"
+    }
+   ],
+   "negatives": [
+    {
+     "claim": "no grant from Coefficient Giving to METR under any name",
+     "searched": "Coefficient grants index, 2,911 rows",
+     "snapshot": "2026-09-11",
+     "status": "imported"
+    },
+    {
+     "claim": "no METR-named grant in Good Ventures Foundation 990-PF Part XV",
+     "searched": "990-PF FY2022 to FY2025",
+     "snapshot": "2026-09-14",
+     "status": "imported"
+    },
+    {
+     "claim": "no METR-named grant in Schmidt Sciences 990-PF 2021 to 2024",
+     "searched": "990-PF Part XV",
+     "snapshot": "2026-09-14",
+     "status": "imported"
+    },
+    {
+     "claim": "no METR-named grant in Pew Charitable Trusts 990 Schedule I FY2021 to FY2025",
+     "searched": "990 Schedule I",
+     "snapshot": "2026-09-14",
+     "status": "imported"
+    },
+    {
+     "claim": "no METR-named grant in Packard Foundation 990-PF 2021 to 2024",
+     "searched": "990-PF Part XV",
+     "snapshot": "2026-09-14",
+     "status": "imported"
+    }
+   ],
+   "confirmed_rows": 1
+  },
+  {
+   "id": "rand",
+   "name": "RAND Corporation",
+   "inflow_rows": 2,
+   "buckets": {
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 10000000.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    },
+    "unattributed": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "commitment": 38000000.0
+     },
+     "sources": [
+      "audacious"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 0
+  },
+  {
+   "id": "far-ai",
+   "name": "FAR.AI",
+   "inflow_rows": 2,
+   "buckets": {
+    "hop1": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "aisf"
+     ]
+    },
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 59347676.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 1
+  },
+  {
+   "id": "redwood",
+   "name": "Redwood Research",
+   "inflow_rows": 1,
+   "buckets": {
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 63086000.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 0
+  },
+  {
+   "id": "irregular",
+   "name": "Irregular (formerly Pattern Labs)",
+   "inflow_rows": 3,
+   "buckets": {
+    "hop0": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "openai"
+     ]
+    },
+    "hop1": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "investment": 80000000.0
+     },
+     "sources": [
+      "sequoia"
+     ]
+    },
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 6799999.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [
+    {
+     "person": "sequoia",
+     "role": "investor",
+     "via": "Sequoia Capital",
+     "distance": 1,
+     "status": "confirmed"
+    }
+   ],
+   "negatives": [],
+   "confirmed_rows": 2
+  },
+  {
+   "id": "gray-swan",
+   "name": "Gray Swan",
+   "inflow_rows": 2,
+   "buckets": {
+    "hop0": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "anthropic"
+     ]
+    },
+    "unattributed": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "investment": 40000000.0
+     },
+     "sources": [
+      "wing"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 2
+  },
+  {
+   "id": "securebio",
+   "name": "SecureBio",
+   "inflow_rows": 2,
+   "buckets": {
+    "hop0": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "openai"
+     ]
+    },
+    "hop1": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "oaif"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 2
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo Research",
+   "inflow_rows": 1,
+   "buckets": {
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 4410180.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [
+    {
+     "person": "macroscopic",
+     "role": "investor",
+     "via": "Macroscopic Ventures (formerly Center for Emerging Risk Research)",
+     "distance": 1,
+     "status": "imported"
+    }
+   ],
+   "negatives": [],
+   "confirmed_rows": 0
+  },
+  {
+   "id": "epoch",
+   "name": "Epoch AI",
+   "inflow_rows": 1,
+   "buckets": {
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 24513611.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 0
+  },
+  {
+   "id": "palisade",
+   "name": "Palisade Research",
+   "inflow_rows": 1,
+   "buckets": {
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 3803463.0
+     },
+     "sources": [
+      "coefficient"
+     ]
+    }
+   },
+   "lab_tied_seats": [],
+   "negatives": [],
+   "confirmed_rows": 0
+  }
+ ]
+}
