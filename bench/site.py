@@ -74,7 +74,8 @@ GRAPH_CSS = "\n  .card table.tbl{display:block;overflow-x:auto;max-width:100%}\n
 def layout(title: str, body: str, depth: int, active: str = "") -> str:
     pre = "../" * depth
     nav = [("index.html", "Home", "home"), ("evaluators/index.html", "Evaluators", "evaluators"), ("entities/index.html", "Entities", "entities"),
-           ("regimes/index.html", "Regimes", "regimes"), ("sources/index.html", "Sources", "sources")]
+           ("regimes/index.html", "Regimes", "regimes"), ("sources/index.html", "Sources", "sources"), ("dockets/index.html", "Dockets", "dockets"),
+           ("status/index.html", "Status", "status"), ("contribute/index.html", "Contribute", "contribute")]
     links = "".join(f'<a href="{pre}{h}"{" style=\"color:var(--ink)\"" if key == active else ""}>{t}</a>' for h, t, key in nav)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}: Evaluator Bench</title>
@@ -242,6 +243,77 @@ def sources_index(bench: dict, C: dict) -> str:
     <div class="card"><table class="tbl"><tr><th>Source</th><th>Publisher</th><th>Published</th><th>Tier</th><th>Audit</th><th>Signals</th></tr>{''.join(rows)}</table></div>"""
     return layout("Sources", body, 1, "sources")
 
+
+# ---------------------------------------------------------------- dockets, status, contribute
+AGENT_PROMPT = "Open https://github.com/yoheinakajima/evaluator-bench and read AGENTS.md. Choose one recipe (add evidence about an evaluator, confirm an imported ledger row, or draft a docket). Fetch every source yourself in this run, copy quoted spans exactly, run python -m bench verify && python -m bench build && pytest -q, commit the regenerated graph/ and dist/, and open a pull request using the template. Do not change scores, anchors, or the verifier. If you cannot complete a recipe without guessing, stop and report what is missing."
+
+def dockets_index(C: dict) -> str:
+    import subprocess
+    rows = []
+    for d in sorted((ROOT / "dockets").iterdir()):
+        if not d.is_dir() or not (d / "proposal.json").exists(): continue
+        p = json.loads((d / "proposal.json").read_text()); cert = ROOT / "data" / "certificates" / f"{d.name}.json"
+        status = "validated; digests pending"
+        try:
+            from epistemedia.research_kit import validate_proposal
+            errs = validate_proposal(p).get("errors", []); other = [e for e in errs if "artifact digest" not in e and "ready-for-review" not in e]
+            status = ("validated; digests pending" if not other else f"{len(other)} validation error(s)") if errs else "valid"
+        except ImportError: status = "not validated here (epistemedia not installed)"
+        c = json.loads(cert.read_text()) if cert.exists() else None
+        rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>{("<span class=\"gid\" style=\"color:var(--teal);border-color:var(--teal)\">" + esc(c["verdict"]) + ", " + esc(c["reviewer"]["kind"]) + " v0</span>") if c else "none"}</td><td>not submitted</td></tr>')
+    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is not a finding. It becomes one only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and review there by someone else. Certificates shown here are manual v0: the operator read the spans against the sources and said yes; they are unsigned and carry no credit on Epistemedia.</p></div>
+    <div class="card"><table class="tbl"><tr><th>Question</th><th>Sources</th><th>Spans</th><th>Results</th><th>Validation</th><th>Certificate</th><th>Epistemedia</th></tr>{''.join(rows)}</table>
+    <p style="font-size:13px;color:var(--muted);margin-top:8px">Build and validate: <code>python -m bench docket build &lt;slug&gt; &amp;&amp; python -m bench docket validate &lt;slug&gt;</code>. Certificate format and the path to signed machine verification: <a href="{REPO}paper/CERTIFICATION.md">paper/CERTIFICATION.md</a>.</p></div>"""
+    return layout("Dockets", body, 1, "dockets")
+
+def status_index(bench: dict, C: dict) -> str:
+    import subprocess
+    L = C["L"]; d = load_data_counts(bench)
+    try: commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    except Exception: commit = "unknown"
+    tr = L["transfers"]; conf = sum(1 for t in tr if t["audit_status"] == "confirmed"); imp = sum(1 for t in tr if t["audit_status"] == "imported")
+    srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
+    ex = C["ex"].values(); near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
+    quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
+    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])} at commit {esc(commit)}.</p></div>
+    <div class="cols">
+    <div class="card"><h3>Coverage</h3><table class="tbl">
+      <tr><td>Evaluators</td><td class="num">{len(bench['evaluators'])}</td></tr><tr><td>Signals</td><td class="num">{d['signals']}</td></tr><tr><td>Signals with an exact quote</td><td class="num">{quotes}</td></tr>
+      <tr><td>Sources</td><td class="num">{len(bench['sources'])} ({sconf} confirmed, {simp} imported)</td></tr>
+      <tr><td>Ledger transfers</td><td class="num">{len(tr)} ({conf} confirmed, {imp} imported)</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Bounded negatives</td><td class="num">{len(L['negatives'])}</td></tr>
+      <tr><td>Entities</td><td class="num">{len(L['entities'])}</td></tr><tr><td>Regimes</td><td class="num">{len(C['regs'])}</td></tr></table></div>
+    <div class="card"><h3>Exposure</h3><table class="tbl">
+      <tr><td>Evaluators with an inflow from a lab or a lab-tied party</td><td class="num">{near} of {len(list(C['ex']))}</td></tr>
+      <tr><td>Funding sources with a second hop traced</td><td class="num">{traced} of {srcn}</td></tr></table>
+      <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. Scores are readings of the public record at the build date, not endorsements.</p></div></div>
+    <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Right-of-reply packets sent to evaluators whose scores moved are in <a href="{REPO}outreach/">outreach/</a>; replies are filed as signals.</p>
+    <h3 style="margin-top:14px">Data</h3><p style="font-size:13.5px"><a href="../bench.json">bench.json</a> (evaluators, assessments, signals, sources), <a href="../exposure.json">exposure.json</a>, <a href="../timeline.json">timeline.json</a>, <a href="{REPO}data/ledger/">ledger CSVs</a>, <a href="{REPO}graph/events.jsonl">event log</a>. Code Apache-2.0; data CC BY 4.0. Disclosure: <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>"""
+    return layout("Status", body, 1, "status")
+
+def load_data_counts(bench: dict) -> dict:
+    return {"signals": sum(len(e["signals"]) for e in bench["evaluators"])}
+
+def contribute_index() -> str:
+    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Contribute</h1><p class="lead">Scores here move only when evidence moves. A contribution is a source, a signal with an exact quote, a ledger row, a confirmed re-derivation, or a docket. Nobody edits a score directly, including the maintainers.</p></div>
+    <div class="cols"><div>
+    <div class="card"><h3>If you are a person</h3><ul>
+      <li><b>Ten minutes.</b> Open any evaluator page, follow a source link, and check that the quoted span is there. If it is not, open an issue with the signal id.</li>
+      <li><b>An hour.</b> Confirm an imported ledger row: open its source, compare the figure, set <code>audit_status</code> to confirmed or differs, add a line to the audit file, open a pull request.</li>
+      <li><b>An afternoon.</b> Add evidence: a source you fetched yourself, a signal with a quote under 120 characters copied exactly, and if it changes an anchor, the new rationale.</li>
+      <li><b>If you work at an evaluator or a lab.</b> You are welcome to contribute; say so in the pull request. Evaluators can publish their contract terms and the relevant dimensions move on their own. Right-of-reply packets for organizations whose scores changed are in <a href="{REPO}outreach/">outreach/</a>.</li></ul>
+      <p style="font-size:13.5px;margin-top:10px">Full recipes and rules of evidence: <a href="{REPO}AGENTS.md">AGENTS.md</a>, <a href="{REPO}CONTRIBUTING.md">CONTRIBUTING.md</a>, <a href="{REPO}CONTRACT.md">CONTRACT.md</a>.</p></div>
+    <div class="card"><h3>What happens to a pull request</h3><ul>
+      <li>CI runs the verifier (the CONTRACT), rebuilds the graph and site, checks the committed event log matches a clean build, and runs the tests.</li>
+      <li>A machine review re-fetches every source the PR cites, checks that each quoted span appears verbatim, asks a model whether each claim is supported, qualified, or unsupported, and flags any assessment change with no new signal on that dimension. The report is posted on the PR.</li>
+      <li>A maintainer reads the report and merges or asks for changes. Merged evidence appears on the site at the next build and in the next annual update paper.</li></ul></div></div>
+    <div>
+    <div class="card"><h3>If you are pointing an agent here</h3><p style="font-size:13.5px">Copy this instruction to a coding agent with repository access:</p>
+      <blockquote style="border-left:3px solid var(--teal);margin:8px 0;padding:8px 12px;font-size:13.5px;background:var(--paper)">{esc(AGENT_PROMPT)}</blockquote>
+      <p style="font-size:13.5px">The agent must fetch sources itself, never sum across money measures, never turn a bounded absence into zero, name public roles only, and assert no motive. Its pull request is a queue item, not accepted evidence, until the checks and a maintainer pass it.</p></div>
+    <div class="card"><h3>Dockets and certification</h3><p style="font-size:13.5px">Contestable claims can be drafted as Epistemedia dockets from Bench evidence (<code>bench docket build</code>), validated with Epistemedia's own validator, and submitted through <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a>. A reviewed docket comes back as the strongest source a signal can cite and carries a certificate. See <a href="../dockets/index.html">Dockets</a> and <a href="{REPO}paper/CERTIFICATION.md">the certification plan</a>.</p></div>
+    <div class="card"><h3>What we will not accept</h3><p style="font-size:13.5px">Private communications, screenshots of paywalled pages, claims about a person's intent, non-public individuals, score edits without evidence, and deletions of rows (supersede them instead).</p></div></div></div>"""
+    return layout("Contribute", body, 1, "contribute")
+
 # ---------------------------------------------------------------- driver
 def render_all(bench: dict) -> dict:
     C = _ctx(bench)
@@ -260,4 +332,7 @@ def render_all(bench: dict) -> dict:
     write(DIST / "entities" / "index.html", entities_index(C))
     write(DIST / "regimes" / "index.html", regimes_index(C))
     write(DIST / "sources" / "index.html", sources_index(bench, C))
+    write(DIST / "dockets" / "index.html", dockets_index(C))
+    write(DIST / "status" / "index.html", status_index(bench, C))
+    write(DIST / "contribute" / "index.html", contribute_index())
     return {"pages": n + 4}

@@ -1,5 +1,7 @@
 # Evaluator Bench
 
+Status: v0.9, pre-launch. See `LAUNCH.md` for what a person still has to do before and after the first push.
+
 An evidence-linked, event-sourced directory of 28 third-party evaluators for frontier AI, with an independence score you can take apart and a row-level ledger of who pays whom.
 
 Site: `dist/index.html` (GitHub Pages from `dist/`). Data: `data/`. Log: `graph/events.jsonl`.
@@ -39,6 +41,7 @@ python -m bench docket build metr-lab-money   # Bench draft -> Epistemedia propo
 python -m bench certificate verify metr-lab-money   # check a certificate still binds its proposal bytes
 python -m bench review --base origin/main     # machine review of a PR: re-fetch sources, check quotes, judge support (CI)
 python -m bench changelog --since v0.1        # what changed between two revisions (input to the annual paper)
+python -m bench outreach metr transluce       # right-of-reply packets for evaluators whose scores moved
 ```
 
 ## The rubric
