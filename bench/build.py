@@ -192,8 +192,9 @@ def build(write: bool = True) -> dict:
 
 def fill_placeholders(html: str, bench: dict, timeline_rows: list | None = None) -> str:
     """Replace every data placeholder a template may carry. Shared by index.html and the fragment pages."""
-    from .site import release_banner, evidence_summary
+    from .site import release_banner, evidence_summary, event_digest
     html = html.replace("<!--__RELEASE_BANNER__-->", release_banner(""))
+    html = html.replace("<!--__EVENT_DIGEST__-->", event_digest())
     html = html.replace("<!--__EVIDENCE_SUMMARY__-->", evidence_summary(bench))
     html = html.replace("/*__BENCH_JSON__*/null", json.dumps(bench, ensure_ascii=False))
     svg_path = DIST / "timeline.svg"

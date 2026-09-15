@@ -103,3 +103,11 @@ def test_status_page_buckets_close():
         shown = {st: n for n, st in re.findall(r"(\d+) (\w+)", m.group(2))}
         for st, n in counts.items():
             assert shown.get(st) == str(n), f"{label}: bucket {st} shows {shown.get(st)}, expected {n}"
+
+def test_every_page_carries_build_digest():
+    from bench.site import event_digest
+    d = event_digest()
+    assert len(d) == 12 and d != "unknown"
+    for p in list((DIST).rglob("*.html")):
+        html = p.read_text()
+        assert d in html, f"build digest missing from {p.relative_to(DIST)}"
