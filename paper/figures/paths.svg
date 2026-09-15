@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 886 610" width="886" height="610" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
-<rect width="886" height="610" fill="#F4F6F3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 946 610" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
+<rect width="946" height="610" fill="#F4F6F3"/>
 <text x="12" y="22" font-size="16" fill="#15222E">Paths: the order each regime did things, ignoring the calendar</text>
 <text x="12" y="40" fill="#5E6B76">Consecutive repeats collapsed. Right column: similarity of each regime's opening to frontier AI's path so far (1 = identical, 0 = nothing shared).</text>
 <rect x="12" y="49" width="14" height="14" rx="2" fill="#DCEFEA"/><text x="30" y="60" fill="#5E6B76">voluntary</text>
@@ -136,7 +136,7 @@
 <g data-tip="Platform and hiring-algorithm audits: independence. 2023 DSA delegated regulation on audits: auditor independence, limits on prior non-audit services, rotation." style="cursor:pointer"><rect x="334" y="527" width="20" height="20" rx="3" fill="#6C4AB6"/><text x="344.0" y="541" text-anchor="middle" fill="#fff" font-weight="600">I</text><text x="344.0" y="551" text-anchor="middle" fill="#5E6B76" font-size="8">2023</text></g>
 <g data-tip="Platform and hiring-algorithm audits: trigger. 2025 Published analysis of 116 LL144 bias audits finds shallow and inconsistent audits." style="cursor:pointer"><rect x="358" y="527" width="20" height="20" rx="3" fill="#15222E"/><text x="368.0" y="541" text-anchor="middle" fill="#fff" font-weight="600">T</text><text x="368.0" y="551" text-anchor="middle" fill="#5E6B76" font-size="8">2025</text></g>
 <rect x="608" y="531" width="36.00000000000001" height="12" fill="#0F766E" opacity="0.7"/><text x="649.0" y="541" fill="#5E6B76">similarity 0.30, opening TMAIT</text>
-<rect x="8" y="552" width="870" height="30" fill="#EAF4F1" rx="3"/>
+<rect x="8" y="552" width="930" height="30" fill="#EAF4F1" rx="3"/>
 <text x="12" y="570" fill="#15222E" font-weight="600">Frontier AI evaluation</text>
 <g data-tip="Frontier AI evaluation: voluntary. 2022 ARC Evals (later METR) tests GPT-4 pre-release; reported in the 2023 system card. | 2023 White House voluntary commitments; UK AI Safety Institute founded." style="cursor:pointer"><rect x="262" y="557" width="20" height="20" rx="3" fill="#DCEFEA"/><text x="272.0" y="571" text-anchor="middle" fill="#15222E" font-weight="600">V</text><text x="272.0" y="581" text-anchor="middle" fill="#5E6B76" font-size="8">2022</text></g>
 <g data-tip="Frontier AI evaluation: delegation. 2023 Labs run their own safety evaluations and select, scope, and pay the external testers cited in system cards." style="cursor:pointer"><rect x="286" y="557" width="20" height="20" rx="3" fill="#B7791F"/><text x="296.0" y="571" text-anchor="middle" fill="#fff" font-weight="600">D</text><text x="296.0" y="581" text-anchor="middle" fill="#5E6B76" font-size="8">2023</text></g>

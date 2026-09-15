@@ -5,5 +5,7 @@
   "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
   "published": "2026",
   "retrieved": "2026-09-14",
-  "note": "PyRIT methodology; red-teaming practice."
+  "note": "PyRIT methodology; red-teaming practice. Cited from a search snippet; not re-fetched in full.",
+  "source_type": "self",
+  "audit_status": "unaudited"
 }

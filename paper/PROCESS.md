@@ -34,6 +34,7 @@ Money and roles go in `data/ledger/` as rows before they go in a signal. Rules:
 
 Every ledger row and every source carries `audit_status`:
 
+- `unaudited`: cited from a search result or snippet at curation time; the page has not been fetched in full. Does not satisfy any gate.
 - `imported`: copied from another project's ledger; cited to its row id; not re-derived here. Does not satisfy any gate.
 - `confirmed`: re-fetched from the cited source by a named person on a date; artifact saved with a SHA-256 in `data/artifacts.csv` (to be added).
 - `differs`: re-fetch produced a different number or date; both recorded; the row is quarantined until resolved.

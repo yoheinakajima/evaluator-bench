@@ -5,5 +5,7 @@
   "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
   "published": "2026-09",
   "retrieved": "2026-09-14",
-  "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped."
+  "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped. Cited from a search snippet; not re-fetched in full.",
+  "source_type": "press",
+  "audit_status": "unaudited"
 }

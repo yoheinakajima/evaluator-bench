@@ -1,0 +1,49 @@
+name: daily-heartbeat
+on:
+  schedule:
+    - cron: "17 13 * * *"   # 13:17 UTC daily
+  workflow_dispatch:
+jobs:
+  review-open-prs:
+    runs-on: ubuntu-latest
+    permissions: {contents: read, pull-requests: write, issues: write}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e .
+      - name: re-run machine review on every open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -e
+          for n in $(gh pr list --state open --json number --jq '.[].number'); do
+            git fetch origin pull/$n/head:pr-$n
+            git checkout -q pr-$n
+            python -m bench review --base origin/main --out review-$n.md || true
+            gh pr comment $n --body-file review-$n.md || true
+            git checkout -q main
+          done
+      - name: spot-check confirmed sources for drift
+        env: {ANTHROPIC_API_KEY: ""}
+        run: |
+          git checkout -q main
+          python - <<'PY'
+          import json, pathlib, urllib.request, hashlib, datetime, random
+          srcs = [json.loads(p.read_text()) for p in pathlib.Path("data/sources").glob("*.json")]
+          conf = [s for s in srcs if s.get("audit_status") == "confirmed" and s["url"].startswith("http")]
+          random.seed(datetime.date.today().toordinal()); sample = random.sample(conf, min(5, len(conf)))
+          lines = [f"# Daily source spot-check {datetime.date.today()}", ""]
+          for s in sample:
+              try:
+                  req = urllib.request.Request(s["url"], headers={"User-Agent": "evaluator-bench-daily/0.1"})
+                  raw = urllib.request.urlopen(req, timeout=30).read(); lines.append(f"- {s['id']}: HTTP ok, sha256 {hashlib.sha256(raw).hexdigest()[:12]}, {len(raw)} bytes")
+              except Exception as ex: lines.append(f"- {s['id']}: FETCH FAILED ({type(ex).__name__}) {s['url']}")
+          pathlib.Path("spotcheck.md").write_text("\n".join(lines) + "\n")
+          PY
+      - name: file the spot-check as an issue if anything failed
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          if grep -q "FETCH FAILED" spotcheck.md; then gh issue create --title "Daily spot-check: a confirmed source failed to fetch ($(date +%F))" --body-file spotcheck.md --label audit || true; fi

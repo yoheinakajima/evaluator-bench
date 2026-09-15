@@ -72,7 +72,7 @@ def ladder() -> list[dict]:
 def svg(rows: list[dict]) -> str:
     pad_l, pad_t, cw, rh, name_w = 12, 84, 92, 26, 300
     n = len(rows); w = pad_l + name_w + cw * len(STAGES) + 200; h = pad_t + rh * n + 44
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">',
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">',
          f'<rect width="{w}" height="{h}" fill="#F4F6F3"/>',
          f'<text x="{pad_l}" y="22" font-size="16" fill="#15222E">Stage ladder: year each assurance regime first reached each stage</text>',
          f'<text x="{pad_l}" y="40" fill="#5E6B76">Cell shade: age of the regime when the stage arrived. Light under 10 years, mid 10 to 50, dark over 50.</text>',

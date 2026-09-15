@@ -1,0 +1,5 @@
+# Maintainer review is required on evidence and scoring paths; CI runs verify, build, tests, and machine review first.
+/data/            @yoheinakajima
+/dockets/         @yoheinakajima
+/bench/verify.py  @yoheinakajima
+/CONTRACT.md      @yoheinakajima

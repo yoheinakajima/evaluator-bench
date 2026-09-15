@@ -50,6 +50,7 @@
   },
   "audit_status": {
    "enum": [
+    "unaudited",
     "imported",
     "confirmed",
     "differs",

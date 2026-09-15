@@ -5,5 +5,7 @@
   "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
   "published": "2024",
   "retrieved": "2026-09-14",
-  "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API."
+  "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API. Cited from a search snippet; not re-fetched in full.",
+  "source_type": "self",
+  "audit_status": "unaudited"
 }

@@ -5,5 +5,7 @@
   "url": "https://epoch.ai/latest/openai-and-frontiermath",
   "published": "2025-01-23",
   "retrieved": "2026-09-14",
-  "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap."
+  "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap. Cited from a search snippet; not re-fetched in full.",
+  "source_type": "self",
+  "audit_status": "unaudited"
 }

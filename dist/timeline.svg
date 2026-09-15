@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1156 544" width="1156" height="544" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1156 544" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
 <rect width="1156" height="544" fill="#F4F6F3"/>
 <text x="12" y="22" font-size="16" fill="#15222E">Stage ladder: year each assurance regime first reached each stage</text>
 <text x="12" y="40" fill="#5E6B76">Cell shade: age of the regime when the stage arrived. Light under 10 years, mid 10 to 50, dark over 50.</text>

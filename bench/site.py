@@ -69,7 +69,7 @@ SITE_JS = r"""
 })();
 """
 
-GRAPH_CSS = "\n  .banner{background:#EAF4F1;border-bottom:1px solid var(--rule);padding:10px 20px;font-size:13.5px;text-align:center}\n  .banner b{font-weight:600}\n  .card table.tbl{display:block;overflow-x:auto;max-width:100%}\n  @media (min-width:900px){.card table.tbl{display:table}}\n  svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}\n  svg.fundgraph .node{transition:opacity .15s ease}\n  .tbl{width:100%;border-collapse:collapse;font-size:13.5px}\n  .tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule-soft);vertical-align:top}\n  .tbl th{font-weight:600;color:var(--muted);font-size:12.5px;background:var(--paper)}\n  .tbl td.num{text-align:right;font-variant-numeric:tabular-nums}\n  .pagehead{padding:30px 0 10px}\n  .pagehead .kicker{color:var(--muted);font-size:14px}\n  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}\n  @media (max-width:860px){.cols{grid-template-columns:1fr}}\n  .card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;margin-top:12px}\n  .card h3{font-size:20px;margin-bottom:6px}\n  .card ul{list-style:none;margin:0;padding:0}\n  .card li{padding:7px 0;border-top:1px solid var(--rule-soft);font-size:13.5px}\n  .card li a.src{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}\n  .dimrow{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--rule-soft)}\n  .dimrow .v{font-weight:600}\n  .dimrow .anchor{color:var(--muted);font-size:12.5px}\n  .dimrow ul{list-style:none;margin:6px 0 0;padding:0}\n  .dimrow li{padding:3px 0 3px 14px;position:relative;font-size:13.5px}\n  .dimrow li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--teal)}\n  .dimrow li.against::before{background:var(--ox)}\n"
+GRAPH_CSS = "\n  .cols>div,.detail-grid>div,.dimrow>div{min-width:0}\n  .dimrow li,.dimrow .anchor{overflow-wrap:anywhere}\n  @media (max-width:600px){.dimrow{grid-template-columns:1fr}}\n  .card li a.src,.card li,.prov,.sub,.pagehead .lead{overflow-wrap:anywhere;word-wrap:break-word}\n  .card li a.srcurl,.pagehead .lead a{word-break:break-all}\n  .fig{max-width:100%}\n  .paper h1{font-size:26px}.paper h2{font-size:20px;margin-top:22px}.paper h3{font-size:16px;margin-top:16px}.paper p,.paper li{font-size:14.5px;max-width:78ch}.paper table{border-collapse:collapse;font-size:13px;display:block;overflow-x:auto}.paper th,.paper td{border-bottom:1px solid var(--rule-soft);padding:5px 8px;text-align:left}\n  .banner{background:#EAF4F1;border-bottom:1px solid var(--rule);padding:10px 20px;font-size:13.5px;text-align:center}\n  .banner b{font-weight:600}\n  .card table.tbl{display:block;overflow-x:auto;max-width:100%}\n  @media (min-width:900px){.card table.tbl{display:table}}\n  svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}\n  svg.fundgraph .node{transition:opacity .15s ease}\n  .tbl{width:100%;border-collapse:collapse;font-size:13.5px}\n  .tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule-soft);vertical-align:top}\n  .tbl th{font-weight:600;color:var(--muted);font-size:12.5px;background:var(--paper)}\n  .tbl td.num{text-align:right;font-variant-numeric:tabular-nums}\n  .pagehead{padding:18px 0 8px}\n  .pagehead h1{font-size:clamp(24px,3.6vw,36px)!important}\n  .pagehead .lead{font-size:14.5px}\n  .pagehead .kicker{color:var(--muted);font-size:14px}\n  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}\n  @media (max-width:860px){.cols{grid-template-columns:1fr}}\n  .card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;margin-top:12px}\n  .card h3{font-size:16px;margin-bottom:6px}\n  .card ul{list-style:none;margin:0;padding:0}\n  .card li{padding:7px 0;border-top:1px solid var(--rule-soft);font-size:13.5px}\n  .card li a.src{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}\n  .dimrow{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--rule-soft)}\n  .dimrow .v{font-weight:600}\n  .dimrow .anchor{color:var(--muted);font-size:12.5px}\n  .dimrow ul{list-style:none;margin:6px 0 0;padding:0}\n  .dimrow li{padding:3px 0 3px 14px;position:relative;font-size:13.5px}\n  .dimrow li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--teal)}\n  .dimrow li.against::before{background:var(--ox)}\n"
 
 def release_banner(pre: str) -> str:
     rp = ROOT / "data" / "release.json"
@@ -85,11 +85,11 @@ def layout(title: str, body: str, depth: int, active: str = "") -> str:
     pre = "../" * depth
     nav = [("index.html", "Home", "home"), ("evaluators/index.html", "Evaluators", "evaluators"), ("entities/index.html", "Entities", "entities"),
            ("regimes/index.html", "Regimes", "regimes"), ("sources/index.html", "Sources", "sources"), ("dockets/index.html", "Dockets", "dockets"),
-           ("status/index.html", "Status", "status"), ("contribute/index.html", "Contribute", "contribute")]
+           ("paper/index.html", "Paper", "paper"), ("status/index.html", "Status", "status"), ("contribute/index.html", "Contribute", "contribute")]
     links = "".join(f'<a href="{pre}{h}"{" style=\"color:var(--ink)\"" if key == active else ""}>{t}</a>' for h, t, key in nav)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}: Evaluator Bench</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{pre}style.css"></head><body>
 <header class="wrap top"><a class="wordmark" href="{pre}index.html">Evaluator <em>Bench</em></a><nav>{links}<a href="https://github.com/yoheinakajima/evaluator-bench">Repo</a></nav></header>
 {release_banner(pre)}<main class="wrap">{body}</main>
@@ -116,7 +116,7 @@ def entity_page(eid: str, bench: dict, C: dict) -> str:
     L, d, E = C["L"], C["d"], C["L"]["entities"]; e = E[eid]; dist = d.get(eid)
     ev = C["ev_by_ledger"].get(eid)
     head = f"""<div class="pagehead"><div class="kicker">{esc(e['kind'])}; distance from a lab: {'unattributed' if dist is None else int(dist)}</div>
-      <h1 style="font-size:clamp(32px,5vw,52px)">{esc(e['name'])}</h1><p class="lead">{esc(e.get('notes',''))}</p></div>"""
+      <h1>{esc(e['name'])}</h1><p class="lead">{esc(e.get('notes',''))}</p></div>"""
     parts = [head]
     if ev:
         parts.append(_scorecard(ev, bench, C))
@@ -154,7 +154,7 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
 def _ledger_block(eid: str, C: dict) -> str:
     L, E = C["L"], C["L"]["entities"]
     link = lambda i: f'<a href="{esc(i)}.html">{esc(E[i]["name"] if i in E else i)}</a>'
-    def srcl(url): return f'<a class="src" href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a>'
+    def srcl(url): return f'<a class="src srcurl" href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a>'
     inflow = [t for t in L["transfers"] if t["to"] == eid]; outflow = [t for t in L["transfers"] if t["from"] == eid]
     held = [r for r in L["relationships"] if r["subject"] == eid]; hosted = [r for r in L["relationships"] if r["object"] == eid]
     negs = [n for n in L["negatives"] if n["evaluator"] == eid]
@@ -181,7 +181,7 @@ def regime_page(rid: str, C: dict) -> str:
     if m:
         mech = f'<div class="card"><h3>Mechanisms</h3><table class="tbl"><tr><th></th><th>Before reform</th><th>Now</th></tr>' + "".join(f'<tr><td>{k}</td><td>{esc(m["before"][k])}</td><td>{esc(m["now"][k])}</td></tr>' for k in ("pays", "selects", "access", "publishes", "oversees")) + f'</table><p style="font-size:13px;color:var(--muted);margin-top:8px">{esc(m["note"])}</p></div>'
     sig = " ".join(f'<span class="gid">{c} {esc(LETTER_LABEL[c])}</span>' for c in p["letters"])
-    body = f"""<div class="pagehead"><div class="kicker">Assurance regime; jurisdiction {esc(o.get('jurisdiction',''))}</div><h1 style="font-size:clamp(32px,5vw,52px)">{esc(o['name'])}</h1><p class="lead">{esc(o['ai_analogue'])}</p></div>
+    body = f"""<div class="pagehead"><div class="kicker">Assurance regime; jurisdiction {esc(o.get('jurisdiction',''))}</div><h1>{esc(o['name'])}</h1><p class="lead">{esc(o['ai_analogue'])}</p></div>
     <div class="cols"><div><div class="card"><h3>Path signature</h3><p style="font-size:13.5px">{sig}</p><p style="font-size:13px;color:var(--muted)">{('Similarity of its opening to frontier AI: ' + f"{1 - an['distance']:.2f}" + ' (matched opening ' + esc(an['matched_opening']) + ')') if an else 'Reference path.'}</p></div>
     <div class="card"><h3>Stages reached</h3><table class="tbl">{stages}</table></div></div><div>{mech}
     <div class="card"><h3>Payer, access, publication</h3><p style="font-size:13.5px"><b>Who pays.</b> {esc(o['payer'])}<br><b>Access.</b> {esc(o['access'])}<br><b>Publication.</b> {esc(o['publication'])}</p></div></div></div>
@@ -198,7 +198,7 @@ def source_page(sid: str, bench: dict, C: dict) -> str:
     lrows = [t for t in L["transfers"] if t["source_url"] == x["url"]] + [r for r in L["relationships"] if r["source_url"] == x["url"]] + [n for n in L["negatives"] if n["source_url"] == x["url"]]
     litems = "".join(f'<li><b>{esc(r["row_id"])}</b> {esc(r.get("purpose") or r.get("claim") or (r.get("role", "") + " at " + E.get(r.get("object", ""), {}).get("name", "")))} {badge(r["audit_status"])}</li>' for r in lrows)
     body = f"""<div class="pagehead"><div class="kicker">{esc(x['publisher'])}{', ' + esc(x['published']) if x.get('published') else ''}; retrieved {esc(x['retrieved'])} {tier(x)}{badge(x.get('audit_status'))}</div>
-    <h1 style="font-size:clamp(28px,4vw,44px)">{esc(x['title'])}</h1><p class="lead"><a href="{esc(x['url'])}" target="_blank" rel="noopener">{esc(x['url'])}</a></p><p class="lead">{esc(x.get('note',''))}</p>
+    <h1>{esc(x['title'])}</h1><p class="lead"><a href="{esc(x['url'])}" target="_blank" rel="noopener">{esc(x['url'])}</a></p><p class="lead">{esc(x.get('note',''))}</p>
     {('<p class="lead">Imported from ' + esc(x['imported_from']) + '.</p>') if x.get('imported_from') else ''}{('<p class="lead">Found via <a href="' + esc(x['discovered_via']) + '">' + esc(x['discovered_via']) + '</a>.</p>') if x.get('discovered_via') else ''}</div>
     <div class="cols"><div class="card"><h3>Signals citing this source</h3><ul>{items or '<li>none</li>'}</ul></div><div class="card"><h3>Ledger rows citing this URL</h3><ul>{litems or '<li>none</li>'}</ul></div></div>"""
     return layout(x["title"], body, 1, "sources")
@@ -210,7 +210,7 @@ def evaluators_index(bench: dict, C: dict) -> str:
     for e in sorted(bench["evaluators"], key=lambda e: -e["scores"]["lab"]):
         lid = LEDGER_ALIAS.get(e["id"], e["id"]); fl = min(DIMS, key=lambda k: e["values"][k]); ex = C["ex"].get(lid)
         rows.append(f'<tr><td><a href="../entity/{esc(lid)}.html">{esc(e["name"])}</a><br><span style="color:var(--muted);font-size:12px">{esc(bench["types"][e["type"]])}, {esc(e["hq"])}</span></td>' + "".join(f'<td class="num">{e["scores"][k]}</td>' for k in ("lab", "regulator", "public", "equal")) + f'<td>{esc(dims[fl]["label"].lower())} {e["values"][fl]}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Evaluators</h1><p class="lead">{len(bench['evaluators'])} organizations scored on eight independence dimensions. Columns show the weighted score under each preset, the weakest dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the full scorecard, ledger, and focused graph.</p></div>
+    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(bench['evaluators'])} organizations scored on eight independence dimensions. Columns show the weighted score under each preset, the weakest dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the full scorecard, ledger, and focused graph.</p></div>
     <div class="card"><table class="tbl"><tr><th>Evaluator</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>{''.join(rows)}</table></div>"""
     return layout("Evaluators", body, 1, "evaluators")
 
@@ -229,7 +229,7 @@ def entities_index(C: dict) -> str:
             dd = d.get(e["id"])
             rows.append(f'<tr><td><a href="../entity/{esc(e["id"])}.html">{esc(e["name"])}</a></td><td>{esc(k)}</td><td class="num">{"" if dd is None else int(dd)}</td><td class="num">{cnt_in.get(e["id"], 0)}</td><td class="num">{cnt_out.get(e["id"], 0)}</td><td class="num">{roles.get(e["id"], 0)}</td><td class="num">{conf.get(e["id"], 0)}</td><td style="color:var(--muted);font-size:12.5px">{esc(e.get("notes", ""))}</td></tr>')
     summ = {k: sum(1 for x in E.values() if x["kind"] == k) for k in order}
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Entities</h1><p class="lead">{len(E)} entities in the ledger: {', '.join(f'{v} {k}' for k, v in summ.items() if v)}. Distance 0 is a lab; 1 a direct tie; higher runs through principals and funders. Each page shows every row in and out and the funding graph focused on that node.</p></div>
+    body = f"""<div class="pagehead"><h1>Entities</h1><p class="lead">{len(E)} entities in the ledger: {', '.join(f'{v} {k}' for k, v in summ.items() if v)}. Distance 0 is a lab; 1 a direct tie; higher runs through principals and funders. Each page shows every row in and out and the funding graph focused on that node.</p></div>
     <div class="card"><table class="tbl"><tr><th>Entity</th><th>Kind</th><th>Distance</th><th>Money in</th><th>Money out</th><th>Roles</th><th>Confirmed in</th><th>Notes</th></tr>{''.join(rows)}</table></div>"""
     return layout("Entities", body, 1, "entities")
 
@@ -238,7 +238,7 @@ def regimes_index(C: dict) -> str:
     for rid, lad in C["ladder"].items():
         o = C["regs"][rid]; an = C["analog"].get(rid); p = C["paths"][rid]
         rows.append(f'<tr><td><a href="../regime/{esc(rid)}.html">{esc(o["name"])}</a></td><td>{esc(p["letters"])}</td><td class="num">{lad["reached"]}/7</td><td class="num">{lad["first"]}</td><td class="num">{f"{1 - an['distance']:.2f}" if an else "ref"}</td><td>{esc(o.get("jurisdiction", ""))}</td><td style="color:var(--muted);font-size:12.5px">{esc(o["payer"])}</td></tr>')
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Regimes</h1><p class="lead">Sixteen assurance regimes coded as dated milestones. The path signature is the ordered sequence of moves (V voluntary, T trigger, M mandate, S standards, O oversight, I independence, A access or publication, D delegation, P payer shift, R rollback). Similarity compares each regime's opening to frontier AI's path so far.</p></div>
+    body = f"""<div class="pagehead"><h1>Regimes</h1><p class="lead">Sixteen assurance regimes coded as dated milestones. The path signature is the ordered sequence of moves (V voluntary, T trigger, M mandate, S standards, O oversight, I independence, A access or publication, D delegation, P payer shift, R rollback). Similarity compares each regime's opening to frontier AI's path so far.</p></div>
     <div class="card"><table class="tbl"><tr><th>Regime</th><th>Path</th><th>Stages</th><th>First milestone</th><th>Similarity to AI</th><th>Jurisdiction</th><th>Who pays</th></tr>{''.join(rows)}</table></div>"""
     return layout("Regimes", body, 1, "regimes")
 
@@ -249,7 +249,7 @@ def sources_index(bench: dict, C: dict) -> str:
         rows.append(f'<tr><td><a href="../source/{esc(sid)}.html">{esc(x["title"])}</a></td><td>{esc(x["publisher"])}</td><td>{esc(x.get("published", ""))}</td><td>{esc(TIER.get(x.get("source_type"), "not set"))}</td><td>{badge(x.get("audit_status"))}</td><td class="num">{n}</td></tr>')
     counts = {}
     for x in bench["sources"].values(): counts[x.get("audit_status", "unaudited")] = counts.get(x.get("audit_status", "unaudited"), 0) + 1
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Sources</h1><p class="lead">{len(bench['sources'])} sources cited by signals: {', '.join(f'{v} {k}' for k, v in sorted(counts.items()))}. Tier 1 is a filing or a funder's own index; tier 2 a third-party ledger; tier 3 the organization's own statement; tier 4 press.</p></div>
+    body = f"""<div class="pagehead"><h1>Sources</h1><p class="lead">{len(bench['sources'])} sources cited by signals: {', '.join(f'{v} {k}' for k, v in sorted(counts.items()))}. Tier 1 is a filing or a funder's own index; tier 2 a third-party ledger; tier 3 the organization's own statement; tier 4 press.</p></div>
     <div class="card"><table class="tbl"><tr><th>Source</th><th>Publisher</th><th>Published</th><th>Tier</th><th>Audit</th><th>Signals</th></tr>{''.join(rows)}</table></div>"""
     return layout("Sources", body, 1, "sources")
 
@@ -271,7 +271,7 @@ def dockets_index(C: dict) -> str:
         except ImportError: status = "not validated here (epistemedia not installed)"
         c = json.loads(cert.read_text()) if cert.exists() else None
         rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>{("<span class=\"gid\" style=\"color:var(--teal);border-color:var(--teal)\">" + esc(c["verdict"]) + ", " + esc(c["reviewer"]["kind"]) + " v0</span>") if c else "none"}</td><td>not submitted</td></tr>')
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is not a finding. It becomes one only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and review there by someone else. Certificates shown here are manual v0: the operator read the spans against the sources and said yes; they are unsigned and carry no credit on Epistemedia.</p></div>
+    body = f"""<div class="pagehead"><h1>Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is not a finding. It becomes one only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and review there by someone else. Certificates shown here are manual v0: the operator read the spans against the sources and said yes; they are unsigned and carry no credit on Epistemedia.</p></div>
     <div class="card"><table class="tbl"><tr><th>Question</th><th>Sources</th><th>Spans</th><th>Results</th><th>Validation</th><th>Certificate</th><th>Epistemedia</th></tr>{''.join(rows)}</table>
     <p style="font-size:13px;color:var(--muted);margin-top:8px">Build and validate: <code>python -m bench docket build &lt;slug&gt; &amp;&amp; python -m bench docket validate &lt;slug&gt;</code>. Certificate format and the path to signed machine verification: <a href="{REPO}paper/CERTIFICATION.md">paper/CERTIFICATION.md</a>.</p></div>"""
     return layout("Dockets", body, 1, "dockets")
@@ -285,7 +285,7 @@ def status_index(bench: dict, C: dict) -> str:
     srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
     ex = C["ex"].values(); near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
     quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])} at commit {esc(commit)}.</p></div>
+    body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])} at commit {esc(commit)}.</p></div>
     <div class="cols">
     <div class="card"><h3>Coverage</h3><table class="tbl">
       <tr><td>Evaluators</td><td class="num">{len(bench['evaluators'])}</td></tr><tr><td>Signals</td><td class="num">{d['signals']}</td></tr><tr><td>Signals with an exact quote</td><td class="num">{quotes}</td></tr>
@@ -304,7 +304,7 @@ def load_data_counts(bench: dict) -> dict:
     return {"signals": sum(len(e["signals"]) for e in bench["evaluators"])}
 
 def contribute_index() -> str:
-    body = f"""<div class="pagehead"><h1 style="font-size:clamp(32px,5vw,52px)">Contribute</h1><p class="lead">Scores here move only when evidence moves. A contribution is a source, a signal with an exact quote, a ledger row, a confirmed re-derivation, or a docket. Nobody edits a score directly, including the maintainers.</p></div>
+    body = f"""<div class="pagehead"><h1>Contribute</h1><p class="lead">Scores here move only when evidence moves. A contribution is a source, a signal with an exact quote, a ledger row, a confirmed re-derivation, or a docket. Nobody edits a score directly, including the maintainers.</p></div>
     <div class="cols"><div>
     <div class="card"><h3>If you are a person</h3><ul>
       <li><b>Ten minutes.</b> Open any evaluator page, follow a source link, and check that the quoted span is there. If it is not, open an issue with the signal id.</li>
@@ -323,6 +323,17 @@ def contribute_index() -> str:
     <div class="card"><h3>Dockets and certification</h3><p style="font-size:13.5px">Contestable claims can be drafted as Epistemedia dockets from Bench evidence (<code>bench docket build</code>), validated with Epistemedia's own validator, and submitted through <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a>. A reviewed docket comes back as the strongest source a signal can cite and carries a certificate. See <a href="../dockets/index.html">Dockets</a> and <a href="{REPO}paper/CERTIFICATION.md">the certification plan</a>.</p></div>
     <div class="card"><h3>What we will not accept</h3><p style="font-size:13.5px">Private communications, screenshots of paywalled pages, claims about a person's intent, non-public individuals, score edits without evidence, and deletions of rows (supersede them instead).</p></div></div></div>"""
     return layout("Contribute", body, 1, "contribute")
+
+def paper_index() -> str:
+    try:
+        import markdown
+        body_md = (ROOT / "paper" / "draft.md").read_text()
+        html = markdown.markdown(body_md, extensions=["tables"])
+    except ImportError:
+        html = "<pre>" + esc((ROOT / "paper" / "draft.md").read_text()) + "</pre>"
+    rp = ROOT / "data" / "release.json"; rel = json.loads(rp.read_text()) if rp.exists() else {}
+    note = f'<div class="card"><h3>Draft, accepting submissions</h3><p style="font-size:13.5px">This is the working draft. Submissions merged before {esc(rel.get("window_until") or "the window closes")} form the launch-round section; the paper is then pinned to the v0 tag and submitted. Every number regenerates from the repository at that tag. Comment by opening an issue; correct by opening a pull request with evidence (<a href="../contribute/index.html">how</a>).</p></div>' if rel.get("stage") == "preview" else ""
+    return layout("Paper", f'<div class="pagehead"><div class="kicker">Working draft, regenerated from the repository</div></div>{note}<div class="card paper">{html}</div>', 1, "paper")
 
 # ---------------------------------------------------------------- driver
 def render_all(bench: dict) -> dict:
@@ -345,4 +356,5 @@ def render_all(bench: dict) -> dict:
     write(DIST / "dockets" / "index.html", dockets_index(C))
     write(DIST / "status" / "index.html", status_index(bench, C))
     write(DIST / "contribute" / "index.html", contribute_index())
+    write(DIST / "paper" / "index.html", paper_index())
     return {"pages": n + 4}

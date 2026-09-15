@@ -170,7 +170,9 @@
    "url": "https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/",
    "published": "2025-10-13",
    "retrieved": "2026-09-14",
-   "note": "CAIS advises xAI, not receiving OP money; SFF grants; METR not receiving OP recently; SecureBio SFF grant."
+   "note": "CAIS advises xAI, not receiving OP money; SFF grants; METR not receiving OP recently; SecureBio SFF grant. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "aef-launch": {
    "id": "aef-launch",
@@ -179,7 +181,9 @@
    "url": "https://aievaluatorforum.org/",
    "published": "2025-12-04",
    "retrieved": "2026-09-14",
-   "note": "Founding members: Transluce, METR, RAND, HAL, SecureBio, CIP, AVERI/Brundage. AEF-1 minimum operating conditions."
+   "note": "Founding members: Transluce, METR, RAND, HAL, SecureBio, CIP, AVERI/Brundage. AEF-1 minimum operating conditions. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "aef-transparency": {
    "id": "aef-transparency",
@@ -188,7 +192,9 @@
    "url": "https://t.co/Nm0RMxOWzw",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators."
+   "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators.",
+   "source_type": "self",
+   "audit_status": "confirmed"
   },
   "aisi-grants": {
    "id": "aisi-grants",
@@ -209,7 +215,9 @@
    "url": "https://aiwiki.ai/wiki/uk_aisi",
    "published": "2026-05-07",
    "retrieved": "2026-09-14",
-   "note": "Microsoft parallel agreements May 2026; Cohere MOU; publication terms."
+   "note": "Microsoft parallel agreements May 2026; Cohere MOU; publication terms. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "alphasignal-metr-71m": {
    "id": "alphasignal-metr-71m",
@@ -218,7 +226,9 @@
    "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai",
    "published": "2026-08",
    "retrieved": "2026-09-14",
-   "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money."
+   "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "andon-pitchbook": {
    "id": "andon-pitchbook",
@@ -238,7 +248,9 @@
    "url": "https://andonlabs.com/",
    "published": "2026-07",
    "retrieved": "2026-09-14",
-   "note": "Vending-Bench, Pion platform, autonomous deployments; Opus 5 results."
+   "note": "Vending-Bench, Pion platform, autonomous deployments; Opus 5 results. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "apollo-about": {
    "id": "apollo-about",
@@ -247,7 +259,9 @@
    "url": "https://www.apolloresearch.ai/about",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Ran evaluations for all major labs; partnered with OpenAI on anti-scheming; Watcher product."
+   "note": "Ran evaluations for all major labs; partnered with OpenAI on anti-scheming; Watcher product. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "apollo-first-year": {
    "id": "apollo-first-year",
@@ -256,7 +270,9 @@
    "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
    "published": "2024",
    "retrieved": "2026-09-14",
-   "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API."
+   "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "apollo-norms": {
    "id": "apollo-norms",
@@ -265,7 +281,9 @@
    "url": "https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/",
    "published": "2025-11-26",
    "retrieved": "2026-09-14",
-   "note": "Four COI rules: no contingent compensation; no side grants/investments from evaluated orgs; recusal; no misrepresentation. States labs pay fair market value."
+   "note": "Four COI rules: no contingent compensation; no side grants/investments from evaluated orgs; recusal; no misrepresentation. States labs pay fair market value.",
+   "source_type": "self",
+   "audit_status": "confirmed"
   },
   "apollo-pbc-round": {
    "id": "apollo-pbc-round",
@@ -285,7 +303,9 @@
    "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
    "published": "2026-01-20",
    "retrieved": "2026-09-14",
-   "note": "Spin-out from fiscal sponsor into public benefit corporation."
+   "note": "Spin-out from fiscal sponsor into public benefit corporation. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "arxiv-access-taxonomy": {
    "id": "arxiv-access-taxonomy",
@@ -294,7 +314,9 @@
    "url": "https://arxiv.org/abs/2601.11916",
    "published": "2026-01-21",
    "retrieved": "2026-09-14",
-   "note": "Taxonomy of access levels for external evaluators."
+   "note": "Taxonomy of access levels for external evaluators. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "arxiv-frontier-auditing": {
    "id": "arxiv-frontier-auditing",
@@ -303,7 +325,9 @@
    "url": "https://arxiv.org/abs/2601.11699",
    "published": "2026-02-07",
    "retrieved": "2026-09-14",
-   "note": "AI Assurance Levels; cross-industry precedents (FAA, UL, melamine, HackerOne)."
+   "note": "AI Assurance Levels; cross-industry precedents (FAA, UL, melamine, HackerOne). Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "averi-about": {
    "id": "averi-about",
@@ -312,7 +336,9 @@
    "url": "https://www.averi.org/about",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Endorsed SB 315; co-authored AEF-1; pilots are voluntary."
+   "note": "Endorsed SB 315; co-authored AEF-1; pilots are voluntary. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "averi-funding": {
    "id": "averi-funding",
@@ -332,7 +358,9 @@
    "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
    "published": "2026-01-15",
    "retrieved": "2026-09-14",
-   "note": "501(c)(3); founder formerly OpenAI."
+   "note": "501(c)(3); founder formerly OpenAI. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "averi-pilot": {
    "id": "averi-pilot",
@@ -341,7 +369,9 @@
    "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
    "published": "2026-08",
    "retrieved": "2026-09-14",
-   "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements."
+   "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "cais": {
    "id": "cais",
@@ -350,7 +380,9 @@
    "url": "https://safe.ai/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "WMDP, HLE benchmarks; director advises xAI."
+   "note": "WMDP, HLE benchmarks; director advises xAI. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "caisi-funding": {
    "id": "caisi-funding",
@@ -383,7 +415,9 @@
    "url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Formerly Open Philanthropy; board includes Moskovitz, Tuna, Karnofsky."
+   "note": "Formerly Open Philanthropy; board includes Moskovitz, Tuna, Karnofsky. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "crowell-sb315": {
    "id": "crowell-sb315",
@@ -392,7 +426,9 @@
    "url": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems",
    "published": "2026-07-08",
    "retrieved": "2026-09-14",
-   "note": "Annual independent audits from 2028; no financial interest either way; high-level summary published within 30 days."
+   "note": "Annual independent audits from 2028; no financial interest either way; high-level summary published within 30 days. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "csa-aisi-trends": {
    "id": "csa-aisi-trends",
@@ -401,7 +437,9 @@
    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/",
    "published": "2026-07-12",
    "retrieved": "2026-09-14",
-   "note": "Frontier AI Bill promised, not introduced; voluntary MOUs; universal jailbreaks found; 30+ models."
+   "note": "Frontier AI Bill promised, not introduced; voluntary MOUs; universal jailbreaks found; 30+ models. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "csa-caisi": {
    "id": "csa-caisi",
@@ -410,7 +448,9 @@
    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/",
    "published": "2026-05-20",
    "retrieved": "2026-09-14",
-   "note": "DeepMind, Microsoft, xAI added May 2026; 40+ evaluations; TRAINS taskforce; 2025 refocus."
+   "note": "DeepMind, Microsoft, xAI added May 2026; 40+ evaluations; TRAINS taskforce; 2025 refocus. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "decoder-epoch": {
    "id": "decoder-epoch",
@@ -419,7 +459,9 @@
    "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
    "published": "2025-01-19",
    "retrieved": "2026-09-14",
-   "note": "Agreement prevented revealing support until o3 announcement."
+   "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "docket-metr-lab-money": {
    "id": "docket-metr-lab-money",
@@ -440,7 +482,9 @@
    "url": "https://www.dwt.com/blogs/artificial-intelligence-law-advisor/2026/07/illinois-frontier-ai-safety-law",
    "published": "2026-07-15",
    "retrieved": "2026-09-14",
-   "note": "Audit obligations begin Jan 1, 2028; whistleblower provisions."
+   "note": "Audit obligations begin Jan 1, 2028; whistleblower provisions. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "epoch-clarify": {
    "id": "epoch-clarify",
@@ -449,7 +493,9 @@
    "url": "https://epoch.ai/latest/openai-and-frontiermath",
    "published": "2025-01-23",
    "retrieved": "2026-09-14",
-   "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap."
+   "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "epoch-transparency": {
    "id": "epoch-transparency",
@@ -482,7 +528,9 @@
    "url": "https://far.ai/news/30m-multi-funder-support",
    "published": "2026-07-16",
    "retrieved": "2026-09-14",
-   "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum)."
+   "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum). Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "far-transparency": {
    "id": "far-transparency",
@@ -503,7 +551,9 @@
    "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
    "published": "2024-10-29",
    "retrieved": "2026-09-14",
-   "note": "Kolter recused from Gray Swan-OpenAI interactions; $5.5M seed."
+   "note": "Kolter recused from Gray Swan-OpenAI interactions; $5.5M seed. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "forbes-grayswan-2026": {
    "id": "forbes-grayswan-2026",
@@ -512,7 +562,9 @@
    "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
    "published": "2026-05-28",
    "retrieved": "2026-09-14",
-   "note": "$200M valuation; clients OpenAI, Anthropic, Google DeepMind, Meta, xAI, ByteDance."
+   "note": "$200M valuation; clients OpenAI, Anthropic, Google DeepMind, Meta, xAI, ByteDance. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "gdm-gemini-testing": {
    "id": "gdm-gemini-testing",
@@ -521,7 +573,9 @@
    "url": "https://deepmind.google/",
    "published": "2025",
    "retrieved": "2026-09-14",
-   "note": "Dreadnode and Vaultis named as external experts (cyber, CBRN, extremism)."
+   "note": "Dreadnode and Vaultis named as external experts (cyber, CBRN, extremism). Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "grayswan-seriesa": {
    "id": "grayswan-seriesa",
@@ -530,7 +584,9 @@
    "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
    "published": "2026-05-28",
    "retrieved": "2026-09-14",
-   "note": "$40M; Wing and Madrona; cited in 11 system cards; Cygnal, Shade, Arena products."
+   "note": "$40M; Wing and Madrona; cited in 11 system cards; Cygnal, Shade, Arena products. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "hal": {
    "id": "hal",
@@ -539,7 +595,9 @@
    "url": "https://hal.cs.princeton.edu/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Open agent leaderboard; AEF founding member."
+   "note": "Open agent leaderboard; AEF founding member. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "humane-int": {
    "id": "humane-int",
@@ -548,7 +606,9 @@
    "url": "https://www.humane-intelligence.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Public red-teaming with NIST and IMDA."
+   "note": "Public red-teaming with NIST and IMDA. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "itbb-watchdogs": {
    "id": "itbb-watchdogs",
@@ -557,7 +617,9 @@
    "url": "https://itbb.substack.com/p/who-funds-the-watchdogs",
    "published": "2026-06-03",
    "retrieved": "2026-09-14",
-   "note": "Funding pipeline analysis; METR diversification; Redwood revenue volatility; ~$25M Open Phil to Redwood historically."
+   "note": "Funding pipeline analysis; METR diversification; Redwood revenue volatility; ~$25M Open Phil to Redwood historically. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "kolter-bio": {
    "id": "kolter-bio",
@@ -566,7 +628,9 @@
    "url": "http://zkolter.github.io/bio/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Chairs OpenAI SSC; co-founder and Chief Scientist of Gray Swan."
+   "note": "Chairs OpenAI SSC; co-founder and Chief Scientist of Gray Swan. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "longtermwiki-audit": {
    "id": "longtermwiki-audit",
@@ -575,7 +639,9 @@
    "url": "https://www.longtermwiki.com/wiki/E450",
    "published": "2026-01-29",
    "retrieved": "2026-09-14",
-   "note": "Scale AI SEAL first third-party evaluator authorized by US AISI; ecosystem overview."
+   "note": "Scale AI SEAL first third-party evaluator authorized by US AISI; ecosystem overview. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "longtermwiki-far": {
    "id": "longtermwiki-far",
@@ -584,7 +650,9 @@
    "url": "https://www.longtermwiki.com/wiki/E138",
    "published": "2026-02-26",
    "retrieved": "2026-09-14",
-   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue."
+   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "lw-sb315": {
    "id": "lw-sb315",
@@ -593,7 +661,9 @@
    "url": "https://www.lw.com/en/insights/illinois-joins-growing-state-level-effort-to-regulate-frontier-ai-with-new-safety-measures-act",
    "published": "2026-07-15",
    "retrieved": "2026-09-14",
-   "note": "Demonstrated competence requirement; $500M revenue threshold."
+   "note": "Demonstrated competence requirement; $500M revenue threshold. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "marktechpost-pace": {
    "id": "marktechpost-pace",
@@ -602,7 +672,9 @@
    "url": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/",
    "published": "2026-09-13",
    "retrieved": "2026-09-14",
-   "note": "Investigators took no payment; ~$400K API credits; embedded evaluator terms: desks, badges, publication without editorial control."
+   "note": "Investigators took no payment; ~$400K API credits; embedded evaluator terms: desks, badges, publication without editorial control. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "metr-990-fy2024": {
    "id": "metr-990-fy2024",
@@ -623,7 +695,9 @@
    "url": "https://metr.org/about",
    "published": "2026-08",
    "retrieved": "2026-09-14",
-   "note": "States METR has not accepted funding from AI companies; notes reliance on free tokens."
+   "note": "States METR has not accepted funding from AI companies; notes reliance on free tokens.",
+   "source_type": "self",
+   "audit_status": "confirmed"
   },
   "metr-donor-rule-history": {
    "id": "metr-donor-rule-history",
@@ -644,7 +718,9 @@
    "url": "https://metr.org/blog/2026-08-14-funding-update/",
    "published": "2026-08-14",
    "retrieved": "2026-09-14",
-   "note": "Independence framing; growth in philanthropic commitments."
+   "note": "Independence framing; growth in philanthropic commitments. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "metr-hf-investigation": {
    "id": "metr-hf-investigation",
@@ -653,7 +729,9 @@
    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
    "published": "2026-08-26",
    "retrieved": "2026-09-14",
-   "note": "Terms of engagement: six days on premises, OpenAI could redact non-public info, gave feedback on structure and tone; redaction summary statement."
+   "note": "Terms of engagement: six days on premises, OpenAI could redact non-public info, gave feedback on structure and tone; redaction summary statement. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "metr-money-figure": {
    "id": "metr-money-figure",
@@ -675,7 +753,9 @@
    "url": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/",
    "published": "2026-01-29",
    "retrieved": "2026-09-14",
-   "note": "EU CoP: adequate access incl. helpful-only versions, 20 business days, external evaluators each new frontier model; enforceable Aug 2026."
+   "note": "EU CoP: adequate access incl. helpful-only versions, 20 business days, external evaluators each new frontier model; enforceable Aug 2026. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "metr-team": {
    "id": "metr-team",
@@ -696,7 +776,9 @@
    "url": "https://mlcommons.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Member-funded consortium benchmark."
+   "note": "Member-funded consortium benchmark. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "ms-redteam": {
    "id": "ms-redteam",
@@ -705,7 +787,9 @@
    "url": "https://www.microsoft.com/en-us/security/blog/topic/ai-red-team/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "PyRIT methodology; red-teaming practice."
+   "note": "PyRIT methodology; red-teaming practice. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "newswire-irregular": {
    "id": "newswire-irregular",
@@ -714,7 +798,9 @@
    "url": "https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai",
    "published": "2025-09-17",
    "retrieved": "2026-09-14",
-   "note": "Millions in annual revenue; works with OpenAI and Anthropic; runtime security roadmap."
+   "note": "Millions in annual revenue; works with OpenAI and Anthropic; runtime security roadmap. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "nist-caisi": {
    "id": "nist-caisi",
@@ -723,7 +809,9 @@
    "url": "https://www.nist.gov/caisi",
    "published": "2026-08-08",
    "retrieved": "2026-09-14",
-   "note": "Mandate: voluntary agreements with developers and evaluators; focus on demonstrable risks."
+   "note": "Mandate: voluntary agreements with developers and evaluators; focus on demonstrable risks. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "openai-kolter-board": {
    "id": "openai-kolter-board",
@@ -732,7 +820,9 @@
    "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
    "published": "2024-08",
    "retrieved": "2026-09-14",
-   "note": "Board seat and Safety and Security Committee membership."
+   "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "palisade": {
    "id": "palisade",
@@ -741,7 +831,9 @@
    "url": "https://palisaderesearch.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Shutdown resistance, self-replication, offensive cyber studies on released models."
+   "note": "Shutdown resistance, self-replication, offensive cyber studies on released models. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "pebblous-scope": {
    "id": "pebblous-scope",
@@ -750,7 +842,9 @@
    "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
    "published": "2026-09",
    "retrieved": "2026-09-14",
-   "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped."
+   "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "propublica-metr-arc": {
    "id": "propublica-metr-arc",
@@ -770,7 +864,9 @@
    "url": "https://www.rand.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Founding AEF member; CBRN expertise; RAND-Irregular model theft paper."
+   "note": "Founding AEF member; CBRN expertise; RAND-Irregular model theft paper. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "regulations-ai-aisi": {
    "id": "regulations-ai-aisi",
@@ -779,7 +875,9 @@
    "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025",
    "published": "2026-09",
    "retrieved": "2026-09-14",
-   "note": "No statutory enforcement powers; voluntary testing."
+   "note": "No statutory enforcement powers; voluntary testing. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "resultsense-aisi": {
    "id": "resultsense-aisi",
@@ -788,7 +886,9 @@
    "url": "https://www.resultsense.com/insights/2026-09-08-openai-mandated-safety-bars-uk-aisi-enforcement-gap/",
    "published": "2026-09-08",
    "retrieved": "2026-09-14",
-   "note": "AISI has no power to compel; access rests on renewable agreements."
+   "note": "AISI has no power to compel; access rests on renewable agreements. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "saferai": {
    "id": "saferai",
@@ -797,7 +897,9 @@
    "url": "https://www.safer-ai.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI."
+   "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "scale-framework": {
    "id": "scale-framework",
@@ -806,7 +908,9 @@
    "url": "https://scale.com/blog/ai-evaluation-framework-national-security",
    "published": "2026-05-20",
    "retrieved": "2026-09-14",
-   "note": "Scale partnered with CAISI Feb 2025; runs evaluations for governments."
+   "note": "Scale partnered with CAISI Feb 2025; runs evaluations for governments. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "securebio-oaif": {
    "id": "securebio-oaif",
@@ -815,7 +919,9 @@
    "url": "https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding",
    "published": "2026-08",
    "retrieved": "2026-09-14",
-   "note": "OpenAI Foundation grant to Detection division; OpenAI PBC paid for GPT-5.5 eval; firewall and resignation commitment; OAIF board overlap."
+   "note": "OpenAI Foundation grant to Detection division; OpenAI PBC paid for GPT-5.5 eval; firewall and resignation commitment; OAIF board overlap. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "sequoia-irregular": {
    "id": "sequoia-irregular",
@@ -824,7 +930,9 @@
    "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/",
    "published": "2025-09-17",
    "retrieved": "2026-09-14",
-   "note": "Evaluations cited in GPT-4/o3/o4-mini/GPT-5 system cards; UK government and Anthropic use SOLVE; embedded with labs."
+   "note": "Evaluations cited in GPT-4/o3/o4-mini/GPT-5 system cards; UK government and Anthropic use SOLVE; embedded with labs. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "sff-2025": {
    "id": "sff-2025",
@@ -844,7 +952,9 @@
    "url": "https://blog.stackaware.com/p/illinois-sb-315-iso-42001-internal-audit-ai-hyperscaler",
    "published": "2026-07-14",
    "retrieved": "2026-09-14",
-   "note": "Report contents: personnel list, COI procedures, methodology, lead auditor signature; audit-plus-recommendations tension."
+   "note": "Report contents: personnel list, COI procedures, methodology, lead auditor signature; audit-plus-recommendations tension. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "techcrunch-epoch": {
    "id": "techcrunch-epoch",
@@ -853,7 +963,9 @@
    "url": "https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai",
    "published": "2025-01-19",
    "retrieved": "2026-09-14",
-   "note": "Primarily Open Philanthropy funded; disclosure timing."
+   "note": "Primarily Open Philanthropy funded; disclosure timing. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "techcrunch-irregular": {
    "id": "techcrunch-irregular",
@@ -862,7 +974,9 @@
    "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models",
    "published": "2025-09-17",
    "retrieved": "2026-09-14",
-   "note": "Formerly Pattern Labs; Sequoia and Redpoint lead; $450M valuation; cited in o3, o4-mini, Claude 3.7 evaluations."
+   "note": "Formerly Pattern Labs; Sequoia and Redpoint lead; $450M valuation; cited in o3, o4-mini, Claude 3.7 evaluations. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "techmeme-hf": {
    "id": "techmeme-hf",
@@ -871,7 +985,9 @@
    "url": "https://www.techmeme.com/260912/p13",
    "published": "2026-09-12",
    "retrieved": "2026-09-14",
-   "note": "Initiative led by Thomas Wolf; request to join embedded evaluators."
+   "note": "Initiative led by Thomas Wolf; request to join embedded evaluators. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "techpolicy-aef1": {
    "id": "techpolicy-aef1",
@@ -880,7 +996,9 @@
    "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/",
    "published": "2026-02-26",
    "retrieved": "2026-09-14",
-   "note": "AEF-1 covers independence, access depth, transparency; thin evaluator pool."
+   "note": "AEF-1 covers independence, access depth, transparency; thin evaluator pool. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "techtimes-metr-hf": {
    "id": "techtimes-metr-hf",
@@ -889,7 +1007,9 @@
    "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm",
    "published": "2026-08-27",
    "retrieved": "2026-09-14",
-   "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report."
+   "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "ted-864574": {
    "id": "ted-864574",
@@ -910,7 +1030,9 @@
    "url": "https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators",
    "published": "2026-09-14",
    "retrieved": "2026-09-14",
-   "note": "Nvidia acquiring Hugging Face ($12.93B); Nvidia in talks to anchor Anthropic IPO (up to $10B); no terms announced."
+   "note": "Nvidia acquiring Hugging Face ($12.93B); Nvidia in talks to anchor Anthropic IPO (up to $10B); no terms announced. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "tooldir-andon": {
    "id": "tooldir-andon",
@@ -919,7 +1041,9 @@
    "url": "https://tooldirectory.ai/tools/andon-labs",
    "published": "2026-07-08",
    "retrieved": "2026-09-14",
-   "note": "Anthropic Project Vend partnership; results cited in model cards."
+   "note": "Anthropic Project Vend partnership; results cited in model cards. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "transluce-about": {
    "id": "transluce-about",
@@ -939,7 +1063,9 @@
    "url": "https://theeconomicmisfit.com/2026/04/18/governance-policy-fellow-at-transluce/",
    "published": "2026-04-18",
    "retrieved": "2026-09-14",
-   "note": "Organizes AEF; AEF-1 standard; government contracts."
+   "note": "Organizes AEF; AEF-1 standard; government contracts. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "transluce-manifund": {
    "id": "transluce-manifund",
@@ -948,7 +1074,9 @@
    "url": "https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Docent used by Anthropic, DeepMind, Thinking Machines, METR, Redwood, Apollo, Palisade; used in Claude 4 pre-deployment analysis; head of governance previously led CAISI."
+   "note": "Docent used by Anthropic, DeepMind, Thinking Machines, METR, Redwood, Apollo, Palisade; used in Claude 4 pre-deployment analysis; head of governance previously led CAISI. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "transluce-mh": {
    "id": "transluce-mh",
@@ -957,7 +1085,9 @@
    "url": "https://transluce.org/",
    "published": "2026-09",
    "retrieved": "2026-09-14",
-   "note": "77 model variants across eight developers."
+   "note": "77 model variants across eight developers. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "self",
+   "audit_status": "unaudited"
   },
   "transluce-policy": {
    "id": "transluce-policy",
@@ -977,7 +1107,9 @@
    "url": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/",
    "published": "2026-09-12",
    "retrieved": "2026-09-14",
-   "note": "OpenAI commits to employee-like access for independent evaluators; METR named as example."
+   "note": "OpenAI commits to employee-like access for independent evaluators; METR named as example. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "wapo-examiner-benton": {
    "id": "wapo-examiner-benton",
@@ -986,7 +1118,9 @@
    "url": "https://www.washingtonexaminer.com/policy/technology/4724950/anthropic-ceo-pitch-ai-slow-down-plan/",
    "published": "2026-09-12",
    "retrieved": "2026-09-14",
-   "note": "Former Anthropic researcher Joe Benton joins METR."
+   "note": "Former Anthropic researcher Joe Benton joins METR. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   },
   "zvi-pace": {
    "id": "zvi-pace",
@@ -995,7 +1129,9 @@
    "url": "https://thezvi.substack.com/p/we-must-pace-the-frontier",
    "published": "2026-09-14",
    "retrieved": "2026-09-14",
-   "note": "Hwang trilemma: independent, knowledgeable, sustainably funded, pick two; evaluator supply concerns."
+   "note": "Hwang trilemma: independent, knowledgeable, sustainably funded, pick two; evaluator supply concerns. Cited from a search snippet; not re-fetched in full.",
+   "source_type": "press",
+   "audit_status": "unaudited"
   }
  },
  "evaluators": [

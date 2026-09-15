@@ -5,5 +5,7 @@
   "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
   "published": "2026-08",
   "retrieved": "2026-09-14",
-  "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements."
+  "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements. Cited from a search snippet; not re-fetched in full.",
+  "source_type": "self",
+  "audit_status": "unaudited"
 }

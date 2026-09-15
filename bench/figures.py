@@ -19,8 +19,8 @@ def _esc(s: str) -> str:
 def path_strips() -> str:
     ps = paths(); dist = {a["id"]: a for a in analogues()}
     rh, cell, name_w, pad = 30, 24, 250, 12
-    w = name_w + cell * 14 + 300; h = 90 + rh * len(ps) + 40
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="12">',
+    w = name_w + cell * 14 + 360; h = 90 + rh * len(ps) + 40
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" {FONT} font-size="12">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">Paths: the order each regime did things, ignoring the calendar</text>',
          f'<text x="{pad}" y="40" fill="{MUTED}">Consecutive repeats collapsed. Right column: similarity of each regime\'s opening to frontier AI\'s path so far (1 = identical, 0 = nothing shared).</text>']
@@ -56,9 +56,9 @@ def path_strips() -> str:
     return "\n".join(o)
 
 def response_plot() -> str:
-    rs = responses(); w, h = 760, 380; pl, pr, pt, pb = 60, 20, 60, 50
+    rs = responses(); w, h = 780, 380; pl, pr, pt, pb = 60, 40, 60, 50
     xmax = 20; pw, ph = w - pl - pr, h - pt - pb
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="12">',
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" {FONT} font-size="12">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pl}" y="22" font-size="16" fill="{INK}">After a failure: how fast the next rule came, and how strong it was</text>',
          f'<text x="{pl}" y="40" fill="{MUTED}">Each point is one trigger incident. Hollow points: no rule followed. Frontier AI in teal.</text>']
@@ -74,7 +74,7 @@ def response_plot() -> str:
     for i, r in enumerate(rs):
         ai = r["regime"] == "frontier-ai"
         if r["lag"] is None:
-            xx = pl + pw + 6; yy = pt + ph + 4 - (i % 5) * 6
+            xx = pl + pw + 14; yy = pt + ph - 10 - (i % 5) * 9
             tip = f"{r['name']}, {r['year']}: {r['trigger']}. No rule of any kind followed in the dataset."
             o.append(f'<circle data-tip="{_esc(tip)}" cx="{xx}" cy="{yy}" r="6" fill="none" stroke="{"#0F766E" if ai else INK}" stroke-width="1.5" style="cursor:pointer"/>')
             continue
@@ -83,7 +83,7 @@ def response_plot() -> str:
         yy = pt + ph - (r["strength"] - 1) / 3 * ph + jit
         tip = f"{r['name']}, {r['year']}: {r['trigger']} ({r['harm']}). Response after {r['lag']} year(s), strength {r['strength']}: {r['response_year']} {r['response']}"
         o.append(f'<circle data-tip="{_esc(tip)}" cx="{xx:.1f}" cy="{yy:.1f}" r="{7 if ai else 6}" fill="{"#0F766E" if ai else INK}" fill-opacity="{0.9 if ai else 0.55}" style="cursor:pointer"/>')
-    o.append(f'<text x="{pl + pw + 6}" y="{pt + ph + 22}" text-anchor="middle" fill="{MUTED}" font-size="10">none</text>')
+    o.append(f'<text x="{pl + pw + 14}" y="{pt + 12}" text-anchor="middle" fill="{MUTED}" font-size="10">no rule</text>')
     o.append('</svg>')
     return "\n".join(o)
 
@@ -95,7 +95,7 @@ def mechanism_matrix() -> str:
                "self-reg": ("#B7791F", "industry self-regulation"), "regulator": ("#0F766E", "regulator")}
     rh, cw, name_w, pad = 26, 168, 250, 12
     w = pad + name_w + cw * len(cols) + 20; h = 80 + rh * len(ms) + 30
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="12">',
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" {FONT} font-size="12">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">Mechanisms today: the incentive configuration of each regime</text>',
          f'<text x="{pad}" y="40" fill="{MUTED}">Red marks the configuration that concentrates control in the assessed party. Hover a cell for the state before reform.</text>']
@@ -130,7 +130,7 @@ def exposure_matrix() -> str:
     shade = {"hop0": "#9B2C2C", "hop1": "#C4746A", "hop2": "#B7791F", "hop3": "#8CC5BB", "public": "#0F766E", "unattributed": "#5E6B76"}
     rh, cw, name_w, pad = 26, 116, 250, 12
     w = pad + name_w + cw * len(order) + 340; h = 96 + rh * len(ex) + 30
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="12">',
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" {FONT} font-size="12">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">Traced money by distance from a frontier lab, per evaluator</text>',
          f'<text x="{pad}" y="40" fill="{MUTED}">Cell: number of inflow rows at that distance; the amount below is summed within the largest measure at that distance. Undisclosed amounts count as rows only.</text>',
@@ -206,7 +206,7 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
     h = top + rh * max(len(v) for v in cols.values()) + 40; w = pad * 2 + cw * 6
     pos = {}
     title = f"The funding graph around {E[focus]['name']}" if focus else "The funding graph, laid out by distance from a lab"
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" class="fundgraph" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="11">',
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" class="fundgraph" viewBox="0 0 {w} {h}" {FONT} font-size="11">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">{_esc(title)}</text>',
          f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to isolate it and its neighbours; hover a line for the row. Every element is a row in data/ledger/.</text>']
