@@ -2,14 +2,18 @@
   {
     "evaluator": "ukaisi",
     "dimension": "F",
-    "value": 4,
-    "anchor": 4,
+    "value": 3,
+    "anchor": 3,
     "signals": [
-      "ukaisi.01"
+      "ukaisi.01",
+      "ukaisi.11"
     ],
-    "rationale": "Anchor 4 on funding given the cited signals.",
+    "rationale": "Anchor 3: public core budget, but the institute runs a lab-funded grant pool, which is lab money passing through it even if not into its evaluation budget.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Whether Alignment Project funds touch evaluation staff or infrastructure."
+    ]
   },
   {
     "evaluator": "ukaisi",

@@ -1,0 +1,12 @@
+{
+  "id": "aisi-grants",
+  "title": "Alignment Project grants",
+  "publisher": "UK AI Security Institute",
+  "url": "https://www.aisi.gov.uk/grants",
+  "published": "2025",
+  "retrieved": "2026-09-14",
+  "note": "GBP 27m coalition incl. GBP 5.6m from OpenAI plus Anthropic, Microsoft, AWS and others; awards up to GBP 1m per project.",
+  "source_type": "self",
+  "audit_status": "imported",
+  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV11"
+}

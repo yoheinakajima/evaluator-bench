@@ -120,5 +120,32 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.11",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Transparency page lists Google DeepMind and OpenAI as paying consultation clients and a $600K Tallinn DAF gift; Coefficient grants of about $24.5M per index.",
+    "sources": [
+      "epoch-transparency",
+      "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
+  },
+  {
+    "id": "epoch.12",
+    "evaluator": "epoch",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes a transparency page listing donations above $70K and paying clients.",
+    "sources": [
+      "epoch-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

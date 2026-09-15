@@ -107,5 +107,32 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.10",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.",
+    "sources": [
+      "apollo-pbc-round"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "apollo.11",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "SFF recommendations of about $1.1M and Coefficient grants of about $4.4M per the index snapshot; both funders are one to two steps from an Anthropic investor.",
+    "sources": [
+      "evaluators-ledger",
+      "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
   }
 ]

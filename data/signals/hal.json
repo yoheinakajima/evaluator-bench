@@ -95,5 +95,18 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.09",
+    "evaluator": "hal",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

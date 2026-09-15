@@ -96,5 +96,18 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.09",
+    "evaluator": "scale",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Meta paid $14.3B for a 49% non-voting stake in June 2025; the founder moved to Meta.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
   }
 ]

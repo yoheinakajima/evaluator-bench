@@ -27,7 +27,6 @@ R25,sequoia,investor,openai,,,https://sequoiacap.com/,press,2026-09-14,confirmed
 R26,sequoia,investor,irregular,2025-09,,https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models,press,2026-09-14,confirmed,
 R27,kolter,principal,gray-swan,,,http://zkolter.github.io/bio/,self,2026-09-14,confirmed,"co-founder, chief scientist"
 R28,kolter,board,openai,2024-08,,https://openai.com/index/zico-kolter-joins-openais-board-of-directors/,self,2026-09-14,confirmed,chairs Safety and Security Committee
-R29,macroscopic,investor,apollo,,,https://macroscopic.org/grants,self,2026-09-14,imported,"impact investment, self-reported; imported kevinnbass/metr-money-figure:M141"
 R30,farhi,donor,metr,,,https://metr.org/about,self,2026-09-14,imported,"named among individual donors on metr.org/about (Dec 2025 capture); OpenAI technical lead; imported kevinnbass/metr-money-figure:DR12,DR13"
 R31,farhi,employee,openai,2018,,https://openai.com/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:DR13
 R32,constellation,office_host,metr,,,https://metr.org/about,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:M126
@@ -35,3 +34,33 @@ R33,arc,parent,metr,2022,2024-04,https://metr.org/about,self,2026-09-14,confirme
 R34,oaif,investor,openai,,,https://openai.com/,self,2026-09-14,confirmed,foundation endowment is a stake in OpenAI Group PBC; boards largely overlap
 R35,openai,pays,aisf,2023,,https://far.ai/news/30m-multi-funder-support,self,2026-09-14,confirmed,AI Safety Fund is supported by the Frontier Model Forum members
 R36,anthropic,pays,aisf,2023,,https://far.ai/news/30m-multi-funder-support,self,2026-09-14,confirmed,as above
+R37,macroscopic,investor,apollo,2026-01,,https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc,self,2026-09-14,confirmed,supersedes R29
+R38,fifty-years,investor,apollo,2026-01,,https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc,self,2026-09-14,confirmed,lead
+R39,mccormick,board,transluce,,,https://transluce.org/about,self,2026-09-14,confirmed,Halcyon Futures CEO; Halcyon funds AVERI and AIUC
+R40,chowdhury,advisor,transluce,,,https://transluce.org/about,self,2026-09-14,confirmed,Thinking Machines technical staff
+R41,chowdhury,employee,thinking-machines,,,https://transluce.org/about,self,2026-09-14,confirmed,
+R42,stosz,principal,transluce,,,https://transluce.org/about,self,2026-09-14,confirmed,head of governance; previously led CAISI
+R43,hendrycks,principal,cais,,,https://safe.ai/,self,2026-09-14,confirmed,director
+R44,hendrycks,advisor,xai,,,https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/,press,2026-09-14,confirmed,safety adviser
+R45,ladish,principal,palisade,2022,,https://palisaderesearch.org/about,self,2026-09-14,imported,founder; imported kevinnbass/metr-money-figure:EV19
+R46,ladish,employee,anthropic,,2022,https://palisaderesearch.org/about,self,2026-09-14,imported,ex-Anthropic security team; imported kevinnbass/metr-money-figure:EV19
+R47,brundage,principal,averi,2025,,https://www.averi.org/about,self,2026-09-14,confirmed,executive director; recused from auditing OpenAI for at least two years; sold eligible OpenAI shares
+R48,brundage,employee,openai,2018,2024-10,https://www.averi.org/about,self,2026-09-14,confirmed,former
+R49,halcyon,pays,aiuc,,,https://www.aiuc.com/team,self,2026-09-14,imported,invested in every AIUC round; imported kevinnbass/metr-money-figure:EV22
+R50,wang,employee,meta,2025-06,,https://scale.com/,press,2026-09-14,imported,Scale founder moved to Meta; imported kevinnbass/metr-money-figure:EV16
+R51,meta,investor,scale,2025-06,,https://scale.com/,press,2026-09-14,imported,49% non-voting; imported kevinnbass/metr-money-figure:EV16
+R52,mattson,principal,mlcommons,,,https://mlcommons.org/about-us/leadership/,self,2026-09-14,imported,president; imported kevinnbass/metr-money-figure:EV17
+R53,mattson,employee,google,,,https://mlcommons.org/about-us/leadership/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:EV17
+R54,google,investor,hfoai,2023-08,,https://techcrunch.com/2023/08/24/,press,2026-09-14,imported,Series D; imported kevinnbass/metr-money-figure:EV15
+R55,amazon,investor,hfoai,2023-08,,https://techcrunch.com/2023/08/24/,press,2026-09-14,imported,imported kevinnbass/metr-money-figure:EV15
+R56,nvidia,investor,hfoai,2023-08,,https://techcrunch.com/2023/08/24/,press,2026-09-14,imported,and pending acquirer; imported kevinnbass/metr-money-figure:EV15
+R57,nvidia,investor,anthropic,2026-09,,https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators,press,2026-09-14,confirmed,reported in talks to anchor the IPO; not closed
+R58,delangue,principal,hfoai,,,https://www.techmeme.com/260912/p13,press,2026-09-14,confirmed,CEO
+R59,hilton,principal,arc,,,https://www.alignment.org/team/,self,2026-09-14,imported,imported kevinnbass/metr-money-figure:EV20
+R60,coefficient,pays,averi,2025,,https://www.averi.org/about,self,2026-09-14,confirmed,named funder
+R61,openai,pays,ukaisi,2025,,https://www.aisi.gov.uk/grants,self,2026-09-14,imported,into the Alignment Project pool; imported kevinnbass/metr-money-figure:EV11
+R62,anthropic,pays,ukaisi,2025,,https://www.aisi.gov.uk/grants,self,2026-09-14,imported,as above
+R63,yc,investor,andon,2024,,https://pitchbook.com/profiles/company/541549-09,press,2026-09-14,unverifiable,
+R64,anthropic-employees,employee,anthropic,,,https://transluce.org/independence-and-transparency-policy,self,2026-09-14,confirmed,group entity
+R65,openai-employees,employee,openai,,,https://transluce.org/independence-and-transparency-policy,self,2026-09-14,confirmed,group entity
+R66,lab-employees,employee,anthropic,,,https://www.averi.org/about,self,2026-09-14,confirmed,"group entity; labs unnamed, Anthropic used as the representative object"

@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1258 854" width="1258" height="854" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
+<rect width="1258" height="854" fill="#F4F6F3"/>
+<text x="12" y="22" font-size="16" fill="#15222E">Traced money by distance from a frontier lab, per evaluator</text>
+<text x="12" y="40" fill="#5E6B76">Cell: number of inflow rows at that distance; the amount below is summed within the largest measure at that distance. Undisclosed amounts count as rows only.</text>
+<text x="12" y="56" fill="#5E6B76">Right: board, advisor, donor, investor, or office ties within two steps of a lab, and the share of rows re-derived from sources (confirmed) rather than imported.</text>
+<text x="320.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Lab (0)</text>
+<text x="436.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Lab-tied (1)</text>
+<text x="552.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Two steps (2)</text>
+<text x="668.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Three steps (3)</text>
+<text x="784.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Public budget</text>
+<text x="900.0" y="84" text-anchor="middle" fill="#15222E" font-weight="600">Donor not public</text>
+<text x="968" y="84" fill="#15222E" font-weight="600">Ties</text><text x="1038" y="84" fill="#15222E" font-weight="600">Confirmed</text><text x="1128" y="84" fill="#15222E" font-weight="600">Negatives</text>
+<text x="12" y="112" fill="#15222E">METR</text>
+<g data-tip="METR, lab (0): 1 row(s) from openai. in_kind $0.4M" style="cursor:pointer"><rect x="264" y="98" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="108" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="320.0" y="117" text-anchor="middle" fill="#15222E" font-size="8.5">in_kind $0.4M</text></g>
+<rect x="380" y="98" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="METR, two steps (2): 2 row(s) from sff. recommendation $0.8M" style="cursor:pointer"><rect x="496" y="98" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="108" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="117" text-anchor="middle" fill="#15222E" font-size="8.5">recommendation $0.8M</text></g>
+<g data-tip="METR, three steps (3): 2 row(s) from arc, longview. transfer $4.6M, grant $0.2M" style="cursor:pointer"><rect x="612" y="98" width="112" height="20" rx="2" fill="#8CC5BB" fill-opacity="0.65"/><text x="668.0" y="108" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="668.0" y="117" text-anchor="middle" fill="#15222E" font-size="8.5">transfer $4.6M</text></g>
+<rect x="728" y="98" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="METR, donor not public: 4 row(s) from audacious, founders-pledge, svcf, vanguard-charitable. daf_grant $4.2M, commitment $17.0M" style="cursor:pointer"><rect x="844" y="98" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.95"/><text x="900.0" y="108" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">4</text><text x="900.0" y="117" text-anchor="middle" fill="#15222E" font-size="8.5">commitment $17.0M</text></g>
+<g data-tip="METR: Adam Gleave (board, distance 2, imported); Marco Mascorro (advisor, distance 2, imported); Holden Karnofsky (advisor (former), distance 1, imported); Paul Christiano (board (former), distance 2, imported); Rajiv Dattani (board, distance 2, imported); David Farhi (donor, distance 1, imported)" style="cursor:pointer"><text x="980" y="112" fill="#9B2C2C" font-weight="600">6</text></g>
+<text x="1048" y="112" fill="#5E6B76">1/9</text>
+<g data-tip="METR: no grant from Coefficient Giving to METR under any name [Coefficient grants index, 2,911 rows, 2026-09-11, imported]; no METR-named grant in Good Ventures Foundation 990-PF Part XV [990-PF FY2022 to FY2025, 2026-09-14, imported]; no METR-named grant in Schmidt Sciences 990-PF 2021 to 2024 [990-PF Part XV, 2026-09-14, imported]; no METR-named grant in Pew Charitable Trusts 990 Schedule I FY2021 to FY2025 [990 Schedule I, 2026-09-14, imported]; no METR-named grant in Packard Foundation 990-PF 2021 to 2024 [990-PF Part XV, 2026-09-14, imported]" style="cursor:pointer"><text x="1143" y="112" fill="#0F766E">5</text></g>
+<text x="12" y="138" fill="#15222E">RAND Corporation</text>
+<rect x="264" y="124" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="124" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="RAND Corporation, two steps (2): 2 row(s) from coefficient. grant $87.0M" style="cursor:pointer"><rect x="496" y="124" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="134" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="143" text-anchor="middle" fill="#15222E" font-size="8.5">grant $87.0M</text></g>
+<rect x="612" y="124" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="RAND Corporation, public budget: 1 row(s) from us-gov. contract $488.8M" style="cursor:pointer"><rect x="728" y="124" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="134" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="784.0" y="143" text-anchor="middle" fill="#15222E" font-size="8.5">contract $488.8M</text></g>
+<g data-tip="RAND Corporation, donor not public: 1 row(s) from audacious. commitment $38.0M" style="cursor:pointer"><rect x="844" y="124" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="134" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="900.0" y="143" text-anchor="middle" fill="#15222E" font-size="8.5">commitment $38.0M</text></g>
+<g data-tip="RAND Corporation: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="138" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="138" fill="#5E6B76">0/4</text>
+<g data-tip="RAND Corporation: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="138" fill="#5E6B76">0</text></g>
+<text x="12" y="164" fill="#15222E">FAR.AI</text>
+<rect x="264" y="150" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="FAR.AI, lab-tied (1): 1 row(s) from aisf. amounts undisclosed" style="cursor:pointer"><rect x="380" y="150" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="160" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="436.0" y="169" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="FAR.AI, two steps (2): 2 row(s) from coefficient, sff. grant $59.3M, recommendation $6.5M" style="cursor:pointer"><rect x="496" y="150" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="160" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="169" text-anchor="middle" fill="#15222E" font-size="8.5">grant $59.3M</text></g>
+<rect x="612" y="150" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="FAR.AI, public budget: 1 row(s) from eu-budget. contract $1.4M" style="cursor:pointer"><rect x="728" y="150" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="160" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="784.0" y="169" text-anchor="middle" fill="#15222E" font-size="8.5">contract $1.4M</text></g>
+<g data-tip="FAR.AI, donor not public: 1 row(s) from schmidt. amounts undisclosed" style="cursor:pointer"><rect x="844" y="150" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="160" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="900.0" y="169" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="FAR.AI: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="164" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="164" fill="#5E6B76">2/5</text>
+<g data-tip="FAR.AI: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="164" fill="#5E6B76">0</text></g>
+<text x="12" y="190" fill="#15222E">Redwood Research</text>
+<rect x="264" y="176" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Redwood Research, lab-tied (1): 1 row(s) from tallinn. daf_grant $1.3M" style="cursor:pointer"><rect x="380" y="176" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="186" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="436.0" y="195" text-anchor="middle" fill="#15222E" font-size="8.5">daf_grant $1.3M</text></g>
+<g data-tip="Redwood Research, two steps (2): 2 row(s) from coefficient, sff. grant $63.1M, recommendation $2.4M" style="cursor:pointer"><rect x="496" y="176" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="186" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="195" text-anchor="middle" fill="#15222E" font-size="8.5">grant $63.1M</text></g>
+<rect x="612" y="176" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="176" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="176" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Redwood Research: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="190" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="190" fill="#5E6B76">0/3</text>
+<g data-tip="Redwood Research: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="190" fill="#5E6B76">0</text></g>
+<text x="12" y="216" fill="#15222E">Irregular (formerly Pattern Labs)</text>
+<g data-tip="Irregular (formerly Pattern Labs), lab (0): 1 row(s) from openai. amounts undisclosed" style="cursor:pointer"><rect x="264" y="202" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="212" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="221" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="Irregular (formerly Pattern Labs), lab-tied (1): 1 row(s) from sequoia. investment $80.0M" style="cursor:pointer"><rect x="380" y="202" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="212" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="436.0" y="221" text-anchor="middle" fill="#15222E" font-size="8.5">investment $80.0M</text></g>
+<g data-tip="Irregular (formerly Pattern Labs), two steps (2): 1 row(s) from coefficient. grant $6.8M" style="cursor:pointer"><rect x="496" y="202" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.50"/><text x="552.0" y="212" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="552.0" y="221" text-anchor="middle" fill="#15222E" font-size="8.5">grant $6.8M</text></g>
+<rect x="612" y="202" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="202" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="202" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Irregular (formerly Pattern Labs): Sequoia Capital (investor, distance 1, confirmed)" style="cursor:pointer"><text x="980" y="216" fill="#9B2C2C" font-weight="600">1</text></g>
+<text x="1048" y="216" fill="#5E6B76">2/3</text>
+<g data-tip="Irregular (formerly Pattern Labs): no bounded negatives on file" style="cursor:pointer"><text x="1143" y="216" fill="#5E6B76">0</text></g>
+<text x="12" y="242" fill="#15222E">Gray Swan</text>
+<g data-tip="Gray Swan, lab (0): 1 row(s) from anthropic. amounts undisclosed" style="cursor:pointer"><rect x="264" y="228" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="238" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="247" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="228" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="228" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="228" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="228" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Gray Swan, donor not public: 1 row(s) from wing. investment $40.0M" style="cursor:pointer"><rect x="844" y="228" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="238" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="900.0" y="247" text-anchor="middle" fill="#15222E" font-size="8.5">investment $40.0M</text></g>
+<g data-tip="Gray Swan: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="242" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="242" fill="#5E6B76">2/2</text>
+<g data-tip="Gray Swan: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="242" fill="#5E6B76">0</text></g>
+<text x="12" y="268" fill="#15222E">SecureBio</text>
+<g data-tip="SecureBio, lab (0): 1 row(s) from openai. amounts undisclosed" style="cursor:pointer"><rect x="264" y="254" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="264" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="273" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="SecureBio, lab-tied (1): 1 row(s) from oaif. amounts undisclosed" style="cursor:pointer"><rect x="380" y="254" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="264" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="436.0" y="273" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="496" y="254" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="254" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="254" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="254" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="SecureBio: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="268" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="268" fill="#5E6B76">2/2</text>
+<g data-tip="SecureBio: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="268" fill="#5E6B76">0</text></g>
+<text x="12" y="294" fill="#15222E">Apollo Research</text>
+<rect x="264" y="280" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Apollo Research, lab-tied (1): 1 row(s) from macroscopic. amounts undisclosed" style="cursor:pointer"><rect x="380" y="280" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="290" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="436.0" y="299" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="Apollo Research, two steps (2): 2 row(s) from coefficient, sff. grant $4.4M, recommendation $1.1M" style="cursor:pointer"><rect x="496" y="280" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="290" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="299" text-anchor="middle" fill="#15222E" font-size="8.5">grant $4.4M</text></g>
+<rect x="612" y="280" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="280" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Apollo Research, donor not public: 1 row(s) from fifty-years. amounts undisclosed" style="cursor:pointer"><rect x="844" y="280" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="290" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="900.0" y="299" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="Apollo Research: Macroscopic Ventures (formerly Center for Emerging Risk Research) (investor, distance 1, confirmed)" style="cursor:pointer"><text x="980" y="294" fill="#9B2C2C" font-weight="600">1</text></g>
+<text x="1048" y="294" fill="#5E6B76">2/4</text>
+<g data-tip="Apollo Research: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="294" fill="#5E6B76">0</text></g>
+<text x="12" y="320" fill="#15222E">Epoch AI</text>
+<g data-tip="Epoch AI, lab (0): 2 row(s) from google, openai. amounts undisclosed" style="cursor:pointer"><rect x="264" y="306" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.65"/><text x="320.0" y="316" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2*</text><text x="320.0" y="325" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="Epoch AI, lab-tied (1): 1 row(s) from tallinn. daf_grant $0.6M" style="cursor:pointer"><rect x="380" y="306" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="316" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="436.0" y="325" text-anchor="middle" fill="#15222E" font-size="8.5">daf_grant $0.6M</text></g>
+<g data-tip="Epoch AI, two steps (2): 1 row(s) from coefficient. grant $24.5M" style="cursor:pointer"><rect x="496" y="306" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.50"/><text x="552.0" y="316" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="552.0" y="325" text-anchor="middle" fill="#15222E" font-size="8.5">grant $24.5M</text></g>
+<rect x="612" y="306" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="306" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="306" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Epoch AI: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="320" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="320" fill="#5E6B76">1/4</text>
+<g data-tip="Epoch AI: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="320" fill="#5E6B76">0</text></g>
+<text x="12" y="346" fill="#15222E">Palisade Research</text>
+<rect x="264" y="332" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="332" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Palisade Research, two steps (2): 2 row(s) from coefficient, sff. grant $3.8M, recommendation $3.2M" style="cursor:pointer"><rect x="496" y="332" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="342" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2</text><text x="552.0" y="351" text-anchor="middle" fill="#15222E" font-size="8.5">grant $3.8M</text></g>
+<rect x="612" y="332" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="332" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="332" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Palisade Research: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="346" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="346" fill="#5E6B76">0/2</text>
+<g data-tip="Palisade Research: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="346" fill="#5E6B76">0</text></g>
+<text x="12" y="372" fill="#15222E">Transluce</text>
+<rect x="264" y="358" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Transluce, lab-tied (1): 2 row(s) from anthropic-employees, openai-employees. amounts undisclosed" style="cursor:pointer"><rect x="380" y="358" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.65"/><text x="436.0" y="368" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2*</text><text x="436.0" y="377" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="496" y="358" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="358" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Transluce, public budget: 1 row(s) from eu-budget. amounts undisclosed" style="cursor:pointer"><rect x="728" y="358" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="368" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="784.0" y="377" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="844" y="358" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Transluce: Neil Chowdhury (advisor, distance 1, confirmed)" style="cursor:pointer"><text x="980" y="372" fill="#9B2C2C" font-weight="600">1</text></g>
+<text x="1048" y="372" fill="#5E6B76">2/3</text>
+<g data-tip="Transluce: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]; no revenue directly from AI developers as organizations in FY2025; no paid evaluations to date [organization's own policy disclosure, 2026-09-14, confirmed]" style="cursor:pointer"><text x="1143" y="372" fill="#0F766E">2</text></g>
+<text x="12" y="398" fill="#15222E">Andon Labs</text>
+<g data-tip="Andon Labs, lab (0): 1 row(s) from anthropic. amounts undisclosed" style="cursor:pointer"><rect x="264" y="384" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="394" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="403" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="384" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="384" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="384" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="384" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Andon Labs, donor not public: 1 row(s) from yc. investment $0.5M" style="cursor:pointer"><rect x="844" y="384" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="394" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="900.0" y="403" text-anchor="middle" fill="#15222E" font-size="8.5">investment $0.5M</text></g>
+<g data-tip="Andon Labs: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="398" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="398" fill="#5E6B76">0/2</text>
+<g data-tip="Andon Labs: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="398" fill="#5E6B76">0</text></g>
+<text x="12" y="424" fill="#15222E">UK AI Security Institute</text>
+<g data-tip="UK AI Security Institute, lab (0): 1 row(s) from openai. amounts undisclosed" style="cursor:pointer"><rect x="264" y="410" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="420" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="429" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="410" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="410" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="410" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="UK AI Security Institute, public budget: 1 row(s) from uk-gov. amounts undisclosed" style="cursor:pointer"><rect x="728" y="410" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="420" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="784.0" y="429" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="844" y="410" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="UK AI Security Institute: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="424" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="424" fill="#5E6B76">0/2</text>
+<g data-tip="UK AI Security Institute: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="424" fill="#0F766E">1</text></g>
+<text x="12" y="450" fill="#15222E">US CAISI (NIST)</text>
+<rect x="264" y="436" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="436" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="436" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="436" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="US CAISI (NIST), public budget: 1 row(s) from us-gov. grant $10.0M" style="cursor:pointer"><rect x="728" y="436" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="446" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="784.0" y="455" text-anchor="middle" fill="#15222E" font-size="8.5">grant $10.0M</text></g>
+<rect x="844" y="436" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="US CAISI (NIST): no ties within two steps recorded" style="cursor:pointer"><text x="980" y="450" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="450" fill="#5E6B76">0/1</text>
+<g data-tip="US CAISI (NIST): no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]; no CAISI contract to METR, Apollo, or other private evaluators found [CAISI announcements and spending search, 2026-09-14, imported]" style="cursor:pointer"><text x="1143" y="450" fill="#0F766E">2</text></g>
+<text x="12" y="476" fill="#15222E">EU AI Office</text>
+<rect x="264" y="462" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="462" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="462" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="462" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="EU AI Office, public budget: 1 row(s) from eu-budget. contract $7.4M" style="cursor:pointer"><rect x="728" y="462" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="472" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="784.0" y="481" text-anchor="middle" fill="#15222E" font-size="8.5">contract $7.4M</text></g>
+<rect x="844" y="462" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="EU AI Office: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="476" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="476" fill="#5E6B76">0/1</text>
+<g data-tip="EU AI Office: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="476" fill="#0F766E">1</text></g>
+<text x="12" y="502" fill="#15222E">AVERI</text>
+<rect x="264" y="488" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="AVERI, lab-tied (1): 1 row(s) from lab-employees. amounts undisclosed" style="cursor:pointer"><rect x="380" y="488" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="498" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="436.0" y="507" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="AVERI, two steps (2): 2 row(s) from aiuc, coefficient. amounts undisclosed" style="cursor:pointer"><rect x="496" y="488" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.65"/><text x="552.0" y="498" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">2*</text><text x="552.0" y="507" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="612" y="488" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="488" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="AVERI, donor not public: 1 row(s) from halcyon. amounts undisclosed" style="cursor:pointer"><rect x="844" y="488" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="498" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="900.0" y="507" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<g data-tip="AVERI: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="502" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="502" fill="#5E6B76">4/4</text>
+<g data-tip="AVERI: no single donor is a majority of funding [organization's own funding disclosure, 2026-09-14, confirmed]" style="cursor:pointer"><text x="1143" y="502" fill="#0F766E">1</text></g>
+<text x="12" y="528" fill="#15222E">SaferAI</text>
+<rect x="264" y="514" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="514" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="SaferAI, two steps (2): 1 row(s) from sff. recommendation $1.1M" style="cursor:pointer"><rect x="496" y="514" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.50"/><text x="552.0" y="524" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="552.0" y="533" text-anchor="middle" fill="#15222E" font-size="8.5">recommendation $1.1M</text></g>
+<rect x="612" y="514" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="SaferAI, public budget: 1 row(s) from eu-budget. amounts undisclosed" style="cursor:pointer"><rect x="728" y="514" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="524" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="784.0" y="533" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="844" y="514" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="SaferAI: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="528" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="528" fill="#5E6B76">0/2</text>
+<g data-tip="SaferAI: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="528" fill="#0F766E">1</text></g>
+<text x="12" y="554" fill="#15222E">Scale AI (SEAL)</text>
+<g data-tip="Scale AI (SEAL), lab (0): 1 row(s) from meta. investment $14300.0M" style="cursor:pointer"><rect x="264" y="540" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="550" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="320.0" y="559" text-anchor="middle" fill="#15222E" font-size="8.5">investment $14.3B</text></g>
+<rect x="380" y="540" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="540" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="540" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="540" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="540" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Scale AI (SEAL): Meta (investor, distance 0, imported)" style="cursor:pointer"><text x="980" y="554" fill="#9B2C2C" font-weight="600">1</text></g>
+<text x="1048" y="554" fill="#5E6B76">0/1</text>
+<g data-tip="Scale AI (SEAL): no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="554" fill="#0F766E">1</text></g>
+<text x="12" y="580" fill="#15222E">MLCommons</text>
+<g data-tip="MLCommons, lab (0): 1 row(s) from google. amounts undisclosed" style="cursor:pointer"><rect x="264" y="566" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="576" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="585" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="566" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="566" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="566" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="566" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="566" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="MLCommons: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="580" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="580" fill="#5E6B76">0/1</text>
+<g data-tip="MLCommons: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="580" fill="#0F766E">1</text></g>
+<text x="12" y="606" fill="#15222E">Hugging Face Open Alignment Initiati</text>
+<rect x="264" y="592" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Hugging Face Open Alignment Initiative, lab-tied (1): 1 row(s) from nvidia. investment $12930.0M" style="cursor:pointer"><rect x="380" y="592" width="112" height="20" rx="2" fill="#C4746A" fill-opacity="0.50"/><text x="436.0" y="602" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="436.0" y="611" text-anchor="middle" fill="#15222E" font-size="8.5">investment $12.9B</text></g>
+<rect x="496" y="592" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="592" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="592" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Hugging Face Open Alignment Initiative, donor not public: 1 row(s) from salesforce-ventures. investment $235.0M" style="cursor:pointer"><rect x="844" y="592" width="112" height="20" rx="2" fill="#5E6B76" fill-opacity="0.50"/><text x="900.0" y="602" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="900.0" y="611" text-anchor="middle" fill="#15222E" font-size="8.5">investment $235.0M</text></g>
+<g data-tip="Hugging Face Open Alignment Initiative: Google / Google DeepMind (investor, distance 0, imported); Amazon (investor, distance 0, imported); Nvidia (investor, distance 1, imported)" style="cursor:pointer"><text x="980" y="606" fill="#9B2C2C" font-weight="600">3</text></g>
+<text x="1048" y="606" fill="#5E6B76">1/2</text>
+<g data-tip="Hugging Face Open Alignment Initiative: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="606" fill="#0F766E">1</text></g>
+<text x="12" y="632" fill="#15222E">Center for AI Safety</text>
+<rect x="264" y="618" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="618" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Center for AI Safety, two steps (2): 1 row(s) from sff. recommendation $1.1M" style="cursor:pointer"><rect x="496" y="618" width="112" height="20" rx="2" fill="#B7791F" fill-opacity="0.50"/><text x="552.0" y="628" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="552.0" y="637" text-anchor="middle" fill="#15222E" font-size="8.5">recommendation $1.1M</text></g>
+<rect x="612" y="618" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="618" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="618" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Center for AI Safety: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="632" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="632" fill="#5E6B76">1/1</text>
+<g data-tip="Center for AI Safety: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="632" fill="#5E6B76">0</text></g>
+<text x="12" y="658" fill="#15222E">Microsoft AI Red Team</text>
+<g data-tip="Microsoft AI Red Team, lab (0): 1 row(s) from microsoft. amounts undisclosed" style="cursor:pointer"><rect x="264" y="644" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="654" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="663" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="644" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="644" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="644" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="728" y="644" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="844" y="644" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Microsoft AI Red Team: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="658" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="658" fill="#5E6B76">1/1</text>
+<g data-tip="Microsoft AI Red Team: no bounded negatives on file" style="cursor:pointer"><text x="1143" y="658" fill="#5E6B76">0</text></g>
+<text x="12" y="684" fill="#15222E">Dreadnode</text>
+<text x="270" y="684" fill="#5E6B76" font-style="italic">no ledger rows yet; funding and ties not traced</text>
+<text x="12" y="710" fill="#15222E">Humane Intelligence</text>
+<text x="270" y="710" fill="#5E6B76" font-style="italic">no ledger rows yet; funding and ties not traced</text>
+<text x="12" y="736" fill="#15222E">Holistic Agent Leaderboard (Princeto</text>
+<text x="270" y="736" fill="#5E6B76" font-style="italic">no ledger rows yet; funding and ties not traced</text>
+<text x="12" y="762" fill="#15222E">Assurance firms (Big Four and peers)</text>
+<text x="270" y="762" fill="#5E6B76" font-style="italic">no ledger rows yet; funding and ties not traced</text>
+<text x="12" y="788" fill="#15222E">EquiStamp</text>
+<rect x="264" y="774" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="380" y="774" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="774" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="774" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="EquiStamp, public budget: 1 row(s) from eu-budget. contract $1.2M" style="cursor:pointer"><rect x="728" y="774" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="784" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1</text><text x="784.0" y="793" text-anchor="middle" fill="#15222E" font-size="8.5">contract $1.2M</text></g>
+<rect x="844" y="774" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="EquiStamp: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="788" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="788" fill="#5E6B76">0/1</text>
+<g data-tip="EquiStamp: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="788" fill="#0F766E">1</text></g>
+<text x="12" y="814" fill="#15222E">Nemesys Insights</text>
+<g data-tip="Nemesys Insights, lab (0): 1 row(s) from amazon. amounts undisclosed" style="cursor:pointer"><rect x="264" y="800" width="112" height="20" rx="2" fill="#9B2C2C" fill-opacity="0.50"/><text x="320.0" y="810" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="320.0" y="819" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="380" y="800" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="496" y="800" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<rect x="612" y="800" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Nemesys Insights, public budget: 1 row(s) from eu-budget. amounts undisclosed" style="cursor:pointer"><rect x="728" y="800" width="112" height="20" rx="2" fill="#0F766E" fill-opacity="0.50"/><text x="784.0" y="810" text-anchor="middle" fill="#15222E" font-weight="600" font-size="11">1*</text><text x="784.0" y="819" text-anchor="middle" fill="#15222E" font-size="8.5"></text></g>
+<rect x="844" y="800" width="112" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
+<g data-tip="Nemesys Insights: no ties within two steps recorded" style="cursor:pointer"><text x="980" y="814" fill="#5E6B76" font-weight="400">0</text></g>
+<text x="1048" y="814" fill="#5E6B76">0/2</text>
+<g data-tip="Nemesys Insights: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11, imported]" style="cursor:pointer"><text x="1143" y="814" fill="#0F766E">1</text></g>
+<text x="12" y="842" fill="#5E6B76">* includes undisclosed amounts. Source: data/ledger/. Generated by bench.figures. Imported rows are leads until confirmed.</text></svg>

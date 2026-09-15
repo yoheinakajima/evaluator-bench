@@ -95,5 +95,32 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.09",
+    "evaluator": "andon",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found.",
+    "sources": [
+      "andon-pitchbook"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "andon.10",
+    "evaluator": "andon",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Operates AI-run vending and retail deployments inside Anthropic and xAI offices as commercial partnerships while benchmarking those labs' models.",
+    "sources": [
+      "tooldir-andon",
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

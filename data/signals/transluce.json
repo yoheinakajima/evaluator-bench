@@ -97,5 +97,58 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.09",
+    "evaluator": "transluce",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "FY2025 revenue: 32% from personal holdings of Anthropic employees and 6% from OpenAI employees, unrestricted, disclosed under its own policy; no revenue from developers as organizations.",
+    "sources": [
+      "transluce-policy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "transluce.10",
+    "evaluator": "transluce",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.",
+    "sources": [
+      "transluce-policy",
+      "transluce-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "transluce.11",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider.",
+    "sources": [
+      "transluce-policy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "transluce.12",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.",
+    "sources": [
+      "transluce-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

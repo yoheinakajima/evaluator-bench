@@ -92,14 +92,14 @@ def exposure(L: dict | None = None) -> list[dict]:
         rows = [t for t in L["transfers"] if t["to"] == eid]
         buckets: dict[str, dict] = {}
         for t in rows:
-            hop = d.get(t["from"]); key = "unattributed" if hop is None else f"hop{int(hop)}"
+            hop = d.get(t["from"]); key = "public" if E[t["from"]]["kind"] == "public" else ("unattributed" if hop is None else f"hop{int(hop)}")
             b = buckets.setdefault(key, {"rows": 0, "by_measure": defaultdict(float), "undisclosed": 0, "sources": []})
             b["rows"] += 1; b["sources"].append(t["from"])
             if t["amount_usd"]: b["by_measure"][t["measure"]] += float(t["amount_usd"])
             else: b["undisclosed"] += 1
         ties = [r for r in L["relationships"] if r["object"] == eid and r["role"] in {"board", "advisor", "donor", "investor", "office_host"} and d.get(r["subject"], 9e9) <= 2]
         negs = [n for n in L["negatives"] if n["evaluator"] == eid]
-        out.append(dict(id=eid, name=e["name"], inflow_rows=len(rows),
+        out.append(dict(id=eid, name=e["name"], kind_note=e.get("notes",""), inflow_rows=len(rows),
                         buckets={k: {"rows": v["rows"], "undisclosed": v["undisclosed"], "by_measure": dict(v["by_measure"]), "sources": sorted(set(v["sources"]))} for k, v in sorted(buckets.items())},
                         lab_tied_seats=[dict(person=r["subject"], role=r["role"] + (" (former)" if r.get("end") else ""), via=E[r["subject"]]["name"], distance=int(d[r["subject"]]), status=r["audit_status"]) for r in ties],
                         negatives=[dict(claim=n["claim"], searched=n["searched"], snapshot=n["snapshot"], status=n["audit_status"]) for n in negs],
@@ -123,6 +123,11 @@ def main(argv=None) -> int:
             print(f"     {k:12s} {b['rows']} rows{(' (' + str(b['undisclosed']) + ' undisclosed)') if b['undisclosed'] else ''}  {amts}  from {', '.join(b['sources'])}")
         for s in x["lab_tied_seats"]: print(f"     tie: {s['via']} ({s['role']}, distance {s['distance']}, {s['status']})")
         for n in x["negatives"]: print(f"     none found: {n['claim']} [{n['searched']}, {n['snapshot']}, {n['status']}]")
+    evs = [x for x in ex]
+    coef = sum(1 for x in evs if any("coefficient" in b["sources"] for b in x["buckets"].values()))
+    near = sum(1 for x in evs if any(k in ("hop0", "hop1") for k in x["buckets"]))
+    rows = sum(x["inflow_rows"] for x in evs); conf = sum(x["confirmed_rows"] for x in evs)
+    print(f"\nPopulation: {len(evs)} evaluators; {coef} with Coefficient Giving inflows; {near} with an inflow from a lab or a lab-tied party; {conf}/{rows} inflow rows confirmed.")
     if "--json" in (argv or []):
         (DATA.parent / "dist").mkdir(exist_ok=True)
         (DATA.parent / "dist" / "exposure.json").write_text(json.dumps(dict(distances=d, evaluators=ex), indent=1))

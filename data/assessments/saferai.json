@@ -86,13 +86,18 @@
   {
     "evaluator": "saferai",
     "dimension": "X",
-    "value": 4,
-    "anchor": 4,
+    "value": 2,
+    "anchor": 2,
     "signals": [
-      "saferai.08"
+      "saferai.08",
+      "saferai.09"
     ],
-    "rationale": "Anchor 4 on products given the cited signals.",
+    "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Identity of the major AI company client.",
+      "A published lab-money policy."
+    ]
   }
 ]

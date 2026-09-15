@@ -96,5 +96,19 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.09",
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner.",
+    "sources": [
+      "evaluators-ledger",
+      "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

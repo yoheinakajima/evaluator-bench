@@ -106,5 +106,31 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.10",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Published cap: revenue from for-profit AI developers limited to 10% of annual revenue, charged at market rates with publication rights retained; TY2024 earned revenue $429K of $24.3M.",
+    "sources": [
+      "far-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "farai.11",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.",
+    "sources": [
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

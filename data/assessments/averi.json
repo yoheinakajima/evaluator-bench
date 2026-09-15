@@ -5,11 +5,16 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "averi.06"
+      "averi.06",
+      "averi.09",
+      "averi.11"
     ],
-    "rationale": "Anchor 3 on funding given the cited signals.",
+    "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Dollar shares per funder."
+    ]
   },
   {
     "evaluator": "averi",
@@ -26,14 +31,15 @@
   {
     "evaluator": "averi",
     "dimension": "P",
-    "value": 2,
-    "anchor": 2,
+    "value": 3,
+    "anchor": 3,
     "signals": [
-      "averi.04"
+      "averi.04",
+      "averi.10"
     ],
-    "rationale": "Anchor 2 on personnel given the cited signals.",
+    "rationale": "Anchor 3: recusal policy with a stated cooling-off for the director and disclosed ties; short of anchor 4 because the cooling-off is person-specific rather than a standing rule.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4"
   },
   {
     "evaluator": "averi",

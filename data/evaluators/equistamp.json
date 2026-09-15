@@ -1,0 +1,13 @@
+{
+  "id": "equistamp",
+  "name": "EquiStamp",
+  "type": "vc",
+  "hq": "Remote",
+  "domains": [
+    "assurance",
+    "autonomy"
+  ],
+  "confidence": "low",
+  "summary": "Private evaluation-services company; leads two EU AI Office technical-assistance lots (loss of control with METR and Epoch; harmful manipulation with Transluce). Clients named are evaluators and governments.",
+  "what_would_move_the_score": "Funding and ownership disclosure; a lab-money policy."
+}

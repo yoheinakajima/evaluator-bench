@@ -2,14 +2,18 @@
   {
     "evaluator": "euaio",
     "dimension": "F",
-    "value": 4,
-    "anchor": 4,
+    "value": 3,
+    "anchor": 3,
     "signals": [
-      "euaio.06"
+      "euaio.06",
+      "euaio.10"
     ],
-    "rationale": "Anchor 4 on funding given the cited signals.",
+    "rationale": "Anchor 3 pending a confirmed bounded negative; funding is public by construction but the gate asks for the row.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Add a confirmed bounded negative from a primary source to restore anchor 4."
+    ]
   },
   {
     "evaluator": "euaio",

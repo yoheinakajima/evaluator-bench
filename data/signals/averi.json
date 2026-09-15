@@ -97,5 +97,45 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.09",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Funders disclosed by name (AIUC, Coefficient, Halcyon, Fathom, Sympatico Ventures, individuals) with no donor a majority; donations from non-executive lab employees disclosed; API credits offered by six labs and disclosed.",
+    "sources": [
+      "averi-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "averi.10",
+    "evaluator": "averi",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Executive director recused from auditing OpenAI for at least two years after leaving and sold eligible shares; team members' individual holdings disclosed; mandatory recusal for material conflicts.",
+    "sources": [
+      "averi-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "averi.11",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.",
+    "sources": [
+      "averi-funding",
+      "apollo-pbc-round"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

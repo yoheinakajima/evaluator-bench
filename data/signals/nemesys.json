@@ -1,0 +1,119 @@
+[
+  {
+    "id": "nemesys.01",
+    "evaluator": "nemesys",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Paid assessor for Amazon per the Nova papers; private LLC with no funding disclosed.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.02",
+    "evaluator": "nemesys",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "EU Lot 1 subcontractor under the FAR.AI consortium.",
+    "sources": [
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.03",
+    "evaluator": "nemesys",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "No policy published.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.04",
+    "evaluator": "nemesys",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Leadership from a university red-team center; lab ties not established.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.05",
+    "evaluator": "nemesys",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Access through client engagement.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.06",
+    "evaluator": "nemesys",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by the lab client.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.07",
+    "evaluator": "nemesys",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Findings appear inside the lab's papers.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.08",
+    "evaluator": "nemesys",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods described in the lab's papers only.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "nemesys.09",
+    "evaluator": "nemesys",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Consults for a lab.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  }
+]

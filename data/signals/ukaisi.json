@@ -121,5 +121,18 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "ukaisi.11",
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
+    "sources": [
+      "aisi-grants"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

@@ -1,0 +1,99 @@
+[
+  {
+    "evaluator": "nemesys",
+    "dimension": "F",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "nemesys.01",
+      "nemesys.02"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "nemesys.03"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "nemesys.04"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "nemesys.05"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "S",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "nemesys.06"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "R",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "nemesys.07"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "nemesys.08"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "nemesys",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "nemesys.09"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  }
+]

@@ -107,5 +107,18 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.10",
+    "evaluator": "euaio",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.",
+    "sources": [
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
   }
 ]

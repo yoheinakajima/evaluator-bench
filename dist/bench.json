@@ -190,6 +190,18 @@
    "retrieved": "2026-09-14",
    "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators."
   },
+  "aisi-grants": {
+   "id": "aisi-grants",
+   "title": "Alignment Project grants",
+   "publisher": "UK AI Security Institute",
+   "url": "https://www.aisi.gov.uk/grants",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "GBP 27m coalition incl. GBP 5.6m from OpenAI plus Anthropic, Microsoft, AWS and others; awards up to GBP 1m per project.",
+   "source_type": "self",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV11"
+  },
   "aiwiki-ukaisi": {
    "id": "aiwiki-ukaisi",
    "title": "UK AI Security Institute",
@@ -207,6 +219,17 @@
    "published": "2026-08",
    "retrieved": "2026-09-14",
    "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money."
+  },
+  "andon-pitchbook": {
+   "id": "andon-pitchbook",
+   "title": "Andon Labs profile",
+   "publisher": "PitchBook",
+   "url": "https://pitchbook.com/profiles/company/541549-09",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "About $500K raised; seven investors listed; conflicts with another database that lists no funding.",
+   "source_type": "press",
+   "audit_status": "unverifiable"
   },
   "andon-site": {
    "id": "andon-site",
@@ -244,6 +267,17 @@
    "retrieved": "2026-09-14",
    "note": "Four COI rules: no contingent compensation; no side grants/investments from evaluated orgs; recusal; no misrepresentation. States labs pay fair market value."
   },
+  "apollo-pbc-round": {
+   "id": "apollo-pbc-round",
+   "title": "Apollo Research is becoming a PBC (investment section)",
+   "publisher": "Apollo Research",
+   "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+   "published": "2026-01-20",
+   "retrieved": "2026-09-14",
+   "note": "Seed led by 50Y with Juniper, Macroscopic, Common Metal, SAIF, Ocean, Progress Fund, individuals; mission board seats.",
+   "source_type": "self",
+   "audit_status": "confirmed"
+  },
   "apollo-pbc": {
    "id": "apollo-pbc",
    "title": "Apollo Research is becoming a PBC",
@@ -280,6 +314,17 @@
    "retrieved": "2026-09-14",
    "note": "Endorsed SB 315; co-authored AEF-1; pilots are voluntary."
   },
+  "averi-funding": {
+   "id": "averi-funding",
+   "title": "About (funding and conflicts)",
+   "publisher": "AVERI",
+   "url": "https://www.averi.org/about",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Funders: AIUC, Coefficient, Falls, Ralston, Good Forever, Fathom, Halcyon, Sympatico, non-executive lab employees; no donor majority; recusal rules; Brundage recused from auditing OpenAI two years; sold eligible shares; API credits offered by six labs.",
+   "source_type": "self",
+   "audit_status": "confirmed"
+  },
   "averi-launch": {
    "id": "averi-launch",
    "title": "The Launch of AVERI",
@@ -306,6 +351,18 @@
    "published": "2026",
    "retrieved": "2026-09-14",
    "note": "WMDP, HLE benchmarks; director advises xAI."
+  },
+  "caisi-funding": {
+   "id": "caisi-funding",
+   "title": "Funding for CAISI",
+   "publisher": "Institute for Progress",
+   "url": "https://ifp.org/funding-for-caisi/",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "$10M FY2026 within the NIST AI line; FY2027 request $27M.",
+   "source_type": "press",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV12"
   },
   "coefficient-index": {
    "id": "coefficient-index",
@@ -382,6 +439,30 @@
    "retrieved": "2026-09-14",
    "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap."
   },
+  "epoch-transparency": {
+   "id": "epoch-transparency",
+   "title": "Transparency",
+   "publisher": "Epoch AI",
+   "url": "https://epoch.ai/about/transparency",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Donations above $70K listed; Google DeepMind and OpenAI as paying consultation clients; Tallinn DAF $600K.",
+   "source_type": "self",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV03"
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://github.com/kevinnbass/metr-money-figure/blob/main/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-14",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads.",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
   "far-30m": {
    "id": "far-30m",
    "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
@@ -390,6 +471,18 @@
    "published": "2026-07-16",
    "retrieved": "2026-09-14",
    "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum)."
+  },
+  "far-transparency": {
+   "id": "far-transparency",
+   "title": "Transparency",
+   "publisher": "FAR.AI",
+   "url": "https://www.far.ai/transparency",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Revenue from for-profit AI developers capped at 10% of annual revenue; market rates; right to publish retained; 990 TY2024 earned revenue $429K of $24.3M.",
+   "source_type": "self",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV09"
   },
   "forbes-grayswan-2024": {
    "id": "forbes-grayswan-2024",
@@ -762,6 +855,18 @@
    "retrieved": "2026-09-14",
    "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report."
   },
+  "ted-864574": {
+   "id": "ted-864574",
+   "title": "TED 864574-2025 Technical Assistance for AI Safety",
+   "publisher": "Tenders Electronic Daily",
+   "url": "https://ted.europa.eu/",
+   "published": "2025-12",
+   "retrieved": "2026-09-14",
+   "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor.",
+   "source_type": "filing",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml"
+  },
   "tnw-hf-nvidia": {
    "id": "tnw-hf-nvidia",
    "title": "Hugging Face's Open Alignment Initiative wants lab access",
@@ -779,6 +884,17 @@
    "published": "2026-07-08",
    "retrieved": "2026-09-14",
    "note": "Anthropic Project Vend partnership; results cited in model cards."
+  },
+  "transluce-about": {
+   "id": "transluce-about",
+   "title": "Company",
+   "publisher": "Transluce",
+   "url": "https://transluce.org/about",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Board: Allain, McCormick (Halcyon CEO), Steinhardt. Advisors include a Thinking Machines staffer; ethics hotline via third party.",
+   "source_type": "self",
+   "audit_status": "confirmed"
   },
   "transluce-job": {
    "id": "transluce-job",
@@ -806,6 +922,17 @@
    "published": "2026-09",
    "retrieved": "2026-09-14",
    "note": "77 model variants across eight developers."
+  },
+  "transluce-policy": {
+   "id": "transluce-policy",
+   "title": "Independence and Transparency Policy",
+   "publisher": "Transluce",
+   "url": "https://transluce.org/independence-and-transparency-policy",
+   "published": "2026-08-27",
+   "retrieved": "2026-09-14",
+   "note": "FY2025: 6% of revenue from OpenAI employees' personal holdings, 32% from Anthropic employees', unrestricted; no revenue from developers as organizations; no paid evaluations; recusal for financial interest; no equity; disclosure in outputs; AEF-1 2.3 aligned.",
+   "source_type": "self",
+   "audit_status": "confirmed"
   },
   "unite-altman-match": {
    "id": "unite-altman-match",
@@ -848,7 +975,7 @@
    "confidence": "low",
    "summary": "Long-horizon agent evaluations (Vending-Bench) and autonomous deployments; Anthropic Project Vend partner.",
    "what_would_move_the_score": "Funding disclosure and a COI policy would move this from low to medium confidence quickly.",
-   "graph_id": "evaluator#82",
+   "graph_id": "evaluator#93",
    "values": {
     "F": 2,
     "G": 2,
@@ -871,7 +998,7 @@
      "rationale": "Anchor 2 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#340"
+     "graph_id": "assessment#400"
     },
     "G": {
      "evaluator": "andon",
@@ -884,7 +1011,7 @@
      "rationale": "Anchor 2 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#341"
+     "graph_id": "assessment#401"
     },
     "P": {
      "evaluator": "andon",
@@ -897,7 +1024,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#342"
+     "graph_id": "assessment#402"
     },
     "A": {
      "evaluator": "andon",
@@ -910,7 +1037,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#343"
+     "graph_id": "assessment#403"
     },
     "S": {
      "evaluator": "andon",
@@ -923,7 +1050,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#344"
+     "graph_id": "assessment#404"
     },
     "R": {
      "evaluator": "andon",
@@ -936,7 +1063,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#345"
+     "graph_id": "assessment#405"
     },
     "M": {
      "evaluator": "andon",
@@ -949,7 +1076,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#346"
+     "graph_id": "assessment#406"
     },
     "X": {
      "evaluator": "andon",
@@ -962,7 +1089,7 @@
      "rationale": "Anchor 2 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#347"
+     "graph_id": "assessment#407"
     }
    },
    "signals": [
@@ -977,9 +1104,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#108",
+     "graph_id": "signal#121",
      "source_graph_ids": [
-      "source#14"
+      "source#16"
      ]
     },
     {
@@ -993,9 +1120,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#109",
+     "graph_id": "signal#122",
      "source_graph_ids": [
-      "source#75"
+      "source#84"
      ]
     },
     {
@@ -1010,10 +1137,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#110",
+     "graph_id": "signal#123",
      "source_graph_ids": [
-      "source#14",
-      "source#75"
+      "source#16",
+      "source#84"
      ]
     },
     {
@@ -1027,9 +1154,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#111",
+     "graph_id": "signal#124",
      "source_graph_ids": [
-      "source#14"
+      "source#16"
      ]
     },
     {
@@ -1043,9 +1170,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#112",
+     "graph_id": "signal#125",
      "source_graph_ids": [
-      "source#75"
+      "source#84"
      ]
     },
     {
@@ -1059,9 +1186,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#113",
+     "graph_id": "signal#126",
      "source_graph_ids": [
-      "source#14"
+      "source#16"
      ]
     },
     {
@@ -1075,9 +1202,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#114",
+     "graph_id": "signal#127",
      "source_graph_ids": [
-      "source#14"
+      "source#16"
      ]
     },
     {
@@ -1091,9 +1218,45 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#115",
+     "graph_id": "signal#128",
      "source_graph_ids": [
-      "source#14"
+      "source#16"
+     ]
+    },
+    {
+     "id": "andon.09",
+     "evaluator": "andon",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found.",
+     "sources": [
+      "andon-pitchbook"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#129",
+     "source_graph_ids": [
+      "source#15"
+     ]
+    },
+    {
+     "id": "andon.10",
+     "evaluator": "andon",
+     "dimension": "X",
+     "direction": "against",
+     "claim": "Operates AI-run vending and retail deployments inside Anthropic and xAI offices as commercial partnerships while benchmarking those labs' models.",
+     "sources": [
+      "tooldir-andon",
+      "andon-site"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#130",
+     "source_graph_ids": [
+      "source#84",
+      "source#16"
      ]
     }
    ],
@@ -1117,10 +1280,10 @@
    "confidence": "high",
    "summary": "Scheming and deception specialist; ran evaluations for every major lab; converted to a public benefit corporation in January 2026.",
    "what_would_move_the_score": "Disclose revenue concentration by client and separate the product business from the evaluation practice.",
-   "graph_id": "evaluator#83",
+   "graph_id": "evaluator#94",
    "values": {
     "F": 2,
-    "G": 3,
+    "G": 2,
     "P": 3,
     "A": 3,
     "S": 3,
@@ -1140,21 +1303,26 @@
      "rationale": "Anchor 2 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#348"
+     "graph_id": "assessment#408"
     },
     "G": {
      "evaluator": "apollo",
      "dimension": "G",
-     "value": 3,
-     "anchor": 3,
+     "value": 2,
+     "anchor": 2,
      "signals": [
       "apollo.01",
-      "apollo.03"
+      "apollo.03",
+      "apollo.10"
      ],
-     "rationale": "Anchor 3 on governance given the cited signals.",
+     "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#349"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Round size and Macroscopic's share.",
+      "Who holds the mission seats."
+     ],
+     "graph_id": "assessment#409"
     },
     "P": {
      "evaluator": "apollo",
@@ -1167,7 +1335,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#350"
+     "graph_id": "assessment#410"
     },
     "A": {
      "evaluator": "apollo",
@@ -1180,7 +1348,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#351"
+     "graph_id": "assessment#411"
     },
     "S": {
      "evaluator": "apollo",
@@ -1193,7 +1361,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#352"
+     "graph_id": "assessment#412"
     },
     "R": {
      "evaluator": "apollo",
@@ -1206,7 +1374,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#353"
+     "graph_id": "assessment#413"
     },
     "M": {
      "evaluator": "apollo",
@@ -1219,7 +1387,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#354"
+     "graph_id": "assessment#414"
     },
     "X": {
      "evaluator": "apollo",
@@ -1232,7 +1400,7 @@
      "rationale": "Anchor 2 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#355"
+     "graph_id": "assessment#415"
     }
    },
    "signals": [
@@ -1247,9 +1415,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#116",
+     "graph_id": "signal#131",
      "source_graph_ids": [
-      "source#17"
+      "source#19"
      ]
     },
     {
@@ -1263,9 +1431,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#117",
+     "graph_id": "signal#132",
      "source_graph_ids": [
-      "source#17"
+      "source#19"
      ]
     },
     {
@@ -1279,9 +1447,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#118",
+     "graph_id": "signal#133",
      "source_graph_ids": [
-      "source#18"
+      "source#21"
      ]
     },
     {
@@ -1295,9 +1463,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#119",
+     "graph_id": "signal#134",
      "source_graph_ids": [
-      "source#15"
+      "source#17"
      ]
     },
     {
@@ -1311,9 +1479,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#120",
+     "graph_id": "signal#135",
      "source_graph_ids": [
-      "source#17"
+      "source#19"
      ]
     },
     {
@@ -1328,10 +1496,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#121",
+     "graph_id": "signal#136",
      "source_graph_ids": [
-      "source#15",
-      "source#16"
+      "source#17",
+      "source#18"
      ]
     },
     {
@@ -1345,9 +1513,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#122",
+     "graph_id": "signal#137",
      "source_graph_ids": [
-      "source#15"
+      "source#17"
      ]
     },
     {
@@ -1361,9 +1529,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#123",
+     "graph_id": "signal#138",
      "source_graph_ids": [
-      "source#15"
+      "source#17"
      ]
     },
     {
@@ -1377,17 +1545,53 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#124",
+     "graph_id": "signal#139",
      "source_graph_ids": [
-      "source#17"
+      "source#19"
+     ]
+    },
+    {
+     "id": "apollo.10",
+     "evaluator": "apollo",
+     "dimension": "G",
+     "direction": "against",
+     "claim": "January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.",
+     "sources": [
+      "apollo-pbc-round"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#140",
+     "source_graph_ids": [
+      "source#20"
+     ]
+    },
+    {
+     "id": "apollo.11",
+     "evaluator": "apollo",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "SFF recommendations of about $1.1M and Coefficient grants of about $4.4M per the index snapshot; both funders are one to two steps from an Anthropic investor.",
+     "sources": [
+      "evaluators-ledger",
+      "coefficient-index"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#141",
+     "source_graph_ids": [
+      "source#39",
+      "source#30"
      ]
     }
    ],
    "scores": {
-    "lab": 69,
-    "regulator": 71,
-    "public": 68,
-    "equal": 69
+    "lab": 67,
+    "regulator": 69,
+    "public": 64,
+    "equal": 66
    }
   },
   {
@@ -1401,11 +1605,11 @@
    "confidence": "med",
    "summary": "Standards body for frontier AI auditing; ran the first double-blind enclave evaluation of a proprietary model.",
    "what_would_move_the_score": "Funder disclosure and a first audit under statutory terms.",
-   "graph_id": "evaluator#84",
+   "graph_id": "evaluator#95",
    "values": {
     "F": 3,
     "G": 4,
-    "P": 2,
+    "P": 3,
     "A": 3,
     "S": 3,
     "R": 3,
@@ -1419,12 +1623,17 @@
      "value": 3,
      "anchor": 3,
      "signals": [
-      "averi.06"
+      "averi.06",
+      "averi.09",
+      "averi.11"
      ],
-     "rationale": "Anchor 3 on funding given the cited signals.",
+     "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#356"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Dollar shares per funder."
+     ],
+     "graph_id": "assessment#416"
     },
     "G": {
      "evaluator": "averi",
@@ -1437,20 +1646,21 @@
      "rationale": "Anchor 4 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#357"
+     "graph_id": "assessment#417"
     },
     "P": {
      "evaluator": "averi",
      "dimension": "P",
-     "value": 2,
-     "anchor": 2,
+     "value": 3,
+     "anchor": 3,
      "signals": [
-      "averi.04"
+      "averi.04",
+      "averi.10"
      ],
-     "rationale": "Anchor 2 on personnel given the cited signals.",
+     "rationale": "Anchor 3: recusal policy with a stated cooling-off for the director and disclosed ties; short of anchor 4 because the cooling-off is person-specific rather than a standing rule.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#358"
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#418"
     },
     "A": {
      "evaluator": "averi",
@@ -1463,7 +1673,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#359"
+     "graph_id": "assessment#419"
     },
     "S": {
      "evaluator": "averi",
@@ -1476,7 +1686,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#360"
+     "graph_id": "assessment#420"
     },
     "R": {
      "evaluator": "averi",
@@ -1489,7 +1699,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#361"
+     "graph_id": "assessment#421"
     },
     "M": {
      "evaluator": "averi",
@@ -1502,7 +1712,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#362"
+     "graph_id": "assessment#422"
     },
     "X": {
      "evaluator": "averi",
@@ -1515,7 +1725,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#363"
+     "graph_id": "assessment#423"
     }
    },
    "signals": [
@@ -1530,9 +1740,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#125",
+     "graph_id": "signal#142",
      "source_graph_ids": [
-      "source#23"
+      "source#27"
      ]
     },
     {
@@ -1547,10 +1757,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#126",
+     "graph_id": "signal#143",
      "source_graph_ids": [
-      "source#22",
-      "source#21"
+      "source#26",
+      "source#24"
      ]
     },
     {
@@ -1565,10 +1775,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#127",
+     "graph_id": "signal#144",
      "source_graph_ids": [
-      "source#23",
-      "source#20"
+      "source#27",
+      "source#23"
      ]
     },
     {
@@ -1582,9 +1792,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#128",
+     "graph_id": "signal#145",
      "source_graph_ids": [
-      "source#22"
+      "source#26"
      ]
     },
     {
@@ -1599,10 +1809,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#129",
+     "graph_id": "signal#146",
      "source_graph_ids": [
-      "source#21",
-      "source#23"
+      "source#24",
+      "source#27"
      ]
     },
     {
@@ -1616,9 +1826,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#130",
+     "graph_id": "signal#147",
      "source_graph_ids": [
-      "source#21"
+      "source#24"
      ]
     },
     {
@@ -1632,9 +1842,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#131",
+     "graph_id": "signal#148",
      "source_graph_ids": [
-      "source#23"
+      "source#27"
      ]
     },
     {
@@ -1648,17 +1858,70 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#132",
+     "graph_id": "signal#149",
      "source_graph_ids": [
-      "source#21"
+      "source#24"
+     ]
+    },
+    {
+     "id": "averi.09",
+     "evaluator": "averi",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "Funders disclosed by name (AIUC, Coefficient, Halcyon, Fathom, Sympatico Ventures, individuals) with no donor a majority; donations from non-executive lab employees disclosed; API credits offered by six labs and disclosed.",
+     "sources": [
+      "averi-funding"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#150",
+     "source_graph_ids": [
+      "source#25"
+     ]
+    },
+    {
+     "id": "averi.10",
+     "evaluator": "averi",
+     "dimension": "P",
+     "direction": "for",
+     "claim": "Executive director recused from auditing OpenAI for at least two years after leaving and sold eligible shares; team members' individual holdings disclosed; mandatory recusal for material conflicts.",
+     "sources": [
+      "averi-funding"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#151",
+     "source_graph_ids": [
+      "source#25"
+     ]
+    },
+    {
+     "id": "averi.11",
+     "evaluator": "averi",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.",
+     "sources": [
+      "averi-funding",
+      "apollo-pbc-round"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#152",
+     "source_graph_ids": [
+      "source#25",
+      "source#20"
      ]
     }
    ],
    "scores": {
-    "lab": 78,
-    "regulator": 78,
-    "public": 78,
-    "equal": 81
+    "lab": 80,
+    "regulator": 80,
+    "public": 81,
+    "equal": 84
    }
   },
   {
@@ -1672,7 +1935,7 @@
    "confidence": "low",
    "summary": "Expected entrants once Illinois SB 315 audits begin in 2028; no frontier elicitation capability yet.",
    "what_would_move_the_score": "A frontier-AI audit practice with published methodology and a technical partner.",
-   "graph_id": "evaluator#85",
+   "graph_id": "evaluator#96",
    "values": {
     "F": 2,
     "G": 2,
@@ -1695,7 +1958,7 @@
      "rationale": "Anchor 2 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#364"
+     "graph_id": "assessment#424"
     },
     "G": {
      "evaluator": "big4",
@@ -1708,7 +1971,7 @@
      "rationale": "Anchor 2 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#365"
+     "graph_id": "assessment#425"
     },
     "P": {
      "evaluator": "big4",
@@ -1721,7 +1984,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#366"
+     "graph_id": "assessment#426"
     },
     "A": {
      "evaluator": "big4",
@@ -1734,7 +1997,7 @@
      "rationale": "Anchor 1 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#367"
+     "graph_id": "assessment#427"
     },
     "S": {
      "evaluator": "big4",
@@ -1747,7 +2010,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#368"
+     "graph_id": "assessment#428"
     },
     "R": {
      "evaluator": "big4",
@@ -1760,7 +2023,7 @@
      "rationale": "Anchor 1 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#369"
+     "graph_id": "assessment#429"
     },
     "M": {
      "evaluator": "big4",
@@ -1773,7 +2036,7 @@
      "rationale": "Anchor 1 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#370"
+     "graph_id": "assessment#430"
     },
     "X": {
      "evaluator": "big4",
@@ -1786,7 +2049,7 @@
      "rationale": "Anchor 1 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#371"
+     "graph_id": "assessment#431"
     }
    },
    "signals": [
@@ -1802,10 +2065,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#133",
+     "graph_id": "signal#153",
      "source_graph_ids": [
-      "source#27",
-      "source#68"
+      "source#32",
+      "source#76"
      ]
     },
     {
@@ -1819,9 +2082,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#134",
+     "graph_id": "signal#154",
      "source_graph_ids": [
-      "source#68"
+      "source#76"
      ]
     },
     {
@@ -1835,9 +2098,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#135",
+     "graph_id": "signal#155",
      "source_graph_ids": [
-      "source#44"
+      "source#52"
      ]
     },
     {
@@ -1851,9 +2114,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#136",
+     "graph_id": "signal#156",
      "source_graph_ids": [
-      "source#27"
+      "source#32"
      ]
     },
     {
@@ -1867,9 +2130,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#137",
+     "graph_id": "signal#157",
      "source_graph_ids": [
-      "source#27"
+      "source#32"
      ]
     },
     {
@@ -1883,9 +2146,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#138",
+     "graph_id": "signal#158",
      "source_graph_ids": [
-      "source#68"
+      "source#76"
      ]
     },
     {
@@ -1899,9 +2162,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#139",
+     "graph_id": "signal#159",
      "source_graph_ids": [
-      "source#31"
+      "source#36"
      ]
     },
     {
@@ -1915,9 +2178,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#140",
+     "graph_id": "signal#160",
      "source_graph_ids": [
-      "source#68"
+      "source#76"
      ]
     }
    ],
@@ -1940,7 +2203,7 @@
    "confidence": "med",
    "summary": "Hazard benchmarks (WMDP, HLE); director advises xAI.",
    "what_would_move_the_score": "A public recusal policy covering the xAI relationship.",
-   "graph_id": "evaluator#86",
+   "graph_id": "evaluator#97",
    "values": {
     "F": 3,
     "G": 3,
@@ -1963,7 +2226,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#372"
+     "graph_id": "assessment#432"
     },
     "G": {
      "evaluator": "cais",
@@ -1976,7 +2239,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#373"
+     "graph_id": "assessment#433"
     },
     "P": {
      "evaluator": "cais",
@@ -1989,7 +2252,7 @@
      "rationale": "Anchor 1 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#374"
+     "graph_id": "assessment#434"
     },
     "A": {
      "evaluator": "cais",
@@ -2002,7 +2265,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#375"
+     "graph_id": "assessment#435"
     },
     "S": {
      "evaluator": "cais",
@@ -2015,7 +2278,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#376"
+     "graph_id": "assessment#436"
     },
     "R": {
      "evaluator": "cais",
@@ -2028,7 +2291,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#377"
+     "graph_id": "assessment#437"
     },
     "M": {
      "evaluator": "cais",
@@ -2041,7 +2304,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#378"
+     "graph_id": "assessment#438"
     },
     "X": {
      "evaluator": "cais",
@@ -2054,7 +2317,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#379"
+     "graph_id": "assessment#439"
     }
    },
    "signals": [
@@ -2070,10 +2333,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#141",
+     "graph_id": "signal#161",
      "source_graph_ids": [
       "source#9",
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2087,7 +2350,7 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#142",
+     "graph_id": "signal#162",
      "source_graph_ids": [
       "source#9"
      ]
@@ -2103,9 +2366,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#143",
+     "graph_id": "signal#163",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2119,9 +2382,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#144",
+     "graph_id": "signal#164",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2135,9 +2398,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#145",
+     "graph_id": "signal#165",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2151,9 +2414,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#146",
+     "graph_id": "signal#166",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2167,9 +2430,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#147",
+     "graph_id": "signal#167",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     },
     {
@@ -2183,9 +2446,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#148",
+     "graph_id": "signal#168",
      "source_graph_ids": [
-      "source#24"
+      "source#28"
      ]
     }
    ],
@@ -2210,9 +2473,9 @@
    "confidence": "high",
    "summary": "Pre-deployment agreements with five labs; 40+ evaluations; some classified via TRAINS taskforce.",
    "what_would_move_the_score": "Regular public reporting per model and a standing budget line insulated from reorganization.",
-   "graph_id": "evaluator#87",
+   "graph_id": "evaluator#98",
    "values": {
-    "F": 4,
+    "F": 3,
     "G": 3,
     "P": 3,
     "A": 3,
@@ -2225,15 +2488,19 @@
     "F": {
      "evaluator": "caisi",
      "dimension": "F",
-     "value": 4,
-     "anchor": 4,
+     "value": 3,
+     "anchor": 3,
      "signals": [
-      "caisi.01"
+      "caisi.01",
+      "caisi.10"
      ],
-     "rationale": "Anchor 4 on funding given the cited signals.",
+     "rationale": "Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#380"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Add a confirmed bounded negative from a primary source to restore anchor 4."
+     ],
+     "graph_id": "assessment#440"
     },
     "G": {
      "evaluator": "caisi",
@@ -2246,7 +2513,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#381"
+     "graph_id": "assessment#441"
     },
     "P": {
      "evaluator": "caisi",
@@ -2259,7 +2526,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#382"
+     "graph_id": "assessment#442"
     },
     "A": {
      "evaluator": "caisi",
@@ -2272,7 +2539,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#383"
+     "graph_id": "assessment#443"
     },
     "S": {
      "evaluator": "caisi",
@@ -2285,7 +2552,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#384"
+     "graph_id": "assessment#444"
     },
     "R": {
      "evaluator": "caisi",
@@ -2298,7 +2565,7 @@
      "rationale": "Anchor 1 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#385"
+     "graph_id": "assessment#445"
     },
     "M": {
      "evaluator": "caisi",
@@ -2311,7 +2578,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#386"
+     "graph_id": "assessment#446"
     },
     "X": {
      "evaluator": "caisi",
@@ -2324,7 +2591,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#387"
+     "graph_id": "assessment#447"
     }
    },
    "signals": [
@@ -2340,10 +2607,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#149",
+     "graph_id": "signal#169",
      "source_graph_ids": [
-      "source#29",
-      "source#57"
+      "source#34",
+      "source#65"
      ]
     },
     {
@@ -2357,9 +2624,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#150",
+     "graph_id": "signal#170",
      "source_graph_ids": [
-      "source#29"
+      "source#34"
      ]
     },
     {
@@ -2373,9 +2640,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#151",
+     "graph_id": "signal#171",
      "source_graph_ids": [
-      "source#29"
+      "source#34"
      ]
     },
     {
@@ -2389,9 +2656,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#152",
+     "graph_id": "signal#172",
      "source_graph_ids": [
-      "source#29"
+      "source#34"
      ]
     },
     {
@@ -2406,10 +2673,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#153",
+     "graph_id": "signal#173",
      "source_graph_ids": [
-      "source#65",
-      "source#42"
+      "source#73",
+      "source#50"
      ]
     },
     {
@@ -2423,9 +2690,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#154",
+     "graph_id": "signal#174",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
      ]
     },
     {
@@ -2439,9 +2706,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#155",
+     "graph_id": "signal#175",
      "source_graph_ids": [
-      "source#57"
+      "source#65"
      ]
     },
     {
@@ -2455,17 +2722,55 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#156",
+     "graph_id": "signal#176",
      "source_graph_ids": [
-      "source#57"
+      "source#65"
+     ]
+    },
+    {
+     "id": "caisi.09",
+     "evaluator": "caisi",
+     "dimension": "G",
+     "direction": "against",
+     "claim": "Appropriation of about $10M in FY2026 within NIST's AI line; the director resigned in July 2026 and the NIST director is acting head.",
+     "sources": [
+      "caisi-funding",
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#177",
+     "source_graph_ids": [
+      "source#29",
+      "source#39"
+     ]
+    },
+    {
+     "id": "caisi.10",
+     "evaluator": "caisi",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file.",
+     "sources": [
+      "caisi-funding",
+      "nist-caisi"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#178",
+     "source_graph_ids": [
+      "source#29",
+      "source#65"
      ]
     }
    ],
    "scores": {
-    "lab": 72,
-    "regulator": 69,
-    "public": 71,
-    "equal": 72
+    "lab": 67,
+    "regulator": 65,
+    "public": 65,
+    "equal": 69
    }
   },
   {
@@ -2479,7 +2784,7 @@
    "confidence": "low",
    "summary": "Offensive-security firm named by Google DeepMind as an external expert on Gemini testing.",
    "what_would_move_the_score": "Published engagement terms and a first public report.",
-   "graph_id": "evaluator#88",
+   "graph_id": "evaluator#99",
    "values": {
     "F": 1,
     "G": 1,
@@ -2502,7 +2807,7 @@
      "rationale": "Anchor 1 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#388"
+     "graph_id": "assessment#448"
     },
     "G": {
      "evaluator": "dreadnode",
@@ -2515,7 +2820,7 @@
      "rationale": "Anchor 1 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#389"
+     "graph_id": "assessment#449"
     },
     "P": {
      "evaluator": "dreadnode",
@@ -2528,7 +2833,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#390"
+     "graph_id": "assessment#450"
     },
     "A": {
      "evaluator": "dreadnode",
@@ -2541,7 +2846,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#391"
+     "graph_id": "assessment#451"
     },
     "S": {
      "evaluator": "dreadnode",
@@ -2554,7 +2859,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#392"
+     "graph_id": "assessment#452"
     },
     "R": {
      "evaluator": "dreadnode",
@@ -2567,7 +2872,7 @@
      "rationale": "Anchor 1 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#393"
+     "graph_id": "assessment#453"
     },
     "M": {
      "evaluator": "dreadnode",
@@ -2580,7 +2885,7 @@
      "rationale": "Anchor 1 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#394"
+     "graph_id": "assessment#454"
     },
     "X": {
      "evaluator": "dreadnode",
@@ -2593,7 +2898,7 @@
      "rationale": "Anchor 1 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#395"
+     "graph_id": "assessment#455"
     }
    },
    "signals": [
@@ -2608,9 +2913,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#157",
+     "graph_id": "signal#179",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2624,9 +2929,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#158",
+     "graph_id": "signal#180",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2640,9 +2945,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#159",
+     "graph_id": "signal#181",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2656,9 +2961,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#160",
+     "graph_id": "signal#182",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2672,9 +2977,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#161",
+     "graph_id": "signal#183",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2688,9 +2993,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#162",
+     "graph_id": "signal#184",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2704,9 +3009,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#163",
+     "graph_id": "signal#185",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     },
     {
@@ -2720,9 +3025,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#164",
+     "graph_id": "signal#186",
      "source_graph_ids": [
-      "source#36"
+      "source#44"
      ]
     }
    ],
@@ -2744,7 +3049,7 @@
    "confidence": "high",
    "summary": "Capability-tracking and benchmark nonprofit; the FrontierMath episode is the canonical undisclosed-funding case.",
    "what_would_move_the_score": "A standing rule against confidential lab funding of any evaluation asset.",
-   "graph_id": "evaluator#89",
+   "graph_id": "evaluator#100",
    "values": {
     "F": 2,
     "G": 3,
@@ -2768,7 +3073,7 @@
      "rationale": "Anchor 2 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#396"
+     "graph_id": "assessment#456"
     },
     "G": {
      "evaluator": "epoch",
@@ -2781,7 +3086,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#397"
+     "graph_id": "assessment#457"
     },
     "P": {
      "evaluator": "epoch",
@@ -2794,7 +3099,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#398"
+     "graph_id": "assessment#458"
     },
     "A": {
      "evaluator": "epoch",
@@ -2807,7 +3112,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#399"
+     "graph_id": "assessment#459"
     },
     "S": {
      "evaluator": "epoch",
@@ -2820,7 +3125,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#400"
+     "graph_id": "assessment#460"
     },
     "R": {
      "evaluator": "epoch",
@@ -2834,7 +3139,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#401"
+     "graph_id": "assessment#461"
     },
     "M": {
      "evaluator": "epoch",
@@ -2847,7 +3152,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#402"
+     "graph_id": "assessment#462"
     },
     "X": {
      "evaluator": "epoch",
@@ -2860,7 +3165,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#403"
+     "graph_id": "assessment#463"
     }
    },
    "signals": [
@@ -2876,10 +3181,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#165",
+     "graph_id": "signal#187",
      "source_graph_ids": [
-      "source#32",
-      "source#30"
+      "source#37",
+      "source#35"
      ]
     },
     {
@@ -2894,10 +3199,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#166",
+     "graph_id": "signal#188",
      "source_graph_ids": [
-      "source#69",
-      "source#32"
+      "source#77",
+      "source#37"
      ]
     },
     {
@@ -2911,9 +3216,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#167",
+     "graph_id": "signal#189",
      "source_graph_ids": [
-      "source#32"
+      "source#37"
      ]
     },
     {
@@ -2927,9 +3232,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#168",
+     "graph_id": "signal#190",
      "source_graph_ids": [
-      "source#69"
+      "source#77"
      ]
     },
     {
@@ -2943,9 +3248,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#169",
+     "graph_id": "signal#191",
      "source_graph_ids": [
-      "source#69"
+      "source#77"
      ]
     },
     {
@@ -2959,9 +3264,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#170",
+     "graph_id": "signal#192",
      "source_graph_ids": [
-      "source#69"
+      "source#77"
      ]
     },
     {
@@ -2975,9 +3280,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#171",
+     "graph_id": "signal#193",
      "source_graph_ids": [
-      "source#32"
+      "source#37"
      ]
     },
     {
@@ -2991,9 +3296,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#172",
+     "graph_id": "signal#194",
      "source_graph_ids": [
-      "source#32"
+      "source#37"
      ]
     },
     {
@@ -3007,9 +3312,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#173",
+     "graph_id": "signal#195",
      "source_graph_ids": [
-      "source#69"
+      "source#77"
      ]
     },
     {
@@ -3023,9 +3328,45 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#174",
+     "graph_id": "signal#196",
      "source_graph_ids": [
-      "source#69"
+      "source#77"
+     ]
+    },
+    {
+     "id": "epoch.11",
+     "evaluator": "epoch",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Transparency page lists Google DeepMind and OpenAI as paying consultation clients and a $600K Tallinn DAF gift; Coefficient grants of about $24.5M per index.",
+     "sources": [
+      "epoch-transparency",
+      "coefficient-index"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#197",
+     "source_graph_ids": [
+      "source#38",
+      "source#30"
+     ]
+    },
+    {
+     "id": "epoch.12",
+     "evaluator": "epoch",
+     "dimension": "M",
+     "direction": "for",
+     "claim": "Publishes a transparency page listing donations above $70K and paying clients.",
+     "sources": [
+      "epoch-transparency"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#198",
+     "source_graph_ids": [
+      "source#38"
      ]
     }
    ],
@@ -3034,6 +3375,300 @@
     "regulator": 65,
     "public": 64,
     "equal": 69
+   }
+  },
+  {
+   "id": "equistamp",
+   "name": "EquiStamp",
+   "type": "vc",
+   "hq": "Remote",
+   "domains": [
+    "assurance",
+    "autonomy"
+   ],
+   "confidence": "low",
+   "summary": "Private evaluation-services company; leads two EU AI Office technical-assistance lots (loss of control with METR and Epoch; harmful manipulation with Transluce). Clients named are evaluators and governments.",
+   "what_would_move_the_score": "Funding and ownership disclosure; a lab-money policy.",
+   "graph_id": "evaluator#101",
+   "values": {
+    "F": 3,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 3
+   },
+   "assessments": {
+    "F": {
+     "evaluator": "equistamp",
+     "dimension": "F",
+     "value": 3,
+     "anchor": 3,
+     "signals": [
+      "equistamp.01",
+      "equistamp.02"
+     ],
+     "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#464"
+    },
+    "G": {
+     "evaluator": "equistamp",
+     "dimension": "G",
+     "value": 1,
+     "anchor": 1,
+     "signals": [
+      "equistamp.03"
+     ],
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#465"
+    },
+    "P": {
+     "evaluator": "equistamp",
+     "dimension": "P",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "equistamp.04"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#466"
+    },
+    "A": {
+     "evaluator": "equistamp",
+     "dimension": "A",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "equistamp.05"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#467"
+    },
+    "S": {
+     "evaluator": "equistamp",
+     "dimension": "S",
+     "value": 3,
+     "anchor": 3,
+     "signals": [
+      "equistamp.06"
+     ],
+     "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#468"
+    },
+    "R": {
+     "evaluator": "equistamp",
+     "dimension": "R",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "equistamp.07"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#469"
+    },
+    "M": {
+     "evaluator": "equistamp",
+     "dimension": "M",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "equistamp.08"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#470"
+    },
+    "X": {
+     "evaluator": "equistamp",
+     "dimension": "X",
+     "value": 3,
+     "anchor": 3,
+     "signals": [
+      "equistamp.09"
+     ],
+     "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#471"
+    }
+   },
+   "signals": [
+    {
+     "id": "equistamp.01",
+     "evaluator": "equistamp",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "Revenue from evaluators and governments; leads EU Lot 3 (EUR 1.17M to consortium) and Lot 4 (EUR 0.88M).",
+     "sources": [
+      "ted-864574",
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#199",
+     "source_graph_ids": [
+      "source#82",
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.02",
+     "evaluator": "equistamp",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Private company; no funding or ownership disclosed.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#200",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.03",
+     "evaluator": "equistamp",
+     "dimension": "G",
+     "direction": "against",
+     "claim": "No COI policy on the site.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#201",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.04",
+     "evaluator": "equistamp",
+     "dimension": "P",
+     "direction": "against",
+     "claim": "Founders' prior affiliations and any lab ties not established.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#202",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.05",
+     "evaluator": "equistamp",
+     "dimension": "A",
+     "direction": "against",
+     "claim": "Access is through client engagements; no pre-release lab access documented.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#203",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.06",
+     "evaluator": "equistamp",
+     "dimension": "S",
+     "direction": "for",
+     "claim": "Regulator as client sets scope by tender.",
+     "sources": [
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#204",
+     "source_graph_ids": [
+      "source#82"
+     ]
+    },
+    {
+     "id": "equistamp.07",
+     "evaluator": "equistamp",
+     "dimension": "R",
+     "direction": "against",
+     "claim": "Deliverables go to the AI Office; no public reports found.",
+     "sources": [
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#205",
+     "source_graph_ids": [
+      "source#82"
+     ]
+    },
+    {
+     "id": "equistamp.08",
+     "evaluator": "equistamp",
+     "dimension": "M",
+     "direction": "against",
+     "claim": "Methods not public.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#206",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "equistamp.09",
+     "evaluator": "equistamp",
+     "dimension": "X",
+     "direction": "for",
+     "claim": "No lab-facing products found; clients are evaluators and governments.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#207",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    }
+   ],
+   "scores": {
+    "lab": 58,
+    "regulator": 56,
+    "public": 56,
+    "equal": 56
    }
   },
   {
@@ -3050,9 +3685,9 @@
    "confidence": "med",
    "summary": "Regulator behind the GPAI Code of Practice; external-evaluator obligations enforceable since August 2026.",
    "what_would_move_the_score": "An accreditation pathway for external evaluators and a public reporting schema.",
-   "graph_id": "evaluator#90",
+   "graph_id": "evaluator#102",
    "values": {
-    "F": 4,
+    "F": 3,
     "G": 4,
     "P": 3,
     "A": 3,
@@ -3065,15 +3700,19 @@
     "F": {
      "evaluator": "euaio",
      "dimension": "F",
-     "value": 4,
-     "anchor": 4,
+     "value": 3,
+     "anchor": 3,
      "signals": [
-      "euaio.06"
+      "euaio.06",
+      "euaio.10"
      ],
-     "rationale": "Anchor 4 on funding given the cited signals.",
+     "rationale": "Anchor 3 pending a confirmed bounded negative; funding is public by construction but the gate asks for the row.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#404"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Add a confirmed bounded negative from a primary source to restore anchor 4."
+     ],
+     "graph_id": "assessment#472"
     },
     "G": {
      "evaluator": "euaio",
@@ -3086,7 +3725,7 @@
      "rationale": "Anchor 4 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#405"
+     "graph_id": "assessment#473"
     },
     "P": {
      "evaluator": "euaio",
@@ -3099,7 +3738,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#406"
+     "graph_id": "assessment#474"
     },
     "A": {
      "evaluator": "euaio",
@@ -3112,7 +3751,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#407"
+     "graph_id": "assessment#475"
     },
     "S": {
      "evaluator": "euaio",
@@ -3126,7 +3765,7 @@
      "rationale": "Anchor 4 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#408"
+     "graph_id": "assessment#476"
     },
     "R": {
      "evaluator": "euaio",
@@ -3139,7 +3778,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#409"
+     "graph_id": "assessment#477"
     },
     "M": {
      "evaluator": "euaio",
@@ -3152,7 +3791,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#410"
+     "graph_id": "assessment#478"
     },
     "X": {
      "evaluator": "euaio",
@@ -3165,7 +3804,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#411"
+     "graph_id": "assessment#479"
     }
    },
    "signals": [
@@ -3180,9 +3819,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#175",
+     "graph_id": "signal#208",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
      ]
     },
     {
@@ -3196,9 +3835,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#176",
+     "graph_id": "signal#209",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
      ]
     },
     {
@@ -3213,10 +3852,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#177",
+     "graph_id": "signal#210",
      "source_graph_ids": [
-      "source#52",
-      "source#19"
+      "source#60",
+      "source#22"
      ]
     },
     {
@@ -3230,9 +3869,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#178",
+     "graph_id": "signal#211",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
      ]
     },
     {
@@ -3246,9 +3885,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#179",
+     "graph_id": "signal#212",
      "source_graph_ids": [
-      "source#72"
+      "source#80"
      ]
     },
     {
@@ -3262,9 +3901,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#180",
+     "graph_id": "signal#213",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
      ]
     },
     {
@@ -3278,9 +3917,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#181",
+     "graph_id": "signal#214",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
      ]
     },
     {
@@ -3294,9 +3933,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#182",
+     "graph_id": "signal#215",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
      ]
     },
     {
@@ -3310,17 +3949,34 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#183",
+     "graph_id": "signal#216",
      "source_graph_ids": [
-      "source#52"
+      "source#60"
+     ]
+    },
+    {
+     "id": "euaio.10",
+     "evaluator": "euaio",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.",
+     "sources": [
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#217",
+     "source_graph_ids": [
+      "source#82"
      ]
     }
    ],
    "scores": {
-    "lab": 81,
-    "regulator": 80,
-    "public": 82,
-    "equal": 81
+    "lab": 76,
+    "regulator": 76,
+    "public": 76,
+    "equal": 78
    }
   },
   {
@@ -3337,7 +3993,7 @@
    "confidence": "high",
    "summary": "Red-teaming and adversarial-robustness nonprofit; leads the EU AI Office CBRN risk-modelling contract.",
    "what_would_move_the_score": "Disclose the AI Safety Fund share of budget and whether lab-funded pools are excluded from evaluation work.",
-   "graph_id": "evaluator#91",
+   "graph_id": "evaluator#103",
    "values": {
     "F": 3,
     "G": 3,
@@ -3361,7 +4017,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#412"
+     "graph_id": "assessment#480"
     },
     "G": {
      "evaluator": "farai",
@@ -3374,7 +4030,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#413"
+     "graph_id": "assessment#481"
     },
     "P": {
      "evaluator": "farai",
@@ -3387,7 +4043,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#414"
+     "graph_id": "assessment#482"
     },
     "A": {
      "evaluator": "farai",
@@ -3400,7 +4056,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#415"
+     "graph_id": "assessment#483"
     },
     "S": {
      "evaluator": "farai",
@@ -3413,7 +4069,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#416"
+     "graph_id": "assessment#484"
     },
     "R": {
      "evaluator": "farai",
@@ -3426,7 +4082,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#417"
+     "graph_id": "assessment#485"
     },
     "M": {
      "evaluator": "farai",
@@ -3439,7 +4095,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#418"
+     "graph_id": "assessment#486"
     },
     "X": {
      "evaluator": "farai",
@@ -3452,7 +4108,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#419"
+     "graph_id": "assessment#487"
     }
    },
    "signals": [
@@ -3467,9 +4123,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#184",
+     "graph_id": "signal#218",
      "source_graph_ids": [
-      "source#33"
+      "source#40"
      ]
     },
     {
@@ -3483,9 +4139,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#185",
+     "graph_id": "signal#219",
      "source_graph_ids": [
-      "source#33"
+      "source#40"
      ]
     },
     {
@@ -3499,9 +4155,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#186",
+     "graph_id": "signal#220",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
      ]
     },
     {
@@ -3515,9 +4171,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#187",
+     "graph_id": "signal#221",
      "source_graph_ids": [
-      "source#33"
+      "source#40"
      ]
     },
     {
@@ -3531,9 +4187,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#188",
+     "graph_id": "signal#222",
      "source_graph_ids": [
-      "source#33"
+      "source#40"
      ]
     },
     {
@@ -3547,9 +4203,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#189",
+     "graph_id": "signal#223",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
      ]
     },
     {
@@ -3563,9 +4219,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#190",
+     "graph_id": "signal#224",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
      ]
     },
     {
@@ -3579,9 +4235,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#191",
+     "graph_id": "signal#225",
      "source_graph_ids": [
-      "source#33"
+      "source#40"
      ]
     },
     {
@@ -3595,9 +4251,43 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#192",
+     "graph_id": "signal#226",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
+     ]
+    },
+    {
+     "id": "farai.10",
+     "evaluator": "farai",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "Published cap: revenue from for-profit AI developers limited to 10% of annual revenue, charged at market rates with publication rights retained; TY2024 earned revenue $429K of $24.3M.",
+     "sources": [
+      "far-transparency"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#227",
+     "source_graph_ids": [
+      "source#41"
+     ]
+    },
+    {
+     "id": "farai.11",
+     "evaluator": "farai",
+     "dimension": "S",
+     "direction": "for",
+     "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.",
+     "sources": [
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#228",
+     "source_graph_ids": [
+      "source#82"
      ]
     }
    ],
@@ -3621,7 +4311,7 @@
    "confidence": "high",
    "summary": "Crowdsourced adversarial testing (Arena) plus Shade and Cygnal defense products; cited in 11 recent system cards.",
    "what_would_move_the_score": "Structural separation of the evaluation business, and independent governance for the OpenAI-related conflict beyond personal recusal.",
-   "graph_id": "evaluator#92",
+   "graph_id": "evaluator#104",
    "values": {
     "F": 1,
     "G": 1,
@@ -3645,7 +4335,7 @@
      "rationale": "Anchor 1 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#420"
+     "graph_id": "assessment#488"
     },
     "G": {
      "evaluator": "grayswan",
@@ -3658,7 +4348,7 @@
      "rationale": "Anchor 1 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#421"
+     "graph_id": "assessment#489"
     },
     "P": {
      "evaluator": "grayswan",
@@ -3672,7 +4362,7 @@
      "rationale": "Anchor 1 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#422"
+     "graph_id": "assessment#490"
     },
     "A": {
      "evaluator": "grayswan",
@@ -3685,7 +4375,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#423"
+     "graph_id": "assessment#491"
     },
     "S": {
      "evaluator": "grayswan",
@@ -3698,7 +4388,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#424"
+     "graph_id": "assessment#492"
     },
     "R": {
      "evaluator": "grayswan",
@@ -3711,7 +4401,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#425"
+     "graph_id": "assessment#493"
     },
     "M": {
      "evaluator": "grayswan",
@@ -3724,7 +4414,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#426"
+     "graph_id": "assessment#494"
     },
     "X": {
      "evaluator": "grayswan",
@@ -3737,7 +4427,7 @@
      "rationale": "Anchor 0 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#427"
+     "graph_id": "assessment#495"
     }
    },
    "signals": [
@@ -3753,10 +4443,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#193",
+     "graph_id": "signal#229",
      "source_graph_ids": [
-      "source#58",
-      "source#41"
+      "source#66",
+      "source#49"
      ]
     },
     {
@@ -3770,9 +4460,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#194",
+     "graph_id": "signal#230",
      "source_graph_ids": [
-      "source#34"
+      "source#42"
      ]
     },
     {
@@ -3787,10 +4477,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#195",
+     "graph_id": "signal#231",
      "source_graph_ids": [
-      "source#37",
-      "source#35"
+      "source#45",
+      "source#43"
      ]
     },
     {
@@ -3804,9 +4494,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#196",
+     "graph_id": "signal#232",
      "source_graph_ids": [
-      "source#37"
+      "source#45"
      ]
     },
     {
@@ -3820,9 +4510,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#197",
+     "graph_id": "signal#233",
      "source_graph_ids": [
-      "source#37"
+      "source#45"
      ]
     },
     {
@@ -3836,9 +4526,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#198",
+     "graph_id": "signal#234",
      "source_graph_ids": [
-      "source#35"
+      "source#43"
      ]
     },
     {
@@ -3852,9 +4542,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#199",
+     "graph_id": "signal#235",
      "source_graph_ids": [
-      "source#37"
+      "source#45"
      ]
     },
     {
@@ -3868,9 +4558,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#200",
+     "graph_id": "signal#236",
      "source_graph_ids": [
-      "source#35"
+      "source#43"
      ]
     },
     {
@@ -3884,9 +4574,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#201",
+     "graph_id": "signal#237",
      "source_graph_ids": [
-      "source#37"
+      "source#45"
      ]
     },
     {
@@ -3900,9 +4590,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#202",
+     "graph_id": "signal#238",
      "source_graph_ids": [
-      "source#37"
+      "source#45"
      ]
     }
    ],
@@ -3925,9 +4615,9 @@
    "confidence": "med",
    "summary": "Academic agent leaderboard with fully open methodology; AEF founding member.",
    "what_would_move_the_score": "Nothing on independence; access is the gap.",
-   "graph_id": "evaluator#93",
+   "graph_id": "evaluator#105",
    "values": {
-    "F": 4,
+    "F": 3,
     "G": 4,
     "P": 4,
     "A": 1,
@@ -3940,15 +4630,19 @@
     "F": {
      "evaluator": "hal",
      "dimension": "F",
-     "value": 4,
-     "anchor": 4,
+     "value": 3,
+     "anchor": 3,
      "signals": [
-      "hal.01"
+      "hal.01",
+      "hal.09"
      ],
-     "rationale": "Anchor 4 on funding given the cited signals.",
+     "rationale": "Anchor 3 pending a bounded negative (university sponsorship disclosures or a funder index search).",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#428"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Add a confirmed bounded negative from a primary source to restore anchor 4."
+     ],
+     "graph_id": "assessment#496"
     },
     "G": {
      "evaluator": "hal",
@@ -3961,7 +4655,7 @@
      "rationale": "Anchor 4 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#429"
+     "graph_id": "assessment#497"
     },
     "P": {
      "evaluator": "hal",
@@ -3974,7 +4668,7 @@
      "rationale": "Anchor 4 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#430"
+     "graph_id": "assessment#498"
     },
     "A": {
      "evaluator": "hal",
@@ -3987,7 +4681,7 @@
      "rationale": "Anchor 1 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#431"
+     "graph_id": "assessment#499"
     },
     "S": {
      "evaluator": "hal",
@@ -4000,7 +4694,7 @@
      "rationale": "Anchor 4 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#432"
+     "graph_id": "assessment#500"
     },
     "R": {
      "evaluator": "hal",
@@ -4013,7 +4707,7 @@
      "rationale": "Anchor 4 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#433"
+     "graph_id": "assessment#501"
     },
     "M": {
      "evaluator": "hal",
@@ -4026,7 +4720,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#434"
+     "graph_id": "assessment#502"
     },
     "X": {
      "evaluator": "hal",
@@ -4039,7 +4733,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#435"
+     "graph_id": "assessment#503"
     }
    },
    "signals": [
@@ -4054,9 +4748,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#203",
+     "graph_id": "signal#239",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4070,9 +4764,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#204",
+     "graph_id": "signal#240",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4086,9 +4780,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#205",
+     "graph_id": "signal#241",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4102,9 +4796,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#206",
+     "graph_id": "signal#242",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4119,9 +4813,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#207",
+     "graph_id": "signal#243",
      "source_graph_ids": [
-      "source#38",
+      "source#46",
       "source#10"
      ]
     },
@@ -4136,9 +4830,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#208",
+     "graph_id": "signal#244",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4152,9 +4846,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#209",
+     "graph_id": "signal#245",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
      ]
     },
     {
@@ -4168,17 +4862,34 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#210",
+     "graph_id": "signal#246",
      "source_graph_ids": [
-      "source#38"
+      "source#46"
+     ]
+    },
+    {
+     "id": "hal.09",
+     "evaluator": "hal",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).",
+     "sources": [
+      "hal"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#247",
+     "source_graph_ids": [
+      "source#46"
      ]
     }
    ],
    "scores": {
-    "lab": 85,
-    "regulator": 85,
-    "public": 96,
-    "equal": 91
+    "lab": 80,
+    "regulator": 81,
+    "public": 90,
+    "equal": 88
    }
   },
   {
@@ -4192,7 +4903,7 @@
    "confidence": "low",
    "summary": "Announced 12 September 2026 with a request to join Anthropic's embedded-evaluator program; no evaluations yet.",
    "what_would_move_the_score": "A governance structure that insulates the initiative from Nvidia, and a first published evaluation.",
-   "graph_id": "evaluator#94",
+   "graph_id": "evaluator#106",
    "values": {
     "F": 1,
     "G": 0,
@@ -4215,7 +4926,7 @@
      "rationale": "Anchor 1 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#436"
+     "graph_id": "assessment#504"
     },
     "G": {
      "evaluator": "hfoai",
@@ -4228,7 +4939,7 @@
      "rationale": "Anchor 0 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#437"
+     "graph_id": "assessment#505"
     },
     "P": {
      "evaluator": "hfoai",
@@ -4241,7 +4952,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#438"
+     "graph_id": "assessment#506"
     },
     "A": {
      "evaluator": "hfoai",
@@ -4254,7 +4965,7 @@
      "rationale": "Anchor 0 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#439"
+     "graph_id": "assessment#507"
     },
     "S": {
      "evaluator": "hfoai",
@@ -4267,7 +4978,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#440"
+     "graph_id": "assessment#508"
     },
     "R": {
      "evaluator": "hfoai",
@@ -4280,7 +4991,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#441"
+     "graph_id": "assessment#509"
     },
     "M": {
      "evaluator": "hfoai",
@@ -4293,7 +5004,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#442"
+     "graph_id": "assessment#510"
     },
     "X": {
      "evaluator": "hfoai",
@@ -4306,7 +5017,7 @@
      "rationale": "Anchor 2 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#443"
+     "graph_id": "assessment#511"
     }
    },
    "signals": [
@@ -4321,9 +5032,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#211",
+     "graph_id": "signal#248",
      "source_graph_ids": [
-      "source#74"
+      "source#83"
      ]
     },
     {
@@ -4338,10 +5049,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#212",
+     "graph_id": "signal#249",
      "source_graph_ids": [
-      "source#74",
-      "source#71"
+      "source#83",
+      "source#79"
      ]
     },
     {
@@ -4356,10 +5067,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#213",
+     "graph_id": "signal#250",
      "source_graph_ids": [
-      "source#74",
-      "source#81"
+      "source#83",
+      "source#92"
      ]
     },
     {
@@ -4373,9 +5084,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#214",
+     "graph_id": "signal#251",
      "source_graph_ids": [
-      "source#71"
+      "source#79"
      ]
     },
     {
@@ -4389,9 +5100,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#215",
+     "graph_id": "signal#252",
      "source_graph_ids": [
-      "source#71"
+      "source#79"
      ]
     },
     {
@@ -4405,9 +5116,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#216",
+     "graph_id": "signal#253",
      "source_graph_ids": [
-      "source#74"
+      "source#83"
      ]
     },
     {
@@ -4421,9 +5132,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#217",
+     "graph_id": "signal#254",
      "source_graph_ids": [
-      "source#74"
+      "source#83"
      ]
     },
     {
@@ -4437,9 +5148,28 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#218",
+     "graph_id": "signal#255",
      "source_graph_ids": [
-      "source#74"
+      "source#83"
+     ]
+    },
+    {
+     "id": "hfoai.09",
+     "evaluator": "hfoai",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner.",
+     "sources": [
+      "evaluators-ledger",
+      "tnw-hf-nvidia"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#256",
+     "source_graph_ids": [
+      "source#39",
+      "source#83"
      ]
     }
    ],
@@ -4462,7 +5192,7 @@
    "confidence": "med",
    "summary": "Public red-teaming exercises with NIST and IMDA; societal harms rather than catastrophic risk.",
    "what_would_move_the_score": "Pre-release access for the harms it covers.",
-   "graph_id": "evaluator#95",
+   "graph_id": "evaluator#107",
    "values": {
     "F": 3,
     "G": 3,
@@ -4485,7 +5215,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#444"
+     "graph_id": "assessment#512"
     },
     "G": {
      "evaluator": "humane",
@@ -4498,7 +5228,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#445"
+     "graph_id": "assessment#513"
     },
     "P": {
      "evaluator": "humane",
@@ -4511,7 +5241,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#446"
+     "graph_id": "assessment#514"
     },
     "A": {
      "evaluator": "humane",
@@ -4524,7 +5254,7 @@
      "rationale": "Anchor 1 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#447"
+     "graph_id": "assessment#515"
     },
     "S": {
      "evaluator": "humane",
@@ -4537,7 +5267,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#448"
+     "graph_id": "assessment#516"
     },
     "R": {
      "evaluator": "humane",
@@ -4550,7 +5280,7 @@
      "rationale": "Anchor 4 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#449"
+     "graph_id": "assessment#517"
     },
     "M": {
      "evaluator": "humane",
@@ -4563,7 +5293,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#450"
+     "graph_id": "assessment#518"
     },
     "X": {
      "evaluator": "humane",
@@ -4576,7 +5306,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#451"
+     "graph_id": "assessment#519"
     }
    },
    "signals": [
@@ -4591,9 +5321,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#219",
+     "graph_id": "signal#257",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4607,9 +5337,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#220",
+     "graph_id": "signal#258",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4623,9 +5353,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#221",
+     "graph_id": "signal#259",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4639,9 +5369,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#222",
+     "graph_id": "signal#260",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4655,9 +5385,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#223",
+     "graph_id": "signal#261",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4671,9 +5401,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#224",
+     "graph_id": "signal#262",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4687,9 +5417,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#225",
+     "graph_id": "signal#263",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     },
     {
@@ -4703,9 +5433,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#226",
+     "graph_id": "signal#264",
      "source_graph_ids": [
-      "source#39"
+      "source#47"
      ]
     }
    ],
@@ -4728,7 +5458,7 @@
    "confidence": "high",
    "summary": "Offensive-cyber evaluator cited in OpenAI and Anthropic system cards; SOLVE framework used by UK AISI. Pattern Labs and Irregular are the same company.",
    "what_would_move_the_score": "A published COI policy, disclosure of lab revenue share, and a firewall between evaluations and the security-products business.",
-   "graph_id": "evaluator#96",
+   "graph_id": "evaluator#108",
    "values": {
     "F": 1,
     "G": 1,
@@ -4753,7 +5483,7 @@
      "rationale": "Anchor 1 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#452"
+     "graph_id": "assessment#520"
     },
     "G": {
      "evaluator": "irregular",
@@ -4766,7 +5496,7 @@
      "rationale": "Anchor 1 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#453"
+     "graph_id": "assessment#521"
     },
     "P": {
      "evaluator": "irregular",
@@ -4779,7 +5509,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#454"
+     "graph_id": "assessment#522"
     },
     "A": {
      "evaluator": "irregular",
@@ -4792,7 +5522,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#455"
+     "graph_id": "assessment#523"
     },
     "S": {
      "evaluator": "irregular",
@@ -4805,7 +5535,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#456"
+     "graph_id": "assessment#524"
     },
     "R": {
      "evaluator": "irregular",
@@ -4818,7 +5548,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#457"
+     "graph_id": "assessment#525"
     },
     "M": {
      "evaluator": "irregular",
@@ -4831,7 +5561,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#458"
+     "graph_id": "assessment#526"
     },
     "X": {
      "evaluator": "irregular",
@@ -4844,7 +5574,7 @@
      "rationale": "Anchor 1 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#459"
+     "graph_id": "assessment#527"
     }
    },
    "signals": [
@@ -4860,10 +5590,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#227",
+     "graph_id": "signal#265",
      "source_graph_ids": [
-      "source#70",
-      "source#67"
+      "source#78",
+      "source#75"
      ]
     },
     {
@@ -4877,9 +5607,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#228",
+     "graph_id": "signal#266",
      "source_graph_ids": [
-      "source#56"
+      "source#64"
      ]
     },
     {
@@ -4893,9 +5623,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#229",
+     "graph_id": "signal#267",
      "source_graph_ids": [
-      "source#70"
+      "source#78"
      ]
     },
     {
@@ -4909,9 +5639,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#230",
+     "graph_id": "signal#268",
      "source_graph_ids": [
-      "source#56"
+      "source#64"
      ]
     },
     {
@@ -4925,9 +5655,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#231",
+     "graph_id": "signal#269",
      "source_graph_ids": [
-      "source#67"
+      "source#75"
      ]
     },
     {
@@ -4941,9 +5671,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#232",
+     "graph_id": "signal#270",
      "source_graph_ids": [
-      "source#56"
+      "source#64"
      ]
     },
     {
@@ -4957,9 +5687,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#233",
+     "graph_id": "signal#271",
      "source_graph_ids": [
-      "source#67"
+      "source#75"
      ]
     },
     {
@@ -4974,10 +5704,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#234",
+     "graph_id": "signal#272",
      "source_graph_ids": [
-      "source#70",
-      "source#67"
+      "source#78",
+      "source#75"
      ]
     },
     {
@@ -4991,9 +5721,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#235",
+     "graph_id": "signal#273",
      "source_graph_ids": [
-      "source#67"
+      "source#75"
      ]
     },
     {
@@ -5007,9 +5737,26 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#236",
+     "graph_id": "signal#274",
      "source_graph_ids": [
-      "source#67"
+      "source#75"
+     ]
+    },
+    {
+     "id": "irregular.11",
+     "evaluator": "irregular",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "A Coefficient Giving grant of about $6.8M appears in the index for a venture-backed company; purpose to be verified.",
+     "sources": [
+      "coefficient-index"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#275",
+     "source_graph_ids": [
+      "source#30"
      ]
     }
    ],
@@ -5034,7 +5781,7 @@
    "confidence": "high",
    "summary": "Reference evaluator for autonomy and AI R&D capability. Named by Anthropic as the model for embedded evaluators in September 2026; led the on-site investigation of the OpenAI agent swarm incident.",
    "what_would_move_the_score": "Contract terms for the Anthropic embedded program that fix scope-setting and publication rights in writing, plus a public cooling-off policy.",
-   "graph_id": "evaluator#97",
+   "graph_id": "evaluator#109",
    "values": {
     "F": 3,
     "G": 4,
@@ -5067,7 +5814,7 @@
       "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
       "Confirm the donor-rule capture history against the Wayback Machine directly."
      ],
-     "graph_id": "assessment#460"
+     "graph_id": "assessment#528"
     },
     "G": {
      "evaluator": "metr",
@@ -5080,7 +5827,7 @@
      "rationale": "Anchor 4 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#461"
+     "graph_id": "assessment#529"
     },
     "P": {
      "evaluator": "metr",
@@ -5098,7 +5845,7 @@
       "Fetch dated captures of metr.org/team to confirm current versus former roles.",
       "Ask METR whether a recusal or cooling-off policy exists."
      ],
-     "graph_id": "assessment#462"
+     "graph_id": "assessment#530"
     },
     "A": {
      "evaluator": "metr",
@@ -5113,7 +5860,7 @@
      "rationale": "Anchor 4 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#463"
+     "graph_id": "assessment#531"
     },
     "S": {
      "evaluator": "metr",
@@ -5126,7 +5873,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#464"
+     "graph_id": "assessment#532"
     },
     "R": {
      "evaluator": "metr",
@@ -5140,7 +5887,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#465"
+     "graph_id": "assessment#533"
     },
     "M": {
      "evaluator": "metr",
@@ -5153,7 +5900,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#466"
+     "graph_id": "assessment#534"
     },
     "X": {
      "evaluator": "metr",
@@ -5166,7 +5913,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#467"
+     "graph_id": "assessment#535"
     }
    },
    "signals": [
@@ -5183,11 +5930,11 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#237",
+     "graph_id": "signal#276",
      "source_graph_ids": [
-      "source#47",
-      "source#13",
-      "source#49"
+      "source#55",
+      "source#14",
+      "source#57"
      ]
     },
     {
@@ -5201,9 +5948,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#238",
+     "graph_id": "signal#277",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -5217,9 +5964,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#239",
+     "graph_id": "signal#278",
      "source_graph_ids": [
-      "source#47"
+      "source#55"
      ]
     },
     {
@@ -5234,10 +5981,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#240",
+     "graph_id": "signal#279",
      "source_graph_ids": [
-      "source#50",
-      "source#73"
+      "source#58",
+      "source#81"
      ]
     },
     {
@@ -5252,10 +5999,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#241",
+     "graph_id": "signal#280",
      "source_graph_ids": [
-      "source#79",
-      "source#45"
+      "source#90",
+      "source#53"
      ]
     },
     {
@@ -5270,10 +6017,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#242",
+     "graph_id": "signal#281",
      "source_graph_ids": [
-      "source#60",
-      "source#50"
+      "source#68",
+      "source#58"
      ]
     },
     {
@@ -5288,10 +6035,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#243",
+     "graph_id": "signal#282",
      "source_graph_ids": [
-      "source#50",
-      "source#45"
+      "source#58",
+      "source#53"
      ]
     },
     {
@@ -5305,9 +6052,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#244",
+     "graph_id": "signal#283",
      "source_graph_ids": [
-      "source#50"
+      "source#58"
      ]
     },
     {
@@ -5321,9 +6068,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#245",
+     "graph_id": "signal#284",
      "source_graph_ids": [
-      "source#80"
+      "source#91"
      ]
     },
     {
@@ -5337,9 +6084,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#246",
+     "graph_id": "signal#285",
      "source_graph_ids": [
-      "source#47"
+      "source#55"
      ]
     },
     {
@@ -5353,9 +6100,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#247",
+     "graph_id": "signal#286",
      "source_graph_ids": [
-      "source#47"
+      "source#55"
      ]
     },
     {
@@ -5369,9 +6116,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#248",
+     "graph_id": "signal#287",
      "source_graph_ids": [
-      "source#47"
+      "source#55"
      ]
     },
     {
@@ -5385,9 +6132,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#249",
+     "graph_id": "signal#288",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -5402,9 +6149,9 @@
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0.3",
      "as_of": "2025-12",
-     "graph_id": "signal#250",
+     "graph_id": "signal#289",
      "source_graph_ids": [
-      "source#48"
+      "source#56"
      ]
     },
     {
@@ -5421,11 +6168,11 @@
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0.3",
      "as_of": "2026-09-14",
-     "graph_id": "signal#251",
+     "graph_id": "signal#290",
      "source_graph_ids": [
-      "source#25",
-      "source#46",
-      "source#51"
+      "source#30",
+      "source#54",
+      "source#59"
      ]
     },
     {
@@ -5441,10 +6188,10 @@
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0.3",
      "as_of": "2026-09-14",
-     "graph_id": "signal#252",
+     "graph_id": "signal#291",
      "source_graph_ids": [
-      "source#25",
-      "source#51"
+      "source#30",
+      "source#59"
      ]
     },
     {
@@ -5461,11 +6208,11 @@
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0.3",
      "as_of": "2026-09-14",
-     "graph_id": "signal#253",
+     "graph_id": "signal#292",
      "source_graph_ids": [
-      "source#53",
-      "source#46",
-      "source#51"
+      "source#61",
+      "source#54",
+      "source#59"
      ]
     }
    ],
@@ -5488,7 +6235,7 @@
    "confidence": "med",
    "summary": "Industry consortium producing the AILuminate safety benchmark.",
    "what_would_move_the_score": "Published funding shares and a hazard suite the members do not see in advance.",
-   "graph_id": "evaluator#98",
+   "graph_id": "evaluator#110",
    "values": {
     "F": 1,
     "G": 2,
@@ -5511,7 +6258,7 @@
      "rationale": "Anchor 1 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#468"
+     "graph_id": "assessment#536"
     },
     "G": {
      "evaluator": "mlcommons",
@@ -5524,7 +6271,7 @@
      "rationale": "Anchor 2 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#469"
+     "graph_id": "assessment#537"
     },
     "P": {
      "evaluator": "mlcommons",
@@ -5537,7 +6284,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#470"
+     "graph_id": "assessment#538"
     },
     "A": {
      "evaluator": "mlcommons",
@@ -5550,7 +6297,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#471"
+     "graph_id": "assessment#539"
     },
     "S": {
      "evaluator": "mlcommons",
@@ -5563,7 +6310,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#472"
+     "graph_id": "assessment#540"
     },
     "R": {
      "evaluator": "mlcommons",
@@ -5576,7 +6323,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#473"
+     "graph_id": "assessment#541"
     },
     "M": {
      "evaluator": "mlcommons",
@@ -5589,7 +6336,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#474"
+     "graph_id": "assessment#542"
     },
     "X": {
      "evaluator": "mlcommons",
@@ -5602,7 +6349,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#475"
+     "graph_id": "assessment#543"
     }
    },
    "signals": [
@@ -5617,9 +6364,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#254",
+     "graph_id": "signal#293",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
      ]
     },
     {
@@ -5634,10 +6381,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#255",
+     "graph_id": "signal#294",
      "source_graph_ids": [
-      "source#54",
-      "source#23"
+      "source#62",
+      "source#27"
      ]
     },
     {
@@ -5651,9 +6398,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#256",
+     "graph_id": "signal#295",
      "source_graph_ids": [
-      "source#23"
+      "source#27"
      ]
     },
     {
@@ -5667,9 +6414,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#257",
+     "graph_id": "signal#296",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
      ]
     },
     {
@@ -5683,9 +6430,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#258",
+     "graph_id": "signal#297",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
      ]
     },
     {
@@ -5699,9 +6446,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#259",
+     "graph_id": "signal#298",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
      ]
     },
     {
@@ -5715,9 +6462,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#260",
+     "graph_id": "signal#299",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
      ]
     },
     {
@@ -5731,9 +6478,26 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#261",
+     "graph_id": "signal#300",
      "source_graph_ids": [
-      "source#54"
+      "source#62"
+     ]
+    },
+    {
+     "id": "mlcommons.09",
+     "evaluator": "mlcommons",
+     "dimension": "P",
+     "direction": "against",
+     "claim": "President is a Google senior staff engineer; members include the frontier developers whose models are benchmarked.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#301",
+     "source_graph_ids": [
+      "source#39"
      ]
     }
    ],
@@ -5757,7 +6521,7 @@
    "confidence": "med",
    "summary": "External red team for other labs' models; not independent of Big Tech.",
    "what_would_move_the_score": "Not a candidate for an independence-critical role; useful as a supplementary red team.",
-   "graph_id": "evaluator#99",
+   "graph_id": "evaluator#111",
    "values": {
     "F": 0,
     "G": 0,
@@ -5780,7 +6544,7 @@
      "rationale": "Anchor 0 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#476"
+     "graph_id": "assessment#544"
     },
     "G": {
      "evaluator": "msft",
@@ -5793,7 +6557,7 @@
      "rationale": "Anchor 0 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#477"
+     "graph_id": "assessment#545"
     },
     "P": {
      "evaluator": "msft",
@@ -5806,7 +6570,7 @@
      "rationale": "Anchor 1 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#478"
+     "graph_id": "assessment#546"
     },
     "A": {
      "evaluator": "msft",
@@ -5819,7 +6583,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#479"
+     "graph_id": "assessment#547"
     },
     "S": {
      "evaluator": "msft",
@@ -5832,7 +6596,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#480"
+     "graph_id": "assessment#548"
     },
     "R": {
      "evaluator": "msft",
@@ -5845,7 +6609,7 @@
      "rationale": "Anchor 1 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#481"
+     "graph_id": "assessment#549"
     },
     "M": {
      "evaluator": "msft",
@@ -5858,7 +6622,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#482"
+     "graph_id": "assessment#550"
     },
     "X": {
      "evaluator": "msft",
@@ -5871,7 +6635,7 @@
      "rationale": "Anchor 1 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#483"
+     "graph_id": "assessment#551"
     }
    },
    "signals": [
@@ -5886,9 +6650,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#262",
+     "graph_id": "signal#302",
      "source_graph_ids": [
-      "source#29"
+      "source#34"
      ]
     },
     {
@@ -5902,9 +6666,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#263",
+     "graph_id": "signal#303",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5918,9 +6682,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#264",
+     "graph_id": "signal#304",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5934,9 +6698,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#265",
+     "graph_id": "signal#305",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5950,9 +6714,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#266",
+     "graph_id": "signal#306",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5966,9 +6730,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#267",
+     "graph_id": "signal#307",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5982,9 +6746,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#268",
+     "graph_id": "signal#308",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     },
     {
@@ -5998,9 +6762,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#269",
+     "graph_id": "signal#309",
      "source_graph_ids": [
-      "source#55"
+      "source#63"
      ]
     }
    ],
@@ -6009,6 +6773,299 @@
     "regulator": 36,
     "public": 21,
     "equal": 31
+   }
+  },
+  {
+   "id": "nemesys",
+   "name": "Nemesys Insights",
+   "type": "vc",
+   "hq": "Albany, US",
+   "domains": [
+    "bio",
+    "misuse",
+    "assurance"
+   ],
+   "confidence": "low",
+   "summary": "Red-teaming firm led by the director of a university red-teaming center; paid assessor on Amazon's Nova model papers; subcontractor on the EU Lot 1 CBRN consortium.",
+   "what_would_move_the_score": "Funding disclosure and a published policy on lab clients.",
+   "graph_id": "evaluator#112",
+   "values": {
+    "F": 1,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 1,
+    "R": 1,
+    "M": 2,
+    "X": 2
+   },
+   "assessments": {
+    "F": {
+     "evaluator": "nemesys",
+     "dimension": "F",
+     "value": 1,
+     "anchor": 1,
+     "signals": [
+      "nemesys.01",
+      "nemesys.02"
+     ],
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#552"
+    },
+    "G": {
+     "evaluator": "nemesys",
+     "dimension": "G",
+     "value": 1,
+     "anchor": 1,
+     "signals": [
+      "nemesys.03"
+     ],
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#553"
+    },
+    "P": {
+     "evaluator": "nemesys",
+     "dimension": "P",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "nemesys.04"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#554"
+    },
+    "A": {
+     "evaluator": "nemesys",
+     "dimension": "A",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "nemesys.05"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#555"
+    },
+    "S": {
+     "evaluator": "nemesys",
+     "dimension": "S",
+     "value": 1,
+     "anchor": 1,
+     "signals": [
+      "nemesys.06"
+     ],
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#556"
+    },
+    "R": {
+     "evaluator": "nemesys",
+     "dimension": "R",
+     "value": 1,
+     "anchor": 1,
+     "signals": [
+      "nemesys.07"
+     ],
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#557"
+    },
+    "M": {
+     "evaluator": "nemesys",
+     "dimension": "M",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "nemesys.08"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#558"
+    },
+    "X": {
+     "evaluator": "nemesys",
+     "dimension": "X",
+     "value": 2,
+     "anchor": 2,
+     "signals": [
+      "nemesys.09"
+     ],
+     "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+     "assessed": "2026-09-14",
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#559"
+    }
+   },
+   "signals": [
+    {
+     "id": "nemesys.01",
+     "evaluator": "nemesys",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Paid assessor for Amazon per the Nova papers; private LLC with no funding disclosed.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#310",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.02",
+     "evaluator": "nemesys",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "EU Lot 1 subcontractor under the FAR.AI consortium.",
+     "sources": [
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#311",
+     "source_graph_ids": [
+      "source#82"
+     ]
+    },
+    {
+     "id": "nemesys.03",
+     "evaluator": "nemesys",
+     "dimension": "G",
+     "direction": "against",
+     "claim": "No policy published.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#312",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.04",
+     "evaluator": "nemesys",
+     "dimension": "P",
+     "direction": "against",
+     "claim": "Leadership from a university red-team center; lab ties not established.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#313",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.05",
+     "evaluator": "nemesys",
+     "dimension": "A",
+     "direction": "against",
+     "claim": "Access through client engagement.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#314",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.06",
+     "evaluator": "nemesys",
+     "dimension": "S",
+     "direction": "against",
+     "claim": "Scope set by the lab client.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#315",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.07",
+     "evaluator": "nemesys",
+     "dimension": "R",
+     "direction": "against",
+     "claim": "Findings appear inside the lab's papers.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#316",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.08",
+     "evaluator": "nemesys",
+     "dimension": "M",
+     "direction": "against",
+     "claim": "Methods described in the lab's papers only.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#317",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "nemesys.09",
+     "evaluator": "nemesys",
+     "dimension": "X",
+     "direction": "against",
+     "claim": "Consults for a lab.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#318",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    }
+   ],
+   "scores": {
+    "lab": 36,
+    "regulator": 35,
+    "public": 32,
+    "equal": 38
    }
   },
   {
@@ -6024,7 +7081,7 @@
    "confidence": "med",
    "summary": "Independent capability-elicitation research on released models: shutdown resistance, self-replication, offensive cyber.",
    "what_would_move_the_score": "Pre-release access on published terms would raise the access score without touching the others.",
-   "graph_id": "evaluator#100",
+   "graph_id": "evaluator#113",
    "values": {
     "F": 3,
     "G": 3,
@@ -6051,7 +7108,7 @@
      "open_questions": [
       "Check Palisade's Form 990 Schedule of contributors and any lab-money policy statement."
      ],
-     "graph_id": "assessment#484"
+     "graph_id": "assessment#560"
     },
     "G": {
      "evaluator": "palisade",
@@ -6064,7 +7121,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#485"
+     "graph_id": "assessment#561"
     },
     "P": {
      "evaluator": "palisade",
@@ -6077,7 +7134,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#486"
+     "graph_id": "assessment#562"
     },
     "A": {
      "evaluator": "palisade",
@@ -6090,7 +7147,7 @@
      "rationale": "Anchor 1 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#487"
+     "graph_id": "assessment#563"
     },
     "S": {
      "evaluator": "palisade",
@@ -6103,7 +7160,7 @@
      "rationale": "Anchor 4 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#488"
+     "graph_id": "assessment#564"
     },
     "R": {
      "evaluator": "palisade",
@@ -6116,7 +7173,7 @@
      "rationale": "Anchor 4 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#489"
+     "graph_id": "assessment#565"
     },
     "M": {
      "evaluator": "palisade",
@@ -6129,7 +7186,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#490"
+     "graph_id": "assessment#566"
     },
     "X": {
      "evaluator": "palisade",
@@ -6142,7 +7199,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#491"
+     "graph_id": "assessment#567"
     }
    },
    "signals": [
@@ -6157,9 +7214,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#270",
+     "graph_id": "signal#319",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6173,9 +7230,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#271",
+     "graph_id": "signal#320",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6189,9 +7246,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#272",
+     "graph_id": "signal#321",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6205,9 +7262,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#273",
+     "graph_id": "signal#322",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6221,9 +7278,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#274",
+     "graph_id": "signal#323",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6237,9 +7294,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#275",
+     "graph_id": "signal#324",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6253,9 +7310,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#276",
+     "graph_id": "signal#325",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6269,9 +7326,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#277",
+     "graph_id": "signal#326",
      "source_graph_ids": [
-      "source#59"
+      "source#67"
      ]
     },
     {
@@ -6287,10 +7344,27 @@
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0.3",
      "as_of": "2026-09-11",
-     "graph_id": "signal#278",
+     "graph_id": "signal#327",
      "source_graph_ids": [
-      "source#25",
-      "source#51"
+      "source#30",
+      "source#59"
+     ]
+    },
+    {
+     "id": "palisade.10",
+     "evaluator": "palisade",
+     "dimension": "P",
+     "direction": "against",
+     "claim": "Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#328",
+     "source_graph_ids": [
+      "source#39"
      ]
     }
    ],
@@ -6314,7 +7388,7 @@
    "confidence": "med",
    "summary": "Think tank with CBRN and security expertise; AEF founding member.",
    "what_would_move_the_score": "More public model-level findings.",
-   "graph_id": "evaluator#101",
+   "graph_id": "evaluator#114",
    "values": {
     "F": 3,
     "G": 3,
@@ -6337,7 +7411,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#492"
+     "graph_id": "assessment#568"
     },
     "G": {
      "evaluator": "rand",
@@ -6350,7 +7424,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#493"
+     "graph_id": "assessment#569"
     },
     "P": {
      "evaluator": "rand",
@@ -6363,7 +7437,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#494"
+     "graph_id": "assessment#570"
     },
     "A": {
      "evaluator": "rand",
@@ -6376,7 +7450,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#495"
+     "graph_id": "assessment#571"
     },
     "S": {
      "evaluator": "rand",
@@ -6389,7 +7463,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#496"
+     "graph_id": "assessment#572"
     },
     "R": {
      "evaluator": "rand",
@@ -6402,7 +7476,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#497"
+     "graph_id": "assessment#573"
     },
     "M": {
      "evaluator": "rand",
@@ -6415,7 +7489,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#498"
+     "graph_id": "assessment#574"
     },
     "X": {
      "evaluator": "rand",
@@ -6428,7 +7502,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#499"
+     "graph_id": "assessment#575"
     }
    },
    "signals": [
@@ -6444,9 +7518,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#279",
+     "graph_id": "signal#329",
      "source_graph_ids": [
-      "source#61",
+      "source#69",
       "source#10"
      ]
     },
@@ -6461,9 +7535,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#280",
+     "graph_id": "signal#330",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
      ]
     },
     {
@@ -6478,10 +7552,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#281",
+     "graph_id": "signal#331",
      "source_graph_ids": [
-      "source#61",
-      "source#26"
+      "source#69",
+      "source#31"
      ]
     },
     {
@@ -6495,9 +7569,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#282",
+     "graph_id": "signal#332",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
      ]
     },
     {
@@ -6511,9 +7585,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#283",
+     "graph_id": "signal#333",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
      ]
     },
     {
@@ -6527,9 +7601,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#284",
+     "graph_id": "signal#334",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
      ]
     },
     {
@@ -6543,9 +7617,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#285",
+     "graph_id": "signal#335",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
      ]
     },
     {
@@ -6559,9 +7633,26 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#286",
+     "graph_id": "signal#336",
      "source_graph_ids": [
-      "source#61"
+      "source#69"
+     ]
+    },
+    {
+     "id": "rand.09",
+     "evaluator": "rand",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "FY2024 revenue of about $489M is mostly US government contract research; Coefficient's $87M since 2020 is a small share.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#337",
+     "source_graph_ids": [
+      "source#39"
      ]
     }
    ],
@@ -6585,7 +7676,7 @@
    "confidence": "med",
    "summary": "AI control research group; contributed a contractor to the METR incident investigation.",
    "what_would_move_the_score": "A diversified funder list and a stated policy on co-authoring with labs it evaluates.",
-   "graph_id": "evaluator#102",
+   "graph_id": "evaluator#115",
    "values": {
     "F": 3,
     "G": 3,
@@ -6609,7 +7700,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#500"
+     "graph_id": "assessment#576"
     },
     "G": {
      "evaluator": "redwood",
@@ -6622,7 +7713,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#501"
+     "graph_id": "assessment#577"
     },
     "P": {
      "evaluator": "redwood",
@@ -6635,7 +7726,7 @@
      "rationale": "Anchor 2 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#502"
+     "graph_id": "assessment#578"
     },
     "A": {
      "evaluator": "redwood",
@@ -6648,7 +7739,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#503"
+     "graph_id": "assessment#579"
     },
     "S": {
      "evaluator": "redwood",
@@ -6661,7 +7752,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#504"
+     "graph_id": "assessment#580"
     },
     "R": {
      "evaluator": "redwood",
@@ -6674,7 +7765,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#505"
+     "graph_id": "assessment#581"
     },
     "M": {
      "evaluator": "redwood",
@@ -6687,7 +7778,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#506"
+     "graph_id": "assessment#582"
     },
     "X": {
      "evaluator": "redwood",
@@ -6700,7 +7791,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#507"
+     "graph_id": "assessment#583"
     }
    },
    "signals": [
@@ -6715,9 +7806,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#287",
+     "graph_id": "signal#338",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -6731,9 +7822,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#288",
+     "graph_id": "signal#339",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -6747,9 +7838,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#289",
+     "graph_id": "signal#340",
      "source_graph_ids": [
-      "source#50"
+      "source#58"
      ]
     },
     {
@@ -6763,9 +7854,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#290",
+     "graph_id": "signal#341",
      "source_graph_ids": [
-      "source#50"
+      "source#58"
      ]
     },
     {
@@ -6779,9 +7870,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#291",
+     "graph_id": "signal#342",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -6795,9 +7886,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#292",
+     "graph_id": "signal#343",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -6811,9 +7902,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#293",
+     "graph_id": "signal#344",
      "source_graph_ids": [
-      "source#50"
+      "source#58"
      ]
     },
     {
@@ -6827,9 +7918,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#294",
+     "graph_id": "signal#345",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
      ]
     },
     {
@@ -6843,9 +7934,28 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#295",
+     "graph_id": "signal#346",
      "source_graph_ids": [
-      "source#40"
+      "source#48"
+     ]
+    },
+    {
+     "id": "redwood.10",
+     "evaluator": "redwood",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor.",
+     "sources": [
+      "evaluators-ledger",
+      "coefficient-index"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#347",
+     "source_graph_ids": [
+      "source#39",
+      "source#30"
      ]
     }
    ],
@@ -6870,7 +7980,7 @@
    "confidence": "med",
    "summary": "Rates lab risk-management frameworks in public; runs EU Code of Practice evaluations.",
    "what_would_move_the_score": "Documented pre-release access under Code terms.",
-   "graph_id": "evaluator#103",
+   "graph_id": "evaluator#116",
    "values": {
     "F": 3,
     "G": 3,
@@ -6879,7 +7989,7 @@
     "S": 4,
     "R": 4,
     "M": 3,
-    "X": 4
+    "X": 2
    },
    "assessments": {
     "F": {
@@ -6893,7 +8003,7 @@
      "rationale": "Anchor 3 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#508"
+     "graph_id": "assessment#584"
     },
     "G": {
      "evaluator": "saferai",
@@ -6906,7 +8016,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#509"
+     "graph_id": "assessment#585"
     },
     "P": {
      "evaluator": "saferai",
@@ -6919,7 +8029,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#510"
+     "graph_id": "assessment#586"
     },
     "A": {
      "evaluator": "saferai",
@@ -6932,7 +8042,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#511"
+     "graph_id": "assessment#587"
     },
     "S": {
      "evaluator": "saferai",
@@ -6945,7 +8055,7 @@
      "rationale": "Anchor 4 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#512"
+     "graph_id": "assessment#588"
     },
     "R": {
      "evaluator": "saferai",
@@ -6958,7 +8068,7 @@
      "rationale": "Anchor 4 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#513"
+     "graph_id": "assessment#589"
     },
     "M": {
      "evaluator": "saferai",
@@ -6971,20 +8081,25 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#514"
+     "graph_id": "assessment#590"
     },
     "X": {
      "evaluator": "saferai",
      "dimension": "X",
-     "value": 4,
-     "anchor": 4,
+     "value": 2,
+     "anchor": 2,
      "signals": [
-      "saferai.08"
+      "saferai.08",
+      "saferai.09"
      ],
-     "rationale": "Anchor 4 on products given the cited signals.",
+     "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#515"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Identity of the major AI company client.",
+      "A published lab-money policy."
+     ],
+     "graph_id": "assessment#591"
     }
    },
    "signals": [
@@ -6999,9 +8114,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#296",
+     "graph_id": "signal#348",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7016,10 +8131,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#297",
+     "graph_id": "signal#349",
      "source_graph_ids": [
-      "source#43",
-      "source#64"
+      "source#51",
+      "source#72"
      ]
     },
     {
@@ -7033,9 +8148,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#298",
+     "graph_id": "signal#350",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7049,9 +8164,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#299",
+     "graph_id": "signal#351",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7065,9 +8180,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#300",
+     "graph_id": "signal#352",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7081,9 +8196,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#301",
+     "graph_id": "signal#353",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7097,9 +8212,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#302",
+     "graph_id": "signal#354",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
      ]
     },
     {
@@ -7113,17 +8228,53 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#303",
+     "graph_id": "signal#355",
      "source_graph_ids": [
-      "source#64"
+      "source#72"
+     ]
+    },
+    {
+     "id": "saferai.09",
+     "evaluator": "saferai",
+     "dimension": "X",
+     "direction": "against",
+     "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#356",
+     "source_graph_ids": [
+      "source#39"
+     ]
+    },
+    {
+     "id": "saferai.10",
+     "evaluator": "saferai",
+     "dimension": "F",
+     "direction": "for",
+     "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+     "sources": [
+      "evaluators-ledger",
+      "ted-864574"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#357",
+     "source_graph_ids": [
+      "source#39",
+      "source#82"
      ]
     }
    ],
    "scores": {
-    "lab": 79,
+    "lab": 76,
     "regulator": 79,
-    "public": 82,
-    "equal": 81
+    "public": 80,
+    "equal": 75
    }
   },
   {
@@ -7140,7 +8291,7 @@
    "confidence": "high",
    "summary": "Builds and runs evaluations for CAISI and other governments; Meta acquired 49% in 2025.",
    "what_would_move_the_score": "Ownership separation of the evaluation unit; until then the ceiling is low.",
-   "graph_id": "evaluator#104",
+   "graph_id": "evaluator#117",
    "values": {
     "F": 0,
     "G": 0,
@@ -7163,7 +8314,7 @@
      "rationale": "Anchor 0 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#516"
+     "graph_id": "assessment#592"
     },
     "G": {
      "evaluator": "scale",
@@ -7176,7 +8327,7 @@
      "rationale": "Anchor 0 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#517"
+     "graph_id": "assessment#593"
     },
     "P": {
      "evaluator": "scale",
@@ -7189,7 +8340,7 @@
      "rationale": "Anchor 1 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#518"
+     "graph_id": "assessment#594"
     },
     "A": {
      "evaluator": "scale",
@@ -7202,7 +8353,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#519"
+     "graph_id": "assessment#595"
     },
     "S": {
      "evaluator": "scale",
@@ -7215,7 +8366,7 @@
      "rationale": "Anchor 2 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#520"
+     "graph_id": "assessment#596"
     },
     "R": {
      "evaluator": "scale",
@@ -7228,7 +8379,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#521"
+     "graph_id": "assessment#597"
     },
     "M": {
      "evaluator": "scale",
@@ -7241,7 +8392,7 @@
      "rationale": "Anchor 2 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#522"
+     "graph_id": "assessment#598"
     },
     "X": {
      "evaluator": "scale",
@@ -7254,7 +8405,7 @@
      "rationale": "Anchor 1 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#523"
+     "graph_id": "assessment#599"
     }
    },
    "signals": [
@@ -7270,10 +8421,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#304",
+     "graph_id": "signal#358",
      "source_graph_ids": [
-      "source#42",
-      "source#65"
+      "source#50",
+      "source#73"
      ]
     },
     {
@@ -7287,9 +8438,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#305",
+     "graph_id": "signal#359",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
      ]
     },
     {
@@ -7304,10 +8455,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#306",
+     "graph_id": "signal#360",
      "source_graph_ids": [
-      "source#42",
-      "source#65"
+      "source#50",
+      "source#73"
      ]
     },
     {
@@ -7321,9 +8472,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#307",
+     "graph_id": "signal#361",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
      ]
     },
     {
@@ -7337,9 +8488,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#308",
+     "graph_id": "signal#362",
      "source_graph_ids": [
-      "source#42"
+      "source#50"
      ]
     },
     {
@@ -7353,9 +8504,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#309",
+     "graph_id": "signal#363",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
      ]
     },
     {
@@ -7369,9 +8520,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#310",
+     "graph_id": "signal#364",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
      ]
     },
     {
@@ -7385,9 +8536,26 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#311",
+     "graph_id": "signal#365",
      "source_graph_ids": [
-      "source#65"
+      "source#73"
+     ]
+    },
+    {
+     "id": "scale.09",
+     "evaluator": "scale",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "Meta paid $14.3B for a 49% non-voting stake in June 2025; the founder moved to Meta.",
+     "sources": [
+      "evaluators-ledger"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-11",
+     "graph_id": "signal#366",
+     "source_graph_ids": [
+      "source#39"
      ]
     }
    ],
@@ -7410,7 +8578,7 @@
    "confidence": "high",
    "summary": "Main biosecurity evaluator; author of the Virology Capabilities Test; founding member of the AI Evaluator Forum.",
    "what_would_move_the_score": "Publish the AI division's client mix and the written terms that insulate it from Detection's funders.",
-   "graph_id": "evaluator#105",
+   "graph_id": "evaluator#118",
    "values": {
     "F": 2,
     "G": 3,
@@ -7434,7 +8602,7 @@
      "rationale": "Anchor 2 on funding given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#524"
+     "graph_id": "assessment#600"
     },
     "G": {
      "evaluator": "securebio",
@@ -7448,7 +8616,7 @@
      "rationale": "Anchor 3 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#525"
+     "graph_id": "assessment#601"
     },
     "P": {
      "evaluator": "securebio",
@@ -7461,7 +8629,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#526"
+     "graph_id": "assessment#602"
     },
     "A": {
      "evaluator": "securebio",
@@ -7474,7 +8642,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#527"
+     "graph_id": "assessment#603"
     },
     "S": {
      "evaluator": "securebio",
@@ -7487,7 +8655,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#528"
+     "graph_id": "assessment#604"
     },
     "R": {
      "evaluator": "securebio",
@@ -7500,7 +8668,7 @@
      "rationale": "Anchor 3 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#529"
+     "graph_id": "assessment#605"
     },
     "M": {
      "evaluator": "securebio",
@@ -7513,7 +8681,7 @@
      "rationale": "Anchor 3 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#530"
+     "graph_id": "assessment#606"
     },
     "X": {
      "evaluator": "securebio",
@@ -7526,7 +8694,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#531"
+     "graph_id": "assessment#607"
     }
    },
    "signals": [
@@ -7541,9 +8709,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#312",
+     "graph_id": "signal#367",
      "source_graph_ids": [
-      "source#66"
+      "source#74"
      ]
     },
     {
@@ -7557,9 +8725,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#313",
+     "graph_id": "signal#368",
      "source_graph_ids": [
-      "source#66"
+      "source#74"
      ]
     },
     {
@@ -7573,9 +8741,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#314",
+     "graph_id": "signal#369",
      "source_graph_ids": [
-      "source#66"
+      "source#74"
      ]
     },
     {
@@ -7589,7 +8757,7 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#315",
+     "graph_id": "signal#370",
      "source_graph_ids": [
       "source#10"
      ]
@@ -7605,9 +8773,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#316",
+     "graph_id": "signal#371",
      "source_graph_ids": [
-      "source#43"
+      "source#51"
      ]
     },
     {
@@ -7622,9 +8790,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#317",
+     "graph_id": "signal#372",
      "source_graph_ids": [
-      "source#66",
+      "source#74",
       "source#10"
      ]
     },
@@ -7639,9 +8807,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#318",
+     "graph_id": "signal#373",
      "source_graph_ids": [
-      "source#66"
+      "source#74"
      ]
     },
     {
@@ -7655,7 +8823,7 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#319",
+     "graph_id": "signal#374",
      "source_graph_ids": [
       "source#9"
      ]
@@ -7671,7 +8839,7 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#320",
+     "graph_id": "signal#375",
      "source_graph_ids": [
       "source#10"
      ]
@@ -7687,9 +8855,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#321",
+     "graph_id": "signal#376",
      "source_graph_ids": [
-      "source#66"
+      "source#74"
      ]
     }
    ],
@@ -7714,9 +8882,9 @@
    "confidence": "high",
    "summary": "Nonprofit oversight-tools lab; convenes the AI Evaluator Forum that wrote AEF-1.",
    "what_would_move_the_score": "Routine pre-release access under AEF-1 terms.",
-   "graph_id": "evaluator#106",
+   "graph_id": "evaluator#119",
    "values": {
-    "F": 3,
+    "F": 2,
     "G": 3,
     "P": 3,
     "A": 2,
@@ -7729,15 +8897,20 @@
     "F": {
      "evaluator": "transluce",
      "dimension": "F",
-     "value": 3,
-     "anchor": 3,
+     "value": 2,
+     "anchor": 2,
      "signals": [
-      "transluce.03"
+      "transluce.03",
+      "transluce.09"
      ],
-     "rationale": "Anchor 3 on funding given the cited signals.",
+     "rationale": "Anchor 2: no money from developers as organizations and no paid evaluations, but 38% of FY2025 revenue came from lab employees' personal holdings, which are lab equity. The disclosure is the best in the population; the exposure is still material.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#532"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Whether employee donors are named or bounded in size.",
+      "How the 38% moves in FY2026."
+     ],
+     "graph_id": "assessment#608"
     },
     "G": {
      "evaluator": "transluce",
@@ -7745,12 +8918,13 @@
      "value": 3,
      "anchor": 3,
      "signals": [
-      "transluce.01"
+      "transluce.01",
+      "transluce.10"
      ],
-     "rationale": "Anchor 3 on governance given the cited signals.",
+     "rationale": "Anchor 3: nonprofit with a published COI policy and disclosure duties; board of three includes the CEO, so independent-board evidence is thin.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#533"
+     "assessor": "yohei/claude v0.4",
+     "graph_id": "assessment#609"
     },
     "P": {
      "evaluator": "transluce",
@@ -7763,7 +8937,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#534"
+     "graph_id": "assessment#610"
     },
     "A": {
      "evaluator": "transluce",
@@ -7776,7 +8950,7 @@
      "rationale": "Anchor 2 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#535"
+     "graph_id": "assessment#611"
     },
     "S": {
      "evaluator": "transluce",
@@ -7789,7 +8963,7 @@
      "rationale": "Anchor 4 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#536"
+     "graph_id": "assessment#612"
     },
     "R": {
      "evaluator": "transluce",
@@ -7802,7 +8976,7 @@
      "rationale": "Anchor 4 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#537"
+     "graph_id": "assessment#613"
     },
     "M": {
      "evaluator": "transluce",
@@ -7815,7 +8989,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#538"
+     "graph_id": "assessment#614"
     },
     "X": {
      "evaluator": "transluce",
@@ -7828,7 +9002,7 @@
      "rationale": "Anchor 3 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#539"
+     "graph_id": "assessment#615"
     }
    },
    "signals": [
@@ -7845,10 +9019,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#322",
+     "graph_id": "signal#377",
      "source_graph_ids": [
       "source#10",
-      "source#76",
+      "source#86",
       "source#11"
      ]
     },
@@ -7863,9 +9037,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#323",
+     "graph_id": "signal#378",
      "source_graph_ids": [
-      "source#78"
+      "source#88"
      ]
     },
     {
@@ -7880,10 +9054,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#324",
+     "graph_id": "signal#379",
      "source_graph_ids": [
-      "source#76",
-      "source#77"
+      "source#86",
+      "source#87"
      ]
     },
     {
@@ -7897,9 +9071,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#325",
+     "graph_id": "signal#380",
      "source_graph_ids": [
-      "source#77"
+      "source#87"
      ]
     },
     {
@@ -7913,9 +9087,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#326",
+     "graph_id": "signal#381",
      "source_graph_ids": [
-      "source#77"
+      "source#87"
      ]
     },
     {
@@ -7929,9 +9103,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#327",
+     "graph_id": "signal#382",
      "source_graph_ids": [
-      "source#77"
+      "source#87"
      ]
     },
     {
@@ -7945,9 +9119,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#328",
+     "graph_id": "signal#383",
      "source_graph_ids": [
-      "source#78"
+      "source#88"
      ]
     },
     {
@@ -7961,17 +9135,87 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#329",
+     "graph_id": "signal#384",
      "source_graph_ids": [
-      "source#77"
+      "source#87"
+     ]
+    },
+    {
+     "id": "transluce.09",
+     "evaluator": "transluce",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "FY2025 revenue: 32% from personal holdings of Anthropic employees and 6% from OpenAI employees, unrestricted, disclosed under its own policy; no revenue from developers as organizations.",
+     "sources": [
+      "transluce-policy"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#385",
+     "source_graph_ids": [
+      "source#89"
+     ]
+    },
+    {
+     "id": "transluce.10",
+     "evaluator": "transluce",
+     "dimension": "G",
+     "direction": "for",
+     "claim": "Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.",
+     "sources": [
+      "transluce-policy",
+      "transluce-about"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#386",
+     "source_graph_ids": [
+      "source#89",
+      "source#85"
+     ]
+    },
+    {
+     "id": "transluce.11",
+     "evaluator": "transluce",
+     "dimension": "P",
+     "direction": "for",
+     "claim": "Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider.",
+     "sources": [
+      "transluce-policy"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#387",
+     "source_graph_ids": [
+      "source#89"
+     ]
+    },
+    {
+     "id": "transluce.12",
+     "evaluator": "transluce",
+     "dimension": "P",
+     "direction": "against",
+     "claim": "An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.",
+     "sources": [
+      "transluce-about"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#388",
+     "source_graph_ids": [
+      "source#85"
      ]
     }
    ],
    "scores": {
-    "lab": 80,
-    "regulator": 81,
-    "public": 82,
-    "equal": 81
+    "lab": 75,
+    "regulator": 78,
+    "public": 76,
+    "equal": 78
    }
   },
   {
@@ -7989,9 +9233,9 @@
    "confidence": "high",
    "summary": "Largest state evaluation team; 30+ models tested; Inspect open-sourced; Frontier AI Trends Report.",
    "what_would_move_the_score": "Statutory footing with power to compel testing and publish per-model findings.",
-   "graph_id": "evaluator#107",
+   "graph_id": "evaluator#120",
    "values": {
-    "F": 4,
+    "F": 3,
     "G": 4,
     "P": 3,
     "A": 3,
@@ -8004,15 +9248,19 @@
     "F": {
      "evaluator": "ukaisi",
      "dimension": "F",
-     "value": 4,
-     "anchor": 4,
+     "value": 3,
+     "anchor": 3,
      "signals": [
-      "ukaisi.01"
+      "ukaisi.01",
+      "ukaisi.11"
      ],
-     "rationale": "Anchor 4 on funding given the cited signals.",
+     "rationale": "Anchor 3: public core budget, but the institute runs a lab-funded grant pool, which is lab money passing through it even if not into its evaluation budget.",
      "assessed": "2026-09-14",
-     "assessor": "yohei/claude v0",
-     "graph_id": "assessment#540"
+     "assessor": "yohei/claude v0.4",
+     "open_questions": [
+      "Whether Alignment Project funds touch evaluation staff or infrastructure."
+     ],
+     "graph_id": "assessment#616"
     },
     "G": {
      "evaluator": "ukaisi",
@@ -8025,7 +9273,7 @@
      "rationale": "Anchor 4 on governance given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#541"
+     "graph_id": "assessment#617"
     },
     "P": {
      "evaluator": "ukaisi",
@@ -8038,7 +9286,7 @@
      "rationale": "Anchor 3 on personnel given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#542"
+     "graph_id": "assessment#618"
     },
     "A": {
      "evaluator": "ukaisi",
@@ -8052,7 +9300,7 @@
      "rationale": "Anchor 3 on access given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#543"
+     "graph_id": "assessment#619"
     },
     "S": {
      "evaluator": "ukaisi",
@@ -8065,7 +9313,7 @@
      "rationale": "Anchor 3 on scope given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#544"
+     "graph_id": "assessment#620"
     },
     "R": {
      "evaluator": "ukaisi",
@@ -8079,7 +9327,7 @@
      "rationale": "Anchor 2 on publication given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#545"
+     "graph_id": "assessment#621"
     },
     "M": {
      "evaluator": "ukaisi",
@@ -8092,7 +9340,7 @@
      "rationale": "Anchor 4 on methods given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#546"
+     "graph_id": "assessment#622"
     },
     "X": {
      "evaluator": "ukaisi",
@@ -8105,7 +9353,7 @@
      "rationale": "Anchor 4 on products given the cited signals.",
      "assessed": "2026-09-14",
      "assessor": "yohei/claude v0",
-     "graph_id": "assessment#547"
+     "graph_id": "assessment#623"
     }
    },
    "signals": [
@@ -8120,9 +9368,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#330",
+     "graph_id": "signal#389",
      "source_graph_ids": [
-      "source#62"
+      "source#70"
      ]
     },
     {
@@ -8136,9 +9384,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#331",
+     "graph_id": "signal#390",
      "source_graph_ids": [
-      "source#28"
+      "source#33"
      ]
     },
     {
@@ -8152,9 +9400,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#332",
+     "graph_id": "signal#391",
      "source_graph_ids": [
-      "source#28"
+      "source#33"
      ]
     },
     {
@@ -8168,9 +9416,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#333",
+     "graph_id": "signal#392",
      "source_graph_ids": [
-      "source#28"
+      "source#33"
      ]
     },
     {
@@ -8186,11 +9434,11 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#334",
+     "graph_id": "signal#393",
      "source_graph_ids": [
-      "source#28",
-      "source#63",
-      "source#62"
+      "source#33",
+      "source#71",
+      "source#70"
      ]
     },
     {
@@ -8205,10 +9453,10 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#335",
+     "graph_id": "signal#394",
      "source_graph_ids": [
-      "source#12",
-      "source#28"
+      "source#13",
+      "source#33"
      ]
     },
     {
@@ -8222,9 +9470,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#336",
+     "graph_id": "signal#395",
      "source_graph_ids": [
-      "source#28"
+      "source#33"
      ]
     },
     {
@@ -8238,9 +9486,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#337",
+     "graph_id": "signal#396",
      "source_graph_ids": [
-      "source#62"
+      "source#70"
      ]
     },
     {
@@ -8254,9 +9502,9 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#338",
+     "graph_id": "signal#397",
      "source_graph_ids": [
-      "source#28"
+      "source#33"
      ]
     },
     {
@@ -8270,17 +9518,34 @@
      ],
      "recorded": "2026-09-14",
      "curator": "yohei/claude v0",
-     "graph_id": "signal#339",
+     "graph_id": "signal#398",
      "source_graph_ids": [
-      "source#62"
+      "source#70"
+     ]
+    },
+    {
+     "id": "ukaisi.11",
+     "evaluator": "ukaisi",
+     "dimension": "F",
+     "direction": "against",
+     "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
+     "sources": [
+      "aisi-grants"
+     ],
+     "recorded": "2026-09-14",
+     "curator": "yohei/claude v0.4",
+     "as_of": "2026-09-14",
+     "graph_id": "signal#399",
+     "source_graph_ids": [
+      "source#12"
      ]
     }
    ],
    "scores": {
-    "lab": 82,
-    "regulator": 80,
-    "public": 82,
-    "equal": 84
+    "lab": 77,
+    "regulator": 76,
+    "public": 76,
+    "equal": 81
    }
   }
  ]

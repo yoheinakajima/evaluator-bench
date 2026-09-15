@@ -1,0 +1,120 @@
+[
+  {
+    "id": "equistamp.01",
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Revenue from evaluators and governments; leads EU Lot 3 (EUR 1.17M to consortium) and Lot 4 (EUR 0.88M).",
+    "sources": [
+      "ted-864574",
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.02",
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Private company; no funding or ownership disclosed.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.03",
+    "evaluator": "equistamp",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "No COI policy on the site.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.04",
+    "evaluator": "equistamp",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founders' prior affiliations and any lab ties not established.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.05",
+    "evaluator": "equistamp",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Access is through client engagements; no pre-release lab access documented.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.06",
+    "evaluator": "equistamp",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Regulator as client sets scope by tender.",
+    "sources": [
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.07",
+    "evaluator": "equistamp",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Deliverables go to the AI Office; no public reports found.",
+    "sources": [
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.08",
+    "evaluator": "equistamp",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods not public.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  },
+  {
+    "id": "equistamp.09",
+    "evaluator": "equistamp",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No lab-facing products found; clients are evaluators and governments.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14"
+  }
+]

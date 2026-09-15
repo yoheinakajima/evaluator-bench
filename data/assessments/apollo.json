@@ -14,15 +14,20 @@
   {
     "evaluator": "apollo",
     "dimension": "G",
-    "value": 3,
-    "anchor": 3,
+    "value": 2,
+    "anchor": 2,
     "signals": [
       "apollo.01",
-      "apollo.03"
+      "apollo.03",
+      "apollo.10"
     ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
+    "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Round size and Macroscopic's share.",
+      "Who holds the mission seats."
+    ]
   },
   {
     "evaluator": "apollo",

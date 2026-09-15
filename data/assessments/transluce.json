@@ -2,14 +2,19 @@
   {
     "evaluator": "transluce",
     "dimension": "F",
-    "value": 3,
-    "anchor": 3,
+    "value": 2,
+    "anchor": 2,
     "signals": [
-      "transluce.03"
+      "transluce.03",
+      "transluce.09"
     ],
-    "rationale": "Anchor 3 on funding given the cited signals.",
+    "rationale": "Anchor 2: no money from developers as organizations and no paid evaluations, but 38% of FY2025 revenue came from lab employees' personal holdings, which are lab equity. The disclosure is the best in the population; the exposure is still material.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Whether employee donors are named or bounded in size.",
+      "How the 38% moves in FY2026."
+    ]
   },
   {
     "evaluator": "transluce",
@@ -17,11 +22,12 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "transluce.01"
+      "transluce.01",
+      "transluce.10"
     ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
+    "rationale": "Anchor 3: nonprofit with a published COI policy and disclosure duties; board of three includes the CEO, so independent-board evidence is thin.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4"
   },
   {
     "evaluator": "transluce",

@@ -1,0 +1,12 @@
+{
+  "id": "caisi-funding",
+  "title": "Funding for CAISI",
+  "publisher": "Institute for Progress",
+  "url": "https://ifp.org/funding-for-caisi/",
+  "published": "2026",
+  "retrieved": "2026-09-14",
+  "note": "$10M FY2026 within the NIST AI line; FY2027 request $27M.",
+  "source_type": "press",
+  "audit_status": "imported",
+  "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV12"
+}

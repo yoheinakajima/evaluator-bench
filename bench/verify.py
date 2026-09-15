@@ -67,9 +67,15 @@ def run(data: dict | None = None) -> list[str]:
         errs.append(f"C7 ledger failed to load: {ex}"); neg_ok = set(); in_ledger = set()
     # C8: a 4 on funding needs a confirmed bounded negative in a primary filing or index
     for a in ass:
-        if a["dimension"] == "F" and a["value"] == 4 and a["evaluator"] in in_ledger and a["evaluator"] not in neg_ok:
+        led = LEDGER_ALIAS.get(a["evaluator"], a["evaluator"])
+        if a["dimension"] == "F" and a["value"] == 4 and led in in_ledger and led not in neg_ok:
             errs.append(f"C8 assessment ({a['evaluator']}, F): value 4 requires a confirmed negative-evidence row in data/ledger/negatives.csv")
+    # C9: every evaluator is an entity in the ledger, so nobody is exempt from exposure
+    for eid_ in ev:
+        if LEDGER_ALIAS.get(eid_, eid_) not in in_ledger: errs.append(f"C9 evaluator {eid_}: no ledger entity (add to data/ledger/entities.csv)")
     return errs
+
+LEDGER_ALIAS = {"farai": "far-ai", "grayswan": "gray-swan"}
 
 def main(argv=None) -> int:
     errs = run()

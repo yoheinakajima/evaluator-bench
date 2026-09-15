@@ -356,6 +356,9 @@
       <h3 style="margin-top:26px">Who pays, selects, sees, publishes, and watches</h3>
       <p class="lead">The configuration the ladder cannot show. Read the AI row against the others: the only other regime with the same five-cell pattern is dietary supplements, the regime that removed pre-market review by statute.</p>
       <div class="fig" id="figMech"><!--__FIG_MECHANISMS__--></div><div class="figlive" aria-live="polite"></div>
+      <h3 style="margin-top:26px">Money and ties, every evaluator</h3>
+      <p class="lead">The ledger view: each evaluator's traced inflows by distance from a frontier lab, ties within two steps, and how much of the record has been re-derived from primary sources rather than imported. Read the confirmed column before the others; most rows are still leads. Rows and sources: <code>data/ledger/</code>. Rebuild with <code>python -m bench exposure --json</code>.</p>
+      <div class="fig" id="figExposure"><!--__FIG_EXPOSURE__--></div><div class="figlive" aria-live="polite"></div>
     </div>
   </section>
 
@@ -380,7 +383,7 @@
 <script>
 const BENCH = /*__BENCH_JSON__*/null;
 const EXPOSURE = /*__EXPOSURE_JSON__*/null;
-const LEDGER_ID = {metr:"metr",rand:"rand",farai:"far-ai",redwood:"redwood",irregular:"irregular",grayswan:"gray-swan",securebio:"securebio",apollo:"apollo",epoch:"epoch",palisade:"palisade"};
+const LEDGER_ID = /*__LEDGER_MAP__*/null || {};
 const DIMS = BENCH.dimensions.map(d=>({k:d.key,label:d.label,desc:d.desc,anchors:d.anchors}));
 const PRESETS = Object.fromEntries(Object.entries(BENCH.presets).map(([k,v])=>[k,v.weights]));
 const TYPES = BENCH.types;

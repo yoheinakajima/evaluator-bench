@@ -95,5 +95,32 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.09",
+    "evaluator": "saferai",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
+  },
+  {
+    "id": "saferai.10",
+    "evaluator": "saferai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+    "sources": [
+      "evaluators-ledger",
+      "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
   }
 ]

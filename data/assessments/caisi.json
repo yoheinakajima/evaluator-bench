@@ -2,14 +2,18 @@
   {
     "evaluator": "caisi",
     "dimension": "F",
-    "value": 4,
-    "anchor": 4,
+    "value": 3,
+    "anchor": 3,
     "signals": [
-      "caisi.01"
+      "caisi.01",
+      "caisi.10"
     ],
-    "rationale": "Anchor 4 on funding given the cited signals.",
+    "rationale": "Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.",
     "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+      "Add a confirmed bounded negative from a primary source to restore anchor 4."
+    ]
   },
   {
     "evaluator": "caisi",

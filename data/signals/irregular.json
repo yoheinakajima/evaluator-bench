@@ -120,5 +120,18 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.11",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "A Coefficient Giving grant of about $6.8M appears in the index for a venture-backed company; purpose to be verified.",
+    "sources": [
+      "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
   }
 ]

@@ -1,0 +1,99 @@
+[
+  {
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "equistamp.01",
+      "equistamp.02"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "equistamp.03"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "equistamp.04"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "equistamp.05"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "equistamp.06"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "equistamp.07"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "equistamp.08"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  },
+  {
+    "evaluator": "equistamp",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "equistamp.09"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4"
+  }
+]

@@ -108,5 +108,18 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.3",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "palisade.10",
+    "evaluator": "palisade",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.",
+    "sources": [
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11"
   }
 ]

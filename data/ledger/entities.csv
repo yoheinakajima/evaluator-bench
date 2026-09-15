@@ -42,3 +42,54 @@ dattani,Rajiv Dattani,person,
 mann,Ben Mann,person,Anthropic co-founder
 kolter,Zico Kolter,person,Gray Swan co-founder and chief scientist
 farhi,David Farhi,person,OpenAI technical lead
+transluce,Transluce,evaluator,
+andon,Andon Labs,evaluator,
+ukaisi,UK AI Security Institute,evaluator,
+caisi,US CAISI (NIST),evaluator,
+euaio,EU AI Office,evaluator,
+averi,AVERI,evaluator,
+saferai,SaferAI,evaluator,
+scale,Scale AI (SEAL),evaluator,
+mlcommons,MLCommons,evaluator,
+hfoai,Hugging Face Open Alignment Initiative,evaluator,
+cais,Center for AI Safety,evaluator,
+msft,Microsoft AI Red Team,evaluator,
+dreadnode,Dreadnode,evaluator,
+humane,Humane Intelligence,evaluator,
+hal,Holistic Agent Leaderboard (Princeton),evaluator,
+big4,Assurance firms (Big Four and peers),evaluator,
+equistamp,EquiStamp,evaluator,
+nemesys,Nemesys Insights,evaluator,
+meta,Meta,lab,
+google,Google / Google DeepMind,lab,
+amazon,Amazon,lab,
+microsoft,Microsoft,lab,
+xai,xAI,lab,
+nvidia,Nvidia,investor,
+fifty-years,Fifty Years (50Y),investor,
+juniper,Juniper Ventures,investor,
+saif,Safe AI Fund (Geoff Ralston),investor,
+halcyon,Halcyon Futures,funder,
+fathom,Fathom,funder,
+schmidt,Schmidt Sciences,funder,
+cset,CSET,funder,
+yc,Y Combinator,investor,
+uk-gov,UK government (DSIT),public,
+us-gov,US government (NIST appropriations),public,
+eu-budget,EU budget (Digital Europe Programme),public,
+hendrycks,Dan Hendrycks,person,CAIS director
+ladish,Jeffrey Ladish,person,"Palisade founder, ex-Anthropic security"
+brundage,Miles Brundage,person,"AVERI executive director, ex-OpenAI"
+steinhardt,Jacob Steinhardt,person,Transluce CEO
+mccormick,Mike McCormick,person,Halcyon Futures CEO
+stosz,Conrad Stosz,person,"Transluce head of governance, ex-CAISI"
+wang,Alexandr Wang,person,"Scale founder, moved to Meta 2025"
+mattson,Peter Mattson,person,MLCommons president; Google engineer
+chowdhury,Neil Chowdhury,person,Thinking Machines; Transluce advisor
+delangue,Clement Delangue,person,Hugging Face CEO
+salesforce-ventures,Salesforce Ventures,investor,
+hilton,Jacob Hilton,person,ARC
+lightspeed,Lightspeed Grants,funder,
+anthropic-employees,Anthropic employees (personal holdings),person,group entity for employee donations
+openai-employees,OpenAI employees (personal holdings),person,group entity
+lab-employees,Frontier-lab employees and alumni (unnamed),person,group entity for disclosed but unnamed donors

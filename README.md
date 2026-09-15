@@ -1,6 +1,6 @@
 # Evaluator Bench
 
-An evidence-linked, event-sourced directory of third-party evaluators for frontier AI, with an independence score you can take apart.
+An evidence-linked, event-sourced directory of 28 third-party evaluators for frontier AI, with an independence score you can take apart and a row-level ledger of who pays whom.
 
 Site: `dist/index.html` (GitHub Pages from `dist/`). Data: `data/`. Log: `graph/events.jsonl`.
 

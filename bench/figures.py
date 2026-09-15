@@ -118,5 +118,51 @@ def mechanism_matrix() -> str:
     return "\n".join(o)
 
 def write(dist: pathlib.Path, figs: pathlib.Path) -> None:
-    for name, fn in [("paths", path_strips), ("responses", response_plot), ("mechanisms", mechanism_matrix)]:
+    for name, fn in [("paths", path_strips), ("responses", response_plot), ("mechanisms", mechanism_matrix), ("exposure", exposure_matrix)]:
         s = fn(); (dist / f"{name}.svg").write_text(s); (figs / f"{name}.svg").write_text(s)
+
+def exposure_matrix() -> str:
+    """Figure 5: per-evaluator inflows by hop distance, ties within two hops, confirmed share."""
+    from .ledger import load_ledger, exposure
+    L = load_ledger(); ex = exposure(L)  # every evaluator, so an empty row is visible as a gap
+    order = ["hop0", "hop1", "hop2", "hop3", "public", "unattributed"]
+    labels = {"hop0": "Lab (0)", "hop1": "Lab-tied (1)", "hop2": "Two steps (2)", "hop3": "Three steps (3)", "public": "Public budget", "unattributed": "Donor not public"}
+    shade = {"hop0": "#9B2C2C", "hop1": "#C4746A", "hop2": "#B7791F", "hop3": "#8CC5BB", "public": "#0F766E", "unattributed": "#5E6B76"}
+    rh, cw, name_w, pad = 26, 116, 250, 12
+    w = pad + name_w + cw * len(order) + 300; h = 96 + rh * len(ex) + 30
+    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" {FONT} font-size="12">',
+         f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
+         f'<text x="{pad}" y="22" font-size="16" fill="{INK}">Traced money by distance from a frontier lab, per evaluator</text>',
+         f'<text x="{pad}" y="40" fill="{MUTED}">Cell: number of inflow rows at that distance; the amount below is summed within the largest measure at that distance. Undisclosed amounts count as rows only.</text>',
+         f'<text x="{pad}" y="56" fill="{MUTED}">Right: board, advisor, donor, investor, or office ties within two steps of a lab, and the share of rows re-derived from sources (confirmed) rather than imported.</text>']
+    for j, k in enumerate(order):
+        o.append(f'<text x="{pad + name_w + j * cw + cw / 2}" y="84" text-anchor="middle" fill="{INK}" font-weight="600">{labels[k]}</text>')
+    xr = pad + name_w + len(order) * cw + 10
+    o.append(f'<text x="{xr}" y="84" fill="{INK}" font-weight="600">Ties</text><text x="{xr + 70}" y="84" fill="{INK}" font-weight="600">Confirmed</text><text x="{xr + 160}" y="84" fill="{INK}" font-weight="600">Negatives</text>')
+    y = 96
+    for x in ex:
+        o.append(f'<text x="{pad}" y="{y + 16}" fill="{INK}">{_esc(x["name"][:36])}</text>')
+        if not x["inflow_rows"] and not x["lab_tied_seats"] and not x["negatives"]:
+            o.append(f'<text x="{pad + name_w + 8}" y="{y + 16}" fill="{MUTED}" font-style="italic">no ledger rows yet; funding and ties not traced</text>')
+            y += rh; continue
+        for j, k in enumerate(order):
+            b = x["buckets"].get(k); cx = pad + name_w + j * cw
+            if not b:
+                o.append(f'<rect x="{cx + 2}" y="{y + 2}" width="{cw - 4}" height="{rh - 6}" fill="none" stroke="{RULE}" stroke-dasharray="3 3"/>'); continue
+            amt = ""
+            if b["by_measure"]:
+                m, v = max(b["by_measure"].items(), key=lambda kv: kv[1]); amt = f"{m} ${v/1e6:.1f}M" if v < 1e9 else f"{m} ${v/1e9:.1f}B"
+            tip = f"{x['name']}, {labels[k].lower()}: {b['rows']} row(s) from {', '.join(b['sources'])}. " + (", ".join(f"{m} ${v/1e6:.1f}M" for m, v in b["by_measure"].items()) if b["by_measure"] else "amounts undisclosed") + (f"; {b['undisclosed']} undisclosed" if b["undisclosed"] and b["by_measure"] else "")
+            op = 0.35 + 0.15 * min(b["rows"], 4)
+            o.append(f'<g data-tip="{_esc(tip)}" style="cursor:pointer"><rect x="{cx + 2}" y="{y + 2}" width="{cw - 4}" height="{rh - 6}" rx="2" fill="{shade[k]}" fill-opacity="{op:.2f}"/>'
+                     f'<text x="{cx + cw / 2}" y="{y + 12}" text-anchor="middle" fill="{INK}" font-weight="600" font-size="11">{b["rows"]}{"*" if b["undisclosed"] else ""}</text>'
+                     f'<text x="{cx + cw / 2}" y="{y + 21}" text-anchor="middle" fill="{INK}" font-size="8.5">{_esc(amt)}</text></g>')
+        ties = x["lab_tied_seats"]; conf = f"{x['confirmed_rows']}/{x['inflow_rows']}" if x["inflow_rows"] else "0/0"
+        tie_tip = "; ".join(f"{t['via']} ({t['role']}, distance {t['distance']}, {t['status']})" for t in ties) or "no ties within two steps recorded"
+        neg_tip = "; ".join(f"{n['claim']} [{n['searched']}, {n['snapshot']}, {n['status']}]" for n in x["negatives"]) or "no bounded negatives on file"
+        o.append(f'<g data-tip="{_esc(x["name"] + ": " + tie_tip)}" style="cursor:pointer"><text x="{xr + 12}" y="{y + 16}" fill="{"#9B2C2C" if ties else MUTED}" font-weight="{"600" if ties else "400"}">{len(ties)}</text></g>')
+        o.append(f'<text x="{xr + 80}" y="{y + 16}" fill="{MUTED}">{conf}</text>')
+        o.append(f'<g data-tip="{_esc(x["name"] + ": " + neg_tip)}" style="cursor:pointer"><text x="{xr + 175}" y="{y + 16}" fill="{"#0F766E" if x["negatives"] else MUTED}">{len(x["negatives"])}</text></g>')
+        y += rh
+    o.append(f'<text x="{pad}" y="{h - 12}" fill="{MUTED}">* includes undisclosed amounts. Source: data/ledger/. Generated by bench.figures. Imported rows are leads until confirmed.</text></svg>')
+    return "\n".join(o)
