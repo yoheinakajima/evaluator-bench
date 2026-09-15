@@ -5,8 +5,8 @@
   "url": "https://metr.org/team/",
   "published": "2026",
   "retrieved": "2026-09-14",
-  "note": "Board and advisors listed on the team page: Gleave (FAR.AI), Dattani (AIUC), Radford, Mascorro (a16z), Bengio; former advisors Karnofsky, Christiano appear in earlier captures.",
+  "note": "Board and advisors listed on the team page: Gleave (FAR.AI), Dattani (AIUC), Radford, Mascorro (a16z), Bengio; former advisors Karnofsky, Christiano appear in earlier captures. Re-fetched 2026-09-14: current advisors Gleave (board), Radford, Mascorro, Dattani (board), Bengio.",
   "source_type": "self",
-  "audit_status": "imported",
+  "audit_status": "confirmed",
   "imported_from": "kevinnbass/metr-money-figure:board.csv B05-B13"
 }

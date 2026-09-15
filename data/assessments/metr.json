@@ -10,7 +10,8 @@
       "metr.03",
       "metr.14",
       "metr.15",
-      "metr.16"
+      "metr.16",
+      "metr.18"
     ],
     "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
     "assessed": "2026-09-14",
@@ -18,7 +19,8 @@
     "open_questions": [
       "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
       "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
-      "Confirm the donor-rule capture history against the Wayback Machine directly."
+      "Confirm the donor-rule capture history against the Wayback Machine directly.",
+      "The live page names David Farhi among donors while stating it cannot accept donations from frontier AI company employees; the timing of the gift relative to his OpenAI role and to the rule is not established."
     ]
   },
   {

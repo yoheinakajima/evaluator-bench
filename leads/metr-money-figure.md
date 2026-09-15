@@ -1,6 +1,6 @@
 # Lead: kevinnbass/metr-money-figure
 
-Cloned 14 Sep 2026 (depth 1). A third-party investigative ledger behind a rendered figure about METR's funding network. Treated here as leads to re-derive, not as findings.
+Cloned 14 Sep 2026 (depth 1, commit f64df65a1640, authored 2026-09-14 16:55 -0500). Found via https://x.com/kevinnbass/status/2099621874279817638; that tweet is recorded as `discovered_via` on the source record. A third-party investigative ledger behind a rendered figure about METR's funding network. Treated here as leads to re-derive, not as findings.
 
 ## What it contains
 
@@ -20,6 +20,10 @@ Audit 3A: the arithmetic recomputes, but the rendered figure's legend labels eve
 ## What we imported
 
 Rows tagged `imported` in `data/ledger/` with the originating row id in `notes`. None has been re-derived here. Five negatives (N01 to N05), fourteen transfers, and about twenty relationships. Two assessments changed on the strength of them, each re-dated and carrying open questions: METR funding 4 to 3, METR personnel 3 to 2. Palisade funding 4 to 3 for the same gate.
+
+## Re-derivation status
+
+First pass in `paper/audits/AUDIT-1.md`: 28 of 68 inflow rows confirmed, mostly from metr.org/about, the SFF 2025 recommendations page, ProPublica summaries, and three organizations' own policy pages. One wording difference found (METR's donor rule is now tighter than the imported September 2025 footnote). `python -m bench audit --all-imported` re-fetches and hashes the rest when run with network access.
 
 ## Re-derivation plan
 

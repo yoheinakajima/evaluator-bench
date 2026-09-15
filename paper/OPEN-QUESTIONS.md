@@ -9,8 +9,8 @@ One entry per question. Status: SETTLED (rows cited, figure-ready), PARTIAL (row
 - Closes it: METR publishing its funder list with amounts and vehicles, or the DAF sponsors' donor attributions.
 
 ## Q2. When did METR's no-lab-money rule take effect, and what does it exclude? PARTIAL
-- Rows: source metr-donor-rule-history (imported DR01-DR12).
-- Known: no rule on the April 2024 page; footnote wording appears April 2025 and changes through September 2025; individual lab employees may donate; free credits accepted.
+- Rows: source metr-donor-rule-history (imported DR01-DR12); metr-about re-fetched 2026-09-14.
+- Known: no rule on the April 2024 page; footnote wording appears April 2025 and changes through September 2025. The live page now says METR cannot accept donations by or at the direction of frontier AI company employees, and still names an OpenAI technical lead among donors; free credits accepted.
 - Closes it: METR's own dated policy document, or direct Wayback re-derivation.
 
 ## Q3. What are the terms of the Anthropic embedded-evaluator engagement (scope, selection, pay, publication)? OPEN

@@ -34,6 +34,7 @@ python -m bench industries    # cross-industry lifecycle table: trigger-to-rule 
 python -m bench timeline      # stage ladder (Figure 1); build writes dist/timeline.svg
 python -m bench paths         # path signatures, nearest analogues to AI, trigger-response strength, mechanisms
 python -m bench exposure      # ledger check and inflows by hop distance from a lab, per evaluator
+python -m bench audit T12 R10 # re-fetch cited sources, hash them into data/artifacts.csv (needs network)
 ```
 
 ## The rubric

@@ -1,13 +1,13 @@
 {
  "distances": {
+  "thinking-machines": 0,
+  "xai": 0,
   "meta": 0,
   "anthropic": 0,
-  "amazon": 0,
-  "microsoft": 0,
-  "openai": 0,
-  "xai": 0,
   "google": 0,
-  "thinking-machines": 0,
+  "microsoft": 0,
+  "amazon": 0,
+  "openai": 0,
   "tallinn": 1,
   "moskovitz": 1,
   "macroscopic": 1,
@@ -28,11 +28,12 @@
   "anthropic-employees": 1,
   "openai-employees": 1,
   "lab-employees": 1,
+  "deshaw": 1,
   "metr": 1,
   "coefficient": 2,
   "good-ventures": 2,
   "sff": 2,
-  "longview": 3,
+  "longview": 2,
   "rand": 3,
   "redwood": 2,
   "constellation": 3,
@@ -84,25 +85,25 @@
      ]
     },
     "hop2": {
-     "rows": 2,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
-      "recommendation": 752000.0
+      "recommendation": 752000.0,
+      "grant": 220000.0
      },
      "sources": [
+      "longview",
       "sff"
      ]
     },
     "hop3": {
-     "rows": 2,
+     "rows": 1,
      "undisclosed": 0,
      "by_measure": {
-      "transfer": 4553935.0,
-      "grant": 220000.0
+      "transfer": 4553935.0
      },
      "sources": [
-      "arc",
-      "longview"
+      "arc"
      ]
     },
     "unattributed": {
@@ -126,14 +127,14 @@
      "role": "board",
      "via": "Adam Gleave",
      "distance": 2,
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "person": "mascorro",
      "role": "advisor",
      "via": "Marco Mascorro",
      "distance": 2,
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "person": "karnofsky",
@@ -154,14 +155,14 @@
      "role": "board",
      "via": "Rajiv Dattani",
      "distance": 2,
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "person": "farhi",
      "role": "donor",
      "via": "David Farhi",
      "distance": 1,
-     "status": "imported"
+     "status": "confirmed"
     }
    ],
    "negatives": [
@@ -196,22 +197,34 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 1
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 8,
+    "traced": 4,
+    "untraced": [
+     "The Audacious Project (TED)",
+     "Founders Pledge",
+     "Silicon Valley Community Foundation",
+     "Vanguard Charitable"
+    ]
+   }
   },
   {
    "id": "rand",
    "name": "RAND Corporation",
    "kind_note": "Canary joint project with METR",
-   "inflow_rows": 4,
+   "inflow_rows": 5,
    "buckets": {
     "hop2": {
-     "rows": 2,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 86955751.0
+      "grant": 86955751.0,
+      "recommendation": 1022000.0
      },
      "sources": [
-      "coefficient"
+      "coefficient",
+      "sff"
      ]
     },
     "public": {
@@ -237,13 +250,20 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 4,
+    "traced": 3,
+    "untraced": [
+     "The Audacious Project (TED)"
+    ]
+   }
   },
   {
    "id": "far-ai",
    "name": "FAR.AI",
    "kind_note": "",
-   "inflow_rows": 5,
+   "inflow_rows": 6,
    "buckets": {
     "hop1": {
      "rows": 1,
@@ -254,7 +274,7 @@
      ]
     },
     "hop2": {
-     "rows": 2,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
       "grant": 59347676.0,
@@ -286,7 +306,12 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 2
+   "confirmed_rows": 3,
+   "second_hop": {
+    "sources": 5,
+    "traced": 5,
+    "untraced": []
+   }
   },
   {
    "id": "redwood",
@@ -319,7 +344,12 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 3,
+    "traced": 3,
+    "untraced": []
+   }
   },
   {
    "id": "irregular",
@@ -366,7 +396,12 @@
     }
    ],
    "negatives": [],
-   "confirmed_rows": 2
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 3,
+    "traced": 3,
+    "untraced": []
+   }
   },
   {
    "id": "gray-swan",
@@ -395,13 +430,20 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 2
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 2,
+    "traced": 1,
+    "untraced": [
+     "Wing Venture Capital"
+    ]
+   }
   },
   {
    "id": "securebio",
    "name": "SecureBio",
    "kind_note": "",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "buckets": {
     "hop0": {
      "rows": 1,
@@ -418,11 +460,26 @@
      "sources": [
       "oaif"
      ]
+    },
+    "hop2": {
+     "rows": 1,
+     "undisclosed": 0,
+     "by_measure": {
+      "recommendation": 754000.0
+     },
+     "sources": [
+      "sff"
+     ]
     }
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 2
+   "confirmed_rows": 3,
+   "second_hop": {
+    "sources": 3,
+    "traced": 3,
+    "untraced": []
+   }
   },
   {
    "id": "apollo",
@@ -469,7 +526,14 @@
     }
    ],
    "negatives": [],
-   "confirmed_rows": 2
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 4,
+    "traced": 3,
+    "untraced": [
+     "Fifty Years (50Y)"
+    ]
+   }
   },
   {
    "id": "epoch",
@@ -509,16 +573,21 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 1
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 4,
+    "traced": 4,
+    "untraced": []
+   }
   },
   {
    "id": "palisade",
    "name": "Palisade Research",
    "kind_note": "",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "buckets": {
     "hop2": {
-     "rows": 2,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
       "grant": 3803463.0,
@@ -532,7 +601,12 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 2,
+    "traced": 2,
+    "untraced": []
+   }
   },
   {
    "id": "transluce",
@@ -581,7 +655,12 @@
      "status": "confirmed"
     }
    ],
-   "confirmed_rows": 2
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 3,
+    "traced": 3,
+    "untraced": []
+   }
   },
   {
    "id": "andon",
@@ -610,7 +689,14 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 2,
+    "traced": 1,
+    "untraced": [
+     "Y Combinator"
+    ]
+   }
   },
   {
    "id": "ukaisi",
@@ -644,7 +730,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 2,
+    "traced": 2,
+    "untraced": []
+   }
   },
   {
    "id": "caisi",
@@ -678,7 +769,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "euaio",
@@ -706,7 +802,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "averi",
@@ -749,16 +850,23 @@
      "status": "confirmed"
     }
    ],
-   "confirmed_rows": 4
+   "confirmed_rows": 4,
+   "second_hop": {
+    "sources": 4,
+    "traced": 3,
+    "untraced": [
+     "Halcyon Futures"
+    ]
+   }
   },
   {
    "id": "saferai",
    "name": "SaferAI",
    "kind_note": "",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "buckets": {
     "hop2": {
-     "rows": 1,
+     "rows": 2,
      "undisclosed": 0,
      "by_measure": {
       "recommendation": 1056800.0
@@ -785,7 +893,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 2,
+    "traced": 2,
+    "untraced": []
+   }
   },
   {
    "id": "scale",
@@ -821,7 +934,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "mlcommons",
@@ -847,7 +965,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "hfoai",
@@ -907,19 +1030,26 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 1
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 2,
+    "traced": 1,
+    "untraced": [
+     "Salesforce Ventures"
+    ]
+   }
   },
   {
    "id": "cais",
    "name": "Center for AI Safety",
    "kind_note": "",
-   "inflow_rows": 1,
+   "inflow_rows": 2,
    "buckets": {
     "hop2": {
-     "rows": 1,
+     "rows": 2,
      "undisclosed": 0,
      "by_measure": {
-      "recommendation": 1100000.0
+      "recommendation": 1389000.0
      },
      "sources": [
       "sff"
@@ -928,7 +1058,12 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 1
+   "confirmed_rows": 2,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "msft",
@@ -947,7 +1082,12 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 1
+   "confirmed_rows": 1,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "dreadnode",
@@ -957,7 +1097,12 @@
    "buckets": {},
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 0,
+    "traced": 0,
+    "untraced": []
+   }
   },
   {
    "id": "humane",
@@ -967,7 +1112,12 @@
    "buckets": {},
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 0,
+    "traced": 0,
+    "untraced": []
+   }
   },
   {
    "id": "hal",
@@ -977,7 +1127,12 @@
    "buckets": {},
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 0,
+    "traced": 0,
+    "untraced": []
+   }
   },
   {
    "id": "big4",
@@ -987,7 +1142,12 @@
    "buckets": {},
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 0,
+    "traced": 0,
+    "untraced": []
+   }
   },
   {
    "id": "equistamp",
@@ -1015,7 +1175,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 1,
+    "traced": 1,
+    "untraced": []
+   }
   },
   {
    "id": "nemesys",
@@ -1049,7 +1214,12 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0
+   "confirmed_rows": 0,
+   "second_hop": {
+    "sources": 2,
+    "traced": 2,
+    "untraced": []
+   }
   }
  ]
 }

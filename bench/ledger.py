@@ -97,13 +97,21 @@ def exposure(L: dict | None = None) -> list[dict]:
             b["rows"] += 1; b["sources"].append(t["from"])
             if t["amount_usd"]: b["by_measure"][t["measure"]] += float(t["amount_usd"])
             else: b["undisclosed"] += 1
+        # second-hop coverage: for each source of an inflow, does the ledger say anything about who is behind it?
+        behind = defaultdict(int)
+        for r in L["relationships"]:
+            if r["role"] in CONTROL_ROLES | {"employee", "founder"}: behind[r["object"]] += 1
+        for t2 in L["transfers"]: behind[t2["to"]] += 1
+        srcs = sorted({t["from"] for t in rows})
+        traced = [s for s in srcs if behind.get(s, 0) > 0 or E[s]["kind"] in ("lab", "public") or d.get(s, 9e9) <= 1]
         ties = [r for r in L["relationships"] if r["object"] == eid and r["role"] in {"board", "advisor", "donor", "investor", "office_host"} and d.get(r["subject"], 9e9) <= 2]
         negs = [n for n in L["negatives"] if n["evaluator"] == eid]
         out.append(dict(id=eid, name=e["name"], kind_note=e.get("notes",""), inflow_rows=len(rows),
                         buckets={k: {"rows": v["rows"], "undisclosed": v["undisclosed"], "by_measure": dict(v["by_measure"]), "sources": sorted(set(v["sources"]))} for k, v in sorted(buckets.items())},
                         lab_tied_seats=[dict(person=r["subject"], role=r["role"] + (" (former)" if r.get("end") else ""), via=E[r["subject"]]["name"], distance=int(d[r["subject"]]), status=r["audit_status"]) for r in ties],
                         negatives=[dict(claim=n["claim"], searched=n["searched"], snapshot=n["snapshot"], status=n["audit_status"]) for n in negs],
-                        confirmed_rows=sum(1 for t in rows if t["audit_status"] == "confirmed")))
+                        confirmed_rows=sum(1 for t in rows if t["audit_status"] == "confirmed"),
+                        second_hop=dict(sources=len(srcs), traced=len(traced), untraced=[E[s]["name"] for s in srcs if s not in traced])))
     return out
 
 def main(argv=None) -> int:
@@ -122,6 +130,7 @@ def main(argv=None) -> int:
             amts = ", ".join(f"{m} ${v/1e6:.1f}M" for m, v in b["by_measure"].items())
             print(f"     {k:12s} {b['rows']} rows{(' (' + str(b['undisclosed']) + ' undisclosed)') if b['undisclosed'] else ''}  {amts}  from {', '.join(b['sources'])}")
         for s in x["lab_tied_seats"]: print(f"     tie: {s['via']} ({s['role']}, distance {s['distance']}, {s['status']})")
+        sh = x["second_hop"]; print(f"     second hop traced for {sh['traced']}/{sh['sources']} sources" + (f"; untraced: {', '.join(sh['untraced'])}" if sh['untraced'] else ""))
         for n in x["negatives"]: print(f"     none found: {n['claim']} [{n['searched']}, {n['snapshot']}, {n['status']}]")
     evs = [x for x in ex]
     coef = sum(1 for x in evs if any("coefficient" in b["sources"] for b in x["buckets"].values()))

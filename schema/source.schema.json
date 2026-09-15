@@ -60,6 +60,9 @@
   },
   "capture": {
    "type": "string"
+  },
+  "discovered_via": {
+   "type": "string"
   }
  }
 }

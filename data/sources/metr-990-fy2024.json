@@ -5,8 +5,8 @@
   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
   "published": "2025",
   "retrieved": "2026-09-14",
-  "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M.",
+  "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M. ProPublica summary re-fetched 2026-09-14: revenue $13,639,155, contributions $13,603,035.",
   "source_type": "filing",
-  "audit_status": "imported",
+  "audit_status": "confirmed",
   "imported_from": "kevinnbass/metr-money-figure:finances.csv N01-N22"
 }

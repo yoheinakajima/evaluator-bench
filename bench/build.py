@@ -155,11 +155,15 @@ def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     inds = {p.stem: json.loads(p.read_text()) for p in (ROOT / "data" / "industries").glob("*.json")}
     ordered = [inds[k] for k in ORDER if k in inds] + [inds[k] for k in sorted(set(inds) - set(ORDER))]
     html = html.replace("/*__INDUSTRIES_JSON__*/null", json.dumps(ordered, ensure_ascii=False))
-    for name in ("paths", "responses", "mechanisms", "exposure"):
+    for name in ("paths", "responses", "mechanisms", "exposure", "graph"):
         fp = DIST / f"{name}.svg"
         html = html.replace(f"<!--__FIG_{name.upper()}__-->", fp.read_text() if fp.exists() else "")
     from .verify import LEDGER_ALIAS
     html = html.replace("/*__LEDGER_MAP__*/null", json.dumps({e["id"]: LEDGER_ALIAS.get(e["id"], e["id"]) for e in bench["evaluators"]}))
+    from .ledger import load_ledger as _ll, distances as _dist
+    L2 = _ll()
+    html = html.replace("/*__LEDGER_JSON__*/null", json.dumps(L2, ensure_ascii=False))
+    html = html.replace("/*__DIST_JSON__*/null", json.dumps(_dist(L2)))
     ex_path = DIST / "exposure.json"
     html = html.replace("/*__EXPOSURE_JSON__*/null", ex_path.read_text() if ex_path.exists() else "null")
     html = html.replace("/*__STAGES_JSON__*/null", json.dumps({"stages": stages_meta(), "other": NON_STAGE_KINDS}, ensure_ascii=False))

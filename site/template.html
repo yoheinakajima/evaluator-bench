@@ -211,8 +211,11 @@
     <a href="#cases">Cases</a>
     <a href="#where">Where we are</a>
     <a href="#paths">Paths</a>
+    <a href="#ledger">Ledger</a>
+    <a href="#sources">Sources</a>
     <a href="#method">Method</a>
     <a href="https://github.com/yoheinakajima/evaluator-bench">Repo</a>
+    <a href="https://github.com/yoheinakajima/evaluator-bench/blob/main/paper/PROCESS.md">Process</a>
   </nav>
 </header>
 
@@ -358,7 +361,33 @@
       <div class="fig" id="figMech"><!--__FIG_MECHANISMS__--></div><div class="figlive" aria-live="polite"></div>
       <h3 style="margin-top:26px">Money and ties, every evaluator</h3>
       <p class="lead">The ledger view: each evaluator's traced inflows by distance from a frontier lab, ties within two steps, and how much of the record has been re-derived from primary sources rather than imported. Read the confirmed column before the others; most rows are still leads. Rows and sources: <code>data/ledger/</code>. Rebuild with <code>python -m bench exposure --json</code>.</p>
+      <p class="lead" id="popstats"></p>
+      <p class="lead">Two patterns worth reading off the matrix. First, the two organizations with the most complete self-disclosure, Transluce and AVERI, score lower on funding than several that disclose less; an evidence-based score rewards silence unless the empty cells are read as gaps, which is why the confirmed and second-hop columns sit beside the rows. Second, the same three or four funders (Coefficient Giving, the Survival and Flourishing Fund, the Audacious Project, the EU AI Office) sit behind most of the nonprofit evaluators, so a question about one evaluator's independence is often a question about one funder's.</p>
       <div class="fig" id="figExposure"><!--__FIG_EXPOSURE__--></div><div class="figlive" aria-live="polite"></div>
+      <h3 style="margin-top:26px">The graph itself</h3>
+      <p class="lead">Every entity in the ledger placed by its distance from a lab, with money in teal and roles in amber. Dashed lines are imported rows not yet re-derived. Use the ledger browser below to walk any node hop by hop.</p>
+      <div class="fig" id="figGraph"><!--__FIG_GRAPH__--></div><div class="figlive" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="alt" id="ledger">
+    <div class="wrap">
+      <h2>Ledger browser</h2>
+      <p class="lead">Pick any entity. You get everything the ledger says about it: money in, money out, roles held and roles hosted, bounded negatives, and the audit status and source of each row. Tap a counterparty to move one hop.</p>
+      <div class="filters" style="margin-top:14px">
+        <select id="entPick" class="sortsel" aria-label="Entity"></select>
+        <span id="entMeta" style="font-size:13px;color:var(--muted)"></span>
+      </div>
+      <div id="entView" class="ldetail" hidden></div>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <h2>Sources</h2>
+      <p class="lead">Every source cited by a signal, with its evidence tier and audit status. Tier 1 is a filing or a funder's own index; tier 2 a third-party ledger; tier 3 the organization's own statement; tier 4 press. Imported means copied from another project's ledger and not yet re-derived here.</p>
+      <div class="filters"><input type="search" id="srcq" placeholder="Search sources" aria-label="Search sources"></div>
+      <div class="ledger" style="margin-top:8px"><div id="srcRows"></div></div>
     </div>
   </section>
 
@@ -490,8 +519,10 @@ function renderRows(){
   });
 }
 function srcLine(s){
-  return `<span class="sigsrc">${s.sources.map((id,i)=>{const x=SRC[id]; return `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)})<span class="gid">${esc(s.source_graph_ids[i])}</span>`;}).join(" ")}</span>`;
+  return `<span class="sigsrc">${s.sources.map((id,i)=>{const x=SRC[id]; return `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)})${tierBadge(x)}<span class="gid">${esc(s.source_graph_ids[i])}</span>`;}).join(" ")}</span>`;
 }
+const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press"};
+function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] : "tier not set"; const st = x.audit_status || "unaudited"; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>`; }
 function detail(e){
   const blocks = DIMS.map(d=>{
     const a=e.assessments[d.k]; const s=a.value; const cls = s>=3?"":(s==2?"mid":"low");
@@ -503,13 +534,15 @@ function detail(e){
     </div>`;
   }).join("");
   const ex = EXPOSURE && EXPOSURE.evaluators ? EXPOSURE.evaluators.find(x=>x.id===LEDGER_ID[e.id]) : null;
-  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move" style="margin-top:10px"><b>Traced money and ties.</b> ${ex.inflow_rows} inflow rows (${ex.confirmed_rows} confirmed, rest imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":"hop "+k.slice(3)}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Bounded negatives on file: "+ex.negatives.length+".":""} Hop 0 is a lab; hop 1 a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. Amounts are summed only within one measure and one hop. <a href="${REPO}data/ledger/">Ledger</a>.</div>` : "";
+  const oq = Object.values(e.assessments).flatMap(a=>(a.open_questions||[]).map(q=>`<li>${esc(a.dimension)}: ${esc(q)}</li>`));
+  const oqBlock = oq.length ? `<div class="move" style="margin-top:10px"><b>Open questions.</b><ul style="margin:6px 0 0 16px;padding:0;font-size:13px">${oq.join("")}</ul></div>` : "";
+  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move" style="margin-top:10px"><b>Traced money and ties.</b> ${ex.inflow_rows} inflow rows (${ex.confirmed_rows} confirmed, rest imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":"hop "+k.slice(3)}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Bounded negatives on file: "+ex.negatives.length+".":""} Second hop traced for ${ex.second_hop.traced} of ${ex.second_hop.sources} sources. Hop 0 is a lab; hop 1 a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. Amounts are summed only within one measure and one hop. <a href="#ledger" data-ent="${esc(LEDGER_ID[e.id]||e.id)}" class="entlink">Open in the ledger browser</a>.</div>` : "";
   const dataLinks = `<a href="${REPO}data/evaluators/${e.id}.json">evaluator</a>, <a href="${REPO}data/signals/${e.id}.json">signals</a>, <a href="${REPO}data/assessments/${e.id}.json">assessments</a>, <a href="${REPO}graph/events.jsonl">event log</a>`;
   return `<div class="detail-grid">
     <div>
       <div class="meta">Confidence <span class="conf ${e.confidence}">${e.confidence}</span><span class="gid">${esc(e.graph_id)}</span></div>
       <p class="summary">${esc(e.summary)}</p>
-      <div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>${money}
+      <div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>${money}${oqBlock}
       <div class="prov">Range across presets: ${rangeOf(e)}. Weakest dimension: ${floorOf(e)}. Scores by preset: ${Object.entries(e.scores).map(([k,v])=>`${esc(BENCH.presets[k].label)} ${v}`).join("; ")}. Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
     </div>
     <div>${blocks}</div>
@@ -593,6 +626,49 @@ const STAGEMETA = /*__STAGES_JSON__*/null;
       el.addEventListener("click", ()=>{ if(live){ live.textContent = el.getAttribute("data-tip"); } });
     });
   });
+})();
+
+// ---- ledger browser
+const LEDGER = /*__LEDGER_JSON__*/null;
+const DIST = /*__DIST_JSON__*/null;
+(function ledgerBrowser(){
+  if(!LEDGER) return;
+  const E = LEDGER.entities, T = LEDGER.transfers, R = LEDGER.relationships, N = LEDGER.negatives;
+  const pick = $("#entPick"), view = $("#entView"), meta = $("#entMeta");
+  const kinds = ["lab","evaluator","funder","investor","intermediary","daf","public","person"];
+  pick.innerHTML = `<option value="">Choose an entity</option>` + kinds.map(k=>`<optgroup label="${k}">${Object.values(E).filter(e=>e.kind===k).sort((a,b)=>a.name.localeCompare(b.name)).map(e=>`<option value="${esc(e.id)}">${esc(e.name)}</option>`).join("")}</optgroup>`).join("");
+  const amt = t => t.amount_usd ? (parseFloat(t.amount_usd) >= 1e9 ? "$"+(parseFloat(t.amount_usd)/1e9).toFixed(2)+"B" : "$"+(parseFloat(t.amount_usd)/1e6).toFixed(2)+"M") : "undisclosed";
+  const badge = s => `<span class="gid" style="${s==="confirmed"?"color:var(--teal)":(s==="imported"?"color:#7A4E0E":"")}">${esc(s)}</span>`;
+  const ent = id => `<a href="#ledger" class="entlink" data-ent="${esc(id)}">${esc(E[id]?E[id].name:id)}</a>`;
+  function row(html, src, st){ return `<li>${html} ${badge(st)}<a href="${esc(src)}" target="_blank" rel="noopener">${esc(src)}</a></li>`; }
+  function show(id){
+    const e = E[id]; if(!e){ view.hidden = true; return; }
+    pick.value = id;
+    const d = DIST && DIST[id] != null ? DIST[id] : null;
+    meta.textContent = `${e.kind}; distance from a lab: ${d==null?"unattributed":d}.` + (e.notes ? " " + e.notes : "");
+    const inflow = T.filter(t=>t.to===id), outflow = T.filter(t=>t.from===id), held = R.filter(r=>r.subject===id), hosted = R.filter(r=>r.object===id), negs = N.filter(n=>n.evaluator===id);
+    const sec = (title, items) => items.length ? `<h4 style="font-family:var(--sans);font-size:13.5px;margin:12px 0 4px">${title}</h4><ul>${items.join("")}</ul>` : "";
+    view.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(e.name)}</h3>
+      ${sec("Money in", inflow.map(t=>row(`<b>${esc(t.row_id)}</b> from ${ent(t.from)}: ${esc(t.measure)} ${amt(t)}, ${esc(t.date)}. ${esc(t.purpose)}`, t.source_url, t.audit_status)))}
+      ${sec("Money out", outflow.map(t=>row(`<b>${esc(t.row_id)}</b> to ${ent(t.to)}: ${esc(t.measure)} ${amt(t)}, ${esc(t.date)}. ${esc(t.purpose)}`, t.source_url, t.audit_status)))}
+      ${sec("Roles held", held.map(r=>row(`<b>${esc(r.row_id)}</b> ${esc(r.role)} at ${ent(r.object)}${r.start?", "+esc(r.start):""}${r.end?" to "+esc(r.end):""}. ${esc(r.notes)}`, r.source_url, r.audit_status)))}
+      ${sec("Roles hosted", hosted.map(r=>row(`<b>${esc(r.row_id)}</b> ${ent(r.subject)}: ${esc(r.role)}${r.start?", "+esc(r.start):""}${r.end?" to "+esc(r.end):""}. ${esc(r.notes)}`, r.source_url, r.audit_status)))}
+      ${sec("Bounded negatives", negs.map(n=>row(`<b>${esc(n.row_id)}</b> ${esc(n.claim)} [${esc(n.searched)}, snapshot ${esc(n.snapshot)}]`, n.source_url, n.audit_status)))}
+      ${(!inflow.length && !outflow.length && !held.length && !hosted.length && !negs.length) ? `<div class="sub">No rows yet. Add one in <a href="${REPO}data/ledger/">data/ledger/</a>.</div>` : ""}
+      <div class="prov">Rows carry a source and an audit status. Confirmed rows were re-derived from the cited source; imported rows are leads from another project's ledger. Roles are public roles only; no motive is asserted.</div>`;
+    view.hidden = false; view.querySelector(".close").addEventListener("click", ()=>{ view.hidden = true; pick.value = ""; });
+  }
+  pick.addEventListener("change", ()=>show(pick.value));
+  document.addEventListener("click", ev=>{ const a = ev.target.closest("a.entlink"); if(a){ ev.preventDefault(); show(a.dataset.ent); document.getElementById("ledger").scrollIntoView && document.getElementById("ledger").scrollIntoView({block:"start"}); } });
+  // population stats
+  if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators; const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
+    const traced = evs.reduce((a,x)=>a+x.second_hop.traced,0), srcs = evs.reduce((a,x)=>a+x.second_hop.sources,0);
+    $("#popstats").textContent = `${evs.length} evaluators. ${near} have at least one inflow from a lab or a lab-tied party. ${coef} have Coefficient Giving inflows. ${conf} of ${rows} inflow rows are confirmed from the cited source; the rest are imported leads. The ledger says something about who is behind ${traced} of ${srcs} funding sources (second hop).`; }
+  // sources index
+  const srcRows = $("#srcRows"), srcq = $("#srcq");
+  function renderSources(){ const q = (srcq.value||"").toLowerCase(); const list = Object.values(SRC).filter(x=>!q || (x.title+" "+x.publisher+" "+(x.note||"")).toLowerCase().includes(q)).sort((a,b)=>a.publisher.localeCompare(b.publisher)||a.title.localeCompare(b.title));
+    srcRows.innerHTML = list.map(x=>`<div class="row"><div style="padding:8px 14px;font-size:13.5px"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> <span style="color:var(--muted)">${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)}</span> ${tierBadge(x)}${x.imported_from?`<span class="gid">from ${esc(x.imported_from)}</span>`:""}${x.discovered_via?` <a href="${esc(x.discovered_via)}" target="_blank" rel="noopener" style="color:var(--muted);font-size:12px">found via</a>`:""}<div style="color:var(--muted);font-size:12.5px;margin-top:2px">${esc(x.note||"")}</div></div></div>`).join("") || `<div class="empty">No sources match.</div>`; }
+  srcq.addEventListener("input", renderSources); renderSources();
 })();
 </script>
 </body>
