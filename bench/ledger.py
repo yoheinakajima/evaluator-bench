@@ -15,7 +15,7 @@ from collections import defaultdict
 from .load import DATA
 
 LEDGER = DATA / "ledger"
-MEASURES = {"grant", "recommendation", "commitment", "transfer", "daf_grant", "in_kind", "investment", "contract"}
+MEASURES = {"grant", "recommendation", "commitment", "transfer", "daf_grant", "in_kind", "investment", "contract", "partnership"}
 ROLES = {"investor", "observer", "board", "advisor", "employee", "founder", "principal", "pays", "contractor", "donor", "office_host", "parent"}
 SOURCE_TYPES = {"filing", "index", "ledger", "self", "press"}
 AUDIT = {"unaudited", "imported", "confirmed", "differs", "unverifiable", "superseded"}

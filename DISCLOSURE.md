@@ -12,7 +12,7 @@ PROCESS.md section 10 asks of the curators what the rubric asks of evaluators. F
 
 Disclosure completed by the curator on 2026-09-15; the shared-funders field remains a best-effort "none known" and will be updated if that changes.
 
-Under the Rule below, the public shareholdings in Google and Meta are a financial interest in two labs in the ledger. The three evaluators with ledger ties to those labs — Epoch (Google contract), Scale (Meta investment), and MLCommons (Google grant), all imported rows — have the holdings noted in their assessment rationales so readers can weigh them. There is no second coder for v0; the check is public: every assessment, signal, row and source is published, and anyone can file a correction through the contribution path.
+Under the Rule below, the public shareholdings in Google and Meta are a financial interest in two labs in the ledger. The three evaluators with confirmed ledger ties to those labs — Epoch (Google contract), Scale (Meta investment), and MLCommons (Google founding participation; not a grant) — have the holdings noted in their assessment rationales so readers can weigh them. There is no second coder for v0; the check is public: every assessment, signal, row and source is published, and anyone can file a correction through the contribution path.
 
 ## Assistant
 

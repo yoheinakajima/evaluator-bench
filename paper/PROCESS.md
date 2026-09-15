@@ -20,7 +20,7 @@ A 4 on funding, governance, or personnel needs at least one tier-1 row. A 0 need
 
 Money and roles go in `data/ledger/` as rows before they go in a signal. Rules:
 
-- One transfer per row; `measure` is one of grant, recommendation, commitment, transfer, daf_grant, in_kind, investment, contract. Never sum across measures. A recommendation is not a payment; a commitment is not a payment; in-kind is not cash.
+- One transfer or collaboration row per record; `measure` is one of grant, recommendation, commitment, transfer, daf_grant, in_kind, investment, contract, partnership. Never sum across measures. A recommendation is not a payment; a commitment is not a payment; a partnership records a disclosed tie, not a payment; in-kind is not cash.
 - Amounts are numbers or empty. Empty means undisclosed and is reported as a row count, never as a dollar figure.
 - Ceilings and floors are labelled as such. A ceiling is never a headline number.
 - One role per row, dated where public, public roles only, no motive asserted.

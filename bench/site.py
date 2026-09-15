@@ -91,6 +91,31 @@ def release_banner(pre: str) -> str:
         return f'<div class="banner">Published as <b>{esc(r.get("tag") or "v0")}</b> on {esc(r.get("set_on"))}. Scores continue to move as evidence is merged; the next dated reading is the annual update. <a href="{pre}contribute/index.html">Submit evidence</a>.</div>'
     return ""
 
+def evidence_summary(bench: dict) -> str:
+    """Build the home-page evidence text from the same projection it describes."""
+    ranked = {e["id"] for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"}
+    signals = [s for e in bench["evaluators"] if e["id"] in ranked for s in e["signals"]]
+    sources = {sid: bench["sources"][sid] for s in signals for sid in s["sources"]}
+    pct = lambda n, d: round(100 * n / d) if d else 0
+    self_count = sum(s.get("source_type") == "self" for s in sources.values())
+    tier1_count = sum(s.get("source_type") in ("filing", "index") for s in sources.values())
+    quote_count = sum(bool(s.get("quote")) for s in signals)
+
+    def evaluator_counts(eid: str) -> tuple[int, int, int]:
+        esigs = [s for s in signals if s["evaluator"] == eid]
+        esources = {sid: bench["sources"][sid] for s in esigs for sid in s["sources"]}
+        return (len(esources), sum(s.get("source_type") == "self" for s in esources.values()),
+                sum(s.get("source_type") in ("filing", "index") for s in esources.values()))
+
+    averi, saferai, metr = (evaluator_counts(eid) for eid in ("averi", "saferai", "metr"))
+    return (
+        "The scores measure what the public record shows, and the public record is largely what the evaluators say about themselves. "
+        f"Among the {len(sources)} unique sources cited by {len(signals)} signals for the ranked population, {self_count} ({pct(self_count, len(sources))}%) are tier-3 self-published and {tier1_count} ({pct(tier1_count, len(sources))}%) are tier-1 sources (regulatory filings or public indexes). "
+        f"{quote_count} of {len(signals)} signals ({pct(quote_count, len(signals))}%) carry an exact quoted span. "
+        f"The evidence mix varies: AVERI has {averi[1]} self-published sources out of {averi[0]}, with {averi[2]} tier-1; SaferAI {saferai[1]} of {saferai[0]}, with {saferai[2]} tier-1; and METR {metr[1]} of {metr[0]}, with {metr[2]} tier-1. "
+        "An evidence-based score rewards silence, and self-published sources can be replaced only where independent reporting exists — which, for most evaluators, it does not. That scarcity is a finding, not a data gap to be patched: the field's independence cannot be verified from outside the field. Scores built mostly on self-report are flagged by their evidence tier on every scorecard."
+    )
+
 def layout(title: str, body: str, depth: int, active: str = "") -> str:
     pre = "../" * depth
     nav = [("index.html", "Home", "home"), ("evaluators/index.html", "Evaluators", "evaluators"), ("entities/index.html", "Entities", "entities"),
@@ -364,6 +389,7 @@ def paper_index() -> str:
 def render_all(bench: dict) -> dict:
     C = _ctx(bench)
     tpl = (SITE / "template.html").read_text()
+    tpl = tpl.replace("<!--__EVIDENCE_SUMMARY__-->", evidence_summary(bench))
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write(DIST / "style.css", css + GRAPH_CSS)
     write(DIST / "site.js", SITE_JS)

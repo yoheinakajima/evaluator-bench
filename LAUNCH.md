@@ -19,7 +19,7 @@ State at v0: the repository builds, verifies, and tests clean; the site has 200-
 
 ## First week after publishing
 
-5. **Run the audit from a networked machine.** `python -m bench audit --all-imported` re-fetches the 40 imported rows and hashes them into `data/artifacts.csv`; then write `paper/audits/AUDIT-2.md` with verdicts and promote rows.
+5. **Run the next audit from a networked machine.** Audit the unresolved rows by id (for example, `python -m bench audit T01 T02 T03`), hash the fetches into `data/artifacts.csv`, then write the next `paper/audits/AUDIT-<n>.md` with verdicts. Version 0 has no imported transfer rows left, so `--all-imported` is reserved for future imports rather than a launch task.
 6. **Submit the dockets.** From a clone of epistemedia, follow `epistemedia research submission-guide` for each of the six `dockets/*/proposal.json` (the `complete` and `submit` steps add the digests and the ready-for-review stamp). Certificates come only from Epistemedia's independent review.
 7. **Wayback captures.** For every confirmed source, save a capture and record the `id_` URL in the source's `capture` field so digests are byte-stable.
 

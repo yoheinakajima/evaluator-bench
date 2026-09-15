@@ -40,6 +40,12 @@ def test_status_page_shows_hop0_by_kind():
     assert 'no-fee partnership or membership only</td><td class="num">2' in html
     assert 'hop 0 or 1)</td><td class="num">17 of 26' in html
 
+def test_evidence_summary_is_generated_from_the_current_projection():
+    import json
+    from bench.site import evidence_summary
+    bench = json.loads((DIST / "bench.json").read_text())
+    assert evidence_summary(bench) in (DIST / "index.html").read_text()
+
 def test_evidence_limited_is_enforced_and_marked():
     import json
     from bench.load import load

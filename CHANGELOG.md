@@ -9,8 +9,8 @@ Correction window open through 29 Sep 2026.
 - 26 ranked evaluators + a 2-entry watchlist (`big4`, `hfoai` — expected
   entrants, scored on the same rubric but excluded from rankings and
   homepage statistics).
-- 120 sources, 308 signals, 224 assessments; 39 signals carry exact quotes.
-- 84 ledger transfer rows, of which 60 are evidential; 48 confirmed.
+- 122 sources, 314 signals, 224 assessments; 44 signals carry exact quotes.
+- 84 ledger transfer rows, of which 63 are evidential; 49 confirmed.
 - Eight independence dimensions: Funding, Governance, Personnel, Access depth
   (lab-granted), Scope control, Publication rights, Method transparency,
   Role incompatibility.
@@ -38,10 +38,10 @@ Correction window open through 29 Sep 2026.
 - **Tier-gated top scores.** A 4 on Funding, Governance, or Personnel requires
   tier-1 (filing or index) evidence on a cited signal; the verifier enforces
   this (C10).
-- **External validation is scarce — that is a finding, not a bug.** 54% of
-  sources cited by the ranked population are self-published, 9% are tier-1,
-  12% of ranked signals carry exact quotes. The site's evidence section states
-  this plainly.
+- **External validation is scarce — that is a finding, not a bug.** Of the
+  unique sources cited by ranked evaluators, 54% are tier-3 self-published,
+  9% are tier-1, and 14% of ranked signals carry exact quotes. The site's
+  evidence section derives these figures from the built data.
 - **Independence ≠ competence.** Access records what labs granted, not
   capability or entitlement; scores are ordinal projections, not procurement
   truth.
@@ -62,21 +62,16 @@ Correction window open through 29 Sep 2026.
 
 ## Known limits (v0)
 
-- 2026-09-15 verification pass: all 38 imported ledger rows re-derived from
-  their cited sources — 12 confirmed, 5 differ from the cited figure, 23
-  quarantined as unverifiable (cited pages do not support the recorded
-  figures). 79 of 123 sources confirmed reachable; 41 sources still unchecked
-  (fetch failures).
-- 2026-09-15 grok follow-up pass: re-fetched the quarantined rows against
-  better sources. 10 more rows confirmed (T22, T36, T41, T46, T48, T52, T54,
-  T56, T60, T63), T07 moved to differs (Epoch's own list contradicts $24.5M).
-  Exposure recomputed: 12 of 26 direct lab ties (was 9), 17 of 26 lab-or-
-  lab-tied (was 14) — the three new hop-0 ties are Meta's $14.3B Scale
-  acquisition (company sale, not eval funding), Anthropic's no-fee Andon
-  partnership, and Google's MLCommons founding participation (no amount).
-  ~25 previously unfetched sources confirmed; 5 dead cites documented
-  (saferai-jobs, resultsense-aisi, ms-redteam topic URL, evaluators-ledger
-  path, metr-donor-rule-history wildcard).
+- Current source status: 109 of 122 source records are confirmed, 10 are
+  unaudited, 1 is imported, and 2 are unverifiable. Current transfer status:
+  49 confirmed, 14 unaudited, 5 differing, 14 unverifiable, and 2 superseded.
+  The raw audit batches remain in `paper/audits/`; they are historical records,
+  not the current projection.
+- Exposure is computed only from evidential rows: 12 of 26 ranked evaluators
+  have a direct lab tie and 17 have a lab or lab-tied inflow. Of the direct
+  ties, 8 are lab cash or in-kind for evaluation work, 2 are ownership, and 2
+  are no-fee partnerships or memberships. The latter two categories are not
+  reported as evaluator funding.
 - Dataset A is single-coded; Dataset B milestone years are coded from
   secondary sources and need primary-source verification.
 - The trigger-lag and path-similarity results are hindsight-selected and

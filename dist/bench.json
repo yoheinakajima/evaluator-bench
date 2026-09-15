@@ -993,7 +993,7 @@
    "url": "https://mlcommons.org/",
    "published": "2026",
    "retrieved": "2026-09-14",
-   "note": "Member-funded consortium benchmark. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Community org, 125+ members; no Google grant amount — T63 stays amount-empty.",
+   "note": "Member-funded consortium benchmark. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Community org, 125+ members; Google's founding participation has no disclosed contribution amount; T63 is a partnership row.",
    "source_type": "self",
    "audit_status": "confirmed"
   },
@@ -3895,7 +3895,7 @@
      "assessor": "yohei/claude v0-final",
      "dimension": "F",
      "evaluator": "epoch",
-     "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (contract, imported row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+     "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (contract row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "epoch.01",
       "epoch.05",
@@ -7496,7 +7496,7 @@
      "assessor": "yohei/claude v0",
      "dimension": "F",
      "evaluator": "mlcommons",
-     "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+     "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (founding participation row T63; not a grant). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "mlcommons.01"
      ],
@@ -9744,7 +9744,7 @@
      "assessor": "yohei/claude v0",
      "dimension": "F",
      "evaluator": "scale",
-     "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Meta (investment, imported row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+     "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Meta (investment row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "scale.01"
      ],
