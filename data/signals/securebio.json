@@ -412,13 +412,12 @@
   ],
   "recorded": "2026-09-15",
   "curator": "yohei/claude v0.5",
-  "bound": {
-   "cap": 3
-  },
-  "rule": "F.2",
+  "bound": null,
+  "rule": "F.11",
   "quote": "AI firms, including those whose models we assess, provide us with free API credits",
   "quote_source": "securebio-coi-policy",
-  "note": "Rule gap: F.2 covers disclosed in-kind and undisclosed in-kind the evaluator says it depends on; undisclosed credits with no dependency statement fall between. By anchor text 'no lab money' (4) is excluded, so cap 3; not binding."
+  "note": "Rule gap: F.2 covers disclosed in-kind and undisclosed in-kind the evaluator says it depends on; undisclosed credits with no dependency statement fall between. By anchor text 'no lab money' (4) is excluded, so cap 3; not binding.",
+  "bound_note": "Free API access consumed in evaluating the labs' own models is the substrate of the work, not payment (F.2, D-004); recorded on the access mechanism."
  },
  {
   "id": "securebio.23",

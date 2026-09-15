@@ -22,8 +22,10 @@ def test_half_up_rounding():
 
 def test_hal_band_regression():
     vals = {"F": 3, "G": 3, "P": 3, "A": 1, "S": 4, "R": 4, "M": 4, "X": 4}
-    assert band(vals) == "conditional", "an access value of 1 is a conditional floor"
+    assert band(vals) == "clear", "access never sets a band (D-002): a 1 there means the labs granted little, not a conflict"
     assert score(vals, W) == 73, "the number is no longer capped; the band carries the floor"
+    vals["R"] = 1
+    assert band(vals) == "conditional", "a 1 on a conflict dimension is a conditional floor"
 
 
 def test_disqualifying_band():
@@ -82,9 +84,9 @@ def test_quarantined_rows_excluded_from_exposure():
     for rid in ("T10", "T81", "T02"):
         assert not evidential(by_id[rid]), rid
     ex = {x["id"]: x for x in exposure(L)}
-    # every counted inflow row is evidential: no leakage from quarantined rows
+    # every counted inflow row is evidential: no leakage from quarantined rows; evaluation credits are recorded, never counted (D-004)
     for x in ex.values():
-        n = sum(1 for t in L["transfers"] if evidential(t) and t["to"] == x["id"])
+        n = sum(1 for t in L["transfers"] if evidential(t) and t["to"] == x["id"] and not (t.get("class") == "in_kind" or t["measure"] == "in_kind"))
         assert x["inflow_rows"] == n, x["id"]
     assert by_id["T55"]["audit_status"] == "unverifiable"
     assert not evidential(by_id["T55"])
@@ -177,7 +179,7 @@ def test_watchlist_excluded_from_status_denominator():
     from bench.verify import LEDGER_ALIAS
     d = load.load(strict=False)
     ranked = {LEDGER_ALIAS.get(e["id"], e["id"]) for e in d["evaluators"].values() if e.get("status", "ranked") == "ranked"}
-    assert len(ranked) == 26
+    assert len(ranked) == 24   # 26 less Epoch and the Princeton leaderboard, retained out of scope (D-001)
     ex = exposure()
     near = sum(1 for x in ex if x["id"] in ranked and any(k in ("hop0", "hop1") for k in x["buckets"]))
-    assert near == 17
+    assert near == 15   # 17 less the two out-of-scope organizations; METR's only hop-0 row was evaluation credits, which do not count (D-004)

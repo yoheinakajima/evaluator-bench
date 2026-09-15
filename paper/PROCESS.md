@@ -20,7 +20,7 @@ A self-published source names whose statement it is (`self_of`): an evaluator's 
 
 Money and roles go in `data/ledger/` as rows before they go in a signal. Rules:
 
-- One transfer or collaboration row per record; `measure` is one of grant, recommendation, commitment, transfer, daf_grant, in_kind, investment, contract, partnership. Never sum across measures. A recommendation is not a payment; a commitment is not a payment; a partnership records a disclosed tie, not a payment; in-kind is not cash.
+- One transfer or collaboration row per record; `measure` is one of grant, recommendation, commitment, transfer, daf_grant, in_kind, investment, contract, partnership. Never sum across measures. A recommendation is not a payment; a commitment is not a payment; a partnership records a disclosed tie, not a payment; in-kind is not cash, and credits consumed in evaluating a lab's own model are recorded as `in_kind` rows that never enter the hop buckets or the funding value (D-004).
 - Amounts are numbers or empty. Empty means undisclosed and is reported as a row count, never as a dollar figure.
 - Ceilings and floors are labelled as such. A ceiling is never a headline number.
 - One role per row, dated where public, public roles only, no motive asserted.

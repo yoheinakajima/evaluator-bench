@@ -96,9 +96,12 @@ def test_score_with_unevidenced_dimensions():
 
 def test_bands_replace_numeric_caps():
     v = {"F": 3, "G": 3, "P": 3, "A": 1, "S": 4, "R": 4, "M": 4, "X": 4}
-    assert band(v) == "conditional" and score(v, W) == 73          # the number is not capped; the band carries the floor
+    assert band(v) == "clear" and score(v, W) == 73                # access never sets a band (D-002); the number is not capped
+    v["S"] = 1
+    assert band(v) == "conditional"
     v["F"] = 0
     assert band(v) == "disqualifying"
+    assert band({"F": 3, "G": 3, "P": 3, "A": 0, "S": 3, "R": 3, "M": 0, "X": 3}) == "clear"
     assert sort_key({"F": 0, **{k: 4 for k in "GPASRMX"}}, W) > sort_key({k: 2 for k in "FGPASRMX"}, W)  # band first
 
 

@@ -106,7 +106,7 @@ def distances(L: dict) -> dict[str, float]:
     return d
 
 def hop0_split(evs: list[dict]) -> dict:
-    """Count evaluators with a direct lab tie by the kind of tie, so a company sale or a $0 membership is never reported as lab funding."""
+    """Count evaluators with a direct lab tie by the kind of tie, so a company sale or a $0 membership is never reported as lab funding. Evaluation credits are not in the buckets at all (D-004)."""
     out = {"funding": 0, "ownership": 0, "partnership": 0, "any": 0}
     for x in evs:
         b = x["buckets"].get("hop0")
@@ -125,7 +125,8 @@ def exposure(L: dict | None = None) -> list[dict]:
         if e["kind"] != "evaluator": continue
         allrows = [t for t in L["transfers"] if t["to"] == eid]
         quarantined = [t for t in allrows if not evidential(t)]
-        rows = [t for t in allrows if evidential(t)]
+        credits = [t for t in allrows if evidential(t) and (t.get("class") == "in_kind" or t["measure"] == "in_kind")]   # evaluation credits: recorded, never counted (D-004)
+        rows = [t for t in allrows if evidential(t) and t not in credits]
         buckets: dict[str, dict] = {}
         for t in rows:
             hop = d.get(t["from"]); key = "public" if E[t["from"]]["kind"] == "public" else ("unattributed" if hop is None else f"hop{int(hop)}")
@@ -146,11 +147,11 @@ def exposure(L: dict | None = None) -> list[dict]:
         ties = [r for r in L["relationships"] if r["object"] == eid and r["role"] in {"board", "advisor", "donor", "investor", "office_host"} and d.get(r["subject"], 9e9) <= 2]
         negs = [n for n in L["negatives"] if n["evaluator"] == eid]
         out.append(dict(id=eid, name=e["name"], status=e.get("status", "ranked"), kind_note=e.get("notes",""), inflow_rows=len(rows),
-                        quarantined_rows=len(quarantined),
+                        quarantined_rows=len(quarantined), credit_rows=len(credits), credit_ids=sorted(t["row_id"] for t in credits),
                         quarantined_ids=sorted(t["row_id"] for t in quarantined),
                         buckets={k: {"rows": v["rows"], "undisclosed": v["undisclosed"], "imported_unsummed": v["imported_unsummed"], "non_usd": v["non_usd"], "by_measure": dict(v["by_measure"]), "sources": sorted(set(v["sources"])), "classes": sorted(set(v["classes"]))} for k, v in sorted(buckets.items())},
                         lab_tied_seats=[dict(person=r["subject"], role=r["role"] + (" (former)" if r.get("end") else ""), via=E[r["subject"]]["name"], distance=int(d[r["subject"]]), status=r["audit_status"]) for r in ties],
-                        negatives=[dict(claim=n["claim"], searched=n["searched"], snapshot=n["snapshot"], status=n["audit_status"]) for n in negs],
+                        negatives=[dict(claim=n["claim"], searched=n["searched"], snapshot=n["snapshot"], status=n["audit_status"], answers=n.get("answers", ""), prompted_by=n.get("prompted_by", "")) for n in negs],
                         confirmed_rows=sum(1 for t in rows if t["audit_status"] == "confirmed"),
                         second_hop=dict(sources=len(srcs), traced=len(traced), untraced=[E[s]["name"] for s in srcs if s not in traced])))
     return out

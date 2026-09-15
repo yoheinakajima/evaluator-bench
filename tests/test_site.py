@@ -35,11 +35,11 @@ def test_build_is_deterministic_for_dist():
 
 def test_status_page_shows_hop0_by_kind():
     html = (DIST / "status" / "index.html").read_text()
-    assert 'direct lab tie (hop 0), any kind</td><td class="num">12 of 26' in html
-    assert 'lab cash or in-kind for evaluation work</td><td class="num">8' in html
+    assert 'direct lab tie (hop 0), any kind</td><td class="num">10 of 24' in html
+    assert 'evaluation credits are recorded, never counted)</td><td class="num">6' in html
     assert 'owns a stake or is acquiring the evaluator</td><td class="num">2' in html
     assert 'no-fee partnership or membership only</td><td class="num">2' in html
-    assert 'hop 0 or 1)</td><td class="num">17 of 26' in html
+    assert 'hop 0 or 1)</td><td class="num">15 of 24' in html
 
 def test_evidence_summary_is_generated_from_the_current_projection():
     import json
@@ -57,9 +57,9 @@ def test_homepage_carries_byline_competence_and_policies():
 
 def test_status_statistics_cover_ranked_only():
     html = (DIST / "status" / "index.html").read_text()
-    assert "covers the 26 ranked organizations" in html
+    assert "covers the 24 ranked organizations" in html and "retained out-of-scope entries contribute to none" in html
     ledger = (DIST / "ledger" / "index.html").read_text()
-    assert "RANKED = " in ledger and "Watchlist entries are excluded" in ledger
+    assert "RANKED = " in ledger and "Watchlist and out-of-scope entries are excluded" in ledger
 
 def test_evidence_limited_is_computed_and_marked():
     """Every stored value is its leads-included derivation; the evidence_limited flag is the

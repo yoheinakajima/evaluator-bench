@@ -62,7 +62,7 @@ def run(data: dict | None = None) -> list[str]:
         if e.get("type") == "hypothetical": errs.append(f"C4 evaluator {e['id']}: hypothetical composites are never scored (RULES 11)")
         if e.get("role") not in ("referee", "government", "vendor", "benchmark", "lab-team", "expected-entrant"):
             errs.append(f"C4 evaluator {e['id']}: unknown role {e.get('role')}")
-        if e.get("status", "ranked") not in ("ranked", "watchlist"):
+        if e.get("status", "ranked") not in ("ranked", "watchlist", "out-of-scope"):
             errs.append(f"C4 evaluator {e['id']}: unknown status {e.get('status')}")
         if e.get("status") == "watchlist" and e.get("role") != "expected-entrant":
             errs.append(f"C4 evaluator {e['id']}: watchlist entries must have role expected-entrant")

@@ -14,5 +14,6 @@
   "lower": "Funding should be 1. OpenAI commissioned and owns FrontierMath, the asset Epoch's reputation rests on, and held approval over disclosing that fact for a year. OpenAI, Google DeepMind, xAI and Anthropic are all paying clients, the revenue split is undisclosed, and Epoch invests in AI stocks. 'Every major lab' as clients with an undisclosed share reads as F.5's material lab revenue, not F.3's occasional fee.",
   "higher": "Funding should be 3. Coefficient's $25.1M over eight grants dwarfs client fees, and Epoch discloses every donation above $70,000 and every client by name and year. It charges at least consultant rates so labs do not get subsidised work, keeps a 50-problem holdout OpenAI cannot see, and publishes evaluations of every lab's models on the same benchmark, including results OpenAI did not commission."
  },
- "list_group": "referee"
+ "list_group": "referee",
+ "status": "out-of-scope"
 }

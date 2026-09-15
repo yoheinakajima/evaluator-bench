@@ -15,5 +15,6 @@
   "lower": "Access is already 0 and cannot go lower, so the weakest movable dimension is Personnel, which should be 1. A co-author is listed at xAI, staff of Anthropic, Google DeepMind and UK AISI are acknowledged on the page, OpenAI and Google supply the API credits, and no recusal or contributor conflict rule exists; lab-affiliated authors on a leaderboard that grades their employers is anchor 1's informal arrangement.",
   "higher": "Personnel should be 3. Every co-author's affiliation is disclosed on the page, the project sits inside Princeton, whose faculty are bound by a university conflict-of-interest policy, no HAL leader holds a lab role, and the leaderboard's scoring is open code anyone can re-run. Disclosed ties under an institutional policy is anchor 3, not anchor 2."
  },
- "list_group": "referee"
+ "list_group": "referee",
+ "status": "out-of-scope"
 }

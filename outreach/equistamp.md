@@ -15,26 +15,26 @@ Prepared 2026-09-15. Reply requested within 14 days of sending. This is the comp
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by equistamp.02 (F.10): Private company; no funding or ownership disclosed.. Floors up to 3 from equistamp.01 do not exceed the cap.
 Curator note: Anchor 3 from the cited rows; low confidence, imported evidence.
-- [for, floors at 3, F.10] Revenue from evaluators and governments; leads EU Lot 3 (EUR 1.17M to consortium) and Lot 4 (EUR 0.88M). Quote: "organisations that won contracts: EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio" Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/); evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv); FAR.AI Selected to Lead EU AI Act CBRN Risk Consortium (https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium); Isolating "AI Safety" to an ideological niche will backfire against fundamental rights (https://stresstestingreality.substack.com/p/isolating-ai-safety-to-an-ideological)
-- [against, caps at 3, F.10] Private company; no funding or ownership disclosed. Quote: "We're in the process of becoming a Public Benefit Corporation" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
+- [for, floors at 3, F.10] Revenue from evaluators and governments; leads EU Lot 3 (EUR 1.17M to consortium) and Lot 4 (EUR 0.88M). Quote: "organisations that won contracts: EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio" Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/); evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); FAR.AI Selected to Lead EU AI Act CBRN Risk Consortium (https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium); Isolating "AI Safety" to an ideological niche will backfire against fundamental rights (https://stresstestingreality.substack.com/p/isolating-ai-safety-to-an-ideological)
+- [against, caps at 3, F.10] Private company; no funding or ownership disclosed. Quote: "We're in the process of becoming a Public Benefit Corporation" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Governance: 1/4 (standard policy: 1)
 Anchor 1: VC-backed for-profit with no published COI policy.
 Derivation: Capped at 1 by equistamp.03 (G.2): No COI policy on the site..
 Curator note: Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.
-- [against, caps at 1, G.2] No COI policy on the site. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
+- [against, caps at 1, G.2] No COI policy on the site. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Personnel: 2/4 (standard policy: unevidenced)
 Anchor 2: Frequent two-way hiring; recusal on request.
-Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.04 (no confirmed source (unverifiable)).
+Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.04 (no confirmed source (imported)).
 Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
-- [against, caps at 2, P.6] Founders' prior affiliations and any lab ties not established. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv)
+- [against, caps at 2, P.6] Founders' prior affiliations and any lab ties not established. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv)
 
 ### Access depth (lab-granted): 1/4 (standard policy: 1)
 Anchor 1: Pre-release API with safeguards on.
 Derivation: Capped at 1 by equistamp.05 (A.6): Access is through client engagements; no pre-release lab access documented.. Held: C14: sources not all confirmed.
 Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
-- [against, caps at 0, A.6] Access is through client engagements; no pre-release lab access documented. Quote: "We build and run evaluations, baselines, and benchmarks" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
+- [against, caps at 0, A.6] Access is through client engagements; no pre-release lab access documented. Quote: "We build and run evaluations, baselines, and benchmarks" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Scope control: 2/4 (standard policy: 2)
 Anchor 2: Scope negotiated per engagement.
@@ -50,15 +50,15 @@ Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
 
 ### Method transparency: 2/4 (standard policy: unevidenced)
 Anchor 2: Methods described in prose.
-Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.08 (no confirmed source (unverifiable)).
+Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.08 (no confirmed source (imported)).
 Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
-- [against, caps at 2, M.2] Methods not public. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv)
+- [against, caps at 2, M.2] Methods not public. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv)
 
 ### Role incompatibility: 3/4 (standard policy: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Floored at 3 by equistamp.09 (X.4): No lab-facing products found; clients are evaluators and governments.. No admissible signal caps it.
 Curator note: Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.
-- [for, floors at 3, X.4] No lab-facing products found; clients are evaluators and governments. Quote: "EquiStamp provides evaluation implementation, data annotation, and project operations for AI safety labs" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
+- [for, floors at 3, X.4] No lab-facing products found; clients are evaluators and governments. Quote: "EquiStamp provides evaluation implementation, data annotation, and project operations for AI safety labs" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ## Dissent on the card
 

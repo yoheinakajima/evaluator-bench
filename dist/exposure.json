@@ -69,21 +69,6 @@
  "evaluators": [
   {
    "buckets": {
-    "hop0": {
-     "by_measure": {
-      "in_kind": 400000.0
-     },
-     "classes": [
-      "in_kind"
-     ],
-     "imported_unsummed": 0,
-     "non_usd": [],
-     "rows": 1,
-     "sources": [
-      "openai"
-     ],
-     "undisclosed": 0
-    },
     "hop2": {
      "by_measure": {
       "grant": 220000.0,
@@ -121,9 +106,13 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 5,
+   "confirmed_rows": 4,
+   "credit_ids": [
+    "T19"
+   ],
+   "credit_rows": 1,
    "id": "metr",
-   "inflow_rows": 7,
+   "inflow_rows": 6,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -172,37 +161,49 @@
    "name": "METR",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund METR?",
      "claim": "no grant from Coefficient Giving to METR under any name",
+     "prompted_by": "imported lead: kevinnbass ledger, evaluators.csv row for METR",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
     },
     {
+     "answers": "Does the Good Ventures Foundation fund METR directly?",
      "claim": "no METR-named grant in Good Ventures Foundation 990-PF Part XV",
+     "prompted_by": "imported lead: kevinnbass ledger row M104",
      "searched": "990-PF FY2022 to FY2025",
      "snapshot": "2026-09-14",
      "status": "imported"
     },
     {
+     "answers": "Does Schmidt Sciences fund METR through a grant in its filings?",
      "claim": "no METR-named grant in Schmidt Sciences 990-PF 2021 to 2024",
+     "prompted_by": "METR names Schmidt Sciences as a supporter (metr.01); imported lead: kevinnbass ledger",
      "searched": "990-PF Part XV",
      "snapshot": "2026-09-14",
      "status": "imported"
     },
     {
+     "answers": "Does the Pew Charitable Trusts fund METR through a grant in its filings?",
      "claim": "no METR-named grant in Pew Charitable Trusts 990 Schedule I FY2021 to FY2025",
+     "prompted_by": "METR names Pew as a supporter (metr.02); imported lead: kevinnbass ledger row M98",
      "searched": "990 Schedule I",
      "snapshot": "2026-09-14",
      "status": "imported"
     },
     {
+     "answers": "Does the Packard Foundation fund METR?",
      "claim": "no METR-named grant in Packard Foundation 990-PF 2021 to 2024",
+     "prompted_by": "imported lead: kevinnbass ledger row M97",
      "searched": "990-PF Part XV",
      "snapshot": "2026-09-14",
      "status": "imported"
     },
     {
+     "answers": "Does Coefficient Giving or Open Philanthropy fund METR, on the live grants pages?",
      "claim": "no Coefficient or Open Philanthropy grant to METR on the grants pages; corroborated by a January 2025 80,000 Hours note",
+     "prompted_by": "re-run of N01 on the live pages during the 2026-09-15 research pass",
      "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants",
      "snapshot": "2026-09-15",
      "status": "unaudited"
@@ -214,8 +215,8 @@
    ],
    "quarantined_rows": 2,
    "second_hop": {
-    "sources": 6,
-    "traced": 5,
+    "sources": 5,
+    "traced": 4,
     "untraced": [
      "Founders Pledge"
     ]
@@ -256,6 +257,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "rand",
    "inflow_rows": 2,
    "kind_note": "Canary joint project with METR",
@@ -342,6 +345,8 @@
     }
    },
    "confirmed_rows": 4,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "far-ai",
    "inflow_rows": 6,
    "kind_note": "",
@@ -397,6 +402,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "redwood",
    "inflow_rows": 2,
    "kind_note": "",
@@ -447,6 +454,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "irregular",
    "inflow_rows": 2,
    "kind_note": "",
@@ -462,7 +471,9 @@
    "name": "Irregular (formerly Pattern Labs)",
    "negatives": [
     {
+     "answers": "Did Coefficient Giving fund Irregular or Pattern Labs?",
      "claim": "no grant to Irregular or Pattern Labs found on Coefficient Giving's grants pages",
+     "prompted_by": "imported transfer T09 ($6.8M under Pattern Labs), marked differs",
      "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants, name search",
      "snapshot": "2026-09-15",
      "status": "unaudited"
@@ -511,6 +522,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "gray-swan",
    "inflow_rows": 2,
    "kind_note": "",
@@ -577,6 +590,8 @@
     }
    },
    "confirmed_rows": 3,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "securebio",
    "inflow_rows": 3,
    "kind_note": "",
@@ -622,6 +637,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "apollo",
    "inflow_rows": 2,
    "kind_note": "",
@@ -705,6 +722,8 @@
     }
    },
    "confirmed_rows": 4,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "epoch",
    "inflow_rows": 8,
    "kind_note": "",
@@ -741,6 +760,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "palisade",
    "inflow_rows": 2,
    "kind_note": "",
@@ -790,6 +811,8 @@
     }
    },
    "confirmed_rows": 3,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "transluce",
    "inflow_rows": 3,
    "kind_note": "",
@@ -805,13 +828,17 @@
    "name": "Transluce",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund Transluce?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV06",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
     },
     {
+     "answers": "Does Transluce take revenue from AI developers as organizations?",
      "claim": "no revenue directly from AI developers as organizations in FY2025; no paid evaluations to date",
+     "prompted_by": "Transluce's own disclosure policy (transluce.09)",
      "searched": "organization's own policy disclosure",
      "snapshot": "2026-09-14",
      "status": "confirmed"
@@ -843,6 +870,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "andon",
    "inflow_rows": 1,
    "kind_note": "",
@@ -892,6 +921,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "ukaisi",
    "inflow_rows": 3,
    "kind_note": "",
@@ -899,7 +930,9 @@
    "name": "UK AI Security Institute",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund the UK AI Security Institute?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV11",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -933,6 +966,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "caisi",
    "inflow_rows": 2,
    "kind_note": "",
@@ -940,13 +975,17 @@
    "name": "US CAISI (NIST)",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund US CAISI?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV12",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
     },
     {
+     "answers": "Does CAISI pay private evaluators such as METR or Apollo?",
      "claim": "no CAISI contract to METR, Apollo, or other private evaluators found",
+     "prompted_by": "imported lead: kevinnbass ledger row EV12",
      "searched": "CAISI announcements and spending search",
      "snapshot": "2026-09-14",
      "status": "imported"
@@ -980,6 +1019,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "euaio",
    "inflow_rows": 1,
    "kind_note": "",
@@ -987,7 +1028,9 @@
    "name": "EU AI Office",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund the EU AI Office?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV13",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1046,6 +1089,8 @@
     }
    },
    "confirmed_rows": 4,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "averi",
    "inflow_rows": 4,
    "kind_note": "",
@@ -1053,13 +1098,17 @@
    "name": "AVERI",
    "negatives": [
     {
+     "answers": "Is any single donor a majority of AVERI's funding?",
      "claim": "no single donor is a majority of funding",
+     "prompted_by": "AVERI's own funding page (averi.09)",
      "searched": "organization's own funding disclosure",
      "snapshot": "2026-09-14",
      "status": "confirmed"
     },
     {
+     "answers": "Is there a discrete Coefficient Giving grant page for AVERI?",
      "claim": "no discrete Coefficient Giving grant page for AVERI found, although AVERI names Coefficient as a funder",
+     "prompted_by": "AVERI names Coefficient as a funder (averi.12)",
      "searched": "coefficientgiving.org/grants, name search",
      "snapshot": "2026-09-15",
      "status": "unaudited"
@@ -1123,6 +1172,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "saferai",
    "inflow_rows": 3,
    "kind_note": "",
@@ -1130,7 +1181,9 @@
    "name": "SaferAI",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund SaferAI?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV10",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1166,6 +1219,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "scale",
    "inflow_rows": 1,
    "kind_note": "",
@@ -1181,7 +1236,9 @@
    "name": "Scale AI (SEAL)",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund Scale AI?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV16",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1213,6 +1270,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "mlcommons",
    "inflow_rows": 1,
    "kind_note": "",
@@ -1220,7 +1279,9 @@
    "name": "MLCommons",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund MLCommons?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV17",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1254,6 +1315,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "hfoai",
    "inflow_rows": 1,
    "kind_note": "",
@@ -1283,7 +1346,9 @@
    "name": "Hugging Face Open Alignment Initiative",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund the Hugging Face Open Alignment Initiative?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV15",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1319,6 +1384,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "cais",
    "inflow_rows": 2,
    "kind_note": "",
@@ -1351,6 +1418,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "msft",
    "inflow_rows": 1,
    "kind_note": "",
@@ -1369,6 +1438,8 @@
   {
    "buckets": {},
    "confirmed_rows": 0,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "dreadnode",
    "inflow_rows": 0,
    "kind_note": "",
@@ -1387,6 +1458,8 @@
   {
    "buckets": {},
    "confirmed_rows": 0,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "humane",
    "inflow_rows": 0,
    "kind_note": "",
@@ -1405,6 +1478,8 @@
   {
    "buckets": {},
    "confirmed_rows": 0,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "hal",
    "inflow_rows": 0,
    "kind_note": "",
@@ -1439,6 +1514,8 @@
     }
    },
    "confirmed_rows": 1,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "equistamp",
    "inflow_rows": 1,
    "kind_note": "",
@@ -1446,7 +1523,9 @@
    "name": "EquiStamp",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund EquiStamp?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV04",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
@@ -1491,6 +1570,8 @@
     }
    },
    "confirmed_rows": 2,
+   "credit_ids": [],
+   "credit_rows": 0,
    "id": "nemesys",
    "inflow_rows": 2,
    "kind_note": "",
@@ -1498,7 +1579,9 @@
    "name": "Nemesys Insights",
    "negatives": [
     {
+     "answers": "Does Coefficient Giving fund Nemesys Insights?",
      "claim": "no grant from Coefficient Giving in its index",
+     "prompted_by": "imported lead: kevinnbass ledger row EV08",
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"

@@ -77,7 +77,8 @@
       "type": "string",
       "enum": [
         "ranked",
-        "watchlist"
+        "watchlist",
+        "out-of-scope"
       ]
     },
     "dissent": {
