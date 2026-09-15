@@ -20,3 +20,14 @@ def test_focus_fades_non_neighbours():
     # neighbour is not faded
     i = s.index('data-node="moskovitz"'); seg = s[i:i+200]
     assert 'opacity="0.12"' not in seg.split("style")[0]
+
+def test_build_is_deterministic_for_dist():
+    import subprocess, hashlib
+    from bench.build import build
+    def digest():
+        h = hashlib.sha256()
+        for p in sorted(DIST.rglob("*")):
+            if p.is_file(): h.update(p.relative_to(DIST).as_posix().encode()); h.update(p.read_bytes())
+        return h.hexdigest()
+    build(write=True); a = digest(); build(write=True); b = digest()
+    assert a == b
