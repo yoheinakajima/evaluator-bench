@@ -130,3 +130,7 @@ def test_unranked_entries_show_not_ranked_not_a_band():
         pass
     # watchlist and out-of-scope rows in the directory carry no band chip
     assert idx.count("not ranked") >= 3
+
+def test_critique_linked_from_method():
+    html = (DIST / "method" / "index.html").read_text()
+    assert "CRITIQUE.md" in html and "what the authors already know is weak" in html.lower()
