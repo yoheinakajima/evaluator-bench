@@ -1,0 +1,11 @@
+{
+ "id": "metr-coefficient-grants-index",
+ "title": "Grants (index page)",
+ "publisher": "Coefficient Giving",
+ "url": "https://coefficientgiving.org/grants/",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "unverifiable",
+ "note": "Re-fetch 2026-09-15: bench.review.fetch_text gets HTTP 404; curl with a browser user-agent gets HTTP 403 (site-wide bot block, also on /grants/apollo-research-general-support/ and similar slugs); Wayback CDX captures of /grants/ on 2025-12-06, 2025-12-07, 2025-12-19 and 2026-02-28 are all status 404; openphilanthropy.org/grants/ has 301'd to coefficientgiving.org/funds since 2025-11. The 2,911-row index cited by N01 is a third-party Algolia extract (kevinnbass coefficient_pages.csv CP06) that the public site no longer serves."
+}

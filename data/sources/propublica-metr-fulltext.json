@@ -1,0 +1,11 @@
+{
+ "id": "propublica-metr-fulltext",
+ "title": "Filing text search: \"Model Evaluation and Threat Research\"",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22Model+Evaluation+and+Threat+Research%22",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "Corpus: e-filed 990-series returns from fiscal years 2014 forward. Eight filings name METR: Alignment Research Center 990 Schedules R, N, I, O (2024); METR's own 990 (2024); Founders Pledge Schedule I (2024); Silicon Valley Community Foundation Schedule I (2024); Vanguard Charitable Endowment Program Schedule I (2025). None from Good Ventures, Pew, Packard, any Schmidt-family foundation or TED Foundation. The ARC Schedule I snippet reads 'MODEL EVALUATION AND THREAT RESEARCH INC 440 N BARRANCA AVE 3345 COVINA CA 991219864 4477169 76766 BOOK' and Schedule R 'B 4553935 CASH'."
+}

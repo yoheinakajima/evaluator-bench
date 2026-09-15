@@ -1,0 +1,11 @@
+{
+ "id": "good-ventures-990pf-fy2023-xml",
+ "title": "Good Ventures Foundation 990-PF, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441369349105564_public.xml",
+ "published": "2024",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "464 Part XV paid-grant groups; grep (case-insensitive) for 'model evaluation', 'metr': none; ARC $1,250,000 present; SecureBio $1,420,937 present. SECUREBIO INC, Cambridge MA, PC, 'RESEARCH AND ACTIVITIES FOR REDUCING RISKS FROM ADVANCED BIOTECHNOLOGIES', 1,420,937."
+}

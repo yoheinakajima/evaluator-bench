@@ -1,0 +1,11 @@
+{
+ "id": "kevinnbass-evaluators-csv",
+ "title": "evaluators.csv (row EV07)",
+ "publisher": "kevinnbass/metr-money-figure",
+ "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+ "published": "2026-09-14",
+ "retrieved": "2026-09-15",
+ "source_type": "ledger",
+ "audit_status": "confirmed",
+ "note": "Third-party ledger: Coefficient index name match 'Pattern Labs' $6,799,999 'Technological Risk Mitigation' 2024-02-28; no grant under 'Irregular'. Treated as a lead; the primary record is the Good Ventures filing."
+}

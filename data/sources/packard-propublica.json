@@ -1,0 +1,11 @@
+{
+ "id": "packard-propublica",
+ "title": "David and Lucile Packard Foundation (EIN 94-2278431) filings",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/organizations/942278431",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Four 990-PF XMLs grepped: 202223199349107432 (TY2021, 1,400 Part XV groups), 202303149349102680 (TY2022, 1,158), 202433199349102603 (TY2023, 1,097), 202533209349100148 (TY2024, 1,029). No METR, Model Evaluation or ARC line."
+}

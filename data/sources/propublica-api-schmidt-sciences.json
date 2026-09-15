@@ -1,0 +1,11 @@
+{
+ "id": "propublica-api-schmidt-sciences",
+ "title": "Organization search: schmidt sciences",
+ "publisher": "ProPublica Nonprofit Explorer API",
+ "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=schmidt%20sciences",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "Zero-result queries on this endpoint return HTTP 404 with the JSON body {\"total_results\":0,...}; read with curl on 2026-09-15 (a query for 'eric and wendy schmidt' returns HTTP 200 with two organizations). bench.review.fetch_text raises on the 404 status, so no checkable span. Conclusion: no filer named Schmidt Sciences; the Schmidt vehicles that file are the Eric and Wendy Schmidt Fund for Strategic Innovation (46-3460261), the Schmidt Family Foundation (20-4170342) and the Eric and Wendy Schmidt Operating Foundation (99-5077186)."
+}

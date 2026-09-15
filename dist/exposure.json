@@ -89,7 +89,7 @@
     "unattributed": {
      "by_measure": {
       "commitment": 17000000.0,
-      "daf_grant": 184000.0,
+      "daf_grant": 4184000.0,
       "transfer": 4553935.0
      },
      "classes": [
@@ -97,22 +97,23 @@
      ],
      "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 3,
+     "rows": 4,
      "sources": [
       "arc",
       "audacious",
-      "founders-pledge"
+      "founders-pledge",
+      "vanguard-charitable"
      ],
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 4,
+   "confirmed_rows": 5,
    "credit_ids": [
     "T19"
    ],
    "credit_rows": 1,
    "id": "metr",
-   "inflow_rows": 6,
+   "inflow_rows": 7,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -164,41 +165,41 @@
      "answers": "Does Coefficient Giving fund METR?",
      "claim": "no grant from Coefficient Giving to METR under any name",
      "prompted_by": "imported lead: kevinnbass ledger, evaluators.csv row for METR",
-     "searched": "Coefficient grants index, 2,911 rows",
+     "searched": "Coefficient grants index (third-party Algolia snapshot, 2,911 rows, 2026-09-11); the public index page no longer exists",
      "snapshot": "2026-09-11",
-     "status": "imported"
+     "status": "unverifiable"
     },
     {
      "answers": "Does the Good Ventures Foundation fund METR directly?",
      "claim": "no METR-named grant in Good Ventures Foundation 990-PF Part XV",
      "prompted_by": "imported lead: kevinnbass ledger row M104",
-     "searched": "990-PF FY2022 to FY2025",
+     "searched": "990-PF Part XV, fiscal years ending 30 June 2022 to 30 June 2025 (315, 464, 493, and about 900 paid-grant lines)",
      "snapshot": "2026-09-14",
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "answers": "Does Schmidt Sciences fund METR through a grant in its filings?",
-     "claim": "no METR-named grant in Schmidt Sciences 990-PF 2021 to 2024",
+     "claim": "no METR- or ARC-named grant in the 990-PFs of the three Schmidt-family filers (Eric and Wendy Schmidt Fund for Strategic Innovation TY2020-2024; Schmidt Family Foundation TY2020-2024; Eric and Wendy Schmidt Operating Foundation, short TY2024); Schmidt Sciences itself is not a 990 filer",
      "prompted_by": "METR names Schmidt Sciences as a supporter (metr.01); imported lead: kevinnbass ledger",
-     "searched": "990-PF Part XV",
+     "searched": "990-PF Part XV of EINs 46-3460261 (5 filings), 20-4170342 (5 filings), 99-5077186 (1 filing)",
      "snapshot": "2026-09-14",
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "answers": "Does the Pew Charitable Trusts fund METR through a grant in its filings?",
      "claim": "no METR-named grant in Pew Charitable Trusts 990 Schedule I FY2021 to FY2025",
      "prompted_by": "METR names Pew as a supporter (metr.02); imported lead: kevinnbass ledger row M98",
-     "searched": "990 Schedule I",
+     "searched": "990 Schedule I, fiscal years ending 30 June 2021 to 30 June 2025 (439, 407, 401, 391, 535 recipient lines)",
      "snapshot": "2026-09-14",
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "answers": "Does the Packard Foundation fund METR?",
      "claim": "no METR-named grant in Packard Foundation 990-PF 2021 to 2024",
      "prompted_by": "imported lead: kevinnbass ledger row M97",
-     "searched": "990-PF Part XV",
+     "searched": "990-PF Part XV, tax years 2021 to 2024 (1,400, 1,158, 1,097, 1,029 paid-grant lines)",
      "snapshot": "2026-09-14",
-     "status": "imported"
+     "status": "confirmed"
     },
     {
      "answers": "Does Coefficient Giving or Open Philanthropy fund METR, on the live grants pages?",
@@ -206,19 +207,43 @@
      "prompted_by": "re-run of N01 on the live pages during the 2026-09-15 research pass",
      "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants",
      "snapshot": "2026-09-15",
-     "status": "unaudited"
+     "status": "unverifiable"
+    },
+    {
+     "answers": "",
+     "claim": "no METR- or Model-Evaluation-named grant page among 2,737 archived openphilanthropy.org/grants/ slugs, while ARC (2), Apollo Research (2), Palisade Research (2), and SecureBio (6) pages are present",
+     "prompted_by": "",
+     "searched": "Wayback Machine CDX index of openphilanthropy.org/grants/*, status 200, collapsed by URL, queried by initial letter a to z; 2,737 distinct slugs after dropping query-string and /page/ variants",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
+    },
+    {
+     "answers": "",
+     "claim": "Model Evaluation and Threat Research appears in eight e-filed 990 filings only: ARC (Schedules R, N, I, O, 2024), METR's own 990 (2024), Founders Pledge Schedule I (2024), Silicon Valley Community Foundation Schedule I (2024), Vanguard Charitable Schedule I (2025); no filing by Good Ventures, Pew, Packard, a Schmidt-family foundation, or TED Foundation names it",
+     "prompted_by": "",
+     "searched": "ProPublica Nonprofit Explorer full-text search of e-filed 990-series returns, fiscal years 2014 forward",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
+    },
+    {
+     "answers": "",
+     "claim": "no METR, RAND, or Canary grant in TED Foundation Inc 990-PF Part XV, TY2021 to TY2024 (3, 6, 1, and 2 paid-grant lines)",
+     "prompted_by": "",
+     "searched": "TED Foundation Inc (EIN 82-1934592) 990-PF Part XV, four e-filed returns",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
     }
    ],
    "quarantined_ids": [
-    "T14",
     "T16"
    ],
-   "quarantined_rows": 2,
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 5,
+    "sources": 6,
     "traced": 4,
     "untraced": [
-     "Founders Pledge"
+     "Founders Pledge",
+     "Vanguard Charitable"
     ]
    },
    "status": "ranked"
@@ -248,19 +273,26 @@
       "cash"
      ],
      "imported_unsummed": 0,
-     "non_usd": [],
-     "rows": 1,
+     "non_usd": [
+      "grant 10000000 USD",
+      "detail of T27, not additive",
+      "grant 333334 USD",
+      "detail of T27, not additive"
+     ],
+     "rows": 3,
      "sources": [
-      "audacious"
+      "audacious",
+      "high-tide",
+      "valhalla"
      ],
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 2,
+   "confirmed_rows": 4,
    "credit_ids": [],
    "credit_rows": 0,
    "id": "rand",
-   "inflow_rows": 2,
+   "inflow_rows": 4,
    "kind_note": "Canary joint project with METR",
    "lab_tied_seats": [],
    "name": "RAND Corporation",
@@ -272,9 +304,12 @@
    ],
    "quarantined_rows": 3,
    "second_hop": {
-    "sources": 2,
+    "sources": 4,
     "traced": 2,
-    "untraced": []
+    "untraced": [
+     "High Tide Foundation",
+     "Valhalla Foundation"
+    ]
    },
    "status": "ranked"
   },
@@ -451,13 +486,32 @@
       "sequoia"
      ],
      "undisclosed": 0
+    },
+    "hop2": {
+     "by_measure": {
+      "grant": 6800000.0,
+      "investment": 3000000.0,
+      "recommendation": 6799999.0
+     },
+     "classes": [
+      "cash",
+      "ownership"
+     ],
+     "imported_unsummed": 0,
+     "non_usd": [],
+     "rows": 4,
+     "sources": [
+      "coefficient",
+      "good-ventures"
+     ],
+     "undisclosed": 0
     }
    },
-   "confirmed_rows": 2,
+   "confirmed_rows": 6,
    "credit_ids": [],
    "credit_rows": 0,
    "id": "irregular",
-   "inflow_rows": 2,
+   "inflow_rows": 6,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -472,20 +526,18 @@
    "negatives": [
     {
      "answers": "Did Coefficient Giving fund Irregular or Pattern Labs?",
-     "claim": "no grant to Irregular or Pattern Labs found on Coefficient Giving's grants pages",
+     "claim": "no grant page under Pattern Labs or Irregular among 2,737 archived openphilanthropy.org/grants/ slugs, and no grant record for either name in Coefficient's live site search; the grant itself is recorded in Good Ventures' 990-PF under Pattern Labs Tech Inc",
      "prompted_by": "imported transfer T09 ($6.8M under Pattern Labs), marked differs",
      "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants, name search",
      "snapshot": "2026-09-15",
-     "status": "unaudited"
+     "status": "confirmed"
     }
    ],
-   "quarantined_ids": [
-    "T09"
-   ],
-   "quarantined_rows": 1,
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
-    "sources": 2,
-    "traced": 2,
+    "sources": 4,
+    "traced": 4,
     "untraced": []
    },
    "status": "ranked"
@@ -575,25 +627,28 @@
     },
     "hop2": {
      "by_measure": {
-      "recommendation": 754000.0
+      "grant": 6157937.0,
+      "recommendation": 10230485.0
      },
      "classes": [
       "cash"
      ],
      "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 1,
+     "rows": 10,
      "sources": [
+      "coefficient",
+      "good-ventures",
       "sff"
      ],
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 3,
+   "confirmed_rows": 12,
    "credit_ids": [],
    "credit_rows": 0,
    "id": "securebio",
-   "inflow_rows": 3,
+   "inflow_rows": 12,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "SecureBio",
@@ -601,8 +656,8 @@
    "quarantined_ids": [],
    "quarantined_rows": 0,
    "second_hop": {
-    "sources": 3,
-    "traced": 3,
+    "sources": 5,
+    "traced": 5,
     "untraced": []
    },
    "status": "ranked"
@@ -622,6 +677,21 @@
      ],
      "undisclosed": 1
     },
+    "hop2": {
+     "by_measure": {
+      "recommendation": 3714180.0
+     },
+     "classes": [
+      "cash"
+     ],
+     "imported_unsummed": 1,
+     "non_usd": [],
+     "rows": 3,
+     "sources": [
+      "coefficient"
+     ],
+     "undisclosed": 0
+    },
     "unattributed": {
      "by_measure": {},
      "classes": [
@@ -636,11 +706,11 @@
      "undisclosed": 1
     }
    },
-   "confirmed_rows": 2,
+   "confirmed_rows": 4,
    "credit_ids": [],
    "credit_rows": 0,
    "id": "apollo",
-   "inflow_rows": 2,
+   "inflow_rows": 5,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -652,15 +722,24 @@
     }
    ],
    "name": "Apollo Research",
-   "negatives": [],
+   "negatives": [
+    {
+     "answers": "",
+     "claim": "no Form D or other filing naming Apollo Research in EDGAR full-text search (2025-01-01 to 2026-09-15); no return of allotment (SH01) at Companies House for Apollo Research AI Ltd after its GBP 0.01 incorporation capital; PSC register states no registrable person",
+     "prompted_by": "",
+     "searched": "SEC EDGAR full-text search (forms D and unrestricted) and company-name search; Companies House filing history and PSC register for company 15289159 through 2026-04-10",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
+    }
+   ],
    "quarantined_ids": [
     "T08",
     "T33"
    ],
    "quarantined_rows": 2,
    "second_hop": {
-    "sources": 2,
-    "traced": 1,
+    "sources": 3,
+    "traced": 2,
     "untraced": [
      "Fifty Years (50Y)"
     ]
@@ -744,14 +823,14 @@
     "hop2": {
      "by_measure": {
       "grant": 2123463.0,
-      "recommendation": 1133000.0
+      "recommendation": 2813000.0
      },
      "classes": [
       "cash"
      ],
      "imported_unsummed": 0,
      "non_usd": [],
-     "rows": 2,
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
@@ -759,11 +838,11 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 1,
+   "confirmed_rows": 3,
    "credit_ids": [],
    "credit_rows": 0,
    "id": "palisade",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Palisade Research",
@@ -989,6 +1068,14 @@
      "searched": "CAISI announcements and spending search",
      "snapshot": "2026-09-14",
      "status": "imported"
+    },
+    {
+     "answers": "",
+     "claim": "no award or agreement naming the Center for AI Standards and Innovation, CAISI, or 'AI Standards and Innovation' in USAspending's award search (FY2024 to 2026-09-15, all award types)",
+     "prompted_by": "",
+     "searched": "USAspending spending_by_award API, three keyword queries, all award types; NIST news releases on CAISI agreements",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
     }
    ],
    "quarantined_ids": [],
@@ -1034,6 +1121,14 @@
      "searched": "Coefficient grants index, 2,911 rows",
      "snapshot": "2026-09-11",
      "status": "imported"
+    },
+    {
+     "answers": "",
+     "claim": "Commission Decision C(2024) 390 Article 8 names only Union budget sources for the AI Office: DG CONNECT staff, Digital Europe Programme administrative appropriations for external staff, and DEP Specific Objective 2 for operational expenditure",
+     "prompted_by": "",
+     "searched": "Commission Decision of 24 January 2024 establishing the European AI Office, C/2024/1459, Article 8 (Official Journal PDF)",
+     "snapshot": "2026-09-15",
+     "status": "confirmed"
     }
    ],
    "quarantined_ids": [],

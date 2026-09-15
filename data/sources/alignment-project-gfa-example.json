@@ -1,0 +1,12 @@
+{
+ "id": "alignment-project-gfa-example",
+ "title": "Example of DSIT-AISI Grant Funding Agreement (PDF)",
+ "publisher": "Department for Science, Innovation and Technology / AI Security Institute",
+ "url": "https://aisi.s3.eu-west-2.amazonaws.com/0825/Example+of+DSIT-AISI+Grant+Funding+Agreement.pdf",
+ "published": "2025-08",
+ "retrieved": "2026-09-15",
+ "source_type": "self",
+ "audit_status": "confirmed",
+ "note": "'The Grant is made pursuant to section 5 of the Science and Technologies Act 1965' (sic); the Authority is the Secretary of State; grant manager 'AISI Research Lead'; monthly grant review and reporting.",
+ "self_of": "ukaisi"
+}

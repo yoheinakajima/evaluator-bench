@@ -1,0 +1,11 @@
+{
+ "id": "schmidt-family-propublica",
+ "title": "Schmidt Family Foundation (EIN 20-4170342) filings",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Five 990-PF XMLs grepped (TY2020 to TY2024; 378, 367, 629, 546, 695 Part XV groups): no METR, Model Evaluation or ARC line."
+}

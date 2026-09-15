@@ -1,0 +1,11 @@
+{
+ "id": "packard-990pf-ty2024-xml",
+ "title": "David and Lucile Packard Foundation 990-PF TY2024 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202533209349100148_public.xml",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "1,029 Part XV groups; no METR line."
+}

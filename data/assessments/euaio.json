@@ -6,7 +6,8 @@
   "anchor": 3,
   "signals": [
    "euaio.06",
-   "euaio.10"
+   "euaio.10",
+   "euaio.14"
   ],
   "rationale": "Anchor 3 pending a confirmed bounded negative; funding is public by construction but the gate asks for the row.",
   "assessed": "2026-09-14",

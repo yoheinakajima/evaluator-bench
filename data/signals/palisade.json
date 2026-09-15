@@ -238,5 +238,26 @@
   "quote": "Palisade Research Main: $477,000 Freedom: $441,000 Fairness: $0 Mean: $216,000 $1,133,000",
   "quote_source": "sff-2025",
   "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger row T66 records the transfer; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'."
+ },
+ {
+  "evaluator": "palisade",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "palisade.14",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.",
+  "sources": [
+   "op-palisade-2024",
+   "op-palisade-2025",
+   "wayback-cdx-op-grants-p"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Open Philanthropy recommended two grants totaling $2,123,463 to Palisade Research for general support.",
+  "quote_source": "op-palisade-2025"
  }
 ]

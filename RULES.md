@@ -32,6 +32,7 @@ Anchors: 0 owned or controlled by a frontier developer or a lab investor (a stak
 - **F.10 Undisclosed structure.** A private company whose capital structure is undisclosed caps at 3; undisclosed structure and undisclosed client base caps at 2.
 - **F.11 Evaluation credits and undisclosed in-kind.** Credits or access used for the evaluation itself, and any in-kind whose amount is undisclosed and which the evaluator does not describe as operating support: informational (`bound: null`), recorded on the access mechanism instead.
 - **F.12 Four.** A 4 requires a confirmed bounded negative (C8), a tier-1 source on a cited signal (C10), a quoted span, and a second independent source (C16).
+- **F.13 Partial bounded negatives.** Confirmed bounded negatives from primary filings that cover some, but not all, of an organization's disclosed or plausible funder base are evidence toward independence and float the funding value to a floor of 3; they do not by themselves satisfy F.12's requirement for a 4, which needs a bounded negative covering the full disclosed base.
 
 ## 2. Governance (G)
 
@@ -44,6 +45,7 @@ Anchors: 0 unit or subsidiary of a lab or a lab's investor; 1 venture-backed for
 - **G.5 Political steerability.** A public body whose leadership or mandate changed more than once in twelve months caps at 3.
 - **G.6 Ownership** at 20% or more by a lab or a lab investor is 0 (same threshold as F.1).
 - **G.7 Four** requires tier-1 evidence of an independent board and of external review.
+- **G.8 Undisclosed board composition.** Where a governing body's structure is disclosed (mission seats, a stated seat count, a first appointee) but the full membership is not published, caps at 3; a 4 needs the whole board named (G.7).
 
 ## 3. Personnel (P)
 

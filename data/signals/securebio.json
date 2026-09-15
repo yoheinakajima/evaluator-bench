@@ -437,5 +437,32 @@
   "quote": "SecureBio did not receive funding from Anthropic for this work",
   "quote_source": "securebio-anthropic-review",
   "note": "An unpaid engagement beside paid ones; supports 'otherwise diversified' (anchor 2) and no more. Recorded so the fee pattern is not overstated."
+ },
+ {
+  "evaluator": "securebio",
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.6 (re-derivation)",
+  "as_of": "2026-09-15",
+  "id": "securebio.24",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Coefficient / Open Philanthropy recommended six grants to SecureBio totaling about $9.48M from November 2022 to March 2025, including $4,000,000 general support over three years, paid by Good Ventures Foundation (an Anthropic investor's foundation) per its 990-PFs; only $55,548 of it sits in the AI focus area.",
+  "sources": [
+   "op-securebio-general-2024",
+   "op-securebio-benchmark-2025",
+   "good-ventures-990pf-fy2023-xml",
+   "good-ventures-990pf-fy2024-xml",
+   "good-ventures-990pf-fy2025-render",
+   "op-securebio-biosecurity-2022",
+   "op-securebio-early-warning-2023",
+   "op-securebio-nao-2025",
+   "op-securebio-dashboard-2025"
+  ],
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Open Philanthropy recommended a grant of $4,000,000 over three years to SecureBio for general support.",
+  "quote_source": "op-securebio-general-2024"
  }
 ]

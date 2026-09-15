@@ -14,7 +14,10 @@
    "metr.18",
    "metr.19",
    "metr.20",
-   "metr.21"
+   "metr.21",
+   "metr.24",
+   "metr.25",
+   "metr.26"
   ],
   "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
   "assessed": "2026-09-15",

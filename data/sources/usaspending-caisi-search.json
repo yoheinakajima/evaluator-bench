@@ -1,0 +1,11 @@
+{
+ "id": "usaspending-caisi-search",
+ "title": "Award search API, spending_by_award (POST), keywords 'Center for AI Standards and Innovation' / 'CAISI' / 'AI Standards and Innovation'",
+ "publisher": "USAspending.gov",
+ "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+ "published": "2026-09-15",
+ "retrieved": "2026-09-15",
+ "source_type": "index",
+ "audit_status": "confirmed",
+ "note": "Three POST queries on 2026-09-15 (time period 2023-10-01 or 2024-10-01 to 2026-09-15; award types A, B, C, D and grants 02 to 11): results [] each time. USAspending records prime awards paid by federal agencies; a lab payment into NIST would be a reimbursable agreement or CRADA, which USAspending does not carry. POST-only endpoint; fetch_text cannot replay it."
+}

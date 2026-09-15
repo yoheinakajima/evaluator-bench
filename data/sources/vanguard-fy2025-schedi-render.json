@@ -1,0 +1,11 @@
+{
+ "id": "vanguard-fy2025-schedi-render",
+ "title": "Vanguard Charitable Endowment Program 990, fiscal year ending June 2025, Schedule I (ProPublica full-text render)",
+ "publisher": "ProPublica Nonprofit Explorer",
+ "url": "https://projects.propublica.org/nonprofits/full_text/202621329349306657/IRS990ScheduleI",
+ "published": "2026",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "Served gzip-encoded; decoded on 2026-09-15 (104,768,626 bytes, about 24,000 recipient rows). Row (15424): 'MODEL EVALUATION AND THREAT RESEARCH 440 N BARRANCA AVE 3345 COVINA , CA 917231722 99-1219864 501(C)3 4,000,000 FMV N/A FOR RECIPIENT'S EXEMPT PURPOSE'. Row (547): 'ALIGNMENT RESEARCH CENTER ... 86-3605182 501(C)3 1,500,000'. RAND Corporation $12,000 (row 19056). bench.review.fetch_text returns the undecoded gzip bytes for this endpoint, so the span is checkable only after gunzip; the XML is not yet on the S3 mirror."
+}

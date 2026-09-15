@@ -1,0 +1,11 @@
+{
+ "id": "vanguard-990-fy2023-xml",
+ "title": "Vanguard Charitable Endowment Program 990, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441359349309439_public.xml",
+ "published": "2024",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "21,268 recipient groups; ALIGNMENT RESEARCH CENTER $201,000; no METR line."
+}

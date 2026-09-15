@@ -1,0 +1,11 @@
+{
+ "id": "vanguard-990-fy2024-xml",
+ "title": "Vanguard Charitable Endowment Program 990, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+ "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+ "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202511349349313096_public.xml",
+ "published": "2025",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "confirmed",
+ "note": "24,269 Schedule I recipient groups; ALIGNMENT RESEARCH CENTER $1,000,000; RAND $48,000; no METR line (METR was spun out in April 2024)."
+}
