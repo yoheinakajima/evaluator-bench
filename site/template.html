@@ -154,7 +154,45 @@
   .dimblock h4{font-family:var(--sans);font-size:13.5px;font-weight:600;margin:0 0 2px}
   .prov{font-size:12.5px;color:var(--muted);margin-top:10px;max-width:64ch}
   .prov a{color:var(--muted)}
-  .ladder svg{max-width:100%;height:auto;display:block}
+  .lwrap{overflow-x:auto;margin-top:18px;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+  .lgrid{display:grid;grid-template-columns:230px repeat(7,86px) 120px;min-width:max-content;font-size:13px}
+  .lrow{display:contents}
+  .lgrid .lname,.lgrid .lcell,.lgrid .lbar{padding:6px 8px;border-bottom:1px solid var(--rule-soft);display:flex;align-items:center;min-height:34px}
+  .lgrid .lname{position:sticky;left:0;background:var(--panel);z-index:1;justify-content:space-between;gap:8px;text-align:left}
+  .lgrid .lhead .lname,.lgrid .lhead .lcell,.lgrid .lhead .lbar{background:var(--paper);font-weight:600;border-bottom:1px solid var(--rule);justify-content:center;min-height:38px}
+  .lgrid .lhead .lname{justify-content:flex-start}
+  .lgrid .lhead .lcell{cursor:help}
+  .lcell{justify-content:center}
+  .lcell button,.lname button{font:inherit;border:none;cursor:pointer;width:100%;height:100%;min-height:26px;border-radius:3px;color:var(--ink);background:none;text-align:inherit;padding:0 4px}
+  .lname button{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .lcell button.s0{background:var(--teal-tint)} .lcell button.s1{background:#8CC5BB} .lcell button.s2{background:var(--teal);color:#fff}
+  .lcell button.sn{background:none;border:1px dashed var(--rule);color:var(--muted)}
+  .lcell button:hover,.lname button:hover{outline:2px solid var(--ink);outline-offset:-2px}
+  .lcell button[aria-pressed="true"],.lname button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:-2px}
+  .lrow.ai .lname,.lrow.ai .lcell,.lrow.ai .lbar{background:#EAF4F1}
+  .lrow.ai .lname{font-weight:600}
+  .lbar i{display:block;height:10px;background:var(--teal);opacity:.75;border-radius:2px;margin-right:6px}
+  .lbar{color:var(--muted);font-size:12px}
+  .marks{display:inline-flex;gap:6px;align-items:center}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ox)}
+  .ring{display:inline-block;width:8px;height:8px;border-radius:50%;border:2px solid var(--amber);box-sizing:border-box}
+  .llegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--muted);margin-top:8px;align-items:center}
+  .llegend .sw{display:inline-block;width:14px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px}
+  .sw.s0{background:var(--teal-tint)} .sw.s1{background:#8CC5BB} .sw.s2{background:var(--teal)} .sw.sn{border:1px dashed var(--rule)}
+  .llegend a{color:var(--muted);margin-left:auto}
+  .ldetail{margin-top:12px;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px}
+  .ldetail h3{font-size:22px;margin-bottom:4px}
+  .ldetail .sub{color:var(--muted);font-size:13.5px;margin-bottom:10px;max-width:70ch}
+  .ldetail ul{list-style:none;margin:0;padding:0}
+  .ldetail li{padding:8px 0;border-top:1px solid var(--rule-soft);font-size:14px;max-width:72ch}
+  .ldetail li b{font-weight:600;margin-right:6px}
+  .ldetail .kind{font-size:11.5px;color:var(--muted);border:1px solid var(--rule);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:middle}
+  .ldetail li a{color:var(--muted);font-size:12.5px;display:block;margin-top:2px}
+  .ldetail .ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 20px;margin-top:12px;font-size:13px;color:var(--ink)}
+  .ldetail .ctx b{display:block;font-weight:600;font-size:12.5px;color:var(--muted);margin-bottom:2px}
+  .ldetail .close{float:right;font-size:13px;background:none;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;color:var(--muted)}
+  .ltip{position:fixed;z-index:20;max-width:320px;background:var(--ink);color:#fff;font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  @media (hover:none){.ltip{display:none!important}}
 </style>
 </head>
 <body>
@@ -279,9 +317,21 @@
   <section class="alt" id="where">
     <div class="wrap">
       <h2>Where we are</h2>
-      <p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder below marks the year each regime first reached each stage. Frontier AI reached five of seven stages in four years; oversight of the evaluators themselves is the empty cell.</p>
-      <div class="ladder" style="overflow-x:auto;margin-top:18px"><!--__TIMELINE_SVG__--></div>
-      <p class="lead" style="margin-top:14px">Read the row for financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. The pattern across regimes is that rules follow public failures within a few years, and the stretch before the first failure is where the shape of the regime is decided. Data and method are in the repo under <code>data/industries/</code> and <code>paper/</code>.</p>
+      <p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder marks the year each regime first reached each stage. Tap a cell to see the milestone behind it and its source; tap a regime name for its full history.</p>
+      <div class="lwrap">
+        <div id="ladder" class="lgrid" role="grid" aria-label="Stage ladder"></div>
+      </div>
+      <div class="llegend">
+        <span><i class="sw s0"></i> under 10 years into the regime</span>
+        <span><i class="sw s1"></i> 10 to 50</span>
+        <span><i class="sw s2"></i> over 50</span>
+        <span><i class="sw sn"></i> not reached</span>
+        <span><i class="dot"></i> rollback</span>
+        <span><i class="ring"></i> assessed party absorbed the assessment</span>
+        <a href="timeline.svg" download>Download the static figure</a>
+      </div>
+      <div id="ldetail" class="ldetail" hidden></div>
+      <p class="lead" style="margin-top:18px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules follow public failures within a few years; the stretch before the first failure is where a regime's shape is decided. The oversight column is the one AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
     </div>
   </section>
 
@@ -432,6 +482,73 @@ function detail(e){
 function renderRubric(){ $("#rubricGrid").innerHTML = DIMS.map(d=>`<div class="rdim"><h3>${d.label}</h3><p>${d.desc}</p><ul class="anchors">${d.anchors.map((a,i)=>`<li><b>${i}</b><span>${a}</span></li>`).join("")}</ul></div>`).join(""); }
 function renderCases(){ $("#caseList").innerHTML = CASES.map(c=>`<div class="case"><div><h3>${c.t}</h3><div class="verdict">${c.v}</div></div><p>${c.p}</p></div>`).join(""); }
 renderSliders(); renderFilterChips(); renderRows(); renderRubric(); renderCases();
+
+// ---- stage ladder (interactive)
+const TIMELINE = /*__TIMELINE_JSON__*/null;
+const INDUSTRIES = /*__INDUSTRIES_JSON__*/null;
+const STAGEMETA = /*__STAGES_JSON__*/null;
+(function ladder(){
+  if(!TIMELINE || !INDUSTRIES || !STAGEMETA) return;
+  const byId = Object.fromEntries(INDUSTRIES.map(o=>[o.id,o]));
+  const stages = STAGEMETA.stages; const other = STAGEMETA.other;
+  const grid = $("#ladder"); const detail = $("#ldetail");
+  let tip = null; let pressed = null;
+  const shade = (yr, first) => { const g = yr - first; return g < 10 ? "s0" : (g <= 50 ? "s1" : "s2"); };
+  const kindLabel = k => k.replace(/_/g," ");
+  function milestonesFor(reg, code){ const st = stages.find(s=>s.code===code); return reg.milestones.filter(m=>st.kinds.includes(m.kind)).sort((a,b)=>a.year-b.year); }
+  function showTip(el, html){ hideTip(); tip = document.createElement("div"); tip.className="ltip"; tip.innerHTML=html; document.body.appendChild(tip);
+    const r = el.getBoundingClientRect(); let x = r.left, y = r.bottom + 6; if(x + 330 > window.innerWidth) x = Math.max(8, window.innerWidth - 330); tip.style.left = x+"px"; tip.style.top = y+"px"; }
+  function hideTip(){ if(tip){ tip.remove(); tip=null; } }
+  function press(btn){ if(pressed) pressed.setAttribute("aria-pressed","false"); pressed = btn; if(btn) btn.setAttribute("aria-pressed","true"); }
+  function openCell(reg, row, code, btn){
+    press(btn); const st = stages.find(s=>s.code===code); const ms = milestonesFor(reg, code); const yr = row.stages[code];
+    const items = ms.length ? ms.map(m=>`<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(kindLabel(m.kind))}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`).join("")
+      : `<li>No milestone of this kind is recorded for this regime. If one exists, add it in <a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a>.</li>`;
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}: ${esc(st.label)}${yr?", "+yr:""}</h3>
+      <div class="sub">${esc(st.desc)}${yr?` This regime reached it ${yr - row.first} years after its first recorded milestone (${row.first}).`:""}</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function openRegime(reg, row, btn){
+    press(btn); const ms = [...reg.milestones].sort((a,b)=>a.year-b.year||a.kind.localeCompare(b.kind));
+    const items = ms.map(m=>{ const st = stages.find(s=>s.kinds.includes(m.kind)); const tag = st ? st.label : (other[m.kind] ? kindLabel(m.kind) : kindLabel(m.kind));
+      return `<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(tag)}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`; }).join("");
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}</h3>
+      <div class="sub">${esc(reg.ai_analogue)} Stages reached: ${row.reached} of 7${row.rollback?"; includes a rollback":""}${row.delegation?"; the assessed party absorbed the assessment function at some point":""}.</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function context(reg){ return `<div class="ctx"><div><b>Who pays</b>${esc(reg.payer)}</div><div><b>Access</b>${esc(reg.access)}</div><div><b>Publication</b>${esc(reg.publication)}</div><div><b>Data file</b><a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a> (${esc(reg.status||"")})</div></div>`; }
+  function show(){ detail.hidden = false; detail.querySelector(".close").addEventListener("click",()=>{ detail.hidden = true; press(null); }); if(detail.scrollIntoView) detail.scrollIntoView({block:"nearest"}); }
+  // header
+  const head = document.createElement("div"); head.className="lrow lhead";
+  head.innerHTML = `<div class="lname">Regime</div>` + stages.map(s=>`<div class="lcell" data-code="${s.code}">${s.label}</div>`).join("") + `<div class="lbar">Voluntary to mandate</div>`;
+  grid.appendChild(head);
+  head.querySelectorAll(".lcell").forEach(h=>{ const s = stages.find(x=>x.code===h.dataset.code); h.addEventListener("mouseenter",()=>showTip(h, `<b>${esc(s.label)}.</b> ${esc(s.desc)}<br><span style="opacity:.75">Milestone kinds: ${s.kinds.map(kindLabel).join(", ")}</span>`)); h.addEventListener("mouseleave",hideTip); });
+  // rows
+  for(const row of TIMELINE){
+    const reg = byId[row.id]; if(!reg) continue;
+    const r = document.createElement("div"); r.className = "lrow" + (row.id==="frontier-ai" ? " ai" : "");
+    const marks = (row.delegation?`<i class="ring" title="assessed party absorbed the assessment"></i>`:"") + (row.rollback?`<i class="dot" title="rollback"></i>`:"");
+    let html = `<div class="lname"><button type="button" aria-pressed="false"><span>${esc(reg.name)}</span><span class="marks">${marks}</span></button></div>`;
+    for(const s of stages){
+      const yr = row.stages[s.code];
+      html += `<div class="lcell"><button type="button" class="${yr?shade(yr,row.first):"sn"}" data-code="${s.code}" aria-pressed="false" aria-label="${esc(reg.name)}, ${esc(s.label)}${yr?", "+yr:", not reached"}">${yr||"\u00b7"}</button></div>`;
+    }
+    const vm = row.voluntary_to_mandate;
+    html += `<div class="lbar">${vm!=null?`<i style="width:${Math.max(3,Math.min(90,vm*1.1))}px"></i>${vm} y`:""}</div>`;
+    r.innerHTML = html; grid.appendChild(r);
+    r.querySelector(".lname button").addEventListener("click", ev=>openRegime(reg,row,ev.currentTarget));
+    r.querySelectorAll(".lcell button").forEach(b=>{
+      const code = b.dataset.code; const ms = milestonesFor(reg, code);
+      b.addEventListener("click", ()=>openCell(reg,row,code,b));
+      b.addEventListener("mouseenter", ()=>{ const s = stages.find(x=>x.code===code); const first = ms[0];
+        showTip(b, first ? `<b>${esc(reg.name)}, ${esc(s.label)} ${first.year}.</b> ${esc(first.event)}${ms.length>1?` <span style="opacity:.75">(+${ms.length-1} more)</span>`:""}` : `<b>${esc(reg.name)}, ${esc(s.label)}.</b> Not reached in the dataset.`); });
+      b.addEventListener("mouseleave", hideTip);
+    });
+  }
+  window.addEventListener("scroll", hideTip, {passive:true});
+})();
 </script>
 </body>
 </html>

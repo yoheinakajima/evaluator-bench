@@ -154,7 +154,45 @@
   .dimblock h4{font-family:var(--sans);font-size:13.5px;font-weight:600;margin:0 0 2px}
   .prov{font-size:12.5px;color:var(--muted);margin-top:10px;max-width:64ch}
   .prov a{color:var(--muted)}
-  .ladder svg{max-width:100%;height:auto;display:block}
+  .lwrap{overflow-x:auto;margin-top:18px;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+  .lgrid{display:grid;grid-template-columns:230px repeat(7,86px) 120px;min-width:max-content;font-size:13px}
+  .lrow{display:contents}
+  .lgrid .lname,.lgrid .lcell,.lgrid .lbar{padding:6px 8px;border-bottom:1px solid var(--rule-soft);display:flex;align-items:center;min-height:34px}
+  .lgrid .lname{position:sticky;left:0;background:var(--panel);z-index:1;justify-content:space-between;gap:8px;text-align:left}
+  .lgrid .lhead .lname,.lgrid .lhead .lcell,.lgrid .lhead .lbar{background:var(--paper);font-weight:600;border-bottom:1px solid var(--rule);justify-content:center;min-height:38px}
+  .lgrid .lhead .lname{justify-content:flex-start}
+  .lgrid .lhead .lcell{cursor:help}
+  .lcell{justify-content:center}
+  .lcell button,.lname button{font:inherit;border:none;cursor:pointer;width:100%;height:100%;min-height:26px;border-radius:3px;color:var(--ink);background:none;text-align:inherit;padding:0 4px}
+  .lname button{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .lcell button.s0{background:var(--teal-tint)} .lcell button.s1{background:#8CC5BB} .lcell button.s2{background:var(--teal);color:#fff}
+  .lcell button.sn{background:none;border:1px dashed var(--rule);color:var(--muted)}
+  .lcell button:hover,.lname button:hover{outline:2px solid var(--ink);outline-offset:-2px}
+  .lcell button[aria-pressed="true"],.lname button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:-2px}
+  .lrow.ai .lname,.lrow.ai .lcell,.lrow.ai .lbar{background:#EAF4F1}
+  .lrow.ai .lname{font-weight:600}
+  .lbar i{display:block;height:10px;background:var(--teal);opacity:.75;border-radius:2px;margin-right:6px}
+  .lbar{color:var(--muted);font-size:12px}
+  .marks{display:inline-flex;gap:6px;align-items:center}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ox)}
+  .ring{display:inline-block;width:8px;height:8px;border-radius:50%;border:2px solid var(--amber);box-sizing:border-box}
+  .llegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--muted);margin-top:8px;align-items:center}
+  .llegend .sw{display:inline-block;width:14px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px}
+  .sw.s0{background:var(--teal-tint)} .sw.s1{background:#8CC5BB} .sw.s2{background:var(--teal)} .sw.sn{border:1px dashed var(--rule)}
+  .llegend a{color:var(--muted);margin-left:auto}
+  .ldetail{margin-top:12px;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px}
+  .ldetail h3{font-size:22px;margin-bottom:4px}
+  .ldetail .sub{color:var(--muted);font-size:13.5px;margin-bottom:10px;max-width:70ch}
+  .ldetail ul{list-style:none;margin:0;padding:0}
+  .ldetail li{padding:8px 0;border-top:1px solid var(--rule-soft);font-size:14px;max-width:72ch}
+  .ldetail li b{font-weight:600;margin-right:6px}
+  .ldetail .kind{font-size:11.5px;color:var(--muted);border:1px solid var(--rule);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:middle}
+  .ldetail li a{color:var(--muted);font-size:12.5px;display:block;margin-top:2px}
+  .ldetail .ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 20px;margin-top:12px;font-size:13px;color:var(--ink)}
+  .ldetail .ctx b{display:block;font-weight:600;font-size:12.5px;color:var(--muted);margin-bottom:2px}
+  .ldetail .close{float:right;font-size:13px;background:none;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;color:var(--muted)}
+  .ltip{position:fixed;z-index:20;max-width:320px;background:var(--ink);color:#fff;font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  @media (hover:none){.ltip{display:none!important}}
 </style>
 </head>
 <body>
@@ -279,246 +317,21 @@
   <section class="alt" id="where">
     <div class="wrap">
       <h2>Where we are</h2>
-      <p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder below marks the year each regime first reached each stage. Frontier AI reached five of seven stages in four years; oversight of the evaluators themselves is the empty cell.</p>
-      <div class="ladder" style="overflow-x:auto;margin-top:18px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1156 544" width="1156" height="544" font-family="Instrument Sans, system-ui, sans-serif" font-size="12">
-<rect width="1156" height="544" fill="#F4F6F3"/>
-<text x="12" y="22" font-size="16" fill="#15222E">Stage ladder: year each assurance regime first reached each stage</text>
-<text x="12" y="40" fill="#5E6B76">Cell shade: age of the regime when the stage arrived. Light under 10 years, mid 10 to 50, dark over 50.</text>
-<text x="12" y="54" fill="#5E6B76">Red dot: a rollback occurred. Amber ring: the assessed party absorbed the assessment function at some point.</text>
-<text x="358.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Voluntary</text>
-<text x="450.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Trigger</text>
-<text x="542.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Mandate</text>
-<text x="634.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Standards</text>
-<text x="726.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Oversight</text>
-<text x="818.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Independence</text>
-<text x="910.0" y="78" text-anchor="middle" fill="#15222E" font-weight="600">Access</text>
-<text x="968" y="78" fill="#15222E" font-weight="600">Years, voluntary to mandate</text>
-<text x="12" y="100" fill="#15222E" font-weight="400">Financial statement audit</text>
-<rect x="314" y="86" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="358.0" y="100" text-anchor="middle" fill="#15222E">1880</text>
-<rect x="406" y="86" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="450.0" y="100" text-anchor="middle" fill="#FFFFFF">1938</text>
-<rect x="498" y="86" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="100" text-anchor="middle" fill="#15222E">1844</text>
-<rect x="590" y="86" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="634.0" y="100" text-anchor="middle" fill="#FFFFFF">1939</text>
-<rect x="682" y="86" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="100" text-anchor="middle" fill="#FFFFFF">2002</text>
-<rect x="774" y="86" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="818.0" y="100" text-anchor="middle" fill="#FFFFFF">2002</text>
-<rect x="866" y="86" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="910.0" y="100" text-anchor="middle" fill="#FFFFFF">1934</text>
-<circle cx="298" cy="96" r="3" fill="#9B2C2C"/>
-<circle cx="286" cy="96" r="4" fill="none" stroke="#B7791F" stroke-width="2"/>
-<text x="12" y="126" fill="#15222E" font-weight="400">Ship classification</text>
-<rect x="314" y="112" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="126" text-anchor="middle" fill="#15222E">1760</text>
-<rect x="406" y="112" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="450.0" y="126" text-anchor="middle" fill="#FFFFFF">1999</text>
-<rect x="498" y="112" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="590" y="112" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="112" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="126" text-anchor="middle" fill="#FFFFFF">1968</text>
-<rect x="774" y="112" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="818.0" y="126" text-anchor="middle" fill="#FFFFFF">2009</text>
-<rect x="866" y="112" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<text x="12" y="152" fill="#15222E" font-weight="400">Boilers and pressure vessels</text>
-<rect x="314" y="138" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="152" text-anchor="middle" fill="#15222E">1866</text>
-<rect x="406" y="138" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="152" text-anchor="middle" fill="#15222E">1905</text>
-<rect x="498" y="138" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="542.0" y="152" text-anchor="middle" fill="#15222E">1908</text>
-<rect x="590" y="138" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="634.0" y="152" text-anchor="middle" fill="#15222E">1914</text>
-<rect x="682" y="138" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="152" text-anchor="middle" fill="#FFFFFF">1919</text>
-<rect x="774" y="138" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="138" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="968" y="142" width="50.4" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="1022.4" y="152" fill="#5E6B76">42 y</text>
-<text x="12" y="178" fill="#15222E" font-weight="400">Electrical and consumer product safety</text>
-<rect x="314" y="164" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="178" text-anchor="middle" fill="#15222E">1894</text>
-<rect x="406" y="164" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="450.0" y="178" text-anchor="middle" fill="#FFFFFF">2007</text>
-<rect x="498" y="164" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="542.0" y="178" text-anchor="middle" fill="#FFFFFF">1972</text>
-<rect x="590" y="164" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="634.0" y="178" text-anchor="middle" fill="#15222E">1903</text>
-<rect x="682" y="164" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="178" text-anchor="middle" fill="#FFFFFF">1988</text>
-<rect x="774" y="164" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="164" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="968" y="168" width="93.6" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="1065.6" y="178" fill="#5E6B76">78 y</text>
-<text x="12" y="204" fill="#15222E" font-weight="400">Pharmaceutical safety and efficacy</text>
-<rect x="314" y="190" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="406" y="190" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="204" text-anchor="middle" fill="#15222E">1937</text>
-<rect x="498" y="190" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="204" text-anchor="middle" fill="#15222E">1906</text>
-<rect x="590" y="190" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="634.0" y="204" text-anchor="middle" fill="#FFFFFF">1962</text>
-<rect x="682" y="190" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="204" text-anchor="middle" fill="#FFFFFF">1978</text>
-<rect x="774" y="190" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="818.0" y="204" text-anchor="middle" fill="#FFFFFF">1998</text>
-<rect x="866" y="190" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="910.0" y="204" text-anchor="middle" fill="#FFFFFF">2007</text>
-<circle cx="286" cy="200" r="4" fill="none" stroke="#B7791F" stroke-width="2"/>
-<text x="12" y="230" fill="#15222E" font-weight="400">Aircraft certification</text>
-<rect x="314" y="216" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="406" y="216" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="230" text-anchor="middle" fill="#15222E">1956</text>
-<rect x="498" y="216" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="230" text-anchor="middle" fill="#15222E">1926</text>
-<rect x="590" y="216" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="634.0" y="230" text-anchor="middle" fill="#15222E">1965</text>
-<rect x="682" y="216" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="216" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="818.0" y="230" text-anchor="middle" fill="#FFFFFF">2020</text>
-<rect x="866" y="216" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<circle cx="286" cy="226" r="4" fill="none" stroke="#B7791F" stroke-width="2"/>
-<text x="12" y="256" fill="#15222E" font-weight="400">Credit rating agencies</text>
-<rect x="314" y="242" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="256" text-anchor="middle" fill="#15222E">1909</text>
-<rect x="406" y="242" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="450.0" y="256" text-anchor="middle" fill="#FFFFFF">1970</text>
-<rect x="498" y="242" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="590" y="242" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="242" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="256" text-anchor="middle" fill="#FFFFFF">1975</text>
-<rect x="774" y="242" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="818.0" y="256" text-anchor="middle" fill="#FFFFFF">2010</text>
-<rect x="866" y="242" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<circle cx="286" cy="252" r="4" fill="none" stroke="#B7791F" stroke-width="2"/>
-<text x="12" y="282" fill="#15222E" font-weight="400">Nuclear safety and safeguards</text>
-<rect x="314" y="268" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="358.0" y="282" text-anchor="middle" fill="#15222E">1979</text>
-<rect x="406" y="268" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="282" text-anchor="middle" fill="#15222E">1979</text>
-<rect x="498" y="268" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="282" text-anchor="middle" fill="#15222E">1957</text>
-<rect x="590" y="268" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="268" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="268" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="818.0" y="282" text-anchor="middle" fill="#15222E">1974</text>
-<rect x="866" y="268" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="910.0" y="282" text-anchor="middle" fill="#15222E">1970</text>
-<text x="12" y="308" fill="#15222E" font-weight="400">Automobile crash safety</text>
-<rect x="314" y="294" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="308" text-anchor="middle" fill="#15222E">1959</text>
-<rect x="406" y="294" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="450.0" y="308" text-anchor="middle" fill="#15222E">1965</text>
-<rect x="498" y="294" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="308" text-anchor="middle" fill="#15222E">1966</text>
-<rect x="590" y="294" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="634.0" y="308" text-anchor="middle" fill="#15222E">1967</text>
-<rect x="682" y="294" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="294" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="294" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="910.0" y="308" text-anchor="middle" fill="#15222E">1979</text>
-<rect x="968" y="298" width="8.4" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="980.4" y="308" fill="#5E6B76">7 y</text>
-<text x="12" y="334" fill="#15222E" font-weight="400">Food safety</text>
-<rect x="314" y="320" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="358.0" y="334" text-anchor="middle" fill="#FFFFFF">2000</text>
-<rect x="406" y="320" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="450.0" y="334" text-anchor="middle" fill="#FFFFFF">1993</text>
-<rect x="498" y="320" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="334" text-anchor="middle" fill="#15222E">1906</text>
-<rect x="590" y="320" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="320" width="88" height="20" fill="#0F766E" rx="2"/>
-<text x="726.0" y="334" text-anchor="middle" fill="#FFFFFF">2011</text>
-<rect x="774" y="320" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="320" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<text x="12" y="360" fill="#15222E" font-weight="400">Cybersecurity assurance</text>
-<rect x="314" y="346" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="406" y="346" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="360" text-anchor="middle" fill="#15222E">2013</text>
-<rect x="498" y="346" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="542.0" y="360" text-anchor="middle" fill="#15222E">2004</text>
-<rect x="590" y="346" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="634.0" y="360" text-anchor="middle" fill="#15222E">1985</text>
-<rect x="682" y="346" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="726.0" y="360" text-anchor="middle" fill="#15222E">1999</text>
-<rect x="774" y="346" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="346" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<text x="12" y="386" fill="#15222E" font-weight="400">Sustainability (ESG) reporting assurance</text>
-<rect x="314" y="372" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="386" text-anchor="middle" fill="#15222E">2003</text>
-<rect x="406" y="372" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="450.0" y="386" text-anchor="middle" fill="#15222E">2015</text>
-<rect x="498" y="372" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="542.0" y="386" text-anchor="middle" fill="#15222E">2022</text>
-<rect x="590" y="372" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="634.0" y="386" text-anchor="middle" fill="#15222E">1997</text>
-<rect x="682" y="372" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="372" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="372" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="968" y="376" width="22.8" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="994.8" y="386" fill="#5E6B76">19 y</text>
-<text x="12" y="412" fill="#15222E" font-weight="400">Dietary supplements (US)</text>
-<rect x="314" y="398" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="412" text-anchor="middle" fill="#15222E">2001</text>
-<rect x="406" y="398" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="450.0" y="412" text-anchor="middle" fill="#15222E">2003</text>
-<rect x="498" y="398" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="590" y="398" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="634.0" y="412" text-anchor="middle" fill="#15222E">2007</text>
-<rect x="682" y="398" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="398" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="398" width="88" height="20" fill="#8CC5BB" rx="2"/>
-<text x="910.0" y="412" text-anchor="middle" fill="#15222E">2006</text>
-<circle cx="298" cy="408" r="3" fill="#9B2C2C"/>
-<text x="12" y="438" fill="#15222E" font-weight="400">Crypto exchange proof of reserves</text>
-<rect x="314" y="424" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="438" text-anchor="middle" fill="#15222E">2014</text>
-<rect x="406" y="424" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="450.0" y="438" text-anchor="middle" fill="#15222E">2014</text>
-<rect x="498" y="424" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="438" text-anchor="middle" fill="#15222E">2023</text>
-<rect x="590" y="424" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="424" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="424" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="866" y="424" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="968" y="428" width="10.799999999999999" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="982.8" y="438" fill="#5E6B76">9 y</text>
-<circle cx="298" cy="434" r="3" fill="#9B2C2C"/>
-<text x="12" y="464" fill="#15222E" font-weight="400">Platform and hiring-algorithm audits</text>
-<rect x="314" y="450" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="406" y="450" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="450.0" y="464" text-anchor="middle" fill="#15222E">2018</text>
-<rect x="498" y="450" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="464" text-anchor="middle" fill="#15222E">2021</text>
-<rect x="590" y="450" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="682" y="450" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="450" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="818.0" y="464" text-anchor="middle" fill="#15222E">2023</text>
-<rect x="866" y="450" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="910.0" y="464" text-anchor="middle" fill="#15222E">2022</text>
-<rect x="8" y="472" width="1140" height="26" fill="#DCEFEA" rx="3"/>
-<text x="12" y="490" fill="#15222E" font-weight="600">Frontier AI evaluation</text>
-<rect x="314" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="358.0" y="490" text-anchor="middle" fill="#15222E">2022</text>
-<rect x="406" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="450.0" y="490" text-anchor="middle" fill="#15222E">2025</text>
-<rect x="498" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="542.0" y="490" text-anchor="middle" fill="#15222E">2026</text>
-<rect x="590" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="634.0" y="490" text-anchor="middle" fill="#15222E">2025</text>
-<rect x="682" y="476" width="88" height="20" fill="none" stroke="#D3DAD6" stroke-dasharray="3 3"/>
-<rect x="774" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="818.0" y="490" text-anchor="middle" fill="#15222E">2026</text>
-<rect x="866" y="476" width="88" height="20" fill="#DCEFEA" rx="2"/>
-<text x="910.0" y="490" text-anchor="middle" fill="#15222E">2025</text>
-<rect x="968" y="480" width="4.8" height="12" fill="#0F766E" opacity="0.7"/>
-<text x="976.8" y="490" fill="#5E6B76">4 y</text>
-<circle cx="286" cy="486" r="4" fill="none" stroke="#B7791F" stroke-width="2"/>
-<text x="12" y="530" fill="#5E6B76">Source: data/industries/ (seed, secondary sources). Generated by bench.timeline; regenerate with python -m bench build.</text>
-</svg></div>
-      <p class="lead" style="margin-top:14px">Read the row for financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. The pattern across regimes is that rules follow public failures within a few years, and the stretch before the first failure is where the shape of the regime is decided. Data and method are in the repo under <code>data/industries/</code> and <code>paper/</code>.</p>
+      <p class="lead">Every mature high-stakes industry grew a third-party assurance layer, and most of them started the way AI has: voluntary, paid by the assessed party, with the assessed party choosing scope. The ladder marks the year each regime first reached each stage. Tap a cell to see the milestone behind it and its source; tap a regime name for its full history.</p>
+      <div class="lwrap">
+        <div id="ladder" class="lgrid" role="grid" aria-label="Stage ladder"></div>
+      </div>
+      <div class="llegend">
+        <span><i class="sw s0"></i> under 10 years into the regime</span>
+        <span><i class="sw s1"></i> 10 to 50</span>
+        <span><i class="sw s2"></i> over 50</span>
+        <span><i class="sw sn"></i> not reached</span>
+        <span><i class="dot"></i> rollback</span>
+        <span><i class="ring"></i> assessed party absorbed the assessment</span>
+        <a href="timeline.svg" download>Download the static figure</a>
+      </div>
+      <div id="ldetail" class="ldetail" hidden></div>
+      <p class="lead" style="margin-top:18px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules follow public failures within a few years; the stretch before the first failure is where a regime's shape is decided. The oversight column is the one AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
     </div>
   </section>
 
@@ -669,6 +482,73 @@ function detail(e){
 function renderRubric(){ $("#rubricGrid").innerHTML = DIMS.map(d=>`<div class="rdim"><h3>${d.label}</h3><p>${d.desc}</p><ul class="anchors">${d.anchors.map((a,i)=>`<li><b>${i}</b><span>${a}</span></li>`).join("")}</ul></div>`).join(""); }
 function renderCases(){ $("#caseList").innerHTML = CASES.map(c=>`<div class="case"><div><h3>${c.t}</h3><div class="verdict">${c.v}</div></div><p>${c.p}</p></div>`).join(""); }
 renderSliders(); renderFilterChips(); renderRows(); renderRubric(); renderCases();
+
+// ---- stage ladder (interactive)
+const TIMELINE = [{"id": "financial-audit", "name": "Financial statement audit", "first": 1844, "stages": {"S1": 1880, "S2": 1938, "S3": 1844, "S4": 1939, "S5": 2002, "S6": 2002, "S7": 1934}, "reached": 7, "highest": "S7", "rollback": true, "delegation": true, "span": 170, "voluntary_to_mandate": null, "start_to_independence": 158}, {"id": "ship-classification", "name": "Ship classification", "first": 1760, "stages": {"S1": 1760, "S2": 1999, "S3": null, "S4": null, "S5": 1968, "S6": 2009, "S7": null}, "reached": 4, "highest": "S6", "rollback": false, "delegation": false, "span": 249, "voluntary_to_mandate": null, "start_to_independence": 249}, {"id": "boilers", "name": "Boilers and pressure vessels", "first": 1866, "stages": {"S1": 1866, "S2": 1905, "S3": 1908, "S4": 1914, "S5": 1919, "S6": null, "S7": null}, "reached": 5, "highest": "S5", "rollback": false, "delegation": false, "span": 53, "voluntary_to_mandate": 42, "start_to_independence": null}, {"id": "product-safety", "name": "Electrical and consumer product safety", "first": 1894, "stages": {"S1": 1894, "S2": 2007, "S3": 1972, "S4": 1903, "S5": 1988, "S6": null, "S7": null}, "reached": 5, "highest": "S5", "rollback": false, "delegation": false, "span": 114, "voluntary_to_mandate": 78, "start_to_independence": null}, {"id": "pharmaceuticals", "name": "Pharmaceutical safety and efficacy", "first": 1906, "stages": {"S1": null, "S2": 1937, "S3": 1906, "S4": 1962, "S5": 1978, "S6": 1998, "S7": 2007}, "reached": 6, "highest": "S7", "rollback": false, "delegation": true, "span": 101, "voluntary_to_mandate": null, "start_to_independence": 92}, {"id": "aviation", "name": "Aircraft certification", "first": 1926, "stages": {"S1": null, "S2": 1956, "S3": 1926, "S4": 1965, "S5": null, "S6": 2020, "S7": null}, "reached": 4, "highest": "S6", "rollback": false, "delegation": true, "span": 94, "voluntary_to_mandate": null, "start_to_independence": 94}, {"id": "credit-ratings", "name": "Credit rating agencies", "first": 1909, "stages": {"S1": 1909, "S2": 1970, "S3": null, "S4": null, "S5": 1975, "S6": 2010, "S7": null}, "reached": 4, "highest": "S6", "rollback": false, "delegation": true, "span": 101, "voluntary_to_mandate": null, "start_to_independence": 101}, {"id": "nuclear", "name": "Nuclear safety and safeguards", "first": 1957, "stages": {"S1": 1979, "S2": 1979, "S3": 1957, "S4": null, "S5": null, "S6": 1974, "S7": 1970}, "reached": 5, "highest": "S7", "rollback": false, "delegation": false, "span": 40, "voluntary_to_mandate": null, "start_to_independence": 17}, {"id": "auto-safety", "name": "Automobile crash safety", "first": 1959, "stages": {"S1": 1959, "S2": 1965, "S3": 1966, "S4": 1967, "S5": null, "S6": null, "S7": 1979}, "reached": 5, "highest": "S7", "rollback": false, "delegation": false, "span": 36, "voluntary_to_mandate": 7, "start_to_independence": null}, {"id": "food-safety", "name": "Food safety", "first": 1906, "stages": {"S1": 2000, "S2": 1993, "S3": 1906, "S4": null, "S5": 2011, "S6": null, "S7": null}, "reached": 4, "highest": "S5", "rollback": false, "delegation": false, "span": 105, "voluntary_to_mandate": null, "start_to_independence": null}, {"id": "cybersecurity-assurance", "name": "Cybersecurity assurance", "first": 1985, "stages": {"S1": null, "S2": 2013, "S3": 2004, "S4": 1985, "S5": 1999, "S6": null, "S7": null}, "reached": 4, "highest": "S5", "rollback": false, "delegation": false, "span": 28, "voluntary_to_mandate": null, "start_to_independence": null}, {"id": "sustainability-assurance", "name": "Sustainability (ESG) reporting assurance", "first": 1997, "stages": {"S1": 2003, "S2": 2015, "S3": 2022, "S4": 1997, "S5": null, "S6": null, "S7": null}, "reached": 4, "highest": "S4", "rollback": false, "delegation": false, "span": 27, "voluntary_to_mandate": 19, "start_to_independence": null}, {"id": "dietary-supplements", "name": "Dietary supplements (US)", "first": 1994, "stages": {"S1": 2001, "S2": 2003, "S3": null, "S4": 2007, "S5": null, "S6": null, "S7": 2006}, "reached": 4, "highest": "S7", "rollback": true, "delegation": false, "span": 13, "voluntary_to_mandate": null, "start_to_independence": null}, {"id": "crypto-reserves", "name": "Crypto exchange proof of reserves", "first": 2014, "stages": {"S1": 2014, "S2": 2014, "S3": 2023, "S4": null, "S5": null, "S6": null, "S7": null}, "reached": 3, "highest": "S3", "rollback": true, "delegation": false, "span": 9, "voluntary_to_mandate": 9, "start_to_independence": null}, {"id": "platform-algorithm-audits", "name": "Platform and hiring-algorithm audits", "first": 2018, "stages": {"S1": null, "S2": 2018, "S3": 2021, "S4": null, "S5": null, "S6": 2023, "S7": 2022}, "reached": 4, "highest": "S7", "rollback": false, "delegation": false, "span": 7, "voluntary_to_mandate": null, "start_to_independence": 5}, {"id": "frontier-ai", "name": "Frontier AI evaluation", "first": 2020, "stages": {"S1": 2022, "S2": 2025, "S3": 2026, "S4": 2025, "S5": null, "S6": 2026, "S7": 2025}, "reached": 6, "highest": "S7", "rollback": false, "delegation": true, "span": 6, "voluntary_to_mandate": 4, "start_to_independence": 6}];
+const INDUSTRIES = [{"id": "financial-audit", "name": "Financial statement audit", "assurers": ["Big Four accounting firms", "PCAOB (auditor of auditors)"], "payer": "Audited company pays the auditor; audit committee hires and fires (post-2002).", "access": "Full access to books, records, management, and staff under statute and professional standards.", "publication": "Auditor's opinion is public; working papers are confidential; PCAOB inspection reports partly public.", "ai_analogue": "The closest structural precedent for lab-paid evaluation. Independence was engineered by standards, inspection of auditors, rotation, and liability rather than by changing who pays.", "milestones": [{"year": 1844, "kind": "mandate", "event": "UK Joint Stock Companies Act requires audited balance sheets; auditors need not be accountants.", "source": "https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1844"}, {"year": 1856, "kind": "rollback", "event": "Mandatory audit repealed; audit becomes voluntary for most companies.", "source": "https://en.wikipedia.org/wiki/Joint_Stock_Companies_Act_1856"}, {"year": 1880, "kind": "voluntary_assurance", "event": "ICAEW chartered; audits voluntary in the UK between 1856 and 1900.", "source": "https://en.wikipedia.org/wiki/Institute_of_Chartered_Accountants_in_England_and_Wales"}, {"year": 1900, "kind": "mandate", "event": "UK Companies Act 1900 restores mandatory annual audit.", "source": "https://en.wikipedia.org/wiki/Companies_Act_1900"}, {"year": 1933, "kind": "mandate", "event": "US Securities Act and 1934 Exchange Act require independent audits for listed companies after the 1929 crash.", "source": "https://en.wikipedia.org/wiki/Securities_Act_of_1933"}, {"year": 1934, "kind": "publication_rule", "event": "Audited financial statements filed publicly with the SEC.", "source": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934"}, {"year": 1938, "kind": "trigger", "event": "McKesson & Robbins fraud: auditors had not verified inventory or receivables.", "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)"}, {"year": 1939, "kind": "standards", "event": "First Statements on Auditing Procedure: physical inventory observation and receivables confirmation become required.", "source": "https://en.wikipedia.org/wiki/McKesson_%26_Robbins_scandal_(1938)"}, {"year": 1990, "kind": "delegation", "event": "Audit firms' consulting revenue from audit clients overtakes audit fees at large firms.", "source": "https://en.wikipedia.org/wiki/Arthur_Andersen"}, {"year": 2001, "kind": "trigger", "event": "Enron collapse; Arthur Andersen had provided audit and consulting services to the same client.", "source": "https://en.wikipedia.org/wiki/Enron_scandal"}, {"year": 2002, "kind": "accreditation", "event": "PCAOB registers and inspects audit firms.", "source": "https://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board"}, {"year": 2002, "kind": "independence_rule", "event": "Sarbanes-Oxley: PCAOB created to inspect auditors; audit and most consulting separated; lead partner rotation every five years; audit committee independence.", "source": "https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act"}, {"year": 2014, "kind": "independence_rule", "event": "EU audit reform: mandatory firm rotation and a cap on non-audit fees for public-interest entities.", "source": "https://en.wikipedia.org/wiki/Audit_Regulation_(EU)"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "ship-classification", "name": "Ship classification", "assurers": ["Lloyd's Register", "DNV", "ABS", "IACS members"], "payer": "Shipowner pays the classification society.", "access": "Surveyors attend construction and periodic surveys.", "publication": "Class status public; survey reports confidential.", "ai_analogue": "An owner-paid assurance regime that has survived for 260 years through mutual recognition, transfer-of-class rules, and flag-state delegation, with repeated crises from class shopping.", "milestones": [{"year": 1760, "kind": "voluntary_assurance", "event": "Lloyd's Register begins as an underwriters' register of ship condition.", "source": "https://en.wikipedia.org/wiki/Lloyd%27s_Register"}, {"year": 1968, "kind": "accreditation", "event": "IACS founded to harmonize class societies.", "source": "https://en.wikipedia.org/wiki/International_Association_of_Classification_Societies"}, {"year": 1999, "kind": "trigger", "event": "Erika sinks after changing class; 2002 Prestige sinks.", "source": "https://en.wikipedia.org/wiki/MV_Erika"}, {"year": 2009, "kind": "independence_rule", "event": "EU Regulation 391/2009 sets recognition and independence rules for classification societies acting for flag states.", "source": "https://en.wikipedia.org/wiki/Classification_society"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "boilers", "name": "Boilers and pressure vessels", "assurers": ["National Board commissioned inspectors", "insurer inspection departments", "ASME"], "payer": "Insurer employs the inspector; owner pays the insurer.", "access": "On-site inspection during fabrication and in service.", "publication": "Stamps and certificates public; inspection reports to insurer and jurisdiction.", "ai_analogue": "The one regime that removed the owner-pays conflict by routing inspection through insurers with skin in the game. The current AI insurance-backed certification proposals are this model.", "milestones": [{"year": 1866, "kind": "voluntary_assurance", "event": "Hartford Steam Boiler founded: insurance conditioned on inspection.", "source": "https://en.wikipedia.org/wiki/Hartford_Steam_Boiler_Inspection_and_Insurance_Company"}, {"year": 1905, "kind": "trigger", "event": "Grover Shoe Factory boiler explosion kills 58.", "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"}, {"year": 1908, "kind": "mandate", "event": "Massachusetts enacts the first state boiler law.", "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"}, {"year": 1914, "kind": "standards", "event": "First ASME Boiler Code published.", "source": "https://en.wikipedia.org/wiki/ASME_Boiler_and_Pressure_Vessel_Code"}, {"year": 1919, "kind": "accreditation", "event": "National Board of Boiler and Pressure Vessel Inspectors commissions inspectors across jurisdictions.", "source": "https://en.wikipedia.org/wiki/National_Board_of_Boiler_and_Pressure_Vessel_Inspectors"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "product-safety", "name": "Electrical and consumer product safety", "assurers": ["UL", "Intertek", "CSA", "OSHA NRTLs", "CPSC-accepted labs"], "payer": "Manufacturer pays the testing lab.", "access": "Samples submitted by the manufacturer; factory follow-up inspections.", "publication": "Mark on product; test reports confidential; listings public.", "ai_analogue": "Private manufacturer-paid certification ran for roughly ninety years before government accredited the certifiers; a 2007 incident wave made third-party testing mandatory for one product class.", "milestones": [{"year": 1894, "kind": "voluntary_assurance", "event": "Underwriters Laboratories founded after electrical fires at the 1893 Chicago World's Fair; insurer-linked at origin.", "source": "https://en.wikipedia.org/wiki/UL_(safety_organization)"}, {"year": 1903, "kind": "standards", "event": "UL publishes its first standard (tin-clad fire doors).", "source": "https://en.wikipedia.org/wiki/UL_(safety_organization)"}, {"year": 1972, "kind": "mandate", "event": "Consumer Product Safety Act creates the CPSC.", "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Act"}, {"year": 1988, "kind": "accreditation", "event": "OSHA Nationally Recognized Testing Laboratory program accredits third-party labs, ending single-lab dominance.", "source": "https://www.osha.gov/nationally-recognized-testing-laboratory-program"}, {"year": 2007, "kind": "trigger", "event": "Lead-paint toy recalls.", "source": "https://en.wikipedia.org/wiki/2007_Chinese_export_recalls"}, {"year": 2008, "kind": "mandate", "event": "CPSIA requires third-party testing of children's products by CPSC-accepted laboratories.", "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Improvement_Act"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "pharmaceuticals", "name": "Pharmaceutical safety and efficacy", "assurers": ["FDA", "EMA", "contract research organizations", "GLP-inspected testing labs"], "payer": "Sponsor funds trials and, since 1992, pays user fees for review.", "access": "Regulator receives full trial data; inspects sites and labs.", "publication": "Approval decisions and labels public; trial registration and results reporting mandated since 2007.", "ai_analogue": "The Industrial Bio-Test fraud is the direct precedent for regulating the testing labs themselves; Good Laboratory Practice was the response. Trial registration is the precedent for evaluation registries.", "milestones": [{"year": 1906, "kind": "mandate", "event": "Pure Food and Drug Act: labeling and adulteration rules.", "source": "https://en.wikipedia.org/wiki/Pure_Food_and_Drug_Act"}, {"year": 1937, "kind": "trigger", "event": "Elixir sulfanilamide kills more than 100 people.", "source": "https://en.wikipedia.org/wiki/Elixir_sulfanilamide"}, {"year": 1938, "kind": "mandate", "event": "Federal Food, Drug, and Cosmetic Act: pre-market safety review.", "source": "https://en.wikipedia.org/wiki/Federal_Food,_Drug,_and_Cosmetic_Act"}, {"year": 1961, "kind": "trigger", "event": "Thalidomide birth defects.", "source": "https://en.wikipedia.org/wiki/Thalidomide_scandal"}, {"year": 1962, "kind": "delegation", "event": "Sponsors design and run the efficacy trials the regulator reviews; contract research organizations grow from the 1970s.", "source": "https://en.wikipedia.org/wiki/Contract_research_organization"}, {"year": 1962, "kind": "mandate", "event": "Kefauver-Harris Amendment: proof of efficacy, controlled trials, informed consent.", "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment"}, {"year": 1962, "kind": "standards", "event": "Adequate and well-controlled trials required as the evidentiary standard.", "source": "https://en.wikipedia.org/wiki/Kefauver%E2%80%93Harris_Amendment"}, {"year": 1976, "kind": "trigger", "event": "Industrial Bio-Test Laboratories found to have falsified safety studies for hundreds of products.", "source": "https://en.wikipedia.org/wiki/Industrial_Bio-Test_Laboratories"}, {"year": 1978, "kind": "accreditation", "event": "Good Laboratory Practice regulations govern the conduct and inspection of nonclinical testing labs.", "source": "https://en.wikipedia.org/wiki/Good_laboratory_practice"}, {"year": 1992, "kind": "payer_shift", "event": "PDUFA: sponsors pay user fees that fund FDA review (payment moves toward the assessed party).", "source": "https://en.wikipedia.org/wiki/Prescription_Drug_User_Fee_Act"}, {"year": 1998, "kind": "independence_rule", "event": "FDA rule on financial disclosure by clinical investigators (21 CFR Part 54).", "source": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-54"}, {"year": 2007, "kind": "publication_rule", "event": "FDAAA mandates trial registration and results reporting on ClinicalTrials.gov.", "source": "https://en.wikipedia.org/wiki/Food_and_Drug_Administration_Amendments_Act_of_2007"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "aviation", "name": "Aircraft certification", "assurers": ["FAA", "EASA", "designated engineering representatives", "Organization Designation Authorization units"], "payer": "Manufacturer pays for certification work, much of it delegated to its own employees.", "access": "Regulator has statutory access; delegation reduces what it inspects directly.", "publication": "Type certificates public; findings largely internal.", "ai_analogue": "Delegation of certification to the regulated firm's own staff (ODA) is the closest analogue to labs running their own safety cases. The 737 MAX reforms show delegation can be reclaimed.", "milestones": [{"year": 1926, "kind": "mandate", "event": "Air Commerce Act: federal certification of aircraft and pilots.", "source": "https://en.wikipedia.org/wiki/Air_Commerce_Act"}, {"year": 1956, "kind": "trigger", "event": "Grand Canyon mid-air collision.", "source": "https://en.wikipedia.org/wiki/1956_Grand_Canyon_mid-air_collision"}, {"year": 1958, "kind": "mandate", "event": "Federal Aviation Act creates the FAA.", "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Act_of_1958"}, {"year": 1965, "kind": "standards", "event": "Federal Aviation Regulations codified.", "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Regulations"}, {"year": 2005, "kind": "delegation", "event": "Organization Designation Authorization lets manufacturers' employees perform certification work.", "source": "https://en.wikipedia.org/wiki/Organization_Designation_Authorization"}, {"year": 2018, "kind": "trigger", "event": "Boeing 737 MAX crashes (2018, 2019).", "source": "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"}, {"year": 2020, "kind": "delegation_reform", "event": "Aircraft Certification, Safety, and Accountability Act: FAA approval of ODA unit members, expanded whistleblower protection, limits on delegation.", "source": "https://en.wikipedia.org/wiki/Aircraft_Certification,_Safety,_and_Accountability_Act"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "credit-ratings", "name": "Credit rating agencies", "assurers": ["Moody's", "S&P", "Fitch"], "payer": "Issuer pays since the 1970s; investor-pays subscription model before that.", "access": "Non-public issuer information under confidentiality (Regulation FD exemption).", "publication": "Ratings public; methodologies disclosed by regulation after 2010.", "ai_analogue": "A payer-conflicted assurance market that regulators chose to license and supervise rather than restructure. Outcomes in 2008 show the limits of disclosure and licensing without liability or competition.", "milestones": [{"year": 1909, "kind": "voluntary_assurance", "event": "Moody's publishes the first bond ratings, sold to investors by subscription.", "source": "https://en.wikipedia.org/wiki/Moody%27s_Ratings"}, {"year": 1970, "kind": "trigger", "event": "Penn Central default; agencies begin charging issuers rather than investors.", "source": "https://en.wikipedia.org/wiki/Penn_Central_Transportation_Company"}, {"year": 1970, "kind": "delegation", "event": "Issuer-pays model makes the rated party the client.", "source": "https://en.wikipedia.org/wiki/Credit_rating_agency"}, {"year": 1975, "kind": "accreditation", "event": "SEC creates the NRSRO designation, embedding ratings in regulation.", "source": "https://en.wikipedia.org/wiki/Nationally_recognized_statistical_rating_organization"}, {"year": 2006, "kind": "accreditation", "event": "Credit Rating Agency Reform Act formalizes NRSRO registration and SEC oversight.", "source": "https://en.wikipedia.org/wiki/Credit_Rating_Agency_Reform_Act_of_2006"}, {"year": 2008, "kind": "trigger", "event": "Structured-finance ratings fail in the financial crisis.", "source": "https://en.wikipedia.org/wiki/Credit_rating_agencies_and_the_subprime_crisis"}, {"year": 2010, "kind": "independence_rule", "event": "Dodd-Frank Title IX: SEC Office of Credit Ratings, methodology disclosure, analyst separation from sales, expanded liability exposure.", "source": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "nuclear", "name": "Nuclear safety and safeguards", "assurers": ["IAEA", "NRC", "INPO", "WANO"], "payer": "Operators fund INPO; states fund IAEA and national regulators.", "access": "IAEA inspections by state consent; Additional Protocol expands access; INPO peer reviews on site.", "publication": "INPO reports confidential to the operator and insurers; NRC findings public; IAEA reports to member states.", "ai_analogue": "Two precedents: separating promotion from regulation (AEC split in 1974), and industry-funded confidential peer review that works because insurance and a public regulator sit behind it.", "milestones": [{"year": 1957, "kind": "mandate", "event": "IAEA established.", "source": "https://en.wikipedia.org/wiki/International_Atomic_Energy_Agency"}, {"year": 1970, "kind": "access_expansion", "event": "NPT safeguards agreements give the IAEA inspection rights in signatory states.", "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"}, {"year": 1974, "kind": "independence_rule", "event": "Energy Reorganization Act splits the AEC into the NRC (regulation) and ERDA (promotion).", "source": "https://en.wikipedia.org/wiki/Energy_Reorganization_Act_of_1974"}, {"year": 1979, "kind": "trigger", "event": "Three Mile Island accident.", "source": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"}, {"year": 1979, "kind": "voluntary_assurance", "event": "INPO founded: industry-funded peer evaluations with confidential reports tied to insurance.", "source": "https://en.wikipedia.org/wiki/Institute_of_Nuclear_Power_Operations"}, {"year": 1991, "kind": "trigger", "event": "Iraq's undeclared program discovered after the Gulf War.", "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"}, {"year": 1997, "kind": "access_expansion", "event": "Additional Protocol expands IAEA access to undeclared sites and information.", "source": "https://en.wikipedia.org/wiki/Additional_Protocol"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "auto-safety", "name": "Automobile crash safety", "assurers": ["NHTSA", "IIHS", "Euro NCAP"], "payer": "Insurers fund IIHS; government funds NCAP; manufacturers do not pay for ratings.", "access": "Independent purchase and testing of production vehicles.", "publication": "Ratings fully public.", "ai_analogue": "Insurer-funded, publicly rated, adversarial-to-the-manufacturer testing changed design without a mandate. The public-ratings model has no AI equivalent yet.", "milestones": [{"year": 1959, "kind": "voluntary_assurance", "event": "Insurance Institute for Highway Safety founded by insurers.", "source": "https://en.wikipedia.org/wiki/Insurance_Institute_for_Highway_Safety"}, {"year": 1965, "kind": "trigger", "event": "Unsafe at Any Speed and congressional hearings on auto safety.", "source": "https://en.wikipedia.org/wiki/Unsafe_at_Any_Speed"}, {"year": 1966, "kind": "mandate", "event": "National Traffic and Motor Vehicle Safety Act; NHTSA formed 1970.", "source": "https://en.wikipedia.org/wiki/National_Traffic_and_Motor_Vehicle_Safety_Act"}, {"year": 1967, "kind": "standards", "event": "First Federal Motor Vehicle Safety Standards.", "source": "https://en.wikipedia.org/wiki/Federal_Motor_Vehicle_Safety_Standards"}, {"year": 1979, "kind": "publication_rule", "event": "NCAP publishes comparative crash ratings.", "source": "https://en.wikipedia.org/wiki/New_Car_Assessment_Program"}, {"year": 1995, "kind": "publication_rule", "event": "IIHS begins publishing its own crash test ratings.", "source": "https://en.wikipedia.org/wiki/Insurance_Institute_for_Highway_Safety"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "food-safety", "name": "Food safety", "assurers": ["USDA FSIS", "FDA", "GFSI-benchmarked certification bodies", "FDA-accredited third-party certifiers"], "payer": "Producer pays private certifiers; government inspection publicly funded.", "access": "Plant inspection; records; sampling.", "publication": "Inspection results partly public; private audit reports confidential.", "ai_analogue": "Private benchmarked certification schemes plus government accreditation of the certifiers; melamine showed private audits can miss deliberate adulteration.", "milestones": [{"year": 1906, "kind": "mandate", "event": "Federal Meat Inspection Act.", "source": "https://en.wikipedia.org/wiki/Federal_Meat_Inspection_Act"}, {"year": 1993, "kind": "trigger", "event": "Jack in the Box E. coli outbreak.", "source": "https://en.wikipedia.org/wiki/1993_Jack_in_the_Box_E._coli_outbreak"}, {"year": 1996, "kind": "mandate", "event": "HACCP rule for meat and poultry.", "source": "https://en.wikipedia.org/wiki/Hazard_analysis_and_critical_control_points"}, {"year": 2000, "kind": "voluntary_assurance", "event": "Global Food Safety Initiative benchmarks private certification schemes.", "source": "https://en.wikipedia.org/wiki/Global_Food_Safety_Initiative"}, {"year": 2008, "kind": "trigger", "event": "Melamine adulteration in China.", "source": "https://en.wikipedia.org/wiki/2008_Chinese_milk_scandal"}, {"year": 2011, "kind": "accreditation", "event": "FSMA authorizes FDA accreditation of third-party certification bodies.", "source": "https://en.wikipedia.org/wiki/FDA_Food_Safety_Modernization_Act"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "cybersecurity-assurance", "name": "Cybersecurity assurance", "assurers": ["Common Criteria labs", "3PAOs (FedRAMP)", "QSAs (PCI)", "SOC 2 auditors", "bug bounty platforms"], "payer": "Vendor or merchant pays the accredited assessor.", "access": "Documentation, source review, and testing environments per scheme.", "publication": "Certificates public; reports confidential; bug bounty disclosures partly public.", "ai_analogue": "The most direct technical analogue: accredited vendor-paid labs, repeated criticism of checkbox compliance, and crowdsourced adversarial testing that pays per finding.", "milestones": [{"year": 1985, "kind": "standards", "event": "TCSEC (Orange Book): government evaluation of trusted systems.", "source": "https://en.wikipedia.org/wiki/Trusted_Computer_System_Evaluation_Criteria"}, {"year": 1999, "kind": "accreditation", "event": "Common Criteria (ISO/IEC 15408) with accredited commercial evaluation labs.", "source": "https://en.wikipedia.org/wiki/Common_Criteria"}, {"year": 2004, "kind": "mandate", "event": "PCI DSS: card networks require assessments by Qualified Security Assessors.", "source": "https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard"}, {"year": 2011, "kind": "accreditation", "event": "FedRAMP accredits third-party assessment organizations for cloud services.", "source": "https://en.wikipedia.org/wiki/FedRAMP"}, {"year": 2013, "kind": "trigger", "event": "Target breach at a PCI-compliant merchant.", "source": "https://en.wikipedia.org/wiki/Target_Corporation#2013_data_breach"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}, {"id": "sustainability-assurance", "name": "Sustainability (ESG) reporting assurance", "assurers": ["Big Four", "specialist assurance providers"], "payer": "Reporting company pays the assurance provider.", "access": "Company records and management representations.", "publication": "Assurance statement published with the report; usually limited assurance.", "ai_analogue": "Two decades of voluntary, company-paid, limited assurance before a mandate; independence rules borrowed wholesale from financial audit rather than designed for the domain.", "milestones": [{"year": 1997, "kind": "standards", "event": "Global Reporting Initiative founded; voluntary reporting framework.", "source": "https://en.wikipedia.org/wiki/Global_Reporting_Initiative"}, {"year": 2003, "kind": "voluntary_assurance", "event": "AA1000 Assurance Standard published; voluntary third-party assurance spreads.", "source": "https://en.wikipedia.org/wiki/AccountAbility"}, {"year": 2015, "kind": "trigger", "event": "Volkswagen emissions scandal undermines self-reported environmental claims.", "source": "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal"}, {"year": 2022, "kind": "mandate", "event": "EU Corporate Sustainability Reporting Directive requires limited assurance, phasing in from 2024.", "source": "https://en.wikipedia.org/wiki/Corporate_Sustainability_Reporting_Directive"}, {"year": 2024, "kind": "standards", "event": "ISSA 5000 assurance standard issued.", "source": "https://en.wikipedia.org/wiki/International_Auditing_and_Assurance_Standards_Board"}], "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"}, {"id": "dietary-supplements", "name": "Dietary supplements (US)", "assurers": ["USP Verified", "NSF", "FDA cGMP inspection"], "payer": "Manufacturer pays private verifiers; verification is voluntary.", "access": "Voluntary submission of samples and facility audits.", "publication": "Verification marks public; adverse event reports to FDA.", "ai_analogue": "A regime that moved backward: pre-market review removed by statute, private verification never made mandatory, no oversight of the verifiers. Shows that a trigger does not guarantee reform.", "milestones": [{"year": 1994, "kind": "rollback", "event": "DSHEA removes pre-market approval for supplements.", "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994"}, {"year": 2001, "kind": "voluntary_assurance", "event": "USP launches a voluntary supplement verification program.", "source": "https://en.wikipedia.org/wiki/United_States_Pharmacopeia"}, {"year": 2003, "kind": "trigger", "event": "Ephedra-linked deaths, including a professional athlete.", "source": "https://en.wikipedia.org/wiki/Ephedra"}, {"year": 2006, "kind": "publication_rule", "event": "Dietary Supplement and Nonprescription Drug Consumer Protection Act requires serious adverse event reporting.", "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_and_Nonprescription_Drug_Consumer_Protection_Act"}, {"year": 2007, "kind": "standards", "event": "FDA current good manufacturing practice rule for supplements.", "source": "https://en.wikipedia.org/wiki/Dietary_Supplement_Health_and_Education_Act_of_1994"}], "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"}, {"id": "crypto-reserves", "name": "Crypto exchange proof of reserves", "assurers": ["accounting firms (attestations)", "self-published cryptographic proofs"], "payer": "Exchange pays the attesting firm.", "access": "Snapshot of on-chain holdings and liability data supplied by the exchange.", "publication": "Attestation letters published by the exchange.", "ai_analogue": "Voluntary assurance that collapsed after a failure: the attesting firms withdrew rather than deepen access. A live example of assurance retreating when the assessed party controls scope and data.", "milestones": [{"year": 2014, "kind": "trigger", "event": "Mt. Gox collapse.", "source": "https://en.wikipedia.org/wiki/Mt._Gox"}, {"year": 2014, "kind": "voluntary_assurance", "event": "Exchanges begin publishing proof-of-reserve attestations.", "source": "https://en.wikipedia.org/wiki/Proof_of_reserves"}, {"year": 2022, "kind": "trigger", "event": "FTX collapse; a prior attestation had not covered liabilities.", "source": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"}, {"year": 2022, "kind": "rollback", "event": "Accounting firms pause or withdraw proof-of-reserves work for crypto clients.", "source": "https://en.wikipedia.org/wiki/Proof_of_reserves"}, {"year": 2023, "kind": "mandate", "event": "EU MiCA imposes safeguarding and reporting duties on crypto-asset service providers, applying from 2024.", "source": "https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets"}], "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"}, {"id": "platform-algorithm-audits", "name": "Platform and hiring-algorithm audits", "assurers": ["DSA independent auditors", "NYC Local Law 144 bias auditors"], "payer": "Platform or employer pays the auditor.", "access": "DSA: access to data and premises; LL144: employer-supplied data.", "publication": "DSA audit reports published in redacted form; LL144 summaries public.", "ai_analogue": "The nearest cousin: AI-system audits with statutory independence rules written at the start (no non-audit services in the prior year, rotation) rather than after a scandal.", "milestones": [{"year": 2018, "kind": "trigger", "event": "Cambridge Analytica revelations.", "source": "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal"}, {"year": 2021, "kind": "mandate", "event": "NYC Local Law 144 requires bias audits of automated employment decision tools (effective 2023).", "source": "https://en.wikipedia.org/wiki/Local_Law_144"}, {"year": 2022, "kind": "access_expansion", "event": "DSA Article 40 grants vetted researchers data access to very large platforms.", "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"}, {"year": 2022, "kind": "mandate", "event": "EU Digital Services Act Article 37 requires annual independent audits of very large platforms.", "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"}, {"year": 2023, "kind": "independence_rule", "event": "DSA delegated regulation on audits: auditor independence, limits on prior non-audit services, rotation.", "source": "https://en.wikipedia.org/wiki/Digital_Services_Act"}, {"year": 2025, "kind": "trigger", "event": "Published analysis of 116 LL144 bias audits finds shallow and inconsistent audits.", "source": "https://dl.acm.org/doi/10.1145/3715275.3732004"}], "status": "seed; secondary sources, years spot-checked; verify against a primary source before citing in the paper"}, {"id": "frontier-ai", "name": "Frontier AI evaluation", "assurers": ["METR", "Apollo", "SecureBio", "UK AISI", "US CAISI", "EU AI Office"], "payer": "Mixed: philanthropy, lab fees, government budgets. No accreditation.", "access": "Voluntary pre-release API access, occasionally deeper; embedded access pledged September 2026.", "publication": "System-card citations; some independent reports; redaction negotiated per engagement.", "ai_analogue": "Subject of the study.", "milestones": [{"year": 2020, "kind": "proposal", "event": "Toward Trustworthy AI Development calls for third-party auditing and red teaming.", "source": "https://arxiv.org/abs/2004.07213"}, {"year": 2022, "kind": "voluntary_assurance", "event": "ARC Evals (later METR) tests GPT-4 pre-release; reported in the 2023 system card.", "source": "https://metr.org/about"}, {"year": 2023, "kind": "delegation", "event": "Labs run their own safety evaluations and select, scope, and pay the external testers cited in system cards.", "source": "https://arxiv.org/abs/2601.11699"}, {"year": 2023, "kind": "voluntary_assurance", "event": "White House voluntary commitments; UK AI Safety Institute founded.", "source": "https://en.wikipedia.org/wiki/AI_Safety_Institute_(United_Kingdom)"}, {"year": 2024, "kind": "voluntary_assurance", "event": "US AISI signs pre-deployment MOUs with OpenAI and Anthropic.", "source": "https://www.nist.gov/caisi"}, {"year": 2025, "kind": "access_expansion", "event": "EU Code of Practice: at least 20 business days and minimally guardrailed versions for external evaluators (enforceable 2026).", "source": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/"}, {"year": 2025, "kind": "standards", "event": "EU GPAI Code of Practice signed; AEF-1 published in December.", "source": "https://aievaluatorforum.org/"}, {"year": 2025, "kind": "trigger", "event": "FrontierMath funding disclosure failure.", "source": "https://epoch.ai/latest/openai-and-frontiermath"}, {"year": 2026, "kind": "access_expansion", "event": "Anthropic and OpenAI pledge embedded evaluators with employee-level access and publication rights.", "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"}, {"year": 2026, "kind": "independence_rule", "event": "Illinois SB 315: auditor and developer may not hold a financial interest in each other (audits from 2028).", "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"}, {"year": 2026, "kind": "mandate", "event": "Illinois SB 315 mandates annual independent audits from 2028; EU Code enforceable in August.", "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"}, {"year": 2026, "kind": "trigger", "event": "OpenAI agent swarm breaches Hugging Face; first on-site third-party incident investigation.", "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"}], "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"}];
+const STAGEMETA = {"stages": [{"code": "S1", "label": "Voluntary", "kinds": ["voluntary_assurance"], "desc": "First third-party assurance appears, usually paid by the assessed party or its insurers and adopted voluntarily."}, {"code": "S2", "label": "Trigger", "kinds": ["trigger"], "desc": "A public failure that people attribute to a gap in assurance."}, {"code": "S3", "label": "Mandate", "kinds": ["mandate"], "desc": "Assurance becomes required by statute, regulation, or a dominant private rule (card networks, exchanges)."}, {"code": "S4", "label": "Standards", "kinds": ["standards"], "desc": "Codified methods for how the assurance is done."}, {"code": "S5", "label": "Oversight", "kinds": ["accreditation"], "desc": "Someone watches the assessors: a registry, accreditation, or inspection of the assurance providers themselves."}, {"code": "S6", "label": "Independence", "kinds": ["delegation_reform", "independence_rule", "payer_reform"], "desc": "Rules aimed at the assessor's independence from the assessed party: financial interest, rotation, separation from consulting, reclaimed delegation."}, {"code": "S7", "label": "Access", "kinds": ["access_expansion", "publication_rule"], "desc": "Rules on what the assessor can see and what the public gets to read."}], "other": {"delegation": "The assessed party absorbed part of the assessment function.", "payer_shift": "Payment moved toward the assessed party.", "rollback": "A previously required assurance step was removed or withdrawn."}};
+(function ladder(){
+  if(!TIMELINE || !INDUSTRIES || !STAGEMETA) return;
+  const byId = Object.fromEntries(INDUSTRIES.map(o=>[o.id,o]));
+  const stages = STAGEMETA.stages; const other = STAGEMETA.other;
+  const grid = $("#ladder"); const detail = $("#ldetail");
+  let tip = null; let pressed = null;
+  const shade = (yr, first) => { const g = yr - first; return g < 10 ? "s0" : (g <= 50 ? "s1" : "s2"); };
+  const kindLabel = k => k.replace(/_/g," ");
+  function milestonesFor(reg, code){ const st = stages.find(s=>s.code===code); return reg.milestones.filter(m=>st.kinds.includes(m.kind)).sort((a,b)=>a.year-b.year); }
+  function showTip(el, html){ hideTip(); tip = document.createElement("div"); tip.className="ltip"; tip.innerHTML=html; document.body.appendChild(tip);
+    const r = el.getBoundingClientRect(); let x = r.left, y = r.bottom + 6; if(x + 330 > window.innerWidth) x = Math.max(8, window.innerWidth - 330); tip.style.left = x+"px"; tip.style.top = y+"px"; }
+  function hideTip(){ if(tip){ tip.remove(); tip=null; } }
+  function press(btn){ if(pressed) pressed.setAttribute("aria-pressed","false"); pressed = btn; if(btn) btn.setAttribute("aria-pressed","true"); }
+  function openCell(reg, row, code, btn){
+    press(btn); const st = stages.find(s=>s.code===code); const ms = milestonesFor(reg, code); const yr = row.stages[code];
+    const items = ms.length ? ms.map(m=>`<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(kindLabel(m.kind))}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`).join("")
+      : `<li>No milestone of this kind is recorded for this regime. If one exists, add it in <a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a>.</li>`;
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}: ${esc(st.label)}${yr?", "+yr:""}</h3>
+      <div class="sub">${esc(st.desc)}${yr?` This regime reached it ${yr - row.first} years after its first recorded milestone (${row.first}).`:""}</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function openRegime(reg, row, btn){
+    press(btn); const ms = [...reg.milestones].sort((a,b)=>a.year-b.year||a.kind.localeCompare(b.kind));
+    const items = ms.map(m=>{ const st = stages.find(s=>s.kinds.includes(m.kind)); const tag = st ? st.label : (other[m.kind] ? kindLabel(m.kind) : kindLabel(m.kind));
+      return `<li><b>${m.year}</b>${esc(m.event)}<span class="kind">${esc(tag)}</span><a href="${esc(m.source)}" target="_blank" rel="noopener">${esc(m.source)}</a></li>`; }).join("");
+    detail.innerHTML = `<button class="close" aria-label="Close">Close</button><h3>${esc(reg.name)}</h3>
+      <div class="sub">${esc(reg.ai_analogue)} Stages reached: ${row.reached} of 7${row.rollback?"; includes a rollback":""}${row.delegation?"; the assessed party absorbed the assessment function at some point":""}.</div>
+      <ul>${items}</ul>${context(reg)}`;
+    show();
+  }
+  function context(reg){ return `<div class="ctx"><div><b>Who pays</b>${esc(reg.payer)}</div><div><b>Access</b>${esc(reg.access)}</div><div><b>Publication</b>${esc(reg.publication)}</div><div><b>Data file</b><a href="${REPO}data/industries/${reg.id}.json">data/industries/${reg.id}.json</a> (${esc(reg.status||"")})</div></div>`; }
+  function show(){ detail.hidden = false; detail.querySelector(".close").addEventListener("click",()=>{ detail.hidden = true; press(null); }); if(detail.scrollIntoView) detail.scrollIntoView({block:"nearest"}); }
+  // header
+  const head = document.createElement("div"); head.className="lrow lhead";
+  head.innerHTML = `<div class="lname">Regime</div>` + stages.map(s=>`<div class="lcell" data-code="${s.code}">${s.label}</div>`).join("") + `<div class="lbar">Voluntary to mandate</div>`;
+  grid.appendChild(head);
+  head.querySelectorAll(".lcell").forEach(h=>{ const s = stages.find(x=>x.code===h.dataset.code); h.addEventListener("mouseenter",()=>showTip(h, `<b>${esc(s.label)}.</b> ${esc(s.desc)}<br><span style="opacity:.75">Milestone kinds: ${s.kinds.map(kindLabel).join(", ")}</span>`)); h.addEventListener("mouseleave",hideTip); });
+  // rows
+  for(const row of TIMELINE){
+    const reg = byId[row.id]; if(!reg) continue;
+    const r = document.createElement("div"); r.className = "lrow" + (row.id==="frontier-ai" ? " ai" : "");
+    const marks = (row.delegation?`<i class="ring" title="assessed party absorbed the assessment"></i>`:"") + (row.rollback?`<i class="dot" title="rollback"></i>`:"");
+    let html = `<div class="lname"><button type="button" aria-pressed="false"><span>${esc(reg.name)}</span><span class="marks">${marks}</span></button></div>`;
+    for(const s of stages){
+      const yr = row.stages[s.code];
+      html += `<div class="lcell"><button type="button" class="${yr?shade(yr,row.first):"sn"}" data-code="${s.code}" aria-pressed="false" aria-label="${esc(reg.name)}, ${esc(s.label)}${yr?", "+yr:", not reached"}">${yr||"\u00b7"}</button></div>`;
+    }
+    const vm = row.voluntary_to_mandate;
+    html += `<div class="lbar">${vm!=null?`<i style="width:${Math.max(3,Math.min(90,vm*1.1))}px"></i>${vm} y`:""}</div>`;
+    r.innerHTML = html; grid.appendChild(r);
+    r.querySelector(".lname button").addEventListener("click", ev=>openRegime(reg,row,ev.currentTarget));
+    r.querySelectorAll(".lcell button").forEach(b=>{
+      const code = b.dataset.code; const ms = milestonesFor(reg, code);
+      b.addEventListener("click", ()=>openCell(reg,row,code,b));
+      b.addEventListener("mouseenter", ()=>{ const s = stages.find(x=>x.code===code); const first = ms[0];
+        showTip(b, first ? `<b>${esc(reg.name)}, ${esc(s.label)} ${first.year}.</b> ${esc(first.event)}${ms.length>1?` <span style="opacity:.75">(+${ms.length-1} more)</span>`:""}` : `<b>${esc(reg.name)}, ${esc(s.label)}.</b> Not reached in the dataset.`); });
+      b.addEventListener("mouseleave", hideTip);
+    });
+  }
+  window.addEventListener("scroll", hideTip, {passive:true});
+})();
 </script>
 </body>
 </html>

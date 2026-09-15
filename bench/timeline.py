@@ -27,6 +27,23 @@ STAGES = [
     ("S6", "Independence", {"independence_rule", "delegation_reform", "payer_reform"}),
     ("S7", "Access", {"access_expansion", "publication_rule"}),
 ]
+STAGE_DESC = {
+    "S1": "First third-party assurance appears, usually paid by the assessed party or its insurers and adopted voluntarily.",
+    "S2": "A public failure that people attribute to a gap in assurance.",
+    "S3": "Assurance becomes required by statute, regulation, or a dominant private rule (card networks, exchanges).",
+    "S4": "Codified methods for how the assurance is done.",
+    "S5": "Someone watches the assessors: a registry, accreditation, or inspection of the assurance providers themselves.",
+    "S6": "Rules aimed at the assessor's independence from the assessed party: financial interest, rotation, separation from consulting, reclaimed delegation.",
+    "S7": "Rules on what the assessor can see and what the public gets to read.",
+}
+NON_STAGE_KINDS = {
+    "delegation": "The assessed party absorbed part of the assessment function.",
+    "payer_shift": "Payment moved toward the assessed party.",
+    "rollback": "A previously required assurance step was removed or withdrawn.",
+}
+
+def stages_meta() -> list[dict]:
+    return [dict(code=c, label=l, kinds=sorted(k), desc=STAGE_DESC[c]) for c, l, k in STAGES]
 ORDER = ["financial-audit","ship-classification","boilers","product-safety","pharmaceuticals","aviation","credit-ratings",
          "nuclear","auto-safety","food-safety","cybersecurity-assurance","sustainability-assurance","dietary-supplements",
          "crypto-reserves","platform-algorithm-audits","frontier-ai"]

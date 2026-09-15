@@ -133,6 +133,11 @@ def _write_site(bench: dict, timeline_rows: list | None = None) -> None:
     svg_path = DIST / "timeline.svg"
     html = html.replace("<!--__TIMELINE_SVG__-->", svg_path.read_text() if svg_path.exists() else "")
     html = html.replace("/*__TIMELINE_JSON__*/null", json.dumps(timeline_rows or [], ensure_ascii=False))
+    from .timeline import stages_meta, NON_STAGE_KINDS, ORDER
+    inds = {p.stem: json.loads(p.read_text()) for p in (ROOT / "data" / "industries").glob("*.json")}
+    ordered = [inds[k] for k in ORDER if k in inds] + [inds[k] for k in sorted(set(inds) - set(ORDER))]
+    html = html.replace("/*__INDUSTRIES_JSON__*/null", json.dumps(ordered, ensure_ascii=False))
+    html = html.replace("/*__STAGES_JSON__*/null", json.dumps({"stages": stages_meta(), "other": NON_STAGE_KINDS}, ensure_ascii=False))
     (DIST / "index.html").write_text(html)
 
 def _write_summary(g: Graph, bench: dict) -> None:
