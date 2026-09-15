@@ -24575,8 +24575,7 @@
        "u": false,
        "x": [
         "metr.14",
-        "metr.21",
-        "metr.26"
+        "metr.21"
        ]
       },
       "primary": {
@@ -24595,8 +24594,7 @@
         "metr.14",
         "metr.19",
         "metr.20",
-        "metr.21",
-        "metr.26"
+        "metr.21"
        ]
       }
      },
@@ -25757,6 +25755,8 @@
      "bound": null,
      "bound_note": "Documents an open question rather than asserting a value: the payer structure is confirmed (partners pay RAND directly; TED does not fund grantees), but METR's own Audacious share is not visible in any filing checked, so this neither raises nor lowers the funding value on its own.",
      "rule": "0",
+     "quote": "TED itself does not provide funding for grantees.",
+     "quote_source": "audacious-faq",
      "graph_id": "signal#507",
      "source_graph_ids": [
       "source#229",

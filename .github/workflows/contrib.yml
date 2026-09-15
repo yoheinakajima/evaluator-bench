@@ -23,6 +23,10 @@ jobs:
         with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
+      # `bench review` extracts quoted spans from cited PDFs. The hosted runner
+      # does not guarantee Poppler is installed, so make the reviewer capable
+      # of checking a PDF rather than incorrectly reporting its span missing.
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - run: pip install -e .
       - name: re-fetch cited sources and check quoted spans and claims
         env: {ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}"}
