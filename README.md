@@ -2,7 +2,7 @@
 
 Status: v0.1 candidate, preview window through 29 Sep 2026. See `CHANGELOG.md` for what changed, `RULES.md` for how a value is made, `paper/PLAN-v0.1.md` for the plan this release follows, and `LAUNCH.md` for the operator steps.
 
-An evidence-linked, event-sourced directory of 27 evaluation organizations, institutes, vendors and benchmarks for frontier AI (26 ranked, 1 expected entrant on a watchlist), with an independence score you can take apart, an evidence policy you choose, and a row-level ledger of who pays whom.
+An evidence-linked, event-sourced directory of third-party evaluators of frontier AI for safety-relevant properties: 27 organizations on file, 24 ranked, 1 expected entrant on a watchlist, 2 retained out of scope as capability benchmarks. Each carries an independence score you can take apart, under an evidence policy you choose, with a row-level ledger of who pays whom. Scope and every change to it are recorded in `DECISIONS.md`.
 
 Site: `dist/index.html` (GitHub Pages from `dist/`, at evaluatorbench.com). Data: `data/`. Log: `graph/events.jsonl`.
 
@@ -16,7 +16,7 @@ Nobody types a value. Every signal carries a `bound` (an against-signal caps the
 
 The reader chooses what counts. Under the default policy, standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible and count for nothing. Against interest admits an organization's own statements only when they are against its interest. Verified spans requires a quoted span. Primary only admits confirmed filings, indexes, and third-party ledgers with a span: what can be verified from outside the field. A dimension with no admissible signal renders as a dash and is excluded from the score; the coverage count sits beside every score.
 
-Independence has floors, so the band comes first: any evidenced 0 is a disqualifying floor, any 1 a conditional floor, otherwise clear. The number ranks within the band.
+Independence has floors, so the band comes first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor, otherwise clear. Access and methods count in the number but never set a band. On the directory the number is hidden until the reader chooses weights; the band, the coverage, and the eight values show by default.
 
 ## How it is built
 
@@ -76,9 +76,9 @@ The site's regimes page places frontier AI next to fifteen other assurance regim
 
 `index.html` is the directory: three lists (independent referees, government institutes, commercial and first-party), with the evidence policy, the weights, and the band-first sort as controls, a four-paragraph guide to reading it, and a teaser for the regimes work. Topic pages hold the rest: the rubric and rules, the regimes, the money matrix and funding graph, the cases, the method and disclosure, the population check, and the status page with the gates for a citable tag and the right-of-reply log. Every entity, regime, and source has its own page. An entity page shows the scorecard with the derivation and binding signal on every dimension, the values under each policy, the dissent, every ledger row in and out, and the funding graph focused on that node.
 
-## Epistemedia
+## Contested claims
 
-Bench is an index with a scoring policy; Epistemedia (epistemedia.org) adjudicates one contestable claim at a time with source spans and a separate reviewer. `dockets/` holds proposals drafted from Bench evidence in Epistemedia's format, and `bench docket` builds and validates them with Epistemedia's own validator. Reviewed dockets come back as the strongest source a signal can cite. See `paper/EPISTEMEDIA.md`.
+Bench is an index with a scoring policy. Claims that will be contested are drafted as proposals for independent review by a third party, Epistemedia (epistemedia.org), where a reviewer other than the drafter checks each quoted span; `dockets/` holds the drafts and `bench docket` builds and validates them. A draft is not evidence and none has been reviewed yet, so the page is off the site's navigation until one has (decision D-005). See `paper/EPISTEMEDIA.md`.
 
 ## Contributing evidence
 

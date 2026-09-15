@@ -7,7 +7,7 @@ Invariants. `python -m bench verify` enforces them; CI blocks merges that break 
 3. Every assessment names one evaluator and one dimension, has an integer value 0 to 4 equal to its anchor, and at least one signal id on the same evaluator and dimension (C3). A rationale is optional prose; the derivation is generated.
 4. Every evaluator has all eight dimensions assessed and at least one signal, a confidence in {high, med, low}, a type from `data/types.json`, and a dissent (the strongest case that the weakest dimension should be one notch lower, and one notch higher). A hypothetical composite is never an evaluator (C4).
 5. A value of 4 requires at least one `for` signal; a value of 0 requires at least one `against` signal (C6).
-6. Scores are never stored in `data/`. They are a projection computed at build time from assessments and presets, under every evidence policy, with a band and a coverage count.
+6. Scores are never stored in `data/`. They are a projection computed at build time from assessments and presets, under every evidence policy, with a band and a coverage count. Bands are set by the conflict dimensions only (funding, governance, personnel, role incompatibility, scope, publication); access and methods never place an organization in a band (D-002).
 7. `graph/events.jsonl` is generated with a frozen clock and a fixed run id. It is committed. A rebuild on unchanged data must be byte-identical; CI checks this.
 8. Signals are append-only in spirit. To retract a claim, add `superseded_by` pointing at the replacing signal rather than deleting, unless the original was a curation error.
 9. The seed script `bench/seed_v0.py` and the migration `bench/apply_bounds.py` are history. Edits go to `data/` directly.
@@ -26,5 +26,5 @@ Invariants. `python -m bench verify` enforces them; CI blocks merges that break 
 22. Role is derived from type and the role-incompatibility value under `RULES.md` section 10; a stored role that disagrees is an error, and `list_group`, if stored, must agree (C25).
 23. Press sources carry `press_kind` (primary or aggregator); no other source type does (C26).
 24. The site's default evidence policy is standard (at least one confirmed source); the leads-included, against-interest, verified-spans, and primary-only policies are computed at every build and selectable by the reader.
-25. Every published statistic covers the ranked population; watchlist entries contribute to none.
+25. Every published statistic covers the ranked population; watchlist and out-of-scope entries contribute to none. An organization outside the scope in RULES 11 is retained with `status: out-of-scope`, never deleted (D-001).
 26. A citable tag requires the gates in `bench/gates.py` to pass: every binding signal has a span, every extreme has a second coder, every ranked organization and named person has been contacted, the default policy is standard and the primary-only view is live, RULES.md is published and every conflict cites a rule, and the homepage carries the byline and the competence chip. `bench release --stage published` refuses otherwise.

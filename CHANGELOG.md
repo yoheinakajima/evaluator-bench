@@ -1,5 +1,19 @@
 # Evaluator Bench changelog
 
+## 15 Sep 2026, later: scope, bands, the hidden number, evaluation credits, checked-and-not-found
+
+Recorded as decisions D-001 to D-005 in `DECISIONS.md`.
+
+- **Scope** is third-party evaluation of frontier models for safety-relevant properties (RULES 11). Epoch AI and the Princeton Holistic Agent Leaderboard are retained with `status: out-of-scope`, unranked and excluded from every statistic; the seven capability leaderboards in the population check are marked out by scope. Ranked population: 24.
+- **Bands** are set by the conflict dimensions only (funding, governance, personnel, role incompatibility, scope, publication). Access and methods still count in the number but never set a band; AVERI, MLCommons, and the organizations whose only 1 was on access move bands accordingly.
+- **The number is hidden** on the directory until the reader chooses weights and presses "Score with these weights"; the band, the coverage, the weakest dimension, and the eight values show by default, and the default order is band first, then the weakest dimension.
+- **Evaluation credits** consumed in testing a lab's own model are not lab money (RULES F.2): they never bound funding, never enter the hop buckets, and are not a direct lab tie. They stay in the ledger and on the entity page. METR's only hop-0 row was such a row.
+- **Checked and not found**: every bounded negative now names the question it answers and what prompted it, and renders that way on cards; the term stays in the glossary.
+- **Contested-claim drafts** leave the navigation; one sentence on the Contribute page says what they are.
+- **Disclosure** names the collaboration: Claude drafted; Codex, Grok, Gemini, and Muse reviewed and criticized; all four developers are labs in the ledger; and answers directly the concern about an Anthropic model ranking the evaluator Anthropic named first.
+- Re-derivation pass on the open questions that public records can settle is under way (`leads/rederive.json`); document requests to organizations and people go with the reply packets.
+- Numbers after these decisions (standard policy, lab preset, 24 ranked): 13 clear, 8 conditional, 3 disqualifying; direct lab ties 10 of 24 (6 cash, 2 ownership, 2 partnership), lab or lab-tied 15 of 24; 10 conflicts resolved by rule; 10 assessments held; gates: 21 binding signals without a span, 15 extremes awaiting a second coder, 51 reply packets (24 organizations, 27 people), none sent.
+
 ## v0.1 candidate, 15 Sep 2026 (evening): values derived, evidence policies, bands, gates
 
 Follows `paper/PLAN-v0.1.md`, written the same day against the v0 preview and two independent reviews. Nothing in the data was deleted; every v0 signal is still here with a bound and a rule attached.

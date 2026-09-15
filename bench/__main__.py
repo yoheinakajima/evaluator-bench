@@ -22,7 +22,7 @@ def main(argv=None) -> int:
         w = d["presets"][preset]["weights"]; vbp = values_by_policy(d)[pol]
         rows = []
         for eid, e in d["evaluators"].items():
-            if e.get("status") == "watchlist": continue
+            if e.get("status", "ranked") != "ranked": continue
             v = vbp[eid]; s = score(v, w); rows.append((BAND_ORDER[band(v)], -(s if s is not None else -1), e["name"], s, band(v), coverage(v), v))
         print(f"preset {preset}, policy {pol}: band first, then score; coverage is evidenced dimensions of 8")
         for _, _, name, s, b, c, v in sorted(rows):
@@ -30,7 +30,7 @@ def main(argv=None) -> int:
         if "--by-type" in argv:
             import statistics as st
             for t in sorted({e["type"] for e in d["evaluators"].values()}):
-                grp = [vbp[eid] for eid, e in d["evaluators"].items() if e["type"] == t and e.get("status") != "watchlist"]
+                grp = [vbp[eid] for eid, e in d["evaluators"].items() if e["type"] == t and e.get("status", "ranked") == "ranked"]
                 if not grp: continue
                 print(f"{t:12s} n={len(grp)} " + " ".join(f"{k}:{st.mean([x[k] for x in grp if x[k] is not None]):.2f}" if any(x[k] is not None for x in grp) else f"{k}:-" for k in DIMS))
         return 0

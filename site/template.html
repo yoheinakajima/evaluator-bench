@@ -185,6 +185,13 @@
   @media (max-width:860px){.teaser{grid-template-columns:1fr}}
   .teaser img{width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
   .viewtoggle{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+  .mini{display:flex;gap:3px;align-items:flex-end;height:14px}
+  .mini b{display:block;width:14px;height:14px;background:var(--rule-soft);border-radius:2px;position:relative;overflow:hidden}
+  .mini b i{position:absolute;left:0;right:0;bottom:0;background:var(--teal)}
+  .mini b.dash{background:repeating-linear-gradient(45deg,var(--rule-soft),var(--rule-soft) 2px,var(--panel) 2px,var(--panel) 4px)}
+  .mini b.low i{background:var(--ox)} .mini b.mid i{background:var(--amber)}
+  .cta.small{padding:7px 12px;font-size:13px;margin-top:0;background:var(--teal)}
+  .scorenote{font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
 </style>
 </head>
 <body>
@@ -215,7 +222,7 @@
     <h1>Independence, scored.</h1>
     <p class="lede">Evaluators, government institutes, vendors and benchmarks, scored on independence from the labs they test. Every score is built from signals and ledger rows you can open, under an evidence policy you choose.</p>
     <p class="note">Money is traced by <b>hops</b>: hop 0 is a lab; hop 1 is a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. A score is a reading of the public record on a date. It is not an endorsement, and a low score is not an accusation.</p>
-    <div class="byline" id="byline">Curated by <b>Yohei Nakajima</b>, managing partner at Untapped Capital, operator of Epistemedia, and author of ActiveGraph, the runtime this site is built on. First draft by <b>Claude</b> (Anthropic, a lab in this ledger). Holdings: public shares in Google and Meta, a private holding in SpaceX (owner of xAI). Shared funders with evaluators: not yet checked. One coder; no second coder yet. <a href="https://github.com/yoheinakajima/evaluator-bench/blob/main/DISCLOSURE.md">Full disclosure</a>.</div>
+    <div class="byline" id="byline">Curated by <b>Yohei Nakajima</b>, managing partner at Untapped Capital, operator of Epistemedia, and author of ActiveGraph, the runtime this site is built on. First draft by <b>Claude</b> (Anthropic); reviewed and criticized by Codex (OpenAI), Grok (xAI), Gemini (Google), and Muse; those four developers are labs in this ledger, and every value is re-derivable without any of them. Holdings: public shares in Google and Meta, a private holding in SpaceX (owner of xAI). Shared funders with evaluators: not yet checked. One coder; no second coder yet. <a href="https://github.com/yoheinakajima/evaluator-bench/blob/main/DISCLOSURE.md">Full disclosure</a>.</div>
 
     <div class="weights" aria-label="Evidence policy and scoring weights">
       <div class="weights-head">
@@ -236,7 +243,8 @@
       <p class="accessnote">Access is scored as what labs have actually granted, because access a lab can decline to renew is not a right; the card tags whether an evaluator's access rests on statute, a lab's goodwill, or its own choice.</p>
       <div class="weights-foot">
         <span id="wsum"></span>
-        <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="bandfirst" checked> Sort by band first: any 0 is a disqualifying floor, any 1 a conditional floor; the number ranks within the band</label>
+        <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="bandfirst" checked> Band first: a 0 on a conflict dimension is a disqualifying floor, a 1 a conditional floor; the number ranks within the band</label>
+        <button class="cta small" id="scoreBtn">Score with these weights</button>
         <button class="linkbtn" id="reset">Reset</button>
       </div>
     </div>
@@ -263,12 +271,17 @@
       <div class="ghead"><h3>Watchlist (not ranked)</h3><p>Expected entrants scored on the same rubric but excluded from the ranking and from every statistic: initiatives announced with no evaluations yet. Hypothetical composites are not scored.</p></div>
       <div id="watchrows"></div>
     </div>
+    <div class="ledger">
+      <div class="ghead"><h3>Out of scope, retained for the record</h3><p>Organizations whose frontier work is capability benchmarking rather than safety evaluation (RULES 11, decision D-001). Their records, bounds, and derivations are kept unchanged; they are unranked and excluded from every statistic.</p></div>
+      <div id="outrows"></div>
+    </div>
   </div>
 
   <section class="alt read" id="howto">
     <div class="wrap">
       <h2>How to read this</h2>
-      <p><b>The band comes first.</b> Any evidenced dimension at 0 puts an organization in the disqualifying-floor band; any at 1, in the conditional band; otherwise it is clear. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number. The number ranks within a band, and a two-point gap means nothing.</p>
+      <p><b>The band comes first.</b> An evidenced 0 on a conflict dimension, funding, governance, personnel, role incompatibility, scope, or publication, puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise it is clear. Access and methods count in the number but never set a band: a 0 there means the labs have not let the organization in, or it has not published its methods, not that it is compromised. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number.</p>
+      <p><b>The number is yours, so it is hidden until you choose weights.</b> By default each row shows the band, how many of the eight dimensions are evidenced, the weakest one, and the eight values themselves, none of which depend on anyone's priorities. Press "Score with these weights" after picking a preset and the weighted number appears. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.</p>
       <p><b>The evidence policy decides what counts.</b> Under the default, Standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible but count for nothing. Switch to Against interest and an organization's own statements count only when they are against its interest. Switch to Primary only and you see what can be verified from outside the field: not much, which is the finding.</p>
       <p><b>A dash is not a zero.</b> When no admissible signal sets a bound on a dimension, the card shows a dash and the score is computed over the dimensions that are evidenced, with the coverage count beside it. Silence earns nothing either way.</p>
       <p><b>Every value is derived, not typed.</b> Each signal names the anchor it supports and the rule in <a href="rubric/index.html">RULES.md</a> that says so. The value is the tightest cap, or, with no cap, the highest floor. Where a floor and a cap disagree, the card shows the conflict and the rule that resolved it. Open any row to read the derivation, the binding signal, and the quoted span.</p>
@@ -316,7 +329,8 @@ const REPO = "https://github.com/yoheinakajima/evaluator-bench/blob/main/";
 document.getElementById("stamp").textContent = "Evidence current to " + BENCH.built_at.slice(0,10);
 
 let policy = BENCH.default_policy;
-let weights = {...PRESETS.lab}; let activePreset = "lab"; let bandFirst = true; let oneList = false;
+let weights = {...PRESETS.lab}; let activePreset = "lab"; let bandFirst = true; let oneList = false; let scored = false;
+const BAND_DIMS = ["F","G","P","X","S","R"];   // the conflict dimensions; access and methods never set a band (D-002)
 let filters = {domain:new Set(), type:new Set(), role:new Set()}; let query = ""; let sortKey = "score";
 const expanded = new Set();
 const $ = s => document.querySelector(s);
@@ -326,7 +340,8 @@ const fmt = n => Number.isInteger(n)? String(n) : n.toFixed(1);
 // ---- scoring, mirrored from bench/score.py (halves round up; None excluded)
 function vals(e){ return e.values_by_policy[policy]; }
 function rawScore(v, w){ let num=0, den=0; for(const d of DIMS){ const x=v[d.k]; if(x==null) continue; num += w[d.k]*(x/4); den += w[d.k]; } return den ? Math.round(num/den*100) : null; }
-function bandOf(v){ const ev=DIMS.map(d=>v[d.k]).filter(x=>x!=null); if(!ev.length) return "unevidenced"; if(ev.includes(0)) return "disqualifying"; if(ev.includes(1)) return "conditional"; return "clear"; }
+function bandOf(v){ const ev=BAND_DIMS.map(k=>v[k]).filter(x=>x!=null); if(!ev.length) return "unevidenced"; if(ev.includes(0)) return "disqualifying"; if(ev.includes(1)) return "conditional"; return "clear"; }
+function weakest(v){ const ev=DIMS.map(d=>v[d.k]).filter(x=>x!=null); return ev.length? Math.min(...ev) : -1; }
 function coverage(v){ return DIMS.filter(d=>v[d.k]!=null).length; }
 function score(e){ return rawScore(vals(e), weights); }
 function floorOf(e){ const v=vals(e); let best=null; for(const d of DIMS){ if(v[d.k]==null) continue; if(best===null || v[d.k] < v[best.k]) best=d; } return best ? `${best.label.toLowerCase().replace(" (lab-granted)","")} ${v[best.k]}/4` : "no evidenced dimension"; }
@@ -335,7 +350,9 @@ function rankRange(e){
   const out=[]; for(const [pn,w] of Object.entries(PRESETS)){ const list=DATA.filter(x=>x.status!=="watchlist").map(x=>({x, v:rawScore(vals(x),w), b:bandOf(vals(x))})); list.sort(cmp); const i=list.findIndex(t=>t.x.id===e.id); out.push(i+1); }
   return `${Math.min(...out)} to ${Math.max(...out)} of ${DATA.filter(x=>x.status!=="watchlist").length}`;
 }
-function cmp(a,b){ if(bandFirst && BAND_ORDER[a.b]!==BAND_ORDER[b.b]) return BAND_ORDER[a.b]-BAND_ORDER[b.b]; const av=a.v==null?-1:a.v, bv=b.v==null?-1:b.v; return (bv-av)||a.x.name.localeCompare(b.x.name); }
+function cmp(a,b){ if(bandFirst && BAND_ORDER[a.b]!==BAND_ORDER[b.b]) return BAND_ORDER[a.b]-BAND_ORDER[b.b];
+  if(!scored){ const wa=weakest(vals(a.x)), wb=weakest(vals(b.x)); return (wb-wa)||(coverage(vals(b.x))-coverage(vals(a.x)))||a.x.name.localeCompare(b.x.name); }
+  const av=a.v==null?-1:a.v, bv=b.v==null?-1:b.v; return (bv-av)||a.x.name.localeCompare(b.x.name); }
 function whatMoves(e){
   const v=vals(e); const base=rawScore(v,weights); const out=[];
   for(const d of DIMS){ const x=v[d.k]; if(x==null||x>=4) continue; const nv={...v, [d.k]:x+1}; const s=rawScore(nv,weights); const b=bandOf(nv); out.push({d, from:x, to:x+1, s, b, gain:(s??0)-(base??0), bandUp: BAND_ORDER[b]<BAND_ORDER[bandOf(v)]}); }
@@ -364,7 +381,8 @@ function updateSum(){ const sum = DIMS.reduce((a,d)=>a+weights[d.k],0); const de
 function setPreset(name){ activePreset = name; document.querySelectorAll(".chip[data-preset]").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.preset===name))); }
 function applyPreset(name){ weights = {...PRESETS[name]}; setPreset(name); for(const d of DIMS){ $("#w_"+d.k).value = weights[d.k]; $("#o_"+d.k).textContent = fmt(weights[d.k]); } updateSum(); renderRows(); }
 document.querySelectorAll(".chip[data-preset]").forEach(b=>b.addEventListener("click",()=>applyPreset(b.dataset.preset)));
-$("#reset").addEventListener("click",()=>{ policy=BENCH.default_policy; renderPolicyChips(); bandFirst=true; $("#bandfirst").checked=true; applyPreset("lab"); });
+$("#reset").addEventListener("click",()=>{ policy=BENCH.default_policy; renderPolicyChips(); bandFirst=true; $("#bandfirst").checked=true; scored=false; $("#scoreBtn").textContent="Score with these weights"; applyPreset("lab"); });
+$("#scoreBtn").addEventListener("click",()=>{ scored=true; $("#scoreBtn").textContent="Scored with " + (activePreset? BENCH.presets[activePreset].label.toLowerCase() : "custom") + " weights"; renderRows(); });
 $("#bandfirst").addEventListener("change",ev=>{ bandFirst = ev.target.checked; renderRows(); });
 $("#onelist").addEventListener("change",ev=>{ oneList = ev.target.checked; renderRows(); });
 
@@ -382,7 +400,7 @@ $("#sort").addEventListener("change",ev=>{sortKey=ev.target.value; renderRows();
 
 function visible(){
   return DATA.filter(e=>{
-    if(e.status==="watchlist") return false;
+    if(e.status && e.status!=="ranked") return false;
     if(filters.domain.size && ![...filters.domain].every(d=>e.domains.includes(d))) return false;
     if(filters.type.size && !filters.type.has(e.type)) return false;
     if(filters.role.size && !filters.role.has(e.role)) return false;
@@ -395,11 +413,11 @@ function rowHTML({x:e,v,b},rank){
   const row=document.createElement("div"); row.className="row"; row.setAttribute("aria-expanded", String(expanded.has(e.id)));
   row.innerHTML=`
     <button class="row-main" aria-controls="d_${e.id}" aria-expanded="${expanded.has(e.id)}">
-      <span class="rank">${rank}</span>
+      <span class="rank">${scored?rank:"&middot;"}</span>
       <span class="name">${esc(e.name)}<small>${ROLES[e.role]||""} &middot; ${TYPES[e.type]}, ${esc(e.hq)}</small></span>
       <span class="tags">${e.domains.map(d=>`<span class="tag">${d}</span>`).join("")}</span>
-      <span class="barwrap"><span class="bar ${b}"><i style="width:${v==null?0:v}%"></i></span><span class="barnote">${cov}/8 evidenced &middot; floor ${floorOf(e)}</span></span>
-      <span class="score"><span class="band ${b}">${BANDS[b].label}</span><br>${v==null?"&ndash;":v}</span>
+      <span class="barwrap">${scored?`<span class="bar ${b}"><i style="width:${v==null?0:v}%"></i></span>`:`<span class="mini" aria-label="dimension values">${DIMS.map(d=>{const x=vals(e)[d.k]; return x==null?`<b class="dash" title="${d.label}: unevidenced"></b>`:`<b class="${x<=1?"low":(x==2?"mid":"")}" title="${d.label}: ${x}/4"><i style="height:${x*25}%"></i></b>`;}).join("")}</span>`}<span class="barnote">${cov}/8 evidenced &middot; floor ${floorOf(e)}</span></span>
+      <span class="score"><span class="band ${b}">${BANDS[b].label}</span><br>${scored?(v==null?"&ndash;":v):`<span class="scorenote">number hidden: choose weights</span>`}</span>
       <span class="caret" aria-hidden="true">&#8964;</span>
     </button>
     <div class="row-detail" id="d_${e.id}">${detail(e)}</div>`;
@@ -429,7 +447,7 @@ function renderRows(){
   for(const [g, meta] of groups){
     const list = sortList(oneList ? items : items.filter(t=>t.x.list_group===g));
     const box=document.createElement("div"); box.className="ledger";
-    box.innerHTML=`<div class="ghead"><h3>${esc(meta.label)} <span class="gid">${list.length}</span></h3><p>${esc(meta.desc)}</p></div>
+    box.innerHTML=`<div class="ghead"><h3>${esc(meta.label)} <span class="gid">${list.length}</span></h3><p>${esc(meta.desc)}${scored?"":" Ordered by band, then by the weakest evidenced dimension; this is not a ranking until you score it."}</p></div>
       <div class="lhead"><span></span><span>Evaluator</span><span>Domains</span><span>Independence</span><span style="text-align:right">Band and score</span><span></span></div><div class="rows"></div>`;
     const rows=box.querySelector(".rows");
     if(!list.length) rows.innerHTML=`<div class="empty">No organizations match in this list.</div>`;
@@ -440,6 +458,9 @@ function renderRows(){
   const wl = sortList(DATA.filter(e=>e.status==="watchlist").map(e=>({x:e, v:score(e), b:bandOf(vals(e))})));
   const wh=$("#watchrows"); wh.innerHTML="";
   wl.forEach((t,i)=>wh.appendChild(rowHTML(t,"W"+(i+1))));
+  const ol = sortList(DATA.filter(e=>e.status==="out-of-scope").map(e=>({x:e, v:score(e), b:bandOf(vals(e))})));
+  const oh=$("#outrows"); oh.innerHTML="";
+  ol.forEach((t,i)=>oh.appendChild(rowHTML(t,"O"+(i+1))));
 }
 const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press",docket:"docket draft (not evidence)"};
 function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] + (x.press_kind?" ("+x.press_kind+")":"") + (x.self_of?" ("+x.self_of+")":"") : "tier not set"; const st = x.audit_status || "unaudited"; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>`; }
@@ -469,18 +490,18 @@ function detail(e){
   }).join("");
   const ex = EXPOSURE && EXPOSURE.evaluators ? EXPOSURE.evaluators.find(x=>x.id===LEDGER_ID[e.id]) : null;
   const oq = Object.values(e.assessments).flatMap(a=>(a.open_questions||[]).map(q=>`<li>${esc(a.dimension)}: ${esc(q)}</li>`));
-  const oqBlock = oq.length ? `<div class="move"><b>Open questions.</b><ul>${oq.join("")}</ul></div>` : "";
-  const moves = whatMoves(e);
-  const movesBlock = moves.length ? `<div class="move"><b>What would move the score, and by how much.</b> ${esc(e.what_would_move_the_score||"")}<ul>${moves.map(m=>`<li>${m.d.label} ${m.from} to ${m.to}: score ${m.s==null?"&ndash;":m.s}${m.bandUp?`, band becomes ${BANDS[m.b].label.toLowerCase()}`:""}</li>`).join("")}</ul></div>` : `<div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}</div>`;
+  const oqBlock = oq.length ? `<div class="move"><b>Document requests and pending checks.</b><ul>${oq.join("")}</ul></div>` : "";
+  const moves = scored ? whatMoves(e) : [];
+  const movesBlock = moves.length ? `<div class="move"><b>What would move the score, and by how much.</b> ${esc(e.what_would_move_the_score||"")}<ul>${moves.map(m=>`<li>${m.d.label} ${m.from} to ${m.to}: score ${m.s==null?"&ndash;":m.s}${m.bandUp?`, band becomes ${BANDS[m.b].label.toLowerCase()}`:""}</li>`).join("")}</ul></div>` : `<div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}${scored?"":" <span style=\"color:var(--muted)\">Choose weights and press Score to see how far each change moves the number.</span>"}</div>`;
   const dissent = e.dissent ? `<div class="move"><b>Dissent.</b><ul><li><b>Lower:</b> ${esc(e.dissent.lower)}</li><li><b>Higher:</b> ${esc(e.dissent.higher)}</li></ul></div>` : "";
-  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move"><b>Traced money and ties.</b> ${ex.inflow_rows} evidential inflow rows (${ex.confirmed_rows} confirmed; the remainder unaudited or imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":(k==="public"?"public budget":"hop "+k.slice(3))}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Bounded negatives on file: "+ex.negatives.length+".":""} Second hop traced for ${ex.second_hop.traced} of ${ex.second_hop.sources} sources. <a href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html">Full page with ledger rows and focused graph</a>.</div>` : "";
+  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move"><b>Traced money and ties.</b> ${ex.inflow_rows} evidential inflow rows (${ex.confirmed_rows} confirmed; the remainder unaudited or imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":(k==="public"?"public budget":"hop "+k.slice(3))}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Checked and not found: "+ex.negatives.length+".":""}${ex.credit_rows?" Evaluation credits recorded but not counted: "+ex.credit_rows+" row"+(ex.credit_rows>1?"s":"")+".":""} Second hop traced for ${ex.second_hop.traced} of ${ex.second_hop.sources} sources. <a href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html">Full page with ledger rows and focused graph</a>.</div>` : "";
   const dataLinks = `<a href="${REPO}data/evaluators/${e.id}.json">evaluator</a>, <a href="${REPO}data/signals/${e.id}.json">signals</a>, <a href="${REPO}data/assessments/${e.id}.json">assessments</a>, <a href="${REPO}graph/events.jsonl">event log</a>`;
   return `<div class="detail-grid">
     <div>
       <div class="meta">Confidence <span class="conf ${e.confidence}">${e.confidence}</span> <span class="band ${bandOf(v)}">${BANDS[bandOf(v)].label}</span> <span class="gid">${coverage(v)}/8 evidenced under ${esc(POLICIES[policy].label)}</span> <a href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html" style="color:var(--muted);font-size:13px">Full page</a></div>
       <p class="summary">${esc(e.summary)}</p>
       ${movesBlock}${dissent}${money}${oqBlock}
-      <div class="prov">Rank ${rankRange(e)} across the four presets under this policy; score range ${rangeOf(e)}. Weakest dimension: ${floorOf(e)}. ${BANDS[bandOf(v)].desc} Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
+      <div class="prov">${scored?`Rank ${rankRange(e)} across the four presets under this policy; score range ${rangeOf(e)}. `:""}Weakest dimension: ${floorOf(e)}. ${BANDS[bandOf(v)].desc} Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
     </div>
     <div>${blocks}</div>
   </div>`;

@@ -160,6 +160,13 @@
   @media (max-width:860px){.teaser{grid-template-columns:1fr}}
   .teaser img{width:100%;height:auto;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
   .viewtoggle{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+  .mini{display:flex;gap:3px;align-items:flex-end;height:14px}
+  .mini b{display:block;width:14px;height:14px;background:var(--rule-soft);border-radius:2px;position:relative;overflow:hidden}
+  .mini b i{position:absolute;left:0;right:0;bottom:0;background:var(--teal)}
+  .mini b.dash{background:repeating-linear-gradient(45deg,var(--rule-soft),var(--rule-soft) 2px,var(--panel) 2px,var(--panel) 4px)}
+  .mini b.low i{background:var(--ox)} .mini b.mid i{background:var(--amber)}
+  .cta.small{padding:7px 12px;font-size:13px;margin-top:0;background:var(--teal)}
+  .scorenote{font-size:11.5px;color:var(--muted);display:block;margin-top:2px}
 
   .cols>div,.detail-grid>div,.dimrow>div{min-width:0}
   .dimrow li,.dimrow .anchor{overflow-wrap:anywhere}

@@ -13,12 +13,13 @@ from decimal import Decimal, ROUND_HALF_UP
 from .load import DIMS
 
 BANDS = ["clear", "conditional", "disqualifying", "unevidenced"]
+BAND_DIMS = ["F", "G", "P", "X", "S", "R"]   # the conflict dimensions; access and methods never set a band (D-002)
 BAND_LABEL = {"clear": "Clear", "conditional": "Conditional floor", "disqualifying": "Disqualifying floor", "unevidenced": "Unevidenced"}
 BAND_DESC = {
     "clear": "No evidenced dimension below 2.",
-    "conditional": "At least one evidenced dimension at 1: usable with conditions the card names.",
-    "disqualifying": "At least one evidenced dimension at 0: not a candidate for an independence-critical role until the floor moves.",
-    "unevidenced": "No dimension is evidenced under this policy.",
+    "conditional": "At least one evidenced conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) at 1: usable with conditions the card names.",
+    "disqualifying": "At least one evidenced conflict dimension at 0: not a candidate for an independence-critical role until the floor moves. Access and methods never set a band.",
+    "unevidenced": "No conflict dimension is evidenced under this policy.",
 }
 BAND_ORDER = {b: i for i, b in enumerate(BANDS)}
 
@@ -52,7 +53,7 @@ def score(values: dict[str, int | None], weights: dict[str, float]) -> int | Non
 
 
 def band(values: dict[str, int | None]) -> str:
-    ev = [values[k] for k in DIMS if values.get(k) is not None]
+    ev = [values[k] for k in BAND_DIMS if values.get(k) is not None]
     if not ev:
         return "unevidenced"
     if any(v == 0 for v in ev):
