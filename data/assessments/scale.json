@@ -17,11 +17,12 @@
     "value": 0,
     "anchor": 0,
     "signals": [
-      "scale.02"
+      "scale.02",
+      "scale.10"
     ],
     "rationale": "Anchor 0 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "scale",

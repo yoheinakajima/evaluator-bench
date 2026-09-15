@@ -1,12 +1,13 @@
 {
  "distances": {
-  "google": 0,
-  "xai": 0,
-  "amazon": 0,
-  "meta": 0,
-  "openai": 0,
-  "thinking-machines": 0,
   "anthropic": 0,
+  "thinking-machines": 0,
+  "openai": 0,
+  "g42": 0,
+  "google": 0,
+  "amazon": 0,
+  "xai": 0,
+  "meta": 0,
   "microsoft": 0,
   "tallinn": 1,
   "moskovitz": 1,
@@ -53,7 +54,7 @@
   "andon": 1,
   "ukaisi": 1,
   "averi": 2,
-  "saferai": 3,
+  "saferai": 1,
   "scale": 1,
   "mlcommons": 1,
   "hfoai": 1,
@@ -64,6 +65,7 @@
   "mccormick": 3,
   "stosz": 3,
   "delangue": 2,
+  "droege": 2,
   "arc": 3,
   "hilton": 4
  },
@@ -195,14 +197,19 @@
      "searched": "990-PF Part XV",
      "snapshot": "2026-09-14",
      "status": "imported"
+    },
+    {
+     "claim": "no Coefficient or Open Philanthropy grant to METR on the grants pages; corroborated by a January 2025 80,000 Hours note",
+     "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants",
+     "snapshot": "2026-09-15",
+     "status": "unaudited"
     }
    ],
    "confirmed_rows": 2,
    "second_hop": {
     "sources": 8,
-    "traced": 4,
+    "traced": 5,
     "untraced": [
-     "The Audacious Project (TED)",
      "Founders Pledge",
      "Silicon Valley Community Foundation",
      "Vanguard Charitable"
@@ -253,17 +260,15 @@
    "confirmed_rows": 1,
    "second_hop": {
     "sources": 4,
-    "traced": 3,
-    "untraced": [
-     "The Audacious Project (TED)"
-    ]
+    "traced": 4,
+    "untraced": []
    }
   },
   {
    "id": "far-ai",
    "name": "FAR.AI",
    "kind_note": "",
-   "inflow_rows": 6,
+   "inflow_rows": 8,
    "buckets": {
     "hop1": {
      "rows": 1,
@@ -274,10 +279,10 @@
      ]
     },
     "hop2": {
-     "rows": 3,
+     "rows": 4,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 59347676.0,
+      "grant": 88022676.0,
       "recommendation": 6512577.0
      },
      "sources": [
@@ -296,10 +301,13 @@
      ]
     },
     "unattributed": {
-     "rows": 1,
+     "rows": 2,
      "undisclosed": 1,
-     "by_measure": {},
+     "by_measure": {
+      "grant": 500000.0
+     },
      "sources": [
+      "founders-pledge-fund",
       "schmidt"
      ]
     }
@@ -308,16 +316,18 @@
    "negatives": [],
    "confirmed_rows": 3,
    "second_hop": {
-    "sources": 5,
+    "sources": 6,
     "traced": 5,
-    "untraced": []
+    "untraced": [
+     "Founders Pledge (frontier AI fund)"
+    ]
    }
   },
   {
    "id": "redwood",
    "name": "Redwood Research",
    "kind_note": "",
-   "inflow_rows": 3,
+   "inflow_rows": 4,
    "buckets": {
     "hop1": {
      "rows": 1,
@@ -330,10 +340,10 @@
      ]
     },
     "hop2": {
-     "rows": 2,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 63086000.0,
+      "grant": 99652000.0,
       "recommendation": 2372000.0
      },
      "sources": [
@@ -395,7 +405,14 @@
      "status": "confirmed"
     }
    ],
-   "negatives": [],
+   "negatives": [
+    {
+     "claim": "no grant to Irregular or Pattern Labs found on Coefficient Giving's grants pages",
+     "searched": "coefficientgiving.org/grants and openphilanthropy.org/grants, name search",
+     "snapshot": "2026-09-15",
+     "status": "unaudited"
+    }
+   ],
    "confirmed_rows": 2,
    "second_hop": {
     "sources": 3,
@@ -407,7 +424,7 @@
    "id": "gray-swan",
    "name": "Gray Swan",
    "kind_note": "",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "buckets": {
     "hop0": {
      "rows": 1,
@@ -418,10 +435,10 @@
      ]
     },
     "unattributed": {
-     "rows": 1,
+     "rows": 2,
      "undisclosed": 0,
      "by_measure": {
-      "investment": 40000000.0
+      "investment": 80000000.0
      },
      "sources": [
       "wing"
@@ -455,8 +472,10 @@
     },
     "hop1": {
      "rows": 1,
-     "undisclosed": 1,
-     "by_measure": {},
+     "undisclosed": 0,
+     "by_measure": {
+      "grant": 17200000.0
+     },
      "sources": [
       "oaif"
      ]
@@ -474,7 +493,7 @@
    },
    "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 3,
+   "confirmed_rows": 2,
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -539,15 +558,17 @@
    "id": "epoch",
    "name": "Epoch AI",
    "kind_note": "",
-   "inflow_rows": 4,
+   "inflow_rows": 8,
    "buckets": {
     "hop0": {
-     "rows": 2,
-     "undisclosed": 2,
+     "rows": 4,
+     "undisclosed": 4,
      "by_measure": {},
      "sources": [
+      "anthropic",
       "google",
-      "openai"
+      "openai",
+      "xai"
      ]
     },
     "hop1": {
@@ -561,13 +582,15 @@
      ]
     },
     "hop2": {
-     "rows": 1,
+     "rows": 3,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 24513611.0
+      "grant": 33013611.0,
+      "recommendation": 195000.0
      },
      "sources": [
-      "coefficient"
+      "coefficient",
+      "sff"
      ]
     }
    },
@@ -575,8 +598,8 @@
    "negatives": [],
    "confirmed_rows": 1,
    "second_hop": {
-    "sources": 4,
-    "traced": 4,
+    "sources": 7,
+    "traced": 7,
     "untraced": []
    }
   },
@@ -584,13 +607,13 @@
    "id": "palisade",
    "name": "Palisade Research",
    "kind_note": "",
-   "inflow_rows": 3,
+   "inflow_rows": 4,
    "buckets": {
     "hop2": {
-     "rows": 3,
+     "rows": 4,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 3803463.0,
+      "grant": 5926926.0,
       "recommendation": 3212627.0
      },
      "sources": [
@@ -702,11 +725,11 @@
    "id": "ukaisi",
    "name": "UK AI Security Institute",
    "kind_note": "",
-   "inflow_rows": 2,
+   "inflow_rows": 3,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
+     "rows": 2,
+     "undisclosed": 2,
      "by_measure": {},
      "sources": [
       "openai"
@@ -741,13 +764,13 @@
    "id": "caisi",
    "name": "US CAISI (NIST)",
    "kind_note": "",
-   "inflow_rows": 1,
+   "inflow_rows": 2,
    "buckets": {
     "public": {
-     "rows": 1,
+     "rows": 2,
      "undisclosed": 0,
      "by_measure": {
-      "grant": 10000000.0
+      "grant": 25000000.0
      },
      "sources": [
       "us-gov"
@@ -848,6 +871,12 @@
      "searched": "organization's own funding disclosure",
      "snapshot": "2026-09-14",
      "status": "confirmed"
+    },
+    {
+     "claim": "no discrete Coefficient Giving grant page for AVERI found, although AVERI names Coefficient as a funder",
+     "searched": "coefficientgiving.org/grants, name search",
+     "snapshot": "2026-09-15",
+     "status": "unaudited"
     }
    ],
    "confirmed_rows": 4,
@@ -863,8 +892,16 @@
    "id": "saferai",
    "name": "SaferAI",
    "kind_note": "",
-   "inflow_rows": 3,
+   "inflow_rows": 4,
    "buckets": {
+    "hop0": {
+     "rows": 1,
+     "undisclosed": 1,
+     "by_measure": {},
+     "sources": [
+      "g42"
+     ]
+    },
     "hop2": {
      "rows": 2,
      "undisclosed": 0,
@@ -895,8 +932,8 @@
    ],
    "confirmed_rows": 1,
    "second_hop": {
-    "sources": 2,
-    "traced": 2,
+    "sources": 3,
+    "traced": 3,
     "untraced": []
    }
   },
@@ -1141,7 +1178,14 @@
    "inflow_rows": 0,
    "buckets": {},
    "lab_tied_seats": [],
-   "negatives": [],
+   "negatives": [
+    {
+     "claim": "no Big Four firm has announced a dedicated frontier-AI audit practice for Illinois SB 315",
+     "searched": "general web search for Deloitte, EY, KPMG, PwC with SB 315 and frontier AI audit",
+     "snapshot": "2026-09-15",
+     "status": "unaudited"
+    }
+   ],
    "confirmed_rows": 0,
    "second_hop": {
     "sources": 0,

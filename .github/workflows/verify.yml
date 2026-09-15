@@ -11,5 +11,5 @@ jobs:
       - run: python -m bench verify
       - run: python -m bench build
       - name: committed log and projection must match a clean build
-        run: git diff --exit-code -- graph/events.jsonl dist/bench.json
+        run: git diff --exit-code -- graph/ dist/
       - run: pytest -q

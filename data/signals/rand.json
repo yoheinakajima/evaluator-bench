@@ -109,5 +109,20 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "rand.10",
+    "evaluator": "rand",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "The Audacious commitment to Canary is about $38 million across RAND and METR; RAND's Coefficient grants include $10.5M for emerging technology initiatives.",
+    "sources": [
+      "rand-audacious-2024",
+      "coefficient-index"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2024-10-09",
+    "quote": "committed approximately $38 million to RAND and METR for Canary"
   }
 ]

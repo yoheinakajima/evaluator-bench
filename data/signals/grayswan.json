@@ -123,5 +123,34 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.11",
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board.",
+    "sources": [
+      "madrona-grayswan",
+      "dealroom-grayswan"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-05-28",
+    "quote": "serves on the board of OpenAI"
+  },
+  {
+    "id": "grayswan.12",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.",
+    "sources": [
+      "wikipedia-kolter"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "became chair of its safety and security committee"
   }
 ]

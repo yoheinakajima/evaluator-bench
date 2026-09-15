@@ -18,11 +18,12 @@
     "value": 1,
     "anchor": 1,
     "signals": [
-      "grayswan.05"
+      "grayswan.05",
+      "grayswan.11"
     ],
     "rationale": "Anchor 1 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "grayswan",
@@ -31,11 +32,15 @@
     "anchor": 1,
     "signals": [
       "grayswan.01",
-      "grayswan.02"
+      "grayswan.02",
+      "grayswan.12"
     ],
     "rationale": "Anchor 1 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+      "Whether Hudson River Trading, Samsung Next or Snowflake Ventures hold frontier-lab stakes."
+    ]
   },
   {
     "evaluator": "grayswan",

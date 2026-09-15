@@ -7,11 +7,15 @@
     "signals": [
       "irregular.01",
       "irregular.02",
-      "irregular.06"
+      "irregular.06",
+      "irregular.12"
     ],
     "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+      "Re-run the Coefficient index search under both Irregular and Pattern Labs and record the snapshot."
+    ]
   },
   {
     "evaluator": "irregular",

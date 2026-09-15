@@ -95,5 +95,20 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.09",
+    "evaluator": "big4",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "SB 315 signed 6 July 2026, effective 1 January 2027 with audit obligations from 1 January 2028; passage reported as 28 May (Slashdot) and 29 May 2026 (McDermott); a sponsor-side commentator expects the Big Four to audit, and no firm has announced a dedicated SB 315 practice (search snapshot 2026-09-15).",
+    "sources": [
+      "akerman-sb315",
+      "slashdot-sb315"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-07-06",
+    "quote": "Governor J.B. Pritzker signed SB 315 into law on July 6, 2026"
   }
 ]

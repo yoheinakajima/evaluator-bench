@@ -68,6 +68,9 @@
   },
   "certificate": {
    "type": "string"
+  },
+  "found_by": {
+   "type": "string"
   }
  }
 }

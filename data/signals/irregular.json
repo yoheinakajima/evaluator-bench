@@ -133,6 +133,21 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+    "as_of": "2026-09-11",
+    "superseded_by": "irregular.12"
+  },
+  {
+    "id": "irregular.12",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "A search of Coefficient Giving's grants pages under the name Irregular found no grant (snapshot 2026-09-15); the imported row citing $6.8M under Pattern Labs is unreconciled and marked differs.",
+    "sources": [
+      "coefficient-home",
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15"
   }
 ]

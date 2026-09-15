@@ -90,11 +90,12 @@
     "anchor": 2,
     "signals": [
       "saferai.08",
-      "saferai.09"
+      "saferai.09",
+      "saferai.11"
     ],
     "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
     "open_questions": [
       "Identity of the major AI company client.",
       "A published lab-money policy."

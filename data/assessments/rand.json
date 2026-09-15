@@ -5,11 +5,13 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "rand.03"
+      "rand.03",
+      "rand.09",
+      "rand.10"
     ],
     "rationale": "Anchor 3 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "rand",

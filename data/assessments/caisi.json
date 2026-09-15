@@ -21,11 +21,13 @@
     "value": 3,
     "anchor": 3,
     "signals": [
-      "caisi.03"
+      "caisi.03",
+      "caisi.09",
+      "caisi.11"
     ],
     "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "caisi",

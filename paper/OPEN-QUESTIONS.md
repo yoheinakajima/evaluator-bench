@@ -42,3 +42,8 @@ One entry per question. Status: SETTLED (rows cited, figure-ready), PARTIAL (row
 - Irregular: purpose of the Coefficient grant. Closes it: the index row.
 - UK AISI: whether Alignment Project money touches evaluation work. Closes it: AISI's grant terms.
 - CAISI, EU AI Office, HAL: funding 4 withheld for lack of a confirmed bounded negative, not for evidence of lab money. Closes it: one primary-source negative row each.
+
+## Q9. Research pass of 15 Sep 2026 (see paper/audits/AUDIT-2.md) PARTIAL
+- Closed or extended: Audacious funder collective (second hop for METR and RAND); Gray Swan Series A investors; Alignment Project backers; Epoch's client list incl. xAI; G42 as SaferAI client; component grants for FAR.AI, Redwood, Epoch; CAISI's FY2026 total.
+- Contradictions to reconcile: Coefficient to Irregular (none found vs $6.8M under Pattern Labs), to Palisade ($2.12M vs $3.80M), to Apollo ($1.5M self-report vs $4.41M index). Closes it: the live index rows under each name with snapshot dates.
+- Unchanged gaps: TED lots; Farhi; SaferAI's client; Kolter recusal text; DAF Schedule I lines; Transluce donors; SEAL and CAISI terms; primary sources for eight evaluators.

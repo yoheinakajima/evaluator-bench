@@ -133,5 +133,47 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-14"
+  },
+  {
+    "id": "farai.12",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.",
+    "sources": [
+      "op-far-general-support",
+      "far-30m"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-09",
+    "quote": "a grant of $28,675,000 over three years to FAR.AI"
+  },
+  {
+    "id": "farai.13",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+    "sources": [
+      "founderspledge-frontier"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026"
+  },
+  {
+    "id": "farai.14",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "A third-party wiki records the 10% cap on for-profit developer revenue and FY2024 revenue of $24.3M against $8.6M expenses.",
+    "sources": [
+      "longtermwiki-far-cap"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
   }
 ]

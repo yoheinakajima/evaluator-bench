@@ -5,11 +5,13 @@
     "value": 1,
     "anchor": 1,
     "signals": [
-      "hfoai.03"
+      "hfoai.03",
+      "hfoai.09",
+      "hfoai.10"
     ],
     "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "hfoai",

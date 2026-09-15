@@ -7,11 +7,12 @@
     "signals": [
       "averi.06",
       "averi.09",
-      "averi.11"
+      "averi.11",
+      "averi.12"
     ],
     "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
     "open_questions": [
       "Dollar shares per funder."
     ]

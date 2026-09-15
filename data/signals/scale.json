@@ -109,5 +109,19 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "scale.10",
+    "evaluator": "scale",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Meta holds a 49% stake after a $14.3B investment; the founder left for Meta and an interim CEO was named; Google, OpenAI and xAI reportedly reduced engagements.",
+    "sources": [
+      "cnbc-scale-meta"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-06-18",
+    "quote": "Meta has a 49% stake in Scale AI after investing $14.3 billion"
   }
 ]

@@ -12,7 +12,7 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: python -m bench verify
       - run: python -m bench build
-      - run: git diff --exit-code -- graph/events.jsonl dist/bench.json
+      - run: git diff --exit-code -- graph/ dist/
       - run: pytest -q
   machine-review:
     runs-on: ubuntu-latest

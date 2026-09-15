@@ -6,11 +6,13 @@
     "anchor": 3,
     "signals": [
       "redwood.01",
-      "redwood.02"
+      "redwood.02",
+      "redwood.10",
+      "redwood.11"
     ],
     "rationale": "Anchor 3 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "redwood",
@@ -90,10 +92,11 @@
     "value": 4,
     "anchor": 4,
     "signals": [
-      "redwood.09"
+      "redwood.09",
+      "redwood.12"
     ],
     "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   }
 ]

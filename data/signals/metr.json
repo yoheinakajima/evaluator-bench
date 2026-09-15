@@ -234,5 +234,51 @@
     "curator": "yohei/claude v0.5",
     "as_of": "2026-09-14",
     "quote": "METR has not accepted funding from AI companies"
+  },
+  {
+    "id": "metr.19",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "METR raised commitments of about $71 million in the six months to August 2026, per its funding update.",
+    "sources": [
+      "metr-funding-2026"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-08-14",
+    "quote": "In the last 6 months, METR raised commitments of around $71 million"
+  },
+  {
+    "id": "metr.20",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Audacious Project commitment of about $38 million to RAND and METR for Canary, about $17 million for METR; the Audacious funder collective includes the Gates Foundation, Emerson Collective, MacKenzie Scott, Skoll, Valhalla and ELMA.",
+    "sources": [
+      "metr-audacious-2024",
+      "rand-audacious-2024",
+      "audacious-project"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2024-10-09",
+    "quote": "Approximately $17 million of this will support work at METR."
+  },
+  {
+    "id": "metr.21",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Second-hop routes for METR's philanthropic money: ARC (a $4,553,935 grant to METR in its 2024 filing, per a 990 extraction) was itself funded by Coefficient; Longview (a pooled fund named by METR) received a $15,961,273 operational grant from Coefficient; Constellation, which shares people with METR, received $16,750,000.",
+    "sources": [
+      "instrumentl-arc-990",
+      "op-longview",
+      "op-constellation"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025",
+    "quote": "contributed $4,553,935 in grants during 2024"
   }
 ]

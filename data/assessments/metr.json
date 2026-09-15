@@ -11,11 +11,14 @@
       "metr.14",
       "metr.15",
       "metr.16",
-      "metr.18"
+      "metr.18",
+      "metr.19",
+      "metr.20",
+      "metr.21"
     ],
     "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.3",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
     "open_questions": [
       "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
       "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",

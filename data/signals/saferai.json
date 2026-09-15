@@ -122,5 +122,21 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "saferai.11",
+    "evaluator": "saferai",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
+    "sources": [
+      "saferai-about",
+      "saferai-jobs",
+      "g42-framework"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "We've contributed to frameworks for G42 and a major AI company"
   }
 ]

@@ -148,5 +148,18 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-14"
+  },
+  {
+    "id": "epoch.13",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Transparency page lists eight Coefficient grants (largest $8,500,000 in April 2025; about $25M cumulative), a $600,000 Tallinn DAF gift, $195,000 from SFF, and paying clients including OpenAI, Google DeepMind, xAI, an Anthropic pilot, the EU AI Office, Sequoia Capital Global Equities and Bridgewater.",
+    "sources": [
+      "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026"
   }
 ]

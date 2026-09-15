@@ -120,5 +120,48 @@
     ],
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.11",
+    "evaluator": "securebio",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "The OpenAI Foundation granted SecureBio Detection $17.2M; the Foundation's endowment is a stake of roughly a quarter of OpenAI PBC with a near-identical board.",
+    "sources": [
+      "securebio-x-oaif",
+      "securebio-x-oaif"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M"
+  },
+  {
+    "id": "securebio.12",
+    "evaluator": "securebio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "The grant is restricted to Detection work; the AI evaluation team has separate leadership, budgets and deliverables.",
+    "sources": [
+      "securebio-substack-detection"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "This grant is restricted to where it may only fund our Detection work"
+  },
+  {
+    "id": "securebio.13",
+    "evaluator": "securebio",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Coefficient multi-year grant and AI Safety Fund grants; US CAISI Bio R&D contract and EU AI Office contract in 2025.",
+    "sources": [
+      "securebio-2025-review"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-01",
+    "quote": "broadened our government-facing portfolio with a US CAISI Bio R&D contract"
   }
 ]

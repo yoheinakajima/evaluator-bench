@@ -53,11 +53,12 @@
     "value": 2,
     "anchor": 2,
     "signals": [
-      "big4.07"
+      "big4.07",
+      "big4.09"
     ],
     "rationale": "Anchor 2 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0"
   },
   {
     "evaluator": "big4",

@@ -121,5 +121,20 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "palisade.11",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient Giving's database records two grants totaling $2,123,463 for general support; the imported index total of $3,803,463 is marked differs pending reconciliation.",
+    "sources": [
+      "op-palisade",
+      "evaluators-ledger"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "two grants totaling $2,123,463 to Palisade Research for general support"
   }
 ]

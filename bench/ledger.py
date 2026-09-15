@@ -18,7 +18,7 @@ LEDGER = DATA / "ledger"
 MEASURES = {"grant", "recommendation", "commitment", "transfer", "daf_grant", "in_kind", "investment", "contract"}
 ROLES = {"investor", "observer", "board", "advisor", "employee", "founder", "principal", "pays", "contractor", "donor", "office_host", "parent"}
 SOURCE_TYPES = {"filing", "index", "ledger", "self", "press"}
-AUDIT = {"imported", "confirmed", "differs", "unverifiable"}
+AUDIT = {"unaudited", "imported", "confirmed", "differs", "unverifiable"}
 DIRECT_LAB_TIES = {"investor", "observer", "board", "employee", "founder", "contractor"}
 CONTROL_ROLES = {"principal", "pays", "parent", "investor"}   # influence flows subject -> object
 

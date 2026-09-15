@@ -120,5 +120,33 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-11"
+  },
+  {
+    "id": "redwood.11",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.",
+    "sources": [
+      "op-redwood-general-support",
+      "tnw-coefficient-ipo"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-11"
+  },
+  {
+    "id": "redwood.12",
+    "evaluator": "redwood",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "The OpenAI incident investigation report states no payment was accepted other than API credits used in the investigation.",
+    "sources": [
+      "zvi-hf-postmortem"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-08",
+    "quote": "No payment was accepted, other than API credits used in the investigation"
   }
 ]

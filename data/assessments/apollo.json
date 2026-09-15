@@ -5,11 +5,16 @@
     "value": 2,
     "anchor": 2,
     "signals": [
-      "apollo.02"
+      "apollo.02",
+      "apollo.11",
+      "apollo.12"
     ],
     "rationale": "Anchor 2 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+      "Reconcile the self-reported $1.5M with the index total of $4.41M by date."
+    ]
   },
   {
     "evaluator": "apollo",
@@ -19,11 +24,13 @@
     "signals": [
       "apollo.01",
       "apollo.03",
-      "apollo.10"
+      "apollo.10",
+      "apollo.13",
+      "apollo.14"
     ],
     "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
     "open_questions": [
       "Round size and Macroscopic's share.",
       "Who holds the mission seats."

@@ -135,5 +135,21 @@
     "recorded": "2026-09-14",
     "curator": "yohei/claude v0.4",
     "as_of": "2026-09-14"
+  },
+  {
+    "id": "ukaisi.12",
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Alignment Project reached £27m with £12m additional funding including £5.6m from OpenAI; backers include OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, Halcyon Futures, Safe AI Fund and Sympatico Ventures; OpenAI states its funding does not influence the selection process.",
+    "sources": [
+      "aisi-alignment-60",
+      "alignment-project-about",
+      "openai-alignment-project"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-02",
+    "quote": "including £5.6m from OpenAI"
   }
 ]

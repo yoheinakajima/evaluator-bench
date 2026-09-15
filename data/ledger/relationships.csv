@@ -68,3 +68,25 @@ R67,deshaw,investor,anthropic,,,https://www.anthropic.com/news,press,2026-09-14,
 R68,hillspire,investor,deshaw,,,https://www.forbes.com/,press,2026-09-14,imported,Forbes: Hillspire bought 20% of D.E. Shaw & Co.; imported kevinnbass/metr-money-figure:ST49
 R69,hillspire,principal,schmidt,,,https://www.schmidtsciences.org/,press,2026-09-14,imported,Schmidt family office and Schmidt Sciences share a principal; imported kevinnbass/metr-money-figure:ST49
 R70,macroscopic,pays,longview,,,https://macroscopic.org/grants,self,2026-09-14,imported,Longview named as grantee on Macroscopic's grants page; imported kevinnbass/metr-money-figure:M140
+R71,gates-foundation,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R72,emerson-collective,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R73,mackenzie-scott,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R74,skoll,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R75,valhalla,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R76,elma,pays,audacious,,,https://www.audaciousproject.org/,self,2026-09-15,unaudited,research pass 2026-09-15; Audacious funder collective
+R77,obvious-ventures,investor,gray-swan,2026-05,,https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai,press,2026-09-15,unaudited,research pass 2026-09-15
+R78,snowflake-ventures,investor,gray-swan,2026-05,,https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai,press,2026-09-15,unaudited,research pass 2026-09-15
+R79,hrt,investor,gray-swan,2026-05,,https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai,press,2026-09-15,unaudited,research pass 2026-09-15
+R80,samsung-next,investor,gray-swan,2026-05,,https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai,press,2026-09-15,unaudited,research pass 2026-09-15
+R81,magarac,investor,gray-swan,2026-05,,https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai,press,2026-09-15,unaudited,research pass 2026-09-15
+R82,redpoint,investor,irregular,2025-09,,https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models/,press,2026-09-15,unaudited,research pass 2026-09-15; co-lead
+R83,swish,investor,irregular,2025-09,,https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models/,press,2026-09-15,unaudited,research pass 2026-09-15
+R84,macroscopic,investor,anthropic,,,https://premieralts.com/investors/macroscopic-ventures,press,2026-09-15,unaudited,research pass 2026-09-15; Series A and Series B per profile; supplements R23
+R85,halcyon,pays,ukaisi,2026,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,research pass 2026-09-15; Alignment Project backer
+R86,sympatico,pays,ukaisi,2026,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,research pass 2026-09-15; Alignment Project backer
+R87,microsoft,pays,ukaisi,2026,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,research pass 2026-09-15; Alignment Project backer
+R88,amazon,pays,ukaisi,2026,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,"research pass 2026-09-15; AWS, Alignment Project backer"
+R89,schmidt,pays,ukaisi,2026,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,research pass 2026-09-15; Alignment Project backer
+R90,renaissance-phil,contractor,ukaisi,2025,,https://alignmentproject.aisi.gov.uk/about,self,2026-09-15,unaudited,research pass 2026-09-15; administers the Alignment Project
+R91,sympatico,pays,averi,2025,,https://www.averi.org/about,self,2026-09-15,confirmed,named funder on AVERI's page
+R92,droege,principal,scale,2025-06,,https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html,press,2026-09-15,unaudited,research pass 2026-09-15; interim CEO
