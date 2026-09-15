@@ -2,7 +2,7 @@
 
 Working title: **Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against the History of Assurance Regimes**
 
-Status: draft v0.4 in `draft.md`, 15 Sep 2026. Datasets seeded in this repo; Dataset B needs primary-source verification and Dataset A needs a second coder.
+Status: v0 draft in `draft.md`, 15 Sep 2026. Datasets seeded in this repo; Dataset B needs primary-source verification; Dataset A is single-coded and open to public correction.
 
 ## One paragraph
 
@@ -67,7 +67,7 @@ Analysis. `python -m bench industries` produces the lifecycle table. Figure 1: r
 ## Venue and timeline
 
 - arXiv cs.CY first, then FAccT 2027 or AIES 2027. The datasets are the artifact; the paper is the reading.
-- Oct 2026: verify Dataset B milestones against primary sources; add three regimes with no or reversed reform for balance; second coder on Dataset A.
+- Oct 2026: verify Dataset B milestones against primary sources; add three regimes with no or reversed reform for balance; fold accepted public corrections into Dataset A.
 - Nov 2026: analysis notebook, figures, draft.
 - Dec 2026: circulate to two evaluator organizations and one regulator contact for factual review, with corrections logged as signals.
 

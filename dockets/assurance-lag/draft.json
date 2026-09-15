@@ -4,7 +4,7 @@
  "cutoff": "2026-09-14",
  "question": "In the Evaluator Bench seed dataset of assurance regimes, how long after a trigger incident does the next rule arrive?",
  "scope": {
-  "included": "The Dataset B seed in the Evaluator Bench repository at its v0.7 commit: sixteen regimes, milestone kinds, and the trigger-to-rule computation in bench/industries.py.",
+  "included": "The Dataset B seed in the Evaluator Bench repository at its v0 tag: sixteen regimes, milestone kinds, and the trigger-to-rule computation in bench/industries.py.",
   "excluded": "Whether the dataset's milestones are correct against primary sources; whether the trigger selection is outcome-independent; regimes not in the seed.",
   "comparison_target": "The sentence 'rules follow public failures within a few years' as it appears in the paper draft, compared with what the seed computation shows and what it depends on."
  },
@@ -14,7 +14,7 @@
    "title": "Evaluator Bench repository, data/industries and bench/industries.py",
    "creators_or_org": "Evaluator Bench (yoheinakajima)",
    "date": "2026-09-14",
-   "edition": "Git repository at the v0.7 commit",
+   "edition": "Git repository at the v0 tag",
    "identifier": "https://github.com/yoheinakajima/evaluator-bench",
    "url": "https://github.com/yoheinakajima/evaluator-bench",
    "media_type": "text/plain",
@@ -53,7 +53,7 @@
    "interpretation": "A property of the seed dataset, not of history: the milestones are from secondary sources and the triggers were partly selected knowing that rules followed.",
    "warrant": "The statistic is the program's output on the committed data; the dataset says its own status.",
    "scope": {
-    "dataset_or_population": "Evaluator Bench Dataset B seed, v0.7 commit",
+    "dataset_or_population": "Evaluator Bench Dataset B seed, v0 tag",
     "metric_scope": "Median and maximum lag over recorded triggers; not a population estimate",
     "models_or_agents": [
      "not applicable"

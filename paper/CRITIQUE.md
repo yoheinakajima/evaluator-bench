@@ -29,7 +29,7 @@ Written 14 Sep 2026 after the first full build. Kept so reviewers can see what t
 - Outcome-independent trigger enumeration (search each regime for qualifying incidents, not just remembered ones).
 - Month-level dates for AI milestones and any regime with a dense reform period.
 - Splitting bundled regimes (cybersecurity into its schemes; AI into model evals, org audits, and government testing).
-- A second coder on strength, harm class, and mechanisms, with agreement reported.
+- Public correction of strength, harm class, and mechanism codings through the contribution path, with accepted changes reported in the annual update; no second coder is claimed.
 - Anchors that separate legal form from conduct in the governance dimension.
 
 ## v0.3 addendum: the money side was thin

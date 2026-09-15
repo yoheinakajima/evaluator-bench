@@ -7,7 +7,7 @@ needs a confirmed bounded negative), ledger hygiene (supersession targets
 exist, disputed rows never enter sums), and date discipline (no record dated
 after the frozen evidence clock). It does NOT guarantee that a cited source
 supports the claim's wording, that weights are the right weights, or that a
-score is true — those need human review and second coders.
+score is true; that is what public review and the contribution path are for.
 """
 from __future__ import annotations
 import sys

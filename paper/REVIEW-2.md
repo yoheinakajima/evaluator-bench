@@ -1,6 +1,6 @@
 # Review 2: UI pass with rendered screenshots
 
-14 Sep 2026, v0.9. Pages rendered with wkhtmltoimage at 1200 px and 400 px (JavaScript off, so injected rows and the ladder are absent; inline SVG figures and all CSS render). Old WebKit lacks flex and grid `gap`, so some spacing in the renders is tighter than in a current browser; the fixes below are for real defects.
+14 Sep 2026, pre-release review 2. Pages rendered with wkhtmltoimage at 1200 px and 400 px (JavaScript off, so injected rows and the ladder are absent; inline SVG figures and all CSS render). Old WebKit lacks flex and grid `gap`, so some spacing in the renders is tighter than in a current browser; the fixes below are for real defects.
 
 ## Fixed
 
@@ -23,5 +23,5 @@
 
 ## Not verifiable here
 
-- Font rendering (Google Fonts blocked in the sandbox; fallbacks rendered).
+- Font rendering (Google Fonts blocked in the build environment; fallbacks rendered).
 - JavaScript-injected sections (directory rows, ladder, cases, rubric); their CSS is unchanged from the version checked by DOM tests.

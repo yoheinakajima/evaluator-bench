@@ -1,5 +1,5 @@
 {
- "proposal_sha256": "dc9965dc9cade58bdf42498c2b6f84d5f7e8b7d457fb1a7486f7e70c6f7b03de",
+ "proposal_sha256": "cb663a956df6e7990972e7cdc6424b0f5a951f4f3c51b7d4ab4d06e3c1bd7bf8",
  "valid": false,
  "errors": [
   "bundle.status must equal ready-for-review",
@@ -7,5 +7,5 @@
  ],
  "summary": "validated; digests pending",
  "validator": "epistemedia.research_kit.validate_proposal",
- "proposal_id": "em:research-proposal:sha256:71497f1abdad34f96be8addbb2a23850b2d1dc2340a12617f9410052012fcb63"
+ "proposal_id": "em:research-proposal:sha256:f3fca413c3a4cfa6f141b333a3627815cd1d5ad6f2d46f86d40f9f4fbbbcf97a"
 }

@@ -35,7 +35,7 @@
   "signals": [
    "hal.06"
   ],
-  "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Formal recusal/disclosure policy is an open question for the second-coder pass.",
+  "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Provisional readings are open to public correction through the contribution path.",
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v0"
  },

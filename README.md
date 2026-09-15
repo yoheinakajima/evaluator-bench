@@ -1,6 +1,6 @@
 # Evaluator Bench
 
-Status: v0.9, pre-launch. See `LAUNCH.md` for what a person still has to do before and after the first push.
+Status: v0, initial release (preview window through 29 Sep 2026). See `CHANGELOG.md` for what is in it and `LAUNCH.md` for the operator steps.
 
 An evidence-linked, event-sourced directory of 28 evaluation organizations, institutes, vendors and benchmarks for frontier AI (26 ranked, 2 expected entrants on a watchlist), with an independence score you can take apart and a row-level ledger of who pays whom.
 

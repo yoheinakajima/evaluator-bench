@@ -2,7 +2,7 @@
 
 v0 is presented as one batch of initial research with a public correction window; corrections after that go through the contribution path and feed the first annual update. Evidence that cannot be re-derived is held, marked, and excluded from figures (PROCESS section 12); it does not move a ranking.
 
-State at v0.9: the repository builds, verifies, and tests clean; the site has 200-odd pages with navigation to every item type, a Contribute page with human and agent instructions, a Dockets page, and a Status page. What follows is what a person has to do that a build cannot.
+State at v0: the repository builds, verifies, and tests clean; the site has 200-odd pages with navigation to every item type, a Contribute page with human and agent instructions, a Dockets page, and a Status page. What follows is what a person has to do that a build cannot.
 
 ## Before the repository is public
 
@@ -25,7 +25,7 @@ State at v0.9: the repository builds, verifies, and tests clean; the site has 20
 
 ## First month
 
-8. **Second coder on Dataset A.** Independent pass over strength, harm class, mechanisms, and the 224 assessments; agreement reported in the paper.
+8. **Public correction instead of a second coder.** Version 0 has one coder. The check is that everything is published and anyone can file a correction; accepted changes are reported in the annual update with the row that moved them.
 9. **Primary sources for Dataset B.** Replace the Wikipedia citations milestone by milestone; the `status` field on each regime says so until done.
 10. **Announce with the agent prompt** on the Contribute page, so the first contributions arrive in the format the CI expects.
 

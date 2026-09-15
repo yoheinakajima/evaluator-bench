@@ -1,4 +1,7 @@
-# Working notes
+# Curation log
+
+A dated log of how the record was built. Labels such as v0.4 or v1.0-preview were internal checkpoints during the two-day curation; the first public release is v0 (15 Sep 2026). Nothing here is evidence; the rows are. Curator and assessor labels on rows (for example "yohei/claude v0.4") name the checkpoint at which the row was written.
+
 
 - 2026-09-14. First build. `python -m bench industries` seed result: trigger to next rule, 14 events across 11 non-AI regimes, median 2 years, max 10. Interval from first voluntary assurance to first independence rule ranges 17 to 208 years. AI: first voluntary pre-release evaluation 2022, first candidate triggers 2025 (FrontierMath disclosure) and 2026 (OpenAI agent swarm), first mandate 2026 (Illinois, effective 2028). The pattern says the next three years decide the shape of the AI regime.
 - Open question for Dataset B: code "delegation" as its own lifecycle stage. Aviation (ODA), pharma (sponsor-run trials), credit (issuer pays) all show the assessed party absorbing the assessment function before a reform reclaims it. AI's lab-run safety cases with contracted external "validation" fit that stage.

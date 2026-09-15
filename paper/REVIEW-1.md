@@ -1,6 +1,6 @@
 # Review 1: code and site
 
-14 Sep 2026, v0.8. A read-through of `bench/`, `site/`, `data/`, and the built `dist/` with a link check.
+14 Sep 2026, pre-release review 1. A read-through of `bench/`, `site/`, `data/`, and the built `dist/` with a link check.
 
 ## Found and fixed
 
@@ -14,7 +14,7 @@
 
 - Tooltips are hover-first; on touch, a tap writes the text below the figure. Acceptable; a modal would be better for the graph on phones.
 - Pages are regenerated wholesale on every build (198 files). Fine at this size; if the ledger grows past a few thousand rows, generate incrementally.
-- `bench review` and `bench audit` need network and, for the model check, an API key; they run in CI and not in the sandbox this was built in. Both degrade to a reduced report rather than failing.
+- `bench review` and `bench audit` need network and, for the model check, an API key; they run in CI and not in the build environment this was written in. Both degrade to a reduced report rather than failing.
 - The naive link checker flags eleven JavaScript template strings inside `<script>`; they are not links. Real internal links: 11,007 checked, none broken.
 
 ## Data quality notes

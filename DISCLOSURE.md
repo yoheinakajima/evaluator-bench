@@ -12,12 +12,12 @@ PROCESS.md section 10 asks of the curators what the rubric asks of evaluators. F
 
 Disclosure completed by the curator on 2026-09-15; the shared-funders field remains a best-effort "none known" and will be updated if that changes.
 
-Under the Rule below, the public shareholdings in Google and Meta are a financial interest in two labs in the ledger. The three evaluators with ledger ties to those labs — Epoch (Google contract), Scale (Meta investment), and MLCommons (Google grant), all imported rows — will have the holdings noted in their assessment rationales and are first in line for the scheduled second-coder pass before publication.
+Under the Rule below, the public shareholdings in Google and Meta are a financial interest in two labs in the ledger. The three evaluators with ledger ties to those labs — Epoch (Google contract), Scale (Meta investment), and MLCommons (Google grant), all imported rows — have the holdings noted in their assessment rationales so readers can weigh them. There is no second coder for v0; the check is public: every assessment, signal, row and source is published, and anyone can file a correction through the contribution path.
 
 ## Assistant
 
-The initial curation (v0 to v0.8) was drafted by Claude (Anthropic) in a single session on 14 September 2026. Anthropic is a frontier developer evaluated by several organizations scored here, and appears in the ledger as a lab entity. Every score, signal and row was written to be re-derivable without the assistant; the audit and review steps exist so that this origin can be checked rather than trusted.
+The initial curation was drafted by Claude (Anthropic) across sessions on 14 and 15 September 2026, directed by the curator, with independent verification passes by other tools (Codex, Grok) recorded in paper/audits/. Anthropic is a frontier developer evaluated by several organizations scored here, and appears in the ledger as a lab entity. Every score, signal and row was written to be re-derivable without the assistant; the audit and review steps exist so that this origin can be checked rather than trusted.
 
 ## Rule
 
-If a curator holds a financial interest in an evaluator or a lab, the assessments of that evaluator, and of evaluators whose scores turn mainly on that lab, are marked in their rationale and get a second coder before publication.
+If a curator holds a financial interest in an evaluator or a lab, the assessments of that evaluator, and of evaluators whose scores turn mainly on that lab, are marked in their rationale so readers can weigh the interest, and are open to public correction through the contribution path. Version 0 has one coder; it does not claim a second.

@@ -3895,7 +3895,7 @@
      "assessor": "yohei/claude v0-final",
      "dimension": "F",
      "evaluator": "epoch",
-     "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (contract, imported row T35). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
+     "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (contract, imported row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "epoch.01",
       "epoch.05",
@@ -5730,7 +5730,7 @@
      "signals": [
       "hal.06"
      ],
-     "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Formal recusal/disclosure policy is an open question for the second-coder pass.",
+     "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Provisional readings are open to public correction through the contribution path.",
      "assessed": "2026-09-15",
      "assessor": "yohei/claude v0",
      "graph_id": "assessment#571",
@@ -7496,7 +7496,7 @@
      "assessor": "yohei/claude v0",
      "dimension": "F",
      "evaluator": "mlcommons",
-     "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
+     "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "mlcommons.01"
      ],
@@ -8431,7 +8431,7 @@
       "palisade.07",
       "palisade.10"
      ],
-     "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. No recusal policy is evidenced; the value is provisional pending the second-coder pass.",
+     "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. Provisional readings are open to public correction through the contribution path.",
      "assessed": "2026-09-15",
      "assessor": "yohei/claude v0",
      "graph_id": "assessment#635",
@@ -9744,7 +9744,7 @@
      "assessor": "yohei/claude v0",
      "dimension": "F",
      "evaluator": "scale",
-     "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Meta (investment, imported row T52). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
+     "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Meta (investment, imported row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
      "signals": [
       "scale.01"
      ],
@@ -10495,7 +10495,7 @@
       "transluce.04",
       "transluce.12"
      ],
-     "rationale": "Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). No recusal policy or tie disclosure is evidenced, so 3 is unearned; the file is thin and the value is provisional pending the second-coder pass.",
+     "rationale": "Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). Provisional readings are open to public correction through the contribution path.",
      "assessed": "2026-09-15",
      "assessor": "yohei/claude v0",
      "graph_id": "assessment#683",

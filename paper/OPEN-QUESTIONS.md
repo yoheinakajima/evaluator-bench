@@ -33,7 +33,7 @@ One entry per question. Status: SETTLED (rows cited, figure-ready), PARTIAL (row
 ## Q7. Which trigger incidents met the Dataset B criterion and were followed by nothing? OPEN
 - Closes it: per-regime enumeration from incident databases, coded before looking at what followed.
 
-## Q8. Per-evaluator gaps after the population pass (v0.4) PARTIAL
+## Q8. Per-evaluator gaps after the population pass PARTIAL
 - Rows: ledger T01-T66, R01-R66, N01-N18; population summary from `bench exposure`: 28 evaluators, 8 with Coefficient inflows, 17 with an inflow from a lab or a lab-tied party, 21 of 62 inflow rows confirmed.
 - No ledger rows yet: Dreadnode, Humane Intelligence, HAL, assurance firms. Closes it: team pages, 990s or Companies House, round announcements.
 - Transluce: employee-donor shares confirmed from its own policy; names and sizes not public. Closes it: the FY2026 disclosure.

@@ -1,4 +1,4 @@
-"""Regression tests for the v1 repair pass (2026-09-15): fail-closed verifier,
+"""Regression tests for the pre-release hardening pass (2026-09-15): fail-closed verifier,
 ledger hygiene, gated scoring, and the retired self-certification loop."""
 import json, pathlib
 

@@ -1,6 +1,6 @@
 # Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against the History of Assurance Regimes
 
-Draft v0.4, 15 September 2026. All numbers regenerate from this repository at the pinned commit (`python -m bench verify && python -m bench build && python -m bench industries && python -m bench paths`). Dataset B milestone years are coded from secondary sources and need primary-source verification before submission. Dataset A is single-coder.
+Version 0 draft, 15 September 2026. All numbers regenerate from this repository at the pinned commit (`python -m bench verify && python -m bench build && python -m bench industries && python -m bench paths`). Dataset B milestone years are coded from secondary sources and need primary-source verification before submission. Dataset A is single-coder.
 
 ## Abstract
 
@@ -16,7 +16,7 @@ There is a long literature arguing that AI should learn from the assurance regim
 
 Contributions:
 
-1. Dataset A, an evidence-linked scorecard of 26 frontier AI evaluators on eight independence dimensions, with 308 dated signals citing 120 public sources, built as an event-sourced graph so every score traces to its evidence. Two expected entrants are scored on the same rubric on an unranked watchlist.
+1. Dataset A, an evidence-linked scorecard of 26 frontier AI evaluators on eight independence dimensions, with 314 dated signals citing 122 public sources, built as an event-sourced graph so every score traces to its evidence. Two expected entrants are scored on the same rubric on an unranked watchlist.
 2. Dataset B, a lifecycle dataset of sixteen assurance regimes coded as dated milestones of eleven kinds, with per-regime payer, access, and publication models.
 3. A stage ladder that places frontier AI on the trajectory other regimes followed, and three empirical regularities about how assurance regimes acquire independence.
 4. A reading of what those regularities imply for the design choices now open in AI.
@@ -35,7 +35,7 @@ Dimensions and anchors. Eight dimensions, each scored 0 to 4 against written anc
 
 Evidence model. A signal is one dated claim, for or against, on one dimension, citing at least one source with a URL and a retrieval date. An assessment is a value on one dimension citing at least one signal on that dimension. A score is a weighted total, never stored, recomputed at build time under named weight presets. Integrity is enforced by a verifier: no orphan sources, no assessment without a signal, no 4 on funding/governance/personnel without a tier-1 (filing or index) source on a cited signal, no record dated after the frozen evidence clock. The build writes every object into an append-only event log under a frozen clock; two builds on the same data produce a byte-identical log, and the provenance of every score names the events it rests on. Bench-authored docket drafts are not evidence and cannot be cited by signals.
 
-Coding. Version 0 is single-coder from public sources between 12 and 15 September 2026. Confidence tags (high, medium, low) mark thin records. Each assessment carries a computed evidence tier (the best source tier among its cited signals), displayed on the scorecard, so imported-only and self-only assessments are visible as such. A second-coder pass with disagreements logged in the rationale fields is scheduled before submission.
+Coding. Version 0 is single-coder from public sources between 12 and 15 September 2026, with no second coder claimed; the check is public: every assessment, signal, row and source is published with its status, and corrections arrive through a reviewed contribution path. Values are bounded by evidence status: a 0 or 4 needs a signal whose sources are all confirmed, a 1 or 3 needs a confirmed or unaudited source, and seven assessments in v0 are held at the nearest supportable anchor and marked evidence-limited (PROCESS section 12). Confidence tags (high, medium, low) mark thin records. Each assessment carries a computed evidence tier (the best source tier among its cited signals), displayed on the scorecard, so imported-only and self-only assessments are visible as such. A second-coder pass with disagreements logged in the rationale fields is scheduled before submission.
 
 ### 3.2 Dataset B: assurance-regime lifecycles
 
@@ -87,11 +87,11 @@ Five regimes in Dataset B show the assessed party absorbing the assessment funct
 
 ### 5.5 The AI evaluator population in 2026
 
-Under the lab-procurement preset (gated), scores run from 81 (METR) to 35 (Microsoft AI Red Team). The top scorers — METR, AVERI, SaferAI, and a three-way tie at 75 between the UK AI Safety Institute, the EU AI Office, and FAR.AI — are nonprofits or public bodies, consistent with H4's expectation that philanthropic or public funding scores highest. Nonprofits (n=12) average 3.0 or above on governance, scope, publication, methods, and product conflicts, 2.75 on funding, 2.58 on personnel, and 2.42 on access. Government bodies (n=3) score 3.0 on funding and 1.7 on publication: they see the most and publish the least. Venture-backed evaluators (n=5) average 1.0 on funding, governance, and product conflicts, 1.6 on personnel, and 2.8 on access. The one Big Tech unit scores 0 on funding and governance.
+Under the lab-procurement preset (gated), scores run from 81 (METR) to 38 (Scale AI), with Gray Swan at 40 and Microsoft AI Red Team at 41. The top scorers — METR, AVERI, SaferAI, and a three-way tie at 75 between the UK AI Safety Institute, the EU AI Office, and FAR.AI — are nonprofits or public bodies, consistent with H4's expectation that philanthropic or public funding scores highest. Nonprofits (n=12) average 3.0 or above on governance, scope, publication, methods, and product conflicts, 2.75 on funding, 2.58 on personnel, and 2.42 on access. Government bodies (n=3) score 3.0 on funding and 1.7 on publication: they see the most and publish the least. Venture-backed evaluators (n=5) average 1.0 on funding, governance, and product conflicts, 1.6 on personnel, and 2.8 on access. The one Big Tech unit is held at 1 on funding and governance under the evidence-limited rule (its cited sources are unaudited), where the record read alone would give 0.
 
-Across all 26 ranked, mean scores by dimension are scope control 2.92, method transparency 2.88, role incompatibility 2.81, publication rights 2.58, access 2.50, personnel 2.35, governance 2.27, and funding 2.19. Twelve of 26 score 2 or below on funding, which at anchor 2 means the lab pays per engagement. Hypothesis H4 predicted the distribution would score higher on access and methods than on funding and personnel; the dimension means are ordered that way — access (2.50) and methods (2.88) above funding (2.19) and personnel (2.35) — but with n=26, single coding, and 0–4 integer anchors, that is an ordering of means, not statistical support. Access sits in the middle of the pack rather than among the strengths; the September 2026 access pledges target exactly the gap between access and the top dimensions.
+Across all 26 ranked, mean scores by dimension are scope control 2.96, method transparency 2.88, role incompatibility 2.77, publication rights 2.62, access 2.50, governance 2.38, personnel 2.35, and funding 2.23. Twelve of 26 score 2 or below on funding, which at anchor 2 means the lab pays per engagement. Hypothesis H4 predicted the distribution would score higher on access and methods than on funding and personnel; the dimension means are ordered that way — access (2.50) and methods (2.88) above funding (2.23) and personnel (2.35) — but with n=26, single coding, and 0–4 integer anchors, that is an ordering of means, not statistical support. Access sits in the middle of the pack rather than among the strengths; the September 2026 access pledges target exactly the gap between access and the top dimensions.
 
-Signals split 156 for and 133 against across the ranked population. The most frequent against-signal across organizations is that the developer pays for the evaluation of its own model. The most frequent for-signal is publication of a method or a tool. External validation is sparse: among the top five scorers, AVERI's seven cited sources are five self-published with none at tier 1, and self-published sources anchor a material share of high assessments across the population. The scarcity of independent verification is itself a finding — the scores measure what the public record shows, and the public record is largely what the evaluators say about themselves.
+Signals split 159 for and 135 against across the ranked population. The most frequent against-signal across organizations is that the developer pays for the evaluation of its own model. The most frequent for-signal is publication of a method or a tool. External validation is sparse: among the top five scorers, AVERI's seven cited sources are five self-published with none at tier 1, and self-published sources anchor a material share of high assessments across the population. The scarcity of independent verification is itself a finding — the scores measure what the public record shows, and the public record is largely what the evaluators say about themselves.
 
 ### 5.6 Paths: which history AI's path resembles
 
@@ -139,7 +139,7 @@ Frontier AI has compressed into four years a passage other industries took decad
 - Figure 4. Mechanism matrix: `paper/figures/mechanisms.svg`.
 - Table 1. Trigger-to-rule lags: `python -m bench industries`.
 - Table 2. Dataset A scorecard under four presets: `python -m bench scores <preset>`.
-- Table 3. Per-dimension means by organization type: `python -m bench scores --by-type` (see `paper/NOTES.md` for the v0.4 numbers).
+- Table 3. Per-dimension means by organization type: `python -m bench scores --by-type` (see `paper/NOTES.md` for the pre-release numbers).
 
 ## References
 

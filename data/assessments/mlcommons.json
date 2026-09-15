@@ -5,7 +5,7 @@
     "assessor": "yohei/claude v0",
     "dimension": "F",
     "evaluator": "mlcommons",
-    "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is first in line for the second-coder pass before publication.",
+    "rationale": "Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a ledger tie to Google (grant, imported row T63). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
     "signals": [
       "mlcommons.01"
     ],

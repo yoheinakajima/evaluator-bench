@@ -38,7 +38,7 @@
    "transluce.04",
    "transluce.12"
   ],
-  "rationale": "Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). No recusal policy or tie disclosure is evidenced, so 3 is unearned; the file is thin and the value is provisional pending the second-coder pass.",
+  "rationale": "Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). Provisional readings are open to public correction through the contribution path.",
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v0"
  },

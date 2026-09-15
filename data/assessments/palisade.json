@@ -38,7 +38,7 @@
    "palisade.07",
    "palisade.10"
   ],
-  "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. No recusal policy is evidenced; the value is provisional pending the second-coder pass.",
+  "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. Provisional readings are open to public correction through the contribution path.",
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v0"
  },
