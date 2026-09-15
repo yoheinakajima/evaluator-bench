@@ -1,0 +1,14 @@
+{
+ "proposal_sha256": "c795ee2a9eb33d6051600f5f5a230a295b3db059a1c6c20871769c3cafd58ac7",
+ "valid": false,
+ "errors": [
+  "bundle.status must equal ready-for-review",
+  "bundle.retrieval_attempts[0] retrieved outcome requires no failure and an artifact digest",
+  "bundle.retrieval_attempts[1] retrieved outcome requires no failure and an artifact digest",
+  "bundle.retrieval_attempts[2] retrieved outcome requires no failure and an artifact digest",
+  "bundle.retrieval_attempts[3] retrieved outcome requires no failure and an artifact digest"
+ ],
+ "summary": "validated; digests pending",
+ "validator": "epistemedia.research_kit.validate_proposal",
+ "proposal_id": "em:research-proposal:sha256:a6bd525d1ffad88b8313faf65a62250d1fea1b9c4e93cd9b8dde8d1f027d7999"
+}

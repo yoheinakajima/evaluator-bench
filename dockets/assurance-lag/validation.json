@@ -1,0 +1,11 @@
+{
+ "proposal_sha256": "dc9965dc9cade58bdf42498c2b6f84d5f7e8b7d457fb1a7486f7e70c6f7b03de",
+ "valid": false,
+ "errors": [
+  "bundle.status must equal ready-for-review",
+  "bundle.retrieval_attempts[0] retrieved outcome requires no failure and an artifact digest"
+ ],
+ "summary": "validated; digests pending",
+ "validator": "epistemedia.research_kit.validate_proposal",
+ "proposal_id": "em:research-proposal:sha256:71497f1abdad34f96be8addbb2a23850b2d1dc2340a12617f9410052012fcb63"
+}

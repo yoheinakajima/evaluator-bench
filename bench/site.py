@@ -284,12 +284,8 @@ def dockets_index(C: dict) -> str:
     for d in sorted((ROOT / "dockets").iterdir()):
         if not d.is_dir() or not (d / "proposal.json").exists(): continue
         p = json.loads((d / "proposal.json").read_text()); cert = ROOT / "data" / "certificates" / f"{d.name}.json"
-        status = "validated; digests pending"
-        try:
-            from epistemedia.research_kit import validate_proposal
-            errs = validate_proposal(p).get("errors", []); other = [e for e in errs if "artifact digest" not in e and "ready-for-review" not in e]
-            status = ("validated; digests pending" if not other else f"{len(other)} validation error(s)") if errs else "valid"
-        except ImportError: status = "not validated here (epistemedia not installed)"
+        from .docket import recorded_status
+        status = recorded_status(d.name)
         rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>not submitted</td></tr>')
     body = f"""<div class="pagehead"><h1>Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is a <b>draft</b>: not a finding, not evidence, not citable by any signal. It becomes usable evidence only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and independent review there by someone other than the drafter. No docket here has been submitted.</p></div>
     <div class="card"><table class="tbl"><tr><th>Question</th><th>Sources</th><th>Spans</th><th>Results</th><th>Validation</th><th>Epistemedia</th></tr>{''.join(rows)}</table>

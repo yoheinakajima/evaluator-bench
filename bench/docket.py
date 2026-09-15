@@ -59,11 +59,36 @@ def build(slug: str) -> pathlib.Path:
     out = d / "proposal.json"; out.write_text(json.dumps(p, indent=1, ensure_ascii=False) + "\n"); return out
 
 def validate(slug: str) -> dict:
+    """Run Epistemedia's validator and record the result next to the proposal.
+
+    The record (validation.json) carries the SHA-256 of the proposal bytes it
+    describes, the validator's errors, and the epistemedia commit if known, so
+    the site can show validation status without the package installed, and a
+    stale record is detectable: if the proposal changes, the digest no longer
+    matches and the page shows "not validated for these bytes".
+    """
+    import hashlib
+    raw = (DOCKETS / slug / "proposal.json").read_bytes()
     try:
         from epistemedia.research_kit import validate_proposal
     except ImportError:
         return {"valid": False, "errors": ["epistemedia package not installed: git clone https://github.com/yoheinakajima/epistemedia && pip install -e epistemedia"]}
-    return validate_proposal(json.loads((DOCKETS / slug / "proposal.json").read_text()))
+    r = validate_proposal(json.loads(raw))
+    errs = r.get("errors", []); other = [e for e in errs if "artifact digest" not in e and "ready-for-review" not in e]
+    rec = {"proposal_sha256": hashlib.sha256(raw).hexdigest(), "valid": bool(r.get("valid")), "errors": errs,
+           "summary": ("valid" if not errs else ("validated; digests pending" if not other else f"{len(other)} validation error(s)")),
+           "validator": "epistemedia.research_kit.validate_proposal", "proposal_id": r.get("proposal_id", "unknown")}
+    (DOCKETS / slug / "validation.json").write_text(json.dumps(rec, indent=1) + "\n")
+    return r
+
+def recorded_status(slug: str) -> str:
+    """Validation status for the site, from the committed record only."""
+    import hashlib
+    d = DOCKETS / slug; vp = d / "validation.json"
+    if not vp.exists(): return "not validated (run bench docket validate)"
+    rec = json.loads(vp.read_text())
+    if rec.get("proposal_sha256") != hashlib.sha256((d / "proposal.json").read_bytes()).hexdigest(): return "not validated for these bytes (proposal changed since validation)"
+    return rec.get("summary", "unknown")
 
 def main(argv=None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
