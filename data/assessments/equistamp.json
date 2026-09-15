@@ -20,7 +20,7 @@
   "signals": [
    "equistamp.03"
   ],
-  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+  "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
   "assessed": "2026-09-15",
   "assessor": "rules v0.1 (RULES.md)"
  },
@@ -95,7 +95,7 @@
   "signals": [
    "equistamp.09"
   ],
-  "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.",
+  "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
   "assessed": "2026-09-15",
   "assessor": "rules v0.1 (RULES.md)"
  }
