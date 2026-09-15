@@ -86,3 +86,20 @@ def test_docket_status_is_recorded_not_computed():
         if d.is_dir() and (d / "proposal.json").exists():
             assert "not installed" not in recorded_status(d.name)
             assert (d / "validation.json").exists(), d.name
+
+def test_status_page_buckets_close():
+    import re
+    from collections import Counter
+    from bench.load import load
+    from bench.ledger import load_ledger
+    d = load(strict=False); L = load_ledger()
+    html = (DIST / "status" / "index.html").read_text()
+    for label, counts in (("Sources", Counter((s.get("audit_status") or "unknown") for s in d["sources"].values())),
+                          ("Ledger transfers", Counter((t.get("audit_status") or "unknown") for t in L["transfers"]))):
+        total = sum(counts.values())
+        m = re.search(re.escape(label) + r'</td><td class="num">(\d+) \(([^)]*)\)', html)
+        assert m, f"{label} row missing breakdown"
+        assert int(m.group(1)) == total, f"{label}: total {m.group(1)} != {total}"
+        shown = {st: n for n, st in re.findall(r"(\d+) (\w+)", m.group(2))}
+        for st, n in counts.items():
+            assert shown.get(st) == str(n), f"{label}: bucket {st} shows {shown.get(st)}, expected {n}"

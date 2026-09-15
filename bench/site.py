@@ -470,13 +470,30 @@ def _csv(p: pathlib.Path) -> list[dict]:
     with open(p, newline="") as f: return [dict(r) for r in csv.DictReader(f)]
 
 
+def _status_counts(rows) -> dict:
+    counts = {}
+    for r in rows:
+        st = r.get("audit_status") or "unknown"
+        counts[st] = counts.get(st, 0) + 1
+    return counts
+
+
+def _status_breakdown(counts: dict, total: int) -> str:
+    order = ["confirmed", "unaudited", "imported", "differs", "unverifiable", "superseded", "quarantined", "unknown"]
+    parts = [f"{counts[s]} {s}" for s in order if counts.get(s)]
+    assert sum(counts.values()) == total, f"status buckets do not close: {counts} vs {total}"
+    return f"{total} (" + ", ".join(parts) + ")"
+
+
 def status_index(bench: dict, C: dict) -> str:
     import hashlib
     from .gates import gates
     L = C["L"]
     ev = ROOT / "graph" / "events.jsonl"; commit = hashlib.sha256(ev.read_bytes()).hexdigest()[:12] if ev.exists() else "unknown"
-    tr = L["transfers"]; conf = sum(1 for t in tr if t["audit_status"] == "confirmed"); imp = sum(1 for t in tr if t["audit_status"] == "imported")
-    srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
+    tr = L["transfers"]
+    tstat = _status_counts(tr)
+    srcs = bench["sources"].values()
+    sstat = _status_counts(srcs)
     ranked = [e for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"]; watch = [e for e in bench["evaluators"] if e.get("status") == "watchlist"]
     rsig = _ranked_signals(bench); quotes = sum(1 for s in rsig if s.get("quote"))
     ev_by_ledger = {LEDGER_ALIAS.get(e["id"], e["id"]): e for e in bench["evaluators"]}
@@ -496,8 +513,8 @@ def status_index(bench: dict, C: dict) -> str:
     <div class="cols">
     <div class="card"><h3>Coverage</h3><table class="tbl">
       <tr><td>Ranked organizations</td><td class="num">{len(ranked)}</td></tr><tr><td>Watchlist (not ranked)</td><td class="num">{len(watch)}</td></tr><tr><td>Out of scope, retained</td><td class="num">{sum(1 for e in bench["evaluators"] if e.get("status") == "out-of-scope")}</td></tr><tr><td>Signals (ranked)</td><td class="num">{len(rsig)}</td></tr><tr><td>Signals with an exact quote (ranked)</td><td class="num">{quotes}</td></tr>
-      <tr><td>Sources</td><td class="num">{len(bench['sources'])} ({sconf} confirmed, {simp} imported)</td></tr>
-      <tr><td>Ledger transfers</td><td class="num">{len(tr)} ({conf} confirmed, {imp} imported)</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Checked and not found (bounded negatives)</td><td class="num">{len(L['negatives'])}</td></tr>
+      <tr><td>Sources</td><td class="num">{_status_breakdown(sstat, len(bench['sources']))}</td></tr>
+      <tr><td>Ledger transfers</td><td class="num">{_status_breakdown(tstat, len(tr))}</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Checked and not found (bounded negatives)</td><td class="num">{len(L['negatives'])}</td></tr>
       <tr><td>Entities</td><td class="num">{len(L['entities'])}</td></tr><tr><td>Regimes</td><td class="num">{len(C['regs'])}</td></tr></table></div>
     <div class="card"><h3>Exposure (ranked only)</h3><table class="tbl">
       <tr><td>Ranked evaluators with a direct lab tie (hop 0), any kind</td><td class="num">{direct} of {len(ex)}</td></tr>
