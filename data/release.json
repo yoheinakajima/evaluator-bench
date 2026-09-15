@@ -3,5 +3,6 @@
  "set_on": "2026-09-15",
  "window_until": "2026-09-29",
  "tag": null,
- "note": "Reply packets sent to affected organizations on the preview date."
+ "note": "",
+ "packets_sent": null
 }

@@ -76,7 +76,9 @@ def release_banner(pre: str) -> str:
     if not rp.exists(): return ""
     r = json.loads(rp.read_text())
     if r.get("stage") == "preview":
-        return f'<div class="banner">Preview. Every score here is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. Evaluators whose scores changed have been sent the record; anyone can submit evidence or corrections until then. What arrives becomes the first round of the annual paper. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
+        sent = r.get("packets_sent")
+        reply = (f"Evaluators whose scores changed were sent the full record on {esc(sent)}." if sent else "Evaluators whose scores changed will be sent the full record; the window starts from that date.")
+        return f'<div class="banner">Preview. Every score here is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. {reply} Anyone can submit evidence or corrections until then; what arrives becomes the first round of the annual paper. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
     if r.get("stage") == "published":
         return f'<div class="banner">Published as <b>{esc(r.get("tag") or "v0")}</b> on {esc(r.get("set_on"))}. Scores continue to move as evidence is merged; the next dated reading is the annual update. <a href="{pre}contribute/index.html">Submit evidence</a>.</div>'
     return ""

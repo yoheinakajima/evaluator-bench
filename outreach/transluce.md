@@ -1,6 +1,6 @@
 # Right of reply: Transluce
 
-Sent 2026-09-15. Reply requested within 14 days. This is the complete record Evaluator Bench holds about Transluce; nothing else feeds the score.
+Prepared 2026-09-15. Send date: [to be filled by the sender]. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Transluce; nothing else feeds the score.
 
 ## How to reply
 

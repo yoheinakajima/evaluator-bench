@@ -23,7 +23,7 @@ def packet(eid: str, d: dict, L: dict) -> str:
     lid = LEDGER_ALIAS.get(eid, eid)
     rows = [t for t in L["transfers"] if lid in (t["from"], t["to"])] + [r for r in L["relationships"] if lid in (r["subject"], r["object"])] + [n for n in L["negatives"] if n["evaluator"] == lid]
     today = datetime.date.today().isoformat()
-    o = [f"# Right of reply: {e['name']}", "", f"Sent {today}. Reply requested within 14 days. This is the complete record Evaluator Bench holds about {e['name']}; nothing else feeds the score.", "",
+    o = [f"# Right of reply: {e['name']}", "", f"Prepared {today}. Send date: [to be filled by the sender]. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about {e['name']}; nothing else feeds the score.", "",
          "## How to reply", "", "- Correct a fact: open a pull request adding a signal with a source, or email the rows and sources and we file them as a signal marked `source_type: self`.",
          "- Dispute an anchor: say which anchor text you believe applies and why; the rationale field records the disagreement even if the value does not change.",
          "- Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.",
