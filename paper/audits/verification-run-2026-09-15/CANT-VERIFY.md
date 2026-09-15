@@ -1,6 +1,6 @@
-# Items I cannot verify — handoff list (2026-09-15)
+# Unresolved after the 15 Sep 2026 verification run
 
-Two categories: (A) attempted and genuinely unverifiable with my tooling — these need better sourcing or a different fetch route; (B) never attempted because my browser fetch kept dying — a fresh agent with working fetches should be able to do these.
+Handoff list from the verification agent. Two categories: (A) attempted, and the cited page does not support the recorded figure; these need a better source or a different route to the primary document. (B) not attempted because the fetch route failed during the run; a later pass should be able to do these. Statuses below are as of the run; several were resolved afterwards (T13 to unaudited on two 990 extracts; T07 confirmed against Epoch's own list; T22 confirmed on SecureBio's post) and the ledger is authoritative.
 
 ## A1. Ledger transfers marked unverifiable (16 rows, after grok pass)
 Each was re-fetched; the cited page does not support the recorded figure/relationship.
