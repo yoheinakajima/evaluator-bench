@@ -21,7 +21,8 @@
   "value": 3,
   "anchor": 3,
   "signals": [
-   "euaio.07"
+   "euaio.07",
+   "euaio.12"
   ],
   "rationale": "Anchor 3: public body with a statutory basis (euaio.07). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10). Whether a formal COI policy is published is an open question.",
   "assessed": "2026-09-15",
@@ -35,7 +36,6 @@
   "signals": [
    "euaio.08"
   ],
-  "rationale": "Anchor 3 on personnel given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -47,9 +47,9 @@
   "signals": [
    "euaio.01"
   ],
-  "rationale": "Anchor 3 on access given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "statutory"
  },
  {
   "evaluator": "euaio",
@@ -59,11 +59,11 @@
   "signals": [
    "euaio.02",
    "euaio.03",
-   "euaio.11"
+   "euaio.11",
+   "euaio.13"
   ],
-  "rationale": "Anchor 4 on scope given the cited signals.",
   "assessed": "2026-09-15",
-  "assessor": "yohei/claude v1.0"
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "euaio",
@@ -73,9 +73,9 @@
   "signals": [
    "euaio.04"
   ],
-  "rationale": "Anchor 2 on publication given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "statutory"
  },
  {
   "evaluator": "euaio",
@@ -85,7 +85,6 @@
   "signals": [
    "euaio.05"
   ],
-  "rationale": "Anchor 2 on methods given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -97,7 +96,6 @@
   "signals": [
    "euaio.09"
   ],
-  "rationale": "Anchor 4 on products given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  }

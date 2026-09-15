@@ -12,5 +12,10 @@
  "confidence": "med",
  "summary": "Rates lab risk-management frameworks in public; runs EU Code of Practice evaluations.",
  "what_would_move_the_score": "Documented pre-release access under Code terms.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Access could be 0. No source records any pre-release model access for SaferAI: the goal-directedness evaluation it co-authored with Google DeepMind researchers tested models from Google DeepMind, OpenAI and Anthropic through ordinary means, and its own site describes framework ratings, risk models and advisory work rather than model testing. Anchor 0 is public API only, and that is the whole documented record.",
+  "higher": "Access could be 2. SaferAI leads the risk-modelling workstream of the EU AI Office's CBRN lot under a three-year contract, participated in all four Code of Practice working groups, and co-authors with a frontier developer's researchers; the Code contemplates external evaluator access to models before release. Documented pre-release access under Code terms, which the card names as what would move the score, would reach anchor 1 or 2."
+ },
+ "list_group": "referee"
 }

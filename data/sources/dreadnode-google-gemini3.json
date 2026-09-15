@@ -1,0 +1,12 @@
+{
+  "id": "dreadnode-google-gemini3",
+  "title": "A new era of intelligence with Gemini 3",
+  "publisher": "Google",
+  "url": "https://blog.google/products/gemini/gemini-3/",
+  "published": "2025-11-18",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Lab-published launch post (third-party primary document, typed self per repo precedent for lab pages such as openai-kolter-board and gdm-gemini-testing). Fetched 2026-09-15; span 'obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more' present. This is the document the existing gdm-gemini-testing record describes; that record's URL points at the homepage and should be retargeted here or dropped.",
+  "self_of": "google"
+}

@@ -1,0 +1,324 @@
+{
+ "evaluator": "redwood",
+ "signals": {
+  "redwood.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "Open Philanthropy's grants database shows approximately $25 million in historical funding to Redwood Research",
+   "quote_source": "itbb-watchdogs",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "Philanthropic, no lab revenue: anchor 3. Not 4: the funder's principal is an Anthropic investor (F.6) and no bounded negative in a filing or index is on file (F.12)."
+  },
+  "redwood.02": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "a few large grants can make one year's revenue almost disappear in the next",
+   "quote_source": "itbb-watchdogs",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "Concentration in one philanthropic pipeline whose principal is a lab investor is the \"some lab-linked pooled funds\" of anchor 3; F.6 caps at 3. Concentration by itself has no rule, recorded as a gap."
+  },
+  "redwood.03": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "A.5",
+   "quote": "a Redwood Research staff member contracting with METR",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok"
+   },
+   "note": "On-site incident access is anchor 4 under A.5; the access was granted to a Redwood staff member as a METR contractor, so the mechanism is METR's engagement terms. techtimes-metr-hf (press, confirmed, already in data/sources) is added as the second independent source so C16 is met: \"alongside Redwood Research contractor Ryan Greenblatt over six days on OpenAI's premises\". Judgment call flagged: the card could instead read this as METR's access.",
+   "sources": [
+    "metr-hf-investigation",
+    "techtimes-metr-hf"
+   ]
+  },
+  "redwood.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "OpenAI agreed at the outset with METR and Redwood that we would be able to describe high-level scope and terms",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok"
+   },
+   "note": "Co-authored report with a published redaction statement, but OpenAI could redact any non-public information (not security-only), so R.1 is unmet and R.7 floors at 2. The disclosed editorial feedback on the same engagement is an R.2 cap of 3 (new signal redwood.16), which sets the value at 3, as on METR."
+  },
+  "redwood.05": {
+   "bound": null,
+   "bound_note": "Section 9 (mis-dimensioned facts): the supported fact, co-authoring with Anthropic, belongs to S and is re-recorded as redwood.14; the P fact (talent flow with lab safety teams) has no source, so the signal is informational on P.",
+   "rule": "P.3",
+   "quote": "in collaboration with Redwood Research , provides the first empirical example of a large language model",
+   "quote_source": "anthropic-alignment-faking",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "itbb-watchdogs attributes alignment faking to \"Anthropic's own safety tests\" and never mentions Redwood's co-authorship or any talent flow. With this signal informational, P has no bound and is unevidenced (dash) under every policy until a P signal with a source exists; a bounded \"no lab roles found\" from the team page would floor at 2 (P.6), and documented hires from labs would cap at 2 (P.3).",
+   "sources": [
+    "itbb-watchdogs",
+    "anthropic-alignment-faking"
+   ]
+  },
+  "redwood.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "Designated as a 501(c)(3)",
+   "quote_source": "propublica-redwood",
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "Legal form alone floors at 2, not 3 (G.1); no published conflict-of-interest policy was found on redwoodresearch.org. itbb only implies the form (\"Redwood's tax filing\"); the ProPublica filing (new source, tier 1) states it.",
+   "sources": [
+    "itbb-watchdogs",
+    "propublica-redwood"
+   ]
+  },
+  "redwood.07": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "a Redwood Research staff member contracting with METR",
+   "quote_source": "metr-hf-investigation",
+   "fetch": {
+    "metr-hf-investigation": "ok"
+   },
+   "note": "Self-directed research with no engagement to refuse floors at 3 (S.5); the cited source supports only the incident-work half. The OpenAI-set window on that engagement caps at 3 (S.1, new signal redwood.15)."
+  },
+  "redwood.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "Open code alone is 3 under M.1, but itbb-watchdogs contains no statement about Redwood's methods or code, so no span; cite a Redwood repository (github.com/redwoodresearch) or the control-evaluations paper to support the floor."
+  },
+  "redwood.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "itbb-watchdogs": "ok"
+   },
+   "note": "No statement about products on the cited page, so no span; X.7 needs a bounded statement with a span and a second source for 4. New signal redwood.13 adds the filing-tier line (FY2024 program services $0) but FY2023 shows $343,734 of program service revenue with the payer undisclosed, so the floor is held at 3 pending a document."
+  },
+  "redwood.10": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "coefficient-index": "failed: HTTP 404 at coefficientgiving.org/grants/ (curl returns a 35-char stub)"
+   },
+   "note": "Grants recommended by funders whose principals are Anthropic investors (Coefficient, SFF, Tallinn) cap at 3 under F.6. The ledger CSV rendering contains the 63,086,000 total only as a raw cell, not a sentence, so no span; the index is a 404. Sources are unverifiable and imported, so C14 clamps this signal to 2 under the leads policy, which does not bind."
+  },
+  "redwood.11": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "listed in grant records at $36,566,000 for work on AI control and alignment faking",
+   "quote_source": "tnw-coefficient-ipo",
+   "fetch": {
+    "op-redwood-general-support": "failed: openphilanthropy.org grant URL redirects to a generic coefficientgiving.org page; grant text absent (coefficientgiving.org/grants/redwood-research-general-support/ returns 403)",
+    "tnw-coefficient-ipo": "ok"
+   },
+   "note": "Existing quote not found on either source: the Open Philanthropy grant URL now redirects to a generic Coefficient page and TNW phrases it differently. Corrected span from TNW above. Single-funder dependence on a lab-investor-linked funder caps at 3 (F.6)."
+  },
+  "redwood.12": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "No payment was accepted, other than API credits used in the investigation",
+   "quote_source": "zvi-hf-postmortem",
+   "fetch": {
+    "zvi-hf-postmortem": "ok"
+   },
+   "note": "Existing quote found. Taking no payment for the incident work supports \"not selling services to labs\" (anchor 3 or better) but is not a bounded statement of no commercial products, which X.7 requires for 4."
+  }
+ },
+ "existing_quote_checks": {
+  "redwood.12": "found"
+ },
+ "new_sources": [
+  {
+   "id": "propublica-redwood",
+   "title": "Redwood Research Group Inc - Nonprofit Explorer",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/871702255",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "EIN 87-1702255, Berkeley CA, tax exemption issued Sept. 2021, \"Designated as a 501(c)(3)\". FY2024: revenue $22,060, expenses $2,922,498, contributions $9,659, program services $0. FY2023: revenue $10,036,347, contributions $9,398,000, program services $343,734."
+  },
+  {
+   "id": "anthropic-alignment-faking",
+   "title": "Alignment faking in large language models",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/research/alignment-faking",
+   "published": "2024-12-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Lab-published research page (self-published by Anthropic, a third party to Redwood): \"A new paper from Anthropic's Alignment Science team, in collaboration with Redwood Research\"; acknowledgements name the collaboration; four independent reviewers."
+  },
+  {
+   "id": "redwood-blog-af",
+   "title": "Alignment Faking in Large Language Models",
+   "publisher": "Redwood Research (Substack)",
+   "url": "https://blog.redwoodresearch.org/p/alignment-faking-in-large-language",
+   "published": "2024-12-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Ryan Greenblatt and Buck Shlegeris: \"We have a new paper (done in collaboration with Anthropic)\"."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "redwood.13",
+   "evaluator": "redwood",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.",
+   "sources": [
+    "propublica-redwood"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "X.8",
+   "quote": "Contributions $9,659 43.8% Program Services $0",
+   "quote_source": "propublica-redwood",
+   "note": "X.8: program-service revenue in a filing whose clients are not disclosed (FY2023, $343,734) caps at 3 until the clients are named; if a lab is among them X.2 applies (1). FY2024 shows $0. Document request: the FY2023 program-service revenue by payer."
+  },
+  {
+   "id": "redwood.14",
+   "evaluator": "redwood",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.",
+   "sources": [
+    "redwood-blog-af",
+    "anthropic-alignment-faking"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.6",
+   "quote": "We have a new paper (done in collaboration with Anthropic)",
+   "quote_source": "redwood-blog-af",
+   "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. Both sources are self-published (one by each party) and confirmed."
+  },
+  {
+   "id": "redwood.16",
+   "evaluator": "redwood",
+   "dimension": "R",
+   "direction": "against",
+   "claim": "On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.",
+   "sources": [
+    "metr-hf-investigation"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "R.2",
+   "quote": "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback",
+   "quote_source": "metr-hf-investigation",
+   "note": "R.2: disclosed editorial feedback caps at 3. Recorded on Redwood because the same fact caps METR (metr.08) on the same report."
+  },
+  {
+   "id": "redwood.15",
+   "evaluator": "redwood",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.",
+   "sources": [
+    "metr-hf-investigation"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.1",
+   "quote": "OpenAI defined the investigation period as June 26th through July 13th",
+   "quote_source": "metr-hf-investigation",
+   "note": "S.1: a lab-set window in the most recent major engagement caps at 3. Recorded on Redwood because the same fact already caps METR (metr.06)."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Access was granted by OpenAI under METR's engagement terms for one incident; no statute or enforceable agreement. Derived 4 (redwood.03 with techtimes as second source); the stored 3 undercounts on-site incident access under A.5."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "OpenAI held redaction rights over non-public information in the co-authored report. Derived 3 from the R.2 cap (redwood.16); floor 2 under R.7."
+  },
+  "G": {
+   "note": "Derived 2, not the stored 3: legal form alone (G.1); no conflict-of-interest policy found."
+  },
+  "X": {
+   "note": "Derived 3, not the stored 4: floors 3 (redwood.09, redwood.12) and an X.8 cap of 3 (redwood.13, undisclosed FY2023 program-service clients)."
+  },
+  "P": {
+   "note": "Unevidenced: the only P signal (redwood.05) is informational under section 9 because its supported fact is an S fact and its P fact has no source. The stored 2 has no admissible bound; flagged for the parent."
+  },
+  "S": {
+   "note": "Derived 3: floor 3 (S.5) and caps 3 (S.1, S.6)."
+  },
+  "F": {
+   "note": "Derived 3: floors 3, caps 3 (F.6)."
+  },
+  "M": {
+   "note": "Derived 3 (M.1) on an unsupported span; needs a code source."
+  }
+ },
+ "dissent": {
+  "lower": "Personnel could be 1. Redwood's chief scientist co-authored the alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude run jointly with the developer, and then worked inside OpenAI as a METR contractor; no recusal or cooling-off policy is published. Anchor 1 describes leaders with working roles at labs and informal recusal, and the record shows the roles but not the recusal.",
+  "higher": "Personnel could be 3. No board, advisory, or equity position at a lab appears in the record; the OpenAI incident work took no payment beyond API credits; the co-authored paper was research, not an evaluation engagement, and Anthropic named four independent reviewers. Anchor 3 asks for a recusal policy and disclosed ties; the ties are disclosed in the paper itself, and a published recusal rule would complete the anchor."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

@@ -1,99 +1,168 @@
 [
-  {
-    "id": "cais.01",
-    "evaluator": "cais",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models.",
-    "sources": [
-      "80k-funding",
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "cais.01",
+  "evaluator": "cais",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models.",
+  "sources": [
+   "80k-funding",
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "cais.02",
-    "evaluator": "cais",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Funded mainly by SFF rather than lab-linked pools.",
-    "sources": [
-      "80k-funding"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.2",
+  "quote": "have driven some of the bigger successes in AI policy and advise xAI",
+  "quote_source": "80k-funding"
+ },
+ {
+  "id": "cais.02",
+  "evaluator": "cais",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Funded mainly by SFF rather than lab-linked pools.",
+  "sources": [
+   "80k-funding"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "cais.03",
-    "evaluator": "cais",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open benchmarks widely used.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.6",
+  "quote": "SFF gave $1.1m to CAIS and $1.6m to the action fund",
+  "quote_source": "80k-funding"
+ },
+ {
+  "id": "cais.03",
+  "evaluator": "cais",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open benchmarks widely used.",
+  "sources": [
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "cais.04",
-    "evaluator": "cais",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.3",
+  "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+  "quote_source": "cais"
+ },
+ {
+  "id": "cais.04",
+  "evaluator": "cais",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor.",
+  "sources": [
+   "cais",
+   "lastexam-hle",
+   "cnbc-scale-meta"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "cais.05",
-    "evaluator": "cais",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.6",
+  "quote": "1 Center for AI Safety, 2 Scale AI",
+  "quote_source": "lastexam-hle"
+ },
+ {
+  "id": "cais.05",
+  "evaluator": "cais",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit.",
+  "sources": [
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "cais.06",
-    "evaluator": "cais",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Public-model access.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "is a San Francisco-based research and field-building nonprofit",
+  "quote_source": "cais"
+ },
+ {
+  "id": "cais.06",
+  "evaluator": "cais",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Public-model access.",
+  "sources": [
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "cais.07",
-    "evaluator": "cais",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets own benchmark design.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.6"
+ },
+ {
+  "id": "cais.07",
+  "evaluator": "cais",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets own benchmark design.",
+  "sources": [
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "cais.08",
-    "evaluator": "cais",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes results.",
-    "sources": [
-      "cais"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  }
+  "rule": "S.5",
+  "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+  "quote_source": "cais"
+ },
+ {
+  "id": "cais.08",
+  "evaluator": "cais",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes results.",
+  "sources": [
+   "cais"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
+  },
+  "rule": "R.1",
+  "quote": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems Mar 5, 2025",
+  "quote_source": "cais"
+ },
+ {
+  "id": "cais.09",
+  "evaluator": "cais",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "SFF recommended $289,000 to CAIS in 2025 (about $1.1M cumulative per 80,000 Hours); SFF's funder Jaan Tallinn led Anthropic's Series A.",
+  "sources": [
+   "sff-2025",
+   "anthropic-series-a",
+   "80k-funding"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "Center for AI Safety (CAIS) Main: $210,000 Freedom: $78,000 Fairness: $0 Mean: $0 $289,000",
+  "quote_source": "sff-2025",
+  "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger rows T57 and T71; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'."
+ }
 ]

@@ -1,152 +1,296 @@
 [
-  {
-    "id": "redwood.01",
-    "evaluator": "redwood",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "No lab revenue; historically about $25M from Open Philanthropy.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "redwood.01",
+  "evaluator": "redwood",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "No lab revenue; historically about $25M from Open Philanthropy.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "redwood.02",
-    "evaluator": "redwood",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Funding concentration: revenue nearly disappeared in one year when a few large grants ended.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.12",
+  "quote": "Open Philanthropy's grants database shows approximately $25 million in historical funding to Redwood Research",
+  "quote_source": "itbb-watchdogs"
+ },
+ {
+  "id": "redwood.02",
+  "evaluator": "redwood",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Funding concentration: revenue nearly disappeared in one year when a few large grants ended.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "redwood.03",
-    "evaluator": "redwood",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Contracted a staff member to METR for the on-site OpenAI investigation.",
-    "sources": [
-      "metr-hf-investigation"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.6",
+  "quote": "a few large grants can make one year's revenue almost disappear in the next",
+  "quote_source": "itbb-watchdogs"
+ },
+ {
+  "id": "redwood.03",
+  "evaluator": "redwood",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Contracted a staff member to METR for the on-site OpenAI investigation.",
+  "sources": [
+   "metr-hf-investigation",
+   "techtimes-metr-hf"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "redwood.04",
-    "evaluator": "redwood",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Co-authored the incident report with a redaction statement.",
-    "sources": [
-      "metr-hf-investigation"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.5",
+  "quote": "a Redwood Research staff member contracting with METR",
+  "quote_source": "metr-hf-investigation"
+ },
+ {
+  "id": "redwood.04",
+  "evaluator": "redwood",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Co-authored the incident report with a redaction statement.",
+  "sources": [
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "redwood.05",
-    "evaluator": "redwood",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Co-authored alignment research with Anthropic; close talent flow with lab safety teams.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.7",
+  "quote": "OpenAI agreed at the outset with METR and Redwood that we would be able to describe high-level scope and terms",
+  "quote_source": "metr-hf-investigation"
+ },
+ {
+  "id": "redwood.05",
+  "evaluator": "redwood",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Co-authored alignment research with Anthropic; close talent flow with lab safety teams.",
+  "sources": [
+   "itbb-watchdogs",
+   "anthropic-alignment-faking"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": null,
+  "rule": "P.3",
+  "bound_note": "Section 9 (mis-dimensioned facts): the supported fact, co-authoring with Anthropic, belongs to S and is re-recorded as redwood.14; the P fact (talent flow with lab safety teams) has no source, so the signal is informational on P.",
+  "quote": "in collaboration with Redwood Research , provides the first empirical example of a large language model",
+  "quote_source": "anthropic-alignment-faking"
+ },
+ {
+  "id": "redwood.06",
+  "evaluator": "redwood",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit.",
+  "sources": [
+   "itbb-watchdogs",
+   "propublica-redwood"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "redwood.06",
-    "evaluator": "redwood",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "Designated as a 501(c)(3)",
+  "quote_source": "propublica-redwood"
+ },
+ {
+  "id": "redwood.07",
+  "evaluator": "redwood",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets its own research agenda; incident work under METR terms.",
+  "sources": [
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "redwood.07",
-    "evaluator": "redwood",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets its own research agenda; incident work under METR terms.",
-    "sources": [
-      "metr-hf-investigation"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "a Redwood Research staff member contracting with METR",
+  "quote_source": "metr-hf-investigation"
+ },
+ {
+  "id": "redwood.08",
+  "evaluator": "redwood",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes control methods and code.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "redwood.08",
-    "evaluator": "redwood",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes control methods and code.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1"
+ },
+ {
+  "id": "redwood.09",
+  "evaluator": "redwood",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "redwood.09",
-    "evaluator": "redwood",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.7"
+ },
+ {
+  "id": "redwood.10",
+  "evaluator": "redwood",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor.",
+  "sources": [
+   "evaluators-ledger",
+   "coefficient-index"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "redwood.10",
-    "evaluator": "redwood",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor.",
-    "sources": [
-      "evaluators-ledger",
-      "coefficient-index"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "F.6"
+ },
+ {
+  "id": "redwood.11",
+  "evaluator": "redwood",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.",
+  "sources": [
+   "op-redwood-general-support",
+   "tnw-coefficient-ipo"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2025-11",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "redwood.11",
-    "evaluator": "redwood",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.",
-    "sources": [
-      "op-redwood-general-support",
-      "tnw-coefficient-ipo"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2025-11"
+  "rule": "F.6",
+  "quote": "listed in grant records at $36,566,000 for work on AI control and alignment faking",
+  "quote_source": "tnw-coefficient-ipo"
+ },
+ {
+  "id": "redwood.12",
+  "evaluator": "redwood",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "The OpenAI incident investigation report states no payment was accepted other than API credits used in the investigation.",
+  "sources": [
+   "zvi-hf-postmortem"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-08",
+  "quote": "No payment was accepted, other than API credits used in the investigation",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "redwood.12",
-    "evaluator": "redwood",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "The OpenAI incident investigation report states no payment was accepted other than API credits used in the investigation.",
-    "sources": [
-      "zvi-hf-postmortem"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-08",
-    "quote": "No payment was accepted, other than API credits used in the investigation"
-  }
+  "rule": "X.4",
+  "quote_source": "zvi-hf-postmortem"
+ },
+ {
+  "id": "redwood.13",
+  "evaluator": "redwood",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.",
+  "sources": [
+   "propublica-redwood"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "X.8",
+  "quote": "Contributions $9,659 43.8% Program Services $0",
+  "quote_source": "propublica-redwood",
+  "note": "X.8: program-service revenue in a filing whose clients are not disclosed (FY2023, $343,734) caps at 3 until the clients are named; if a lab is among them X.2 applies (1). FY2024 shows $0. Document request: the FY2023 program-service revenue by payer."
+ },
+ {
+  "id": "redwood.14",
+  "evaluator": "redwood",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.",
+  "sources": [
+   "redwood-blog-af",
+   "anthropic-alignment-faking"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "S.6",
+  "quote": "We have a new paper (done in collaboration with Anthropic)",
+  "quote_source": "redwood-blog-af",
+  "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. Both sources are self-published (one by each party) and confirmed."
+ },
+ {
+  "id": "redwood.16",
+  "evaluator": "redwood",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.",
+  "sources": [
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "R.2",
+  "quote": "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback",
+  "quote_source": "metr-hf-investigation",
+  "note": "R.2: disclosed editorial feedback caps at 3. Recorded on Redwood because the same fact caps METR (metr.08) on the same report."
+ },
+ {
+  "id": "redwood.15",
+  "evaluator": "redwood",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.",
+  "sources": [
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "S.1",
+  "quote": "OpenAI defined the investigation period as June 26th through July 13th",
+  "quote_source": "metr-hf-investigation",
+  "note": "S.1: a lab-set window in the most recent major engagement caps at 3. Recorded on Redwood because the same fact already caps METR (metr.06)."
+ }
 ]

@@ -1,0 +1,254 @@
+{
+ "evaluator": "apollo",
+ "signals": {
+  "apollo.01": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "We do not accept work where compensation is contingent upon the outcome",
+   "quote_source": "apollo-norms",
+   "fetch": {
+    "apollo-norms": "ok"
+   },
+   "note": "Existing quote found. A published policy naming no contingent fees, no side grants or investments from evaluated labs, and recusal for financial interests meets G.2; for a PBC that floors at 2 (anchor 2), since anchors 3 and 4 are reserved to nonprofits and public bodies."
+  },
+  "apollo.02": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "we generally request that the parties for whom we conduct work compensate us at a fair market value for the work",
+   "quote_source": "apollo-norms",
+   "fetch": {
+    "apollo-norms": "ok"
+   },
+   "note": "Labs paying per engagement caps at 2 (F.3); no published 10% revenue cap, so the lift to 3 does not apply. Not 1 under F.5 because a non-lab base is disclosed (apollo.12) and no revenue split is published; document request: revenue by client class."
+  },
+  "apollo.03": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "Apollo is spinning off from our fiscal sponsor into a Public Benefit Corporation (PBC)",
+   "quote_source": "apollo-pbc",
+   "fetch": {
+    "apollo-pbc": "ok"
+   },
+   "note": "For-profit PBC with a published policy is anchor 2 by the anchor text; nonprofit anchors 3 and 4 are unavailable."
+  },
+  "apollo.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "published the first evidence that frontier models can scheme in context",
+   "quote_source": "apollo-about",
+   "fetch": {
+    "apollo-about": "ok"
+   },
+   "note": "A record of adverse findings exists (first evidence of in-context scheming; o1 pre-deployment results), but no cited source states who reviews Apollo's findings before publication, so R.7 floors at 2 (stored 3). A statement of no lab review, or security-only redactions disclosed, lifts to 3; R.5 (4) needs both legs. The page does not use the phrases \"in-context scheming\" or \"evaluation awareness\"."
+  },
+  "apollo.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": "We recuse any individual who is considered to have a financial interest in an organization we are evaluating",
+   "quote_source": "apollo-norms",
+   "fetch": {
+    "apollo-norms": "ok"
+   },
+   "note": "A published mandatory recusal rule is half of P.5; the other half, disclosure of individual lab ties, is not on the norms page or the team page, so the floor is 2, not 3 (stored 3). A published register of staff or director lab ties would lift it."
+  },
+  "apollo.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "partnered with OpenAI to test their o1 model before public deployment",
+   "quote_source": "apollo-about",
+   "fetch": {
+    "apollo-about": "ok",
+    "apollo-first-year": "ok"
+   },
+   "note": "Pre-deployment testing of o1 and early snapshots for other labs is anchor 2 (pre-release, early checkpoints); helpful-only, weights, chain-of-thought or on-site access is not documented in the cited sources, so not 3 (stored 3). The UK AISI contract (\"we were contracted to develop deception evaluations\") is a government client relationship, not lab-granted access, so A.4 is not applied; gap noted."
+  },
+  "apollo.07": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "S.6",
+   "quote": "partnered with OpenAI to study anti-scheming interventions on frontier models",
+   "quote_source": "apollo-about",
+   "fetch": {
+    "apollo-about": "ok"
+   },
+   "note": "Co-authoring research with a lab while evaluating it caps at 3 (S.6)."
+  },
+  "apollo.08": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.1",
+   "quote": "building an AI security tool to monitor frontier AI agents",
+   "quote_source": "apollo-about",
+   "fetch": {
+    "apollo-about": "ok"
+   },
+   "note": "A monitoring product sold to unspecified parties in the evaluated ecosystem caps at 2 until a lab customer is documented (X.1), when it becomes 0. Document request: Watcher's customer list or a statement that no evaluated lab is a customer. apollo-pbc: \"standing up a separate product team to build AGI safety products starting with AI agent monitoring\"."
+  },
+  "apollo.09": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "We engage in differential publishing",
+   "quote_source": "apollo-norms",
+   "fetch": {
+    "apollo-norms": "ok"
+   },
+   "note": "Methods described in prose with a differential-publishing policy is 2 (M.2), not the stored 3; a cited open-code repository for an evaluation suite would floor at 3 under M.1."
+  },
+  "apollo.10": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "G.3",
+   "quote": "raised a Seed round led by 50Y",
+   "quote_source": "apollo-pbc-round",
+   "fetch": {
+    "apollo-pbc-round": "ok"
+   },
+   "note": "Existing quote found. A fund that has invested in a frontier developer (Macroscopic) in the round caps at 2 even with mission seats (G.3)."
+  },
+  "apollo.11": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "coefficient-index": "failed: HTTP 404 at coefficientgiving.org/grants/ (curl returns a 35-char stub)"
+   },
+   "note": "SFF and Coefficient money from funders whose principals are Anthropic investors caps at 3 (F.6). The ledger CSV carries the totals only as raw cells (4410180, 1133500) and the index is a 404, so no sentence-level span; sources are unverifiable and imported, so C14 clamps the signal to 2 under leads, which does not bind."
+  },
+  "apollo.12": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF",
+   "quote_source": "apollo-manifund",
+   "fetch": {
+    "apollo-manifund": "ok",
+    "evaluators-ledger": "ok"
+   },
+   "note": "Existing quote found on Manifund. A disclosed non-lab base is what keeps F.5 from capping at 1; on its own it supports anchor 2 (a philanthropic base beside per-engagement lab fees), not 3, because no revenue split is published."
+  },
+  "apollo.13": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "who are independent to Apollo Research PBC and our funders",
+   "quote_source": "apollo-pbc-mission",
+   "fetch": {
+    "apollo-pbc-mission": "ok"
+   },
+   "note": "Existing quote not found because the page uses curly quotation marks around \"mission directors\"; corrected span above. Mission seats are a governance safeguard but a PBC tops out at anchor 2; G.7 is for nonprofits and public bodies."
+  },
+  "apollo.14": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "G.3",
+   "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+   "quote_source": "apollo-pbc-round",
+   "fetch": {
+    "premieralts-macroscopic": "failed: HTTP 403 (fetch_text) and HTTP 429 at the 301 target privatemarketview.com; curl gets a Vercel security checkpoint (JavaScript)",
+    "apollo-pbc-round": "ok"
+   },
+   "note": "G.3 cap 2. The Premier Alts profile (now at privatemarketview.com) could not be fetched (403/429, JavaScript checkpoint); Macroscopic's Anthropic Series A investment is also on the ledger (R03, Anthropic's own release, confirmed)."
+  }
+ },
+ "existing_quote_checks": {
+  "apollo.01": "found",
+  "apollo.10": "found",
+  "apollo.12": "found",
+  "apollo.13": "not found; suggested: who are independent to Apollo Research PBC and our funders"
+ },
+ "new_sources": [],
+ "new_signals": [
+  {
+   "id": "apollo.15",
+   "evaluator": "apollo",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.",
+   "sources": [
+    "apollo-pbc-round",
+    "premieralts-macroscopic"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "F.4",
+   "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+   "quote_source": "apollo-pbc-round",
+   "note": "F.4 caps at 1 only for a material investment (a priced round the fund led or co-led, or a stake of 5% or more); Macroscopic did not lead and its share is undisclosed, so the cap stays at 2 (equity from a lab investor bars anchor 3). Document request: Macroscopic's share of the round."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Pre-deployment access is granted per paid engagement by each lab. Derived 2, not the stored 3: no helpful-only, weights, chain-of-thought or on-site access is documented in the cited sources."
+  },
+  "R": {
+   "mechanism": "unknown",
+   "note": "Apollo publishes its own papers under a differential-publishing policy, but the review terms in its paid lab contracts are not public and system-card results are lab-published. Derived 2 under R.7 (stored 3)."
+  },
+  "F": {
+   "note": "Derived 2: caps 2 (F.3 apollo.02, F.4-check apollo.15), cap 3 (F.6), floor 2."
+  },
+  "G": {
+   "note": "Derived 2: PBC ceiling by anchor text; G.3 caps 2."
+  },
+  "P": {
+   "note": "Derived 2, not the stored 3: recusal rule without disclosure of individual lab ties (P.5 half met)."
+  },
+  "S": {
+   "note": "Derived 3 (S.6 cap; no floor)."
+  },
+  "M": {
+   "note": "Derived 2, not the stored 3: prose methods (M.2)."
+  },
+  "X": {
+   "note": "Derived 2 (X.1 pending a documented lab customer)."
+  }
+ },
+ "dissent": {
+  "lower": "Funding could be 1. Apollo asks the parties it evaluates to pay fair market value, says it ran evaluations for all major labs in 2025, and publishes no revenue split; its 2024 self-report named only about $2M of philanthropy, and its 2026 seed round included Macroscopic Ventures, an Anthropic Series A and B investor. If lab fees are the principal revenue, F.5 caps at 1, and a material lab-investor stake would cap at 1 under F.4.",
+  "higher": "Funding could be 3. Apollo's norms bar outcome-contingent pay and side grants or investments from evaluated labs; the PBC post says it remains partly philanthropy-supported, and the index records about $4.4M from Coefficient and $1.1M from SFF. A published cap holding lab revenue at or below 10% of annual revenue, with market rates and publication rights, would lift the F.3 cap to 3, the anchor for mostly philanthropic money with some lab-linked pooled funds."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

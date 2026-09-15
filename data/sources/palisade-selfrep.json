@@ -1,0 +1,12 @@
+{
+  "id": "palisade-selfrep",
+  "title": "Language Models Can Autonomously Hack and Self-Replicate",
+  "publisher": "Palisade Research",
+  "url": "https://palisaderesearch.org/research/self-replication",
+  "published": "2026-05-07",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Research page linking paper and code. Fetched 2026-09-15; span present.",
+  "self_of": "palisade"
+}

@@ -1,11 +1,12 @@
 {
   "audit_status": "confirmed",
   "id": "sequoia-irregular",
-  "note": "Evaluations cited in GPT-4/o3/o4-mini/GPT-5 system cards; UK government and Anthropic use SOLVE; embedded with labs. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page reachable BUT quoted span(s) not found: irregular.01 \u2014 needs curator review [verify 2026-09-15] reachable BUT span(s) not found: irregular.01 \u2014 needs curator review [verify 2026-09-15 grok-pass] Full slug .../partnering-with-irregular-ahead-of-the-curve/. Sequoia led recent funding; no dollar amount on page. Labs named (Anthropic, OpenAI, GDM); Pattern Labs in system cards.",
+  "note": "Evaluations cited in GPT-4/o3/o4-mini/GPT-5 system cards; UK government and Anthropic use SOLVE; embedded with labs. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page reachable BUT quoted span(s) not found: irregular.01 — needs curator review [verify 2026-09-15] reachable BUT span(s) not found: irregular.01 — needs curator review [verify 2026-09-15 grok-pass] Full slug .../partnering-with-irregular-ahead-of-the-curve/. Sequoia led recent funding; no dollar amount on page. Labs named (Anthropic, OpenAI, GDM); Pattern Labs in system cards.",
   "published": "2025-09-17",
   "publisher": "Sequoia Capital",
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Partnering with Irregular",
-  "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/"
+  "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/",
+  "self_of": "sequoia"
 }

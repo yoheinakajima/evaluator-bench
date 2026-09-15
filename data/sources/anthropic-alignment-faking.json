@@ -1,0 +1,12 @@
+{
+  "id": "anthropic-alignment-faking",
+  "title": "Alignment faking in large language models",
+  "publisher": "Anthropic",
+  "url": "https://www.anthropic.com/research/alignment-faking",
+  "published": "2024-12-18",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Lab-published research page (self-published by Anthropic, a third party to Redwood): \"A new paper from Anthropic's Alignment Science team, in collaboration with Redwood Research\"; acknowledgements name the collaboration; four independent reviewers.",
+  "self_of": "anthropic"
+}

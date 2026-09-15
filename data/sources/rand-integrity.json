@@ -1,0 +1,12 @@
+{
+  "id": "rand-integrity",
+  "title": "Research Integrity",
+  "publisher": "RAND",
+  "url": "https://www.rand.org/about/research-integrity.html",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "unaudited",
+  "note": "'a policy of mandatory disclosure' for conflicts of interest; 'disclosure of the source of funding of published research'; free and open publication. Fetched 2026-09-15 via browser-UA curl only; rand.org returns CloudFront 403 to the CI fetcher.",
+  "self_of": "rand"
+}

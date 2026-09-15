@@ -1,128 +1,202 @@
 [
-  {
-    "id": "rand.01",
-    "evaluator": "rand",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Government-contracted with long-standing COI and publication norms; AEF founding member.",
-    "sources": [
-      "rand-aef",
-      "aef-launch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "rand.01",
+  "evaluator": "rand",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Government-contracted with long-standing COI and publication norms; AEF founding member.",
+  "sources": [
+   "rand-aef",
+   "aef-launch",
+   "rand-integrity"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "rand.02",
-    "evaluator": "rand",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Access through government channels, including classified work.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "a policy of mandatory disclosure",
+  "quote_source": "rand-integrity"
+ },
+ {
+  "id": "rand.02",
+  "evaluator": "rand",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Access through government channels, including classified work.",
+  "sources": [
+   "rand-aef"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "rand.03",
-    "evaluator": "rand",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Large share of AI work funded by Coefficient Giving.",
-    "sources": [
-      "rand-aef",
-      "coefficient-wiki"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.4"
+ },
+ {
+  "id": "rand.03",
+  "evaluator": "rand",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Large share of AI work funded by Coefficient Giving.",
+  "sources": [
+   "rand-aef",
+   "coefficient-wiki",
+   "anthropic-series-a",
+   "evaluators-ledger"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "rand.04",
-    "evaluator": "rand",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Much output is government-restricted rather than public.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.6",
+  "quote": "Board of directors Dustin Moskovitz, Cari Tuna, Divesh Makan, Holden Karnofsky, and Alexander Berger",
+  "quote_source": "coefficient-wiki"
+ },
+ {
+  "id": "rand.04",
+  "evaluator": "rand",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Much output is government-restricted rather than public.",
+  "sources": [
+   "rand-aef"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "rand.05",
-    "evaluator": "rand",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Institutional COI rules.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.4"
+ },
+ {
+  "id": "rand.05",
+  "evaluator": "rand",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Institutional COI rules.",
+  "sources": [
+   "rand-aef",
+   "rand-integrity"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "rand.06",
-    "evaluator": "rand",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets own research agenda.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6",
+  "quote": "a policy of mandatory disclosure",
+  "quote_source": "rand-integrity"
+ },
+ {
+  "id": "rand.06",
+  "evaluator": "rand",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets own research agenda.",
+  "sources": [
+   "rand-aef"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "rand.07",
-    "evaluator": "rand",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "Methods partly public.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.3"
+ },
+ {
+  "id": "rand.07",
+  "evaluator": "rand",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "Methods partly public.",
+  "sources": [
+   "rand-aef"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "rand.08",
-    "evaluator": "rand",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "rand-aef"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.2"
+ },
+ {
+  "id": "rand.08",
+  "evaluator": "rand",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "rand-aef"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "rand.09",
-    "evaluator": "rand",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "FY2024 revenue of about $489M is mostly US government contract research; Coefficient's $87M since 2020 is a small share.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "X.7"
+ },
+ {
+  "id": "rand.09",
+  "evaluator": "rand",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "FY2024 revenue of about $489M is mostly US government contract research; Coefficient's $87M since 2020 is a small share.",
+  "sources": [
+   "evaluators-ledger",
+   "propublica-rand-990"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "rand.10",
-    "evaluator": "rand",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "The Audacious commitment to Canary is about $38 million across RAND and METR; RAND's Coefficient grants include $10.5M for emerging technology initiatives.",
-    "sources": [
-      "rand-audacious-2024",
-      "coefficient-index"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2024-10-09",
-    "quote": "committed approximately $38 million to RAND and METR for Canary"
-  }
+  "rule": "F.9",
+  "quote": "Contributions $488,777,692 91.4%",
+  "quote_source": "propublica-rand-990"
+ },
+ {
+  "id": "rand.10",
+  "evaluator": "rand",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "The Audacious commitment to Canary is about $38 million across RAND and METR; RAND's Coefficient grants include $10.5M for emerging technology initiatives.",
+  "sources": [
+   "rand-audacious-2024",
+   "coefficient-index"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2024-10-09",
+  "quote": "Canary—a Collaboration with METR—to Receive Approximately $38 Million",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.6",
+  "quote_source": "rand-audacious-2024"
+ },
+ {
+  "id": "rand.11",
+  "evaluator": "rand",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "SFF recommended $1,022,000 to RAND's Technology and Security Policy Center in 2025; SFF's funder Jaan Tallinn led Anthropic's Series A.",
+  "sources": [
+   "sff-2025",
+   "anthropic-series-a"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "RAND Corporation [Technology and Security Policy Center] Main: $274,000 Freedom: $749,000",
+  "quote_source": "sff-2025",
+  "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger row T70; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'. Immaterial against $534M revenue but rule-required."
+ }
 ]

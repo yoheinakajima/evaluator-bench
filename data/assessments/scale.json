@@ -1,99 +1,98 @@
 [
-  {
-    "anchor": 0,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "F",
-    "evaluator": "scale",
-    "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Meta (investment row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
-    "signals": [
-      "scale.01"
-    ],
-    "value": 0
-  },
-  {
-    "anchor": 0,
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "dimension": "G",
-    "evaluator": "scale",
-    "rationale": "Anchor 0 on governance given the cited signals.",
-    "signals": [
-      "scale.02",
-      "scale.10"
-    ],
-    "value": 0
-  },
-  {
-    "anchor": 1,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "P",
-    "evaluator": "scale",
-    "rationale": "Anchor 1 on personnel given the cited signals.",
-    "signals": [
-      "scale.05"
-    ],
-    "value": 1
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "A",
-    "evaluator": "scale",
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "signals": [
-      "scale.03"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "S",
-    "evaluator": "scale",
-    "rationale": "Anchor 2 on scope given the cited signals.",
-    "signals": [
-      "scale.06"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "R",
-    "evaluator": "scale",
-    "rationale": "Anchor 2 on publication given the cited signals.",
-    "signals": [
-      "scale.07"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "M",
-    "evaluator": "scale",
-    "rationale": "Anchor 2 on methods given the cited signals.",
-    "signals": [
-      "scale.08"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 1,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "X",
-    "evaluator": "scale",
-    "rationale": "Anchor 1 on products given the cited signals.",
-    "signals": [
-      "scale.04"
-    ],
-    "value": 1
-  }
+ {
+  "anchor": 0,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "F",
+  "evaluator": "scale",
+  "rationale": "Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Meta (investment row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+  "signals": [
+   "scale.01"
+  ],
+  "value": 0
+ },
+ {
+  "anchor": 0,
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "dimension": "G",
+  "evaluator": "scale",
+  "signals": [
+   "scale.02",
+   "scale.10"
+  ],
+  "value": 0
+ },
+ {
+  "anchor": 0,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "P",
+  "evaluator": "scale",
+  "signals": [
+   "scale.05",
+   "scale.11"
+  ],
+  "value": 0,
+  "open_questions": [
+   "Request from Scale AI the board-recusal terms, if any, that apply to Alexandr Wang's continuing directorship while he is employed by Meta (Scale announcement, 12 June 2025), and whether he sits on any committee reviewing evaluation work. Per RULES 12 this goes to the person before publication."
+  ]
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "A",
+  "evaluator": "scale",
+  "signals": [
+   "scale.03"
+  ],
+  "value": 3,
+  "mechanism": "lab-controlled"
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "S",
+  "evaluator": "scale",
+  "signals": [
+   "scale.06"
+  ],
+  "value": 2
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "R",
+  "evaluator": "scale",
+  "signals": [
+   "scale.07"
+  ],
+  "value": 2,
+  "mechanism": "self-imposed"
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "M",
+  "evaluator": "scale",
+  "signals": [
+   "scale.08"
+  ],
+  "value": 2
+ },
+ {
+  "anchor": 1,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "X",
+  "evaluator": "scale",
+  "signals": [
+   "scale.04"
+  ],
+  "value": 1
+ }
 ]

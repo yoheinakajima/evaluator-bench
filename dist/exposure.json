@@ -1421,31 +1421,6 @@
    "status": "ranked"
   },
   {
-   "buckets": {},
-   "confirmed_rows": 0,
-   "id": "big4",
-   "inflow_rows": 0,
-   "kind_note": "",
-   "lab_tied_seats": [],
-   "name": "Assurance firms (Big Four and peers)",
-   "negatives": [
-    {
-     "claim": "no Big Four firm has announced a dedicated frontier-AI audit practice for Illinois SB 315",
-     "searched": "general web search for Deloitte, EY, KPMG, PwC with SB 315 and frontier AI audit",
-     "snapshot": "2026-09-15",
-     "status": "unaudited"
-    }
-   ],
-   "quarantined_ids": [],
-   "quarantined_rows": 0,
-   "second_hop": {
-    "sources": 0,
-    "traced": 0,
-    "untraced": []
-   },
-   "status": "ranked"
-  },
-  {
    "buckets": {
     "public": {
      "by_measure": {},

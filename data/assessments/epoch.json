@@ -1,107 +1,115 @@
 [
-  {
-    "anchor": 2,
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "dimension": "F",
-    "evaluator": "epoch",
-    "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (contract row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
-    "signals": [
-      "epoch.01",
-      "epoch.05",
-      "epoch.11",
-      "epoch.13",
-      "epoch.15"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "G",
-    "evaluator": "epoch",
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "signals": [
-      "epoch.06"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "P",
-    "evaluator": "epoch",
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "signals": [
-      "epoch.09"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "A",
-    "evaluator": "epoch",
-    "rationale": "Anchor 2 on access given the cited signals.",
-    "signals": [
-      "epoch.07"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "S",
-    "evaluator": "epoch",
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "signals": [
-      "epoch.08"
-    ],
-    "value": 3
-  },
-  {
-    "anchor": 2,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "R",
-    "evaluator": "epoch",
-    "rationale": "Anchor 2 on publication given the cited signals.",
-    "signals": [
-      "epoch.02",
-      "epoch.03"
-    ],
-    "value": 2
-  },
-  {
-    "anchor": 4,
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0",
-    "dimension": "M",
-    "evaluator": "epoch",
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "signals": [
-      "epoch.04"
-    ],
-    "value": 4
-  },
-  {
-    "anchor": 3,
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "dimension": "X",
-    "evaluator": "epoch",
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "signals": [
-      "epoch.10",
-      "epoch.14"
-    ],
-    "value": 3,
-    "open_questions": [
-      "Which AI stocks Epoch holds and whether they include developers it evaluates."
-    ]
+ {
+  "anchor": 2,
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0-final",
+  "dimension": "F",
+  "evaluator": "epoch",
+  "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (contract row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+  "signals": [
+   "epoch.01",
+   "epoch.05",
+   "epoch.11",
+   "epoch.13",
+   "epoch.15"
+  ],
+  "value": 2,
+  "resolution": {
+   "rule": "F.3",
+   "value": 2,
+   "note": "F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6."
   }
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "G",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.06"
+  ],
+  "value": 2
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "P",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.09"
+  ],
+  "value": 2
+ },
+ {
+  "anchor": 1,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "A",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.07",
+   "epoch.18"
+  ],
+  "value": 1,
+  "mechanism": "lab-controlled"
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "S",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.08",
+   "epoch.17"
+  ],
+  "value": 3
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "dimension": "R",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.02",
+   "epoch.03"
+  ],
+  "value": 2,
+  "mechanism": "lab-controlled"
+ },
+ {
+  "anchor": 3,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "M",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.04"
+  ],
+  "value": 3
+ },
+ {
+  "anchor": 2,
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "dimension": "X",
+  "evaluator": "epoch",
+  "signals": [
+   "epoch.10",
+   "epoch.14",
+   "epoch.16"
+  ],
+  "value": 2,
+  "open_questions": [
+   "Which AI stocks Epoch holds and whether they include developers it evaluates."
+  ],
+  "resolution": {
+   "rule": "X.3",
+   "value": 2,
+   "note": "epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page."
+  }
+ }
 ]

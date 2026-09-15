@@ -1,0 +1,199 @@
+{
+ "evaluator": "hal",
+ "signals": {
+  "hal.01": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "F.11",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "No span supports 'no lab money': the page thanks OpenAI and Google for API credits and names Coefficient Giving as a funder (hal.10). Held to 3 by C15/C16 and by the F.6/F.11 caps; recommend superseding with a re-worded floor-3 signal."
+  },
+  "hal.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "HAL is an open-source project and we welcome contributions from the community",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "Open code and full traces ('We make available the full traces of agent evaluations') are 3 under M.1; a 4 needs a documented third-party re-run or factsheets and a non-self second source. Note the hal-harness GitHub repository is now archived for historical reference. Derived M is 3, not the stored 4."
+  },
+  "hal.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "R.5",
+   "quote": "The standardized, cost-aware, and third-party leaderboard for evaluating agents",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "No lab review is documented, but R.5 says a leaderboard ranking alone is not an adverse finding, so 4 is not floored. Derived R is 3, not the stored 4."
+  },
+  "hal.04": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "A.6",
+   "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "Public API only: 0. The span is from HAL's own page (admission against interest, C17) and the source is confirmed, so the cap is effective; derived A is 0, not the stored 1."
+  },
+  "hal.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "By the SAgE team at Princeton University",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok",
+    "aef-launch": "ok ('Princeton Holistic Agent Leaderboard' present)"
+   },
+   "note": "Academic form alone floors at 2 (G.1); AEF membership is not the project's own published conflict policy. Princeton's institutional COI policy, if cited, could floor at 3 under G.2. Derived G is 2, not the stored 3."
+  },
+  "hal.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": "Sayash Kapoor Princeton University Benedikt Stroebl Princeton University",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "Academic staff with no recusal policy: 2 (P.6). The author list includes an xAI-affiliated co-author (hal.11). Derived P is 2, not the stored 3."
+  },
+  "hal.07": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "We have paused updating HAL leaderboard with new models and are currently focusing on measuring reliability in AI agents",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "Self-directed benchmark design with no engagement to refuse: 3 (S.5). Derived S is 3, not the stored 4."
+  },
+  "hal.08": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": "HAL is an open-source project",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "The span supports open tools (anchor 3), not a bounded 'no products' statement; held to 3 by C15/C16 (self-only source). No independent second source found: the CITP announcement is Princeton's own and returns 403 to the CI fetcher."
+  },
+  "hal.09": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.11",
+   "quote": "HAL is funded by Coefficient Giving , Schmidt Sciences , the Princeton AI Lab",
+   "quote_source": "hal",
+   "fetch": {
+    "hal": "ok"
+   },
+   "note": "No confirmed bounded negative on lab money, so a 4 is unavailable (F.11); Coefficient money also caps at 3 (F.6, hal.10)."
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "hal.10",
+   "evaluator": "hal",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "HAL is funded by Coefficient Giving, whose principal is an Anthropic investor, and receives API credits from OpenAI and Google to evaluate their models.",
+   "sources": [
+    "hal",
+    "anthropic-series-a"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+   "quote_source": "hal",
+   "note": "F.6 caps Coefficient money at 3 ('HAL is funded by Coefficient Giving , Schmidt Sciences'; Moskovitz participated in Anthropic's Series A). The lab API credits are undisclosed in-kind with no dependency statement, a gap in F.2; by anchor text they exclude 'no lab money'."
+  },
+  {
+   "id": "hal.11",
+   "evaluator": "hal",
+   "dimension": "P",
+   "direction": "against",
+   "claim": "HAL's author list includes a co-author affiliated with xAI, and its acknowledgments name staff at Anthropic, Google DeepMind and UK AISI; no contributor recusal or cooling-off rule is published.",
+   "sources": [
+    "hal"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "P.4",
+   "quote": "Yifei Zhou xAI",
+   "quote_source": "hal",
+   "note": "A lab employee among the project's contributors with no recusal rule caps at 2 (P.4 by analogy; P.3 if the affiliation followed the contribution). Public role only; the open question is a document request."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "self-imposed"
+  }
+ },
+ "dissent": {
+  "lower": "Access is already 0 and cannot go lower, so the weakest movable dimension is Personnel, which should be 1. A co-author is listed at xAI, staff of Anthropic, Google DeepMind and UK AISI are acknowledged on the page, OpenAI and Google supply the API credits, and no recusal or contributor conflict rule exists; lab-affiliated authors on a leaderboard that grades their employers is anchor 1's informal arrangement.",
+  "higher": "Personnel should be 3. Every co-author's affiliation is disclosed on the page, the project sits inside Princeton, whose faculty are bound by a university conflict-of-interest policy, no HAL leader holds a lab role, and the leaderboard's scoring is open code anyone can re-run. Disclosed ties under an institutional policy is anchor 3, not anchor 2."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request to the HAL team at Princeton: the contributor conflict-of-interest or recusal rule that applies to the leaderboard, if any, and the date on which the xAI-affiliated co-author's affiliation began relative to the runs they contributed."
+  ],
+  "F": [
+   "Request to the HAL team: the amount or approximate value of the OpenAI and Google API credits received and whether any evaluation depends on them, plus a funder list with amounts so a bounded negative on lab money can be recorded."
+  ]
+ },
+ "conflicts": []
+}

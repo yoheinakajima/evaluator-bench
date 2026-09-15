@@ -1,0 +1,12 @@
+{
+  "id": "mlcommons-demo-dataset",
+  "title": "MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github",
+  "publisher": "MLCommons",
+  "url": "https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/",
+  "published": "2025-01-15",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "1,200-prompt DEMO set public; Practice set on request; Official Test dataset private to prevent gaming; public reports of 13 systems-under-test. Fetched 2026-09-15; spans present.",
+  "self_of": "mlcommons"
+}

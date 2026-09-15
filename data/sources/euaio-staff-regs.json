@@ -1,0 +1,11 @@
+{
+ "id": "euaio-staff-regs",
+ "title": "Staff Regulations of Officials of the European Union (consolidated text)",
+ "publisher": "EUR-Lex",
+ "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01962R0031-20240101",
+ "published": "2024-01-01",
+ "retrieved": "2026-09-15",
+ "source_type": "filing",
+ "audit_status": "unaudited",
+ "note": "Regulation No 31 (EEC), 11 (EAEC) consolidated: Article 11a (conflict of interest), Article 16 (activities after leaving the service). EUR-Lex returns an empty body to the CI normalizer and to curl; not verified by fetch. Cited for the primary text; the CEO article carries the confirmed spans."
+}

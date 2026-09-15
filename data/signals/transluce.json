@@ -1,157 +1,227 @@
 [
-  {
-    "id": "transluce.01",
-    "evaluator": "transluce",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Wrote the field's independence standard (AEF-1) through the AI Evaluator Forum and applies it to itself.",
-    "sources": [
-      "aef-launch",
-      "transluce-job",
-      "aef-transparency"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "transluce.01",
+  "evaluator": "transluce",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Wrote the field's independence standard (AEF-1) through the AI Evaluator Forum and applies it to itself.",
+  "sources": [
+   "aef-launch",
+   "transluce-job",
+   "aef-transparency"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "transluce.02",
-    "evaluator": "transluce",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.",
-    "sources": [
-      "transluce-mh"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "Transluce organizes the   AI Evaluator Forum",
+  "quote_source": "transluce-job"
+ },
+ {
+  "id": "transluce.02",
+  "evaluator": "transluce",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.",
+  "sources": [
+   "transluce-mh",
+   "axios-transluce-mh"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "transluce.03",
-    "evaluator": "transluce",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Government contracts and philanthropy rather than lab fees.",
-    "sources": [
-      "transluce-job",
-      "transluce-manifund"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.7",
+  "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+  "quote_source": "transluce-mh"
+ },
+ {
+  "id": "transluce.03",
+  "evaluator": "transluce",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Government contracts and philanthropy rather than lab fees.",
+  "sources": [
+   "transluce-job",
+   "transluce-manifund"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "transluce.04",
-    "evaluator": "transluce",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Head of governance previously led CAISI; no lab board roles found.",
-    "sources": [
-      "transluce-manifund"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.12",
+  "quote": "We build this technology using philanthropic funding",
+  "quote_source": "transluce-manifund"
+ },
+ {
+  "id": "transluce.04",
+  "evaluator": "transluce",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Head of governance previously led CAISI; no lab board roles found.",
+  "sources": [
+   "transluce-manifund"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "transluce.05",
-    "evaluator": "transluce",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users.",
-    "sources": [
-      "transluce-manifund"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6",
+  "quote": "previously led the U.S. Center for Standards and Innovation",
+  "quote_source": "transluce-manifund"
+ },
+ {
+  "id": "transluce.05",
+  "evaluator": "transluce",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users.",
+  "sources": [
+   "transluce-manifund"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "transluce.06",
-    "evaluator": "transluce",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely.",
-    "sources": [
-      "transluce-manifund"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.4",
+  "quote": "has been used by over 25 organizations, including frontier AI labs (Anthropic, DeepMind, Thinking Machines",
+  "quote_source": "transluce-manifund"
+ },
+ {
+  "id": "transluce.06",
+  "evaluator": "transluce",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely.",
+  "sources": [
+   "transluce-manifund"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "transluce.07",
-    "evaluator": "transluce",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets its own evaluation questions.",
-    "sources": [
-      "transluce-mh"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "It was also used as part of Claude 4's pre-deployment safety analysis",
+  "quote_source": "transluce-manifund"
+ },
+ {
+  "id": "transluce.07",
+  "evaluator": "transluce",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets its own evaluation questions.",
+  "sources": [
+   "transluce-mh"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "transluce.08",
-    "evaluator": "transluce",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open tools (Docent) and published methods.",
-    "sources": [
-      "transluce-manifund"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+  "quote_source": "transluce-mh"
+ },
+ {
+  "id": "transluce.08",
+  "evaluator": "transluce",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open tools (Docent) and published methods.",
+  "sources": [
+   "transluce-manifund"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "transluce.09",
-    "evaluator": "transluce",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "FY2025 revenue: 32% from personal holdings of Anthropic employees and 6% from OpenAI employees, unrestricted, disclosed under its own policy; no revenue from developers as organizations.",
-    "sources": [
-      "transluce-policy"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "32% of its revenue from the personal holdings of Anthropic employees"
+  "rule": "M.1",
+  "quote": "Our open-source, AI-backed tools provide a technology stack that powers this public accountability",
+  "quote_source": "transluce-manifund"
+ },
+ {
+  "id": "transluce.09",
+  "evaluator": "transluce",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "FY2025 revenue: 32% from personal holdings of Anthropic employees and 6% from OpenAI employees, unrestricted, disclosed under its own policy; no revenue from developers as organizations.",
+  "sources": [
+   "transluce-policy"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "32% of its revenue from the personal holdings of Anthropic employees",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "transluce.10",
-    "evaluator": "transluce",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.",
-    "sources": [
-      "transluce-policy",
-      "transluce-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "consistent with requirement 2.3 of the AEF-1 standard"
+  "rule": "F.7",
+  "quote_source": "transluce-policy"
+ },
+ {
+  "id": "transluce.10",
+  "evaluator": "transluce",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.",
+  "sources": [
+   "transluce-policy",
+   "transluce-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "consistent with requirement 2.3 of the AEF-1 standard",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "transluce.11",
-    "evaluator": "transluce",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider.",
-    "sources": [
-      "transluce-policy"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "Transluce recuses any employee with a significant financial interest"
+  "rule": "G.2",
+  "quote_source": "transluce-policy"
+ },
+ {
+  "id": "transluce.11",
+  "evaluator": "transluce",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider.",
+  "sources": [
+   "transluce-policy"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "Transluce recuses any employee with a significant financial interest",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "transluce.12",
-    "evaluator": "transluce",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.",
-    "sources": [
-      "transluce-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  }
+  "rule": "P.5",
+  "quote_source": "transluce-policy"
+ },
+ {
+  "id": "transluce.12",
+  "evaluator": "transluce",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.",
+  "sources": [
+   "transluce-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "P.4",
+  "quote": "Thinking Machines Board of Directors Alex Allain Co-Founder, U.S. Digital Response Mike McCormick CEO, Halcyon Futures",
+  "quote_source": "transluce-about"
+ }
 ]

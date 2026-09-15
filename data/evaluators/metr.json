@@ -12,5 +12,10 @@
  "confidence": "high",
  "summary": "Reference evaluator for autonomy and AI R&D capability. Named by Anthropic as the model for embedded evaluators in September 2026; led the on-site investigation of the OpenAI agent swarm incident.",
  "what_would_move_the_score": "Contract terms for the Anthropic embedded program that fix scope-setting and publication rights in writing, plus a public cooling-off policy.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Personnel could be 1. A METR director founded FAR.AI, which OpenAI pays for red-teaming; a METR advisor is an a16z partner while a16z backs xAI and Thinking Machines; another advisor advises Thinking Machines; former advisors moved to Anthropic and to the OpenAI Foundation board; a former Anthropic researcher joined in September 2026. If advisors count as leaders, P.2 caps advisory roles at labs at 1, and the August 2026 policy has no cooling-off period.",
+  "higher": "Personnel could be 3. The August 2026 conflict-of-interest policy requires staff disclosure before any company-identifying risk assessment, applies provisional recusal, bans direct equity in frontier AI companies, and bars frontier-company employees from the board; advisor and director affiliations are listed on the team page. Anchor 3 asks for a recusal policy and disclosure of lab ties, and both are now published; the one-hop seats are advisory, not lab roles."
+ },
+ "list_group": "referee"
 }

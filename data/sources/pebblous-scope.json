@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Scope set by OpenAI; METR+Redwood on-site; METR took no payment; 'other questions out of scope'.",
   "source_type": "press",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "press_kind": "aggregator"
 }

@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Holistic Agent Leaderboard",
-  "url": "https://hal.cs.princeton.edu/"
+  "url": "https://hal.cs.princeton.edu/",
+  "self_of": "hal"
 }

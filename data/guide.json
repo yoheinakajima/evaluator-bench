@@ -1,0 +1,48 @@
+{
+ "raises": [
+  "A written policy refusing money from frontier developers, including donations directed by their staff.",
+  "A published conflict-of-interest policy: no outcome-contingent fees, no side grants or investments from labs being evaluated, mandatory recusal for anyone with a financial interest.",
+  "No single funder above a stated share of budget; funders disclosed by name.",
+  "Publication rights fixed in the contract before work starts, with redaction limited to security-sensitive or privileged material and a public statement of what was redacted.",
+  "A record of publishing findings the lab did not like: scheming, reward hacking, shutdown resistance, safeguard failures.",
+  "Open evaluation code and task suites so results can be re-run by others.",
+  "On-site, weights-level, or training-time access rather than a few weeks on an API.",
+  "Access that does not depend on the lab's goodwill: statute, regulation, or a court-enforceable agreement.",
+  "Membership in a standards body (AEF-1, AVERI pilots) and disclosure of operating conditions for each evaluation.",
+  "Cooling-off periods before staff move to labs; equity in labs disclosed or prohibited.",
+  "A client base spread across many developers, so no lab is a dominant revenue source.",
+  "Double-blind or secure-enclave protocols that let the evaluator work without the lab seeing the test items."
+ ],
+ "lowers": [
+  "The lab pays for the evaluation of its own model. Common, and the single most under-discussed conflict in the field.",
+  "Investors shared with the labs: a venture firm that backs both the evaluator and OpenAI, or a chip vendor buying the evaluator while anchoring a lab's IPO.",
+  "A stake of 20% or more held by a frontier developer or a lab investor, or status as a business unit of one.",
+  "Leadership holding a board seat, safety-committee chair, or advisory role at a lab the organization evaluates, even with recusal.",
+  "Selling defenses, guardrails, or monitoring products to the same labs it evaluates: the audit-plus-consulting problem that Sarbanes-Oxley separated in accounting.",
+  "A contract that forbids disclosing who funded a benchmark or evaluation.",
+  "The lab sets the scope, the time window, and which questions are out of bounds.",
+  "The lab reviews drafts for tone and emphasis, not only for security redactions.",
+  "Only aggregated or lab-summarized results reach the public.",
+  "Access that the lab can decline to renew with no consequence.",
+  "Political or budgetary dependence that can redirect a government institute's mandate within a year.",
+  "Co-authoring research with a lab while also serving as its external evaluator.",
+  "Free tokens and compute from the lab, when they are a material share of operating capacity.",
+  "Heavy talent flow in both directions between the evaluator and the labs.",
+  "No track record: a pledge to evaluate is not an evaluation."
+ ],
+ "glossary": [
+  ["Hop", "Distance from a frontier lab in the ledger: hop 0 is a lab; hop 1 a lab investor, observer, board member, employee, founder, or contractor; higher hops run through principals or funders."],
+  ["Signal", "One dated claim, for or against an organization, on one dimension, citing at least one source, with a bound that names the anchor it supports."],
+  ["Bound", "What a signal does to a value: an against-signal caps it, a for-signal floors it. The value is the tightest cap or, failing any cap, the highest floor."],
+  ["Evidence policy", "The rule for which signals count: leads included, standard (the default: at least one confirmed source), against interest, verified spans, primary only."],
+  ["Band", "Independence has floors. Any evidenced 0 is a disqualifying floor; any 1 a conditional floor; otherwise clear. The number ranks within the band."],
+  ["Unevidenced", "No admissible signal sets a bound on that dimension under the chosen policy. Shown as a dash; excluded from the score; counted in coverage."],
+  ["Held", "A bound that the evidence rules would not let stand at its declared value: an extreme without a quoted span, a 4 without a second source, or a bound from sources that were not all confirmed."],
+  ["Bounded negative", "A recorded search that found nothing, naming the corpus, the snapshot date, and the query. It supports 'not in that corpus on that date' and nothing more."],
+  ["Quarantined", "A ledger row or source whose re-fetch disagreed with the recorded figure, or that could not be verified. It stays visible with both values and counts for nothing."],
+  ["Imported", "A row copied from another project's ledger and not yet re-derived from its source. A lead, not evidence."],
+  ["Confirmed", "Re-fetched from the cited source by a named person on a date. A span is confirmed when the quoted text is found verbatim on the page."],
+  ["Mechanism", "Why an access or publication value is what it is: statutory, lab-controlled, self-imposed, or unknown."],
+  ["Dissent", "On every card, the strongest case that the weakest dimension should be one notch lower, and one notch higher."]
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "evaluator": "cais",
+ "signals": {
+  "cais.01": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "P.2",
+   "quote": "have driven some of the bigger successes in AI policy and advise xAI",
+   "quote_source": "80k-funding",
+   "fetch": {
+    "80k-funding": "ok",
+    "cais": "ok"
+   },
+   "note": "An executive advising an evaluated lab caps at 1 (P.2). The 80,000 Hours page attributes the xAI advisory role to the director's organisations; safe.ai confirms 'Dan Hendrycks Director, Center for AI Safety'. P.1 (0) would need a board or committee seat, which is not documented."
+  },
+  "cais.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "SFF gave $1.1m to CAIS and $1.6m to the action fund",
+   "quote_source": "80k-funding",
+   "fetch": {
+    "80k-funding": "ok"
+   },
+   "note": "Mostly philanthropic (anchor 3). SFF is not free of lab links: its funder led Anthropic's Series A, so F.6 caps the same money at 3 (cais.09). 'They’re not receiving money from OP' is also on the page."
+  },
+  "cais.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.3",
+   "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+   "quote_source": "cais",
+   "fetch": {
+    "cais": "ok"
+   },
+   "note": "Public benchmarks with open tasks (WMDP, HLE, MASK) are 3 under M.3; a 4 needs documented third-party re-runs or factsheets and a non-self second source, neither cited. Derived M is 3, not the stored 4."
+  },
+  "cais.04": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "X.6",
+   "quote": "1 Center for AI Safety, 2 Scale AI",
+   "quote_source": "lastexam-hle",
+   "fetch": {
+    "cais": "ok (no HLE or Scale text on the homepage)",
+    "lastexam-hle": "ok",
+    "cnbc-scale-meta": "ok"
+   },
+   "sources": [
+    "cais",
+    "lastexam-hle",
+    "cnbc-scale-meta"
+   ],
+   "note": "Co-producing a benchmark with a vendor owned by a lab caps at 3 (X.6). Meta's 49% non-voting stake exceeds the 20% control threshold used in F.1/G.6; CNBC: 'Meta has a 49% stake in Scale AI after investing $14.3 billion into the startup'. Note the stake post-dates HLE's January 2025 release."
+  },
+  "cais.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "is a San Francisco-based research and field-building nonprofit",
+   "quote_source": "cais",
+   "fetch": {
+    "cais": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1); no published conflict policy found. Derived G is 2, not the stored 3."
+  },
+  "cais.06": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "A.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "cais": "ok"
+   },
+   "note": "'Public-model access' is anchor 0. No span on the homepage, so C15 holds the cap at 1; derived A is 1, not the stored 2. A quotable statement that CAIS evaluates released models only, or a documented pre-release engagement, would settle it."
+  },
+  "cais.07": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+   "quote_source": "cais",
+   "fetch": {
+    "cais": "ok"
+   },
+   "note": "Self-directed benchmark design with no engagement to refuse floors at 3 (S.5)."
+  },
+  "cais.08": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.1",
+   "quote": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems Mar 5, 2025",
+   "quote_source": "cais",
+   "fetch": {
+    "cais": "ok"
+   },
+   "note": "Rule gap: 'publishes results' with no statement about lab review or redaction supports only anchor 2. R.1 (3) needs a security-only redaction statement (WMDP's withheld hazardous items would qualify if cited); R.5 (4) needs an adverse finding. Derived R is 2, not the stored 3."
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "lastexam-hle",
+   "title": "Humanity's Last Exam",
+   "publisher": "Center for AI Safety and Scale AI",
+   "url": "https://lastexam.ai/",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Author affiliations '1 Center for AI Safety, 2 Scale AI'; Nature citation lists CAIS, Scale AI and the contributors consortium as authors. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "cais.09",
+   "evaluator": "cais",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "SFF recommended $289,000 to CAIS in 2025 (about $1.1M cumulative per 80,000 Hours); SFF's funder Jaan Tallinn led Anthropic's Series A.",
+   "sources": [
+    "sff-2025",
+    "anthropic-series-a",
+    "80k-funding"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "Center for AI Safety (CAIS) Main: $210,000 Freedom: $78,000 Fairness: $0 Mean: $0 $289,000",
+   "quote_source": "sff-2025",
+   "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger rows T57 and T71; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "self-imposed"
+  }
+ },
+ "dissent": {
+  "lower": "Personnel should be 0. The director advises xAI while CAIS benchmarks (HLE, WMDP, MASK) are used to grade xAI models, and no recusal statement, disclosure page, or conflict policy is published anywhere on safe.ai. P.1 sets 0 for a governance role without recusal; an unrecused standing advisory role at a graded lab, with the benchmark scoring under the same director, is the nearest thing to it.",
+  "higher": "Personnel should be 2. An advisory role is not a board or committee seat, so P.2's cap of 1 rather than P.1's 0 applies, and nothing above 1 was ever claimed. HLE and WMDP are scored mechanically on public leaderboards where xAI's results are visible to anyone, no equity, hiring flow, or second lab tie is documented, and a published recusal note would lift the value to 2."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request to the Center for AI Safety: the terms of the director's advisory role at xAI (start date, compensation or equity if any) and any recusal or disclosure statement covering CAIS benchmark results on xAI models."
+  ]
+ },
+ "conflicts": []
+}

@@ -10,5 +10,10 @@
  "confidence": "high",
  "summary": "Main biosecurity evaluator; author of the Virology Capabilities Test; founding member of the AI Evaluator Forum.",
  "what_would_move_the_score": "Publish the AI division's client mix and the written terms that insulate it from Detection's funders.",
- "role": "referee"
+ "role": "vendor",
+ "dissent": {
+  "lower": "Funding should be 0. The OpenAI Foundation controls OpenAI Group (26% stake, appoints the entire board) and its $17.2M grant exceeds SecureBio's whole 2024 revenue; OpenAI PBC also pays for the evaluations of its own models. Money from a lab's controlling parent plus fees from the lab, with SecureBio's largest division dependent on it, is closer to 'controlled by a frontier developer' than to anchor 1.",
+  "higher": "Funding should be 2. The grant is restricted to Detection, the AI team keeps separate leadership and budgets, the COI policy caps AI-company services at 25% of revenue and bars results-contingent fees, and the FY2024 990 shows 93% contributions with 4.5% program services. The Foundation is a nonprofit grantmaker, not a return-seeking investor; F.3's per-engagement fees, disclosed per report, put this at 2."
+ },
+ "list_group": "commercial"
 }

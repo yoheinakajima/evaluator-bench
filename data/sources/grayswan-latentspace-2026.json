@@ -1,0 +1,12 @@
+{
+ "id": "grayswan-latentspace-2026",
+ "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+ "publisher": "Latent Space",
+ "url": "https://www.latent.space/p/gray-swan",
+ "published": "2026-06-22",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Podcast/newsletter page; fetched 2026-09-15; span 'the adversarial red teaming tool that Anthropic used to evaluate the robustness of their models' present (Shade). Lead for X.1: a lab using the evaluator's product.",
+ "press_kind": "aggregator"
+}

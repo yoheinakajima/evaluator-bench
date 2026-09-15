@@ -1,107 +1,120 @@
 [
-  {
-    "evaluator": "securebio",
-    "dimension": "F",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "securebio.01",
-      "securebio.02",
-      "securebio.11",
-      "securebio.13"
-    ],
-    "rationale": "Anchor 2 on funding given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "open_questions": [
-      "Coefficient grant amount to SecureBio."
-    ]
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.03",
-      "securebio.04",
-      "securebio.12"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.08"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.07"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.05",
-      "securebio.14"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "R",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.06"
-    ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.09"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "securebio",
-    "dimension": "X",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "securebio.10"
-    ],
-    "rationale": "Anchor 3 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
+ {
+  "evaluator": "securebio",
+  "dimension": "F",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "securebio.01",
+   "securebio.02",
+   "securebio.11",
+   "securebio.13",
+   "securebio.16",
+   "securebio.22",
+   "securebio.23"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "open_questions": [
+   "Coefficient grant amount to SecureBio."
+  ],
+  "resolution": {
+   "rule": "F.5",
+   "value": 1,
+   "note": "F.5 (material revenue from a lab investor) decides over the F.9 public-contract floor; the floor describes the remainder of the base."
   }
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "securebio.03",
+   "securebio.04",
+   "securebio.12",
+   "securebio.17"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "P",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "securebio.08",
+   "securebio.19"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "A",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "securebio.07",
+   "securebio.20"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "securebio.05",
+   "securebio.14",
+   "securebio.21"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0-final"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "R",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "securebio.06",
+   "securebio.18"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "mechanism": "self-imposed"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "securebio.09"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "securebio",
+  "dimension": "X",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "securebio.10",
+   "securebio.15"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "resolution": {
+   "rule": "X.2",
+   "value": 1,
+   "note": "securebio.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.2 cap; X.2 decides because the licensing statement is on SecureBio's own page."
+  }
+ }
 ]

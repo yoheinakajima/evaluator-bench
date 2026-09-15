@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "note": "Funder Jaan Tallinn; $34.33M recommended; METR $548,000; Palisade $1,133,000; FAR AI $919,000; SaferAI $311,000; SecureBio $754,000; RAND TASP $1,022,000; CAIS $289,000.",
   "source_type": "self",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "self_of": "sff"
 }

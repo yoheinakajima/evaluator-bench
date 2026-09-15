@@ -1,0 +1,12 @@
+{
+  "id": "mlcommons-leadership",
+  "title": "Leadership",
+  "publisher": "MLCommons",
+  "url": "https://mlcommons.org/about-us/leadership/",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Board and officers: \"Peter Mattson is a senior staff engineer at Google. He founded and is President of MLCommons\". Fetched 2026-09-15; span present.",
+  "self_of": "mlcommons"
+}

@@ -1,11 +1,11 @@
 """Regression tests for the pre-release hardening pass (2026-09-15): fail-closed verifier,
-ledger hygiene, gated scoring, and the retired self-certification loop."""
+ledger hygiene, banded scoring, and the retired self-certification loop."""
 import json, pathlib
 
 import pytest
 
 from bench import load, verify
-from bench.score import score, _half_up
+from bench.score import score, band, _half_up
 from bench.ledger import load_ledger, exposure, evidential, summable
 from bench.certificate import main as cert_main
 
@@ -20,16 +20,16 @@ def test_half_up_rounding():
     # scores are non-negative; halves round up, matching the site's Math.round
 
 
-def test_hal_gate_regression():
+def test_hal_band_regression():
     vals = {"F": 3, "G": 3, "P": 3, "A": 1, "S": 4, "R": 4, "M": 4, "X": 4}
-    assert score(vals, W) == 60, "access floor of 1 must cap the gated total at 60"
-    assert score(vals, W, gated=False) == 73
+    assert band(vals) == "conditional", "an access value of 1 is a conditional floor"
+    assert score(vals, W) == 73, "the number is no longer capped; the band carries the floor"
 
 
-def test_gated_is_default_and_caps():
+def test_disqualifying_band():
     vals = {k: 4 for k in "FGPASRMX"}; vals["F"] = 0
-    assert score(vals, W) == 40
-    assert score(vals, W, gated=False) == 70  # raw compensatory is uncapped
+    assert band(vals) == "disqualifying"
+    assert score(vals, W) == 70
 
 
 def test_missing_dimensions_raise():
@@ -37,6 +37,16 @@ def test_missing_dimensions_raise():
         score({"F": 4}, W)
     with pytest.raises(ValueError):
         score({k: 4 for k in "FGPASRMX"}, {"F": 0})
+
+
+def test_machine_review_skips_deleted_records(monkeypatch, tmp_path):
+    """A PR may retire a record; the review job must not try to read its deleted path."""
+    from bench import review
+    monkeypatch.setattr(review, "ROOT", tmp_path)
+    monkeypatch.setattr(review, "load", lambda strict=False: {"signals": {}})
+    monkeypatch.setattr(review, "_git", lambda *args: "data/signals/retired.json\ndata/assessments/retired.json\n")
+    assert review.changed_signals("base") == []
+    assert review.changed_assessments("base") == []
 
 
 def test_c10_tier1_gate_on_dataset():
@@ -124,7 +134,7 @@ def test_evidence_clock_enforced():
 def test_watchlist_excluded_from_rankings():
     d = load.load()
     watch = {eid: e for eid, e in d["evaluators"].items() if e.get("status") == "watchlist"}
-    assert set(watch) == {"big4", "hfoai"}
+    assert set(watch) == {"hfoai"}   # the hypothetical Big Four composite is no longer scored (RULES 11)
     watch = list(watch.values())
     for e in watch:
         assert e["role"] == "expected-entrant"

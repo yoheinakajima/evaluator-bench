@@ -1,0 +1,313 @@
+{
+  "apollo.01": {
+    "source": "apollo-norms",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "apollo.10": {
+    "source": "apollo-pbc-round",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "apollo.12": {
+    "source": "apollo-manifund",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "apollo.13": {
+    "source": "apollo-pbc-mission",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": "held by “mission directors” who are independent to Apollo Research PBC and our funders",
+    "note": "Same sentence; the page uses curly quotes (U+201C/U+201D) where the signal used straight quotes."
+  },
+  "averi.09": {
+    "source": "averi-funding",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "averi.10": {
+    "source": "averi-funding",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": "recused from directly auditing OpenAI until two years after his October 2024 departure",
+    "note": "Page wording differs from the signal ('until two years after his October 2024 departure' vs 'for at least two years')."
+  },
+  "averi.12": {
+    "source": "fortune-averi",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "caisi.11": {
+    "source": "cnbc-caisi-fall",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "caisi.12": {
+    "source": "csa-caisi-five-labs",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "caisi.13": {
+    "source": "csa-caisi-five-labs",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "epoch.01": {
+    "source": "epoch-clarify",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "epoch.14": {
+    "source": "epoch-transparency-page",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "epoch.15": {
+    "source": "epoch-transparency-page",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "farai.10": {
+    "source": "far-transparency",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "farai.12": {
+    "source": "far-30m",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": "FAR.AI secured over $30 million of funding commitments in 2025",
+    "note": "op-far-general-support (openphilanthropy.org) now 301s to coefficientgiving.org/funds/, a generic page. The original quote is verbatim on a Wayback capture of the OP page (see archive line). The $28,675,000 figure is not on any live cited page.",
+    "archive_note": "original quote is verbatim in Wayback capture https://web.archive.org/web/2025id_/https://www.openphilanthropy.org/grants/far-ai-general-support/"
+  },
+  "farai.14": {
+    "source": "longtermwiki-far-cap",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "grayswan.01": {
+    "source": "kolter-bio",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "grayswan.02": {
+    "source": "forbes-grayswan-2024",
+    "status": "fetch failed: fetch_text HTTPError: HTTP Error 403: Forbidden; curl -A Mozilla/5.0 returned 54 chars (bot wall); curl with browser headers returned 54 chars (bot wall)",
+    "method": "curl",
+    "suggested": null,
+    "archive_note": "original quote is verbatim in Wayback capture https://web.archive.org/web/2025id_/https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+    "note": "forbes.com returns HTTP 403 to fetch_text and a 'Please enable JS' shell to every curl form. The quote is verbatim in the Wayback capture (web.archive.org/web/2025id_/<url>). Suggest adding an `archive` field to forbes-grayswan-2024."
+  },
+  "grayswan.04": {
+    "source": "grayswan-seriesa",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "grayswan.11": {
+    "source": "madrona-grayswan",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "grayswan.12": {
+    "source": "wikipedia-kolter",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "hfoai.01": {
+    "source": "tnw-hf-nvidia",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "hfoai.10": {
+    "source": "fortune-hf-nvidia",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "irregular.01": {
+    "source": "techcrunch-irregular",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "metr.18": {
+    "source": "metr-about",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "metr.19": {
+    "source": "metr-funding-2026",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "metr.20": {
+    "source": "metr-audacious-2024",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "metr.21": {
+    "source": "instrumentl-arc-990",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": "Alignment Research Center, operating as a public charity in Covina, CA, provided $4,553,935 in grants in 2024",
+    "note": "Instrumentl reworded its summary; the page never names METR as recipient (it shows '1 awards in 2024' behind a sign-up wall). op-longview and op-constellation now redirect to coefficientgiving.org/funds/; their figures ($15,961,273; $16,750,000) are verbatim on Wayback captures."
+  },
+  "palisade.11": {
+    "source": "evaluators-ledger",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": "Coefficient name matched: 'Palisade Research' ($1,680,000 2024-06; $2,123,463 2025-05).",
+    "note": "op-palisade cites the generic OP grants index, which never carried Palisade text and now redirects to coefficientgiving.org/funds/. The original quote is verbatim on the Wayback capture of openphilanthropy.org/grants/palisade-research-general-support-2025/ (Amount $2,123,463, May 2025, 'two grants'); that page also lists a separate $1,680,000 2024 grant, so the imported $3,803,463 index total = 1,680,000 + 2,123,463 and the 'differs' flag can be reconciled."
+  },
+  "rand.10": {
+    "source": "rand-audacious-2024",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null,
+    "note": "rand.org (CloudFront) returned HTTP 403 to fetch_text and to the bare `curl -A Mozilla/5.0` form on the first run of 2026-09-15 but served normally with full browser headers; a re-run the same day fetched normally with fetch_text. Treat this source as flaky in CI."
+  },
+  "redwood.12": {
+    "source": "zvi-hf-postmortem",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "saferai.11": {
+    "source": "saferai-about",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "scale.10": {
+    "source": "cnbc-scale-meta",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "securebio.01": {
+    "source": "securebio-oaif",
+    "status": "not found",
+    "method": "fetch_text",
+    "suggested": null,
+    "note": "The cited page never carried this sentence. No SecureBio page states that OpenAI covered the GPT-5.5 assessment; see fixes.securebio.01 for the nearest supported statement (GPT-6 Astra and GPT-5.6 Sol full reports)."
+  },
+  "securebio.11": {
+    "source": "securebio-oaif",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "securebio.12": {
+    "source": "securebio-oaif",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "securebio.13": {
+    "source": "securebio-2025-review",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "securebio.14": {
+    "source": "securebio-oaif",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "transluce.09": {
+    "source": "transluce-policy",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "transluce.10": {
+    "source": "transluce-policy",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "transluce.11": {
+    "source": "transluce-policy",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "ukaisi.03": {
+    "source": "csa-aisi-trends",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "ukaisi.12": {
+    "source": "aisi-alignment-60",
+    "status": "found",
+    "method": "fetch_text",
+    "suggested": null
+  },
+  "fixes": {
+    "securebio.01": {
+      "source": {
+        "id": "securebio-gpt6-astra-report",
+        "title": "Pre-Release Assessment of OpenAI's GPT-6 Astra (full technical report, PDF)",
+        "publisher": "SecureBio",
+        "url": "https://securebio.org/resources/gpt-6-astra-assessment.pdf",
+        "published": "2026-09-14",
+        "retrieved": "2026-09-15",
+        "source_type": "self",
+        "audit_status": "confirmed",
+        "note": "Linked as 'full technical report' from https://securebio.org/blog/gpt-6-astra-pre-release-testing-report/ (published September 14, 2026). Section 'Independent Evaluations' and the AEF-1 checklist (item 2.1, 2.4) state that OpenAI's payment was limited to covering SecureBio's costs (tokens, compute, employee time), agreed in advance, not contingent on findings; the report was reviewed by OpenAI before publication with no substantive edits. Fetched 2026-09-15, SHA-256 dcedf0d32944...; text extracted with pdftotext (poppler) and whitespace-collapsed. CAUTION: bench.review.fetch_text does not extract PDF text, so CI will report this quote NOT FOUND; see 'alternatives' for an HTML span CI can check."
+      },
+      "quote": "SecureBio received compensation from OpenAI limited to covering the costs of this assessment",
+      "claim_note": "No SecureBio page states that OpenAI covered the GPT-5.5 assessment. The GPT-5.5 post (securebio.org, April 9, 2026; Substack copy April 23, 2026) carries no funding disclosure and links only OpenAI's system card. The claim should be re-scoped to GPT-6 Astra (this source) or GPT-5.6 Sol (alternative 1), whose full reports carry the same sentence.",
+      "alternatives": [
+        {
+          "id": "securebio-gpt56-sol-report",
+          "title": "Pre-Release Assessment of OpenAI's GPT-5.6 Sol (full technical report, PDF)",
+          "publisher": "SecureBio",
+          "url": "https://securebio.org/reports/gpt-5-6-sol-assessment.pdf",
+          "published": "2026-07-23",
+          "retrieved": "2026-09-15",
+          "source_type": "self",
+          "audit_status": "confirmed",
+          "quote": "SecureBio received compensation from OpenAI limited to covering the costs of this assessment",
+          "note": "Same sentence as the GPT-6 report. The PDF text layer contains zero-width spaces (U+200B) between some words, so the span matches only after stripping U+200B. Also mirrored at /resources/gpt-5-6-sol-assessment.pdf."
+        },
+        {
+          "id": "securebio-ai-principles",
+          "title": "SecureBio's principles and practices for model assessment",
+          "publisher": "SecureBio",
+          "url": "https://securebio.org/ai/principles/",
+          "published": "2026-07-03",
+          "retrieved": "2026-09-15",
+          "source_type": "self",
+          "audit_status": "confirmed",
+          "quote": "For some engagements with for-profit firms, we request funding to cover the costs of running the assessments",
+          "note": "HTML page; this span is verbatim under fetch_text, so CI can check it. It supports the general half of the claim ('labs typically pay for evaluations of their own models') but names no model or lab. Substack copy dated 2026-07-03."
+        }
+      ]
+    }
+  }
+}

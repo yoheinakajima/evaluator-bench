@@ -1,112 +1,195 @@
 [
-  {
-    "id": "mlcommons.01",
-    "evaluator": "mlcommons",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Funded by member companies, including the labs whose models are benchmarked.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "mlcommons.01",
+  "evaluator": "mlcommons",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Funded by member companies, including the labs whose models are benchmarked.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-ailuminate",
+   "mlcommons-siliconangle"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "mlcommons.02",
-    "evaluator": "mlcommons",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open benchmark specification and methodology.",
-    "sources": [
-      "mlcommons",
-      "averi-pilot"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.5",
+  "quote": "MLCommons is an industry consortium backed by several dozen tech firms",
+  "quote_source": "mlcommons-siliconangle"
+ },
+ {
+  "id": "mlcommons.02",
+  "evaluator": "mlcommons",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open benchmark specification and methodology.",
+  "sources": [
+   "mlcommons",
+   "averi-pilot",
+   "mlcommons-demo-dataset"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "mlcommons.03",
-    "evaluator": "mlcommons",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Used as neutral ground in the AVERI double-blind pilot.",
-    "sources": [
-      "averi-pilot"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1",
+  "quote": "The Official Test dataset is private to avoid SUTs “gaming” the benchmark",
+  "quote_source": "mlcommons-demo-dataset"
+ },
+ {
+  "id": "mlcommons.03",
+  "evaluator": "mlcommons",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Used as neutral ground in the AVERI double-blind pilot.",
+  "sources": [
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 0
   },
-  {
-    "id": "mlcommons.04",
-    "evaluator": "mlcommons",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Consortium governance by members.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "AVERI, OpenMined, and MLCommons were not able to see the model’s weights",
+  "quote_source": "averi-pilot"
+ },
+ {
+  "id": "mlcommons.04",
+  "evaluator": "mlcommons",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Consortium governance by members.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-ailuminate",
+   "mlcommons-propublica"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "mlcommons.05",
-    "evaluator": "mlcommons",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Benchmark design set by working group.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.4",
+  "quote": "MLCommons is supported by over 125 members and affiliates",
+  "quote_source": "mlcommons"
+ },
+ {
+  "id": "mlcommons.05",
+  "evaluator": "mlcommons",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Benchmark design set by working group.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-demo-dataset"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "mlcommons.06",
-    "evaluator": "mlcommons",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes results.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "designed and developed by the MLCommons AI Risk and Reliability working group",
+  "quote_source": "mlcommons-demo-dataset"
+ },
+ {
+  "id": "mlcommons.06",
+  "evaluator": "mlcommons",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes results.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-demo-dataset"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "mlcommons.07",
-    "evaluator": "mlcommons",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Working groups staffed by member-company employees.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.7",
+  "quote": "Public reports of 13 systems-under-test (SUTS)",
+  "quote_source": "mlcommons-demo-dataset"
+ },
+ {
+  "id": "mlcommons.07",
+  "evaluator": "mlcommons",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Working groups staffed by member-company employees.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-ailuminate"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "mlcommons.08",
-    "evaluator": "mlcommons",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "Benchmarks free to use.",
-    "sources": [
-      "mlcommons"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.4",
+  "quote": "People from the following organizations have collaborated within the working group",
+  "quote_source": "mlcommons-ailuminate"
+ },
+ {
+  "id": "mlcommons.08",
+  "evaluator": "mlcommons",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "Benchmarks free to use.",
+  "sources": [
+   "mlcommons",
+   "mlcommons-demo-dataset"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "mlcommons.09",
-    "evaluator": "mlcommons",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "President is a Google senior staff engineer; members include the frontier developers whose models are benchmarked.",
-    "sources": [
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
-  }
+  "rule": "X.4",
+  "quote": "publicly released the AILuminate DEMO prompt dataset, a collection of 1,200 prompts",
+  "quote_source": "mlcommons-demo-dataset"
+ },
+ {
+  "id": "mlcommons.09",
+  "evaluator": "mlcommons",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "President is a Google senior staff engineer; members include the frontier developers whose models are benchmarked.",
+  "sources": [
+   "evaluators-ledger",
+   "mlcommons-leadership"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "P.4",
+  "quote": "Peter Mattson is a senior staff engineer at Google. He founded and is President of MLCommons",
+  "quote_source": "mlcommons-leadership"
+ },
+ {
+  "id": "mlcommons.10",
+  "evaluator": "mlcommons",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "The only documented engagement evaluated a publicly released model inside an enclave; no pre-release access from a lab is documented.",
+  "sources": [
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "as_of": "2026-09-15",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "A.1",
+  "quote": "AVERI, OpenMined, and MLCommons were not able to see the model’s weights",
+  "quote_source": "averi-pilot"
+ }
 ]

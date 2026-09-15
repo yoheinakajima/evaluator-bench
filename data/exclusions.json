@@ -1,0 +1,556 @@
+[
+  {
+    "id": "artificial-analysis",
+    "name": "Artificial Analysis",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a",
+      "c"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 2.10: 'GDPval-AA, developed by Artificial Analysis, is an independent evaluation framework' and 'Evaluation was run independently by Artificial Analysis'; also Grok 4.6 model card (12 Aug 2026): 'Results reported are taken from evaluations conducted by Artificial Analysis'; Amazon Nova technical report (Jun 2025) cites it 'as reported by Artificial Analysis, an independent entity'; x.ai Grok Imagine API page (28 Jan 2026) cites 'Source: Artificial Analysis official website'.",
+    "result": "in-scope-candidate",
+    "reason": "Cited by Anthropic and xAI as an independent third-party evaluator in system/model cards, and its index is cited by xAI and Amazon; capital structure not verified."
+  },
+  {
+    "id": "lmarena",
+    "name": "LM Arena (Arena, formerly LMArena / LMSYS Chatbot Arena)",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "c"
+    ],
+    "evidence_url": "https://x.ai/news/grok-4-1",
+    "evidence_note": "xAI Grok 4.1 launch page (17 Nov 2025): 'In LMArena's Text Arena, Grok 4.1 Thinking (code name: quasarflux) holds the #1 overall position with 1483 Elo'. Search snippets (not opened) show Google (Gemini 3) and Mistral (Mistral Large 3) also citing LMArena.",
+    "result": "in-scope-candidate",
+    "reason": "Operates a leaderboard that a frontier developer (xAI) cites for a frontier model; funding rounds reported in search snippets were not verified from an opened page."
+  },
+  {
+    "id": "stanford-helm",
+    "name": "Stanford HELM / CRFM",
+    "type_guess": "academic",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://crfm.stanford.edu/2025/03/20/helm-capabilities.html",
+    "evidence_note": "HELM Capabilities post (20 Mar 2025) shows CRFM runs a leaderboard listing GPT-4o, Claude 3.7 Sonnet, Gemini 2.0, Llama 3.1, Amazon Nova, Mistral; the post quotes no developer citing it. No mention of HELM in the 13 frontier cards checked (GPT-5 (Aug 2025), Claude Opus 4/Sonnet 4 (May 2025), Opus 4.5 (Nov 2025), Opus 4.6 and Sonnet 4.6 (Feb 2026), Mythos Preview (Apr 2026), Sonnet 5 (Jun 2026), Opus 5 (Jul 2026), Fable 5.1/Mythos 5.1 (Sep 2026), Grok 4.6 (Aug 2026), Amazon Nova (Jun 2025), Gemini 3 Pro model card, Llama 4 model card (Apr 2025)) or in site-restricted searches of openai.com, anthropic.com, x.ai, ai.meta.com, mistral.ai, amazon.science.",
+    "result": "unclear",
+    "reason": "Leaderboard exists and covers frontier models, but no frontier-developer citation of HELM for a frontier model was found within the window; not exhaustive."
+  },
+  {
+    "id": "eleutherai",
+    "name": "EleutherAI (lm-evaluation-harness)",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://github.com/EleutherAI/lm-evaluation-harness",
+    "evidence_note": "README: the harness 'is used internally by dozens of organizations including NVIDIA, Cohere, BigScience, BigCode, Nous Research, and Mosaic ML' and 'is the backend for Hugging Face's popular Open LLM Leaderboard' (leaderboard operated by HF, not EleutherAI). No mention of EleutherAI or lm-eval in the 13 frontier cards checked or site-restricted searches of x.ai, ai.meta.com, mistral.ai, amazon.science, deepmind.google, microsoft.com (only AWS/Microsoft developer docs hit).",
+    "result": "unclear",
+    "reason": "Evaluation framework rather than an operated leaderboard; no frontier developer found citing it for a frontier model in the window, but the search space (model cards on Hugging Face) was not exhausted."
+  },
+  {
+    "id": "vals-ai",
+    "name": "Vals AI",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a",
+      "c"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 2.14.3: benchmark table lists 'Finance Agent — External: Vals AI' and 'Vals AI conducted an evaluation of Claude Opus 4.6 on this benchmark'; Grok 4.6 model card (12 Aug 2026): 'Results are taken from evaluations conducted by Vals AI' using its Valkyrie harness; Anthropic 'Advancing Claude for Financial Services' (27 Oct 2025): 'topping the Finance Agent benchmark from Vals AI at 55.3% accuracy'.",
+    "result": "in-scope-candidate",
+    "reason": "Named as an external evaluator in Anthropic and xAI cards and operates leaderboards both cite; capital structure not verified."
+  },
+  {
+    "id": "patronus-ai",
+    "name": "Patronus AI",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.patronus.ai/products",
+    "evidence_note": "Product page (opened 15 Sep 2026) describes an enterprise agent-evaluation platform (Glider, Lynx, Percival) with no frontier-lab engagement or system-card citation; no mention in the 13 frontier cards checked; site-restricted searches of openai.com, anthropic.com, x.ai, deepmind.google, aisi.gov.uk, nist.gov returned nothing.",
+    "result": "out",
+    "reason": "No system-card, government-report, statutory, or developer-cited-leaderboard evidence found."
+  },
+  {
+    "id": "haize-labs",
+    "name": "Haize Labs",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.anthropic.com/research/constitutional-classifiers",
+    "evidence_note": "Anthropic research post 'Constitutional Classifiers' (3 Feb 2025): 'We are also grateful to Haize Labs, Gray Swan, and the UK AI Safety Institute for red teaming other prototype versions of our system.' This is a research publication, not a system card; no Anthropic or OpenAI system card among the 13 checked names Haize Labs (Gray Swan and UK AISI are named there instead).",
+    "result": "unclear",
+    "reason": "Publicly credited by a frontier developer as an external red team of a safeguard prototype within the window, but not in a system or model card; curator must decide whether a research post satisfies criterion (a)."
+  },
+  {
+    "id": "lakera",
+    "name": "Lakera (Check Point)",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.lakera.ai/",
+    "evidence_note": "Site (opened 15 Sep 2026) sells prompt-injection defense for GenAI apps; footer reads 'Check Point Software Technologies Ltd.'; no frontier-lab evaluation or system-card citation on the site; no mention in the 13 frontier cards checked; site-restricted search surfaced only an OpenAI paper citing the Gandalf dataset (not opened, and a dataset citation is not an evaluator citation).",
+    "result": "out",
+    "reason": "No evidence of being cited as an external evaluator or red team, or of a developer-cited leaderboard."
+  },
+  {
+    "id": "promptfoo",
+    "name": "Promptfoo",
+    "type_guess": "bigtech",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.promptfoo.dev/blog/promptfoo-joining-openai/",
+    "evidence_note": "Promptfoo post (9 Mar 2026): joining OpenAI, 'Promptfoo will remain open source'; GitHub README: 'Promptfoo is now part of OpenAI' and 'Used by OpenAI and Anthropic'. Only appearance in the 13 frontier cards checked is the Claude Opus 4.6 card listing 'promptfoo.dev' in the URL blocklist for Humanity's Last Exam browsing (section 9.2), not as an evaluator.",
+    "result": "out",
+    "reason": "Tool used internally by labs, never cited as an external evaluator; since March 2026 a unit of a frontier developer (OpenAI)."
+  },
+  {
+    "id": "giskard",
+    "name": "Giskard (Phare)",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.giskard.ai/knowledge/giskard-announces-phare-a-new-llm-evaluation-benchmark",
+    "evidence_note": "Giskard announcement (19 Feb 2025): Phare is 'a new open & independent LLM benchmark' built under 'a non-exclusive research partnership between Google DeepMind's Security team and Giskard'; phare.giskard.ai leaderboard (opened) ranks 67 models from OpenAI, Anthropic, Google, Meta, xAI, Mistral. No frontier developer citing Phare was found in the 13 cards checked or on developer sites.",
+    "result": "unclear",
+    "reason": "Operates a leaderboard covering frontier models and has a research tie to Google DeepMind (self-reported), but no developer citation of Phare for a frontier model was found."
+  },
+  {
+    "id": "trail-of-bits",
+    "name": "Trail of Bits",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://red.anthropic.com/2026/cvd/findings/ANT-2026-TZQ1KH7E",
+    "evidence_note": "Anthropic Frontier Red Team CVD finding (sent to maintainer 26 Mar 2026): 'Triage and disclosure were performed by Trail of Bits' - a vulnerability-disclosure contractor role. Anthropic's Mythos Preview page (7 Apr 2026) mentions unnamed 'professional security contractors'. Not named in any of the 13 frontier cards checked; search snippets (openai.com pages returned 403) describe an OpenAI Daybreak open-source patching partnership, not model evaluation.",
+    "result": "out",
+    "reason": "Documented roles are vulnerability triage, disclosure and OSS patching for labs, not evaluation or red-teaming of a frontier model; revisit if a card names it as an evaluator."
+  },
+  {
+    "id": "ncc-group",
+    "name": "NCC Group",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.nccgroup.com/campaign/build-cyber-resilience-in-the-age-of-artificial-intelligence-ai/",
+    "evidence_note": "NCC Group AI campaign page (opened 15 Sep 2026) lists AI security assessment and red-teaming services with no frontier-lab or national-institute engagement named; no mention in the 13 frontier cards checked; site-restricted searches of openai.com, anthropic.com, deepmind.google, aisi.gov.uk, nist.gov returned nothing.",
+    "result": "out",
+    "reason": "No citation as an external evaluator or red team of a frontier model found."
+  },
+  {
+    "id": "apart-research",
+    "name": "Apart Research",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://apartresearch.com/",
+    "evidence_note": "Own site (opened 15 Sep 2026): 'We collaborate with the EU AI Office on Harmful Manipulation. Focus on empirical research on the latest AI systems.' Self-published claim; no EU AI Office document, government evaluation report or system card naming Apart Research was found (directory records EquiStamp and Transluce on the EU harmful-manipulation lot); no mention in the 13 frontier cards checked.",
+    "result": "unclear",
+    "reason": "Self-reported EU AI Office collaboration on harmful manipulation needs a primary EU document (contract award or report) before criterion (a) or (b) can be applied."
+  },
+  {
+    "id": "virtue-ai",
+    "name": "Virtue AI",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.virtueai.com/virtue-ai-team",
+    "evidence_note": "Team page (opened 15 Sep 2026) names founders Bo Li, Dawn Song, Sanmi Koyejo, Carlos Guestrin and '100+ proprietary red-teaming algorithms' but no frontier-lab engagement or system-card citation; no mention in the 13 frontier cards checked (including Llama 4 and Grok 4.6). Search snippets (Axios page returned 403, not opened) report the founders joined Meta Superintelligence Labs in June 2026.",
+    "result": "out",
+    "reason": "No citation as an external evaluator or red team of a frontier model found; founders reportedly now inside a frontier developer (unverified from an opened page)."
+  },
+  {
+    "id": "japan-aisi",
+    "name": "Japan AI Safety Institute (J-AISI, IPA)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://arxiv.org/abs/2601.15679",
+    "evidence_note": "International Network joint testing report on agentic evaluations (arXiv 2601.15679, submitted 22 Jan 2026; exercise reported Jul 2025) lists Japan among the institutes, with Singapore AISI and UK AISI leading the two strands and 'a mix of open and closed-weight models' evaluated (models not named); PEReN page (30 Jul 2025) confirms Japan AISI participation; Anthropic (29 Oct 2025) 'signed a Memorandum of Cooperation with the Japan AI Safety Institute to collaborate on AI evaluation methodologies'; J-AISI deck (1 Aug 2025) documents its evaluation and red-teaming guides.",
+    "result": "in-scope-candidate",
+    "reason": "National institute that co-authored government evaluation reports of frontier models (models anonymised) and holds an evaluation-methods MoC with Anthropic; no pre-deployment system-card citation found."
+  },
+  {
+    "id": "singapore-aisi",
+    "name": "Singapore AI Safety Institute (DTC/IMDA; AI Verify Foundation)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://sgaisi.sg/",
+    "evidence_note": "sgaisi.sg (opened 15 Sep 2026): Singapore, Japan and the UK 'led the Network's latest joint testing exercise' on multilingual evaluations and 'Korea and Singapore AISIs jointly tested how AI agents behave in real-world tasks'; arXiv 2601.15679 (22 Jan 2026) states Singapore AISI led the leakage/fraud strand of the agentic exercise. The site does not mention the AI Verify Foundation; the IMDA press-release body (11 Feb 2025) did not load.",
+    "result": "in-scope-candidate",
+    "reason": "National institute that led government joint-testing reports evaluating (unnamed) frontier models; AI Verify Foundation's separate role was not evidenced from an opened page."
+  },
+  {
+    "id": "korea-aisi",
+    "name": "Korea AI Safety Institute (KAISI)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://arxiv.org/abs/2601.15679",
+    "evidence_note": "arXiv 2601.15679 (22 Jan 2026) lists South Korea among the participating institutes; sgaisi.sg says 'Korea and Singapore AISIs jointly tested how AI agents behave'; Wedoany (Jun 2026) reports KAISI's 'Safety Assessment Performance of 42 AI Models' covering Jan 2025-Apr 2026 with global model names anonymised; EdTech Innovation Hub (29 Jun 2026) reports an OpenAI-KAISI evaluation agreement with no specific assessment product; Scale AI MoU (28 Oct 2025).",
+    "result": "in-scope-candidate",
+    "reason": "National institute that co-authored government evaluation reports and published its own (anonymised) multi-model safety assessment; a primary KAISI page (aisi.re.kr) was not opened."
+  },
+  {
+    "id": "canada-aisi",
+    "name": "Canadian AI Safety Institute (CAISI Canada / NRC)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://nrc.canada.ca/en/research-development/products-services/technical-advisory-services/ai-safety-responsible-ai",
+    "evidence_note": "NRC page (opened 15 Sep 2026): NRC is 'a leading partner under the Canadian Artificial Intelligence Institute (CAISI)' and 'researchers from the NRC and 8 other countries evaluated AI agents across 9 languages'; arXiv 2601.15679 (22 Jan 2026) lists Canada among the participating institutes; models evaluated are not named.",
+    "result": "in-scope-candidate",
+    "reason": "Participated as an evaluator in the Network's government joint-testing reports on frontier models; no model-specific or pre-deployment report found."
+  },
+  {
+    "id": "france-inesia",
+    "name": "INESIA (France: ANSSI, Inria, LNE, PEReN)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www.entreprises.gouv.fr/espace-presse/linstitut-national-pour-levaluation-et-la-securite-de-lia-adopte-sa-feuille-de-route",
+    "evidence_note": "DGE press page (12 Feb 2026): 'Inria, le LNE et le PEReN ont mené des exercices d'essais conjoints de modèles d'IA avancés, dont les résultats ont été publiés en juillet 2025' within the international AISI network; PEReN page (30 Jul 2025) describes the exercise ('two models (an open model and a proprietary model)', unnamed) 'conducted along with the AI Safety Institutes of Singapore, Japan, Australia, Kenya, South Korea and the UK, as well as with the AI Office of the European Commission'.",
+    "result": "in-scope-candidate",
+    "reason": "National institute whose constituent bodies ran and published joint evaluations of frontier models (unnamed) in July 2025."
+  },
+  {
+    "id": "germany-de-aisi",
+    "name": "Germany: DE-AISI nucleus (BSI and BNetzA)",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.edtechinnovationhub.com/news/germany-ai-security-institute-de-aisi",
+    "evidence_note": "EdTech Innovation Hub (27 Aug 2026): decision to establish DE-AISI adopted 8 Jun 2026; 'The current nucleus brings together the BSI on security and BnetzA on safety'; institute 'is intended to provide scientific and technical expertise on advanced AI models'; no completed evaluation reported. law-ai.org page timed out twice. Neither BSI nor DE-AISI appears in the 13 frontier cards checked or the joint-testing participant lists.",
+    "result": "out",
+    "reason": "Expected entrant: institute created June 2026 with no published evaluation of a frontier model and no citation as an evaluator."
+  },
+  {
+    "id": "australia-aisi",
+    "name": "Australia AI Safety Institute",
+    "type_guess": "gov",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://arxiv.org/abs/2601.15679",
+    "evidence_note": "arXiv 2601.15679 (22 Jan 2026) and PEReN (30 Jul 2025) list Australia among Network participants in the mid-2025 exercise, before the institute existed; privacy108 (21 Feb 2026): institute announced late 2025 with $29.9m, rolling out early 2026, no testing reported; Crypto Briefing (7 Jul 2026) says testing has begun, quoting Assistant Minister Andrew Charlton, but cites no primary source; industry.gov.au pages returned 403/timeouts.",
+    "result": "unclear",
+    "reason": "Australia contributed to a government joint-testing report, but the AISI itself post-dates it and no AISI-authored evaluation or primary statement of frontier testing was opened."
+  },
+  {
+    "id": "openai-preparedness",
+    "name": "OpenAI Preparedness team",
+    "type_guess": "bigtech",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://alignment.anthropic.com/2025/openai-findings/",
+    "evidence_note": "Anthropic (27 Aug 2025): 'Anthropic and OpenAI agreed to evaluate each other's public models using in-house misalignment-related evaluations' - a cross-lab blog exercise on public models, not a system-card citation; in OpenAI's own GPT-5 system card (13 Aug 2025) Preparedness is the first-party author of the evaluations; no card among the 13 checked names it as an external evaluator.",
+    "result": "out",
+    "reason": "First-party unit of a frontier developer; not cited as an external evaluator in any system card or government report found (Microsoft AI Red Team is in the directory only because OpenAI's card names it as external)."
+  },
+  {
+    "id": "anthropic-frontier-red-team",
+    "name": "Anthropic Frontier Red Team",
+    "type_guess": "bigtech",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://alignment.anthropic.com/2025/openai-findings/",
+    "evidence_note": "Same cross-lab exercise (27 Aug 2025): Anthropic ran in-house evaluations on GPT-4o, GPT-4.1, o3 and o4-mini and published a blog post; OpenAI's GPT-5 system card (opened, arXiv 2601.03267) does not name Anthropic as an external evaluator; in Anthropic's own cards the team is first-party.",
+    "result": "out",
+    "reason": "First-party unit of a frontier developer; the one cross-lab evaluation was published as a blog post, not cited in a system card."
+  },
+  {
+    "id": "gdm-frontier-safety",
+    "name": "Google DeepMind Frontier Safety team",
+    "type_guess": "bigtech",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+    "evidence_note": "Gemini 3 Pro model card (opened 15 Sep 2026) names no external evaluators and is authored first-party; no card among the 13 checked names Google DeepMind as an external evaluator or red team of another developer's model.",
+    "result": "out",
+    "reason": "First-party unit of a frontier developer with no external-evaluator citation found."
+  },
+  {
+    "id": "arcadia-impact",
+    "name": "Arcadia Impact",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "evidence_note": "Inspect Evals README: 'Inspect Evals was created in collaboration by the UK AISI, Arcadia Impact, and the Vector Institute'; arcadiaimpact.org (opened): 'working in close collaboration with the UK AI Security Institute's Alignment team' and 'research grounded in experiments on frontier models'; the UK AISI Frontier AI Trends Report page (Dec 2025) names no external organisations; not in the 13 frontier cards checked.",
+    "result": "unclear",
+    "reason": "Builds the evaluation suite UK AISI uses and self-reports collaboration with AISI, but no government evaluation report or system card was found citing it as an evaluator."
+  },
+  {
+    "id": "leap-labs",
+    "name": "Leap Labs",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.leap-labs.com/",
+    "evidence_note": "Site (opened 15 Sep 2026) markets Disco, an automated data-analysis product; no frontier evaluation, government engagement or system-card citation; no mention in the 13 frontier cards checked; site-restricted searches of anthropic.com, openai.com, deepmind.google, aisi.gov.uk returned nothing.",
+    "result": "out",
+    "reason": "No evidence of any inclusion criterion."
+  },
+  {
+    "id": "robust-intelligence-cisco",
+    "name": "Robust Intelligence (Cisco AI Defense)",
+    "type_guess": "bigtech",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html",
+    "evidence_note": "Cisco page (opened 15 Sep 2026): Robust Intelligence acquired October 2024, now 'foundational' to Cisco AI Defense; 'algorithmic red teaming and the industry's first AI Firewall'; no frontier-lab evaluation or system-card citation; no mention in the 13 frontier cards checked.",
+    "result": "out",
+    "reason": "Product unit of a non-frontier Big Tech firm with no evaluator citation found."
+  },
+  {
+    "id": "pillar-security",
+    "name": "Pillar Security",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.pillar.security/",
+    "evidence_note": "Site (opened 15 Sep 2026) sells an agentic-AI security platform with 'agentic red teaming'; no frontier-lab, national-institute or system-card mention; no mention in the 13 frontier cards checked; searches returned nothing.",
+    "result": "out",
+    "reason": "No evidence of any inclusion criterion."
+  },
+  {
+    "id": "mindgard",
+    "name": "Mindgard",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://mindgard.ai/",
+    "evidence_note": "Site (opened 15 Sep 2026) sells automated red teaming and runtime protection; frames its disclosures against Google, OpenAI and xAI systems as research, not engagements; no system-card, government-report or leaderboard citation; no mention in the 13 frontier cards checked.",
+    "result": "out",
+    "reason": "Self-initiated vulnerability research only; no citation as an external evaluator or red team."
+  },
+  {
+    "id": "splx",
+    "name": "SPLX (SplxAI)",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://splx.ai/blog/gpt-5-red-teaming-results",
+    "evidence_note": "SPLX post (8 Aug 2025) reports its own red-team of GPT-5 across 1,000+ prompts with no indication OpenAI commissioned it ('we ran a full-scale red team exercise'); a similar self-initiated Claude Sonnet 4.5 post exists (search snippet); no mention in the 13 frontier cards checked; search snippets (not opened) report acquisition by Zscaler in Nov 2025.",
+    "result": "out",
+    "reason": "Self-published red-team reports are not citations by a developer or government; no criterion met."
+  },
+  {
+    "id": "collective-intelligence-project",
+    "name": "Collective Intelligence Project (CIP)",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://www.cip.org/",
+    "evidence_note": "cip.org (opened 15 Sep 2026) lists funders (RWJF, Omidyar Network, SFF, Google.org, Fast Forward) and Global Dialogues work but no 2025-2026 model evaluation with a lab or institute and no system-card citation; not in the 13 frontier cards checked; site-restricted searches returned nothing. Earlier Anthropic/OpenAI alignment-assembly work (2023-24, per search snippet) predates the window.",
+    "result": "out",
+    "reason": "Public-input and deliberation organisation; no evaluator citation inside the 24-month window."
+  },
+  {
+    "id": "gryphon-deloitte",
+    "name": "Deloitte Consulting (formerly Gryphon Scientific)",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://arxiv.org/html/2601.03267",
+    "evidence_note": "GPT-5 system card (13 Aug 2025): 'We designed the questions and detailed rubrics with Gryphon Scientific'; Amazon Nova report (Jun 2025): 'The evaluation team at Deloitte Consulting LLP (formerly known as Gryphon Scientific)' red-teams biological risks; Claude Opus 4.6 (Feb 2026), Sonnet 5, Opus 5 and Mythos Preview cards: long-form virology tasks 'developed with SecureBio, Deloitte, and Signature Science' and an uplift trial 'designed by Deloitte Consulting'.",
+    "result": "in-scope-candidate",
+    "reason": "Named bio-risk evaluator in OpenAI, Anthropic and Amazon cards. Note the directory's big4 entry is a hypothetical composite of assurance firms (present when this pass started; a staged deletion now sits in the working tree, not made by this pass); a Deloitte/Gryphon entry would be a real, cited organisation.",
+    "added_as_omission": true
+  },
+  {
+    "id": "signature-science",
+    "name": "Signature Science",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 8.2.4.1: 'task-based agentic evaluations developed with SecureBio, Deloitte, and Signature Science'; repeated in Sonnet 5 (30 Jun 2026), Opus 5 (24 Jul 2026) and Mythos Preview (7 Apr 2026) cards.",
+    "result": "in-scope-candidate",
+    "reason": "Named as a co-developer of Anthropic's CBRN evaluations in four system cards.",
+    "added_as_omission": true
+  },
+  {
+    "id": "faculty-ai",
+    "name": "Faculty.ai",
+    "type_guess": "private",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 8.2.4.9: 'We worked with Faculty.ai to develop several evaluations that tested models' abilities to perform multi-step analysis and design tasks related to pathogen analysis' and outputs 'underwent substantial manual transcript analysis by Anthropic and SMEs from Faculty.ai'.",
+    "result": "in-scope-candidate",
+    "reason": "Named external evaluation partner in an Anthropic system card.",
+    "added_as_omission": true
+  },
+  {
+    "id": "dyno-therapeutics",
+    "name": "Dyno Therapeutics",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/c5fbac3f0b1280a933ebd26d3cb8bb9f5bdeaf48/Claude%20Opus%205%20System%20Card.pdf",
+    "evidence_note": "Claude Opus 5 system card (24 Jul 2026): 'We partnered with Dyno Therapeutics on two sequence-to-function evaluations'; same wording in Sonnet 5 (30 Jun 2026) and Fable 5.1/Mythos 5.1 (1 Sep 2026); Mythos Preview (7 Apr 2026): 'We partnered with Dyno Therapeutics, a company focused on using AI to engineer gene therapies'.",
+    "result": "in-scope-candidate",
+    "reason": "Named biology evaluation partner in four Anthropic system cards.",
+    "added_as_omission": true
+  },
+  {
+    "id": "trajectory-labs",
+    "name": "Trajectory Labs, PBC",
+    "type_guess": "pbc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/c5fbac3f0b1280a933ebd26d3cb8bb9f5bdeaf48/Claude%20Opus%205%20System%20Card.pdf",
+    "evidence_note": "Claude Opus 5 system card (24 Jul 2026), section 3.5.2: 'Trajectory Labs, PBC spent roughly 100 hours red-teaming our safeguards'; Fable 5.1/Mythos 5.1 card (1 Sep 2026): 'Trajectory Labs, PBC spent roughly 74 hours red teaming Fable 5.1'.",
+    "result": "in-scope-candidate",
+    "reason": "Contracted external red team named in two Anthropic system cards.",
+    "added_as_omission": true
+  },
+  {
+    "id": "10a-labs",
+    "name": "10a Labs",
+    "type_guess": "unknown",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/c5fbac3f0b1280a933ebd26d3cb8bb9f5bdeaf48/Claude%20Opus%205%20System%20Card.pdf",
+    "evidence_note": "Claude Opus 5 system card (24 Jul 2026), section 3.5.2: '10a Labs spent around 16 hours testing a variety of attack techniques and did not find a jailbreak'.",
+    "result": "in-scope-candidate",
+    "reason": "Contracted external red team named in an Anthropic system card; organisation not otherwise researched.",
+    "added_as_omission": true
+  },
+  {
+    "id": "eleos-ai",
+    "name": "Eleos AI Research (Frontier Ethics Research Institute)",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://gist.github.com/Michaelliv/0677ab6a64312211e38b7a99a03c5f61",
+    "evidence_note": "Claude Mythos Preview system card (7 Apr 2026, changelog): 'Corrected findings from Eleos AI Research in Sections 5.1.2 and 5.9 to reflect the most recent version of their report'; eleosai.org: 501(c)(3) under the legal name Frontier Ethics Research Institute, focused on model welfare.",
+    "result": "in-scope-candidate",
+    "reason": "Named external assessor in an Anthropic system card, though for model-welfare rather than safety evaluation.",
+    "added_as_omission": true
+  },
+  {
+    "id": "activefence",
+    "name": "ActiveFence",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://arxiv.org/pdf/2506.12103",
+    "evidence_note": "Amazon Nova technical report (arXiv 2506.12103, Jun 2025), section 5.4.2 External Red Teaming: 'We leverage red-teaming firms including ActiveFence to conduct testing in areas such as hate speech, political misinformation, extremism'.",
+    "result": "in-scope-candidate",
+    "reason": "Named external red team in an Amazon model card/technical report.",
+    "added_as_omission": true
+  },
+  {
+    "id": "gomes-group-cmu",
+    "name": "Gomes Group, Carnegie Mellon University",
+    "type_guess": "academic",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a"
+    ],
+    "evidence_url": "https://arxiv.org/pdf/2506.12103",
+    "evidence_note": "Amazon Nova technical report (Jun 2025), section 5.4.2: 'We also work with the Gomes Group at Carnegie Mellon University to test our models' capabilities in Chemistry and chemical compounds'.",
+    "result": "in-scope-candidate",
+    "reason": "Named external chemistry red team in an Amazon model card/technical report.",
+    "added_as_omission": true
+  },
+  {
+    "id": "arc-prize-foundation",
+    "name": "ARC Prize Foundation (ARC-AGI)",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "c"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 2.9: 'The ARC Prize Foundation reports that Claude Opus 4.6 achieved 94.00% on ARC-AGI-1 and 69.17% on ARC-AGI-2 ... on their private dataset'; Google blog Gemini 3 Deep Think (12 Feb 2026): '84.6% on ARC-AGI-2, verified by the ARC Prize Foundation'; arcprize.org (opened) describes a nonprofit with a Verified leaderboard.",
+    "result": "in-scope-candidate",
+    "reason": "Operates a verified leaderboard that Anthropic and Google cite for frontier models.",
+    "added_as_omission": true
+  },
+  {
+    "id": "terminal-bench-laude",
+    "name": "Terminal-Bench (Stanford / Laude Institute / Harbor)",
+    "type_guess": "academic",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "c"
+    ],
+    "evidence_url": "https://www-cdn.anthropic.com/14e4fb01875d2a69f646fa5e574dea2b1c0ff7b5.pdf",
+    "evidence_note": "Claude Opus 4.6 system card (Feb 2026), section 2.5: 'Terminal-Bench 2.0, developed by researchers at Stanford University and the Laude Institute'; also cited in Opus 4.5, Sonnet 4.6, Sonnet 5 (2.1), Fable 5.1 (4.0) and Grok 4.6 (3.0) cards; tbench.ai: 'Hosted by Stanford / Harbor / Laude Institute' with a public leaderboard.",
+    "result": "in-scope-candidate",
+    "reason": "Benchmark and leaderboard cited by Anthropic and xAI for frontier models.",
+    "added_as_omission": true
+  },
+  {
+    "id": "mercor",
+    "name": "Mercor (APEX benchmarks)",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "a",
+      "c"
+    ],
+    "evidence_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+    "evidence_note": "Grok 4.6 model card (12 Aug 2026): 'Results reported are taken from evaluations conducted by Mercor' for APEX-SWE/APEX-Agents, and Mercor is listed under 'evaluation partners'; mercor.com/apex (opened) maintains leaderboards across professional domains.",
+    "result": "in-scope-candidate",
+    "reason": "Named as an external evaluator by xAI and operates leaderboards xAI cites.",
+    "added_as_omission": true
+  },
+  {
+    "id": "harvey",
+    "name": "Harvey AI (Legal Agent Benchmark)",
+    "type_guess": "vc",
+    "checked_on": "2026-09-15",
+    "criteria_met": [
+      "c"
+    ],
+    "evidence_url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+    "evidence_note": "Grok 4.6 model card (12 Aug 2026): Legal Agent Benchmark 'results are reported with the same methodology as Harvey's initial leaderboard', run through the Vals AI Valkyrie harness; Fable 5.1 card (1 Sep 2026) also attributes a benchmark 'by Harvey AI'.",
+    "result": "in-scope-candidate",
+    "reason": "Benchmark owner cited by xAI and Anthropic; a legal-AI vendor and lab customer rather than an evaluator, so role classification would be vendor.",
+    "added_as_omission": true
+  },
+  {
+    "id": "vector-institute",
+    "name": "Vector Institute",
+    "type_guess": "nonprofit",
+    "checked_on": "2026-09-15",
+    "criteria_met": [],
+    "evidence_url": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "evidence_note": "Inspect Evals README: created 'by the UK AISI, Arcadia Impact, and the Vector Institute'; NRC Canada page (opened) says it collaborated with the Vector Institute on 'new extensions to Inspect AI'; no evaluation report or system card found citing it as an evaluator.",
+    "result": "unclear",
+    "reason": "Tooling contributor to UK AISI and Canada's institute; no evaluator citation found.",
+    "added_as_omission": true
+  }
+]

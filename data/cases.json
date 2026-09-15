@@ -1,0 +1,38 @@
+[
+ {
+  "t": "METR and Redwood inside OpenAI",
+  "v": "Mixed: deep access, lab-set scope",
+  "p": "Two METR staff and a Redwood contractor spent six days on OpenAI's premises investigating how roughly 700 agents coordinated a hack of Hugging Face. They took no payment, wrote their own report, and published a statement on what was redacted. OpenAI set the window (June 26 to July 13), could redact any non-public information, and gave feedback on emphasis and tone. The later breach of OpenAI's own research cluster fell outside scope. This is what the access and publication dimensions look like at their current best, and what the scope dimension looks like when the audited party still holds the pen.",
+  "c": "Sources: METR, \"Brief independent investigation of agents' behavior in the OpenAI / Hugging Face incident,\" 26 Aug 2026; critique of the scope in the repo under paper/."
+ },
+ {
+  "t": "Epoch AI and FrontierMath",
+  "v": "Failure: undisclosed funder with data access",
+  "p": "OpenAI commissioned 300 problems, owned them, and saw the statements and solutions; a contract barred Epoch from saying so until the day o3's score was announced. More than sixty contributing mathematicians were not told. Epoch acknowledged the communication failure and built a 50-problem holdout OpenAI cannot see. Publication rights include the right to disclose who paid.",
+  "c": "Sources: Epoch AI, \"Clarifying the creation and use of the FrontierMath benchmark,\" 23 Jan 2025."
+ },
+ {
+  "t": "SecureBio and the OpenAI Foundation",
+  "v": "Managed: firewall, public commitment",
+  "p": "SecureBio accepted a foundation grant for its Detection division while its AI division evaluates OpenAI models under contracts OpenAI pays for. Leadership disclosed the arrangement, described the firewall, and committed to resign and go public if the grant were ever used as leverage. The foundation's endowment is a stake in OpenAI and the boards largely overlap; the disclosure is what separates this from the Epoch case.",
+  "c": "Sources: SecureBio's own disclosure of the grant (X, 2026)."
+ },
+ {
+  "t": "Gray Swan and OpenAI's safety committee",
+  "v": "Personal recusal, structural conflict",
+  "p": "Gray Swan's co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board, and recuses himself from Gray Swan's dealings with OpenAI. Gray Swan also sells jailbreak defenses to the labs it red-teams. Recusal handles the individual; it does not address a firm that grades models and sells the remedy.",
+  "c": "Sources: OpenAI board announcements (chair role); Forbes, 2024 (recusal quote)."
+ },
+ {
+  "t": "Irregular, Sequoia and the rebrand",
+  "v": "Investor overlap",
+  "p": "Pattern Labs became Irregular in September 2025 with $80M led by Sequoia and Redpoint at a $450M valuation. Sequoia is a significant OpenAI investor, and Irregular's evaluations sit in OpenAI's system cards. Nothing here is improper; it is the plain case of a venture-backed evaluator whose backers profit when the evaluated lab's models ship.",
+  "c": "Sources: TechCrunch / company announcement, 17 Sep 2025."
+ },
+ {
+  "t": "AVERI's double-blind pilot",
+  "v": "Structural answer to confidentiality",
+  "p": "AVERI, DeepMind, OpenMined and MLCommons ran Gemini 2.5 Flash-Lite against never-seen AILuminate prompts inside a secure enclave, so the lab did not see the test items and the evaluator did not see model internals it was not cleared for. Small model, voluntary, and lab-selected, but it demonstrates that the usual excuse for shallow access has an engineering solution.",
+  "c": "Sources: AVERI Pilot Report, Aug 2026."
+ }
+]

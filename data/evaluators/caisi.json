@@ -12,5 +12,10 @@
  "confidence": "high",
  "summary": "Pre-deployment agreements with five labs; 40+ evaluations; some classified via TRAINS taskforce.",
  "what_would_move_the_score": "Regular public reporting per model and a standing budget line insulated from reorganization.",
- "role": "government"
+ "role": "government",
+ "dissent": {
+  "lower": "Publication (R) at 2 could be 1. For the five partner labs, no per-model evaluation has been published; the public write-ups concern a foreign model tested without cooperation and two vulnerability disclosures the labs had already fixed. CSA records \"no mandatory disclosure of findings\". Under R.4, a public body that publishes nothing per model for the labs it has agreements with scores 1, and the DeepSeek report is the exception rather than the practice.",
+  "higher": "Publication (R) at 2 could be 3. CAISI has published a full per-model evaluation (DeepSeek V4 Pro), named vulnerabilities in ChatGPT Agent and Anthropic's Constitutional Classifiers, and states that it publishes findings from its assessments. No lab-edited summary or lab redaction is documented. That is closer to anchor 3 (publishes, redaction limited to security) than to the anchor-2 picture of broad lab redaction."
+ },
+ "list_group": "government"
 }

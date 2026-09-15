@@ -1,0 +1,285 @@
+{
+ "evaluator": "farai",
+ "signals": {
+  "farai.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+   "quote_source": "far-30m",
+   "fetch": {
+    "far-30m": "ok"
+   },
+   "note": "Mostly philanthropic: anchor 3. Not 4: the largest funder's principal is an Anthropic investor (F.6), the AI Safety Fund is lab-financed, and no bounded negative in a filing or index is on file (F.12)."
+  },
+  "farai.02": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "the AI Safety Fund (AISF), supported by the Frontier Model Forum (FMF)",
+   "quote_source": "far-30m",
+   "fetch": {
+    "far-30m": "ok"
+   },
+   "note": "A pooled fund financed by the labs' industry body is the \"lab-linked pooled funds\" of anchor 3; F.6 caps at 3. The AISF share of the $30M is not itemized (T24)."
+  },
+  "farai.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.3",
+   "quote": "FAR AI was selected by the European Commission's AI Office to lead Lot 1 (CBRN Risk Modelling and Evaluation)",
+   "quote_source": "longtermwiki-far",
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "Regulator as client setting scope by tender: 3 (S.3). S.4/S.5: no statutory power or sign-off right, so not 4."
+  },
+  "farai.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+   "quote_source": "far-30m",
+   "fetch": {
+    "far-30m": "ok"
+   },
+   "note": "\"Publishes\" with no statement about who reviews before publication floors at 2 (R.7). far-transparency (not cited here) says FAR.AI retains the right to publish non-confidential insights and has turned down restrictive contracts, which would support 3 if cited as a no-lab-review statement; R.5 (4) would further need documented adverse findings without pre-review."
+  },
+  "farai.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "FAR.AI is an independent nonprofit research organization",
+   "quote_source": "far-30m",
+   "fetch": {
+    "far-30m": "ok"
+   },
+   "note": "Legal form alone floors at 2 (G.1). far-transparency publishes one of the four G.2 items (disclosure of the revenue fraction from for-profit developers) plus a 10% revenue cap, but no recusal rule, no no-contingent-fee rule and no side-grant rule, so G.2's two-item test is not met on the record; a recusal or contingent-fee rule would lift the floor to 3."
+  },
+  "farai.06": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "FAR AI began red-teaming leading language models for frontier labs in Q4 2023, including red-teaming of GPT-4",
+   "quote_source": "longtermwiki-far",
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "Pre-release red-teaming is anchor 1 unless safeguards-off or extended-window access is documented (anchor 2); neither is in the cited source. The EU AI Office contract is a regulator engagement, not lab-granted access, so A.4 (government agreements: 3) is not applied; recorded as a rule-reading gap because A.4's wording does not say it is limited to public bodies. Document request: the terms of the GPT-5 pre-release red-teaming (80 hours per the system card, ledger R12)."
+  },
+  "farai.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.3",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "The source describes field-building, fellowship and internship programs but never says participants are placed into labs, so no span and weak support. Applied P.3 (two-way movement without a cooling-off rule) by analogy, recorded as a gap: program placements are not staff hiring. If the claim is dropped, P has no signal and is unevidenced."
+  },
+  "farai.08": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+   "quote_source": "far-30m",
+   "fetch": {
+    "far-30m": "ok"
+   },
+   "note": "Papers and methods in prose: 2 (M.2). FAR.AI releases code on GitHub (AlignmentResearch), which would floor at 3 under M.1 if cited; not in the cited source."
+  },
+  "farai.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "FAR AI conducts empirical technical AI safety research without developing or deploying AI products of its own",
+   "quote_source": "longtermwiki-far",
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "No products: floor 3 (X.4 territory). The claim's \"consulting limited to governments\" is contradicted by far-transparency, which describes consulting for for-profit frontier developers at market rates (new signal farai.15, X.3 cap 2). X.7 (4) is unavailable while paid consulting for labs exists."
+  },
+  "farai.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue",
+   "quote_source": "far-transparency",
+   "fetch": {
+    "far-transparency": "ok"
+   },
+   "note": "Existing quote found. A published policy capping lab revenue at 10%, at market rates, with publication rights retained lifts the fee cap from 2 to 3 (F.3); as a for-signal it floors at 3 (earned revenue $429K of $24.3M in TY2024)."
+  },
+  "farai.11": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.3",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "ted-864574": "ok (cited URL is the TED homepage; notice 864574-2025 is not on it and the notice page itself is JavaScript-only)"
+   },
+   "note": "The cited URL is the TED homepage; notice 864574-2025 is not on it and the notice page is JavaScript-only, so no span. Suggest repointing the source to https://ted.europa.eu/en/notice/-/detail/864574-2025 and recording it unaudited until a text capture exists. Regulator client: 3 (S.3)."
+  },
+  "farai.12": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+   "quote_source": "far-30m",
+   "fetch": {
+    "op-far-general-support": "failed: openphilanthropy.org grant URL redirects to a generic coefficientgiving.org fund page; grant text absent (coefficientgiving.org/grants/... returns 403)",
+    "far-30m": "ok"
+   },
+   "note": "Existing quote \"a grant of $28,675,000 over three years to FAR.AI\" not found: the Open Philanthropy URL redirects to a generic Coefficient page and far-30m does not state the figure. Corrected span covers the second half of the claim; the $28.675M figure survives only on longtermwiki-far (tier 2). Largest grant from a funder whose principal is an Anthropic investor caps at 3 (F.6)."
+  },
+  "farai.13": {
+   "bound": null,
+   "bound_note": "Section 9 (mis-dimensioned facts): a grant is a funding fact; informational on S and re-recorded on F as farai.17 (F.6). The regulator-client fact is already carried by farai.03 and farai.11.",
+   "rule": "S.3",
+   "quote": "The grant funds the evaluations FAR.AI is now developing for the EU AI Office's consortium on manipulation",
+   "quote_source": "founderspledge-frontier",
+   "fetch": {
+    "founderspledge-frontier": "ok"
+   },
+   "note": "Founders Pledge is a donor-advised vehicle whose underlying donors are not public."
+  },
+  "farai.14": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue",
+   "quote_source": "longtermwiki-far-cap",
+   "fetch": {
+    "longtermwiki-far-cap": "ok"
+   },
+   "note": "Existing quote found. Third-party record of the 10% cap; same bound as farai.10."
+  }
+ },
+ "existing_quote_checks": {
+  "farai.10": "found",
+  "farai.12": "not found; suggested: FAR.AI has secured over $30 million in funding commitments throughout 2025 (far-30m; the $28,675,000 figure is only on longtermwiki-far)",
+  "farai.14": "found"
+ },
+ "new_sources": [],
+ "new_signals": [
+  {
+   "id": "farai.15",
+   "evaluator": "farai",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "FAR.AI's transparency page publishes a consulting policy whose clients include companies building frontier AI models, charged at market rates, with revenue from for-profit developers capped at 10% of annual revenue; TY2024 earned revenue was $429K.",
+   "sources": [
+    "far-transparency"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 2
+   },
+   "rule": "X.3",
+   "quote": "charging market rates to for-profit developers to avoid subsidizing private actors",
+   "quote_source": "far-transparency",
+   "note": "X.3: paid consultation or framework work for a lab caps at 2, and consulting clients on a transparency page count. Tension noted with section 10 (lab fees for the evaluation itself change funding, not class); the page frames this as consulting, not evaluation."
+  },
+  {
+   "id": "farai.17",
+   "evaluator": "farai",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+   "sources": [
+    "founderspledge-frontier"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "FAR.AI Integrity Team ($500,000)",
+   "quote_source": "founderspledge-frontier",
+   "note": "F.6: grants through donor-advised funds whose underlying donors are not public cap at 3. Re-recorded from farai.13 under section 9."
+  },
+  {
+   "id": "farai.16",
+   "evaluator": "farai",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.",
+   "sources": [
+    "far-transparency"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.3",
+   "quote": "Revenue from for-profit AI developers is capped at 10% of total annual revenue to preserve independence",
+   "quote_source": "far-transparency",
+   "note": "F.3: labs paying per engagement caps at 2, lifted to 3 by a published 10% cap at market rates with publication rights retained. Recorded as the against-side of farai.10 so the cap exists in the derivation."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Red-teaming access is granted per engagement by the labs; no statute or enforceable agreement. Derived 1, not the stored 3: the cited sources document pre-release red-teaming but not safeguards-off, helpful-only, weights, chain-of-thought or on-site access."
+  },
+  "R": {
+   "mechanism": "self-imposed",
+   "note": "FAR.AI's own policy retains the right to publish non-confidential insights and says it has turned down restrictive contracts; lab review terms on paid work are not published. Derived 2 under R.7 (stored 3); citing far-transparency on an R signal would support 3."
+  },
+  "F": {
+   "note": "Derived 3: caps 3 (F.6 via farai.02/.12; F.3 via farai.16), floors 3."
+  },
+  "G": {
+   "note": "Derived 2, not the stored 3: G.1 legal form; G.2's two-item test unmet on the record."
+  },
+  "P": {
+   "note": "Derived 2 from a single weakly supported cap (farai.07); no for-signal exists. Stored 3 had no floor supporting it."
+  },
+  "S": {
+   "note": "Derived 3 (S.3 via farai.03, farai.11); farai.13 informational under section 9."
+  },
+  "M": {
+   "note": "Derived 2, not the stored 3: prose only in the cited source (M.2); citing FAR.AI's GitHub would restore 3 under M.1."
+  },
+  "X": {
+   "note": "Derived 2, not the stored 3: X.3 paid consulting for frontier developers (farai.15)."
+  }
+ },
+ "dissent": {
+  "lower": "Access could be 0. No cited source records the terms of any lab engagement: the wiki says FAR.AI began red-teaming leading models for frontier labs in late 2023 and that publicly confirmed engagements include OpenAI, but neither it nor the $30M post shows pre-release checkpoints, safeguards off, or logs. Anchor 0 is public API only, and that is all the record demonstrates; the EU contract is a regulator engagement, not lab access.",
+  "higher": "Access could be 2. OpenAI's GPT-5 system card credits FAR.AI with 80 hours of red-teaming before release, and pre-release red-teamers typically test early checkpoints under relaxed safeguards; the transparency page describes engagements with companies building frontier models under NDA. If the engagement terms show safeguards off or extended windows, anchor 2 applies, and helpful-only or log access would reach 3."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

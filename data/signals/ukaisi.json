@@ -1,154 +1,267 @@
 [
-  {
-    "id": "ukaisi.01",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Taxpayer funded; no commercial relationship with labs.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "ukaisi.01",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Taxpayer funded; no commercial relationship with labs.",
+  "sources": [
+   "regulations-ai-aisi",
+   "ukaisi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.02",
-    "evaluator": "ukaisi",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open-source Inspect framework and published methodology.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.9",
+  "quote": "internal technical research directorate within the Department for Science, Innovation and Technology",
+  "quote_source": "regulations-ai-aisi"
+ },
+ {
+  "id": "ukaisi.02",
+  "evaluator": "ukaisi",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open-source Inspect framework and published methodology.",
+  "sources": [
+   "csa-aisi-trends",
+   "ukaisi-inspect"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.03",
-    "evaluator": "ukaisi",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "AISI found universal jailbreaks across every tested system"
+  "rule": "M.1",
+  "quote": "An open-source framework for large language model evaluations",
+  "quote_source": "ukaisi-inspect"
+ },
+ {
+  "id": "ukaisi.03",
+  "evaluator": "ukaisi",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "AISI found universal jailbreaks across every tested system",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "ukaisi.04",
-    "evaluator": "ukaisi",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Most per-model results stay confidential; the public sees aggregated trends.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.4",
+  "quote_source": "csa-aisi-trends"
+ },
+ {
+  "id": "ukaisi.04",
+  "evaluator": "ukaisi",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Most per-model results stay confidential; the public sees aggregated trends.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "ukaisi.05",
-    "evaluator": "ukaisi",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026.",
-    "sources": [
-      "csa-aisi-trends",
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.4",
+  "quote": "evaluation work that would otherwise remain confidential between the Institute and individual AI labs",
+  "quote_source": "csa-aisi-trends"
+ },
+ {
+  "id": "ukaisi.05",
+  "evaluator": "ukaisi",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026.",
+  "sources": [
+   "csa-aisi-trends",
+   "regulations-ai-aisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": null,
+  "rule": "A.3",
+  "bound_note": "A.3: \"the lab can decline to renew\" is recorded as a mechanism (lab-controlled), not as a cap.",
+  "quote": "the bill had not yet been introduced to Parliament",
+  "quote_source": "csa-aisi-trends"
+ },
+ {
+  "id": "ukaisi.06",
+  "evaluator": "ukaisi",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.",
+  "sources": [
+   "aiwiki-ukaisi",
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.06",
-    "evaluator": "ukaisi",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.",
-    "sources": [
-      "aiwiki-ukaisi",
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.4",
+  "quote": "running pre-deployment and post-deployment evaluations of the most capable models released by major AI developers",
+  "quote_source": "csa-aisi-trends"
+ },
+ {
+  "id": "ukaisi.07",
+  "evaluator": "ukaisi",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Staff move between the institute and labs in both directions.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": null,
+  "rule": "P.3",
+  "bound_note": "P.3: two-way hiring caps at 2, but \"a statutory post-employment rule for the body's staff lifts the cap\"; the Business Appointment Rules (new signal ukaisi.13) lift it. Absent ukaisi.13 this signal caps P at 2."
+ },
+ {
+  "id": "ukaisi.08",
+  "evaluator": "ukaisi",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Public body with civil-service conflict rules.",
+  "sources": [
+   "regulations-ai-aisi",
+   "ukaisi-civil-service-code"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.07",
-    "evaluator": "ukaisi",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Staff move between the institute and labs in both directions.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+  "quote_source": "regulations-ai-aisi"
+ },
+ {
+  "id": "ukaisi.09",
+  "evaluator": "ukaisi",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets its own evaluation agenda within MOU terms.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.08",
-    "evaluator": "ukaisi",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Public body with civil-service conflict rules.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.4",
+  "quote": "AISI’s voluntary testing arrangements with frontier developers remain the primary mechanism",
+  "quote_source": "csa-aisi-trends"
+ },
+ {
+  "id": "ukaisi.10",
+  "evaluator": "ukaisi",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "regulations-ai-aisi",
+   "ukaisi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "ukaisi.09",
-    "evaluator": "ukaisi",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets its own evaluation agenda within MOU terms.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.7",
+  "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+  "quote_source": "regulations-ai-aisi"
+ },
+ {
+  "id": "ukaisi.11",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
+  "sources": [
+   "aisi-grants",
+   "alignment-project-about",
+   "ukaisi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "ukaisi.10",
-    "evaluator": "ukaisi",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.9",
+  "quote": "OpenAI, Microsoft, Amazon Web Services (AWS), Schmidt Sciences, Anthropic",
+  "quote_source": "alignment-project-about"
+ },
+ {
+  "id": "ukaisi.12",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.",
+  "sources": [
+   "aisi-alignment-60",
+   "alignment-project-about",
+   "openai-alignment-project"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-02",
+  "quote": "including £5.6m from OpenAI",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "ukaisi.11",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
-    "sources": [
-      "aisi-grants"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "F.9",
+  "quote_source": "aisi-alignment-60"
+ },
+ {
+  "id": "ukaisi.13",
+  "evaluator": "ukaisi",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.",
+  "sources": [
+   "ukaisi-civil-service-code",
+   "ukaisi-bar-crown",
+   "ukaisi-about"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "ukaisi.12",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "The Alignment Project took \u00a35.6m from OpenAI. The \u00a327m/\u00a312m totals, the wider backer list, and OpenAI\u2019s non-influence statement are per the cited sources; spans not yet captured.",
-    "sources": [
-      "aisi-alignment-60",
-      "alignment-project-about",
-      "openai-alignment-project"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-02",
-    "quote": "including \u00a35.6m from OpenAI"
-  }
+  "rule": "P.5",
+  "quote": "two years after leaving Crown service, if you are grade SCS1 or SCS2",
+  "quote_source": "ukaisi-bar-crown",
+  "note": "Statutory post-employment rules count as cooling-off (P.3) and lift the two-way-hiring cap; the Code is a published mandatory conflict rule (P.5). Individual lab ties are declared to the department, not published, so 3 not 4 (P.8 needs disclosed ties and no equity with tier-1 evidence)."
+ },
+ {
+  "id": "ukaisi.14",
+  "evaluator": "ukaisi",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.",
+  "sources": [
+   "regulations-ai-aisi",
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "S.4",
+  "quote": "The institute cannot fine, audit, or directly penalise model developers",
+  "quote_source": "regulations-ai-aisi",
+  "note": "Voluntary memoranda: 3 (S.4). Statutory scope power would be 4."
+ }
 ]

@@ -1,0 +1,12 @@
+{
+ "id": "nemesys-nova-html",
+ "title": "Evaluating the Critical Risks of Amazon's Nova Premier under the Frontier Model Safety Framework (arXiv 2507.06260, HTML)",
+ "publisher": "Amazon (arXiv)",
+ "url": "https://arxiv.org/html/2507.06260",
+ "published": "2025-07",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Amazon's own report on Nova Premier: Nemesys Insights named as independent CBRN auditor; Amazon shares prompts and outputs with third-party assessors for a final assessment against Amazon-defined thresholds; 120 uplift-indicator prompts. The evaluated lab's document, not the evaluator's; typed press primary for want of a lab-document type. Fetched 2026-09-15; spans present.",
+ "press_kind": "primary"
+}

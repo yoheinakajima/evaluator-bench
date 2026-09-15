@@ -5,8 +5,9 @@
   "url": "https://www.founderspledge.com/research/frontier-ai-grantmaking",
   "published": "2026",
   "retrieved": "2026-09-15",
-  "note": "$500,000 to FAR.AI Integrity Team for EU AI Office manipulation evaluations. [verify 2026-09-15 grok-pass] Live; GCR fund 'over $1M' H1 2026 \u2014 no METR $184k; cannot confirm T15.",
+  "note": "$500,000 to FAR.AI Integrity Team for EU AI Office manipulation evaluations. [verify 2026-09-15 grok-pass] Live; GCR fund 'over $1M' H1 2026 — no METR $184k; cannot confirm T15.",
   "source_type": "self",
   "audit_status": "confirmed",
-  "found_by": "deep research pass 2026-09-15"
+  "found_by": "deep research pass 2026-09-15",
+  "self_of": "founders-pledge-frontier"
 }

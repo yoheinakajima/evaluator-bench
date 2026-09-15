@@ -10,5 +10,10 @@
  "confidence": "med",
  "summary": "Hazard benchmarks (WMDP, HLE); director advises xAI.",
  "what_would_move_the_score": "A public recusal policy covering the xAI relationship.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Personnel should be 0. The director advises xAI while CAIS benchmarks (HLE, WMDP, MASK) are used to grade xAI models, and no recusal statement, disclosure page, or conflict policy is published anywhere on safe.ai. P.1 sets 0 for a governance role without recusal; an unrecused standing advisory role at a graded lab, with the benchmark scoring under the same director, is the nearest thing to it.",
+  "higher": "Personnel should be 2. An advisory role is not a board or committee seat, so P.2's cap of 1 rather than P.1's 0 applies, and nothing above 1 was ever claimed. HLE and WMDP are scored mechanically on public leaderboards where xAI's results are visible to anyone, no equity, hiring flow, or second lab tie is documented, and a published recusal note would lift the value to 2."
+ },
+ "list_group": "referee"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "securebio-principles",
+  "title": "SecureBio's principles and practices for model assessment",
+  "publisher": "SecureBio",
+  "url": "https://securebio.org/ai/principles/",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Adopts AEF-1; requests funding to cover costs for some for-profit engagements and discloses it per report; developers have no authority to redact unfavorable findings; reports shared with developers in advance for confidential-business-information redaction; holdout sets. Fetched 2026-09-15; spans present.",
+  "self_of": "securebio"
+}

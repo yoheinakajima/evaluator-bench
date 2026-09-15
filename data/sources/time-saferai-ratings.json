@@ -1,0 +1,12 @@
+{
+ "id": "time-saferai-ratings",
+ "title": "Top AI Companies Have ‘Unacceptable’ Risk Management, Studies Say",
+ "publisher": "TIME",
+ "url": "https://time.com/7302757/anthropic-xai-meta-openai-risk-management-2/",
+ "published": "2025-07-17",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "press_kind": "primary",
+ "audit_status": "confirmed",
+ "note": "\"No AI company scored better than “weak” in SaferAI’s assessment of their risk management maturity. The highest scorer was Anthropic (35%), followed by OpenAI (33%), Meta (22%), and Google DeepMind (20%). Elon Musk’s xAI scored 18%.\" Non-self confirmed source for the adverse-findings leg of R.5 on saferai.01."
+}

@@ -1,193 +1,331 @@
 [
-  {
-    "id": "epoch.01",
-    "evaluator": "epoch",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "OpenAI commissioned and owns most of FrontierMath and had the problems and solutions; a contract barred disclosing this until the o3 launch.",
-    "sources": [
-      "epoch-clarify",
-      "decoder-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI"
+ {
+  "id": "epoch.01",
+  "evaluator": "epoch",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "OpenAI commissioned and owns most of FrontierMath and had the problems and solutions; a contract barred disclosing this until the o3 launch.",
+  "sources": [
+   "epoch-clarify",
+   "decoder-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "epoch.02",
-    "evaluator": "epoch",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Contributors were not told the funder; disclosure came after the fact.",
-    "sources": [
-      "techcrunch-epoch",
-      "epoch-clarify"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.3",
+  "quote_source": "epoch-clarify"
+ },
+ {
+  "id": "epoch.02",
+  "evaluator": "epoch",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Contributors were not told the funder; disclosure came after the fact.",
+  "sources": [
+   "techcrunch-epoch",
+   "epoch-clarify"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "epoch.03",
-    "evaluator": "epoch",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "After the disclosure failure, created a 50-problem holdout OpenAI cannot see.",
-    "sources": [
-      "epoch-clarify"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.2",
+  "quote": "Per our agreement, we needed OpenAI’s permission before publicly disclosing their involvement",
+  "quote_source": "epoch-clarify"
+ },
+ {
+  "id": "epoch.03",
+  "evaluator": "epoch",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "After the disclosure failure, created a 50-problem holdout OpenAI cannot see.",
+  "sources": [
+   "epoch-clarify"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "epoch.04",
-    "evaluator": "epoch",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Rigorous public data on compute, training runs and capability trends.",
-    "sources": [
-      "techcrunch-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.1",
+  "quote": "We are finalizing a 50-problem set for which OpenAI will only receive the problem statements and not the solutions",
+  "quote_source": "epoch-clarify"
+ },
+ {
+  "id": "epoch.04",
+  "evaluator": "epoch",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Rigorous public data on compute, training runs and capability trends.",
+  "sources": [
+   "techcrunch-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "epoch.05",
-    "evaluator": "epoch",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Primarily philanthropically funded (Open Philanthropy).",
-    "sources": [
-      "techcrunch-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1"
+ },
+ {
+  "id": "epoch.05",
+  "evaluator": "epoch",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Primarily philanthropically funded (Open Philanthropy).",
+  "sources": [
+   "techcrunch-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "epoch.06",
-    "evaluator": "epoch",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit.",
-    "sources": [
-      "techcrunch-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.6",
+  "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+  "quote_source": "techcrunch-epoch"
+ },
+ {
+  "id": "epoch.06",
+  "evaluator": "epoch",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit.",
+  "sources": [
+   "techcrunch-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "epoch.07",
-    "evaluator": "epoch",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Cannot share the commissioned set with other labs without OpenAI's permission.",
-    "sources": [
-      "epoch-clarify"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+  "quote_source": "techcrunch-epoch"
+ },
+ {
+  "id": "epoch.07",
+  "evaluator": "epoch",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Cannot share the commissioned set with other labs without OpenAI's permission.",
+  "sources": [
+   "epoch-clarify"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "epoch.08",
-    "evaluator": "epoch",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Evaluates any model on FrontierMath at its discretion.",
-    "sources": [
-      "epoch-clarify"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+  "quote_source": "epoch-clarify"
+ },
+ {
+  "id": "epoch.08",
+  "evaluator": "epoch",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Evaluates any model on FrontierMath at its discretion.",
+  "sources": [
+   "epoch-clarify"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "epoch.09",
-    "evaluator": "epoch",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "No lab roles found.",
-    "sources": [
-      "techcrunch-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.5",
+  "quote": "Epoch AI is free to conduct and publish evaluations of any models using the FrontierMath problem set",
+  "quote_source": "epoch-clarify"
+ },
+ {
+  "id": "epoch.09",
+  "evaluator": "epoch",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "No lab roles found.",
+  "sources": [
+   "techcrunch-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "epoch.10",
-    "evaluator": "epoch",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "techcrunch-epoch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.6"
+ },
+ {
+  "id": "epoch.10",
+  "evaluator": "epoch",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "techcrunch-epoch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 4
   },
-  {
-    "id": "epoch.11",
-    "evaluator": "epoch",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Transparency page lists Google DeepMind and OpenAI as paying consultation clients and a $600K Tallinn DAF gift; Coefficient grants of about $24.5M per index.",
-    "sources": [
-      "epoch-transparency",
-      "coefficient-index"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-11"
+  "rule": "X.7"
+ },
+ {
+  "id": "epoch.11",
+  "evaluator": "epoch",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Transparency page lists Google DeepMind and OpenAI as paying consultation clients and a $600K Tallinn DAF gift; Coefficient grants of about $24.5M per index.",
+  "sources": [
+   "epoch-transparency",
+   "coefficient-index"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-11",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "epoch.12",
-    "evaluator": "epoch",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes a transparency page listing donations above $70K and paying clients.",
-    "sources": [
-      "epoch-transparency"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "F.3",
+  "quote": "Google DeepMind 2026 Evaluating the AI co-mathematician on FrontierMath 2025 Model Evaluations",
+  "quote_source": "epoch-transparency"
+ },
+ {
+  "id": "epoch.12",
+  "evaluator": "epoch",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes a transparency page listing donations above $70K and paying clients.",
+  "sources": [
+   "epoch-transparency"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": null,
+  "rule": "M.2",
+  "bound_note": "Informational: a funding-transparency page is not evidence about method transparency; no M anchor or rule maps it. Recommend re-dimensioning to F (for) where the disclosure counts toward anchor 4's 'disclosed'.",
+  "quote": "Here, we list only donations of $70,000 USD or more",
+  "quote_source": "epoch-transparency"
+ },
+ {
+  "id": "epoch.13",
+  "evaluator": "epoch",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Transparency page lists eight Coefficient grants (largest $8,500,000 in April 2025; about $25M cumulative), a $600,000 Tallinn DAF gift, $195,000 from SFF, and paying clients including OpenAI, Google DeepMind, xAI, an Anthropic pilot, the EU AI Office, Sequoia Capital Global Equities and Bridgewater.",
+  "sources": [
+   "epoch-transparency-page"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "epoch.13",
-    "evaluator": "epoch",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Transparency page lists eight Coefficient grants (largest $8,500,000 in April 2025; about $25M cumulative), a $600,000 Tallinn DAF gift, $195,000 from SFF, and paying clients including OpenAI, Google DeepMind, xAI, an Anthropic pilot, the EU AI Office, Sequoia Capital Global Equities and Bridgewater.",
-    "sources": [
-      "epoch-transparency-page"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026"
+  "rule": "F.3",
+  "quote": "xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark",
+  "quote_source": "epoch-transparency-page"
+ },
+ {
+  "id": "epoch.14",
+  "evaluator": "epoch",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Epoch states it invests part of its funds in semiconductor and AI stocks as part of a diversified portfolio.",
+  "sources": [
+   "epoch-transparency-page"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0-final",
+  "as_of": "2026",
+  "quote": "We invest part of our funds in semiconductor and AI stocks as part of a diversified portfolio",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "epoch.14",
-    "evaluator": "epoch",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Epoch states it invests part of its funds in semiconductor and AI stocks as part of a diversified portfolio.",
-    "sources": [
-      "epoch-transparency-page"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v0-final",
-    "as_of": "2026",
-    "quote": "We invest part of our funds in semiconductor and AI stocks as part of a diversified portfolio"
+  "rule": "X.5",
+  "quote_source": "epoch-transparency-page"
+ },
+ {
+  "id": "epoch.15",
+  "evaluator": "epoch",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Epoch says it charges lab and industry clients at least industry-consultant rates so it is not subsidising their work, and commits to disclosing sponsorship and data-access agreements; its eight Coefficient grants sum to $25.1M by its own list.",
+  "sources": [
+   "epoch-transparency-page"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0-final",
+  "as_of": "2026",
+  "quote": "We aim to charge prices at least on par with industry consultants",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "epoch.15",
-    "evaluator": "epoch",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Epoch says it charges lab and industry clients at least industry-consultant rates so it is not subsidising their work, and commits to disclosing sponsorship and data-access agreements; its eight Coefficient grants sum to $25.1M by its own list.",
-    "sources": [
-      "epoch-transparency-page"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v0-final",
-    "as_of": "2026",
-    "quote": "We aim to charge prices at least on par with industry consultants"
-  }
+  "rule": "F.3",
+  "quote_source": "epoch-transparency-page"
+ },
+ {
+  "id": "epoch.16",
+  "evaluator": "epoch",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Epoch's transparency page lists paid consultation and evaluation work for OpenAI (2024 to 2026), Google DeepMind (2024 to 2026), xAI (2025) and an Anthropic pilot (2024).",
+  "sources": [
+   "epoch-transparency-page"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "X.3",
+  "quote": "OpenAI 2026 FrontierMath Data Audit",
+  "quote_source": "epoch-transparency-page",
+  "note": "Paid consultation clients listed on a transparency page count (X.3). Also on the page: 'xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark'. Derived X is 2, not the stored 3."
+ },
+ {
+  "id": "epoch.17",
+  "evaluator": "epoch",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.",
+  "sources": [
+   "epoch-clarify"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "S.6",
+  "quote": "OpenAI commissioned Epoch AI to produce 300 advanced math problems for AI evaluation",
+  "quote_source": "epoch-clarify",
+  "note": "A lab-commissioned evaluation asset used to evaluate that lab is co-production in the sense of S.6 (cap 3). Not binding today (floor is 3) but rule-required."
+ },
+ {
+  "id": "epoch.18",
+  "evaluator": "epoch",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Epoch reports pre-release access to evaluate GPT-5.4 (March 2026) and Meta's Muse Spark on FrontierMath.",
+  "sources": [
+   "epoch-gpt54-frontiermath",
+   "epoch-musespark-x"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 1
+  },
+  "rule": "A.1",
+  "quote": "We had pre-release access to evaluate the model",
+  "quote_source": "epoch-gpt54-frontiermath",
+  "note": "Deepest documented engagement is pre-release API access; no safeguards-off, extended-window, or weights-level access is documented, so anchor 1 (A.1)."
+ }
 ]

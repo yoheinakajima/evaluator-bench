@@ -2,11 +2,11 @@
   "id": "evaluators-ledger",
   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
   "publisher": "Kevin Bass (GitHub)",
-  "url": "https://github.com/kevinnbass/metr-money-figure/blob/master/research/evaluators.csv",
+  "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
   "published": "2026-09-14",
   "retrieved": "2026-09-15",
-  "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv.",
+  "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
   "source_type": "ledger",
-  "audit_status": "unverifiable",
+  "audit_status": "imported",
   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
 }

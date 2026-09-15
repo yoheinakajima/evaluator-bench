@@ -1,140 +1,236 @@
 [
-  {
-    "claim": "Publishes critical ratings of lab frameworks with scores attached.",
-    "curator": "yohei/claude v0",
-    "dimension": "R",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.01",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+ {
+  "claim": "Publishes critical ratings of lab frameworks with scores attached.",
+  "curator": "yohei/claude v0",
+  "dimension": "R",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.01",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai",
+   "time-saferai-ratings"
+  ],
+  "bound": {
+   "floor": 2
   },
-  {
-    "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
-    "curator": "yohei/claude v0",
-    "dimension": "S",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.02",
-    "recorded": "2026-09-14",
-    "sources": [
-      "longtermwiki-far",
-      "saferai"
-    ]
+  "rule": "R.7",
+  "quote": "We independently evaluate and rate how well leading AI companies manage risks",
+  "quote_source": "saferai"
+ },
+ {
+  "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
+  "curator": "yohei/claude v0",
+  "dimension": "S",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.02",
+  "recorded": "2026-09-14",
+  "sources": [
+   "longtermwiki-far",
+   "saferai"
+  ],
+  "bound": {
+   "floor": 3
   },
-  {
-    "claim": "No lab revenue found.",
-    "curator": "yohei/claude v0",
-    "dimension": "F",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.03",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "S.5",
+  "quote": "We actively shaped the EU's Code of Practice for general-purpose AI models",
+  "quote_source": "saferai"
+ },
+ {
+  "claim": "No lab revenue found.",
+  "curator": "yohei/claude v0",
+  "dimension": "F",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.03",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "floor": 2
   },
-  {
-    "claim": "Limited pre-deployment model access to date.",
-    "curator": "yohei/claude v0",
-    "dimension": "A",
-    "direction": "against",
-    "evaluator": "saferai",
-    "id": "saferai.04",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "F.10"
+ },
+ {
+  "claim": "Limited pre-deployment model access to date.",
+  "curator": "yohei/claude v0",
+  "dimension": "A",
+  "direction": "against",
+  "evaluator": "saferai",
+  "id": "saferai.04",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "cap": 1
   },
-  {
-    "claim": "Nonprofit.",
-    "curator": "yohei/claude v0",
-    "dimension": "G",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.05",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "A.1"
+ },
+ {
+  "claim": "Nonprofit.",
+  "curator": "yohei/claude v0",
+  "dimension": "G",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.05",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "floor": 2
   },
-  {
-    "claim": "No lab roles found.",
-    "curator": "yohei/claude v0",
-    "dimension": "P",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.06",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "G.1",
+  "quote": "SaferAI, a registered non-profit (reg no. 919 185 199 00016",
+  "quote_source": "saferai"
+ },
+ {
+  "claim": "No lab roles found.",
+  "curator": "yohei/claude v0",
+  "dimension": "P",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.06",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "floor": 2
   },
-  {
-    "claim": "Rating methodology published.",
-    "curator": "yohei/claude v0",
-    "dimension": "M",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.07",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "P.6"
+ },
+ {
+  "claim": "Rating methodology published.",
+  "curator": "yohei/claude v0",
+  "dimension": "M",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.07",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "floor": 2
   },
-  {
-    "claim": "No commercial products.",
-    "curator": "yohei/claude v0",
-    "dimension": "X",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.08",
-    "recorded": "2026-09-14",
-    "sources": [
-      "saferai"
-    ]
+  "rule": "M.2"
+ },
+ {
+  "claim": "No commercial products.",
+  "curator": "yohei/claude v0",
+  "dimension": "X",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.08",
+  "recorded": "2026-09-14",
+  "sources": [
+   "saferai"
+  ],
+  "bound": {
+   "floor": 3
   },
-  {
-    "as_of": "2026-09-11",
-    "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
-    "curator": "yohei/claude v0.4",
-    "dimension": "X",
-    "direction": "against",
-    "evaluator": "saferai",
-    "id": "saferai.09",
-    "recorded": "2026-09-14",
-    "sources": [
-      "evaluators-ledger"
-    ]
+  "rule": "X.4"
+ },
+ {
+  "as_of": "2026-09-11",
+  "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+  "curator": "yohei/claude v0.4",
+  "dimension": "X",
+  "direction": "against",
+  "evaluator": "saferai",
+  "id": "saferai.09",
+  "recorded": "2026-09-14",
+  "sources": [
+   "evaluators-ledger"
+  ],
+  "bound": {
+   "cap": 2
   },
-  {
-    "as_of": "2026-09-11",
-    "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
-    "curator": "yohei/claude v0.4",
-    "dimension": "F",
-    "direction": "for",
-    "evaluator": "saferai",
-    "id": "saferai.10",
-    "recorded": "2026-09-14",
-    "sources": [
-      "evaluators-ledger",
-      "ted-864574"
-    ]
+  "rule": "X.3",
+  "quote": "advised G42 and 'a major AI company' on frontier safety frameworks",
+  "quote_source": "evaluators-ledger"
+ },
+ {
+  "as_of": "2026-09-11",
+  "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+  "curator": "yohei/claude v0.4",
+  "dimension": "F",
+  "direction": "for",
+  "evaluator": "saferai",
+  "id": "saferai.10",
+  "recorded": "2026-09-14",
+  "sources": [
+   "evaluators-ledger",
+   "ted-864574",
+   "sff-2025"
+  ],
+  "bound": {
+   "floor": 3
   },
-  {
-    "as_of": "2026-09-15",
-    "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
-    "curator": "yohei/claude v1.0",
-    "dimension": "X",
-    "direction": "against",
-    "evaluator": "saferai",
-    "id": "saferai.11",
-    "quote": "We've contributed to frameworks for G42 and a major AI company",
-    "recorded": "2026-09-15",
-    "sources": [
-      "saferai-about"
-    ]
-  }
+  "rule": "F.12",
+  "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+  "quote_source": "sff-2025"
+ },
+ {
+  "as_of": "2026-09-15",
+  "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
+  "curator": "yohei/claude v1.0",
+  "dimension": "X",
+  "direction": "against",
+  "evaluator": "saferai",
+  "id": "saferai.11",
+  "quote": "We've contributed to frameworks for G42 and a major AI company",
+  "recorded": "2026-09-15",
+  "sources": [
+   "saferai-about"
+  ],
+  "bound": {
+   "cap": 2
+  },
+  "rule": "X.3",
+  "quote_source": "saferai-about"
+ },
+ {
+  "id": "saferai.12",
+  "evaluator": "saferai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "SFF recommended $311,000 to SaferAI in 2025 (with a $111,000 match) after earlier rounds; SFF's funder is Jaan Tallinn, the Anthropic Series A lead.",
+  "sources": [
+   "sff-2025"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.6",
+  "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+  "quote_source": "sff-2025",
+  "note": "F.6: grants from a funder whose principal is an investor in a frontier developer cap at 3 (ledger R01, R08 confirmed)."
+ },
+ {
+  "id": "saferai.13",
+  "evaluator": "saferai",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "SaferAI's executive director and founder co-authored \"Evaluating the Goal-Directedness of Large Language Models\" (April 2025) with Google DeepMind researchers, an evaluation of models from Google DeepMind, OpenAI and Anthropic, while SaferAI publicly rates Google DeepMind's risk-management framework.",
+  "sources": [
+   "arxiv-goal-directedness",
+   "saferai-about"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "S.6",
+  "quote": "Authors: Tom Everitt , Cristina Garbacea , Alexis Bellot , Jonathan Richens , Henry Papadatos , Siméon Campos",
+  "quote_source": "arxiv-goal-directedness",
+  "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. The same paper establishes a published evaluation of frontier models, so section 9 (no published evaluation of a frontier model) does not apply to SaferAI. Affiliations: the about page lists Henry Papadatos as Executive Director; the ledger lists Siméon Campos as founder and board chair."
+ }
 ]

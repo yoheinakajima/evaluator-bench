@@ -10,5 +10,10 @@
  "confidence": "med",
  "summary": "Public red-teaming exercises with NIST and IMDA; societal harms rather than catastrophic risk.",
  "what_would_move_the_score": "Pre-release access for the harms it covers.",
- "role": "referee"
+ "role": "referee",
+ "dissent": {
+  "lower": "Access should be 0. No pre-release access is documented anywhere: the public exercises, bias bounties and NIST and IMDA partnerships tested deployed models, no system card names Humane Intelligence as a pre-release tester, and no lab engagement is on record. The card shows 1 only because the anchor-0 claim lacks a quoted span (C15), not because anything above public access was ever granted.",
+  "higher": "Access should be 2. Humane Intelligence co-ran the NIST ARIA pilot and the Singapore IMDA multilingual red-teaming exercise, in which participating developers supplied models under government programs; A.4 treats government testing agreements as 3. If those exercises gave structured access beyond the public API, even with safeguards on, the documented engagement is at least anchor 2."
+ },
+ "list_group": "referee"
 }

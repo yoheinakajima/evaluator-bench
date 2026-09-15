@@ -1,0 +1,12 @@
+{
+  "id": "humane-board",
+  "title": "Board & Advisory - Humane Intelligence",
+  "publisher": "Humane Intelligence",
+  "url": "https://www.humane-intelligence.org/board-advisory/",
+  "published": "2026-07",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Board of directors and advisory group with bios: board president previously on OpenAI's Human Data team; advisory-group member is a Senior Research Scientist at Meta. Fetched 2026-09-15; spans present.",
+  "self_of": "humane"
+}

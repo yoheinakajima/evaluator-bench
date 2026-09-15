@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Clarifying the creation and use of the FrontierMath benchmark",
-  "url": "https://epoch.ai/latest/openai-and-frontiermath"
+  "url": "https://epoch.ai/latest/openai-and-frontiermath",
+  "self_of": "epoch"
 }

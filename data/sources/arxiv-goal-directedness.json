@@ -1,0 +1,12 @@
+{
+ "id": "arxiv-goal-directedness",
+ "title": "Evaluating the Goal-Directedness of Large Language Models (arXiv:2504.11844)",
+ "publisher": "arXiv",
+ "url": "https://arxiv.org/abs/2504.11844",
+ "published": "2025-04-16",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "press_kind": "aggregator",
+ "audit_status": "confirmed",
+ "note": "Authors Tom Everitt, Cristina Garbacea, Alexis Bellot, Jonathan Richens (Google DeepMind), Henry Papadatos, Siméon Campos (SaferAI), Rohin Shah (Google DeepMind). \"Our evaluations of LLMs from Google DeepMind, OpenAI, and Anthropic show that goal-directedness is relatively consistent across tasks\". Typed press/aggregator to match the existing arxiv-frontier-auditing record; a preprint server is not an editorial outlet."
+}

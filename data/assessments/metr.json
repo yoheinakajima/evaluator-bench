@@ -20,10 +20,8 @@
   "assessed": "2026-09-15",
   "assessor": "yohei/claude v1.0",
   "open_questions": [
-   "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
-   "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
-   "Confirm the donor-rule capture history against the Wayback Machine directly.",
-   "The live page names David Farhi among donors while stating it cannot accept donations from frontier AI company employees; the timing of the gift relative to his OpenAI role and to the rule is not established."
+   "Request from METR the date and vehicle of the gift acknowledged on metr.org/about under \"many others, such as David Farhi\", and the text of the donor rule in force on that date; request from the donor a copy of the acknowledgment letter. (Replaces the fourth F open question, which framed the timing of a named person's gift as unresolved.)",
+   "Request the Schedule I pages of the Vanguard Charitable and Audacious Project filings naming METR, and the Coefficient index rows checked, so that N01 to N05 can move from imported to confirmed."
   ]
  },
  {
@@ -45,15 +43,20 @@
   "anchor": 2,
   "signals": [
    "metr.09",
-   "metr.17"
+   "metr.17",
+   "metr.23"
   ],
   "rationale": "Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0.3",
   "open_questions": [
-   "Fetch dated captures of metr.org/team to confirm current versus former roles.",
-   "Ask METR whether a recusal or cooling-off policy exists."
-  ]
+   "Request from METR the August 2026 policy's treatment of post-employment cooling-off for hires from frontier AI companies (none appears in version 1.0) and dated captures of the team page showing current versus former advisor roles."
+  ],
+  "resolution": {
+   "rule": "P.4",
+   "value": 2,
+   "note": "P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide."
+  }
  },
  {
   "evaluator": "metr",
@@ -65,9 +68,9 @@
    "metr.05",
    "metr.13"
   ],
-  "rationale": "Anchor 4 on access given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "metr",
@@ -77,7 +80,6 @@
   "signals": [
    "metr.06"
   ],
-  "rationale": "Anchor 3 on scope given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -90,21 +92,20 @@
    "metr.07",
    "metr.08"
   ],
-  "rationale": "Anchor 3 on publication given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "metr",
   "dimension": "M",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "metr.11"
   ],
-  "rationale": "Anchor 4 on methods given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "metr",
@@ -112,9 +113,9 @@
   "value": 4,
   "anchor": 4,
   "signals": [
-   "metr.12"
+   "metr.12",
+   "metr.22"
   ],
-  "rationale": "Anchor 4 on products given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  }

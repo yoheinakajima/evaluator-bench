@@ -34,9 +34,9 @@
   "value": 3,
   "anchor": 3,
   "signals": [
-   "ukaisi.07"
+   "ukaisi.07",
+   "ukaisi.13"
   ],
-  "rationale": "Anchor 3 on personnel given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -49,9 +49,9 @@
    "ukaisi.05",
    "ukaisi.06"
   ],
-  "rationale": "Anchor 3 on access given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "ukaisi",
@@ -59,9 +59,9 @@
   "value": 3,
   "anchor": 3,
   "signals": [
-   "ukaisi.09"
+   "ukaisi.09",
+   "ukaisi.14"
   ],
-  "rationale": "Anchor 3 on scope given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -74,21 +74,20 @@
    "ukaisi.03",
    "ukaisi.04"
   ],
-  "rationale": "Anchor 2 on publication given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "statutory"
  },
  {
   "evaluator": "ukaisi",
   "dimension": "M",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "ukaisi.02"
   ],
-  "rationale": "Anchor 4 on methods given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "ukaisi",
@@ -98,7 +97,6 @@
   "signals": [
    "ukaisi.10"
   ],
-  "rationale": "Anchor 4 on products given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  }

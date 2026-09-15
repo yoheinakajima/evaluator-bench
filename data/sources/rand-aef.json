@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "RAND and the AI Evaluator Forum",
-  "url": "https://www.rand.org/"
+  "url": "https://www.rand.org/",
+  "self_of": "rand"
 }

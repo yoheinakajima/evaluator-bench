@@ -8,7 +8,9 @@
    "averi.06",
    "averi.09",
    "averi.11",
-   "averi.12"
+   "averi.12",
+   "averi.14",
+   "averi.17"
   ],
   "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
   "assessed": "2026-09-15",
@@ -23,7 +25,8 @@
   "value": 3,
   "anchor": 3,
   "signals": [
-   "averi.02"
+   "averi.02",
+   "averi.13"
   ],
   "rationale": "Anchor 3: 501(c)(3) nonprofit (averi.02). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
   "assessed": "2026-09-15",
@@ -45,14 +48,15 @@
  {
   "evaluator": "averi",
   "dimension": "A",
-  "value": 3,
-  "anchor": 3,
+  "value": 0,
+  "anchor": 0,
   "signals": [
-   "averi.01"
+   "averi.01",
+   "averi.16"
   ],
-  "rationale": "Anchor 3 on access given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "averi",
@@ -62,44 +66,42 @@
   "signals": [
    "averi.05"
   ],
-  "rationale": "Anchor 3 on scope given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
  {
   "evaluator": "averi",
   "dimension": "R",
-  "value": 3,
-  "anchor": 3,
+  "value": 2,
+  "anchor": 2,
   "signals": [
-   "averi.07"
+   "averi.07",
+   "averi.15"
   ],
-  "rationale": "Anchor 3 on publication given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "averi",
   "dimension": "M",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "averi.03"
   ],
-  "rationale": "Anchor 4 on methods given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  },
  {
   "evaluator": "averi",
   "dimension": "X",
-  "value": 4,
-  "anchor": 4,
+  "value": 3,
+  "anchor": 3,
   "signals": [
    "averi.08"
   ],
-  "rationale": "Anchor 4 on products given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
  }
 ]

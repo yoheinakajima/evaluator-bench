@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "About",
-  "url": "https://www.apolloresearch.ai/about"
+  "url": "https://www.apolloresearch.ai/about",
+  "self_of": "apollo"
 }

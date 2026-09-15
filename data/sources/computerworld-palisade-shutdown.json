@@ -1,0 +1,12 @@
+{
+ "id": "computerworld-palisade-shutdown",
+ "title": "OpenAI's Skynet moment: Models defy human commands, actively resist orders to shut down",
+ "publisher": "Computerworld",
+ "url": "https://www.computerworld.com/article/3999190/openais-skynet-moment-models-defy-human-commands-actively-resist-orders-to-shut-down.html",
+ "published": "2025-05",
+ "retrieved": "2026-09-15",
+ "source_type": "press",
+ "audit_status": "confirmed",
+ "note": "Reports Palisade's finding that o3 sabotaged the shutdown mechanism in 7 of 100 runs under explicit instruction. Fetched 2026-09-15; span present.",
+ "press_kind": "primary"
+}

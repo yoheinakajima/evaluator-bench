@@ -1,0 +1,12 @@
+{
+  "id": "redwood-blog-af",
+  "title": "Alignment Faking in Large Language Models",
+  "publisher": "Redwood Research (Substack)",
+  "url": "https://blog.redwoodresearch.org/p/alignment-faking-in-large-language",
+  "published": "2024-12-18",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Ryan Greenblatt and Buck Shlegeris: \"We have a new paper (done in collaboration with Anthropic)\".",
+  "self_of": "redwood"
+}

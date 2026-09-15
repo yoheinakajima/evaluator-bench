@@ -1,104 +1,106 @@
 [
-  {
-    "evaluator": "saferai",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "saferai.03"
-    ],
-    "rationale": "Anchor 3 on funding given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "saferai.05"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "saferai.06"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "A",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "saferai.04"
-    ],
-    "rationale": "Anchor 2 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "S",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "saferai.02"
-    ],
-    "rationale": "Anchor 4 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "R",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "saferai.01"
-    ],
-    "rationale": "Anchor 4 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "saferai.07"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "saferai",
-    "dimension": "X",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "saferai.08",
-      "saferai.09",
-      "saferai.11"
-    ],
-    "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Identity of the major AI company client.",
-      "A published lab-money policy."
-    ]
+ {
+  "evaluator": "saferai",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "saferai.03",
+   "saferai.12"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "G",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "saferai.05"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "saferai.06"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "saferai.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "unknown"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "saferai.02",
+   "saferai.13"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "saferai.01"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "self-imposed"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "saferai.07"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "saferai",
+  "dimension": "X",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "saferai.08",
+   "saferai.09",
+   "saferai.11"
+  ],
+  "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Identity of the major AI company client.",
+   "A published lab-money policy."
+  ],
+  "resolution": {
+   "rule": "X.3",
+   "value": 2,
+   "note": "SaferAI's own page records framework work for G42 and for a major AI company; consulting for a lab caps at 2 even with no products."
   }
+ }
 ]

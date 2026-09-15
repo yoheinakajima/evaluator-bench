@@ -26,7 +26,6 @@
   "signals": [
    "irregular.03"
   ],
-  "rationale": "Anchor 1 on governance given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -38,21 +37,20 @@
   "signals": [
    "irregular.10"
   ],
-  "rationale": "Anchor 2 on personnel given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
  {
   "evaluator": "irregular",
   "dimension": "A",
-  "value": 3,
-  "anchor": 3,
+  "value": 2,
+  "anchor": 2,
   "signals": [
    "irregular.05"
   ],
-  "rationale": "Anchor 3 on access given the cited signals.",
-  "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "irregular",
@@ -62,7 +60,6 @@
   "signals": [
    "irregular.09"
   ],
-  "rationale": "Anchor 2 on scope given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -72,11 +69,12 @@
   "value": 2,
   "anchor": 2,
   "signals": [
-   "irregular.08"
+   "irregular.08",
+   "irregular.14"
   ],
-  "rationale": "Anchor 2 on publication given the cited signals.",
   "assessed": "2026-09-14",
-  "assessor": "yohei/claude v0"
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled"
  },
  {
   "evaluator": "irregular",
@@ -86,7 +84,6 @@
   "signals": [
    "irregular.07"
   ],
-  "rationale": "Anchor 2 on methods given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  },
@@ -96,9 +93,9 @@
   "value": 1,
   "anchor": 1,
   "signals": [
-   "irregular.04"
+   "irregular.04",
+   "irregular.13"
   ],
-  "rationale": "Anchor 1 on products given the cited signals.",
   "assessed": "2026-09-14",
   "assessor": "yohei/claude v0"
  }

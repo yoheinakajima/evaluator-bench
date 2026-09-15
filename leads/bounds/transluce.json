@@ -1,0 +1,238 @@
+{
+ "evaluator": "transluce",
+ "signals": {
+  "transluce.01": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "Transluce organizes the   AI Evaluator Forum",
+   "quote_source": "transluce-job",
+   "fetch": {
+    "aef-launch": "ok",
+    "transluce-job": "ok",
+    "aef-transparency": "ok"
+   },
+   "note": "Convening the forum and writing AEF-1 is not itself the organization's conflict policy; the policy that meets G.2 is transluce.10. On its own this signal supports the nonprofit form (transluce-job: \"Transluce is an independent nonprofit AI research lab\"), floor 2 under G.1. The span contains a non-breaking space (U+00A0) exactly as the normalizer renders it. aef-launch lists Transluce only as a logo link."
+  },
+  "transluce.02": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+   "quote_source": "transluce-mh",
+   "fetch": {
+    "transluce-mh": "ok"
+   },
+   "note": "Adverse findings were published (older models reinforced delusions in 69% to 82% of simulated conversations; consumer apps sometimes less safe than the API; Axios, new press source, covers them). R.5's other leg, no lab pre-publication review, is not documented: the announcement says Transluce signed legal agreements with OpenAI, Anthropic and Google DeepMind and published an AEF-1 disclosure, but that disclosure page is JavaScript-only and unreadable here, and the homepage does not say \"without lab sign-off\". Under R.7, \"publishes\" with no captured statement about who reviews before publication floors at 2 (stored 4); the policy's refusal of funder editorial control concerns funders, not the labs party to the agreements. With the disclosure text showing no lab review, 4 is supported (span plus Axios as the non-self second source).",
+   "sources": [
+    "transluce-mh",
+    "axios-transluce-mh"
+   ]
+  },
+  "transluce.03": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "We build this technology using philanthropic funding",
+   "quote_source": "transluce-manifund",
+   "fetch": {
+    "transluce-job": "ok",
+    "transluce-manifund": "ok"
+   },
+   "note": "Philanthropy and government contracts (transluce-job: \"contracts, grants, and support relationships with government AI evaluators and regulators\") support anchor 3; transluce.09 caps at 2."
+  },
+  "transluce.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": "previously led the U.S. Center for Standards and Innovation",
+   "quote_source": "transluce-manifund",
+   "fetch": {
+    "transluce-manifund": "ok"
+   },
+   "note": "\"No lab board roles found\" floors at 2, not 3 (P.6); the CAISI background is a government tie, not a lab tie."
+  },
+  "transluce.05": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "has been used by over 25 organizations, including frontier AI labs (Anthropic, DeepMind, Thinking Machines",
+   "quote_source": "transluce-manifund",
+   "fetch": {
+    "transluce-manifund": "ok"
+   },
+   "note": "Labs using a free, open tool are not customers (X.4): anchor 3, which bars 4 (no commercial products) while a product line exists. Document request: whether Docent has paying customers (the homepage lists it under \"Product\")."
+  },
+  "transluce.06": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "It was also used as part of Claude 4's pre-deployment safety analysis",
+   "quote_source": "transluce-manifund",
+   "fetch": {
+    "transluce-manifund": "ok"
+   },
+   "note": "The deepest documented lab-granted access is pre-release testing (o3 pre-deployment testing on the same page; Docent used in Claude 4's pre-deployment analysis by the developer); no helpful-only, weights, log or on-site access, so cap 2 (A.1). The mental-health evaluation used a nonpublic Google DeepMind API and anonymized production-traffic data from OpenAI and Anthropic, which is still within anchor 2."
+  },
+  "transluce.07": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+   "quote_source": "transluce-mh",
+   "fetch": {
+    "transluce-mh": "ok"
+   },
+   "note": "Self-directed research with no engagement to refuse floors at 3; S.5 reserves 4 for documented incident-investigation or sign-off rights (stored 4)."
+  },
+  "transluce.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "Our open-source, AI-backed tools provide a technology stack that powers this public accountability",
+   "quote_source": "transluce-manifund",
+   "fetch": {
+    "transluce-manifund": "ok"
+   },
+   "note": "Open code (Docent) is 3 under M.1; 4 needs open tasks plus a third-party re-run or per-evaluation factsheets (stored 4). The mental-health evaluation publishes an interactive report and an AEF-1 disclosure, which may amount to a factsheet once readable."
+  },
+  "transluce.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.7",
+   "quote": "32% of its revenue from the personal holdings of Anthropic employees",
+   "quote_source": "transluce-policy",
+   "fetch": {
+    "transluce-policy": "ok"
+   },
+   "note": "Existing quote found. Disclosed personal donations from lab employees above 10% of annual revenue (38% in FY2025) cap at 2 (F.7)."
+  },
+  "transluce.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "G.2",
+   "quote": "consistent with requirement 2.3 of the AEF-1 standard",
+   "quote_source": "transluce-policy",
+   "fetch": {
+    "transluce-policy": "ok",
+    "transluce-about": "ok"
+   },
+   "note": "Existing quote found on transluce-policy (not on transluce-about). The policy names disclosure of developer-linked revenue, no organizational equity in developers, paid-evaluation disclosure and recusal for financial interests: G.2 met, floor 3. G.7 (4) needs tier-1 evidence of an independent board and external review; the board of three includes the CEO."
+  },
+  "transluce.11": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "P.5",
+   "quote": "Transluce recuses any employee with a significant financial interest",
+   "quote_source": "transluce-policy",
+   "fetch": {
+    "transluce-policy": "ok"
+   },
+   "note": "Existing quote found. Mandatory recusal plus disclosure of conflicts with published results (P.5) floors at 3; P.8 needs a cooling-off rule and no equity with tier-1 evidence for 4."
+  },
+  "transluce.12": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.4",
+   "quote": "Thinking Machines Board of Directors Alex Allain Co-Founder, U.S. Digital Response Mike McCormick CEO, Halcyon Futures",
+   "quote_source": "transluce-about",
+   "fetch": {
+    "transluce-about": "ok"
+   },
+   "note": "An advisor who is an employee of a lab (Thinking Machines technical staff) caps at 2 regardless of recusal (P.4). The board member's Halcyon role is two steps out and is not itself a P.4 trigger."
+  }
+ },
+ "existing_quote_checks": {
+  "transluce.09": "found",
+  "transluce.10": "found",
+  "transluce.11": "found"
+ },
+ "new_sources": [
+  {
+   "id": "axios-transluce-mh",
+   "title": "Study: Chatbots are getting better at identifying suicide risk",
+   "publisher": "Axios",
+   "url": "https://www.axios.com/2026/08/31/chatbots-suicide-risks-identification",
+   "published": "2026-08-31",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "primary",
+   "audit_status": "confirmed",
+   "note": "Independent coverage of Transluce's mental-health evaluation: \"A new independent evaluation finds that leading AI models are far less likely than earlier versions to explicitly encourage suicide or reinforce delusions\" and \"the study also found most models too willing to assist with suicide-related creative writing\"; names Transluce as a San Francisco nonprofit and quotes its chief scientist. Non-self confirmed source for transluce.02."
+  }
+ ],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "Pre-release and nonpublic-API access has been granted case by case under legal agreements with the developers; no statute or enforceable right. Derived 2."
+  },
+  "R": {
+   "mechanism": "self-imposed",
+   "note": "Transluce's published policy refuses funding that grants editorial control; the review terms of its legal agreements with OpenAI, Anthropic and Google DeepMind for the mental-health evaluation are in an AEF-1 disclosure that could not be read (JavaScript-only). Derived 2 under R.7, not the stored 4, pending that text; document request: the AEF-1 disclosure and the agreement template."
+  },
+  "P": {
+   "resolution": {
+    "rule": "P.4",
+    "value": 2,
+    "note": "transluce.11 floors at 3 under P.5 (mandatory recusal and disclosure), but P.4 caps at 2 regardless of recusal for an advisor who is on a lab's technical staff. The cap decides; the policy floor stays on the card."
+   }
+  },
+  "F": {
+   "note": "Derived 2: F.7 cap from 38% lab-employee revenue."
+  },
+  "G": {
+   "note": "Derived 3 (G.2 via transluce.10)."
+  },
+  "S": {
+   "note": "Derived 3, not the stored 4 (S.5)."
+  },
+  "M": {
+   "note": "Derived 3, not the stored 4 (M.1)."
+  },
+  "X": {
+   "note": "Derived 3 (X.4 cap)."
+  }
+ },
+ "dissent": {
+  "lower": "Funding could be 1. In FY2025, 38% of Transluce's revenue came from the personal holdings of Anthropic and OpenAI employees, which are lab equity by another name; anchor 1 is material revenue or investment from evaluated labs or their investors, and 38% is material by any accounting test. The policy permits such donations, and the donors are not named or bounded in size.",
+  "higher": "Funding could be 3. No revenue came from developers as organizations, no evaluation has been paid, the employee donations were unrestricted and are disclosed by share each year under a published policy aligned to AEF-1, and the remainder is philanthropy and government contracts including an EU AI Office consortium seat. Anchor 3 is mostly philanthropic or public money with some lab-linked funds, which describes 62% of the base."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [
+  {
+   "dimension": "P",
+   "floor": 3,
+   "cap": 2,
+   "resolution": {
+    "rule": "P.4",
+    "value": 2,
+    "note": "P.4 caps at 2 regardless of recusal for an advisor employed by a lab; the P.5 floor from the policy is real but the cap decides."
+   }
+  }
+ ]
+}

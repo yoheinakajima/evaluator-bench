@@ -1,0 +1,263 @@
+{
+ "evaluator": "saferai",
+ "signals": {
+  "saferai.01": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "We independently evaluate and rate how well leading AI companies manage risks",
+   "quote_source": "saferai",
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "Adverse findings are on the public record: TIME (new press source) reports that no company scored better than \"weak\" and lists the scores, so the second-source leg of a 4 is available. No cited source states whether companies review drafts before publication, so R.7 floors at 2 (stored 4); a published statement of no lab review lifts to 3, and with the TIME-corroborated adverse findings R.5 would support 4. Section 9 was checked and does not apply: SaferAI co-authored a published evaluation of frontier models (see saferai.13).",
+   "sources": [
+    "saferai",
+    "time-saferai-ratings"
+   ]
+  },
+  "saferai.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "We actively shaped the EU's Code of Practice for general-purpose AI models",
+   "quote_source": "saferai",
+   "fetch": {
+    "longtermwiki-far": "ok",
+    "saferai": "ok"
+   },
+   "note": "Self-set rating methodology with no engagement to refuse floors at 3 (S.5); the EU AI Office consortium seat is a regulator client (S.3: 3). No incident or sign-off rights, so not 4 (stored 4). longtermwiki-far confirms the Lot 1 consortium (\"SaferAI (AI governance and risk modeling)\")."
+  },
+  "saferai.03": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "F.10",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "\"No lab revenue found\" is an absence claim with no F rule; by analogy with P.6 it floors at 2 (recorded as a gap). The homepage carries no funding statement, so no span. The advisory work for G42 and an unnamed major AI company (saferai.09, saferai.11) has undisclosed terms; if compensated it caps F at 2 under F.3. Document request: whether those engagements were paid."
+  },
+  "saferai.04": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "No pre-deployment engagement is documented anywhere on the record; the co-authored goal-directedness evaluation used models from Google DeepMind, OpenAI and Anthropic through ordinary means. The claim itself says \"limited\", so cap 1 (pre-release API with safeguards on) rather than 0; a span would be needed for 0 (C15) and the homepage says nothing about access. Stored 2 has no support."
+  },
+  "saferai.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "SaferAI, a registered non-profit (reg no. 919 185 199 00016",
+   "quote_source": "saferai",
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "Legal form alone (French association loi 1901) floors at 2, not 3 (G.1); no conflict-of-interest policy is published on the site (the third-party ledger also records \"no policy found on site\")."
+  },
+  "saferai.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "\"No lab roles found\" floors at 2, not 3 (P.6); no span because the homepage makes no statement about roles. The about page lists staff and prior employers without lab roles."
+  },
+  "saferai.07": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "A published rating methodology (ratings.safer-ai.org/methodology, 65 weighted criteria) is prose: 2 (M.2), not the stored 3. The homepage itself does not mention the methodology, so no span; cite the methodology page. The goal-directedness evaluation's code is public (github.com/Crista23/goal_directedness_llms per the arXiv listing), which would floor at 3 under M.1 if cited."
+  },
+  "saferai.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "saferai": "ok"
+   },
+   "note": "Ratings and tracker are free to the ecosystem: 3 (X.4). X.7 needs a bounded no-products statement with a span and a second source for 4; the homepage has none. Caps from saferai.09 and saferai.11 decide the value."
+  },
+  "saferai.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.3",
+   "quote": "advised G42 and 'a major AI company' on frontier safety frameworks",
+   "quote_source": "evaluators-ledger",
+   "fetch": {
+    "evaluators-ledger": "ok"
+   },
+   "note": "Paid consultation or framework work for a lab caps at 2 (X.3). The ledger is unverifiable, so C14 clamps this signal to 2 under leads; saferai.11 carries the same cap on a confirmed own-page span."
+  },
+  "saferai.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.12",
+   "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+   "quote_source": "sff-2025",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "ted-864574": "ok (cited URL is the TED homepage; notice 864574-2025 is not on it and the notice page itself is JavaScript-only)"
+   },
+   "note": "Philanthropic recommendations plus a public contract support anchor 3. sff-2025 (already in data/sources) added as the confirmable source for the 2025 figure; the TED homepage carries no notice text. SFF money is lab-investor-linked (F.6, new signal saferai.12).",
+   "sources": [
+    "evaluators-ledger",
+    "ted-864574",
+    "sff-2025"
+   ]
+  },
+  "saferai.11": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "X.3",
+   "quote": "We've contributed to frameworks for G42 and a major AI company",
+   "quote_source": "saferai-about",
+   "fetch": {
+    "saferai-about": "ok"
+   },
+   "note": "Existing quote found. Framework work for a lab, disclosed on the organization's own page, caps at 2 (X.3). The about page also says \"we advise companies on developing Frontier Safety Frameworks\"."
+  }
+ },
+ "existing_quote_checks": {
+  "saferai.11": "found"
+ },
+ "new_sources": [
+  {
+   "id": "time-saferai-ratings",
+   "title": "Top AI Companies Have ‘Unacceptable’ Risk Management, Studies Say",
+   "publisher": "TIME",
+   "url": "https://time.com/7302757/anthropic-xai-meta-openai-risk-management-2/",
+   "published": "2025-07-17",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "primary",
+   "audit_status": "confirmed",
+   "note": "\"No AI company scored better than “weak” in SaferAI’s assessment of their risk management maturity. The highest scorer was Anthropic (35%), followed by OpenAI (33%), Meta (22%), and Google DeepMind (20%). Elon Musk’s xAI scored 18%.\" Non-self confirmed source for the adverse-findings leg of R.5 on saferai.01."
+  },
+  {
+   "id": "arxiv-goal-directedness",
+   "title": "Evaluating the Goal-Directedness of Large Language Models (arXiv:2504.11844)",
+   "publisher": "arXiv",
+   "url": "https://arxiv.org/abs/2504.11844",
+   "published": "2025-04-16",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "aggregator",
+   "audit_status": "confirmed",
+   "note": "Authors Tom Everitt, Cristina Garbacea, Alexis Bellot, Jonathan Richens (Google DeepMind), Henry Papadatos, Siméon Campos (SaferAI), Rohin Shah (Google DeepMind). \"Our evaluations of LLMs from Google DeepMind, OpenAI, and Anthropic show that goal-directedness is relatively consistent across tasks\". Typed press/aggregator to match the existing arxiv-frontier-auditing record; a preprint server is not an editorial outlet."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "saferai.12",
+   "evaluator": "saferai",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "SFF recommended $311,000 to SaferAI in 2025 (with a $111,000 match) after earlier rounds; SFF's funder is Jaan Tallinn, the Anthropic Series A lead.",
+   "sources": [
+    "sff-2025"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+   "quote_source": "sff-2025",
+   "note": "F.6: grants from a funder whose principal is an investor in a frontier developer cap at 3 (ledger R01, R08 confirmed)."
+  },
+  {
+   "id": "saferai.13",
+   "evaluator": "saferai",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "SaferAI's executive director and founder co-authored \"Evaluating the Goal-Directedness of Large Language Models\" (April 2025) with Google DeepMind researchers, an evaluation of models from Google DeepMind, OpenAI and Anthropic, while SaferAI publicly rates Google DeepMind's risk-management framework.",
+   "sources": [
+    "arxiv-goal-directedness",
+    "saferai-about"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.6",
+   "quote": "Authors: Tom Everitt , Cristina Garbacea , Alexis Bellot , Jonathan Richens , Henry Papadatos , Siméon Campos",
+   "quote_source": "arxiv-goal-directedness",
+   "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. The same paper establishes a published evaluation of frontier models, so section 9 (no published evaluation of a frontier model) does not apply to SaferAI. Affiliations: the about page lists Henry Papadatos as Executive Director; the ledger lists Siméon Campos as founder and board chair."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "unknown",
+   "note": "No lab-granted engagement is documented; nothing to tag as statutory or lab-controlled. Derived 1 (cap from saferai.04; no floor), not the stored 2."
+  },
+  "R": {
+   "mechanism": "self-imposed",
+   "note": "Ratings are unsolicited and self-published on SaferAI's own site; whether companies review drafts is undocumented. Derived 2 under R.7, not the stored 4."
+  },
+  "F": {
+   "note": "Derived 3: floors 3 (saferai.10), 2 (saferai.03); cap 3 (F.6, saferai.12)."
+  },
+  "G": {
+   "note": "Derived 2, not the stored 3 (G.1; no published COI policy)."
+  },
+  "P": {
+   "note": "Derived 2, not the stored 3 (P.6)."
+  },
+  "S": {
+   "note": "Derived 3, not the stored 4: floor 3 (S.5, S.3), cap 3 (S.6 via saferai.13)."
+  },
+  "M": {
+   "note": "Derived 2, not the stored 3 (M.2)."
+  },
+  "X": {
+   "note": "Derived 2 (X.3 caps from saferai.09 and saferai.11)."
+  }
+ },
+ "dissent": {
+  "lower": "Access could be 0. No source records any pre-release model access for SaferAI: the goal-directedness evaluation it co-authored with Google DeepMind researchers tested models from Google DeepMind, OpenAI and Anthropic through ordinary means, and its own site describes framework ratings, risk models and advisory work rather than model testing. Anchor 0 is public API only, and that is the whole documented record.",
+  "higher": "Access could be 2. SaferAI leads the risk-modelling workstream of the EU AI Office's CBRN lot under a three-year contract, participated in all four Code of Practice working groups, and co-authors with a frontier developer's researchers; the Code contemplates external evaluator access to models before release. Documented pre-release access under Code terms, which the card names as what would move the score, would reach anchor 1 or 2."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

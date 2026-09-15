@@ -1,0 +1,12 @@
+{
+  "id": "securebio-anthropic-review",
+  "title": "Review of Anthropic's Unredacted Chemical and Biological Risk Report: Claude Opus 4.6",
+  "publisher": "SecureBio",
+  "url": "https://securebio.org/blog/review-of-anthropics-unredacted-chemical/",
+  "published": "2026-07-28",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "External RSP review with access to an unredacted risk report and 110 pages of materials; agrees with Anthropic's overall conclusion with minor disagreements; 'SecureBio did not receive funding from Anthropic for this work'. Fetched 2026-09-15; spans present.",
+  "self_of": "securebio"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "euaio-ai-office-page",
+  "title": "European AI Office",
+  "publisher": "European Commission (DG CONNECT)",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Office description: established within the Commission; enforces GPAI rules; powers include conducting evaluations, requesting information and measures, applying sanctions. Fetched 2026-09-15; spans present.",
+  "self_of": "euaio"
+}

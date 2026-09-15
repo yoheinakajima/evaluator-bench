@@ -1,0 +1,12 @@
+{
+  "id": "securebio-coi-policy",
+  "title": "Conflicts of Interest Policy",
+  "publisher": "SecureBio",
+  "url": "https://securebio.org/ai/conflicts-of-interest/",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Mandatory COI disclosure at hiring and every 6 months; recusal for financial interests, recent employment and close relationships with the assessed entity; no results-contingent funding; services revenue from AI companies held under 25% of annual revenue; free API credits from AI firms including those assessed. Fetched 2026-09-15; spans present.",
+  "self_of": "securebio"
+}

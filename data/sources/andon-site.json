@@ -7,5 +7,6 @@
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Andon Labs",
-  "url": "https://andonlabs.com/"
+  "url": "https://andonlabs.com/",
+  "self_of": "andon"
 }

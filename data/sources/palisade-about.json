@@ -1,0 +1,12 @@
+{
+  "id": "palisade-about",
+  "title": "About Palisade Research",
+  "publisher": "Palisade Research",
+  "url": "https://palisaderesearch.org/about",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Nonprofit based in Berkeley; founder helped build Anthropic's security team in 2022; team and two board members listed. Fetched 2026-09-15; spans present.",
+  "self_of": "palisade"
+}

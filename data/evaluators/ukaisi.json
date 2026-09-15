@@ -13,5 +13,10 @@
  "confidence": "high",
  "summary": "Largest state evaluation team; 30+ models tested; Inspect open-sourced; Frontier AI Trends Report.",
  "what_would_move_the_score": "Statutory footing with power to compel testing and publish per-model findings.",
- "role": "government"
+ "role": "government",
+ "dissent": {
+  "lower": "Publication (R) at 2 could be 1. The public record shows per-model findings from more than thirty tested systems have never been published; the only public output is one aggregated Trends Report, and CSA describes the underlying work as confidential between the Institute and individual labs. Under R.4 a public body that publishes nothing per model scores 1, and one aggregate report in two years is close to nothing per model.",
+  "higher": "Publication (R) at 2 could be 3. The Trends Report published an adverse finding against every lab at once: a universal jailbreak in every system tested. The joint evaluations with CAISI produced public write-ups of ChatGPT Agent vulnerabilities and Constitutional Classifier bypasses. No lab-edited summary is documented, and the anchor-3 text (publishes, security-only redaction) is closer to that record than lab-edited summaries."
+ },
+ "list_group": "government"
 }

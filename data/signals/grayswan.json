@@ -1,156 +1,258 @@
 [
-  {
-    "id": "grayswan.01",
-    "evaluator": "grayswan",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.",
-    "sources": [
-      "openai-kolter-board",
-      "kolter-bio"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "he chairs the Safety and Security Committee"
+ {
+  "id": "grayswan.01",
+  "evaluator": "grayswan",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.",
+  "sources": [
+   "openai-kolter-board",
+   "kolter-bio"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "he chairs the Safety and Security Committee",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "grayswan.02",
-    "evaluator": "grayswan",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "The chief scientist recuses himself from Gray Swan's dealings with OpenAI.",
-    "sources": [
-      "forbes-grayswan-2024"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "he has recused himself from interactions between the two companies"
+  "rule": "P.1",
+  "bound_note": "Cap depends on the recusal fact carried by grayswan.02.",
+  "quote_source": "kolter-bio"
+ },
+ {
+  "id": "grayswan.02",
+  "evaluator": "grayswan",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "The chief scientist recuses himself from Gray Swan's dealings with OpenAI.",
+  "sources": [
+   "forbes-grayswan-2024",
+   "grayswan-forbesau-2024"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "he has recused himself from interactions between the two companies",
+  "bound": {
+   "floor": 1
   },
-  {
-    "id": "grayswan.03",
-    "evaluator": "grayswan",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "$40M Series A in May 2026 at a $200M valuation; revenue from every major lab.",
-    "sources": [
-      "grayswan-seriesa",
-      "forbes-grayswan-2026"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.1",
+  "quote_source": "grayswan-forbesau-2024"
+ },
+ {
+  "id": "grayswan.03",
+  "evaluator": "grayswan",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "$40M Series A in May 2026 at a $200M valuation; revenue from every major lab.",
+  "sources": [
+   "grayswan-seriesa",
+   "forbes-grayswan-2026"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "grayswan.04",
-    "evaluator": "grayswan",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates.",
-    "sources": [
-      "grayswan-seriesa"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing"
+  "rule": "F.5",
+  "quote": "Gray Swan, The AI Security Company Trusted by Every Major Frontier Lab, Raises $40M Series A",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.04",
+  "evaluator": "grayswan",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates.",
+  "sources": [
+   "grayswan-seriesa",
+   "madrona-grayswan"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing",
+  "bound": {
+   "cap": 0
   },
-  {
-    "id": "grayswan.05",
-    "evaluator": "grayswan",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Venture-backed for-profit; no published COI policy found.",
-    "sources": [
-      "grayswan-seriesa"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.1",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.05",
+  "evaluator": "grayswan",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Venture-backed for-profit; no published COI policy found.",
+  "sources": [
+   "grayswan-seriesa"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "grayswan.06",
-    "evaluator": "grayswan",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates.",
-    "sources": [
-      "forbes-grayswan-2026"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "today announced a $40 million Series A round co-led by Wing Venture Capital and Madrona",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.06",
+  "evaluator": "grayswan",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates.",
+  "sources": [
+   "forbes-grayswan-2026"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 1
   },
-  {
-    "id": "grayswan.07",
-    "evaluator": "grayswan",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Embedded in pre-release safety evaluation processes; cited in 11 system cards.",
-    "sources": [
-      "grayswan-seriesa"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.5 (anchor text)"
+ },
+ {
+  "id": "grayswan.07",
+  "evaluator": "grayswan",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Embedded in pre-release safety evaluation processes; cited in 11 system cards.",
+  "sources": [
+   "grayswan-seriesa",
+   "madrona-grayswan"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "grayswan.08",
-    "evaluator": "grayswan",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Founders wrote foundational jailbreak papers; Arena results partly public.",
-    "sources": [
-      "forbes-grayswan-2026"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "Gray Swan’s benchmarks are embedded into the safety evaluation processes",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.08",
+  "evaluator": "grayswan",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Founders wrote foundational jailbreak papers; Arena results partly public.",
+  "sources": [
+   "forbes-grayswan-2026",
+   "grayswan-seriesa"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "grayswan.09",
-    "evaluator": "grayswan",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Findings appear as lab-summarized system-card citations rather than independent reports.",
-    "sources": [
-      "grayswan-seriesa"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.2",
+  "quote": "Research Published papers and findings from our research team",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.09",
+  "evaluator": "grayswan",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Findings appear as lab-summarized system-card citations rather than independent reports.",
+  "sources": [
+   "grayswan-seriesa"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "grayswan.10",
-    "evaluator": "grayswan",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by lab engagements.",
-    "sources": [
-      "grayswan-seriesa"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.3",
+  "quote": "Gray Swan is a leading security evaluator cited in 11 recent frontier model system cards",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.10",
+  "evaluator": "grayswan",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by lab engagements.",
+  "sources": [
+   "grayswan-seriesa"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "grayswan.11",
-    "evaluator": "grayswan",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board.",
-    "sources": [
-      "madrona-grayswan",
-      "dealroom-grayswan"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-05-28",
-    "quote": "serves on the board of OpenAI"
+  "rule": "S.2",
+  "quote": "AI Red-Teaming Dedicated adversarial assessment, scoped to your deployment",
+  "quote_source": "grayswan-seriesa"
+ },
+ {
+  "id": "grayswan.11",
+  "evaluator": "grayswan",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board.",
+  "sources": [
+   "madrona-grayswan",
+   "dealroom-grayswan"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-05-28",
+  "quote": "serves on the board of OpenAI",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "grayswan.12",
-    "evaluator": "grayswan",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.",
-    "sources": [
-      "wikipedia-kolter"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "became chair of its safety and security committee"
-  }
+  "rule": "G.2 (anchor text); G.3 not triggered",
+  "quote_source": "madrona-grayswan"
+ },
+ {
+  "id": "grayswan.12",
+  "evaluator": "grayswan",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.",
+  "sources": [
+   "wikipedia-kolter"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "quote": "became chair of its safety and security committee",
+  "bound": {
+   "cap": 1
+  },
+  "rule": "P.1",
+  "quote_source": "wikipedia-kolter"
+ },
+ {
+  "id": "grayswan.14",
+  "evaluator": "grayswan",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Snowflake, a Series A co-investor, announced a commercial agreement with Anthropic rather than an equity stake, so the co-investor is not a lab investor under F.4 or G.3.",
+  "sources": [
+   "grayswan-snowflake-anthropic"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": null,
+  "bound_note": "Informational: closes the F.4/G.3 question for one co-investor; no floor follows from the absence of a tie (RULES 0).",
+  "rule": "G.3"
+ },
+ {
+  "id": "grayswan.15",
+  "evaluator": "grayswan",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "A podcast interview reports Shade, Gray Swan's defense product, in use at Anthropic, a lab whose models Gray Swan red-teams.",
+  "sources": [
+   "grayswan-latentspace-2026"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "X.1",
+  "note": "Lead for X.1 (a documented lab customer for the fix); the cap is already set by grayswan.04."
+ }
 ]

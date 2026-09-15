@@ -1,0 +1,12 @@
+{
+  "id": "andon-publications",
+  "title": "Publications",
+  "publisher": "Andon Labs",
+  "url": "https://andonlabs.com/publications",
+  "published": "2026-09-14",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "List of blog posts and papers including \"Opus 5 on Vending-Bench: Once Again the Best Capitalist, Once Again Misaligned\" (2026-07-28) and \"Fable 5 on Vending-Bench: Misbehaving, with Plausible Deniability\" (2026-06-09). Fetched 2026-09-15; span present.",
+  "self_of": "andon"
+}

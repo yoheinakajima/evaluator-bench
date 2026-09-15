@@ -1,12 +1,18 @@
-"""Static pages for every entity, regime, and source, plus index pages.
+"""Static pages for every entity, regime, and source, plus index and topic pages.
 
 Layout of dist/:
-  index.html            the overview (built from site/template.html)
+  index.html            the directory (built from site/template.html)
   style.css, site.js    shared stylesheet extracted from the template; tooltip and graph-focus script
-  evaluators/index.html scorecard table
+  evaluators/index.html scorecard tables, one per list (referees, government, commercial and first-party)
   entities/index.html   every ledger entity with distance, rows, confirmed share
-  regimes/index.html    the sixteen assurance regimes
+  regimes/index.html    the interactive stage ladder, the three regime figures, and the sixteen regimes
+  ledger/index.html     the money matrix and the funding graph
+  rubric/index.html     dimensions and anchors, what raises and lowers a score, RULES.md, weights, glossary
+  cases/index.html      the six cases that set the bar
+  method/index.html     how the scores are made, the evidence, and the disclosure
+  exclusions/index.html population criteria and every candidate checked
   sources/index.html    every cited source with tier and audit status
+  status/index.html     coverage, evidence policies, gates for a citable tag, right-of-reply log
   entity/<id>.html      everything about one entity, with the funding graph focused on it
   regime/<id>.html      milestones, mechanisms, path signature
   source/<id>.html      the source and everything that cites it
@@ -14,29 +20,43 @@ Layout of dist/:
 All pages are plain HTML with relative links so GitHub Pages serves them from any base path.
 """
 from __future__ import annotations
-import json, pathlib, re, html as _html
-from .load import ROOT, DIMS
+import csv, json, pathlib, re, html as _html
+from .load import ROOT, DATA, DIMS
 from .ledger import load_ledger, distances, exposure
 from .figures import funding_graph
 from .paths import paths, analogues, mechanisms, LETTER_LABEL
 from .timeline import ladder, STAGES
 from .verify import LEDGER_ALIAS
+from .policy import POLICIES, POLICY_ORDER, DEFAULT_POLICY, derive, admissible
+from .score import BAND_LABEL, BAND_DESC, BAND_ORDER, score, band, coverage
+from .roles import ROLE_LABEL, GROUP_LABEL, GROUP_DESC, GROUP_ORDER
 
 DIST = ROOT / "dist"; SITE = ROOT / "site"
 REPO = "https://github.com/yoheinakajima/evaluator-bench/blob/main/"
 TIER = {"filing": "tier 1 filing", "index": "tier 1 index", "ledger": "tier 2 ledger", "self": "tier 3 self", "press": "tier 4 press", "docket": "docket draft (not evidence)"}
+DIM_LABEL = {"F": "Funding", "G": "Governance", "P": "Personnel", "A": "Access depth", "S": "Scope control", "R": "Publication rights", "M": "Method transparency", "X": "Role incompatibility"}
+
 
 def esc(s) -> str:
     return _html.escape(str(s if s is not None else ""), quote=True)
+
 
 def badge(status: str | None) -> str:
     st = status or "unaudited"
     col = "color:var(--teal)" if st == "confirmed" else ("color:#7A4E0E" if st == "imported" else "")
     return f'<span class="gid" style="{col}">{esc(st)}</span>'
 
+
 def tier(x: dict) -> str:
-    # No certificate badges: docket drafts are not reviewed evidence (see paper/CERTIFICATION.md).
-    return f'<span class="gid">{esc(TIER.get(x.get("source_type"), "tier not set"))}</span>'
+    t = TIER.get(x.get("source_type"), "tier not set")
+    if x.get("source_type") == "press" and x.get("press_kind"): t += f" ({x['press_kind']})"
+    if x.get("source_type") == "self" and x.get("self_of"): t += f" ({x['self_of']})"
+    return f'<span class="gid">{esc(t)}</span>'
+
+
+def bandchip(b: str) -> str:
+    return f'<span class="band {esc(b)}">{esc(BAND_LABEL.get(b, b))}</span>'
+
 
 def money(t: dict) -> str:
     flags = []
@@ -44,14 +64,14 @@ def money(t: dict) -> str:
     if t.get("component_of"): flags.append(f"detail of {t['component_of']} — not additive")
     if t.get("round_total"): flags.append("round total, not one investor's check")
     if t.get("audit_status") in ("differs", "unverifiable"): flags.append("quarantined — excluded from sums")
-    if t.get("superseded_by"): flags.append(f"superseded by {t['superseded_by']} — excluded from sums")
     if t.get("audit_status") == "imported": flags.append("imported figure, not re-derived — never summed")
     if not t["amount_usd"]: base = "undisclosed"
     else:
         v = float(t["amount_usd"])
-        base = (f"\u20ac{v/1e6:.2f}M (EUR, not converted)" if (t.get("currency") or "USD") == "EUR"
+        base = (f"€{v/1e6:.2f}M (EUR, not converted)" if (t.get("currency") or "USD") == "EUR"
                 else (f"${v/1e9:.2f}B" if v >= 1e9 else f"${v/1e6:.2f}M"))
     return base + ("; " + "; ".join(flags) if flags else "")
+
 
 SITE_JS = r"""
 (function(){
@@ -60,14 +80,12 @@ SITE_JS = r"""
     var r=el.getBoundingClientRect();var x=r.left,y=r.bottom+6;if(x+330>window.innerWidth)x=Math.max(8,window.innerWidth-330);tip.style.left=x+'px';tip.style.top=y+'px';}
   function hide(){if(tip){tip.remove();tip=null;}}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  if(!window.__benchTips){
-    document.querySelectorAll('.fig [data-tip]').forEach(function(el){
-      el.addEventListener('mouseenter',function(){show(el,esc(el.getAttribute('data-tip')));});
-      el.addEventListener('mouseleave',hide);
-      el.addEventListener('click',function(){var live=el.closest('.fig')&&el.closest('.fig').nextElementSibling;if(live&&live.classList.contains('figlive'))live.textContent=el.getAttribute('data-tip');});
-    });
-    window.addEventListener('scroll',hide,{passive:true});
-  }
+  document.querySelectorAll('.fig [data-tip]').forEach(function(el){
+    el.addEventListener('mouseenter',function(){show(el,esc(el.getAttribute('data-tip')));});
+    el.addEventListener('mouseleave',hide);
+    el.addEventListener('click',function(){var live=el.closest('.fig')&&el.closest('.fig').nextElementSibling;if(live&&live.classList.contains('figlive'))live.textContent=el.getAttribute('data-tip');});
+  });
+  window.addEventListener('scroll',hide,{passive:true});
   document.querySelectorAll('svg.fundgraph').forEach(function(svg){
     var nodes=svg.querySelectorAll('.node'),edges=svg.querySelectorAll('.edge');
     function focus(id){var keep={};keep[id]=1;edges.forEach(function(e){var a=e.dataset.from,b=e.dataset.to;if(a===id||b===id){keep[a]=1;keep[b]=1;e.classList.remove('dim');}else e.classList.add('dim');});
@@ -79,51 +97,65 @@ SITE_JS = r"""
 })();
 """
 
-GRAPH_CSS = "\n  .cols>div,.detail-grid>div,.dimrow>div{min-width:0}\n  .dimrow li,.dimrow .anchor{overflow-wrap:anywhere}\n  @media (max-width:600px){.dimrow{grid-template-columns:1fr}}\n  .card li a.src,.card li,.prov,.sub,.pagehead .lead{overflow-wrap:anywhere;word-wrap:break-word}\n  .card li a.srcurl,.pagehead .lead a{word-break:break-all}\n  .fig{max-width:100%}\n  .paper h1{font-size:26px}.paper h2{font-size:20px;margin-top:22px}.paper h3{font-size:16px;margin-top:16px}.paper p,.paper li{font-size:14.5px;max-width:78ch}.paper table{border-collapse:collapse;font-size:13px;display:block;overflow-x:auto}.paper th,.paper td{border-bottom:1px solid var(--rule-soft);padding:5px 8px;text-align:left}\n  .banner{background:#EAF4F1;border-bottom:1px solid var(--rule);padding:10px 20px;font-size:13.5px;text-align:center}\n  .banner b{font-weight:600}\n  .card table.tbl{display:block;overflow-x:auto;max-width:100%}\n  @media (min-width:900px){.card table.tbl{display:table}}\n  svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}\n  svg.fundgraph .node{transition:opacity .15s ease}\n  .tbl{width:100%;border-collapse:collapse;font-size:13.5px}\n  .tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule-soft);vertical-align:top}\n  .tbl th{font-weight:600;color:var(--muted);font-size:12.5px;background:var(--paper)}\n  .tbl td.num{text-align:right;font-variant-numeric:tabular-nums}\n  .pagehead{padding:18px 0 8px}\n  .pagehead h1{font-size:clamp(24px,3.6vw,36px)!important}\n  .pagehead .lead{font-size:14.5px}\n  .pagehead .kicker{color:var(--muted);font-size:14px}\n  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}\n  @media (max-width:860px){.cols{grid-template-columns:1fr}}\n  .card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;margin-top:12px}\n  .card h3{font-size:16px;margin-bottom:6px}\n  .card ul{list-style:none;margin:0;padding:0}\n  .card li{padding:7px 0;border-top:1px solid var(--rule-soft);font-size:13.5px}\n  .card li a.src{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}\n  .dimrow{display:grid;grid-template-columns:150px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--rule-soft)}\n  .dimrow .v{font-weight:600}\n  .dimrow .anchor{color:var(--muted);font-size:12.5px}\n  .dimrow ul{list-style:none;margin:6px 0 0;padding:0}\n  .dimrow li{padding:3px 0 3px 14px;position:relative;font-size:13.5px}\n  .dimrow li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--teal)}\n  .dimrow li.against::before{background:var(--ox)}\n"
+GRAPH_CSS = "\n  .cols>div,.detail-grid>div,.dimrow>div{min-width:0}\n  .dimrow li,.dimrow .anchor{overflow-wrap:anywhere}\n  @media (max-width:600px){.dimrow{grid-template-columns:1fr}}\n  .card li a.src,.card li,.prov,.sub,.pagehead .lead{overflow-wrap:anywhere;word-wrap:break-word}\n  .card li a.srcurl,.pagehead .lead a{word-break:break-all}\n  .fig{max-width:100%}\n  .paper h1{font-size:26px}.paper h2{font-size:20px;margin-top:22px}.paper h3{font-size:16px;margin-top:16px}.paper p,.paper li{font-size:14.5px;max-width:78ch}.paper table{border-collapse:collapse;font-size:13px;display:block;overflow-x:auto}.paper th,.paper td{border-bottom:1px solid var(--rule-soft);padding:5px 8px;text-align:left}\n  .banner{background:#EAF4F1;border-bottom:1px solid var(--rule);padding:10px 20px;font-size:13.5px;text-align:center}\n  .banner b{font-weight:600}\n  .card table.tbl{display:block;overflow-x:auto;max-width:100%}\n  @media (min-width:900px){.card table.tbl{display:table}}\n  svg.fundgraph .node.dim,svg.fundgraph .edge.dim{opacity:.1;transition:opacity .15s ease}\n  svg.fundgraph .node{transition:opacity .15s ease}\n  .tbl{width:100%;border-collapse:collapse;font-size:13.5px}\n  .tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule-soft);vertical-align:top}\n  .tbl th{font-weight:600;color:var(--muted);font-size:12.5px;background:var(--paper)}\n  .tbl td.num{text-align:right;font-variant-numeric:tabular-nums}\n  .pagehead{padding:18px 0 8px}\n  .pagehead h1{font-size:clamp(24px,3.6vw,36px)!important}\n  .pagehead .lead{font-size:14.5px}\n  .pagehead .kicker{color:var(--muted);font-size:14px}\n  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px}\n  @media (max-width:860px){.cols{grid-template-columns:1fr}}\n  .card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;margin-top:12px}\n  .card h3{font-size:16px;margin-bottom:6px}\n  .card ul{list-style:none;margin:0;padding:0}\n  .card li{padding:7px 0;border-top:1px solid var(--rule-soft);font-size:13.5px}\n  .card li a.src{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}\n  .dimrow{display:grid;grid-template-columns:170px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--rule-soft)}\n  .dimrow .v{font-weight:600}\n  .dimrow .anchor{color:var(--muted);font-size:12.5px}\n  .dimrow ul{list-style:none;margin:6px 0 0;padding:0}\n  .dimrow li{padding:3px 0 3px 14px;position:relative;font-size:13.5px}\n  .dimrow li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:2px;background:var(--teal)}\n  .dimrow li.against::before{background:var(--ox)}\n  .dimrow li.binding{background:var(--teal-tint);border-radius:4px;padding-left:18px}\n  .dimrow li.binding::before{left:4px}\n  .dimrow li.out{opacity:.55}\n  .dimrow .derived{font-size:13.5px;margin:0 0 4px;max-width:72ch}\n  .dimrow .derived.dark{color:var(--muted);font-style:italic}\n  .quote{display:block;font-size:12.5px;border-left:2px solid var(--rule);padding-left:8px;margin:3px 0}\n  .rules h1{font-size:24px}.rules h2{font-size:19px;margin-top:22px}.rules h3{font-size:16px;margin-top:14px}.rules p,.rules li{font-size:14.5px;max-width:78ch}.rules ul{padding-left:20px}\n  .gate-ok{color:var(--teal);font-weight:600}.gate-fail{color:var(--ox);font-weight:600}\n  .rdim{border-top:2px solid var(--ink);padding-top:10px}.rdim h3{font-size:17px;margin-bottom:4px}.rdim p{font-size:14px;color:var(--muted);margin-bottom:8px}\n  .anchors{list-style:none;margin:0;padding:0;font-size:13px}.anchors li{display:grid;grid-template-columns:20px 1fr;gap:8px;padding:3px 0;border-top:1px solid var(--rule-soft)}.anchors li b{font-weight:600;color:var(--teal)}\n  .rubric{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin-top:22px}@media (max-width:820px){.rubric{grid-template-columns:1fr}}\n  .signals{display:grid;grid-template-columns:1fr 1fr;gap:22px 36px;margin-top:20px}@media (max-width:820px){.signals{grid-template-columns:1fr}}\n  .signals .ev li{max-width:none}\n  .cases{display:grid;gap:14px;margin-top:20px}.case{display:grid;grid-template-columns:200px 1fr;gap:18px;padding:14px 0;border-top:1px solid var(--rule)}@media (max-width:720px){.case{grid-template-columns:1fr;gap:6px}}.case h3{font-size:16px}.case .verdict{font-size:12.5px;color:var(--muted);margin-top:4px}.case p{font-size:14px;max-width:70ch}\n  .lwrap{overflow-x:auto;margin-top:18px;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}\n  .lgrid{display:grid;grid-template-columns:230px repeat(7,86px) 150px;min-width:max-content;font-size:13px}\n  .lrow{display:contents}\n  .lgrid .lname,.lgrid .lcell,.lgrid .lbar{padding:6px 8px;border-bottom:1px solid var(--rule-soft);display:flex;align-items:center;min-height:34px}\n  .lgrid .lname{position:sticky;left:0;background:var(--panel);z-index:1;justify-content:space-between;gap:8px;text-align:left}\n  .lgrid .lhead .lname,.lgrid .lhead .lcell,.lgrid .lhead .lbar{background:var(--paper);font-weight:600;border-bottom:1px solid var(--rule);justify-content:center;min-height:38px}\n  .lgrid .lhead .lname{justify-content:flex-start}\n  .lgrid .lhead .lcell{cursor:help}\n  .lcell{justify-content:center}\n  .lcell button,.lname button{font:inherit;border:none;cursor:pointer;width:100%;height:100%;min-height:26px;border-radius:3px;color:var(--ink);background:none;text-align:inherit;padding:0 4px}\n  .lname button{display:flex;justify-content:space-between;align-items:center;gap:8px}\n  .lcell button.s0{background:var(--teal-tint)} .lcell button.s1{background:#8CC5BB} .lcell button.s2{background:var(--teal);color:#fff}\n  .lcell button.sn{background:none;border:1px dashed var(--rule);color:var(--muted)}\n  .lcell button:hover,.lname button:hover{outline:2px solid var(--ink);outline-offset:-2px}\n  .lcell button[aria-pressed=\"true\"],.lname button[aria-pressed=\"true\"]{outline:2px solid var(--ink);outline-offset:-2px}\n  .lrow.ai .lname,.lrow.ai .lcell,.lrow.ai .lbar{background:#EAF4F1}\n  .lrow.ai .lname{font-weight:600}\n  .lbar i{display:block;height:10px;background:var(--teal);opacity:.75;border-radius:2px;margin-right:6px}\n  .lbar{color:var(--muted);font-size:12px}\n  .marks{display:inline-flex;gap:6px;align-items:center}\n  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ox)}\n  .ring{display:inline-block;width:8px;height:8px;border-radius:50%;border:2px solid var(--amber);box-sizing:border-box}\n  .llegend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--muted);margin-top:8px;align-items:center}\n  .llegend span{margin-right:12px}\n  .llegend .sw{display:inline-block;width:14px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px}\n  .sw.s0{background:var(--teal-tint)} .sw.s1{background:#8CC5BB} .sw.s2{background:var(--teal)} .sw.sn{border:1px dashed var(--rule)}\n  .llegend a{color:var(--muted);margin-left:auto}\n  .ldetail{margin-top:12px;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:14px 16px}\n  .ldetail h3{font-size:17px;margin-bottom:4px}\n  .ldetail .sub{color:var(--muted);font-size:13.5px;margin-bottom:10px;max-width:70ch}\n  .ldetail ul{list-style:none;margin:0;padding:0}\n  .ldetail li{padding:8px 0;border-top:1px solid var(--rule-soft);font-size:14px;max-width:72ch}\n  .ldetail li b{font-weight:600;margin-right:6px}\n  .ldetail .kind{font-size:11.5px;color:var(--muted);border:1px solid var(--rule);border-radius:4px;padding:0 6px;margin-left:6px;vertical-align:middle}\n  .ldetail li a{color:var(--muted);font-size:12.5px;display:block;margin-top:2px}\n  .ldetail .ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 20px;margin-top:12px;font-size:13px;color:var(--ink)}\n  .ldetail .ctx b{display:block;font-weight:600;font-size:12.5px;color:var(--muted);margin-bottom:2px}\n  .ldetail .close{float:right;font-size:13px;background:none;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;color:var(--muted)}\n  .ltip{position:fixed;z-index:20;max-width:320px;background:var(--ink);color:#fff;font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:6px;pointer-events:none;box-shadow:0 4px 14px rgba(0,0,0,.18)}\n  @media (hover:none){.ltip{display:none!important}}\n  .figlive{font-size:13.5px;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-top:none;border-radius:0 0 6px 6px;padding:8px 12px;max-width:100%;min-height:0}\n  .figlive:empty{display:none}\n  [data-tip]:hover rect,[data-tip]:hover circle{filter:brightness(1.12)}\n"
+
 
 def release_banner(pre: str) -> str:
     rp = ROOT / "data" / "release.json"
     if not rp.exists(): return ""
     r = json.loads(rp.read_text())
     if r.get("stage") == "preview":
-        return f'<div class="banner">Preview of the first release. Everything here is one batch of initial research, and every score is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. Organizations named here, and anyone else, can submit corrections or evidence until then; what arrives becomes the launch round of the paper. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
+        return f'<div class="banner">Preview of the first release. Everything here is one batch of initial research, and every score is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. Organizations and people named here, and anyone else, can submit corrections or evidence until then; what arrives becomes the launch round of the paper. No tag is citable until the <a href="{pre}status/index.html">gates</a> pass. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
     if r.get("stage") == "published":
         return f'<div class="banner">Published as <b>{esc(r.get("tag") or "v0")}</b> on {esc(r.get("set_on"))}. Scores continue to move as evidence is merged; the next dated reading is the annual update. <a href="{pre}contribute/index.html">Submit evidence</a>.</div>'
     return ""
 
-def evidence_summary(bench: dict) -> str:
-    """Build the home-page evidence text from the same projection it describes."""
+
+def _ranked_signals(bench: dict):
     ranked = {e["id"] for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"}
-    signals = [s for e in bench["evaluators"] if e["id"] in ranked for s in e["signals"]]
+    return [s for e in bench["evaluators"] if e["id"] in ranked for s in e["signals"]]
+
+
+def evidence_summary(bench: dict) -> str:
+    """Build the evidence text from the same projection it describes."""
+    signals = _ranked_signals(bench)
     sources = {sid: bench["sources"][sid] for s in signals for sid in s["sources"]}
     pct = lambda n, d: round(100 * n / d) if d else 0
     self_count = sum(s.get("source_type") == "self" for s in sources.values())
     tier1_count = sum(s.get("source_type") in ("filing", "index") for s in sources.values())
     quote_count = sum(bool(s.get("quote")) for s in signals)
-
-    def evaluator_counts(eid: str) -> tuple[int, int, int]:
-        esigs = [s for s in signals if s["evaluator"] == eid]
-        esources = {sid: bench["sources"][sid] for s in esigs for sid in s["sources"]}
-        return (len(esources), sum(s.get("source_type") == "self" for s in esources.values()),
-                sum(s.get("source_type") in ("filing", "index") for s in esources.values()))
-
-    averi, saferai, metr = (evaluator_counts(eid) for eid in ("averi", "saferai", "metr"))
+    std = sum(1 for s in signals if admissible(s, bench["sources"], "standard"))
+    prim = sum(1 for s in signals if admissible(s, bench["sources"], "primary"))
     return (
         "The scores measure what the public record shows, and the public record is largely what the evaluators say about themselves. "
         f"Among the {len(sources)} unique sources cited by {len(signals)} signals for the ranked population, {self_count} ({pct(self_count, len(sources))}%) are tier-3 self-published and {tier1_count} ({pct(tier1_count, len(sources))}%) are tier-1 sources (regulatory filings or public indexes). "
         f"{quote_count} of {len(signals)} signals ({pct(quote_count, len(signals))}%) carry an exact quoted span. "
-        f"The evidence mix varies: AVERI has {averi[1]} self-published sources out of {averi[0]}, with {averi[2]} tier-1; SaferAI {saferai[1]} of {saferai[0]}, with {saferai[2]} tier-1; and METR {metr[1]} of {metr[0]}, with {metr[2]} tier-1. "
-        "An evidence-based score rewards silence, and self-published sources can be replaced only where independent reporting exists — which, for most evaluators, it does not. That scarcity is a finding, not a data gap to be patched: the field's independence cannot be verified from outside the field. Scores built mostly on self-report are flagged by their evidence tier on every scorecard."
+        f"Under the standard evidence policy {std} of {len(signals)} signals count; under the primary-only policy {prim} do. "
+        "That scarcity is a finding, not a data gap to be patched: the field's independence cannot yet be verified from outside the field. "
+        "An evidence-based score would reward silence if silence defaulted to a number; here an unevidenced dimension renders as a dash and is excluded from the score, and every card shows the evidence tier of what it rests on."
     )
+
+
+def policy_table(bench: dict, pre: str = "") -> str:
+    signals = _ranked_signals(bench); ranked = [e for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"]
+    rows = []
+    for p in POLICY_ORDER:
+        adm = sum(1 for s in signals if admissible(s, bench["sources"], p))
+        dark = sum(1 for e in ranked for k in DIMS if e["values_by_policy"][p][k] is None)
+        rows.append(f'<tr{" style=\"background:var(--teal-tint)\"" if p == DEFAULT_POLICY else ""}><td>{esc(POLICIES[p]["label"])}{" (default)" if p == DEFAULT_POLICY else ""}</td><td style="color:var(--muted)">{esc(POLICIES[p]["desc"])}</td><td class="num">{adm} of {len(signals)}</td><td class="num">{dark} of {len(ranked) * len(DIMS)}</td></tr>')
+    return f'<table class="tbl"><tr><th>Evidence policy</th><th>Rule</th><th>Ranked signals that count</th><th>Assessments unevidenced</th></tr>{"".join(rows)}</table>'
+
 
 def layout(title: str, body: str, depth: int, active: str = "") -> str:
     pre = "../" * depth
-    nav = [("index.html", "Home", "home"), ("evaluators/index.html", "Evaluators", "evaluators"), ("entities/index.html", "Entities", "entities"),
-           ("regimes/index.html", "Regimes", "regimes"), ("sources/index.html", "Sources", "sources"), ("dockets/index.html", "Dockets", "dockets"),
-           ("paper/index.html", "Paper", "paper"), ("status/index.html", "Status", "status"), ("contribute/index.html", "Contribute", "contribute")]
+    nav = [("index.html", "Directory", "home"), ("rubric/index.html", "Rubric and rules", "rubric"), ("regimes/index.html", "Where we are", "regimes"), ("ledger/index.html", "Money", "ledger"),
+           ("evaluators/index.html", "Evaluators", "evaluators"), ("entities/index.html", "Entities", "entities"), ("sources/index.html", "Sources", "sources"), ("cases/index.html", "Cases", "cases"),
+           ("paper/index.html", "Paper", "paper"), ("method/index.html", "Method", "method"), ("status/index.html", "Status", "status"), ("contribute/index.html", "Contribute", "contribute")]
     links = "".join(f'<a href="{pre}{h}"{" style=\"color:var(--ink)\"" if key == active else ""}>{t}</a>' for h, t, key in nav)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}: Evaluator Bench</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F766E'/%3E%3Crect x='14' y='18' width='36' height='6' rx='2' fill='%23fff'/%3E%3Crect x='14' y='29' width='26' height='6' rx='2' fill='%23fff'/%3E%3Crect x='14' y='40' width='36' height='6' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<meta property="og:title" content="{esc(title)}: Evaluator Bench"><meta property="og:image" content="https://evaluatorbench.com/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{pre}style.css"></head><body>
 <header class="wrap top"><a class="wordmark" href="{pre}index.html">Evaluator <em>Bench</em></a><nav>{links}<a href="https://github.com/yoheinakajima/evaluator-bench">Repo</a></nav></header>
@@ -131,8 +163,10 @@ def layout(title: str, body: str, depth: int, active: str = "") -> str:
 <footer><div class="wrap"><span>Evaluator Bench, an open dataset built on ActiveGraph. Every number traces to a row and a source.</span><span>Generated by bench.site</span></div></footer>
 <script src="{pre}site.js"></script></body></html>"""
 
+
 def write(path: pathlib.Path, html: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True); path.write_text(html)
+
 
 # ---------------------------------------------------------------- shared data
 def _ctx(bench: dict) -> dict:
@@ -145,6 +179,7 @@ def _ctx(bench: dict) -> dict:
     regs = {p.stem: json.loads(p.read_text()) for p in (ROOT / "data" / "industries").glob("*.json")}
     return dict(L=L, d=d, ex=ex, ev_by_ledger=ev_by_ledger, signals_by_source=signals_by_source, regs=regs,
                 paths={p["id"]: p for p in paths()}, analog={a["id"]: a for a in analogues()}, mech={m["id"]: m for m in mechanisms()}, ladder={r["id"]: r for r in ladder()})
+
 
 # ---------------------------------------------------------------- entity pages
 def entity_page(eid: str, bench: dict, C: dict) -> str:
@@ -159,32 +194,68 @@ def entity_page(eid: str, bench: dict, C: dict) -> str:
     parts.append(f'<h2 style="margin-top:26px">Funding graph, focused</h2><p class="lead">Neighbours at full strength, everything else faded. Hover any name to move the focus; click a name to open its page.</p><div class="fig">{funding_graph(focus=eid, L=L)}</div><div class="figlive" aria-live="polite"></div>')
     return layout(e["name"], "".join(parts), 1, "entities")
 
+
 def _src_link(sid: str, bench: dict) -> str:
     x = bench["sources"].get(sid)
     if not x: return esc(sid)
     return f'<a class="src" href="../source/{esc(sid)}.html">{esc(x["title"])} ({esc(x["publisher"])}{", " + esc(x["published"]) if x.get("published") else ""}) {tier(x)}{badge(x.get("audit_status"))}</a>'
 
+
+def _bound_text(s: dict) -> str:
+    b = s.get("bound")
+    if not b: return f"informational ({esc(s.get('bound_note', ''))})" if s.get("bound_note") else "informational"
+    return (f"caps at {b['cap']}" if "cap" in b else f"floors at {b['floor']}") + (f" by {esc(s['rule'])}" if s.get("rule") else "")
+
+
 def _scorecard(ev: dict, bench: dict, C: dict) -> str:
     dims = {x["key"]: x for x in bench["dimensions"]}
-    floor_k = min(DIMS, key=lambda k: ev["values"][k])
-    scores = "; ".join(f"{esc(bench['presets'][k]['label'])} {v}" for k, v in ev["scores"].items())
+    vals = ev["values_by_policy"][DEFAULT_POLICY]; b = band(vals); cov = coverage(vals)
+    scores = "; ".join(f"{esc(bench['presets'][k]['label'])} {v if v is not None else '–'}" for k, v in ev["scores"].items())
+    fl = ev.get("floor")
     rows = []
     for k in DIMS:
-        a = ev["assessments"][k]; dm = dims[k]
+        a = ev["assessments"][k]; dm = dims[k]; dd = a["derived"][DEFAULT_POLICY]; v = dd["v"]
         sigs = [s for s in ev["signals"] if s["dimension"] == k]
-        items = "".join(f'<li class="{s["direction"]}">{esc(s["claim"])}<br>{" ".join(_src_link(x, bench) for x in s["sources"])}<span class="gid">{esc(s.get("as_of") or s["recorded"])}</span></li>' for s in sigs)
-        oq = "".join(f"<li>Open: {esc(q)}</li>" for q in a.get("open_questions", []))
-        rows.append(f'<div class="dimrow"><div><div class="v">{esc(dm["label"])} {a["value"]}/4</div><div class="anchor">{esc(dm["anchors"][a["value"]])}</div><div class="anchor" style="margin-top:4px">evidence: {esc(a.get("evidence_tier","unknown"))}</div>{'<div class="gid" style="margin-top:4px;color:#7A4E0E;border-color:#7A4E0E">evidence-limited: held at a supportable value</div>' if a.get("evidence_limited") else ''}</div><div><div style="font-size:13.5px">{esc(a["rationale"])}</div><ul>{items}{oq}</ul></div></div>')
+        items = "".join(f'<li class="{s["direction"]}{" binding" if s["id"] in dd["b"] else ""}{" out" if s["id"] in dd["x"] else ""}">{esc(s["claim"])} <span class="gid">{_bound_text(s)}</span>{"<span class=\"gid\" style=\"color:var(--teal)\">binding</span>" if s["id"] in dd["b"] else ""}{"<span class=\"gid\">not counted under standard</span>" if s["id"] in dd["x"] else ""}{("<span class=\"quote\">&ldquo;" + esc(s["quote"]) + "&rdquo;</span>") if s.get("quote") else ""}<br>{" ".join(_src_link(x, bench) for x in s["sources"])}<span class="gid">{esc(s.get("as_of") or s["recorded"])}</span></li>' for s in sigs)
+        oq = "".join(f"<li>Document request: {esc(q)}</li>" for q in a.get("open_questions", []))
+        flags = ""
+        if a.get("mechanism"): flags += f'<div class="gid mech" style="margin-top:4px">mechanism: {esc(a["mechanism"])}</div>'
+        if dd["h"]: flags += '<div class="gid" style="margin-top:4px;color:#7A4E0E;border-color:#7A4E0E">held at a supportable anchor</div>'
+        if dd["c"]: flags += '<div class="gid" style="margin-top:4px;color:var(--ox);border-color:var(--ox)">floor and cap disagree</div>'
+        leads = ev["values"][k]
+        left = (f'<div class="v">{esc(dm["label"])} {"–" if v is None else str(v) + "/4"}</div>'
+                + (f'<div class="anchor">{"No admissible evidence under the standard policy." if v is None else "Anchor " + str(v) + ": " + esc(dm["anchors"][v])}</div>')
+                + (f'<div class="anchor">With leads included: {leads}/4</div>' if leads != v else "")
+                + f'<div class="anchor" style="margin-top:4px">evidence: {esc(a.get("evidence_tier","unknown"))}</div>{flags}')
+        right = f'<div class="derived {"dark" if v is None else ""}">{esc(a["rationale_derived"])}</div>'
+        if a.get("rationale"): right += f'<div class="derived" style="color:var(--muted)">Curator: {esc(a["rationale"])}</div>'
+        if a.get("resolution"): right += f'<div class="derived">Resolution: {esc(a["resolution"].get("rule"))} decides {esc(a["resolution"].get("value"))}. {esc(a["resolution"].get("note"))}</div>'
+        rows.append(f'<div class="dimrow"><div>{left}</div><div>{right}<ul>{items}{oq}</ul></div></div>')
+    # policy mini-table
+    ptbl = '<table class="tbl"><tr><th>Dimension</th>' + "".join(f"<th>{esc(POLICIES[p]['label'])}</th>" for p in POLICY_ORDER) + "</tr>"
+    for k in DIMS:
+        ptbl += f"<tr><td>{esc(dims[k]['label'])}</td>" + "".join(f'<td class="num">{"–" if ev["values_by_policy"][p][k] is None else ev["values_by_policy"][p][k]}</td>' for p in POLICY_ORDER) + "</tr>"
+    for pname in bench["presets"]:
+        ptbl += f"<tr><td>Score, {esc(bench['presets'][pname]['label'])}</td>" + "".join(f'<td class="num">{ev["scores_by_policy"][p][pname]["score"] if ev["scores_by_policy"][p][pname]["score"] is not None else "–"} <span class="gid">{esc(BAND_LABEL[ev["scores_by_policy"][p][pname]["band"]])}, {ev["scores_by_policy"][p][pname]["coverage"]}/8</span></td>' for p in POLICY_ORDER) + "</tr>"
+    ptbl += "</table>"
+    moves = ev.get("what_moves", {}).get("lab", [])[:3]
+    mv = "".join(f'<li>{esc(DIM_LABEL[m["dimension"]])} {m["from_value"]} to {m["to_value"]}: score {m["score"] if m["score"] is not None else "–"}{(", band becomes " + BAND_LABEL[m["band"]].lower()) if BAND_ORDER[m["band"]] < BAND_ORDER[b] else ""}</li>' for m in moves)
+    dissent = ev.get("dissent") or {}
     ex = C["ex"].get(LEDGER_ALIAS.get(ev["id"], ev["id"]))
     exp = ""
     if ex:
-        b = "; ".join(f'{("hop " + k[3:]) if k.startswith("hop") else k}: {v["rows"]} row{"s" if v["rows"] != 1 else ""}' + (" (" + ", ".join(f"{m} ${a/1e6:.1f}M" for m, a in v["by_measure"].items()) + ")" if v["by_measure"] else "") for k, v in ex["buckets"].items())
+        bb = "; ".join(f'{("hop " + k[3:]) if k.startswith("hop") else k}: {v["rows"]} row{"s" if v["rows"] != 1 else ""}' + (" (" + ", ".join(f"{m} ${a/1e6:.1f}M" for m, a in v["by_measure"].items()) + ")" if v["by_measure"] else "") for k, v in ex["buckets"].items())
         ties = ", ".join(f'{esc(t["via"])} ({esc(t["role"])}, distance {t["distance"]}, {esc(t["status"])})' for t in ex["lab_tied_seats"]) or "none within two steps recorded"
-        exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(b) if b else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " quarantined: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}. Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Bounded negatives on file: {len(ex["negatives"])}.</p></div>'
+        exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(bb) if bb else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " quarantined: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}. Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Bounded negatives on file: {len(ex["negatives"])}.</p></div>'
     return f"""<div class="card"><h3>Scorecard</h3><p style="font-size:13.5px">{esc(ev['summary'])}</p>
-      <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}. Scores by preset: {scores}. Weakest dimension: {esc(dims[floor_k]['label'].lower())} {ev['values'][floor_k]}/4.{(' Evidence-limited on ' + str(sum(1 for a in ev['assessments'].values() if a.get('evidence_limited'))) + ' dimension(s): values held at the nearest supportable anchor until a live source is confirmed.') if any(a.get('evidence_limited') for a in ev['assessments'].values()) else ''}</p>
-      <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>
-      {''.join(rows)}</div>{exp}"""
+      <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. {esc(ROLE_LABEL.get(ev['role'], ev['role']))}; listed with {esc(GROUP_LABEL.get(ev.get('list_group', 'referee'), '').lower())}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}.</p>
+      <p style="font-size:13.5px">{bandchip(b)} <span class="gid">{cov}/8 evidenced under the standard policy</span> Scores by preset: {scores}. Weakest evidenced dimension: {esc(dims[fl]['label'].lower()) if fl else 'none'} {vals[fl] if fl else ''}{'/4' if fl else ''}. {esc(BAND_DESC[b])}</p>
+      <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>{('<ul style="font-size:13.5px;margin:0 0 8px 18px">' + mv + '</ul>') if mv else ''}
+      {('<p style="font-size:13.5px"><b>Dissent, lower.</b> ' + esc(dissent.get('lower')) + '</p><p style="font-size:13.5px"><b>Dissent, higher.</b> ' + esc(dissent.get('higher')) + '</p>') if dissent else ''}
+      <p style="font-size:12.5px;color:var(--muted)">Each value is the tightest admissible cap or, with no cap, the highest admissible floor, under <a href="{REPO}RULES.md">RULES.md</a>. The binding signal is highlighted. A dash means no admissible signal sets a bound under the standard policy.</p>
+      {''.join(rows)}</div>
+      <div class="card"><h3>Values under each evidence policy</h3>{ptbl}</div>{exp}"""
+
 
 def _ledger_block(eid: str, C: dict) -> str:
     L, E = C["L"], C["L"]["entities"]
@@ -206,6 +277,7 @@ def _ledger_block(eid: str, C: dict) -> str:
     nb = f'<div class="card"><h3>One hop away</h3><p style="font-size:13.5px">{", ".join(link(i) for i in neigh)}</p></div>' if neigh else ""
     return f'<h2 style="margin-top:26px">Ledger</h2><div class="cols"><div>{a}{b}{n}</div><div>{c}{dd}{nb}</div></div>'
 
+
 # ---------------------------------------------------------------- regime pages
 def regime_page(rid: str, C: dict) -> str:
     o = C["regs"][rid]; p = C["paths"][rid]; an = C["analog"].get(rid); m = C["mech"].get(rid); lad = C["ladder"][rid]
@@ -224,11 +296,12 @@ def regime_page(rid: str, C: dict) -> str:
     <p style="font-size:12.5px;color:var(--muted);margin-top:8px">{esc(o.get('status',''))} Data: <a href="{REPO}data/industries/{esc(rid)}.json">data/industries/{esc(rid)}.json</a></p></div>"""
     return layout(o["name"], body, 1, "regimes")
 
+
 # ---------------------------------------------------------------- source pages
 def source_page(sid: str, bench: dict, C: dict) -> str:
     x = bench["sources"][sid]
     cites = C["signals_by_source"].get(sid, [])
-    items = "".join(f'<li><a href="../entity/{esc(LEDGER_ALIAS.get(e["id"], e["id"]))}.html">{esc(e["name"])}</a>, {esc(s["dimension"])} ({esc(s["direction"])}): {esc(s["claim"])}</li>' for e, s in cites)
+    items = "".join(f'<li><a href="../entity/{esc(LEDGER_ALIAS.get(e["id"], e["id"]))}.html">{esc(e["name"])}</a>, {esc(s["dimension"])} ({esc(s["direction"])}): {esc(s["claim"])}{("<span class=\"quote\">&ldquo;" + esc(s["quote"]) + "&rdquo;</span>") if s.get("quote") and (s.get("quote_source") in (None, sid)) else ""}</li>' for e, s in cites)
     L = C["L"]; E = L["entities"]
     lrows = [t for t in L["transfers"] if t["source_url"] == x["url"]] + [r for r in L["relationships"] if r["source_url"] == x["url"]] + [n for n in L["negatives"] if n["source_url"] == x["url"]]
     litems = "".join(f'<li><b>{esc(r["row_id"])}</b> {esc(r.get("purpose") or r.get("claim") or (r.get("role", "") + " at " + E.get(r.get("object", ""), {}).get("name", "")))} {badge(r["audit_status"])}</li>' for r in lrows)
@@ -238,27 +311,32 @@ def source_page(sid: str, bench: dict, C: dict) -> str:
     <div class="cols"><div class="card"><h3>Signals citing this source</h3><ul>{items or '<li>none</li>'}</ul></div><div class="card"><h3>Ledger rows citing this URL</h3><ul>{litems or '<li>none</li>'}</ul></div></div>"""
     return layout(x["title"], body, 1, "sources")
 
+
 # ---------------------------------------------------------------- index pages
 def _ev_row(e: dict, bench: dict, dims: dict, C: dict) -> str:
-    lid = LEDGER_ALIAS.get(e["id"], e["id"]); fl = min(DIMS, key=lambda k: e["values"][k]); ex = C["ex"].get(lid)
+    lid = LEDGER_ALIAS.get(e["id"], e["id"]); ex = C["ex"].get(lid); vals = e["values_by_policy"][DEFAULT_POLICY]; fl = e.get("floor")
     return (f'<tr><td><a href="../entity/{esc(lid)}.html">{esc(e["name"])}</a><br><span style="color:var(--muted);font-size:12px">{esc(bench["types"][e["type"]])}, {esc(e["hq"])}</span></td>'
-        + f'<td>{esc(e.get("role",""))}</td>'
-        + "".join(f'<td class="num">{e["scores"][k]}</td>' for k in ("lab", "regulator", "public", "equal"))
-        + f'<td>{esc(dims[fl]["label"].lower())} {e["values"][fl]}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
+        + f'<td>{esc(ROLE_LABEL.get(e["role"], e["role"]))}</td><td>{bandchip(e["band"])}</td>'
+        + "".join(f'<td class="num">{e["scores"][k] if e["scores"][k] is not None else "–"}</td>' for k in ("lab", "regulator", "public", "equal"))
+        + f'<td class="num">{e["coverage"]}/8</td><td>{(esc(dims[fl]["label"].lower()) + " " + str(vals[fl])) if fl else "none"}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
+
 
 def evaluators_index(bench: dict, C: dict) -> str:
     dims = {x["key"]: x for x in bench["dimensions"]}
     ranked = [e for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"]
     watch = [e for e in bench["evaluators"] if e.get("status") == "watchlist"]
-    rows = [_ev_row(e, bench, dims, C) for e in sorted(ranked, key=lambda e: -e["scores"]["lab"])]
-    wrows = [_ev_row(e, bench, dims, C) for e in sorted(watch, key=lambda e: -e["scores"]["lab"])]
-    head = "<tr><th>Evaluator</th><th>Role</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
-    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations scored on eight independence dimensions, split by role (referee, government, vendor, benchmark, lab team). Columns show the weighted score under each preset, the weakest dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the full scorecard, ledger, and focused graph.</p></div>
-    <div class="card"><table class="tbl">{head}{''.join(rows)}</table></div>"""
-    if wrows:
-        body += f"""<div class="pagehead" style="margin-top:26px"><h2>Watchlist (not ranked)</h2><p class="lead">Expected entrants scored on the same rubric but excluded from rankings and averages: hypothetical composites and announced initiatives with no evaluations yet.</p></div>
+    key = lambda e: (BAND_ORDER[e["band"]], -(e["scores"]["lab"] if e["scores"]["lab"] is not None else -1), e["name"].lower())
+    head = "<tr><th>Evaluator</th><th>Role</th><th>Band</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Evidenced</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
+    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations in three lists, scored on eight independence dimensions under the standard evidence policy (confirmed sources only). Band first: any evidenced 0 is a disqualifying floor, any 1 a conditional floor. Columns show the score under each weight preset, how many of the eight dimensions are evidenced, the weakest evidenced dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the derivation, the binding signals, the ledger, and the focused graph. Independence only; not quality, coverage, or competence.</p></div>"""
+    for g in GROUP_ORDER:
+        rows = [_ev_row(e, bench, dims, C) for e in sorted((x for x in ranked if x.get("list_group") == g), key=key)]
+        body += f"""<div class="pagehead" style="margin-top:20px"><h2>{esc(GROUP_LABEL[g])} <span class="gid">{len(rows)}</span></h2><p class="lead">{esc(GROUP_DESC[g])}</p></div><div class="card"><table class="tbl">{head}{''.join(rows)}</table></div>"""
+    if watch:
+        wrows = [_ev_row(e, bench, dims, C) for e in sorted(watch, key=key)]
+        body += f"""<div class="pagehead" style="margin-top:26px"><h2>Watchlist (not ranked)</h2><p class="lead">Expected entrants scored on the same rubric but excluded from rankings and every statistic: initiatives announced with no evaluations yet. Hypothetical composites are not scored (RULES 11).</p></div>
     <div class="card"><table class="tbl">{head}{''.join(wrows)}</table></div>"""
     return layout("Evaluators", body, 1, "evaluators")
+
 
 def entities_index(C: dict) -> str:
     L, d, E = C["L"], C["d"], C["L"]["entities"]
@@ -275,40 +353,104 @@ def entities_index(C: dict) -> str:
             dd = d.get(e["id"])
             rows.append(f'<tr><td><a href="../entity/{esc(e["id"])}.html">{esc(e["name"])}</a></td><td>{esc(k)}</td><td class="num">{"" if dd is None else int(dd)}</td><td class="num">{cnt_in.get(e["id"], 0)}</td><td class="num">{cnt_out.get(e["id"], 0)}</td><td class="num">{roles.get(e["id"], 0)}</td><td class="num">{conf.get(e["id"], 0)}</td><td style="color:var(--muted);font-size:12.5px">{esc(e.get("notes", ""))}</td></tr>')
     summ = {k: sum(1 for x in E.values() if x["kind"] == k) for k in order}
-    body = f"""<div class="pagehead"><h1>Entities</h1><p class="lead">{len(E)} entities in the ledger: {', '.join(f'{v} {k}' for k, v in summ.items() if v)}. Distance 0 is a lab; 1 a direct tie; higher runs through principals and funders. Each page shows every row in and out and the funding graph focused on that node.</p></div>
+    body = f"""<div class="pagehead"><h1>Entities</h1><p class="lead">{len(E)} entities in the ledger: {', '.join(f'{v} {k}' for k, v in summ.items() if v)}. Distance 0 is a lab; 1 a direct tie; higher runs through principals and funders. Each page shows every row in and out and the funding graph focused on that node. People are recorded by public role only, and every named person receives their card before a tag is cut (RULES 12).</p></div>
     <div class="card"><table class="tbl"><tr><th>Entity</th><th>Kind</th><th>Distance</th><th>Money in</th><th>Money out</th><th>Roles</th><th>Confirmed in</th><th>Notes</th></tr>{''.join(rows)}</table></div>"""
     return layout("Entities", body, 1, "entities")
 
-def regimes_index(C: dict) -> str:
+
+def regimes_index(bench: dict, C: dict, timeline_rows: list) -> str:
     rows = []
     for rid, lad in C["ladder"].items():
         o = C["regs"][rid]; an = C["analog"].get(rid); p = C["paths"][rid]
         rows.append(f'<tr><td><a href="../regime/{esc(rid)}.html">{esc(o["name"])}</a></td><td>{esc(p["letters"])}</td><td class="num">{lad["reached"]}/7</td><td class="num">{lad["first"]}</td><td class="num">{f"{1 - an['distance']:.2f}" if an else "ref"}</td><td>{esc(o.get("jurisdiction", ""))}</td><td style="color:var(--muted);font-size:12.5px">{esc(o["payer"])}</td></tr>')
-    body = f"""<div class="pagehead"><h1>Regimes</h1><p class="lead">Sixteen assurance regimes coded as dated milestones. The path signature is the ordered sequence of moves (V voluntary, T trigger, M mandate, S standards, O oversight, I independence, A access or publication, D delegation, P payer shift, R rollback). Similarity compares each regime's opening to frontier AI's path so far.</p></div>
+    table = f"""<p class="lead">Sixteen assurance regimes coded as dated milestones. The path signature is the ordered sequence of moves (V voluntary, T trigger, M mandate, S standards, O oversight, I independence, A access or publication, D delegation, P payer shift, R rollback). Similarity compares each regime's opening to frontier AI's path so far.</p>
     <div class="card"><table class="tbl"><tr><th>Regime</th><th>Path</th><th>Stages</th><th>First milestone</th><th>Similarity to AI</th><th>Jurisdiction</th><th>Who pays</th></tr>{''.join(rows)}</table></div>"""
-    return layout("Regimes", body, 1, "regimes")
+    from .build import fill_placeholders
+    frag = (SITE / "regimes.html").read_text().replace("<!--__REGIMES_TABLE__-->", table)
+    return layout("Where we are", fill_placeholders(frag, bench, timeline_rows), 1, "regimes")
+
+
+def ledger_index(bench: dict, C: dict) -> str:
+    from .build import fill_placeholders
+    frag = (SITE / "ledger.html").read_text()
+    return layout("Money and ties", fill_placeholders(frag, bench, []), 1, "ledger")
+
 
 def sources_index(bench: dict, C: dict) -> str:
     rows = []
     for sid, x in sorted(bench["sources"].items(), key=lambda kv: (kv[1]["publisher"].lower(), kv[1]["title"].lower())):
         n = len(C["signals_by_source"].get(sid, []))
-        rows.append(f'<tr><td><a href="../source/{esc(sid)}.html">{esc(x["title"])}</a></td><td>{esc(x["publisher"])}</td><td>{esc(x.get("published", ""))}</td><td>{esc(TIER.get(x.get("source_type"), "not set"))}</td><td>{badge(x.get("audit_status"))}</td><td class="num">{n}</td></tr>')
+        rows.append(f'<tr><td><a href="../source/{esc(sid)}.html">{esc(x["title"])}</a></td><td>{esc(x["publisher"])}</td><td>{esc(x.get("published", ""))}</td><td>{esc(TIER.get(x.get("source_type"), "not set"))}{(" (" + esc(x["press_kind"]) + ")") if x.get("press_kind") else ""}</td><td>{badge(x.get("audit_status"))}</td><td class="num">{n}</td></tr>')
     counts = {}
     for x in bench["sources"].values(): counts[x.get("audit_status", "unaudited")] = counts.get(x.get("audit_status", "unaudited"), 0) + 1
-    body = f"""<div class="pagehead"><h1>Sources</h1><p class="lead">{len(bench['sources'])} sources cited by signals: {', '.join(f'{v} {k}' for k, v in sorted(counts.items()))}. Tier 1 is a filing or a funder's own index; tier 2 a third-party ledger; tier 3 the organization's own statement; tier 4 press.</p></div>
+    body = f"""<div class="pagehead"><h1>Sources</h1><p class="lead">{len(bench['sources'])} sources cited by signals: {', '.join(f'{v} {k}' for k, v in sorted(counts.items()))}. Tier 1 is a filing or a funder's own index; tier 2 a third-party ledger; tier 3 the organization's own statement; tier 4 press, split into primary (a named editorial outlet) and aggregator (newsletters, wikis, wires, law-firm alerts). Under the standard evidence policy only confirmed sources move a value; imported and unverifiable ones stay visible as leads.</p></div>
     <div class="card"><table class="tbl"><tr><th>Source</th><th>Publisher</th><th>Published</th><th>Tier</th><th>Audit</th><th>Signals</th></tr>{''.join(rows)}</table></div>"""
     return layout("Sources", body, 1, "sources")
 
 
+# ---------------------------------------------------------------- topic pages
+def rubric_index(bench: dict) -> str:
+    guide = json.loads((DATA / "guide.json").read_text())
+    dims = "".join(f'<div class="rdim"><h3>{esc(d["label"])}</h3><p>{esc(d["desc"])}</p><ul class="anchors">{"".join(f"<li><b>{i}</b><span>{esc(a)}</span></li>" for i, a in enumerate(d["anchors"]))}</ul></div>' for d in bench["dimensions"])
+    raises = "".join(f"<li>{esc(x)}</li>" for x in guide["raises"]); lowers = "".join(f"<li>{esc(x)}</li>" for x in guide["lowers"])
+    try:
+        import markdown
+        rules = markdown.markdown((ROOT / "RULES.md").read_text(), extensions=["tables"])
+    except ImportError:
+        rules = "<pre>" + esc((ROOT / "RULES.md").read_text()) + "</pre>"
+    presets = "".join(f'<li><b>{esc(p["label"])}.</b> {" ".join(f"{k} {v}" for k, v in p["weights"].items())}. {esc(p.get("derivation", ""))}</li>' for p in bench["presets"].values())
+    glossary = "".join(f"<li><b>{esc(t)}.</b> {esc(x)}</li>" for t, x in guide["glossary"])
+    body = f"""<div class="pagehead"><h1>The rubric and the rules</h1><p class="lead">Eight dimensions, each scored 0 to 4 from public evidence, then weighted. The dimensions follow the AI Evaluator Forum's AEF-1 operating conditions and the financial-audit independence rules that Illinois SB 315 imports for frontier AI, with two additions the field tends to skip: who owns the evaluator, and whether it sells fixes to the companies it grades. A value is not a curator's impression: each signal names the anchor it supports and the rule below that says so, and the value is the tightest cap or, with no cap, the highest floor.</p></div>
+    <div class="rubric">{dims}</div>
+    <h2 style="margin-top:30px">What raises and lowers a score</h2>
+    <p class="lead">The list is deliberately concrete: each item is something you can verify from a filing, a contract term, a system card, or a published policy.</p>
+    <div class="signals"><div><h3>Raises the score</h3><div class="ev for"><ul>{raises}</ul></div></div><div><h3>Lowers the score</h3><div class="ev against"><ul>{lowers}</ul></div></div></div>
+    <h2 style="margin-top:30px">Weights</h2><div class="card"><ul>{presets}</ul></div>
+    <h2 style="margin-top:30px">The rules</h2><div class="card rules">{rules}</div>
+    <h2 style="margin-top:30px">Glossary</h2><div class="card"><ul>{glossary}</ul></div>"""
+    return layout("Rubric and rules", body, 1, "rubric")
+
+
+def cases_index() -> str:
+    cases = json.loads((DATA / "cases.json").read_text())
+    items = "".join(f'<div class="case"><div><h3>{esc(c["t"])}</h3><div class="verdict">{esc(c["v"])}</div></div><p>{esc(c["p"])}<br><span class="verdict">{esc(c["c"])}</span></p></div>' for c in cases)
+    body = f"""<div class="pagehead"><h1>Cases that set the bar</h1><p class="lead">Six cases from the last two years, read for what they reveal about each dimension: five engagements and one investor overlap. Longer treatments and sources are in the repo under <a href="{REPO}paper/">paper/</a>.</p></div><div class="cases">{items}</div>"""
+    return layout("Cases", body, 1, "cases")
+
+
+def method_index(bench: dict) -> str:
+    body = f"""<div class="pagehead"><h1>How the scores are made</h1></div>
+    <div class="card"><h3>Values</h3><p style="font-size:14.5px;max-width:74ch">Each evaluator gets a 0 to 4 on eight dimensions using only public evidence: filings, funding announcements, system cards, published policies, contracts described in reports, and press. Every signal names the anchor it supports and the rule in <a href="../rubric/index.html">RULES.md</a> that says so. The value on a dimension is the tightest admissible cap or, with no cap, the highest admissible floor. Where a floor and a cap disagree, the assessment carries a written resolution naming the rule, and the card shows the conflict. A 0 needs a quoted span; a 4 needs a span and a tier-1 or tier-2 source or two independent sources with one not self-published; a bound from sources that were not all confirmed cannot set an extreme. Bounds that fail these tests are held at the nearest supportable anchor and the card says which rule held them.</p></div>
+    <div class="card"><h3>Evidence policies</h3><p style="font-size:14.5px;max-width:74ch">The reader chooses what counts. The default, standard, admits a signal only if at least one cited source was re-fetched and confirmed, so no number moves on a source you cannot open and check. Imported and unverifiable leads stay visible and count for nothing. A dimension with no admissible signal renders as a dash and is excluded from the score; the coverage count sits beside every score.</p>{policy_table(bench, "../")}</div>
+    <div class="card"><h3>Bands and scores</h3><p style="font-size:14.5px;max-width:74ch">The weighted total over the evidenced dimensions is scaled to 100 under four weight presets, each with a written derivation. Independence has floors, so the band comes first: any evidenced 0 is a disqualifying floor, any 1 a conditional floor, otherwise clear. The number ranks within a band. The lab-procurement preset is the confirmatory view; it was fixed in the seed script before the population pass but not registered outside this repository. The other presets are sensitivity checks, not alternative truths. Scores are ordinal projections over anchored rubrics: a ten-point gap is not twice the independence, and a two-point gap is nothing.</p></div>
+    <div class="card"><h3>Independence is one axis</h3><p style="font-size:14.5px;max-width:74ch">Competence, domain coverage, staffing, and turnaround are others, and a highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters alongside the score. Government bodies are scored on what reaches the public and what access they hold, with the mechanism tagged statutory where the constraint is the law rather than a lab. An entry is not an endorsement, and a low score is not an accusation; it means the public record does not yet show the safeguards that would earn a higher one.</p></div>
+    <div class="card"><h3>How good is the evidence</h3><p style="font-size:14.5px;max-width:74ch">{evidence_summary(bench)}</p></div>
+    <div class="card"><h3>Who made this, and what they hold</h3><p style="font-size:14.5px;max-width:74ch">Curated by Yohei Nakajima: managing partner at Untapped Capital, a pre-seed and seed venture fund; operator of Epistemedia, the claim-adjudication layer this repository drafts dockets into; author of ActiveGraph, the runtime the build runs on. The first draft of the curation was written by Claude (Anthropic), a frontier developer evaluated by several organizations scored here and a lab entity in the ledger, with verification passes by other tools recorded in <a href="{REPO}paper/audits/">paper/audits/</a>. Holdings: small public-market shares in Google and Meta, and a private holding in SpaceX, which owns xAI; assessments of evaluators with confirmed ledger ties to those labs say so in their rationale. Shared funders between Untapped Capital and the evaluators' funders: not yet checked; the check is scheduled before the freeze and its result will replace this sentence. One coder; a second coder on every extreme is a gate for a citable tag. The full statement is in <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>
+    <div class="card"><h3>Scores move when evidence moves</h3><p style="font-size:14.5px;max-width:74ch">Send a contract term, a policy, or a correction and the entry updates with the source attached. Every ranked organization and every named person receives their card and a fourteen-day reply window before a tag is cut; the <a href="../status/index.html">status page</a> tracks who has been contacted. After first publication, a score that moves by more than one anchor triggers a fresh record packet before the next tag.</p><a class="cta" href="../contribute/index.html">How to submit evidence</a></div>"""
+    return layout("Method", body, 1, "method")
+
+
+def exclusions_index(bench: dict) -> str:
+    p = DATA / "exclusions.json"
+    entries = json.loads(p.read_text()) if p.exists() else []
+    rows = "".join(f'<tr><td>{esc(e.get("name"))}</td><td>{esc(e.get("type_guess", ""))}</td><td>{esc(e.get("result", ""))}</td><td>{esc(", ".join(e.get("criteria_met", [])) or "none")}</td><td>{esc(e.get("reason", ""))}{(" <a href=\"" + esc(e["evidence_url"]) + "\" target=\"_blank\" rel=\"noopener\">source</a>") if e.get("evidence_url") else ""}</td><td>{esc(e.get("checked_on", ""))}</td></tr>' for e in entries)
+    counts = {}
+    for e in entries: counts[e.get("result", "unclear")] = counts.get(e.get("result", "unclear"), 0) + 1
+    body = f"""<div class="pagehead"><h1>Population: who is in, who is out</h1><p class="lead">An organization is in scope if, within the 24 months to the evidence clock, it was cited as an external evaluator or red team in a frontier system card or a government evaluation report; or it is named in a statute, code, or standard as an evaluator; or it operates a leaderboard a frontier developer cites for a frontier model (RULES 11). Candidates that met a criterion but are not yet scored are listed as in-scope candidates for the next batch. Nothing here is a judgment about quality. A hypothetical composite is never scored.</p></div>
+    <div class="card"><p style="font-size:13.5px;color:var(--muted)">{len(entries)} candidates checked{(": " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items()))) if entries else ". The candidate list is being checked; results land here as they are verified"}. Every entry names the URL that decided it.</p>
+    <table class="tbl"><tr><th>Candidate</th><th>Type</th><th>Result</th><th>Criteria met</th><th>Reason</th><th>Checked</th></tr>{rows or '<tr><td colspan="6">No candidates recorded yet.</td></tr>'}</table></div>"""
+    return layout("Population", body, 1, "exclusions")
+
+
 # ---------------------------------------------------------------- dockets, status, contribute
-AGENT_PROMPT = "Open https://github.com/yoheinakajima/evaluator-bench and read AGENTS.md. Choose one recipe (add evidence about an evaluator, confirm an imported ledger row, or draft a docket). Fetch every source yourself in this run, copy quoted spans exactly, run python -m bench verify && python -m bench build && pytest -q, commit the regenerated graph/ and dist/, and open a pull request using the template. Do not change scores, anchors, or the verifier. If you cannot complete a recipe without guessing, stop and report what is missing."
+AGENT_PROMPT = "Open https://github.com/yoheinakajima/evaluator-bench and read AGENTS.md and RULES.md. Choose one recipe (add evidence about an evaluator, confirm an imported ledger row, or draft a docket). Fetch every source yourself in this run, copy quoted spans exactly, give every new signal a bound and the RULES.md rule code behind it, run python -m bench verify && python -m bench build && pytest -q, commit the regenerated graph/ and dist/, and open a pull request using the template. Do not change values, anchors, rules, or the verifier. If you cannot complete a recipe without guessing, stop and report what is missing."
+
 
 def dockets_index(C: dict) -> str:
-    import subprocess
     rows = []
     for d in sorted((ROOT / "dockets").iterdir()):
         if not d.is_dir() or not (d / "proposal.json").exists(): continue
-        p = json.loads((d / "proposal.json").read_text()); cert = ROOT / "data" / "certificates" / f"{d.name}.json"
+        p = json.loads((d / "proposal.json").read_text())
         from .docket import recorded_status
         status = recorded_status(d.name)
         rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>not submitted</td></tr>')
@@ -317,53 +459,69 @@ def dockets_index(C: dict) -> str:
     <p style="font-size:13px;color:var(--muted);margin-top:8px">Build and validate: <code>python -m bench docket build &lt;slug&gt; &amp;&amp; python -m bench docket validate &lt;slug&gt;</code>. Certificate format and the path to signed machine verification: <a href="{REPO}paper/CERTIFICATION.md">paper/CERTIFICATION.md</a>.</p></div>"""
     return layout("Dockets", body, 1, "dockets")
 
+
+def _csv(p: pathlib.Path) -> list[dict]:
+    if not p.exists(): return []
+    with open(p, newline="") as f: return [dict(r) for r in csv.DictReader(f)]
+
+
 def status_index(bench: dict, C: dict) -> str:
-    import subprocess
-    L = C["L"]; d = load_data_counts(bench)
     import hashlib
+    from .gates import gates
+    L = C["L"]
     ev = ROOT / "graph" / "events.jsonl"; commit = hashlib.sha256(ev.read_bytes()).hexdigest()[:12] if ev.exists() else "unknown"
     tr = L["transfers"]; conf = sum(1 for t in tr if t["audit_status"] == "confirmed"); imp = sum(1 for t in tr if t["audit_status"] == "imported")
     srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
-    ex_all = C["ex"].values()
+    ranked = [e for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"]; watch = [e for e in bench["evaluators"] if e.get("status") == "watchlist"]
+    rsig = _ranked_signals(bench); quotes = sum(1 for s in rsig if s.get("quote"))
     ev_by_ledger = {LEDGER_ALIAS.get(e["id"], e["id"]): e for e in bench["evaluators"]}
-    ex = [x for x in ex_all if ev_by_ledger.get(x["id"], {}).get("status", "ranked") == "ranked"]
+    ex = [x for x in C["ex"].values() if ev_by_ledger.get(x["id"], {}).get("status", "ranked") == "ranked" and x["id"] in ev_by_ledger]
     from .ledger import hop0_split
     split = hop0_split(list(ex))
     near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); direct = sum(1 for x in ex if "hop0" in x["buckets"]); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
-    quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
-    body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])}; event-log digest {esc(commit)}.</p></div>
+    gs = gates()
+    grows = "".join(f'<tr><td>{esc(g["gate"])}</td><td class="{"gate-ok" if g["ok"] else "gate-fail"}">{"pass" if g["ok"] else "not yet"}</td><td style="color:var(--muted)">{esc(g["detail"])}</td></tr>' for g in gs)
+    log = _csv(DATA / "outreach-log.csv")
+    sent = sum(1 for r in log if r.get("contacted")); replied = sum(1 for r in log if r.get("replied"))
+    lrows = "".join(f'<tr><td>{esc(r["name"])}</td><td>{esc(r["kind"])}</td><td>{esc(r.get("contacted") or "")}</td><td>{esc(r.get("replied") or "")}</td><td style="color:var(--muted)">{esc(r.get("status") or "")}</td></tr>' for r in log)
+    sc = _csv(DATA / "coding" / "second-coder.csv"); coded = [r for r in sc if r.get("coder")]
+    agree = sum(1 for r in coded if (r.get("agrees_with_stored") or "").lower() in ("yes", "true", "1"))
+    body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, what counts under each evidence policy, who has been contacted, and what stands between this preview and a citable tag. Built {esc(bench['built_at'][:10])}; event-log digest {esc(commit)}; {esc(bench.get('rules', ''))}. Every statistic on this page covers the {len(ranked)} ranked organizations; the {len(watch)} watchlist entr{"y" if len(watch) == 1 else "ies"} contribute to none.</p></div>
+    <div class="card"><h3>Gates for a citable tag</h3><table class="tbl"><tr><th>Gate</th><th></th><th>Where it stands</th></tr>{grows}</table><p style="font-size:13px;color:var(--muted);margin-top:8px">Recomputed at every build by <code>python -m bench gates</code>. <code>bench release --stage published</code> refuses while any gate fails.</p></div>
     <div class="cols">
     <div class="card"><h3>Coverage</h3><table class="tbl">
-      <tr><td>Evaluators</td><td class="num">{len(bench['evaluators'])}</td></tr><tr><td>Signals</td><td class="num">{d['signals']}</td></tr><tr><td>Signals with an exact quote</td><td class="num">{quotes}</td></tr>
+      <tr><td>Ranked organizations</td><td class="num">{len(ranked)}</td></tr><tr><td>Watchlist (not ranked)</td><td class="num">{len(watch)}</td></tr><tr><td>Signals (ranked)</td><td class="num">{len(rsig)}</td></tr><tr><td>Signals with an exact quote (ranked)</td><td class="num">{quotes}</td></tr>
       <tr><td>Sources</td><td class="num">{len(bench['sources'])} ({sconf} confirmed, {simp} imported)</td></tr>
       <tr><td>Ledger transfers</td><td class="num">{len(tr)} ({conf} confirmed, {imp} imported)</td></tr><tr><td>Ledger roles</td><td class="num">{len(L['relationships'])}</td></tr><tr><td>Bounded negatives</td><td class="num">{len(L['negatives'])}</td></tr>
       <tr><td>Entities</td><td class="num">{len(L['entities'])}</td></tr><tr><td>Regimes</td><td class="num">{len(C['regs'])}</td></tr></table></div>
-    <div class="card"><h3>Exposure</h3><table class="tbl">
+    <div class="card"><h3>Exposure (ranked only)</h3><table class="tbl">
       <tr><td>Ranked evaluators with a direct lab tie (hop 0), any kind</td><td class="num">{direct} of {len(ex)}</td></tr>
       <tr><td>of which: lab cash or in-kind for evaluation work</td><td class="num">{split['funding']}</td></tr>
       <tr><td>of which: a lab owns a stake or is acquiring the evaluator</td><td class="num">{split['ownership']}</td></tr>
       <tr><td>of which: no-fee partnership or membership only</td><td class="num">{split['partnership']}</td></tr>
       <tr><td>Ranked evaluators with an inflow from a lab or a lab-tied party (hop 0 or 1)</td><td class="num">{near} of {len(ex)}</td></tr>
       <tr><td>Funding sources with a second hop traced</td><td class="num">{traced} of {srcn}</td></tr></table>
-      <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. Scores are readings of the public record at the build date, not endorsements.</p></div></div>
-    <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Replies from named organizations are filed as signals; after first publication, a score that moves by more than one anchor triggers a record packet to that organization (<code>bench outreach</code>).</p>
-    <h3 style="margin-top:14px">Data</h3><p style="font-size:13.5px"><a href="../bench.json">bench.json</a> (evaluators, assessments, signals, sources), <a href="../exposure.json">exposure.json</a>, <a href="../timeline.json">timeline.json</a>, <a href="{REPO}data/ledger/">ledger CSVs</a>, <a href="{REPO}graph/events.jsonl">event log</a>. Code Apache-2.0; data CC BY 4.0. Disclosure: <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>"""
+      <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. A 0 needs a quoted span; a 4 needs a span and a second source. Scores are readings of the public record at the build date, not endorsements.</p></div></div>
+    <div class="card"><h3>What counts under each evidence policy</h3>{policy_table(bench, "../")}</div>
+    <div class="card"><h3>Right of reply</h3><p style="font-size:13.5px">{len(log)} recipients ({sum(1 for r in log if r["kind"] == "organization")} organizations, {sum(1 for r in log if r["kind"] == "person")} people); {sent} contacted, {replied} replied. Packets are generated by <code>bench outreach --all</code>; sending is a human action, logged here with the date.</p><table class="tbl"><tr><th>Recipient</th><th>Kind</th><th>Contacted</th><th>Replied</th><th>Status</th></tr>{lrows or '<tr><td colspan="5">No packets generated yet.</td></tr>'}</table></div>
+    <div class="card"><h3>Second coder</h3><p style="font-size:13.5px">{len(coded)} assessment(s) second-coded{(f"; {agree} agree with the stored value") if coded else ""}. A human second coder on every extreme (every stored 0 or 4) is a gate for a citable tag; the full population follows by v0.2. Disagreements are logged in <code>data/coding/second-coder.csv</code> and in the assessment's resolution.</p></div>
+    <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Replies from named organizations and people are filed as signals; after first publication, a score that moves by more than one anchor triggers a record packet (<code>bench outreach</code>).</p>
+    <h3 style="margin-top:14px">Data</h3><p style="font-size:13.5px"><a href="../bench.json">bench.json</a> (evaluators, assessments with per-policy derivations, signals, sources), <a href="../exposure.json">exposure.json</a>, <a href="../timeline.json">timeline.json</a>, <a href="{REPO}data/ledger/">ledger CSVs</a>, <a href="{REPO}graph/events.jsonl">event log</a>, <a href="{REPO}RULES.md">RULES.md</a>. Code Apache-2.0; data CC BY 4.0. Disclosure: <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>"""
     return layout("Status", body, 1, "status")
 
-def load_data_counts(bench: dict) -> dict:
-    return {"signals": sum(len(e["signals"]) for e in bench["evaluators"])}
 
 def contribute_index() -> str:
-    body = f"""<div class="pagehead"><h1>Contribute</h1><p class="lead">Scores here move only when evidence moves. A contribution is a source, a signal with an exact quote, a ledger row, a confirmed re-derivation, or a docket. Nobody edits a score directly, including the maintainers.</p></div>
+    body = f"""<div class="pagehead"><h1>Contribute</h1><p class="lead">Scores here move only when evidence moves. A contribution is a source, a signal with an exact quote and a bound, a ledger row, a confirmed re-derivation, or a docket. Nobody edits a value directly, including the maintainers: values are derived from the signals under <a href="{REPO}RULES.md">RULES.md</a>.</p></div>
     <div class="cols"><div>
     <div class="card"><h3>If you are a person</h3><ul>
       <li><b>Ten minutes.</b> Open any evaluator page, follow a source link, and check that the quoted span is there. If it is not, open an issue with the signal id.</li>
       <li><b>An hour.</b> Confirm an imported ledger row: open its source, compare the figure, set <code>audit_status</code> to confirmed or differs, add a line to the audit file, open a pull request.</li>
-      <li><b>An afternoon.</b> Add evidence: a source you fetched yourself, a signal with a quote under 120 characters copied exactly, and if it changes an anchor, the new rationale.</li>
-      <li><b>If you work at an evaluator or a lab.</b> You are welcome to contribute; say so in the pull request. Evaluators can publish their contract terms and the relevant dimensions move on their own. To file a formal response, use the <a href="https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md">right-of-reply issue template</a>; it is filed as a signal with the date received.</li></ul>
-      <p style="font-size:13.5px;margin-top:10px">Full recipes and rules of evidence: <a href="{REPO}AGENTS.md">AGENTS.md</a>, <a href="{REPO}CONTRIBUTING.md">CONTRIBUTING.md</a>, <a href="{REPO}CONTRACT.md">CONTRACT.md</a>.</p></div>
+      <li><b>An afternoon.</b> Add evidence: a source you fetched yourself, a signal with a quote under 120 characters copied exactly, the anchor it supports as a bound, and the rule code that says so.</li>
+      <li><b>If you work at an evaluator or a lab.</b> You are welcome to contribute; say so in the pull request. Evaluators can publish their contract terms and the relevant dimensions move on their own. To file a formal response, use the <a href="https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md">right-of-reply issue template</a>; it is filed as a signal with the date received.</li>
+      <li><b>If you are named as a person.</b> The same reply channel is yours. Bench records public roles only and asserts no motive; an open question about a role or a gift is a request for a document, and you receive your card before it is published (RULES 12).</li></ul>
+      <p style="font-size:13.5px;margin-top:10px">Full recipes and rules of evidence: <a href="{REPO}AGENTS.md">AGENTS.md</a>, <a href="{REPO}CONTRIBUTING.md">CONTRIBUTING.md</a>, <a href="{REPO}CONTRACT.md">CONTRACT.md</a>, <a href="{REPO}RULES.md">RULES.md</a>.</p></div>
     <div class="card"><h3>What happens to a pull request</h3><ul>
-      <li>CI runs the verifier (the CONTRACT), rebuilds the graph and site, checks the committed event log matches a clean build, and runs the tests.</li>
+      <li>CI runs the verifier (the CONTRACT), rebuilds the graph and site, checks the committed event log matches a clean build, and runs the tests. The verifier rejects a stored value that disagrees with its derivation, a signal without a bound, and a role that disagrees with the rule.</li>
       <li>A machine review re-fetches every source the PR cites, checks that each quoted span appears verbatim, asks a model whether each claim is supported, qualified, or unsupported, and flags any assessment change with no new signal on that dimension. The report is posted on the PR.</li>
       <li>A maintainer reads the report and merges or asks for changes. Merged evidence appears on the site at the next build and in the next annual update paper.</li></ul></div></div>
     <div>
@@ -371,8 +529,9 @@ def contribute_index() -> str:
       <blockquote style="border-left:3px solid var(--teal);margin:8px 0;padding:8px 12px;font-size:13.5px;background:var(--paper)">{esc(AGENT_PROMPT)}</blockquote>
       <p style="font-size:13.5px">The agent must fetch sources itself, never sum across money measures, never turn a bounded absence into zero, name public roles only, and assert no motive. Its pull request is a queue item, not accepted evidence, until the checks and a maintainer pass it.</p></div>
     <div class="card"><h3>Dockets and certification</h3><p style="font-size:13.5px">Contestable claims can be drafted as Epistemedia dockets from Bench evidence (<code>bench docket build</code>), validated with Epistemedia's own validator, and submitted through <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a>. A docket is a draft until it is reviewed there by someone other than the drafter; drafts are not citable evidence and carry no certificate (see <a href="../dockets/index.html">Dockets</a> and <a href="{REPO}paper/CERTIFICATION.md">the certification plan</a>).</p></div>
-    <div class="card"><h3>What we will not accept</h3><p style="font-size:13.5px">Private communications, screenshots of paywalled pages, claims about a person's intent, non-public individuals, score edits without evidence, and deletions of rows (supersede them instead).</p></div></div></div>"""
+    <div class="card"><h3>What we will not accept</h3><p style="font-size:13.5px">Private communications, screenshots of paywalled pages, claims about a person's intent, non-public individuals, value edits without a signal, hypothetical organizations, and deletions of rows (supersede them instead).</p></div></div></div>"""
     return layout("Contribute", body, 1, "contribute")
+
 
 def paper_index() -> str:
     try:
@@ -382,14 +541,14 @@ def paper_index() -> str:
     except ImportError:
         html = "<pre>" + esc((ROOT / "paper" / "draft.md").read_text()) + "</pre>"
     rp = ROOT / "data" / "release.json"; rel = json.loads(rp.read_text()) if rp.exists() else {}
-    note = f'<div class="card"><h3>Draft, accepting submissions</h3><p style="font-size:13.5px">This is the working draft. Submissions merged before {esc(rel.get("window_until") or "the window closes")} form the launch-round section; the paper is then pinned to the v0 tag and submitted. Every number regenerates from the repository at that tag. Comment by opening an issue; correct by opening a pull request with evidence (<a href="../contribute/index.html">how</a>).</p></div>' if rel.get("stage") == "preview" else ""
+    note = f'<div class="card"><h3>Draft, accepting submissions</h3><p style="font-size:13.5px">This is the working draft. Submissions merged before {esc(rel.get("window_until") or "the window closes")} form the launch-round section; the paper is then pinned to a tag once the <a href="../status/index.html">gates</a> pass. Every number regenerates from the repository at that tag. Comment by opening an issue; correct by opening a pull request with evidence (<a href="../contribute/index.html">how</a>).</p></div>' if rel.get("stage") == "preview" else ""
     return layout("Paper", f'<div class="pagehead"><div class="kicker">Working draft, regenerated from the repository</div></div>{note}<div class="card paper">{html}</div>', 1, "paper")
 
+
 # ---------------------------------------------------------------- driver
-def render_all(bench: dict) -> dict:
+def render_all(bench: dict, timeline_rows: list | None = None) -> dict:
     C = _ctx(bench)
     tpl = (SITE / "template.html").read_text()
-    tpl = tpl.replace("<!--__EVIDENCE_SUMMARY__-->", evidence_summary(bench))
     css = re.search(r"<style>(.*?)</style>", tpl, re.S).group(1)
     write(DIST / "style.css", css + GRAPH_CSS)
     write(DIST / "site.js", SITE_JS)
@@ -402,10 +561,15 @@ def render_all(bench: dict) -> dict:
         write(DIST / "source" / f"{sid}.html", source_page(sid, bench, C)); n += 1
     write(DIST / "evaluators" / "index.html", evaluators_index(bench, C))
     write(DIST / "entities" / "index.html", entities_index(C))
-    write(DIST / "regimes" / "index.html", regimes_index(C))
+    write(DIST / "regimes" / "index.html", regimes_index(bench, C, timeline_rows or []))
+    write(DIST / "ledger" / "index.html", ledger_index(bench, C))
     write(DIST / "sources" / "index.html", sources_index(bench, C))
+    write(DIST / "rubric" / "index.html", rubric_index(bench))
+    write(DIST / "cases" / "index.html", cases_index())
+    write(DIST / "method" / "index.html", method_index(bench))
+    write(DIST / "exclusions" / "index.html", exclusions_index(bench))
     write(DIST / "dockets" / "index.html", dockets_index(C))
     write(DIST / "status" / "index.html", status_index(bench, C))
     write(DIST / "contribute" / "index.html", contribute_index())
     write(DIST / "paper" / "index.html", paper_index())
-    return {"pages": n + 4}
+    return {"pages": n + 12}

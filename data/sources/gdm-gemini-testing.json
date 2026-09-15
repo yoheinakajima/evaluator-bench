@@ -1,11 +1,12 @@
 {
-  "audit_status": "confirmed",
+  "audit_status": "unverifiable",
   "id": "gdm-gemini-testing",
-  "note": "Dreadnode and Vaultis named as external experts (cyber, CBRN, extremism). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+  "note": "Dreadnode and Vaultis named as external experts (cyber, CBRN, extremism). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches [audit 2026-09-15] the URL resolves to the deepmind.google homepage, which does not mention Dreadnode; the Gemini 3 launch post and press are cited instead. Supports nothing.",
   "published": "2025",
   "publisher": "Google DeepMind",
   "retrieved": "2026-09-14",
   "source_type": "self",
   "title": "Gemini model documentation, external testing",
-  "url": "https://deepmind.google/"
+  "url": "https://deepmind.google/",
+  "self_of": "google"
 }

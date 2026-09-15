@@ -1,0 +1,157 @@
+{
+ "evaluator": "msft",
+ "signals": {
+  "msft.01": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "F.1",
+   "quote": "Google (DeepMind), Microsoft, and xAI signed agreements with the US Center for AI Standards and Innovation (CAISI)",
+   "quote_source": "csa-caisi",
+   "fetch": {
+    "csa-caisi": "ok; page loads and supports the CAISI-agreement half of the claim (and a joint Deployment Safety Board with OpenAI); it does not say Microsoft is an OpenAI investor — promotable to confirmed with the claim narrowed"
+   },
+   "note": "F.1: a business unit of a frontier developer is 0 (Microsoft is itself a frontier developer under a CAISI testing agreement). True anchor recorded as 0; C14 clamps the cap to 1 while the source is unaudited. The 'major OpenAI investor' fact needs its own source (a Microsoft filing or OpenAI's recapitalization statement); the CSA note documents the joint 'Deployment Safety Board, operated jointly with OpenAI'."
+  },
+  "msft.02": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "G.6",
+   "quote": "guidance and best practices from the industry leading Microsoft AI Red Team",
+   "quote_source": "ms-redteam",
+   "fetch": {
+    "ms-redteam": "ok; Microsoft Learn hub page loads and supports the claim (the team is Microsoft's) — promotable to confirmed"
+   },
+   "note": "A business unit of a frontier developer is 0 (F.1, G.6). Recorded at the true anchor; C14 clamps to 1 while unaudited. The Learn page is the organization's own page, an admission."
+  },
+  "msft.03": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.3",
+   "quote": "Microsoft’s AI red team is excited to share our whitepaper",
+   "quote_source": "ms-redteam-100",
+   "fetch": {
+    "ms-redteam": "ok",
+    "ms-redteam-100": "ok; page loads and documents the team's own published whitepaper — promotable to confirmed"
+   },
+   "note": "Findings on other labs' models are not published under the team's name (R.3 first clause: 1); the team publishes its own reports on other work (the 100-products whitepaper, PyRIT), so R.3's second clause caps at 2, not the stored 1. The negative itself cannot be quoted.",
+   "sources": [
+    "ms-redteam",
+    "ms-redteam-100"
+   ]
+  },
+  "msft.04": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "Microsoft's Open Automation Framework to Red Team Generative AI Systems (PyRIT)",
+   "quote_source": "ms-redteam",
+   "fetch": {
+    "ms-redteam": "ok; supports the claim — promotable to confirmed"
+   },
+   "note": "M.1: open code alone is 3 (PyRIT is open source; ms-redteam-100: 'an open-source toolkit to help researchers identify vulnerabilities in their own AI systems'). Tasks and per-evaluation factsheets are not open (no 4). C14 holds floors at or below 3 while unaudited, which coincides. Stored 2 would rise to 3."
+  },
+  "msft.05": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "A.5",
+   "quote": "red teaming has become a key part of Microsoft’s approach to generative AI product development",
+   "quote_source": "ms-redteam-100",
+   "fetch": {
+    "ms-redteam": "ok",
+    "ms-redteam-100": "ok; supports the claim — promotable to confirmed"
+   },
+   "note": "A first-party team embedded in the developer's product development is anchor 4 (A.5). Recorded at the true anchor; held at 3 by C14 (unaudited) and, once confirmed, by C16 (both sources are self-published; a 4 needs a tier-1/2 source or a non-self second source). Access to other labs' models rests on the OpenAI partnership and is not documented here.",
+   "sources": [
+    "ms-redteam",
+    "ms-redteam-100"
+   ]
+  },
+  "msft.06": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "P.7",
+   "quote": "guidance and best practices from the industry leading Microsoft AI Red Team",
+   "quote_source": "ms-redteam",
+   "fetch": {
+    "ms-redteam": "ok; supports the claim — promotable to confirmed"
+   },
+   "note": "Employees of a lab (a first-party team) are 0 or 1 by P.1; no recusal from evaluating the employer's own or partner models is documented, so 0. C14 clamps to 1 while unaudited."
+  },
+  "msft.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "S.2",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "ms-redteam": "ok; page loads but says nothing about how engagement scope is set (no supporting span)"
+   },
+   "note": "No documented right to add questions in engagements caps at 2; the sources describe scope only as 'expanded the scope and scale of our work'. A cap of 2 needs no span."
+  },
+  "msft.08": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "X.2",
+   "quote": "What is Azure AI Content Safety?",
+   "quote_source": "ms-redteam",
+   "fetch": {
+    "ms-redteam": "ok; the hub lists Azure AI Content Safety and Azure AI harms-mitigation product pages — promotable to confirmed for the product fact"
+   },
+   "note": "Microsoft sells services to labs (Azure compute to OpenAI) and products to labs' customers: anchor 1 (X.2). Azure AI Content Safety is a monitoring/guardrail product; if it is documented as sold to an evaluated lab, X.1 gives 0. The span is a product link on the team's own hub; a filing (10-K) is the better source for the products fact."
+  },
+  "msft.09": {
+   "bound": {
+    "cap": 0
+   },
+   "bound_note": "",
+   "rule": "G.6",
+   "quote": "The AI red team was formed in 2018 to address the growing landscape of AI safety and security risks",
+   "quote_source": "ms-redteam-100",
+   "fetch": {
+    "ms-redteam": "ok",
+    "ms-redteam-100": "ok; supports the claim ('As of October 2024, we had red teamed more than 100 generative AI products') — promotable to confirmed"
+   },
+   "note": "An internal function of the developer since 2018 is a business unit: 0 (G.6). C14 clamps to 1 while unaudited."
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled",
+   "note": "A first-party team's access is the developer's own decision; for a lab unit 'lab-controlled' and 'self-imposed' coincide. Nothing statutory."
+  },
+  "R": {
+   "mechanism": "lab-controlled",
+   "note": "The developer decides what its own red team publishes; for a lab unit this coincides with self-imposed. Not statutory."
+  }
+ },
+ "dissent": {
+  "lower": "Governance (1 to 0). The Microsoft AI Red Team is an internal function formed in 2018 inside a frontier developer, described on Microsoft's own Learn hub and Security Blog; G.6 and F.1 place a business unit of a developer at 0. Only the unaudited status of two pages that load and say exactly this holds the value at 1; both are the organization's own admissions.",
+  "higher": "Publication rights (1 to 2). The team publishes under its own name: a whitepaper on lessons from red teaming more than 100 generative AI products, case studies, and the open-source PyRIT toolkit. R.3's second clause caps an organization that publishes its own reports on other work at 2, not 1, even where findings on other labs' models stay inside system cards."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [],
+ "notes": [
+  "Both Microsoft sources load with fetch_text and support the claims cited to them (msft.02, .04, .05, .06, .08, .09; .03's own-publication fact); the Microsoft Learn page at https://learn.microsoft.com/en-us/security/ai-red-team/ is live (hub with PyRIT and 'Lessons from red teaming 100 generative AI products'), so no replacement page is needed. csa-caisi also loads. All three are promotable to confirmed by a named re-fetch (CONTRACT 12); once promoted, F, G and P derive to 0 (each has a span) and A stays 3 by C16.",
+  "Derived values under these bounds (leads policy, unaudited clamp): F 1, G 1, P 1, A 3, S 2, R 2, M 3, X 1. Divergence from stored: R 1 -> 2 (R.3 second clause), M 2 -> 3 (M.1 open code).",
+  "No PLACEHOLDER bounds were present on the msft signals file when read."
+ ]
+}

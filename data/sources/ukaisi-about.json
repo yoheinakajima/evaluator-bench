@@ -1,0 +1,12 @@
+{
+  "id": "ukaisi-about",
+  "title": "About the AI Security Institute",
+  "publisher": "UK AI Security Institute",
+  "url": "https://www.aisi.gov.uk/about",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Institute About page: \"research organisation within the UK government's Department for Science, Innovation and Technology\"; \"£66m in funding per financial year\". Fetched 2026-09-15 with the CI normalizer; spans present.",
+  "self_of": "ukaisi"
+}

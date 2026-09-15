@@ -1,0 +1,12 @@
+{
+  "id": "anthropic-amodei-x-pace-frontier",
+  "title": "Dario Amodei on X: 'We Must Pace the Frontier ... We'll provide third-party evaluators with permanent, employee-level access'",
+  "publisher": "Dario Amodei (Anthropic CEO), X",
+  "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+  "published": "2026-09-12",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Announcement post (4:30 PM, Sep 12, 2026 per the page). fetch_text reads x.com status pages through their server-rendered title/OG text, so CI can check these spans (SHA-256 a9e72bbe0e27...). This is the 'employee-level' wording the paper uses; METR is not named in the post itself, only in the essay it links.",
+  "self_of": "anthropic"
+}

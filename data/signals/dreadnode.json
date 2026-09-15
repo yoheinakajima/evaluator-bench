@@ -1,98 +1,175 @@
 [
-  {
-    "id": "dreadnode.01",
-    "evaluator": "dreadnode",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Named by Google DeepMind as an external cyber expert on Gemini testing.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "dreadnode.01",
+  "evaluator": "dreadnode",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Named by Google DeepMind as an external cyber expert on Gemini testing.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-google-gemini3",
+   "dreadnode-time-gdm-pledge"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 1
   },
-  {
-    "id": "dreadnode.02",
-    "evaluator": "dreadnode",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Venture-backed; no published COI policy found.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+  "quote_source": "dreadnode-google-gemini3"
+ },
+ {
+  "id": "dreadnode.02",
+  "evaluator": "dreadnode",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Venture-backed; no published COI policy found.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-seriesa",
+   "dreadnode-securityweek"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
   },
-  {
-    "id": "dreadnode.03",
-    "evaluator": "dreadnode",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Evaluation terms and results are not public.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.2",
+  "quote": "announced its $14 million Series A funding round, led by Decibel",
+  "quote_source": "dreadnode-seriesa"
+ },
+ {
+  "id": "dreadnode.03",
+  "evaluator": "dreadnode",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Evaluation terms and results are not public.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-time-gdm-pledge",
+   "dreadnode-arxiv-airtbench"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "dreadnode.04",
-    "evaluator": "dreadnode",
-    "dimension": "X",
-    "direction": "against",
-    "claim": "Sells offensive-security products.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.3",
+  "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+  "quote_source": "dreadnode-time-gdm-pledge"
+ },
+ {
+  "id": "dreadnode.04",
+  "evaluator": "dreadnode",
+  "dimension": "X",
+  "direction": "against",
+  "claim": "Sells offensive-security products.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-seriesa",
+   "dreadnode-securityweek"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "dreadnode.05",
-    "evaluator": "dreadnode",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Lab-paid engagements.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "X.1 (second sentence)",
+  "quote": "two new products — Strikes and Spyglass — that form the core of its platform",
+  "quote_source": "dreadnode-securityweek"
+ },
+ {
+  "id": "dreadnode.05",
+  "evaluator": "dreadnode",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Lab-paid engagements.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-google-gemini3"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "dreadnode.06",
-    "evaluator": "dreadnode",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Undisclosed.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.3",
+  "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+  "quote_source": "dreadnode-google-gemini3"
+ },
+ {
+  "id": "dreadnode.06",
+  "evaluator": "dreadnode",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Undisclosed.",
+  "sources": [
+   "gdm-gemini-testing"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "dreadnode.07",
-    "evaluator": "dreadnode",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Scope set by lab.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.5"
+ },
+ {
+  "id": "dreadnode.07",
+  "evaluator": "dreadnode",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Scope set by lab.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-time-gdm-pledge"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 2
   },
-  {
-    "id": "dreadnode.08",
-    "evaluator": "dreadnode",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "Methods and results are closed; no public methodology.",
-    "sources": [
-      "gdm-gemini-testing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  }
+  "rule": "S.2",
+  "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+  "quote_source": "dreadnode-time-gdm-pledge"
+ },
+ {
+  "id": "dreadnode.08",
+  "evaluator": "dreadnode",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "Methods and results are closed; no public methodology.",
+  "sources": [
+   "gdm-gemini-testing",
+   "dreadnode-google-gemini3"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 1
+  },
+  "rule": "M.2",
+  "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+  "quote_source": "dreadnode-google-gemini3"
+ },
+ {
+  "id": "dreadnode.09",
+  "evaluator": "dreadnode",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes AIRTBench, an AI red-teaming benchmark with open code (Apache-2.0) and results on Claude 3.7 Sonnet, Gemini 2.5 Pro and GPT-4.5; the Gemini engagement itself remains closed.",
+  "sources": [
+   "dreadnode-arxiv-airtbench",
+   "dreadnode-github-airtbench"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "M.1",
+  "quote": "challenges from the Crucible challenge environment on the Dreadnode platform",
+  "quote_source": "dreadnode-arxiv-airtbench",
+  "note": "Needed because dreadnode.08's claim ('no public methodology') is contradicted at the organization level; M.1 gives 3 for open code alone. Rule 9 does not hold this floor down: AIRTBench is a published evaluation of frontier models. Conflicts with the cap of 1 on dreadnode.08; see the M resolution."
+ }
 ]

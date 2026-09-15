@@ -1,0 +1,12 @@
+{
+  "id": "andon-vending-paper",
+  "title": "Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents (arXiv 2502.15840)",
+  "publisher": "Andon Labs (arXiv)",
+  "url": "https://arxiv.org/abs/2502.15840",
+  "published": "2025-02-20",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Andon's own paper describing the simulated vending environment. Abstract page; no code link. Fetched 2026-09-15; span present.",
+  "self_of": "andon"
+}

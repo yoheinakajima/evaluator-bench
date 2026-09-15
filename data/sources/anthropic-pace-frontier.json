@@ -1,0 +1,12 @@
+{
+  "id": "anthropic-pace-frontier",
+  "title": "We Must Pace the Frontier",
+  "publisher": "Dario Amodei (Anthropic CEO), darioamodei.com",
+  "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+  "published": "2026-09-12",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "The essay behind the 'Pace the Frontier' plan. It is hosted on the CEO's personal domain, not anthropic.com; no anthropic.com post on the commitment was found by site search or URL probing as of 2026-09-15 (anthropic.com/news lists only an Aug 2026 alignment/security post that says Anthropic is 'planning to work with METR for an independent review'). The page carries no date metadata; the date is taken from the announcement post x.com/DarioAmodei/status/2098773920774074715 (2026-09-12), which links to it. Fetched 2026-09-15 with bench.review.fetch_text, SHA-256 62b8af679fe1...; the essay says 'employee-like', the X post says 'employee-level'. The space before ')' in the METR span comes from the normalizer stripping the link tag.",
+  "self_of": "anthropic"
+}

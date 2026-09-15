@@ -1,158 +1,323 @@
 [
-  {
-    "id": "averi.01",
-    "evaluator": "averi",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Secure-enclave double-blind protocol with DeepMind, OpenMined and MLCommons; neither party sees the other's confidential material.",
-    "sources": [
-      "averi-pilot"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+ {
+  "id": "averi.01",
+  "evaluator": "averi",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Secure-enclave double-blind protocol with DeepMind, OpenMined and MLCommons; neither party sees the other's confidential material.",
+  "sources": [
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 0
   },
-  {
-    "id": "averi.02",
-    "evaluator": "averi",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "501(c)(3); endorsed Illinois SB 315; co-authored AEF-1.",
-    "sources": [
-      "averi-launch",
-      "averi-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "A.1",
+  "quote": "The pilot tested Gemini 2.5 Flash-Lite using never-before-used prompts from the MLCommons safety benchmark family",
+  "quote_source": "averi-pilot"
+ },
+ {
+  "id": "averi.02",
+  "evaluator": "averi",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "501(c)(3); endorsed Illinois SB 315; co-authored AEF-1.",
+  "sources": [
+   "averi-launch",
+   "averi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "averi.03",
-    "evaluator": "averi",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.",
-    "sources": [
-      "averi-pilot",
-      "arxiv-frontier-auditing"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "G.1",
+  "quote": "AVERI is a 501(c)(3), US-based non-profit think tank",
+  "quote_source": "averi-launch"
+ },
+ {
+  "id": "averi.03",
+  "evaluator": "averi",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.",
+  "sources": [
+   "averi-pilot",
+   "arxiv-frontier-auditing"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "averi.04",
-    "evaluator": "averi",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Founder and several staff come from labs and lab-adjacent institutions.",
-    "sources": [
-      "averi-launch"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "M.1",
+  "quote": "converts what we learn into auditing standards, policy analysis, and open source tools",
+  "quote_source": "averi-pilot"
+ },
+ {
+  "id": "averi.04",
+  "evaluator": "averi",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Founder and several staff come from labs and lab-adjacent institutions.",
+  "sources": [
+   "averi-launch"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "averi.05",
-    "evaluator": "averi",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "Pilot audits are voluntary and lab-selected; not yet a full-time auditor.",
-    "sources": [
-      "averi-about",
-      "averi-pilot"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "P.3",
+  "quote": "I hope that AVERI will also benefit from the practical experiences I had at OpenAI",
+  "quote_source": "averi-launch"
+ },
+ {
+  "id": "averi.05",
+  "evaluator": "averi",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "Pilot audits are voluntary and lab-selected; not yet a full-time auditor.",
+  "sources": [
+   "averi-about",
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "averi.06",
-    "evaluator": "averi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Funding sources not fully itemized publicly.",
-    "sources": [
-      "averi-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "S.4",
+  "quote": "some companies have chosen to conduct voluntary pilots with AVERI and other organizations",
+  "quote_source": "averi-about"
+ },
+ {
+  "id": "averi.06",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Funding sources not fully itemized publicly.",
+  "sources": [
+   "averi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "averi.07",
-    "evaluator": "averi",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes pilot findings.",
-    "sources": [
-      "averi-pilot"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "F.12",
+  "quote": "Our funders include the AI Underwriting Company, Coefficient Giving, Craig Falls, Geoff Ralston, Good Forever Foundation",
+  "quote_source": "averi-about"
+ },
+ {
+  "id": "averi.07",
+  "evaluator": "averi",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes pilot findings.",
+  "sources": [
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 2
   },
-  {
-    "id": "averi.08",
-    "evaluator": "averi",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products; tools open source.",
-    "sources": [
-      "averi-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
+  "rule": "R.2",
+  "quote": "We provided Google DeepMind with a confidential report of the findings",
+  "quote_source": "averi-pilot"
+ },
+ {
+  "id": "averi.08",
+  "evaluator": "averi",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products; tools open source.",
+  "sources": [
+   "averi-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "averi.09",
-    "evaluator": "averi",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Funders disclosed by name (AIUC, Coefficient, Halcyon, Fathom, Sympatico Ventures, individuals) with no donor a majority; donations from non-executive lab employees disclosed; API credits offered by six labs and disclosed.",
-    "sources": [
-      "averi-funding"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "No donor makes up a majority of our funding"
+  "rule": "X.4",
+  "quote": "We convert insights from these processes into open source tools",
+  "quote_source": "averi-about"
+ },
+ {
+  "id": "averi.09",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Funders disclosed by name (AIUC, Coefficient, Halcyon, Fathom, Sympatico Ventures, individuals) with no donor a majority; donations from non-executive lab employees disclosed; API credits offered by six labs and disclosed.",
+  "sources": [
+   "averi-funding"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "No donor makes up a majority of our funding",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "averi.10",
-    "evaluator": "averi",
-    "dimension": "P",
-    "direction": "for",
-    "claim": "Executive director recused from auditing OpenAI for at least two years after leaving and sold eligible shares; team members' individual holdings disclosed; mandatory recusal for material conflicts.",
-    "sources": [
-      "averi-funding"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "recused from directly auditing OpenAI for at least two years"
+  "rule": "F.12",
+  "quote_source": "averi-funding"
+ },
+ {
+  "id": "averi.10",
+  "evaluator": "averi",
+  "dimension": "P",
+  "direction": "for",
+  "claim": "Executive director recused from auditing OpenAI for at least two years after leaving and sold eligible shares; team members' individual holdings disclosed; mandatory recusal for material conflicts.",
+  "sources": [
+   "averi-funding"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "Miles is recused from directly auditing OpenAI until two years after his October 2024 departure",
+  "bound": {
+   "floor": 3
   },
-  {
-    "id": "averi.11",
-    "evaluator": "averi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.",
-    "sources": [
-      "averi-funding",
-      "apollo-pbc-round"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
+  "rule": "P.5",
+  "quote_source": "averi-funding"
+ },
+ {
+  "id": "averi.11",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.",
+  "sources": [
+   "averi-funding",
+   "apollo-pbc-round"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "bound": {
+   "cap": 3
   },
-  {
-    "id": "averi.12",
-    "evaluator": "averi",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Raised $7.5 million toward a $13 million goal at launch; funders named; a search of Coefficient's grants pages found no discrete AVERI grant page though AVERI names Coefficient as a funder.",
-    "sources": [
-      "fortune-averi",
-      "averi-funding"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-01-15",
-    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million"
-  }
+  "rule": "F.6",
+  "quote": "Our funders include the AI Underwriting Company, Coefficient Giving",
+  "quote_source": "averi-funding"
+ },
+ {
+  "id": "averi.12",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Raised $7.5 million toward a $13 million goal at launch; funders named; a search of Coefficient's grants pages found no discrete AVERI grant page though AVERI names Coefficient as a funder.",
+  "sources": [
+   "fortune-averi",
+   "averi-funding"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-01-15",
+  "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "F.12",
+  "quote_source": "fortune-averi"
+ },
+ {
+  "id": "averi.13",
+  "evaluator": "averi",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Published conflict-of-interest rules: all employees, board members and contractors disclose conflicts on starting and biannually; material conflicts trigger mandatory recusal or declining the engagement; no cash donations or compensation are accepted from frontier AI companies or their executives; lab API credits and lab-employee donations are disclosed; the most significant conflicts are disclosed publicly.",
+  "sources": [
+   "averi-funding"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "floor": 3
+  },
+  "rule": "G.2",
+  "quote": "mitigation steps may include recusing personnel from projects or declining an engagement entirely",
+  "quote_source": "averi-funding",
+  "note": "G.2: a nonprofit with a published policy naming at least two of recusal for financial interests, no side money from evaluated labs, and disclosure of lab-linked revenue floors at 3. G.7 (4) needs tier-1 evidence of an independent board and external review."
+ },
+ {
+  "id": "averi.14",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "AVERI accepts and has received donations from current and former non-executive employees and alumni of frontier AI companies; amounts are not disclosed.",
+  "sources": [
+   "averi-funding",
+   "fortune-averi"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 3
+  },
+  "rule": "F.7",
+  "quote": "several non-executive employees and alumni of frontier AI companies",
+  "quote_source": "averi-funding",
+  "note": "F.7: undisclosed amounts carry no bound, but a policy that permits lab-employee donations caps at 3. Fortune corroborates (\"donations from current and former non-executive employees of frontier AI companies\")."
+ },
+ {
+  "id": "averi.15",
+  "evaluator": "averi",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "The findings of the only completed pilot were delivered to Google DeepMind as a confidential report; the public pilot report describes the protocol and the types of successes and failure modes without quantitative results, prompts or outputs.",
+  "sources": [
+   "averi-pilot"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 2
+  },
+  "rule": "R.2",
+  "quote": "We provided Google DeepMind with a confidential report of the findings",
+  "quote_source": "averi-pilot",
+  "note": "Anchor 2 at most: publication with the findings withheld. No rule names this case (R.2 covers editorial feedback, R.3 system-card-only); recorded as a gap and capped by the anchor text."
+ },
+ {
+  "id": "averi.16",
+  "evaluator": "averi",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "AVERI's only completed engagement evaluated Gemini 2.5 Flash-Lite, a publicly released model, inside a secure enclave that hid the weights; no pre-release, safeguards-off, helpful-only, log or on-site access has been documented.",
+  "sources": [
+   "averi-pilot",
+   "averi-about"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": {
+   "cap": 0
+  },
+  "rule": "A.1",
+  "quote": "The pilot tested Gemini 2.5 Flash-Lite",
+  "quote_source": "averi-pilot",
+  "note": "A.1 scores what was granted: public-model access is anchor 0. C17: an against-signal from the organization's own page with a span is an admission against interest, so the 0 is effective. Flagged for review: the stored 3 read the enclave protocol as access depth."
+ },
+ {
+  "id": "averi.17",
+  "evaluator": "averi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "AVERI has received API credits \"as donations or compensation\" from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI and Thinking Machines Lab; amounts are undisclosed.",
+  "sources": [
+   "averi-funding"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v0.5",
+  "bound": null,
+  "rule": "F.11",
+  "quote": "We've received API credits as donations or compensation from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI",
+  "quote_source": "averi-funding",
+  "note": "F.11: undisclosed in-kind credits with no dependency statement carry no funding bound; recorded on the access mechanism. The page says credits came \"as donations or compensation\": credits received as compensation for pilot work would be per-engagement lab payment in kind (F.3, cap 2). Document request: which labs provided credits as compensation and for which engagement. Bound left null pending that document.",
+  "bound_note": "F.11: undisclosed in-kind credits without a dependency statement set no funding bound; recorded on the access mechanism. Null pending a document on which credits were compensation for pilot work (F.3 would then cap at 2)."
+ }
 ]

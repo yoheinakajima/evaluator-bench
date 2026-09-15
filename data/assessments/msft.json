@@ -1,101 +1,97 @@
 [
-  {
-    "evaluator": "msft",
-    "dimension": "F",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "msft.01"
-    ],
-    "rationale": "Anchor 0 on funding given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "G",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "msft.02",
-      "msft.09"
-    ],
-    "rationale": "Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v0-final",
-    "evidence_limited": true
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "P",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "msft.06"
-    ],
-    "rationale": "Anchor 1 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "msft.05"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "S",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "msft.07"
-    ],
-    "rationale": "Anchor 2 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "R",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "msft.03"
-    ],
-    "rationale": "Anchor 1 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "msft.04"
-    ],
-    "rationale": "Anchor 2 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "msft",
-    "dimension": "X",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "msft.08"
-    ],
-    "rationale": "Anchor 1 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "msft",
+  "dimension": "F",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "msft.01"
+  ],
+  "rationale": "Anchor 0 on funding given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0-final",
+  "evidence_limited": true
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "G",
+  "value": 0,
+  "anchor": 0,
+  "signals": [
+   "msft.02",
+   "msft.09"
+  ],
+  "rationale": "Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "P",
+  "value": 0,
+  "anchor": 0,
+  "signals": [
+   "msft.06"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "A",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "msft.05"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0",
+  "mechanism": "lab-controlled",
+  "evidence_limited": true
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "S",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "msft.07"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "msft.03"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)",
+  "mechanism": "lab-controlled"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "M",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "msft.04"
+  ],
+  "assessed": "2026-09-15",
+  "assessor": "rules v0.1 (RULES.md)"
+ },
+ {
+  "evaluator": "msft",
+  "dimension": "X",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "msft.08"
+  ],
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

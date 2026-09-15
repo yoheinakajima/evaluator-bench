@@ -10,5 +10,10 @@
  "confidence": "high",
  "summary": "Offensive-cyber evaluator cited in OpenAI and Anthropic system cards; SOLVE framework used by UK AISI. Pattern Labs and Irregular are the same company.",
  "what_would_move_the_score": "A published COI policy, disclosure of lab revenue share, and a firewall between evaluations and the security-products business.",
- "role": "vendor"
+ "role": "vendor",
+ "dissent": {
+  "lower": "Role incompatibility (1 to 0). Irregular says it works side by side with OpenAI and Anthropic 'to develop the defenses needed before deployment' and describes a roadmap of runtime security controls for the same customers it evaluates. If any evaluated lab pays for those defenses, X.1 places the company at 0: it would be selling the fix to the party it grades.",
+  "higher": "Funding (1 to 2). The revenue disclosed is 'millions' from lab partnerships, but the UK government uses the SOLVE framework and the company markets to enterprises beyond the labs. If a non-lab revenue base is documented, per-engagement lab fees beside that base cap at 2 under F.3 rather than 1 under F.5."
+ },
+ "list_group": "commercial"
 }

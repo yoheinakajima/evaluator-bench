@@ -10,5 +10,10 @@
  "summary": "Announced 12 September 2026 with a request to join Anthropic's embedded-evaluator program; no evaluations yet.",
  "what_would_move_the_score": "A governance structure that insulates the initiative from Nvidia, and a first published evaluation.",
  "role": "expected-entrant",
- "status": "watchlist"
+ "status": "watchlist",
+ "dissent": {
+  "lower": "Role incompatibility (2 to 1). Hugging Face sells PRO, Team and Enterprise plans and paid inference to the same ecosystem it proposes to audit, and frontier developers distribute models through the Hub. If any evaluated lab is a paying Enterprise Hub or inference customer, anchor 1 (sells products or services to labs) applies rather than the 2 that holds only until a lab customer is documented.",
+  "higher": "Access depth (0 to 1). Anthropic committed on 12 September to give third-party evaluators permanent, employee-level access, OpenAI said it would match, and Hugging Face asked to join within hours with a named lead. If admitted, the initiative's first engagement would begin above public-API access. The record shows a live programme and a pending request, not a refusal."
+ },
+ "list_group": "referee"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "irregular-xai-series-b",
+  "title": "Series B funding round",
+  "publisher": "xAI",
+  "url": "https://x.ai/news/series-b",
+  "published": "2024-05-26",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Third-party primary document (a frontier developer's own funding post), typed self per repo precedent. Fetched 2026-09-15; span 'with participation from key investors including Valor Equity Partners, Vy Capital, Andreessen Horowitz, Sequoia Capital' present. Establishes Sequoia Capital as an investor in a frontier developer for F.4/G.3.",
+  "self_of": "xai"
+}

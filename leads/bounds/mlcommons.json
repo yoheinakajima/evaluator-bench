@@ -1,0 +1,246 @@
+{
+ "evaluator": "mlcommons",
+ "signals": {
+  "mlcommons.01": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "MLCommons is an industry consortium backed by several dozen tech firms",
+   "quote_source": "mlcommons-siliconangle",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-ailuminate": "ok",
+    "mlcommons-siliconangle": "ok"
+   },
+   "note": "Member dues are the only revenue base named and the working-group contributor list includes Amazon, Anthropic, Google, Google DeepMind, Meta FAIR, Microsoft and OpenAI, i.e. every major lab: cap 1 (F.5). The home page says \"MLCommons is supported by over 125 members and affiliates\"; per-member dues are not disclosed. A published share below 50% would lift this to 2.",
+   "sources": [
+    "mlcommons",
+    "mlcommons-ailuminate",
+    "mlcommons-siliconangle"
+   ]
+  },
+  "mlcommons.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "M.1",
+   "quote": "The Official Test dataset is private to avoid SUTs “gaming” the benchmark",
+   "quote_source": "mlcommons-demo-dataset",
+   "fetch": {
+    "mlcommons": "ok",
+    "averi-pilot": "ok",
+    "mlcommons-demo-dataset": "ok"
+   },
+   "note": "Grading code (ModelBench) and a Creative Commons DEMO prompt set are open; the Official Test prompts are private: tasks partly open, 3 (M.1, M.3). A 4 needs open tasks plus documented third-party re-runs or factsheets. Stored 4 would move to 3.",
+   "sources": [
+    "mlcommons",
+    "averi-pilot",
+    "mlcommons-demo-dataset"
+   ]
+  },
+  "mlcommons.03": {
+   "bound": {
+    "floor": 0
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "AVERI, OpenMined, and MLCommons were not able to see the model’s weights",
+   "quote_source": "averi-pilot",
+   "fetch": {
+    "averi-pilot": "ok"
+   },
+   "note": "The deepest documented engagement is running held-out prompts against a released model (Gemini 2.5 Flash-Lite) inside an enclave that hid the weights from MLCommons: public-API-equivalent access, anchor 0 (A.1). No pre-release or safeguards-off access is documented. Stored 2 would move to 0 unless a lab-granted pre-release run is documented."
+  },
+  "mlcommons.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "G.4",
+   "quote": "MLCommons is supported by over 125 members and affiliates",
+   "quote_source": "mlcommons",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-ailuminate": "ok",
+    "mlcommons-propublica": "ok"
+   },
+   "note": "Member-governed 501(c)(6) consortium (ProPublica) whose working group includes the labs benchmarked (Anthropic, Google, Meta, OpenAI among AILuminate contributors): cap 2 (G.4).",
+   "sources": [
+    "mlcommons",
+    "mlcommons-ailuminate",
+    "mlcommons-propublica"
+   ]
+  },
+  "mlcommons.05": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "designed and developed by the MLCommons AI Risk and Reliability working group",
+   "quote_source": "mlcommons-demo-dataset",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-demo-dataset": "ok"
+   },
+   "note": "Self-directed benchmark design with no engagement to refuse floors at 3 (S.5). S.6 (co-authoring with the labs being evaluated) independently caps at 3 because lab employees sit in the working group; not added as a separate signal since the value is 3 either way.",
+   "sources": [
+    "mlcommons",
+    "mlcommons-demo-dataset"
+   ]
+  },
+  "mlcommons.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.7",
+   "quote": "Public reports of 13 systems-under-test (SUTS)",
+   "quote_source": "mlcommons-demo-dataset",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-demo-dataset": "ok"
+   },
+   "note": "Grades are published for named systems, but nothing states who reviews them before publication: \"publishes\" alone floors at 2 (R.7). A 3 needs a statement of no lab review or security-only redactions disclosed (R.1); R.5 needs an adverse finding beyond a ranking, and a \"Poor\" grade is a ranking. Stored 3 would move to 2 until MLCommons publishes its pre-publication review policy for SUT vendors.",
+   "sources": [
+    "mlcommons",
+    "mlcommons-demo-dataset"
+   ]
+  },
+  "mlcommons.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.4",
+   "quote": "People from the following organizations have collaborated within the working group",
+   "quote_source": "mlcommons-ailuminate",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-ailuminate": "ok"
+   },
+   "note": "Lab employees (Amazon, Anthropic, Cohere, Google, Google DeepMind, Meta FAIR, Microsoft, OpenAI are listed) sit in the working group that designs the benchmark: cap 2 (P.4, employee of a lab in a governing role, regardless of recusal).",
+   "sources": [
+    "mlcommons",
+    "mlcommons-ailuminate"
+   ]
+  },
+  "mlcommons.08": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "X.4",
+   "quote": "publicly released the AILuminate DEMO prompt dataset, a collection of 1,200 prompts",
+   "quote_source": "mlcommons-demo-dataset",
+   "fetch": {
+    "mlcommons": "ok",
+    "mlcommons-demo-dataset": "ok"
+   },
+   "note": "Open, free benchmark tooling: 3 (X.4). Document request: whether Official Test runs and the Global Assurance Program (with Google, Microsoft, Qualcomm, KPMG) are paid by the vendors tested; a paid run for a lab would be X.2.",
+   "sources": [
+    "mlcommons",
+    "mlcommons-demo-dataset"
+   ]
+  },
+  "mlcommons.09": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "P.4",
+   "quote": "Peter Mattson is a senior staff engineer at Google. He founded and is President of MLCommons",
+   "quote_source": "mlcommons-leadership",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "mlcommons-leadership": "ok"
+   },
+   "note": "A board member and president who is an employee of a lab caps at 2 regardless of recusal (P.4). Not P.1: he holds a job at the lab, not a governance seat. Added the leadership page (self, confirmed) so the cap is admissible under the standard policy.",
+   "sources": [
+    "evaluators-ledger",
+    "mlcommons-leadership"
+   ]
+  }
+ },
+ "existing_quote_checks": {},
+ "new_sources": [
+  {
+   "id": "mlcommons-ailuminate",
+   "title": "AILuminate",
+   "publisher": "MLCommons",
+   "url": "https://mlcommons.org/ailuminate/",
+   "published": "2026-04-27",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Benchmark page: \"MLCommons is a 501c6 non-profit organization\"; sponsors; AI Risk & Reliability working-group contributor list naming Amazon, Anthropic, Cohere, Google, Google DeepMind, Meta FAIR, Microsoft, OpenAI. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "mlcommons-demo-dataset",
+   "title": "MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github",
+   "publisher": "MLCommons",
+   "url": "https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/",
+   "published": "2025-01-15",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "1,200-prompt DEMO set public; Practice set on request; Official Test dataset private to prevent gaming; public reports of 13 systems-under-test. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "mlcommons-leadership",
+   "title": "Leadership",
+   "publisher": "MLCommons",
+   "url": "https://mlcommons.org/about-us/leadership/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Board and officers: \"Peter Mattson is a senior staff engineer at Google. He founded and is President of MLCommons\". Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "mlcommons-siliconangle",
+   "title": "MLCommons releases new AILuminate benchmark for measuring AI model safety",
+   "publisher": "SiliconANGLE",
+   "url": "https://siliconangle.com/2024/12/04/mlcommons-releases-new-ailuminate-benchmark-measuring-llm-safety/",
+   "published": "2024-12-04",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "\"MLCommons is an industry consortium backed by several dozen tech firms\"; working group included employees of Nvidia, Intel, Qualcomm. Named editorial outlet. Fetched 2026-09-15; span present.",
+   "press_kind": "primary"
+  },
+  {
+   "id": "mlcommons-propublica",
+   "title": "Mlcommons Association - Nonprofit Explorer",
+   "publisher": "ProPublica",
+   "url": "https://projects.propublica.org/nonprofits/organizations/850546914",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "EIN 85-0546914; designated 501(c)(6) business league; net assets $4,551,326 at latest fiscal year end; revenue fields blank in the summary. Fetched 2026-09-15."
+  }
+ ],
+ "new_signals": [],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "self-imposed"
+  }
+ },
+ "dissent": {
+  "lower": "Funding (F) at 1 could be 0. The consortium was convened by Google engineers, its president is a Google senior staff engineer, and Google is a founding participant; the benchmarked labs sit in the working group that writes the benchmark and pay the dues that fund it. Anchor 0 covers an organization controlled by a frontier developer; a member-governed body whose president draws a Google salary is arguably that.",
+  "higher": "Funding (F) at 1 could be 2. More than 125 members and affiliates pay dues, most of them chipmakers, universities and non-profits rather than frontier labs, and no member is documented above a trivial share. The AI Verify Foundation co-funded AILuminate. Lab dues beside a broad disclosed base is the anchor-2 picture of diversified revenue rather than lab revenue as the principal source."
+ },
+ "open_question_rewrites": {
+  "P": [
+   "Request from MLCommons the board conflict-of-interest and recusal policy that applies to directors employed by member companies whose systems are benchmarked, including any recusal recorded for the President on AILuminate grading decisions."
+  ]
+ },
+ "conflicts": []
+}

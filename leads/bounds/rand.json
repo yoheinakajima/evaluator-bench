@@ -1,0 +1,236 @@
+{
+ "evaluator": "rand",
+ "signals": {
+  "rand.01": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "a policy of mandatory disclosure",
+   "quote_source": "rand-integrity",
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); homepage carries no COI text",
+    "aef-launch": "ok (only 'RAND logo' alt text is quotable)",
+    "rand-integrity": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403)"
+   },
+   "sources": [
+    "rand-aef",
+    "aef-launch",
+    "rand-integrity"
+   ],
+   "note": "RAND's research-integrity page names mandatory COI disclosure by staff and 'disclosure of the source of funding of published research' (one G.2 element: disclosure of funding) but no recusal rule, contingent-fee rule, or bar on lab investments, so G.2's two-element test is not met on the fetched text; legal form floors at 2 (G.1). CI cannot fetch rand.org, so these spans are unverifiable by the reviewer. Derived G is 2, not the stored 3; RAND's full COI policy document would settle it."
+  },
+  "rand.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.4",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); no access text on the homepage"
+   },
+   "note": "Government agreements including classified work floor at 3 (A.4). The cited homepage does not document it; a Canary or CAISI-facing RAND page would. Mechanism statutory (A.2)."
+  },
+  "rand.03": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "Board of directors Dustin Moskovitz, Cari Tuna, Divesh Makan, Holden Karnofsky, and Alexander Berger",
+   "quote_source": "coefficient-wiki",
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403)",
+    "coefficient-wiki": "ok",
+    "anthropic-series-a": "ok",
+    "evaluators-ledger": "ok"
+   },
+   "sources": [
+    "rand-aef",
+    "coefficient-wiki",
+    "anthropic-series-a",
+    "evaluators-ledger"
+   ],
+   "note": "Grants from a funder whose principal is an Anthropic investor cap at 3 (F.6): Wikipedia lists Moskovitz on Coefficient's board; Anthropic's release: 'The round included participation from James McClave, Dustin Moskovitz'. Coefficient Giving is an aggregator page on Wikipedia (press_kind aggregator). The '$87M since 2020' figure is only on the unverifiable ledger ('among $87M to RAND since 2020')."
+  },
+  "rand.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); no publication-restriction text on the homepage"
+   },
+   "note": "Government-restricted output scored on what reaches the public: reports to a government client only, 2 (R.4 by analogy; RAND is a contractor, not a public body, rule gap noted). Mechanism statutory, not a lab holding the pen."
+  },
+  "rand.05": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": "a policy of mandatory disclosure",
+   "quote_source": "rand-integrity",
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403)",
+    "rand-integrity": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403)"
+   },
+   "sources": [
+    "rand-aef",
+    "rand-integrity"
+   ],
+   "note": "Institutional disclosure rules without a published mandatory recusal rule or public disclosure of individual lab ties do not meet P.5; floor 2. Derived P is 2, not the stored 3."
+  },
+  "rand.06": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.3",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); no scope text"
+   },
+   "note": "Government clients set scope by contract: 3 (S.3); self-directed AI research also floors at 3 (S.5)."
+  },
+  "rand.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); no methods text"
+   },
+   "note": "'Methods partly public' with much output government-restricted and no open tasks or code cited: prose-only, 2 (M.2). A citation to open Canary code or tasks would lift the cap to 3."
+  },
+  "rand.08": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "rand-aef": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403); no products statement"
+   },
+   "note": "No bounded statement of no commercial products; held to 3 by C15/C16. The FY2025 Form 990 shows $16,492,578 (3.1%) program-service revenue (contract research), which does not establish 'no commercial products'. No second source found after search. Derived X is 3, not the stored 4."
+  },
+  "rand.09": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "Contributions $488,777,692 91.4%",
+   "quote_source": "propublica-rand-990",
+   "fetch": {
+    "evaluators-ledger": "ok",
+    "propublica-rand-990": "ok"
+   },
+   "sources": [
+    "evaluators-ledger",
+    "propublica-rand-990"
+   ],
+   "note": "Tier-1 filing confirms the $488,777,692 figure as 'Contributions' (91.4% of $534,596,094 total revenue) for the fiscal year ending September 2025 per ProPublica; the ledger labels it FY2024 990 revenue, a fiscal-year labeling discrepancy to reconcile. The 'mostly US government' composition is on the ledger only ('FY2024 990 revenue $488,777,692 (mostly US-government contract research)'). Public money floors at 3 (F.9); a 4 needs a bounded negative on lab money."
+  },
+  "rand.10": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.6",
+   "quote": "Canary—a Collaboration with METR—to Receive Approximately $38 Million",
+   "quote_source": "rand-audacious-2024",
+   "fetch": {
+    "rand-audacious-2024": "ok via curl (browser User-Agent; fetch_text and plain 'Mozilla/5.0' curl get CloudFront 403)",
+    "coefficient-index": "failed: 404 via fetch_text, 403 via curl"
+   },
+   "note": "Philanthropic money (anchor 3). The Audacious Project is a pooled fund whose underlying donors are only partly public, so F.6 also caps it at 3. The stored quote 'committed approximately $38 million to RAND and METR for Canary' is present in the browser-UA curl text but CI cannot fetch rand.org."
+  }
+ },
+ "existing_quote_checks": {
+  "rand.10": "found only via browser-UA curl (fetch_text and plain curl get CloudFront 403); CI will report not found"
+ },
+ "new_sources": [
+  {
+   "id": "propublica-rand-990",
+   "title": "Rand Corporation, Form 990 FY ending Sept. 2025 (Nonprofit Explorer)",
+   "publisher": "ProPublica",
+   "url": "https://projects.propublica.org/nonprofits/organizations/951958142",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "EIN 95-1958142. Fiscal year ending Sept 2025: total revenue $534,596,094; contributions $488,777,692 (91.4%); program services $16,492,578 (3.1%); investment income $9,783,074. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "rand-integrity",
+   "title": "Research Integrity",
+   "publisher": "RAND",
+   "url": "https://www.rand.org/about/research-integrity.html",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "unaudited",
+   "note": "'a policy of mandatory disclosure' for conflicts of interest; 'disclosure of the source of funding of published research'; free and open publication. Fetched 2026-09-15 via browser-UA curl only; rand.org returns CloudFront 403 to the CI fetcher."
+  },
+  {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "rand.11",
+   "evaluator": "rand",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "SFF recommended $1,022,000 to RAND's Technology and Security Policy Center in 2025; SFF's funder Jaan Tallinn led Anthropic's Series A.",
+   "sources": [
+    "sff-2025",
+    "anthropic-series-a"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "RAND Corporation [Technology and Security Policy Center] Main: $274,000 Freedom: $749,000",
+   "quote_source": "sff-2025",
+   "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger row T70; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'. Immaterial against $534M revenue but rule-required."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "statutory"
+  },
+  "R": {
+   "mechanism": "statutory"
+  }
+ },
+ "dissent": {
+  "lower": "Publication should be 1. RAND's frontier-model work reaches the public mainly through METR's Canary summaries and government-restricted reports; no RAND-authored adverse finding about a named lab's model is on record, and the RAND-Irregular model-theft paper is generic. Findings that surface only as another organization's summaries are R.3's lab-summarized citations in all but name.",
+  "higher": "Publication should be 3. RAND's research-integrity page commits to free and open publication of findings, disclosure of every funding source, and policies for intellectual independence; thousands of reports are free on rand.org. What is withheld is classified by government, not redacted by any lab, and R.4 tags that mechanism statutory rather than as lab control."
+ },
+ "open_question_rewrites": {},
+ "conflicts": []
+}

@@ -1,0 +1,313 @@
+{
+ "evaluator": "caisi",
+ "signals": {
+  "caisi.01": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "CAISI, which operates within NIST at the Department of Commerce",
+   "quote_source": "csa-caisi",
+   "fetch": {
+    "csa-caisi": "ok",
+    "nist-caisi": "ok"
+   },
+   "note": "Public funding floors at 3 (F.9). Note: csa-caisi and csa-caisi-five-labs are the same URL; csa-caisi is marked unaudited while five-labs is confirmed. Both fetch fine today."
+  },
+  "caisi.02": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.4",
+   "quote": "completed more than 40 evaluations — including assessments of frontier models not yet available to the public",
+   "quote_source": "csa-caisi",
+   "fetch": {
+    "csa-caisi": "ok"
+   },
+   "note": "Government testing agreements: 3 (A.4). The CSA note does not mention TRAINS or classified work; that part of the claim is unsupported by the cited source."
+  },
+  "caisi.03": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "G.5",
+   "quote": "repositioned the center as CAISI, shifting emphasis toward national security and cybersecurity risk reduction",
+   "quote_source": "csa-caisi",
+   "fetch": {
+    "csa-caisi": "ok"
+   },
+   "note": "Politically steerable mandate: cap 3 (G.5)."
+  },
+  "caisi.04": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "R.4",
+   "quote": "voluntary agreements, unclassified evaluations, no mandatory disclosure of findings",
+   "quote_source": "csa-caisi",
+   "fetch": {
+    "csa-caisi": "ok"
+   },
+   "note": "Strict R.4 reading is cap 2, not 1: the public body has published per-model findings (DeepSeek V4 Pro results; ChatGPT Agent and Constitutional Classifier write-ups per the same source), so \"nothing per model\" (1) does not hold; most partner-lab results stay inside government, which is the anchor-2 case. Mechanism tagged statutory (R.4). Stored value 1 would move to 2."
+  },
+  "caisi.05": {
+   "bound": null,
+   "bound_note": "Section 9 (mis-dimensioned fact): delegating evaluations to a lab-owned contractor is not a personnel fact; none of the P anchors (board seats, equity, advisory roles, hiring) describes it. Informational on P; re-recorded on X as new signal caisi.16 (X.6).",
+   "rule": "section 9",
+   "quote": "Scale AI SEAL : Safety, Evaluation, and Alignment Lab; first third-party evaluator authorized by US AISI",
+   "quote_source": "longtermwiki-audit",
+   "fetch": {
+    "scale-framework": "ok",
+    "longtermwiki-audit": "ok",
+    "cnbc-scale-meta": "ok"
+   },
+   "note": "Meta's 49% stake is not in either cited source; added cnbc-scale-meta (existing confirmed record: \"Meta has a 49% stake in Scale AI after investing $14.3 billion into the startup\"). Rule gap: outsourcing to a lab-owned vendor has no home in P.",
+   "sources": [
+    "scale-framework",
+    "longtermwiki-audit",
+    "cnbc-scale-meta"
+   ]
+  },
+  "caisi.06": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.4",
+   "quote": "The government defines the risk domains it wants evaluated",
+   "quote_source": "scale-framework",
+   "fetch": {
+    "scale-framework": "ok"
+   },
+   "note": "Voluntary agreements: 3 (S.4). Weak source: the span is Scale AI's proposed framework, not a description of CAISI practice; the CSA note (\"jointly scoped\") is the better description and is carried by caisi.13."
+  },
+  "caisi.07": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "CAISI published a write-up on how AI models can cheat on agentic evaluations",
+   "quote_source": "nist-caisi",
+   "fetch": {
+    "nist-caisi": "ok"
+   },
+   "note": "Methods reach the public as prose write-ups and guidelines: cap 2 (M.2). The span supports the \"partly published\" half; the absence of per-evaluation methods cannot be quoted."
+  },
+  "caisi.08": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": "lead unclassified evaluations of AI capabilities that may pose risks to national security",
+   "quote_source": "nist-caisi",
+   "fetch": {
+    "nist-caisi": "ok",
+    "csa-caisi-five-labs": "ok"
+   },
+   "note": "Anchor 4 matches a NIST center. Added csa-caisi-five-labs (press, confirmed) as the non-self second source for C16. X.7's bounded \"no commercial products\" statement does not exist for a public body (rule gap, same as ukaisi.10). Capped at 3 anyway by new signal caisi.16 (X.6).",
+   "sources": [
+    "nist-caisi",
+    "csa-caisi-five-labs"
+   ]
+  },
+  "caisi.09": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "G.5",
+   "quote": "$10 million from FY2026 appropriations",
+   "quote_source": "caisi-funding",
+   "fetch": {
+    "caisi-funding": "ok",
+    "evaluators-ledger": "ok"
+   },
+   "note": "Leadership changed more than once in twelve months: cap 3 (G.5). The appropriation half of the claim is quoted; the resignation is carried by caisi.11."
+  },
+  "caisi.10": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "As of FY2026, CAISI has approximately $15 million in funding: $10 million from FY2026 appropriations",
+   "quote_source": "caisi-funding",
+   "fetch": {
+    "caisi-funding": "ok",
+    "nist-caisi": "ok"
+   },
+   "note": "Free pre-deployment access from five labs is undisclosed in-kind on which the evaluator depends (CSA: authority \"rests entirely on voluntary participation\"): cap 3 (F.2, F.9). No confirmed bounded negative on lab money, so no 4 (F.12). Under the amended F.2/F.11, undisclosed in-kind sets no funding bound unless the evaluator itself states a dependency; the cap here rests on F.9 (no confirmed bounded negative; lab in-kind present), which is why the rule code is F.9."
+  },
+  "caisi.11": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "G.5",
+   "quote": "resigned from his role as director just three months after he was picked for the job",
+   "quote_source": "cnbc-caisi-fall",
+   "fetch": {
+    "ifp-caisi-funding": "ok",
+    "cnbc-caisi-fall": "ok"
+   },
+   "note": "Third leadership change in six months: cap 3 (G.5). Quote is on the CNBC page, not the IFP page."
+  },
+  "caisi.12": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "A.4",
+   "quote": "provide CAISI with model access that includes versions with safety guardrails stripped back",
+   "quote_source": "csa-caisi-five-labs",
+   "fetch": {
+    "csa-caisi-five-labs": "ok"
+   },
+   "note": "Government testing agreements: 3 (A.4); guardrails-off access on its own is anchor 2. Mechanism lab-controlled (voluntary agreements; A.3)."
+  },
+  "caisi.13": {
+   "bound": {
+    "cap": 3
+   },
+   "bound_note": "",
+   "rule": "S.4",
+   "quote": "CAISI’s authority to conduct these evaluations rests entirely on voluntary participation",
+   "quote_source": "csa-caisi-five-labs",
+   "fetch": {
+    "csa-caisi-five-labs": "ok"
+   },
+   "note": "Voluntary memoranda: 3 (S.4). By anchor text alone \"jointly scoped\" reads as 2 (scope negotiated per engagement); S.4 is the tie-break for public bodies."
+  }
+ },
+ "existing_quote_checks": {
+  "caisi.11": "found (on cnbc-caisi-fall; not on ifp-caisi-funding)",
+  "caisi.12": "found",
+  "caisi.13": "found"
+ },
+ "new_sources": [
+  {
+   "id": "caisi-usc-208",
+   "title": "18 U.S. Code § 208 - Acts affecting a personal financial interest",
+   "publisher": "Cornell Legal Information Institute (U.S. Code)",
+   "url": "https://www.law.cornell.edu/uscode/text/18/208",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Federal criminal conflict-of-interest statute binding NIST employees: bars participation in matters in which the employee has a financial interest. Typed filing as a primary legal instrument hosted by a third party. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "caisi-usc-207",
+   "title": "18 U.S. Code § 207 - Restrictions on former officers, employees, and elected officials",
+   "publisher": "Cornell Legal Information Institute (U.S. Code)",
+   "url": "https://www.law.cornell.edu/uscode/text/18/207",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Federal post-employment statute: permanent, two-year and one-year restrictions on former executive-branch employees. Typed filing as a primary legal instrument hosted by a third party. Fetched 2026-09-15; span present."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "caisi.14",
+   "evaluator": "caisi",
+   "dimension": "P",
+   "direction": "for",
+   "claim": "CAISI staff are NIST federal employees bound by the criminal conflict-of-interest statute (18 U.S.C. 208) and the post-employment statute (18 U.S.C. 207), which restricts former employees for one to two years after leaving.",
+   "sources": [
+    "caisi-usc-208",
+    "caisi-usc-207",
+    "nist-caisi"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "P.5",
+   "quote": "within 1 year after the termination of his or her service or employment as such officer or employee",
+   "quote_source": "caisi-usc-207",
+   "note": "Statutory post-employment rules count as cooling-off (P.3); the conflict statute is a published mandatory recusal rule (P.5). Ties are disclosed on OGE forms, not publicly, so 3 not 4 (P.8). Replaces the unevidenced P value that would result from caisi.05 being informational."
+  },
+  {
+   "id": "caisi.15",
+   "evaluator": "caisi",
+   "dimension": "G",
+   "direction": "for",
+   "claim": "CAISI is a NIST center whose staff are bound by the federal conflict-of-interest statute, 18 U.S.C. 208.",
+   "sources": [
+    "caisi-usc-208",
+    "nist-caisi"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "G.2",
+   "quote": "18 U.S. Code § 208 - Acts affecting a personal financial interest",
+   "quote_source": "caisi-usc-208",
+   "note": "Statutory civil-service conflict rules count as a conflict policy for a public body (G.2): floor 3. G.7 four needs an independent board and external review; none."
+  },
+  {
+   "id": "caisi.16",
+   "evaluator": "caisi",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "CAISI partnered with Scale AI in February 2025 to jointly develop evaluation methods for frontier models, and authorized Scale SEAL as a third-party evaluator; Meta has held 49% of Scale AI since June 2025.",
+   "sources": [
+    "scale-framework",
+    "cnbc-scale-meta",
+    "longtermwiki-audit"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "X.6",
+   "quote": "Scale partnered with the U.S. Center for AI Standards and Innovation (CAISI), jointly developing new evaluation methods",
+   "quote_source": "scale-framework",
+   "note": "Co-producing evaluations with a vendor owned by a lab caps X at 3 (X.6); 49% exceeds the 20% control threshold used in F.1 and G.6. The partnership predates the Meta stake; whether it continued after June 2025 is a document request."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "statutory"
+  },
+  "X": {
+   "resolution": {
+    "rule": "X.6",
+    "value": 3,
+    "note": "caisi.08 floors X at 4 on legal form; caisi.16 caps at 3 because CAISI co-develops evaluation methods with Scale AI, 49% owned by Meta. X.6 is the specific rule and decides: 3."
+   }
+  }
+ },
+ "dissent": {
+  "lower": "Publication (R) at 2 could be 1. For the five partner labs, no per-model evaluation has been published; the public write-ups concern a foreign model tested without cooperation and two vulnerability disclosures the labs had already fixed. CSA records \"no mandatory disclosure of findings\". Under R.4, a public body that publishes nothing per model for the labs it has agreements with scores 1, and the DeepSeek report is the exception rather than the practice.",
+  "higher": "Publication (R) at 2 could be 3. CAISI has published a full per-model evaluation (DeepSeek V4 Pro), named vulnerabilities in ChatGPT Agent and Anthropic's Constitutional Classifiers, and states that it publishes findings from its assessments. No lab-edited summary or lab redaction is documented. That is closer to anchor 3 (publishes, redaction limited to security) than to the anchor-2 picture of broad lab redaction."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [
+  {
+   "dimension": "X",
+   "floor": 4,
+   "cap": 3,
+   "resolution": {
+    "rule": "X.6",
+    "value": 3,
+    "note": "The specific co-production rule (X.6) decides over the general legal-form floor: 3."
+   }
+  }
+ ]
+}

@@ -71,6 +71,12 @@
   },
   "found_by": {
    "type": "string"
+  },
+  "press_kind": {
+   "enum": ["primary", "aggregator"]
+  },
+  "self_of": {
+   "type": "string"
   }
  }
 }

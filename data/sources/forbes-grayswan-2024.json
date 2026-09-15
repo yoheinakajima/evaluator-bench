@@ -7,5 +7,7 @@
   "retrieved": "2026-09-14",
   "note": "Kolter recused from Gray Swan-OpenAI interactions; $5.5M seed. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Seed $5.5M; clients OpenAI, Anthropic, UK AISI. Partial/paywall.",
   "source_type": "press",
-  "audit_status": "confirmed"
+  "audit_status": "confirmed",
+  "press_kind": "primary",
+  "archive": "https://web.archive.org/web/2025id_/https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/"
 }

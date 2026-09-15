@@ -1,0 +1,554 @@
+{
+ "evaluator": "securebio",
+ "signals": {
+  "securebio.01": {
+   "bound": {
+    "cap": 2
+   },
+   "bound_note": "",
+   "rule": "F.3",
+   "quote": "OpenAI PBC covered SecureBio's costs for the GPT 5.5 evaluation",
+   "quote_source": "securebio-eaforum-oaif",
+   "fetch": {
+    "securebio-oaif": "ok (span not on this page)",
+    "securebio-eaforum-oaif": "ok",
+    "securebio-principles": "ok",
+    "securebio-coi-policy": "ok"
+   },
+   "sources": [
+    "securebio-oaif",
+    "securebio-eaforum-oaif",
+    "securebio-principles",
+    "securebio-coi-policy"
+   ],
+   "note": "The stored quote is on Jeff Kaufman's EA Forum post 'Thoughts on taking OpenAI Foundation funding' (SecureBio, August 2026), not on the cited blog post; ledger row T23 already cites the Forum post. Also there: 'that company typically pays for the evaluation'. Labs paying per engagement cap at 2 (F.3). The F.3 relief to 3 fails: the COI policy allows up to 25% of revenue from AI-company services ('no more than 25% of its annual revenue is derived from services supplied to AI companies'), above the 10% ceiling. The FY2024 990 shows program services at 4.5% of $7.3M, a disclosed non-lab base, so F.5 does not apply to fees."
+  },
+  "securebio.02": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "the OpenAI Foundation will hold a 26% stake in the for-profit",
+   "quote_source": "cnbc-openai-foundation",
+   "fetch": {
+    "securebio-oaif": "ok",
+    "cnbc-openai-foundation": "ok",
+    "openai-structure": "ok",
+    "propublica-securebio-990": "ok"
+   },
+   "sources": [
+    "securebio-oaif",
+    "cnbc-openai-foundation",
+    "openai-structure",
+    "propublica-securebio-990"
+   ],
+   "note": "Rule gap: no F rule names a grant from the controlling shareholder of a frontier developer. Anchor 1 text is 'material revenue or investment from evaluated labs or their investors'; the OpenAI Foundation holds 26% of OpenAI Group and appoints its board, above the 20% control threshold in F.1, and $17.2M exceeds SecureBio's entire FY2024 revenue ($7,324,329 per the 990), so it is material under F.5's 50% test. F.5 cited by anchor text. The restriction to Detection is a governance fact (securebio.12), not a funding rule. The parent may prefer F.6 (3, lab-linked philanthropy) if it reads the Foundation as a grantmaker rather than an investor; see the resolution."
+  },
+  "securebio.03": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "I'll say so publicly and use whatever leverage I have to stop it (up to and including resignation)",
+   "quote_source": "securebio-eaforum-oaif",
+   "fetch": {
+    "securebio-oaif": "ok",
+    "securebio-eaforum-oaif": "ok"
+   },
+   "sources": [
+    "securebio-oaif",
+    "securebio-eaforum-oaif"
+   ],
+   "note": "A personal commitment and a divisional firewall are not a G.2 policy (recusal, contingent fees, lab investments, disclosure); legal form floors at 2 (G.1). The published COI policy (securebio.17) is what floors at 3. securebio-oaif span: 'This team operates independently from Detection, with separate leadership, budgets, and deliverables'."
+  },
+  "securebio.04": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "As members of the AI Evaluator Forum (AEF), we co-developed and have adopted the AEF-1 Standard",
+   "quote_source": "securebio-principles",
+   "fetch": {
+    "aef-launch": "ok (only 'SecureBio logo' alt text is quotable)",
+    "securebio-principles": "ok"
+   },
+   "sources": [
+    "aef-launch",
+    "securebio-principles"
+   ],
+   "note": "AEF membership is not the organization's own published conflict policy; floor 2 (G.1). The AEF page is a Next.js payload whose only verbatim SecureBio text is the logo alt 'SecureBio logo'."
+  },
+  "securebio.05": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "S.3",
+   "quote": "FAR AI leads a consortium including SecureBio",
+   "quote_source": "longtermwiki-far",
+   "fetch": {
+    "longtermwiki-far": "ok"
+   },
+   "note": "Regulator as client setting scope by tender: 3 (S.3). Longterm Wiki is an aggregator (press_kind should be aggregator); the TED notice 864574-2025 (ledger T41) is the primary record."
+  },
+  "securebio.06": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "R.1",
+   "quote": "SecureBio’s model evaluations, including pre-release assessments for biosecurity risk, are under our AI team",
+   "quote_source": "securebio-oaif",
+   "fetch": {
+    "securebio-oaif": "ok",
+    "aef-launch": "ok"
+   },
+   "note": "'Publishes' alone supports anchor 2; the cited pages carry no redaction statement. The principles page (securebio.18) supplies the R.1 floor of 3."
+  },
+  "securebio.07": {
+   "bound": {
+    "floor": 1
+   },
+   "bound_note": "",
+   "rule": "A.1",
+   "quote": "including pre-release assessments for biosecurity risk",
+   "quote_source": "securebio-oaif",
+   "fetch": {
+    "securebio-oaif": "ok"
+   },
+   "note": "The cited page documents pre-release access only (anchor 1). The GPT-5.5 report (securebio.20) documents safeguards-off access, anchor 2. Nothing documents helpful-only or weights-level access, so the stored 3 is unsupported; derived A is 2."
+  },
+  "securebio.08": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "P.6",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "80k-funding": "ok (no SecureBio staffing text; only 'SecureBio is one of the best biorisk orgs')"
+   },
+   "note": "'No lab board roles found' floors at 2 (P.6); the 80,000 Hours page does not support the staffing claim. The COI policy (securebio.19) supplies the P.5 floor of 3."
+  },
+  "securebio.09": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "M.2",
+   "quote": "VCT comprises 322 questions on fundamental, tacit, and visual knowledge",
+   "quote_source": "securebio-gpt55-assessment",
+   "fetch": {
+    "aef-launch": "ok (no methods text)",
+    "securebio-gpt55-assessment": "ok"
+   },
+   "sources": [
+    "aef-launch",
+    "securebio-gpt55-assessment"
+   ],
+   "note": "Methods described in prose: 2 (M.2). VCT items are held privately with holdout sets; no open tasks or code cited, so 3 is not floored. Derived M is 2, not the stored 3."
+  },
+  "securebio.10": {
+   "bound": {
+    "floor": 4
+   },
+   "bound_note": "",
+   "rule": "X.7",
+   "quote": null,
+   "quote_source": null,
+   "fetch": {
+    "securebio-oaif": "ok (no products statement)"
+   },
+   "note": "'No commercial products found' is an absence with no bounded statement; held to 3 by C15/C16 and contradicted by the 2025 review ('licensing evaluations to multiple frontier labs', securebio.15). No second source sought because the claim is contradicted by the organization's own page."
+  },
+  "securebio.11": {
+   "bound": {
+    "cap": 1
+   },
+   "bound_note": "",
+   "rule": "F.5",
+   "quote": "The OpenAI Foundation has granted SecureBio Detection $17.2M",
+   "quote_source": "securebio-oaif",
+   "fetch": {
+    "securebio-oaif": "ok",
+    "securebio-x-oaif": "ok",
+    "cnbc-openai-foundation": "ok",
+    "propublica-securebio-990": "ok"
+   },
+   "sources": [
+    "securebio-oaif",
+    "securebio-x-oaif",
+    "cnbc-openai-foundation",
+    "propublica-securebio-990"
+   ],
+   "note": "Same fact as securebio.02; the 'roughly a quarter' and 'near-identical board' parts of the claim were unsourced and are now covered by CNBC (26% stake) and OpenAI's structure page. The stored sources list repeats securebio-x-oaif twice; deduplicated here."
+  },
+  "securebio.12": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "G.1",
+   "quote": "This grant is restricted to where it may only fund our Detection work",
+   "quote_source": "securebio-oaif",
+   "fetch": {
+    "securebio-oaif": "ok",
+    "securebio-substack-detection": "ok"
+   },
+   "note": "A grant restriction and divisional separation do not name any G.2 element; floor 2 (G.1)."
+  },
+  "securebio.13": {
+   "bound": {
+    "floor": 3
+   },
+   "bound_note": "",
+   "rule": "F.9",
+   "quote": "broadened our government-facing portfolio with a US CAISI Bio R&D contract",
+   "quote_source": "securebio-2025-review",
+   "fetch": {
+    "securebio-2025-review": "ok"
+   },
+   "note": "Public contracts floor at 3 (F.9). The same page names Coefficient (F.6, cap 3) and Frontier Model Forum AI Safety Fund grants (lab-funded pool; securebio.16), so this floor cannot exceed 3. Conflicts with the F.5 caps; see resolution."
+  },
+  "securebio.14": {
+   "bound": {
+    "floor": 2
+   },
+   "bound_note": "",
+   "rule": "S.5",
+   "quote": "it places no constraints on what any part of SecureBio can research, publish, or say",
+   "quote_source": "securebio-oaif",
+   "fetch": {
+    "securebio-oaif": "ok"
+   },
+   "note": "A funder's absence of constraints does not show who sets scope in lab engagements; supports anchor 2 (scope negotiated per engagement) at most. S.5's 3 comes from securebio.05."
+  }
+ },
+ "existing_quote_checks": {
+  "securebio.01": "not found on securebio-oaif; found on the EA Forum post 'Thoughts on taking OpenAI Foundation funding' (new source securebio-eaforum-oaif)",
+  "securebio.11": "found (securebio-oaif and securebio-x-oaif)",
+  "securebio.12": "found (securebio-oaif and securebio-substack-detection)",
+  "securebio.13": "found",
+  "securebio.14": "found"
+ },
+ "new_sources": [
+  {
+   "id": "securebio-eaforum-oaif",
+   "title": "Thoughts on taking OpenAI Foundation funding",
+   "publisher": "SecureBio (Jeff Kaufman, EA Forum)",
+   "url": "https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding",
+   "published": "2026-08",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "States that the company being evaluated typically pays for the evaluation, that OpenAI PBC covered SecureBio's costs for the GPT 5.5 evaluation, and that leadership would resign if the grant were used as leverage. Already cited by ledger row T23. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "securebio-coi-policy",
+   "title": "Conflicts of Interest Policy",
+   "publisher": "SecureBio",
+   "url": "https://securebio.org/ai/conflicts-of-interest/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Mandatory COI disclosure at hiring and every 6 months; recusal for financial interests, recent employment and close relationships with the assessed entity; no results-contingent funding; services revenue from AI companies held under 25% of annual revenue; free API credits from AI firms including those assessed. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "securebio-principles",
+   "title": "SecureBio's principles and practices for model assessment",
+   "publisher": "SecureBio",
+   "url": "https://securebio.org/ai/principles/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Adopts AEF-1; requests funding to cover costs for some for-profit engagements and discloses it per report; developers have no authority to redact unfavorable findings; reports shared with developers in advance for confidential-business-information redaction; holdout sets. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "securebio-gpt55-assessment",
+   "title": "SecureBio's pre-release assessment of OpenAI's GPT-5.5",
+   "publisher": "SecureBio",
+   "url": "https://securebio.org/blog/gpt-5-5-pre-release-assessment/",
+   "published": "2026-04-09",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Access to two pre-release checkpoints April 2 to 9, 2026 with API-level biological content filtering disabled; VCT and other benchmarks described. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "securebio-anthropic-review",
+   "title": "Review of Anthropic's Unredacted Chemical and Biological Risk Report: Claude Opus 4.6",
+   "publisher": "SecureBio",
+   "url": "https://securebio.org/blog/review-of-anthropics-unredacted-chemical/",
+   "published": "2026-07-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "External RSP review with access to an unredacted risk report and 110 pages of materials; agrees with Anthropic's overall conclusion with minor disagreements; 'SecureBio did not receive funding from Anthropic for this work'. Fetched 2026-09-15; spans present."
+  },
+  {
+   "id": "cnbc-openai-foundation",
+   "title": "OpenAI completes restructure, solidifying Microsoft as a major shareholder",
+   "publisher": "CNBC",
+   "url": "https://www.cnbc.com/2025/10/28/open-ai-for-profit-microsoft.html",
+   "published": "2025-10-28",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "'the OpenAI Foundation will hold a 26% stake in the for-profit'; Foundation equity worth about $130 billion; nonprofit retains control. Fetched 2026-09-15; span present.",
+   "press_kind": "primary"
+  },
+  {
+   "id": "openai-structure",
+   "title": "Our Structure",
+   "publisher": "OpenAI",
+   "url": "https://openai.com/our-structure/",
+   "published": "2025-10",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "'the OpenAI Foundation holds a 26% equity stake in OpenAI Group'. Self-published by the lab, not by SecureBio. Fetched 2026-09-15; span present."
+  },
+  {
+   "id": "propublica-securebio-990",
+   "title": "Securebio Inc, Form 990 FY2024 (Nonprofit Explorer)",
+   "publisher": "ProPublica",
+   "url": "https://projects.propublica.org/nonprofits/organizations/883068255",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "EIN 88-3068255, 501(c)(3), Cambridge MA. FY ending Dec 2024: revenue $7,324,329; contributions $6,816,844 (93.1%); program services $326,249 (4.5%). FY2023 revenue $4,319,125. Fetched 2026-09-15; spans present."
+  }
+ ],
+ "new_signals": [
+  {
+   "id": "securebio.15",
+   "evaluator": "securebio",
+   "dimension": "X",
+   "direction": "against",
+   "claim": "SecureBio reports licensing its evaluations to multiple frontier labs as a revenue model and delivering pretraining data-filtering datasets and topic lists used in the design of several frontier models.",
+   "sources": [
+    "securebio-2025-review",
+    "securebio-coi-policy"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 1
+   },
+   "rule": "X.2",
+   "quote": "licensing evaluations to multiple frontier labs",
+   "quote_source": "securebio-2025-review",
+   "note": "Evaluation products delivered to evaluated labs for money: 1 (X.2). Rule tension: section 10 treats fees for the evaluation itself as a funding matter, but licensing an evaluation suite for labs to run is a product sale. X.1 (0) is not applied: the COI policy says paid services cover evaluations and audits only, so the mitigation datasets are not shown to have been sold; document request on whether the data-filtering deliverables were paid. Also on the page: 'We delivered training datasets and lists of dangerous biological topics for pretraining data filtering'."
+  },
+  {
+   "id": "securebio.16",
+   "evaluator": "securebio",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "SecureBio received multiple grants from the Frontier Model Forum's AI Safety Fund (written 'Foundation Model Forum' on the page), a pool funded by Anthropic, Google, Microsoft and OpenAI.",
+   "sources": [
+    "securebio-2025-review"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.6",
+   "quote": "We also received multiple grants from the Foundation Model Forum",
+   "quote_source": "securebio-2025-review",
+   "note": "Lab-linked pooled funds cap at 3 (anchor 3 text; F.6 by analogy since the pool's donors are public and are the labs themselves). Amounts undisclosed."
+  },
+  {
+   "id": "securebio.17",
+   "evaluator": "securebio",
+   "dimension": "G",
+   "direction": "for",
+   "claim": "SecureBio publishes a conflicts-of-interest policy requiring recusal for financial interests or recent employment at the assessed entity and barring results-contingent funding.",
+   "sources": [
+    "securebio-coi-policy",
+    "securebio-principles"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "G.2",
+   "quote": "Staff will be required to recuse themselves from engagements where an actual or perceived conflict of interest exists",
+   "quote_source": "securebio-coi-policy",
+   "note": "Names at least two G.2 elements: recusal for financial interests and no outcome-contingent fees ('We only enter into engagements for which funding is not contingent on the results of our assessments'), plus disclosure of funding per report on the principles page. Nonprofit with a published policy: 3."
+  },
+  {
+   "id": "securebio.18",
+   "evaluator": "securebio",
+   "dimension": "R",
+   "direction": "for",
+   "claim": "SecureBio's principles state developers have no authority to redact results to conceal unfavorable findings, that redactions are limited to infohazards and confidential business information, and that reports say whether redactions affect conclusions.",
+   "sources": [
+    "securebio-principles"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "R.1",
+   "quote": "AI developers have no authority to redact our results to conceal performance or unfavorable findings",
+   "quote_source": "securebio-principles",
+   "note": "Security-only redactions with a public statement: 3 (R.1). A 4 is unavailable under R.5 because reports are shared with developers before publication ('We share our reports with AI developers in advance of our publication'), even though the Opus 4.6 review records minor disagreements with Anthropic."
+  },
+  {
+   "id": "securebio.19",
+   "evaluator": "securebio",
+   "dimension": "P",
+   "direction": "for",
+   "claim": "SecureBio's COI policy makes disclosure of conflicts mandatory for all AI-team staff at hiring and every six months, requires recusal, and its reports disclose conflicts relevant to each assessment.",
+   "sources": [
+    "securebio-coi-policy",
+    "securebio-principles"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 3
+   },
+   "rule": "P.5",
+   "quote": "All staff and contractors on our AI team must disclose potential conflicts of interest",
+   "quote_source": "securebio-coi-policy",
+   "note": "Published mandatory recusal rule plus disclosure of relevant ties in public reports ('In addition to funding, we disclose other potential conflicts of interest relevant to the assessment'): 3 (P.5). Disclosure is internal to leadership and per-report, not a public register of individual ties; a 4 would need cooling-off and no-equity evidence at tier 1."
+  },
+  {
+   "id": "securebio.20",
+   "evaluator": "securebio",
+   "dimension": "A",
+   "direction": "for",
+   "claim": "For the GPT-5.5 pre-release assessment, OpenAI disabled API-level biological content filtering on the checkpoints SecureBio tested.",
+   "sources": [
+    "securebio-gpt55-assessment"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 2
+   },
+   "rule": "A.1",
+   "quote": "API-level biological content filtering was disabled on these checkpoints",
+   "quote_source": "securebio-gpt55-assessment",
+   "note": "Pre-release access with safeguards off: anchor 2 (A.1). The Opus 4.6 review adds access to an unredacted risk report and 110 pages of materials, which is document access, not model access, so it is noted rather than scored."
+  },
+  {
+   "id": "securebio.21",
+   "evaluator": "securebio",
+   "dimension": "S",
+   "direction": "against",
+   "claim": "The GPT-5.5 pre-release window was set by the lab: access ran from April 2 to April 9, 2026.",
+   "sources": [
+    "securebio-gpt55-assessment"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "S.1",
+   "quote": "We had access to these checkpoints from April 2nd through April 9th, 2026",
+   "quote_source": "securebio-gpt55-assessment",
+   "note": "A lab-set window in the most recent major engagement caps at 3 (S.1). Not binding today; rule-required."
+  },
+  {
+   "id": "securebio.22",
+   "evaluator": "securebio",
+   "dimension": "F",
+   "direction": "against",
+   "claim": "SecureBio's COI policy states that AI firms, including those whose models it assesses, provide it with free API credits, in undisclosed amounts.",
+   "sources": [
+    "securebio-coi-policy"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "cap": 3
+   },
+   "rule": "F.2",
+   "quote": "AI firms, including those whose models we assess, provide us with free API credits",
+   "quote_source": "securebio-coi-policy",
+   "note": "Rule gap: F.2 covers disclosed in-kind and undisclosed in-kind the evaluator says it depends on; undisclosed credits with no dependency statement fall between. By anchor text 'no lab money' (4) is excluded, so cap 3; not binding."
+  },
+  {
+   "id": "securebio.23",
+   "evaluator": "securebio",
+   "dimension": "F",
+   "direction": "for",
+   "claim": "SecureBio's external review of Anthropic's Opus 4.6 risk report was unpaid: 'SecureBio did not receive funding from Anthropic for this work'.",
+   "sources": [
+    "securebio-anthropic-review"
+   ],
+   "recorded": "2026-09-15",
+   "curator": "yohei/claude v0.5",
+   "bound": {
+    "floor": 2
+   },
+   "rule": "F.3",
+   "quote": "SecureBio did not receive funding from Anthropic for this work",
+   "quote_source": "securebio-anthropic-review",
+   "note": "An unpaid engagement beside paid ones; supports 'otherwise diversified' (anchor 2) and no more. Recorded so the fee pattern is not overstated."
+  }
+ ],
+ "assessments": {
+  "A": {
+   "mechanism": "lab-controlled"
+  },
+  "R": {
+   "mechanism": "self-imposed"
+  },
+  "F": {
+   "resolution": {
+    "rule": "F.5",
+    "value": 1,
+    "note": "A $17.2M grant from the OpenAI Foundation, which holds 26% of OpenAI Group and appoints its board, is material revenue from a lab's controlling shareholder under anchor 1 and F.5 (it exceeds SecureBio's FY2024 revenue); the F.9/F.6 floor of 3 from public contracts and Coefficient money describes the rest of the base but does not override money from the lab side. If the parent reads the Foundation as a grantmaker rather than an investor, F.6 (3) or the F.3 fee cap (2) would decide instead."
+   }
+  },
+  "X": {
+   "resolution": {
+    "rule": "X.2",
+    "value": 1,
+    "note": "Licensing evaluations to frontier labs for money is a product sold to evaluated labs (X.2); the 'no commercial products found' floor is an absence contradicted by the organization's own review."
+   }
+  }
+ },
+ "dissent": {
+  "lower": "Funding should be 0. The OpenAI Foundation controls OpenAI Group (26% stake, appoints the entire board) and its $17.2M grant exceeds SecureBio's whole 2024 revenue; OpenAI PBC also pays for the evaluations of its own models. Money from a lab's controlling parent plus fees from the lab, with SecureBio's largest division dependent on it, is closer to 'controlled by a frontier developer' than to anchor 1.",
+  "higher": "Funding should be 2. The grant is restricted to Detection, the AI team keeps separate leadership and budgets, the COI policy caps AI-company services at 25% of revenue and bars results-contingent fees, and the FY2024 990 shows 93% contributions with 4.5% program services. The Foundation is a nonprofit grantmaker, not a return-seeking investor; F.3's per-engagement fees, disclosed per report, put this at 2."
+ },
+ "open_question_rewrites": {},
+ "conflicts": [
+  {
+   "dimension": "F",
+   "floor": 3,
+   "cap": 1,
+   "resolution": {
+    "rule": "F.5",
+    "value": 1,
+    "note": "F.5 (material revenue from a lab investor) decides over the F.9 public-contract floor; the floor describes the remainder of the base."
+   }
+  },
+  {
+   "dimension": "X",
+   "floor": 3,
+   "cap": 1,
+   "resolution": {
+    "rule": "X.2",
+    "value": 1,
+    "note": "securebio.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.2 cap; X.2 decides because the licensing statement is on SecureBio's own page."
+   }
+  }
+ ]
+}

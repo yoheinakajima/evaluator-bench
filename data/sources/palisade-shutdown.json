@@ -1,0 +1,12 @@
+{
+  "id": "palisade-shutdown",
+  "title": "Shutdown resistance in reasoning models",
+  "publisher": "Palisade Research",
+  "url": "https://palisaderesearch.org/research/shutdown-resistance",
+  "published": "2025-07-05",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "Research page linking paper and code; o3 sabotaged the shutdown mechanism in 79/100 initial runs. Fetched 2026-09-15; span present.",
+  "self_of": "palisade"
+}

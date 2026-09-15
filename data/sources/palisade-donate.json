@@ -1,0 +1,12 @@
+{
+  "id": "palisade-donate",
+  "title": "Donate | Palisade Research",
+  "publisher": "Palisade Research",
+  "url": "https://palisaderesearch.org/donate",
+  "published": "2026",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "audit_status": "confirmed",
+  "note": "'We're a 501(c)(3) nonprofit, so your donation is tax-deductible.' Fetched 2026-09-15; span present.",
+  "self_of": "palisade"
+}

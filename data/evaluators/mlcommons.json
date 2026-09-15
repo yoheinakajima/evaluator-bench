@@ -10,5 +10,10 @@
  "confidence": "med",
  "summary": "Industry consortium producing the AILuminate safety benchmark.",
  "what_would_move_the_score": "Published funding shares and a hazard suite the members do not see in advance.",
- "role": "benchmark"
+ "role": "benchmark",
+ "dissent": {
+  "lower": "Funding (F) at 1 could be 0. The consortium was convened by Google engineers, its president is a Google senior staff engineer, and Google is a founding participant; the benchmarked labs sit in the working group that writes the benchmark and pay the dues that fund it. Anchor 0 covers an organization controlled by a frontier developer; a member-governed body whose president draws a Google salary is arguably that.",
+  "higher": "Funding (F) at 1 could be 2. More than 125 members and affiliates pay dues, most of them chipmakers, universities and non-profits rather than frontier labs, and no member is documented above a trivial share. The AI Verify Foundation co-funded AILuminate. Lab dues beside a broad disclosed base is the anchor-2 picture of diversified revenue rather than lab revenue as the principal source."
+ },
+ "list_group": "commercial"
 }
