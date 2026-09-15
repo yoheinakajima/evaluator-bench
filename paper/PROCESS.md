@@ -56,7 +56,9 @@ Policies move. Signals carry `as_of`; sources carry `capture` (a Wayback URL) wh
 
 ## 8. Right of reply
 
-Before a score is published or changed by more than one anchor, the evaluator is sent the signals and rows and given two weeks. Their reply is filed as a signal with `source_type: self` and the score is re-run. Silence is recorded as silence.
+First publication is one batch. Every score is marked provisional through a public preview window (two weeks), and the reply channel is the same for named organizations and everyone else: a pull request with evidence or the right-of-reply issue template, filed as a signal with the date received. No individual notices go out for changes made while the work was unpublished; those are edits, not events.
+
+After first publication, a score that moves by more than one anchor relative to the last tagged release triggers a record packet to that organization (`bench outreach <id>`) with fourteen days to reply before the change is tagged. Replies are filed as signals; silence is recorded as silence.
 
 ## 9. What stays out
 

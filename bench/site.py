@@ -76,9 +76,7 @@ def release_banner(pre: str) -> str:
     if not rp.exists(): return ""
     r = json.loads(rp.read_text())
     if r.get("stage") == "preview":
-        sent = r.get("packets_sent")
-        reply = (f"Evaluators whose scores changed were sent the full record on {esc(sent)}." if sent else "Evaluators whose scores changed will be sent the full record; the window starts from that date.")
-        return f'<div class="banner">Preview. Every score here is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. {reply} Anyone can submit evidence or corrections until then; what arrives becomes the first round of the annual paper. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
+        return f'<div class="banner">Preview of the first release. Everything here is one batch of initial research, and every score is provisional until <b>{esc(r.get("window_until") or "the window closes")}</b>. Organizations named here, and anyone else, can submit corrections or evidence until then; what arrives becomes the launch round of the paper. <a href="{pre}contribute/index.html">How to submit</a>.{(" " + esc(r["note"])) if r.get("note") else ""}</div>'
     if r.get("stage") == "published":
         return f'<div class="banner">Published as <b>{esc(r.get("tag") or "v0")}</b> on {esc(r.get("set_on"))}. Scores continue to move as evidence is merged; the next dated reading is the annual update. <a href="{pre}contribute/index.html">Submit evidence</a>.</div>'
     return ""
@@ -298,7 +296,7 @@ def status_index(bench: dict, C: dict) -> str:
       <tr><td>Evaluators with an inflow from a lab or a lab-tied party</td><td class="num">{near} of {len(list(C['ex']))}</td></tr>
       <tr><td>Funding sources with a second hop traced</td><td class="num">{traced} of {srcn}</td></tr></table>
       <h3 style="margin-top:14px">Evidence standard</h3><p style="font-size:13.5px">Imported rows are leads copied from another project's ledger and satisfy no gate. A 4 on funding requires a confirmed bounded negative in a filing or index. Scores are readings of the public record at the build date, not endorsements.</p></div></div>
-    <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Right-of-reply packets sent to evaluators whose scores moved are in <a href="{REPO}outreach/">outreach/</a>; replies are filed as signals.</p>
+    <div class="card"><h3>Open questions</h3><p style="font-size:13.5px">Kept in <a href="{REPO}paper/OPEN-QUESTIONS.md">paper/OPEN-QUESTIONS.md</a> with status, routes tried, and the document that would close each. Audits in <a href="{REPO}paper/audits/">paper/audits/</a>. Replies from named organizations are filed as signals; after first publication, a score that moves by more than one anchor triggers a record packet to that organization (<code>bench outreach</code>).</p>
     <h3 style="margin-top:14px">Data</h3><p style="font-size:13.5px"><a href="../bench.json">bench.json</a> (evaluators, assessments, signals, sources), <a href="../exposure.json">exposure.json</a>, <a href="../timeline.json">timeline.json</a>, <a href="{REPO}data/ledger/">ledger CSVs</a>, <a href="{REPO}graph/events.jsonl">event log</a>. Code Apache-2.0; data CC BY 4.0. Disclosure: <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>"""
     return layout("Status", body, 1, "status")
 
@@ -312,7 +310,7 @@ def contribute_index() -> str:
       <li><b>Ten minutes.</b> Open any evaluator page, follow a source link, and check that the quoted span is there. If it is not, open an issue with the signal id.</li>
       <li><b>An hour.</b> Confirm an imported ledger row: open its source, compare the figure, set <code>audit_status</code> to confirmed or differs, add a line to the audit file, open a pull request.</li>
       <li><b>An afternoon.</b> Add evidence: a source you fetched yourself, a signal with a quote under 120 characters copied exactly, and if it changes an anchor, the new rationale.</li>
-      <li><b>If you work at an evaluator or a lab.</b> You are welcome to contribute; say so in the pull request. Evaluators can publish their contract terms and the relevant dimensions move on their own. Right-of-reply packets for organizations whose scores changed are in <a href="{REPO}outreach/">outreach/</a>.</li></ul>
+      <li><b>If you work at an evaluator or a lab.</b> You are welcome to contribute; say so in the pull request. Evaluators can publish their contract terms and the relevant dimensions move on their own. To file a formal response, use the <a href="https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md">right-of-reply issue template</a>; it is filed as a signal with the date received.</li></ul>
       <p style="font-size:13.5px;margin-top:10px">Full recipes and rules of evidence: <a href="{REPO}AGENTS.md">AGENTS.md</a>, <a href="{REPO}CONTRIBUTING.md">CONTRIBUTING.md</a>, <a href="{REPO}CONTRACT.md">CONTRACT.md</a>.</p></div>
     <div class="card"><h3>What happens to a pull request</h3><ul>
       <li>CI runs the verifier (the CONTRACT), rebuilds the graph and site, checks the committed event log matches a clean build, and runs the tests.</li>
