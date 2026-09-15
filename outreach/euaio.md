@@ -13,10 +13,11 @@ Prepared 2026-09-15. Reply requested within 14 days of sending. This is the comp
 
 ### Funding: 3/4 (standard policy: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
-Derivation: Capped at 3 by euaio.10 (F.12): Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.. Floors up to 3 from euaio.06 do not exceed the cap.
+Derivation: Capped at 3 by euaio.10 (F.12): Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.. Floors up to 3 from euaio.06, euaio.14 do not exceed the cap.
 Curator note: Anchor 3 pending a confirmed bounded negative; funding is public by construction but the gate asks for the row.
 - [for, floors at 3, F.9] Public funding. Quote: "established within the Commission as part of the administrative structure of the Directorate-General" Sources: Frontier AI safety regulations: A reference for lab staff (https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/); Commission Decision Establishing the European AI Office (https://digital-strategy.ec.europa.eu/en/library/commission-decision-establishing-european-ai-office)
 - [against, caps at 3, F.12] Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file. Quote: "The €9,080,000 tender is divided into six lots" Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/); The EU AI Act Newsletter #77: AI Office Tender (https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-77-ai-office)
+- [for, floors at 3, F.9] Commission Decision C(2024) 390 Article 8 funds the AI Office from DG CONNECT staff, Digital Europe Programme administrative appropriations, and DEP Specific Objective 2 'Artificial Intelligence' for operational expenditure, naming no non-Union source. Quote: "Operational expenditure of the Office shall be covered by the financial resources allocated to Specific Objective 2" Sources: Commission Decision of 24 January 2024 establishing the European Artificial Intelligence Office, C/2024/1459 (Official Journal PDF) (https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024D01459); Commission Decision Establishing the European AI Office (https://digital-strategy.ec.europa.eu/en/library/commission-decision-establishing-european-ai-office)
 - Document request: Add a confirmed bounded negative from a primary source to restore anchor 4.
 
 ### Governance: 3/4 (standard policy: 3)
@@ -68,6 +69,7 @@ Derivation: Floored at 4 by euaio.09 (X.7): No commercial products.. No admissib
 
 - T48: contract from eu-budget to euaio, 2025-12, 7373017: EU AI Office: total awarded across six lots of TED 864574-2025 to contracted evaluators (outflow from the Office, recorded on the Office row for visibility) [confirmed] https://ted.europa.eu/en/notice/-/detail/864574-2025
 - N10: negative: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11] [imported] https://coefficientgiving.org/grants/
+- N27: negative: Commission Decision C(2024) 390 Article 8 names only Union budget sources for the AI Office: DG CONNECT staff, Digital Europe Programme administrative appropriations for external staff, and DEP Specific Objective 2 for operational expenditure [Commission Decision of 24 January 2024 establishing the European AI Office, C/2024/1459, Article 8 (Official Journal PDF), 2026-09-15] [confirmed] https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024D01459
 
 ## What would move the score
 

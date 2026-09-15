@@ -20,7 +20,7 @@ Curator note: Anchor 0 on funding given the cited signals. Evidence-limited: the
 ### Governance: 0/4 (standard policy: 0)
 Anchor 0: Unit or subsidiary of a lab or a lab's investor.
 Derivation: Capped at 0 by msft.02 (G.6): Business unit of a frontier developer.; capped at 0 by msft.09 (G.6): Microsoft's AI red team has operated since 2018 as an internal function and reports having red-teamed more than 100 generative AI products; it is separate from product teams, not from the developer..
-Curator note: Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.
+Curator note: Anchor 0 on governance given the cited signals.
 - [against, caps at 0, G.6] Business unit of a frontier developer. Quote: "guidance and best practices from the industry leading Microsoft AI Red Team" Sources: Microsoft AI Red Team (Microsoft Learn) (https://learn.microsoft.com/en-us/security/ai-red-team/)
 - [against, caps at 0, G.6] Microsoft's AI red team has operated since 2018 as an internal function and reports having red-teamed more than 100 generative AI products; it is separate from product teams, not from the developer. Quote: "The AI red team was formed in 2018 to address the growing landscape of AI safety and security risks" Sources: Microsoft AI Red Team (Microsoft Learn) (https://learn.microsoft.com/en-us/security/ai-red-team/); 3 takeaways from red teaming 100 generative AI products (https://www.microsoft.com/en-us/security/blog/2025/01/13/3-takeaways-from-red-teaming-100-generative-ai-products/)
 

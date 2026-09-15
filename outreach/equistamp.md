@@ -19,9 +19,9 @@ Curator note: Anchor 3 from the cited rows; low confidence, imported evidence.
 - [against, caps at 3, F.10] Private company; no funding or ownership disclosed. Quote: "We're in the process of becoming a Public Benefit Corporation" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Governance: 1/4 (standard policy: 1)
-Anchor 1: VC-backed for-profit with no published COI policy.
+Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by equistamp.03 (G.2): No COI policy on the site..
-Curator note: Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.
+Curator note: Anchor 1 from the cited rows; low confidence, imported evidence.
 - [against, caps at 1, G.2] No COI policy on the site. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Personnel: 2/4 (standard policy: unevidenced)
@@ -57,7 +57,7 @@ Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
 ### Role incompatibility: 3/4 (standard policy: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Floored at 3 by equistamp.09 (X.4): No lab-facing products found; clients are evaluators and governments.. No admissible signal caps it.
-Curator note: Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.
+Curator note: Anchor 3 from the cited rows; low confidence, imported evidence.
 - [for, floors at 3, X.4] No lab-facing products found; clients are evaluators and governments. Quote: "EquiStamp provides evaluation implementation, data annotation, and project operations for AI safety labs" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ## Dissent on the card

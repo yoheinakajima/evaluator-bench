@@ -66,6 +66,8 @@ Derivation: Floored at 3 by rand.08 (X.7): No commercial products.. No admissibl
 - T58: grant from coefficient to rand, 2020-2025, 76955751: cumulative Coefficient grants to RAND excluding the $10M in T02 [unverifiable] https://coefficientgiving.org/
 - T59: contract from us-gov to rand, FY2024, 488777692: FY2024 revenue, mostly federal contract research [unverifiable] https://projects.propublica.org/nonprofits/organizations/951958142
 - T70: recommendation from sff to rand, 2025, 1022000: SFF 2025: $1,022,000 to the Technology and Security Policy Center [confirmed] https://survivalandflourishing.fund/2025/recommendations
+- T102: grant from valhalla to rand, 2024, 10000000: Project Canary, an artificial intelligence safety initiative (990-PF TY2024 Part XV) [confirmed] https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502559349100000_public.xml
+- T103: grant from high-tide to rand, 2024, 333334: 'to support the Project Canary' as filed (990-PF TY2024 Part XV) [confirmed] https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202503179349100135_public.xml
 
 ## What would move the score
 

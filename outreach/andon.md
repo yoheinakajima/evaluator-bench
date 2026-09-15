@@ -18,7 +18,7 @@ Derivation: Capped at 2 by andon.03 (F.10): Commercial platform (Pion) and lab p
 - [against, caps at 3, F.10] Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found. Quote: "Andon Labs has raised $500K." Sources: Andon Labs profile (https://pitchbook.com/profiles/company/541549-09); Andon Labs: Autonomous organizations without humans in the loop (https://www.ycombinator.com/companies/andon-labs)
 
 ### Governance: 1/4 (standard policy: 1)
-Anchor 1: VC-backed for-profit with no published COI policy.
+Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by andon.04 (G.1): No published COI policy found..
 - [against, caps at 1, G.1] No published COI policy found. Quote: "Winter 2024 Active Machine Learning AI San Francisco" Sources: Andon Labs (https://andonlabs.com/); Andon Labs: Autonomous organizations without humans in the loop (https://www.ycombinator.com/companies/andon-labs)
 
