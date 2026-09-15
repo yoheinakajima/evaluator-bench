@@ -5,10 +5,12 @@ PROCESS.md section 10 asks of the curators what the rubric asks of evaluators. F
 ## Yohei Nakajima
 
 - Role: Managing Partner, Untapped Capital (pre-seed and seed venture fund); operator of Epistemedia; author of ActiveGraph, which this repository is built on.
-- Investments in, advisory roles at, or payments from any evaluator listed in this repository: [to complete]
-- Investments in, advisory roles at, or payments from any frontier AI developer: [to complete]
-- Funders shared with evaluators listed here (for example, any fund that has invested in Untapped Capital and also funds an evaluator): [to complete]
-- Personal relationships with people named in the ledger: [to complete]
+- Investments in, advisory roles at, or payments from any evaluator listed in this repository: **pending curator confirmation (requested 2026-09-15)**
+- Investments in, advisory roles at, or payments from any frontier AI developer: **pending curator confirmation (requested 2026-09-15)**
+- Funders shared with evaluators listed here (for example, any fund that has invested in Untapped Capital and also funds an evaluator): **pending curator confirmation (requested 2026-09-15)**
+- Personal relationships with people named in the ledger: **pending curator confirmation (requested 2026-09-15)**
+
+These fields are filled by the curator, not inferred. Publication is blocked until they are.
 
 ## Assistant
 

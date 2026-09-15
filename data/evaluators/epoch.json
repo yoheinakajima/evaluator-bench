@@ -1,12 +1,13 @@
 {
-  "id": "epoch",
-  "name": "Epoch AI",
-  "type": "nonprofit",
-  "hq": "Remote",
-  "domains": [
-    "benchmarks"
-  ],
-  "confidence": "high",
-  "summary": "Capability-tracking and benchmark nonprofit; the FrontierMath episode is the canonical undisclosed-funding case.",
-  "what_would_move_the_score": "A standing rule against confidential lab funding of any evaluation asset."
+ "id": "epoch",
+ "name": "Epoch AI",
+ "type": "nonprofit",
+ "hq": "Remote",
+ "domains": [
+  "benchmarks"
+ ],
+ "confidence": "high",
+ "summary": "Capability-tracking and benchmark nonprofit; the FrontierMath episode is the canonical undisclosed-funding case.",
+ "what_would_move_the_score": "A standing rule against confidential lab funding of any evaluation asset.",
+ "role": "referee"
 }

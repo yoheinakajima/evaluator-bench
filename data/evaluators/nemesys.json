@@ -1,14 +1,15 @@
 {
-  "id": "nemesys",
-  "name": "Nemesys Insights",
-  "type": "vc",
-  "hq": "Albany, US",
-  "domains": [
-    "bio",
-    "misuse",
-    "assurance"
-  ],
-  "confidence": "low",
-  "summary": "Red-teaming firm led by the director of a university red-teaming center; paid assessor on Amazon's Nova model papers; subcontractor on the EU Lot 1 CBRN consortium.",
-  "what_would_move_the_score": "Funding disclosure and a published policy on lab clients."
+ "id": "nemesys",
+ "name": "Nemesys Insights",
+ "type": "private",
+ "hq": "Albany, US",
+ "domains": [
+  "bio",
+  "misuse",
+  "assurance"
+ ],
+ "confidence": "low",
+ "summary": "Red-teaming firm led by the director of a university red-teaming center; paid assessor on Amazon's Nova model papers; subcontractor on the EU Lot 1 CBRN consortium.",
+ "what_would_move_the_score": "Funding disclosure and a published policy on lab clients.",
+ "role": "referee"
 }

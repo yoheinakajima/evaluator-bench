@@ -231,9 +231,10 @@
 <!--__RELEASE_BANNER__-->
 <main>
   <div class="wrap hero" id="directory">
-    <span class="stamp" id="stamp">Evidence current to 14 Sep 2026</span>
+    <span class="stamp" id="stamp">Evidence current to 15 Sep 2026</span>
     <h1>Independence, scored.</h1>
-    <p class="lede">Third-party evaluators for frontier models, ranked on independence from the labs they test. Every score is built from public signals and ledger rows you can inspect.</p>
+    <p class="lede">Evaluators, government institutes, vendors and benchmarks &mdash; plus a watchlist of expected entrants &mdash; scored on independence from the labs they test. Every score is built from public signals and ledger rows you can inspect.</p>
+    <p class="note">Money is traced by <b>hops</b>: hop 0 is a lab; hop 1 is a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. "Lab-tied" means hop 0 or hop 1. Scores are gated ordinal projections, not procurement truth.</p>
     <p class="note">Set the weights for your situation; the ranking updates as you move them.</p>
 
     <div class="weights" aria-label="Scoring weights">
@@ -249,7 +250,7 @@
       <div class="sliders" id="sliders"></div>
       <div class="weights-foot">
         <span id="wsum"></span>
-        <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="gate"> Gate on floors: any 0 caps the score at 40, any 1 at 60</label>
+        <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="gate" checked> Gate on floors: any 0 caps the score at 40, any 1 at 60 (default; uncheck for raw compensatory)</label>
         <button class="linkbtn" id="reset">Reset to lab procurement</button>
       </div>
     </div>
@@ -257,6 +258,7 @@
     <div class="filters">
       <input type="search" id="q" placeholder="Search evaluators, domains, funders" aria-label="Search">
       <div class="fgroup" id="domainFilters"><span>Domain</span></div>
+      <div class="fgroup" id="roleFilters"><span>Role</span></div>
       <div class="fgroup" id="typeFilters"><span>Type</span></div>
       <select class="sortsel" id="sort" aria-label="Sort">
         <option value="score">Sort by score</option>
@@ -269,6 +271,9 @@
     <div class="ledger">
       <div class="lhead"><span></span><span>Evaluator</span><span>Domains</span><span>Independence</span><span style="text-align:right">Score</span><span></span></div>
       <div id="rows"></div>
+      <h3 style="margin-top:22px">Watchlist (not ranked)</h3>
+      <p class="note">Expected entrants scored on the same rubric but excluded from the ranking and from every average: a hypothetical composite and an initiative announced with no evaluations yet.</p>
+      <div id="watchrows"></div>
     </div>
   </div>
 
@@ -326,10 +331,17 @@
     </div>
   </section>
 
+  <section id="evidence">
+    <div class="wrap">
+      <h2>How good is the evidence</h2>
+      <p class="lead">The scores measure what the public record shows, and the public record is largely what the evaluators say about themselves. Of the 114 sources cited by the ranked population's 289 signals, 62 (54%) are published by the evaluator being scored, and 10 (9%) are tier-1 sources (regulatory filings or public indexes). Only 36 of 289 signals (12%) carry an exact quoted span. The concentration is worst at the top: AVERI's seven cited sources are five self-published with none at tier 1; SaferAI's seven are four self-published with one tier-1; METR's 23 are nine self-published with five tier-1. An evidence-based score rewards silence, and self-published sources can be replaced only where independent reporting exists &mdash; which, for most evaluators, it does not. That scarcity is a finding, not a data gap to be patched: the field's independence cannot be verified from outside the field. Scores built mostly on self-report are flagged by their evidence tier on every scorecard.</p>
+    </div>
+  </section>
+
   <section class="alt" id="cases">
     <div class="wrap">
       <h2>Cases that set the bar</h2>
-      <p class="lead">Seven engagements from the last two years, read for what they reveal about each dimension. Longer treatments and sources are in the repo under paper/.</p>
+      <p class="lead">Six engagements from the last two years, read for what they reveal about each dimension. Longer treatments and sources are in the repo under paper/.</p>
       <div class="cases" id="caseList"></div>
     </div>
   </section>
@@ -352,7 +364,7 @@
       </div>
       <div id="ldetail" class="ldetail" hidden></div>
       <p class="lead" style="margin-top:14px">A caveat the ladder cannot show: it records first arrivals, so a one-clause rule in one state fills a cell the same way Sarbanes-Oxley does, and it hides the order things happened in. The three views below fix both.</p>
-      <p class="lead" style="margin-top:10px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules follow public failures within a few years; the stretch before the first failure is where a regime's shape is decided. The oversight column is the one AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
+      <p class="lead" style="margin-top:10px">Read financial audit left to right and you get 158 years from the first mandate to the first rule separating auditors from consultants. Read the AI row and you get four. Across regimes, rules have followed public failures within a few years in the coded record (triggers were selected with hindsight, so this is a description, not a causal finding); the stretch before the first failure is where a regime's shape is decided. The oversight and independence-rule columns are the ones AI has not filled. Data and method: <code>data/industries/</code>, <code>bench/timeline.py</code>, <code>paper/</code>.</p>
     </div>
   </section>
 
@@ -367,7 +379,7 @@
       <p class="lead">Every trigger incident paired with the next rule that followed. Most responses arrive within three years, and most are mandates or standards rather than structural changes; the two structural responses in the set are the PCAOB after Enron and lab inspection under Good Laboratory Practice after the IBT fraud. Frontier AI's two responses so far score 2 and 1.</p>
       <div class="fig" id="figResponses"><!--__FIG_RESPONSES__--></div><div class="figlive" aria-live="polite"></div>
       <h3 style="margin-top:26px">Who pays, selects, sees, publishes, and watches</h3>
-      <p class="lead">The configuration the ladder cannot show. Read the AI row against the others: the only other regime with the same five-cell pattern is dietary supplements, the regime that removed pre-market review by statute.</p>
+      <p class="lead">The configuration the ladder cannot show. Read the AI row against the others: the only other regime with the same five-cell pattern is dietary supplements, the regime that removed pre-market review by statute. The match is on a coarse categorical coding, so it is suggestive rather than conclusive.</p>
       <div class="fig" id="figMech"><!--__FIG_MECHANISMS__--></div><div class="figlive" aria-live="polite"></div>
       <h3 style="margin-top:26px">Money and ties, every evaluator</h3>
       <p class="lead">The ledger view: each evaluator's traced inflows by distance from a frontier lab, ties within two steps, and how much of the record has been re-derived from primary sources rather than imported. Read the confirmed column before the others; most rows are still leads. Rows and sources: <code>data/ledger/</code>. Rebuild with <code>python -m bench exposure --json</code>.</p>
@@ -383,16 +395,16 @@
   <section class="alt" id="browse">
     <div class="wrap">
       <h2>Browse by type</h2>
-      <p class="lead">Every item has its own page. <a href="dockets/index.html">Dockets</a>: contestable claims drafted for Epistemedia review, with certificates where one exists. <a href="status/index.html">Status</a>: coverage, confirmed shares, open questions, data downloads. <a href="evaluators/index.html">Evaluators</a>: the scorecard table and a page per organization with its dimensions, signals, sources, ledger rows and a focused funding graph. <a href="entities/index.html">Entities</a>: every funder, lab, investor and person in the ledger, with money in and out and roles held. <a href="regimes/index.html">Regimes</a>: the sixteen assurance regimes with milestones, mechanisms and path signatures. <a href="sources/index.html">Sources</a>: each cited source with its tier, audit status, and everything that cites it.</p>
+      <p class="lead">Every item has its own page. <a href="dockets/index.html">Dockets</a>: contestable-claim drafts for future Epistemedia review (none submitted; drafts are not evidence). <a href="status/index.html">Status</a>: coverage, confirmed shares, open questions, data downloads. <a href="evaluators/index.html">Evaluators</a>: the scorecard table and a page per organization with its dimensions, signals, sources, ledger rows and a focused funding graph. <a href="entities/index.html">Entities</a>: every funder, lab, investor and person in the ledger, with money in and out and roles held. <a href="regimes/index.html">Regimes</a>: the sixteen assurance regimes with milestones, mechanisms and path signatures. <a href="sources/index.html">Sources</a>: each cited source with its tier, audit status, and everything that cites it.</p>
     </div>
   </section>
 
   <section id="method" class="method">
     <div class="wrap">
       <h2>How the scores are made</h2>
-      <p>Each evaluator gets a 0 to 4 on eight dimensions using only public evidence: filings, funding announcements, system cards, published policies, contracts described in reports, and press. The weighted total is scaled to 100. Confidence tags flag where evidence is thin. An entry is not an endorsement, and a low score is not an accusation; it means the public record does not yet show the safeguards that would earn a higher one.</p>
+      <p>Each evaluator gets a 0 to 4 on eight dimensions using only public evidence: filings, funding announcements, system cards, published policies, contracts described in reports, and press. The weighted total is scaled to 100. Scores are <b>gated by default</b>: any 0 on a dimension caps the total at 40, any 1 caps it at 60 — independence has floors, not just averages. Uncheck the gate for the raw compensatory score (sensitivity analysis). The lab-procurement preset is the pre-registered confirmatory view; the other presets are sensitivity checks, not alternative truths. Confidence tags flag where evidence is thin. An entry is not an endorsement, and a low score is not an accusation; it means the public record does not yet show the safeguards that would earn a higher one.</p>
       <p>Independence is one axis. Competence, domain coverage, staffing, and turnaround are others, and a highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters alongside the score.</p>
-      <p>Scores move when evidence moves. Send a contract term, a policy, or a correction and the entry updates with the source attached. Curator disclosure is in <a href="https://github.com/yoheinakajima/evaluator-bench/blob/main/DISCLOSURE.md">DISCLOSURE.md</a>; evaluators whose scores changed receive a right-of-reply packet before publication and their replies are filed as signals.</p>
+      <p>Scores move when evidence moves. Send a contract term, a policy, or a correction and the entry updates with the source attached. This dataset was built by a single curator with AI assistance (Claude, Anthropic &mdash; itself a frontier developer in the ecosystem scored here); curator disclosure, including the fields still awaiting confirmation, is in <a href="https://github.com/yoheinakajima/evaluator-bench/blob/main/DISCLOSURE.md">DISCLOSURE.md</a>. Corrections received through 29 Sep 2026 are filed as signals with the date received, and evaluators whose scores changed after publication receive a right-of-reply packet before the next batch.</p>
       <a class="cta" href="contribute/index.html">How to submit evidence</a> <a href="status/index.html" style="margin-left:14px;color:var(--muted)">Status and data</a> <a href="dockets/index.html" style="margin-left:14px;color:var(--muted)">Dockets</a>
     </div>
   </section>
@@ -401,7 +413,7 @@
 <footer>
   <div class="wrap">
     <span>Evaluator Bench, an open dataset built on ActiveGraph. Every score traces to signals and sources in the event log.</span>
-    <span>Last review 14 Sep 2026</span>
+    <span>Last review 15 Sep 2026</span>
   </div>
 </footer>
 
@@ -412,6 +424,7 @@ const LEDGER_ID = /*__LEDGER_MAP__*/null || {};
 const DIMS = BENCH.dimensions.map(d=>({k:d.key,label:d.label,desc:d.desc,anchors:d.anchors}));
 const PRESETS = Object.fromEntries(Object.entries(BENCH.presets).map(([k,v])=>[k,v.weights]));
 const TYPES = BENCH.types;
+const ROLES = {referee:"Independent referee",government:"Government institute",vendor:"Vendor / red-team co.",benchmark:"Benchmark","lab-team":"First-party lab team","expected-entrant":"Expected entrant"};
 const DOMAINS = ["bio","cyber","autonomy","scheming","jailbreak","misuse","assurance","benchmarks","incident"];
 const DATA = BENCH.evaluators;
 const SRC = BENCH.sources;
@@ -420,27 +433,31 @@ document.getElementById("stamp").textContent = "Evidence current to " + BENCH.bu
 
 const CASES = [
  {t:"METR and Redwood inside OpenAI",v:"Mixed: deep access, lab-set scope",
-  p:"Two METR staff and a Redwood contractor spent six days on OpenAI's premises investigating how roughly 700 agents coordinated a hack of Hugging Face. They took no payment, wrote their own 91-page report, and published a statement on what was redacted. OpenAI set the window (June 26 to July 13), could redact any non-public information, and gave feedback on emphasis and tone. The later breach of OpenAI's own research cluster fell outside scope. This is what the access and publication dimensions look like at their current best, and what the scope dimension looks like when the audited party still holds the pen."},
+  p:"Two METR staff and a Redwood contractor spent six days on OpenAI's premises investigating how roughly 700 agents coordinated a hack of Hugging Face. They took no payment, wrote their own report, and published a statement on what was redacted. OpenAI set the window (June 26 to July 13), could redact any non-public information, and gave feedback on emphasis and tone. The later breach of OpenAI's own research cluster fell outside scope. This is what the access and publication dimensions look like at their current best, and what the scope dimension looks like when the audited party still holds the pen.",
+  c:"Sources: METR, \"Brief independent investigation of agents' behavior in the OpenAI / Hugging Face incident,\" 26 Aug 2026; critique of the scope in the repo under paper/."},
  {t:"Epoch AI and FrontierMath",v:"Failure: undisclosed funder with data access",
-  p:"OpenAI commissioned 300 problems, owned them, and saw the statements and solutions; a contract barred Epoch from saying so until the day o3's score was announced. More than sixty contributing mathematicians were not told. Epoch acknowledged the communication failure and built a 50-problem holdout OpenAI cannot see. Publication rights include the right to disclose who paid."},
+  p:"OpenAI commissioned 300 problems, owned them, and saw the statements and solutions; a contract barred Epoch from saying so until the day o3's score was announced. More than sixty contributing mathematicians were not told. Epoch acknowledged the communication failure and built a 50-problem holdout OpenAI cannot see. Publication rights include the right to disclose who paid.",
+  c:"Sources: Epoch AI, \"Clarifying the creation and use of the FrontierMath benchmark,\" 23 Jan 2025."},
  {t:"SecureBio and the OpenAI Foundation",v:"Managed: firewall, public commitment",
-  p:"SecureBio accepted a foundation grant for its Detection division while its AI division evaluates OpenAI models under contracts OpenAI pays for. Leadership disclosed the arrangement, described the firewall, and committed to resign and go public if the grant were ever used as leverage. The foundation's endowment is a stake in OpenAI and the boards largely overlap; the disclosure is what separates this from the Epoch case."},
+  p:"SecureBio accepted a foundation grant for its Detection division while its AI division evaluates OpenAI models under contracts OpenAI pays for. Leadership disclosed the arrangement, described the firewall, and committed to resign and go public if the grant were ever used as leverage. The foundation's endowment is a stake in OpenAI and the boards largely overlap; the disclosure is what separates this from the Epoch case.",
+  c:"Sources: SecureBio's own disclosure of the grant (X, 2026)."},
  {t:"Gray Swan and OpenAI's safety committee",v:"Personal recusal, structural conflict",
-  p:"Gray Swan's co-founder and chief scientist chairs the OpenAI board committee that can delay a model release, and recuses himself from the company's OpenAI work. Gray Swan also sells jailbreak defenses to the labs it red-teams. Recusal handles the individual; it does not address a firm that grades models and sells the remedy."},
+  p:"Gray Swan's co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board, and recuses himself from Gray Swan's dealings with OpenAI. Gray Swan also sells jailbreak defenses to the labs it red-teams. Recusal handles the individual; it does not address a firm that grades models and sells the remedy.",
+  c:"Sources: OpenAI board announcements (chair role); Forbes, 2024 (recusal quote)."},
  {t:"Irregular, Sequoia and the rebrand",v:"Investor overlap",
-  p:"Pattern Labs became Irregular in September 2025 with $80M led by Sequoia and Redpoint at a $450M valuation. Sequoia is a significant OpenAI investor, and Irregular's evaluations sit in OpenAI's system cards. Nothing here is improper; it is the plain case of a venture-backed evaluator whose backers profit when the evaluated lab's models ship."},
- {t:"Hugging Face, Nvidia and Anthropic",v:"Pending: ownership chain",
-  p:"Within hours of Anthropic's embedded-evaluator pledge, Hugging Face asked to join. Nvidia is buying Hugging Face and is reported to be negotiating an anchor position in Anthropic's IPO. If both close, the evaluator's owner would be one of the evaluated lab's largest shareholders. The governance question should be answered before the first badge is issued."},
+  p:"Pattern Labs became Irregular in September 2025 with $80M led by Sequoia and Redpoint at a $450M valuation. Sequoia is a significant OpenAI investor, and Irregular's evaluations sit in OpenAI's system cards. Nothing here is improper; it is the plain case of a venture-backed evaluator whose backers profit when the evaluated lab's models ship.",
+  c:"Sources: TechCrunch / company announcement, 17 Sep 2025."},
  {t:"AVERI's double-blind pilot",v:"Structural answer to confidentiality",
-  p:"AVERI, DeepMind, OpenMined and MLCommons ran Gemini 2.5 Flash-Lite against never-seen AILuminate prompts inside a secure enclave, so the lab did not see the test items and the evaluator did not see model internals it was not cleared for. Small model, voluntary, and lab-selected, but it demonstrates that the usual excuse for shallow access has an engineering solution."}
+  p:"AVERI, DeepMind, OpenMined and MLCommons ran Gemini 2.5 Flash-Lite against never-seen AILuminate prompts inside a secure enclave, so the lab did not see the test items and the evaluator did not see model internals it was not cleared for. Small model, voluntary, and lab-selected, but it demonstrates that the usual excuse for shallow access has an engineering solution.",
+  c:"Sources: AVERI Pilot Report, Aug 2026."}
 ];
 
 let weights = {...PRESETS.lab}; let activePreset = "lab";
-let filters = {domain:new Set(), type:new Set()}; let query = ""; let sortKey = "score";
+let filters = {domain:new Set(), type:new Set(), role:new Set()}; let query = ""; let sortKey = "score";
 const expanded = new Set();
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-let gated = false;
+let gated = true;
 function rawScore(e, w){ let num=0, den=0; for(const d of DIMS){ num += w[d.k]*(e.values[d.k]/4); den += w[d.k]; } return den ? Math.round(num/den*100) : 0; }
 function score(e){ let v = rawScore(e, weights); if(gated){ const mn = Math.min(...DIMS.map(d=>e.values[d.k])); if(mn===0) v = Math.min(v,40); else if(mn===1) v = Math.min(v,60); } return v; }
 function floorOf(e){ let best=null; for(const d of DIMS){ if(best===null || e.values[d.k] < e.values[best.k]) best=d; } return `${best.label.toLowerCase()} ${e.values[best.k]}/4`; }
@@ -469,6 +486,8 @@ $("#gate").addEventListener("change",ev=>{ gated = ev.target.checked; renderRows
 function renderFilterChips(){
   const dwrap=$("#domainFilters");
   for(const d of DOMAINS){ const b=document.createElement("button"); b.className="chip"; b.textContent=d; b.setAttribute("aria-pressed","false"); b.addEventListener("click",()=>{toggle(filters.domain,d,b); renderRows();}); dwrap.appendChild(b); }
+  const rwrap=$("#roleFilters");
+  for(const [k,v] of Object.entries(ROLES)){ const b=document.createElement("button"); b.className="chip"; b.textContent=v; b.setAttribute("aria-pressed","false"); b.addEventListener("click",()=>{toggle(filters.role,k,b); renderRows();}); rwrap.appendChild(b); }
   const twrap=$("#typeFilters");
   for(const [k,v] of Object.entries(TYPES)){ const b=document.createElement("button"); b.className="chip"; b.textContent=v; b.setAttribute("aria-pressed","false"); b.addEventListener("click",()=>{toggle(filters.type,k,b); renderRows();}); twrap.appendChild(b); }
 }
@@ -478,47 +497,56 @@ $("#sort").addEventListener("change",ev=>{sortKey=ev.target.value; renderRows();
 
 function visible(){
   return DATA.filter(e=>{
+    if(e.status==="watchlist") return false;
     if(filters.domain.size && ![...filters.domain].every(d=>e.domains.includes(d))) return false;
     if(filters.type.size && !filters.type.has(e.type)) return false;
-    if(query){ const hay=(e.name+" "+e.summary+" "+e.domains.join(" ")+" "+TYPES[e.type]+" "+e.signals.map(s=>s.claim).join(" ")).toLowerCase(); if(!hay.includes(query)) return false; }
+    if(filters.role.size && !filters.role.has(e.role)) return false;
+    if(query){ const hay=(e.name+" "+e.summary+" "+e.domains.join(" ")+" "+TYPES[e.type]+" "+ROLES[e.role]+" "+e.signals.map(s=>s.claim).join(" ")).toLowerCase(); if(!hay.includes(query)) return false; }
     return true;
   });
 }
-function renderRows(){
-  const list = visible().map(e=>({e, v:score(e)}));
+function rowHTML({e,v},rank){
+  const nf=e.signals.filter(s=>s.direction==="for").length, na=e.signals.length-nf;
+  const row=document.createElement("div"); row.className="row"; row.setAttribute("aria-expanded", String(expanded.has(e.id)));
+  row.innerHTML=`
+    <button class="row-main" aria-controls="d_${e.id}" aria-expanded="${expanded.has(e.id)}">
+      <span class="rank">${rank}</span>
+      <span class="name">${esc(e.name)}<small>${ROLES[e.role]||""} &middot; ${TYPES[e.type]}, ${esc(e.hq)}</small></span>
+      <span class="tags">${e.domains.map(d=>`<span class="tag">${d}</span>`).join("")}</span>
+      <span class="barwrap"><span class="bar ${band(v)}"><i style="width:${v}%"></i></span></span>
+      <span class="score">${v}<small>floor ${floorOf(e)}</small></span>
+      <span class="caret" aria-hidden="true">&#8964;</span>
+    </button>
+    <div class="row-detail" id="d_${e.id}">${detail(e)}</div>`;
+  row.querySelector(".row-main").addEventListener("click",()=>{
+    if(expanded.has(e.id)) expanded.delete(e.id); else expanded.add(e.id);
+    const on=expanded.has(e.id); row.setAttribute("aria-expanded",String(on)); row.querySelector(".row-main").setAttribute("aria-expanded",String(on));
+  });
+  return row;
+}
+function sortList(list){
   list.sort((x,y)=>{
     if(sortKey==="name") return x.e.name.localeCompare(y.e.name);
     if(sortKey==="access") return (y.e.values.A-x.e.values.A)||(y.v-x.v);
     if(sortKey==="funding") return (y.e.values.F-x.e.values.F)||(y.v-x.v);
     return (y.v-x.v)||x.e.name.localeCompare(y.e.name);
   });
+  return list;
+}
+function renderRows(){
+  const list = sortList(visible().map(e=>({e, v:score(e)})));
   const host=$("#rows"); host.innerHTML="";
-  if(!list.length){ host.innerHTML=`<div class="empty">No evaluators match. Clear a filter or search a broader term.</div>`; return; }
-  list.forEach(({e,v},i)=>{
-    const nf=e.signals.filter(s=>s.direction==="for").length, na=e.signals.length-nf;
-    const row=document.createElement("div"); row.className="row"; row.setAttribute("aria-expanded", String(expanded.has(e.id)));
-    row.innerHTML=`
-      <button class="row-main" aria-controls="d_${e.id}" aria-expanded="${expanded.has(e.id)}">
-        <span class="rank">${i+1}</span>
-        <span class="name">${esc(e.name)}<small>${TYPES[e.type]}, ${esc(e.hq)}</small></span>
-        <span class="tags">${e.domains.map(d=>`<span class="tag">${d}</span>`).join("")}</span>
-        <span class="barwrap"><span class="bar ${band(v)}"><i style="width:${v}%"></i></span></span>
-        <span class="score">${v}<small>floor ${floorOf(e)}</small></span>
-        <span class="caret" aria-hidden="true">&#8964;</span>
-      </button>
-      <div class="row-detail" id="d_${e.id}">${detail(e)}</div>`;
-    row.querySelector(".row-main").addEventListener("click",()=>{
-      if(expanded.has(e.id)) expanded.delete(e.id); else expanded.add(e.id);
-      const on=expanded.has(e.id); row.setAttribute("aria-expanded",String(on)); row.querySelector(".row-main").setAttribute("aria-expanded",String(on));
-    });
-    host.appendChild(row);
-  });
+  if(!list.length){ host.innerHTML=`<div class="empty">No evaluators match. Clear a filter or search a broader term.</div>`; }
+  else list.forEach((x,i)=>host.appendChild(rowHTML(x,i+1)));
+  const wl = sortList(DATA.filter(e=>e.status==="watchlist").map(e=>({e, v:score(e)})));
+  const wh=$("#watchrows"); wh.innerHTML="";
+  wl.forEach((x,i)=>wh.appendChild(rowHTML(x,"W"+(i+1))));
 }
 function srcLine(s){
   return `<span class="sigsrc">${s.sources.map((id,i)=>{const x=SRC[id]; return `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)})${tierBadge(x)}<span class="gid">${esc(s.source_graph_ids[i])}</span>`;}).join(" ")}</span>`;
 }
-const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press",docket:"reviewed docket"};
-function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] : "tier not set"; const st = x.audit_status || "unaudited"; const cert = x.certificate ? `<span class="gid" style="color:var(--teal);border-color:var(--teal)" title="${esc(x.certificate)}">Epistemedia reviewed (manual v0)</span>` : ""; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>${cert}`; }
+const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press",docket:"docket draft (not evidence)"};
+function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] : "tier not set"; const st = x.audit_status || "unaudited"; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>`; }
 function detail(e){
   const blocks = DIMS.map(d=>{
     const a=e.assessments[d.k]; const s=a.value; const cls = s>=3?"":(s==2?"mid":"low");
@@ -545,7 +573,7 @@ function detail(e){
   </div>`;
 }
 function renderRubric(){ $("#rubricGrid").innerHTML = DIMS.map(d=>`<div class="rdim"><h3>${d.label}</h3><p>${d.desc}</p><ul class="anchors">${d.anchors.map((a,i)=>`<li><b>${i}</b><span>${a}</span></li>`).join("")}</ul></div>`).join(""); }
-function renderCases(){ $("#caseList").innerHTML = CASES.map(c=>`<div class="case"><div><h3>${c.t}</h3><div class="verdict">${c.v}</div></div><p>${c.p}</p></div>`).join(""); }
+function renderCases(){ $("#caseList").innerHTML = CASES.map(c=>`<div class="case"><div><h3>${c.t}</h3><div class="verdict">${c.v}</div></div><p>${c.p}<br><span class="verdict">${c.c}</span></p></div>`).join(""); }
 renderSliders(); renderFilterChips(); renderRows(); renderRubric(); renderCases();
 
 // ---- stage ladder (interactive)
@@ -628,7 +656,7 @@ const STAGEMETA = /*__STAGES_JSON__*/null;
 // ---- population stats (the ledger itself is browsed on entity pages)
 (function(){
   // population stats
-  if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators; const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
+  if(EXPOSURE && EXPOSURE.evaluators){ const evs = EXPOSURE.evaluators.filter(x=>(x.status||"ranked")==="ranked"); const coef = evs.filter(x=>Object.values(x.buckets).some(b=>b.sources.includes("coefficient"))).length; const near = evs.filter(x=>Object.keys(x.buckets).some(k=>k==="hop0"||k==="hop1")).length; const rows = evs.reduce((a,x)=>a+x.inflow_rows,0), conf = evs.reduce((a,x)=>a+x.confirmed_rows,0);
     const traced = evs.reduce((a,x)=>a+x.second_hop.traced,0), srcs = evs.reduce((a,x)=>a+x.second_hop.sources,0);
     $("#popstats").textContent = `${evs.length} evaluators. ${near} have at least one inflow from a lab or a lab-tied party. ${coef} have Coefficient Giving inflows. ${conf} of ${rows} inflow rows are confirmed from the cited source; the rest are imported leads. The ledger says something about who is behind ${traced} of ${srcs} funding sources (second hop).`; }
 })();

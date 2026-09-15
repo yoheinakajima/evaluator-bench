@@ -1,12 +1,12 @@
 # Paper concept: Who pays the referee?
 
-Working title: **Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against Two Centuries of Assurance Regimes**
+Working title: **Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against the History of Assurance Regimes**
 
-Status: draft v0.1 in `draft.md`, 14 Sep 2026. Datasets seeded in this repo; Dataset B needs primary-source verification and Dataset A needs a second coder.
+Status: draft v0.4 in `draft.md`, 15 Sep 2026. Datasets seeded in this repo; Dataset B needs primary-source verification and Dataset A needs a second coder.
 
 ## One paragraph
 
-Every mature high-stakes industry ended up with a third-party assurance layer, and nearly every one of those layers started with the assessed party paying the assessor. Financial audit, credit ratings, product safety marks, drug testing labs, aircraft certification, ship classification, and cybersecurity assessment all began as voluntary or payer-conflicted arrangements and acquired independence rules later, usually within a few years of a public failure. Frontier AI evaluation is at the voluntary, payer-conflicted, pre-accreditation stage, and it had its first candidate trigger events in 2025 and 2026. This paper measures where the AI evaluator population sits on the independence dimensions those other regimes eventually regulated, using an open, evidence-linked dataset of 26 evaluators, and places that measurement on a coded lifecycle of twelve assurance regimes. The contribution is the two datasets and the comparison, not another framework.
+Every mature high-stakes industry ended up with a third-party assurance layer, and nearly every one of those layers started with the assessed party paying the assessor. Financial audit, credit ratings, product safety marks, drug testing labs, aircraft certification, ship classification, and cybersecurity assessment all began as voluntary or payer-conflicted arrangements and acquired independence rules later, usually within a few years of a public failure. Frontier AI evaluation is at the voluntary, payer-conflicted, pre-accreditation stage, and it had its first candidate trigger events in 2025 and 2026. This paper measures where the AI evaluator population sits on the independence dimensions those other regimes eventually regulated, using an open, evidence-linked dataset of 26 ranked evaluators (plus 2 expected entrants on a watchlist), and places that measurement on a coded lifecycle of sixteen assurance regimes. The contribution is the two datasets and the comparison, not another framework.
 
 ## Novelty check
 
@@ -31,13 +31,13 @@ The gap is empirical and it is two-sided. Nobody has coded the frontier evaluato
 
 Claims the paper should make:
 
-1. An open, evidence-linked scorecard of frontier AI evaluators on eight independence dimensions, rebuilt from an append-only log so every number traces to a source and a date. (Dataset A: this repo, 26 evaluators, 68 sources, 227 signals as of v0.)
+1. An open, evidence-linked scorecard of frontier AI evaluators on eight independence dimensions, rebuilt from an append-only log so every number traces to a source and a date. (Dataset A: this repo, 26 ranked evaluators plus a 2-entry watchlist, 289 signals citing 114 public sources as of v0.4.)
 2. A coded lifecycle dataset of assurance regimes across eleven non-AI industries: first voluntary assurance, trigger incidents, mandates, independence rules, accreditation, payer reforms, publication rules. (Dataset B: `data/industries/`, seed of 12 regimes.)
 3. Three findings the seed already suggests and the full dataset should test:
    - Rules follow triggers fast; drift before the first trigger is slow. In the seed, the median lag from a trigger incident to the next rule is about two years, while the interval from first voluntary assurance to the first independence rule runs from two decades to two centuries.
    - Who pays is almost never changed. Regimes made payer-conflicted assurance tolerable with standards, inspection of assurers, rotation, liability, and public ratings. The exceptions that removed the conflict routed payment through insurers (boilers) or funded assessors from a party with opposite incentives (auto crash ratings).
    - Delegation to the assessed party is the recurring failure mode (ODA in aviation, IBT in drug testing, issuer-paid ratings), and the AI field's default of lab-paid, lab-scoped evaluation is the same structure.
-4. A placement: on the eight dimensions, the 2026 AI evaluator population is strong on method transparency and weak on funding, scope control, and personnel, which matches the profile of financial audit before 1938 and drug testing before 1978.
+4. A placement: on the eight dimensions, the 2026 AI evaluator population is strong on scope control and method transparency and weak on funding, governance, and personnel.
 
 ## Hypotheses
 

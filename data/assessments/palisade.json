@@ -1,104 +1,105 @@
 [
-  {
-    "evaluator": "palisade",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "palisade.01",
-      "palisade.09",
-      "palisade.11"
-    ],
-    "rationale": "Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Check Palisade's Form 990 Schedule of contributors and any lab-money policy statement.",
-      "Reconcile $2,123,463 (grants database) with $3,803,463 (index snapshot)."
-    ]
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "G",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "palisade.06"
-    ],
-    "rationale": "Anchor 3 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "palisade.07"
-    ],
-    "rationale": "Anchor 3 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "A",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "palisade.05"
-    ],
-    "rationale": "Anchor 1 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "S",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "palisade.02"
-    ],
-    "rationale": "Anchor 4 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "R",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "palisade.03"
-    ],
-    "rationale": "Anchor 4 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "M",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "palisade.04"
-    ],
-    "rationale": "Anchor 3 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "palisade",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "palisade.08"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "palisade",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "palisade.01",
+   "palisade.09",
+   "palisade.11"
+  ],
+  "rationale": "Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Check Palisade's Form 990 Schedule of contributors and any lab-money policy statement.",
+   "Reconcile $2,123,463 (grants database) with $3,803,463 (index snapshot)."
+  ]
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "palisade.06"
+  ],
+  "rationale": "Anchor 3 on governance given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "P",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "palisade.07",
+   "palisade.10"
+  ],
+  "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. No recusal policy is evidenced; the value is provisional pending the second-coder pass.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "palisade.05"
+  ],
+  "rationale": "Anchor 1 on access given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "S",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "palisade.02"
+  ],
+  "rationale": "Anchor 4 on scope given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "R",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "palisade.03"
+  ],
+  "rationale": "Anchor 4 on publication given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "M",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "palisade.04"
+  ],
+  "rationale": "Anchor 3 on methods given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "palisade",
+  "dimension": "X",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "palisade.08"
+  ],
+  "rationale": "Anchor 4 on products given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

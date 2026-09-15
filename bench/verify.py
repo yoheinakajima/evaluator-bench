@@ -1,11 +1,17 @@
 """Integrity checks. Exit non-zero on any failure. Run in CI on every PR.
 
-The checks are the CONTRACT (see CONTRACT.md). A PR that changes a score
-without changing a signal fails here.
+The checks are the CONTRACT (see CONTRACT.md). What the verifier actually
+guarantees: structural integrity (ids resolve, citations exist, values are
+anchors), evidence-tier gates (a 4 on F/G/P needs tier-1 evidence; a 4 on F
+needs a confirmed bounded negative), ledger hygiene (supersession targets
+exist, disputed rows never enter sums), and date discipline (no record dated
+after the frozen evidence clock). It does NOT guarantee that a cited source
+supports the claim's wording, that weights are the right weights, or that a
+score is true — those need human review and second coders.
 """
 from __future__ import annotations
 import sys
-from .load import load, DIMS
+from .load import load, DIMS, EVIDENCE_CLOCK
 
 def run(data: dict | None = None) -> list[str]:
     d = data or load(strict=False)
@@ -48,6 +54,12 @@ def run(data: dict | None = None) -> list[str]:
         if not any(s["evaluator"] == e["id"] for s in sig.values()): errs.append(f"C4 evaluator {e['id']}: no signals")
         if e.get("confidence") not in ("high","med","low"): errs.append(f"C4 evaluator {e['id']}: confidence must be high/med/low")
         if e.get("type") not in d["types"]: errs.append(f"C4 evaluator {e['id']}: unknown type {e.get('type')}")
+        if e.get("role") not in ("referee","government","vendor","benchmark","lab-team","expected-entrant"):
+            errs.append(f"C4 evaluator {e['id']}: unknown role {e.get('role')}")
+        if e.get("status", "ranked") not in ("ranked","watchlist"):
+            errs.append(f"C4 evaluator {e['id']}: unknown status {e.get('status')}")
+        if e.get("status") == "watchlist" and e.get("role") != "expected-entrant":
+            errs.append(f"C4 evaluator {e['id']}: watchlist entries must have role expected-entrant")
     # C5: no orphan sources
     used = {x for s in sig.values() for x in s.get("sources", [])}
     for sid in src:
@@ -73,6 +85,40 @@ def run(data: dict | None = None) -> list[str]:
     # C9: every evaluator is an entity in the ledger, so nobody is exempt from exposure
     for eid_ in ev:
         if LEDGER_ALIAS.get(eid_, eid_) not in in_ledger: errs.append(f"C9 evaluator {eid_}: no ledger entity (add to data/ledger/entities.csv)")
+    # C10: PROCESS tier rule — a 4 on F/G/P needs tier-1 evidence (filing or index)
+    # on at least one cited signal. Self pages and press cannot anchor a 4.
+    for a in ass:
+        if a["dimension"] in ("F", "G", "P") and a["value"] == 4:
+            tiers = {src[s2]["source_type"] for s in a.get("signals", []) if s in sig
+                     for s2 in sig[s].get("sources", []) if s2 in src}
+            if not (tiers & {"filing", "index"}):
+                errs.append(f"C10 assessment ({a['evaluator']}, {a['dimension']}): value 4 needs a tier-1 (filing/index) source on a cited signal; found {sorted(tiers) or 'none'}")
+    # C11: dates are plausible (YYYY, YYYY-MM, or YYYY-MM-DD) and no record is dated
+    # after the frozen evidence clock
+    import datetime, re
+    def _d(v):
+        for fmt, rx in (("%Y-%m-%d", r"^\d{4}-\d{2}-\d{2}$"), ("%Y-%m", r"^\d{4}-\d{2}$"), ("%Y", r"^\d{4}$")):
+            if re.match(rx, str(v)):
+                try: return datetime.datetime.strptime(str(v), fmt).date()
+                except ValueError: return None
+        return None
+    clock = datetime.date.fromisoformat(EVIDENCE_CLOCK)
+    for s in src.values():
+        for k in ("published", "retrieved"):
+            v = s.get(k)
+            if v and _d(v) is None: errs.append(f"C11 source {s['id']}: bad date {k}={v!r}")
+            elif v and _d(v) > clock: errs.append(f"C11 source {s['id']}: {k}={v} after evidence clock {EVIDENCE_CLOCK}")
+    for s in sig.values():
+        for k in ("recorded", "as_of"):
+            v = s.get(k)
+            if v and _d(v) is None: errs.append(f"C11 signal {s['id']}: bad date {k}={v!r}")
+            elif v and _d(v) > clock: errs.append(f"C11 signal {s['id']}: {k}={v} after evidence clock {EVIDENCE_CLOCK}")
+    # C12: presets are complete and sum to 100 — weights are a modeling choice, but they
+    # must at least be coherent; silent weight changes are a headline risk
+    for pname, p in d["presets"].items():
+        w = p.get("weights", {})
+        if set(w) != set(DIMS): errs.append(f"C12 preset {pname}: weights must cover exactly {DIMS}")
+        if abs(sum(w.values()) - 100) > 1e-9: errs.append(f"C12 preset {pname}: weights sum to {sum(w.values())}, not 100")
     return errs
 
 LEDGER_ALIAS = {"farai": "far-ai", "grayswan": "gray-swan"}
@@ -87,9 +133,17 @@ def main(argv=None) -> int:
     nq = sum(1 for s in d["signals"].values() if s.get("quote")); print(f"verify: quotes on {nq}/{len(d['signals'])} signals (a quote is an exact span from the source; fill them as sources are re-derived)")
     for s in d["sources"].values():
         if s.get("source_type") == "docket":
-            from .certificate import verify as cverify
-            slug = s["id"].replace("docket-", ""); errs = [e for e in cverify(slug) if not e.startswith("unsigned")]
-            print(f"verify: docket source {s['id']}: " + ("certificate binding valid" if not errs else "CERTIFICATE PROBLEM: " + "; ".join(errs)))
+            # Fail closed: a docket-type source may never be 'confirmed' without an
+            # independent, signed certificate from review at epistemedia.org by
+            # someone other than the drafter (see paper/CERTIFICATION.md).
+            cert = s.get("certificate")
+            if s.get("audit_status") == "confirmed" and not cert:
+                errs.append(f"docket source {s['id']}: confirmed with no independent certificate (self-certification loop)")
+            elif cert:
+                from .certificate import verify as cverify
+                slug = s["id"].replace("docket-", "")
+                cerrs = cverify(slug)
+                if cerrs: errs.append(f"docket source {s['id']}: CERTIFICATE PROBLEM: " + "; ".join(cerrs))
     print(f"verify: ok ({len(d['sources'])} sources, {len(d['signals'])} signals, {len(d['assessments'])} assessments, {len(d['evaluators'])} evaluators)")
     return 0
 

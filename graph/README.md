@@ -1,6 +1,6 @@
 # Graph summary
 
-Built at 2026-09-14T00:00:00Z (frozen clock; run_id evaluator-bench-build)
+Built at 2026-09-15T00:00:00Z (frozen clock; run_id evaluator-bench-build)
 
 | type | objects |
 |---|---|
@@ -11,8 +11,8 @@ Built at 2026-09-14T00:00:00Z (frozen clock; run_id evaluator-bench-build)
 | negative_evidence | 22 |
 | score | 112 |
 | signal | 308 |
-| source | 126 |
+| source | 125 |
 
-Relations: 2955
+Relations: 2957
 
 Rebuild: `python -m bench build`. The event log is reproducible; a diff means data/ changed.

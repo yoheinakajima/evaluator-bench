@@ -1,12 +1,13 @@
 {
-  "id": "dreadnode",
-  "name": "Dreadnode",
-  "type": "vc",
-  "hq": "Remote",
-  "domains": [
-    "cyber"
-  ],
-  "confidence": "low",
-  "summary": "Offensive-security firm named by Google DeepMind as an external expert on Gemini testing.",
-  "what_would_move_the_score": "Published engagement terms and a first public report."
+ "id": "dreadnode",
+ "name": "Dreadnode",
+ "type": "vc",
+ "hq": "Remote",
+ "domains": [
+  "cyber"
+ ],
+ "confidence": "low",
+ "summary": "Offensive-security firm named by Google DeepMind as an external expert on Gemini testing.",
+ "what_would_move_the_score": "Published engagement terms and a first public report.",
+ "role": "vendor"
 }

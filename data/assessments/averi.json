@@ -1,105 +1,105 @@
 [
-  {
-    "evaluator": "averi",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "averi.06",
-      "averi.09",
-      "averi.11",
-      "averi.12"
-    ],
-    "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Dollar shares per funder."
-    ]
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "G",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "averi.02"
-    ],
-    "rationale": "Anchor 4 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "P",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "averi.04",
-      "averi.10"
-    ],
-    "rationale": "Anchor 3: recusal policy with a stated cooling-off for the director and disclosed ties; short of anchor 4 because the cooling-off is person-specific rather than a standing rule.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "averi.01"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "averi.05"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "R",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "averi.07"
-    ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "M",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "averi.03"
-    ],
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "averi",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "averi.08"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "averi",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.06",
+   "averi.09",
+   "averi.11",
+   "averi.12"
+  ],
+  "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Dollar shares per funder."
+  ]
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.02"
+  ],
+  "rationale": "Anchor 3: 501(c)(3) nonprofit (averi.02). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "P",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.04",
+   "averi.10"
+  ],
+  "rationale": "Anchor 3: recusal policy with a stated cooling-off for the director and disclosed ties; short of anchor 4 because the cooling-off is person-specific rather than a standing rule.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "A",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.01"
+  ],
+  "rationale": "Anchor 3 on access given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.05"
+  ],
+  "rationale": "Anchor 3 on scope given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "R",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "averi.07"
+  ],
+  "rationale": "Anchor 3 on publication given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "M",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "averi.03"
+  ],
+  "rationale": "Anchor 4 on methods given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "averi",
+  "dimension": "X",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "averi.08"
+  ],
+  "rationale": "Anchor 4 on products given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

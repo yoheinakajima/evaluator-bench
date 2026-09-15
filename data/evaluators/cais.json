@@ -1,13 +1,14 @@
 {
-  "id": "cais",
-  "name": "Center for AI Safety",
-  "type": "nonprofit",
-  "hq": "San Francisco, US",
-  "domains": [
-    "benchmarks",
-    "misuse"
-  ],
-  "confidence": "med",
-  "summary": "Hazard benchmarks (WMDP, HLE); director advises xAI.",
-  "what_would_move_the_score": "A public recusal policy covering the xAI relationship."
+ "id": "cais",
+ "name": "Center for AI Safety",
+ "type": "nonprofit",
+ "hq": "San Francisco, US",
+ "domains": [
+  "benchmarks",
+  "misuse"
+ ],
+ "confidence": "med",
+ "summary": "Hazard benchmarks (WMDP, HLE); director advises xAI.",
+ "what_would_move_the_score": "A public recusal policy covering the xAI relationship.",
+ "role": "referee"
 }

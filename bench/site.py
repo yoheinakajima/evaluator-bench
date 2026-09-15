@@ -24,7 +24,7 @@ from .verify import LEDGER_ALIAS
 
 DIST = ROOT / "dist"; SITE = ROOT / "site"
 REPO = "https://github.com/yoheinakajima/evaluator-bench/blob/main/"
-TIER = {"filing": "tier 1 filing", "index": "tier 1 index", "ledger": "tier 2 ledger", "self": "tier 3 self", "press": "tier 4 press", "docket": "reviewed docket"}
+TIER = {"filing": "tier 1 filing", "index": "tier 1 index", "ledger": "tier 2 ledger", "self": "tier 3 self", "press": "tier 4 press", "docket": "docket draft (not evidence)"}
 
 def esc(s) -> str:
     return _html.escape(str(s if s is not None else ""), quote=True)
@@ -35,13 +35,22 @@ def badge(status: str | None) -> str:
     return f'<span class="gid" style="{col}">{esc(st)}</span>'
 
 def tier(x: dict) -> str:
-    cert = f' <span class="gid" style="color:var(--teal);border-color:var(--teal)" title="{esc(x["certificate"])}">Epistemedia reviewed (manual v0)</span>' if x.get("certificate") else ""
-    return f'<span class="gid">{esc(TIER.get(x.get("source_type"), "tier not set"))}</span>{cert}'
+    # No certificate badges: docket drafts are not reviewed evidence (see paper/CERTIFICATION.md).
+    return f'<span class="gid">{esc(TIER.get(x.get("source_type"), "tier not set"))}</span>'
 
 def money(t: dict) -> str:
-    if not t["amount_usd"]: return "undisclosed"
-    v = float(t["amount_usd"])
-    return f"${v/1e9:.2f}B" if v >= 1e9 else f"${v/1e6:.2f}M"
+    flags = []
+    if t.get("superseded_by"): flags.append(f"superseded by {t['superseded_by']} — excluded from sums")
+    if t.get("component_of"): flags.append(f"detail of {t['component_of']} — not additive")
+    if t.get("round_total"): flags.append("round total, not one investor's check")
+    if t.get("audit_status") in ("differs", "unverifiable"): flags.append("quarantined — excluded from sums")
+    if t.get("audit_status") == "imported": flags.append("imported figure, not re-derived — never summed")
+    if not t["amount_usd"]: base = "undisclosed"
+    else:
+        v = float(t["amount_usd"])
+        base = (f"\u20ac{v/1e6:.2f}M (EUR, not converted)" if (t.get("currency") or "USD") == "EUR"
+                else (f"${v/1e9:.2f}B" if v >= 1e9 else f"${v/1e6:.2f}M"))
+    return base + ("; " + "; ".join(flags) if flags else "")
 
 SITE_JS = r"""
 (function(){
@@ -139,13 +148,13 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
         sigs = [s for s in ev["signals"] if s["dimension"] == k]
         items = "".join(f'<li class="{s["direction"]}">{esc(s["claim"])}<br>{" ".join(_src_link(x, bench) for x in s["sources"])}<span class="gid">{esc(s.get("as_of") or s["recorded"])}</span></li>' for s in sigs)
         oq = "".join(f"<li>Open: {esc(q)}</li>" for q in a.get("open_questions", []))
-        rows.append(f'<div class="dimrow"><div><div class="v">{esc(dm["label"])} {a["value"]}/4</div><div class="anchor">{esc(dm["anchors"][a["value"]])}</div></div><div><div style="font-size:13.5px">{esc(a["rationale"])}</div><ul>{items}{oq}</ul></div></div>')
+        rows.append(f'<div class="dimrow"><div><div class="v">{esc(dm["label"])} {a["value"]}/4</div><div class="anchor">{esc(dm["anchors"][a["value"]])}</div><div class="anchor" style="margin-top:4px">evidence: {esc(a.get("evidence_tier","unknown"))}</div></div><div><div style="font-size:13.5px">{esc(a["rationale"])}</div><ul>{items}{oq}</ul></div></div>')
     ex = C["ex"].get(LEDGER_ALIAS.get(ev["id"], ev["id"]))
     exp = ""
     if ex:
         b = "; ".join(f'{("hop " + k[3:]) if k.startswith("hop") else k}: {v["rows"]} row{"s" if v["rows"] != 1 else ""}' + (" (" + ", ".join(f"{m} ${a/1e6:.1f}M" for m, a in v["by_measure"].items()) + ")" if v["by_measure"] else "") for k, v in ex["buckets"].items())
         ties = ", ".join(f'{esc(t["via"])} ({esc(t["role"])}, distance {t["distance"]}, {esc(t["status"])})' for t in ex["lab_tied_seats"]) or "none within two steps recorded"
-        exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(b) if b else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Bounded negatives on file: {len(ex["negatives"])}.</p></div>'
+        exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(b) if b else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " quarantined: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}. Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Bounded negatives on file: {len(ex["negatives"])}.</p></div>'
     return f"""<div class="card"><h3>Scorecard</h3><p style="font-size:13.5px">{esc(ev['summary'])}</p>
       <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}. Scores by preset: {scores}. Weakest dimension: {esc(dims[floor_k]['label'].lower())} {ev['values'][floor_k]}/4.</p>
       <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>
@@ -204,14 +213,25 @@ def source_page(sid: str, bench: dict, C: dict) -> str:
     return layout(x["title"], body, 1, "sources")
 
 # ---------------------------------------------------------------- index pages
+def _ev_row(e: dict, bench: dict, dims: dict, C: dict) -> str:
+    lid = LEDGER_ALIAS.get(e["id"], e["id"]); fl = min(DIMS, key=lambda k: e["values"][k]); ex = C["ex"].get(lid)
+    return (f'<tr><td><a href="../entity/{esc(lid)}.html">{esc(e["name"])}</a><br><span style="color:var(--muted);font-size:12px">{esc(bench["types"][e["type"]])}, {esc(e["hq"])}</span></td>'
+        + f'<td>{esc(e.get("role",""))}</td>'
+        + "".join(f'<td class="num">{e["scores"][k]}</td>' for k in ("lab", "regulator", "public", "equal"))
+        + f'<td>{esc(dims[fl]["label"].lower())} {e["values"][fl]}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
+
 def evaluators_index(bench: dict, C: dict) -> str:
     dims = {x["key"]: x for x in bench["dimensions"]}
-    rows = []
-    for e in sorted(bench["evaluators"], key=lambda e: -e["scores"]["lab"]):
-        lid = LEDGER_ALIAS.get(e["id"], e["id"]); fl = min(DIMS, key=lambda k: e["values"][k]); ex = C["ex"].get(lid)
-        rows.append(f'<tr><td><a href="../entity/{esc(lid)}.html">{esc(e["name"])}</a><br><span style="color:var(--muted);font-size:12px">{esc(bench["types"][e["type"]])}, {esc(e["hq"])}</span></td>' + "".join(f'<td class="num">{e["scores"][k]}</td>' for k in ("lab", "regulator", "public", "equal")) + f'<td>{esc(dims[fl]["label"].lower())} {e["values"][fl]}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
-    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(bench['evaluators'])} organizations scored on eight independence dimensions. Columns show the weighted score under each preset, the weakest dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the full scorecard, ledger, and focused graph.</p></div>
-    <div class="card"><table class="tbl"><tr><th>Evaluator</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>{''.join(rows)}</table></div>"""
+    ranked = [e for e in bench["evaluators"] if e.get("status", "ranked") == "ranked"]
+    watch = [e for e in bench["evaluators"] if e.get("status") == "watchlist"]
+    rows = [_ev_row(e, bench, dims, C) for e in sorted(ranked, key=lambda e: -e["scores"]["lab"])]
+    wrows = [_ev_row(e, bench, dims, C) for e in sorted(watch, key=lambda e: -e["scores"]["lab"])]
+    head = "<tr><th>Evaluator</th><th>Role</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
+    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations scored on eight independence dimensions, split by role (referee, government, vendor, benchmark, lab team). Columns show the weighted score under each preset, the weakest dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the full scorecard, ledger, and focused graph.</p></div>
+    <div class="card"><table class="tbl">{head}{''.join(rows)}</table></div>"""
+    if wrows:
+        body += f"""<div class="pagehead" style="margin-top:26px"><h2>Watchlist (not ranked)</h2><p class="lead">Expected entrants scored on the same rubric but excluded from rankings and averages: hypothetical composites and announced initiatives with no evaluations yet.</p></div>
+    <div class="card"><table class="tbl">{head}{''.join(wrows)}</table></div>"""
     return layout("Evaluators", body, 1, "evaluators")
 
 def entities_index(C: dict) -> str:
@@ -269,10 +289,9 @@ def dockets_index(C: dict) -> str:
             errs = validate_proposal(p).get("errors", []); other = [e for e in errs if "artifact digest" not in e and "ready-for-review" not in e]
             status = ("validated; digests pending" if not other else f"{len(other)} validation error(s)") if errs else "valid"
         except ImportError: status = "not validated here (epistemedia not installed)"
-        c = json.loads(cert.read_text()) if cert.exists() else None
-        rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>{("<span class=\"gid\" style=\"color:var(--teal);border-color:var(--teal)\">" + esc(c["verdict"]) + ", " + esc(c["reviewer"]["kind"]) + " v0</span>") if c else "none"}</td><td>not submitted</td></tr>')
-    body = f"""<div class="pagehead"><h1>Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is not a finding. It becomes one only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and review there by someone else. Certificates shown here are manual v0: the operator read the spans against the sources and said yes; they are unsigned and carry no credit on Epistemedia.</p></div>
-    <div class="card"><table class="tbl"><tr><th>Question</th><th>Sources</th><th>Spans</th><th>Results</th><th>Validation</th><th>Certificate</th><th>Epistemedia</th></tr>{''.join(rows)}</table>
+        rows.append(f'<tr><td><a href="{REPO}dockets/{esc(d.name)}/proposal.json">{esc(p["question"])}</a></td><td class="num">{len(p["sources"])}</td><td class="num">{sum(len(s["exact_spans"]) for s in p["sources"])}</td><td class="num">{len(p["results"])}</td><td>{esc(status)}</td><td>not submitted</td></tr>')
+    body = f"""<div class="pagehead"><h1>Dockets</h1><p class="lead">Contestable claims that Bench evidence bears on, drafted in Epistemedia's research-proposal format (v0.2) and passed through Epistemedia's own validator. A docket is a <b>draft</b>: not a finding, not evidence, not citable by any signal. It becomes usable evidence only after submission to <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a> and independent review there by someone other than the drafter. No docket here has been submitted. A previous self-issued "manual v0" certificate loop was removed; see <a href="{REPO}paper/CERTIFICATION.md">paper/CERTIFICATION.md</a>.</p></div>
+    <div class="card"><table class="tbl"><tr><th>Question</th><th>Sources</th><th>Spans</th><th>Results</th><th>Validation</th><th>Epistemedia</th></tr>{''.join(rows)}</table>
     <p style="font-size:13px;color:var(--muted);margin-top:8px">Build and validate: <code>python -m bench docket build &lt;slug&gt; &amp;&amp; python -m bench docket validate &lt;slug&gt;</code>. Certificate format and the path to signed machine verification: <a href="{REPO}paper/CERTIFICATION.md">paper/CERTIFICATION.md</a>.</p></div>"""
     return layout("Dockets", body, 1, "dockets")
 
@@ -320,7 +339,7 @@ def contribute_index() -> str:
     <div class="card"><h3>If you are pointing an agent here</h3><p style="font-size:13.5px">Copy this instruction to a coding agent with repository access:</p>
       <blockquote style="border-left:3px solid var(--teal);margin:8px 0;padding:8px 12px;font-size:13.5px;background:var(--paper)">{esc(AGENT_PROMPT)}</blockquote>
       <p style="font-size:13.5px">The agent must fetch sources itself, never sum across money measures, never turn a bounded absence into zero, name public roles only, and assert no motive. Its pull request is a queue item, not accepted evidence, until the checks and a maintainer pass it.</p></div>
-    <div class="card"><h3>Dockets and certification</h3><p style="font-size:13.5px">Contestable claims can be drafted as Epistemedia dockets from Bench evidence (<code>bench docket build</code>), validated with Epistemedia's own validator, and submitted through <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a>. A reviewed docket comes back as the strongest source a signal can cite and carries a certificate. See <a href="../dockets/index.html">Dockets</a> and <a href="{REPO}paper/CERTIFICATION.md">the certification plan</a>.</p></div>
+    <div class="card"><h3>Dockets and certification</h3><p style="font-size:13.5px">Contestable claims can be drafted as Epistemedia dockets from Bench evidence (<code>bench docket build</code>), validated with Epistemedia's own validator, and submitted through <a href="https://epistemedia.org/agents/submit/">epistemedia.org</a>. A docket is a draft until it is reviewed there by someone other than the drafter; drafts are not citable evidence and carry no certificate. Self-issued certificates were retired (see <a href="../dockets/index.html">Dockets</a> and <a href="{REPO}paper/CERTIFICATION.md">the certification plan</a>).</p></div>
     <div class="card"><h3>What we will not accept</h3><p style="font-size:13.5px">Private communications, screenshots of paywalled pages, claims about a person's intent, non-public individuals, score edits without evidence, and deletions of rows (supersede them instead).</p></div></div></div>"""
     return layout("Contribute", body, 1, "contribute")
 

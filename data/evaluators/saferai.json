@@ -1,15 +1,16 @@
 {
-  "id": "saferai",
-  "name": "SaferAI",
-  "type": "nonprofit",
-  "hq": "Paris, FR",
-  "domains": [
-    "assurance",
-    "cyber",
-    "bio",
-    "misuse"
-  ],
-  "confidence": "med",
-  "summary": "Rates lab risk-management frameworks in public; runs EU Code of Practice evaluations.",
-  "what_would_move_the_score": "Documented pre-release access under Code terms."
+ "id": "saferai",
+ "name": "SaferAI",
+ "type": "nonprofit",
+ "hq": "Paris, FR",
+ "domains": [
+  "assurance",
+  "cyber",
+  "bio",
+  "misuse"
+ ],
+ "confidence": "med",
+ "summary": "Rates lab risk-management frameworks in public; runs EU Code of Practice evaluations.",
+ "what_would_move_the_score": "Documented pre-release access under Code terms.",
+ "role": "referee"
 }

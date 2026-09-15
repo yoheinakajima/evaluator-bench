@@ -2,7 +2,7 @@
 
 Status: v0.9, pre-launch. See `LAUNCH.md` for what a person still has to do before and after the first push.
 
-An evidence-linked, event-sourced directory of 28 third-party evaluators for frontier AI, with an independence score you can take apart and a row-level ledger of who pays whom.
+An evidence-linked, event-sourced directory of 28 evaluation organizations, institutes, vendors and benchmarks for frontier AI (26 ranked, 2 expected entrants on a watchlist), with an independence score you can take apart and a row-level ledger of who pays whom.
 
 Site: `dist/index.html` (GitHub Pages from `dist/`). Data: `data/`. Log: `graph/events.jsonl`.
 

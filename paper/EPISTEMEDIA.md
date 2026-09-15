@@ -17,8 +17,8 @@ The claim layer is where they meet. Every Bench signal is a dated claim with sou
 Flow in both directions:
 
 1. Bench surfaces a contestable claim (a signal that press repeats without its boundary, or a ledger negative that a rendered figure overstates).
-2. A docket draft is written from Bench's sources and spans, built, validated, then submitted through Epistemedia's protocol on a networked machine and reviewed there.
-3. A reviewed docket becomes a source in Bench with `source_type: ledger` and `audit_status: confirmed`, and the signals that rest on it cite it. That is the strongest evidence a Bench signal can carry, stronger than a filing summary, because someone else re-derived it.
+2. A docket draft is written from Bench's sources and spans, built, validated, then submitted through Epistemedia's protocol on a networked machine and reviewed there — by someone else, not the Bench operator.
+3. Only a docket reviewed at epistemedia.org by an independent reviewer may be cited by a Bench signal, and only as a secondary summary of that review — never as the strongest tier, and never with `audit_status: confirmed` unless the underlying primary sources were themselves re-derived. Bench drafts are not citable evidence. A prior self-issued "manual v0" certificate loop (operator drafting, reviewing, and citing the same docket) was removed in v1.0 because it was circular: the same hand wrote the claim and stamped it.
 
 ## Candidate dockets from Bench
 

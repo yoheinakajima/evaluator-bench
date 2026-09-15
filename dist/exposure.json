@@ -76,6 +76,8 @@
      "by_measure": {
       "in_kind": 400000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "openai"
@@ -84,9 +86,10 @@
     },
     "hop2": {
      "by_measure": {
-      "grant": 220000.0,
-      "recommendation": 752000.0
+      "recommendation": 548000.0
      },
+     "imported_unsummed": 2,
+     "non_usd": [],
      "rows": 3,
      "sources": [
       "longview",
@@ -95,9 +98,9 @@
      "undisclosed": 0
     },
     "hop3": {
-     "by_measure": {
-      "transfer": 4553935.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "arc"
@@ -105,10 +108,9 @@
      "undisclosed": 0
     },
     "unattributed": {
-     "by_measure": {
-      "commitment": 17000000.0,
-      "daf_grant": 4204000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 4,
+     "non_usd": [],
      "rows": 4,
      "sources": [
       "audacious",
@@ -206,6 +208,8 @@
      "status": "unaudited"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 8,
     "traced": 5,
@@ -214,16 +218,18 @@
      "Silicon Valley Community Foundation",
      "Vanguard Charitable"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop2": {
      "by_measure": {
-      "grant": 86955751.0,
       "recommendation": 1022000.0
      },
-     "rows": 3,
+     "imported_unsummed": 1,
+     "non_usd": [],
+     "rows": 2,
      "sources": [
       "coefficient",
       "sff"
@@ -231,9 +237,9 @@
      "undisclosed": 0
     },
     "public": {
-     "by_measure": {
-      "contract": 488777692.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "us-gov"
@@ -241,9 +247,9 @@
      "undisclosed": 0
     },
     "unattributed": {
-     "by_measure": {
-      "commitment": 38000000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "audacious"
@@ -253,21 +259,28 @@
    },
    "confirmed_rows": 1,
    "id": "rand",
-   "inflow_rows": 5,
+   "inflow_rows": 4,
    "kind_note": "Canary joint project with METR",
    "lab_tied_seats": [],
    "name": "RAND Corporation",
    "negatives": [],
+   "quarantined_ids": [
+    "T02"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
     "sources": 4,
     "traced": 4,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "aisf"
@@ -276,9 +289,13 @@
     },
     "hop2": {
      "by_measure": {
-      "grant": 88022676.0,
-      "recommendation": 6512577.0
+      "recommendation": 919000.0
      },
+     "imported_unsummed": 2,
+     "non_usd": [
+      "grant 28675000 USD",
+      "detail of T03, not additive"
+     ],
      "rows": 4,
      "sources": [
       "coefficient",
@@ -287,9 +304,9 @@
      "undisclosed": 0
     },
     "public": {
-     "by_measure": {
-      "contract": 1434080.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -300,6 +317,8 @@
      "by_measure": {
       "grant": 500000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "founders-pledge-fund",
@@ -315,20 +334,23 @@
    "lab_tied_seats": [],
    "name": "FAR.AI",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 6,
     "traced": 5,
     "untraced": [
      "Founders Pledge (frontier AI fund)"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop1": {
-     "by_measure": {
-      "daf_grant": 1330000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "tallinn"
@@ -336,10 +358,12 @@
      "undisclosed": 0
     },
     "hop2": {
-     "by_measure": {
-      "grant": 99652000.0,
-      "recommendation": 2372000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 2,
+     "non_usd": [
+      "grant 36566000 USD",
+      "detail of T04, not additive"
+     ],
      "rows": 3,
      "sources": [
       "coefficient",
@@ -355,16 +379,21 @@
    "lab_tied_seats": [],
    "name": "Redwood Research",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 3,
     "traced": 3,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "openai"
@@ -375,26 +404,18 @@
      "by_measure": {
       "investment": 80000000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "sequoia"
-     ],
-     "undisclosed": 0
-    },
-    "hop2": {
-     "by_measure": {
-      "grant": 6799999.0
-     },
-     "rows": 1,
-     "sources": [
-      "coefficient"
      ],
      "undisclosed": 0
     }
    },
    "confirmed_rows": 2,
    "id": "irregular",
-   "inflow_rows": 3,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -414,16 +435,23 @@
      "status": "unaudited"
     }
    ],
+   "quarantined_ids": [
+    "T09"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 3,
-    "traced": 3,
+    "sources": 2,
+    "traced": 2,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "anthropic"
@@ -432,9 +460,11 @@
     },
     "unattributed": {
      "by_measure": {
-      "investment": 80000000.0
+      "investment": 40000000.0
      },
-     "rows": 2,
+     "imported_unsummed": 0,
+     "non_usd": [],
+     "rows": 1,
      "sources": [
       "wing"
      ],
@@ -443,23 +473,30 @@
    },
    "confirmed_rows": 2,
    "id": "gray-swan",
-   "inflow_rows": 3,
+   "inflow_rows": 2,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Gray Swan",
    "negatives": [],
+   "quarantined_ids": [
+    "T81"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
     "sources": 2,
     "traced": 1,
     "untraced": [
      "Wing Venture Capital"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "openai"
@@ -470,6 +507,8 @@
      "by_measure": {
       "grant": 17200000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "oaif"
@@ -480,6 +519,8 @@
      "by_measure": {
       "recommendation": 754000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "sff"
@@ -494,16 +535,21 @@
    "lab_tied_seats": [],
    "name": "SecureBio",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 3,
     "traced": 3,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "macroscopic"
@@ -511,19 +557,19 @@
      "undisclosed": 1
     },
     "hop2": {
-     "by_measure": {
-      "grant": 4410180.0,
-      "recommendation": 1133500.0
-     },
-     "rows": 2,
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
+     "rows": 1,
      "sources": [
-      "coefficient",
       "sff"
      ],
      "undisclosed": 0
     },
     "unattributed": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "fifty-years"
@@ -533,7 +579,7 @@
    },
    "confirmed_rows": 2,
    "id": "apollo",
-   "inflow_rows": 4,
+   "inflow_rows": 3,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -546,18 +592,25 @@
    ],
    "name": "Apollo Research",
    "negatives": [],
+   "quarantined_ids": [
+    "T08"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 4,
-    "traced": 3,
+    "sources": 3,
+    "traced": 2,
     "untraced": [
      "Fifty Years (50Y)"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 4,
      "sources": [
       "anthropic",
@@ -568,9 +621,9 @@
      "undisclosed": 4
     },
     "hop1": {
-     "by_measure": {
-      "daf_grant": 600000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "tallinn"
@@ -579,9 +632,13 @@
     },
     "hop2": {
      "by_measure": {
-      "grant": 33013611.0,
       "recommendation": 195000.0
      },
+     "imported_unsummed": 1,
+     "non_usd": [
+      "grant 8500000 USD",
+      "detail of T06, not additive"
+     ],
      "rows": 3,
      "sources": [
       "coefficient",
@@ -597,20 +654,25 @@
    "lab_tied_seats": [],
    "name": "Epoch AI",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 7,
     "traced": 7,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop2": {
      "by_measure": {
-      "grant": 5926926.0,
-      "recommendation": 3212627.0
+      "grant": 2123463.0,
+      "recommendation": 1133000.0
      },
-     "rows": 4,
+     "imported_unsummed": 1,
+     "non_usd": [],
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
@@ -620,21 +682,28 @@
    },
    "confirmed_rows": 1,
    "id": "palisade",
-   "inflow_rows": 4,
+   "inflow_rows": 3,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Palisade Research",
    "negatives": [],
+   "quarantined_ids": [
+    "T10"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
     "sources": 2,
     "traced": 2,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "anthropic-employees",
@@ -644,6 +713,8 @@
     },
     "public": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -679,52 +750,52 @@
      "status": "confirmed"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 3,
     "traced": 3,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "anthropic"
      ],
      "undisclosed": 1
-    },
-    "unattributed": {
-     "by_measure": {
-      "investment": 500000.0
-     },
-     "rows": 1,
-     "sources": [
-      "yc"
-     ],
-     "undisclosed": 0
     }
    },
    "confirmed_rows": 0,
    "id": "andon",
-   "inflow_rows": 2,
+   "inflow_rows": 1,
    "kind_note": "",
    "lab_tied_seats": [],
    "name": "Andon Labs",
    "negatives": [],
+   "quarantined_ids": [
+    "T55"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 2,
+    "sources": 1,
     "traced": 1,
-    "untraced": [
-     "Y Combinator"
-    ]
-   }
+    "untraced": []
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "openai"
@@ -733,6 +804,8 @@
     },
     "public": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "uk-gov"
@@ -754,18 +827,23 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 2,
     "traced": 2,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "public": {
      "by_measure": {
-      "grant": 25000000.0
+      "grant": 15000000.0
      },
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "us-gov"
@@ -793,18 +871,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "public": {
-     "by_measure": {
-      "contract": 7373017.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -826,16 +907,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop1": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "lab-employees"
@@ -844,6 +930,8 @@
     },
     "hop2": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "aiuc",
@@ -853,6 +941,8 @@
     },
     "unattributed": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "halcyon"
@@ -880,18 +970,23 @@
      "status": "unaudited"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 4,
     "traced": 3,
     "untraced": [
      "Halcyon Futures"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "g42"
@@ -900,8 +995,10 @@
     },
     "hop2": {
      "by_measure": {
-      "recommendation": 1056800.0
+      "recommendation": 311000.0
      },
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "sff"
@@ -910,6 +1007,8 @@
     },
     "public": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -931,18 +1030,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 3,
     "traced": 3,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
-     "by_measure": {
-      "investment": 14300000000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "meta"
@@ -972,16 +1074,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "google"
@@ -1003,28 +1110,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
-    "hop1": {
-     "by_measure": {
-      "investment": 12930000000.0
-     },
-     "rows": 1,
-     "sources": [
-      "nvidia"
-     ],
-     "undisclosed": 0
-    },
     "unattributed": {
-     "by_measure": {
-      "investment": 235000000.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "salesforce-ventures"
@@ -1032,9 +1132,9 @@
      "undisclosed": 0
     }
    },
-   "confirmed_rows": 1,
+   "confirmed_rows": 0,
    "id": "hfoai",
-   "inflow_rows": 2,
+   "inflow_rows": 1,
    "kind_note": "",
    "lab_tied_seats": [
     {
@@ -1068,13 +1168,18 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [
+    "T54"
+   ],
+   "quarantined_rows": 1,
    "second_hop": {
-    "sources": 2,
-    "traced": 1,
+    "sources": 1,
+    "traced": 0,
     "untraced": [
      "Salesforce Ventures"
     ]
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
@@ -1082,6 +1187,8 @@
      "by_measure": {
       "recommendation": 1389000.0
      },
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 2,
      "sources": [
       "sff"
@@ -1096,16 +1203,21 @@
    "lab_tied_seats": [],
    "name": "Center for AI Safety",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "microsoft"
@@ -1120,11 +1232,14 @@
    "lab_tied_seats": [],
    "name": "Microsoft AI Red Team",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {},
@@ -1135,11 +1250,14 @@
    "lab_tied_seats": [],
    "name": "Dreadnode",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {},
@@ -1150,11 +1268,14 @@
    "lab_tied_seats": [],
    "name": "Humane Intelligence",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {},
@@ -1165,11 +1286,14 @@
    "lab_tied_seats": [],
    "name": "Holistic Agent Leaderboard (Princeton)",
    "negatives": [],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {},
@@ -1187,18 +1311,21 @@
      "status": "unaudited"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "public": {
-     "by_measure": {
-      "contract": 1167484.0
-     },
+     "by_measure": {},
+     "imported_unsummed": 1,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -1220,16 +1347,21 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   },
   {
    "buckets": {
     "hop0": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "amazon"
@@ -1238,6 +1370,8 @@
     },
     "public": {
      "by_measure": {},
+     "imported_unsummed": 0,
+     "non_usd": [],
      "rows": 1,
      "sources": [
       "eu-budget"
@@ -1259,11 +1393,14 @@
      "status": "imported"
     }
    ],
+   "quarantined_ids": [],
+   "quarantined_rows": 0,
    "second_hop": {
     "sources": 2,
     "traced": 2,
     "untraced": []
-   }
+   },
+   "status": "ranked"
   }
  ]
 }

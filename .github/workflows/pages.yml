@@ -4,11 +4,19 @@ on:
     branches: [main]
 permissions: {pages: write, id-token: write, contents: read}
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment: {name: github-pages}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e ".[dev]"
+      - run: python -m bench verify
+      - run: python -m bench build
+      - name: committed log and projection must match a clean build
+        run: git diff --exit-code -- graph/ dist/
+      - run: pytest -q
       - uses: actions/upload-pages-artifact@v3
         with: {path: dist}
       - id: deployment

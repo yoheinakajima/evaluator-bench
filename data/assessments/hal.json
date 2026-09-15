@@ -1,102 +1,102 @@
 [
-  {
-    "evaluator": "hal",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "hal.01",
-      "hal.09"
-    ],
-    "rationale": "Anchor 3 pending a bounded negative (university sponsorship disclosures or a funder index search).",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.4",
-    "open_questions": [
-      "Add a confirmed bounded negative from a primary source to restore anchor 4."
-    ]
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "G",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.05"
-    ],
-    "rationale": "Anchor 4 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "P",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.06"
-    ],
-    "rationale": "Anchor 4 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "A",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "hal.04"
-    ],
-    "rationale": "Anchor 1 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "S",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.07"
-    ],
-    "rationale": "Anchor 4 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "R",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.03"
-    ],
-    "rationale": "Anchor 4 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "M",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.02"
-    ],
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "hal",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "hal.08"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "hal",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "hal.01",
+   "hal.09"
+  ],
+  "rationale": "Anchor 3 pending a bounded negative (university sponsorship disclosures or a funder index search).",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.4",
+  "open_questions": [
+   "Add a confirmed bounded negative from a primary source to restore anchor 4."
+  ]
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "hal.05"
+  ],
+  "rationale": "Anchor 3: university-hosted academic project and AEF member (hal.05). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "P",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "hal.06"
+  ],
+  "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Formal recusal/disclosure policy is an open question for the second-coder pass.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "A",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "hal.04"
+  ],
+  "rationale": "Anchor 1 on access given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "S",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "hal.07"
+  ],
+  "rationale": "Anchor 4 on scope given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "R",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "hal.03"
+  ],
+  "rationale": "Anchor 4 on publication given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "M",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "hal.02"
+  ],
+  "rationale": "Anchor 4 on methods given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "hal",
+  "dimension": "X",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "hal.08"
+  ],
+  "rationale": "Anchor 4 on products given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

@@ -1,179 +1,179 @@
 [
-  {
-    "id": "farai.01",
-    "evaluator": "farai",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "More than $30M in 2025 commitments from Coefficient Giving, Schmidt Sciences, SFF and CSET.",
-    "sources": [
-      "far-30m"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.02",
-    "evaluator": "farai",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.",
-    "sources": [
-      "far-30m"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.03",
-    "evaluator": "farai",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.",
-    "sources": [
-      "longtermwiki-far"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.04",
-    "evaluator": "farai",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Publishes jailbreak and stress-test results across vendors.",
-    "sources": [
-      "far-30m"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.05",
-    "evaluator": "farai",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit with diversified disclosed funders.",
-    "sources": [
-      "far-30m"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.06",
-    "evaluator": "farai",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Pre- and post-deployment red teaming for labs and EU bodies.",
-    "sources": [
-      "longtermwiki-far"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.07",
-    "evaluator": "farai",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Runs field-building programs that place researchers into labs.",
-    "sources": [
-      "longtermwiki-far"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.08",
-    "evaluator": "farai",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Publishes methods and papers.",
-    "sources": [
-      "far-30m"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.09",
-    "evaluator": "farai",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products; consulting limited to governments.",
-    "sources": [
-      "longtermwiki-far"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "farai.10",
-    "evaluator": "farai",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Published cap: revenue from for-profit AI developers limited to 10% of annual revenue, charged at market rates with publication rights retained; TY2024 earned revenue $429K of $24.3M.",
-    "sources": [
-      "far-transparency"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14",
-    "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue"
-  },
-  {
-    "id": "farai.11",
-    "evaluator": "farai",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.",
-    "sources": [
-      "ted-864574"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "farai.12",
-    "evaluator": "farai",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.",
-    "sources": [
-      "op-far-general-support",
-      "far-30m"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2025-09",
-    "quote": "a grant of $28,675,000 over three years to FAR.AI"
-  },
-  {
-    "id": "farai.13",
-    "evaluator": "farai",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
-    "sources": [
-      "founderspledge-frontier"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026"
-  },
-  {
-    "id": "farai.14",
-    "evaluator": "farai",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "A third-party wiki records the 10% cap on for-profit developer revenue and FY2024 revenue of $24.3M against $8.6M expenses.",
-    "sources": [
-      "longtermwiki-far-cap"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-09-15",
-    "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
-  }
+ {
+  "id": "farai.01",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "More than $30M in 2025 commitments from Coefficient Giving, Schmidt Sciences, SFF and CSET.",
+  "sources": [
+   "far-30m"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.02",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.",
+  "sources": [
+   "far-30m"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.03",
+  "evaluator": "farai",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.",
+  "sources": [
+   "longtermwiki-far"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.04",
+  "evaluator": "farai",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Publishes jailbreak and stress-test results across vendors.",
+  "sources": [
+   "far-30m"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.05",
+  "evaluator": "farai",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit with diversified disclosed funders.",
+  "sources": [
+   "far-30m"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.06",
+  "evaluator": "farai",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Pre- and post-deployment red teaming for labs and EU bodies.",
+  "sources": [
+   "longtermwiki-far"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.07",
+  "evaluator": "farai",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Runs field-building programs that place researchers into labs.",
+  "sources": [
+   "longtermwiki-far"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.08",
+  "evaluator": "farai",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Publishes methods and papers.",
+  "sources": [
+   "far-30m"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.09",
+  "evaluator": "farai",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products; consulting limited to governments.",
+  "sources": [
+   "longtermwiki-far"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "farai.10",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Published cap: revenue from for-profit AI developers limited to 10% of annual revenue, charged at market rates with publication rights retained; TY2024 earned revenue $429K of $24.3M.",
+  "sources": [
+   "far-transparency"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14",
+  "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue"
+ },
+ {
+  "id": "farai.11",
+  "evaluator": "farai",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.",
+  "sources": [
+   "ted-864574"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "farai.12",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.",
+  "sources": [
+   "op-far-general-support",
+   "far-30m"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2025-09",
+  "quote": "a grant of $28,675,000 over three years to FAR.AI"
+ },
+ {
+  "id": "farai.13",
+  "evaluator": "farai",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+  "sources": [
+   "founderspledge-frontier"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026"
+ },
+ {
+  "id": "farai.14",
+  "evaluator": "farai",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "A third-party wiki records a 10% cap on for-profit developer revenue. FY2024 revenue of $24.3M against $8.6M expenses is per the same source; span not yet captured.",
+  "sources": [
+   "longtermwiki-far-cap"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-09-15",
+  "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue"
+ }
 ]

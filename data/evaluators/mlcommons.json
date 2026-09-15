@@ -1,13 +1,14 @@
 {
-  "id": "mlcommons",
-  "name": "MLCommons (AILuminate)",
-  "type": "consortium",
-  "hq": "San Francisco, US",
-  "domains": [
-    "benchmarks",
-    "assurance"
-  ],
-  "confidence": "med",
-  "summary": "Industry consortium producing the AILuminate safety benchmark.",
-  "what_would_move_the_score": "Published funding shares and a hazard suite the members do not see in advance."
+ "id": "mlcommons",
+ "name": "MLCommons (AILuminate)",
+ "type": "consortium",
+ "hq": "San Francisco, US",
+ "domains": [
+  "benchmarks",
+  "assurance"
+ ],
+ "confidence": "med",
+ "summary": "Industry consortium producing the AILuminate safety benchmark.",
+ "what_would_move_the_score": "Published funding shares and a hazard suite the members do not see in advance.",
+ "role": "benchmark"
 }

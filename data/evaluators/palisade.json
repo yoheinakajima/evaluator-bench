@@ -1,14 +1,15 @@
 {
-  "id": "palisade",
-  "name": "Palisade Research",
-  "type": "nonprofit",
-  "hq": "Berkeley, US",
-  "domains": [
-    "cyber",
-    "autonomy",
-    "scheming"
-  ],
-  "confidence": "med",
-  "summary": "Independent capability-elicitation research on released models: shutdown resistance, self-replication, offensive cyber.",
-  "what_would_move_the_score": "Pre-release access on published terms would raise the access score without touching the others."
+ "id": "palisade",
+ "name": "Palisade Research",
+ "type": "nonprofit",
+ "hq": "Berkeley, US",
+ "domains": [
+  "cyber",
+  "autonomy",
+  "scheming"
+ ],
+ "confidence": "med",
+ "summary": "Independent capability-elicitation research on released models: shutdown resistance, self-replication, offensive cyber.",
+ "what_would_move_the_score": "Pre-release access on published terms would raise the access score without touching the others.",
+ "role": "referee"
 }

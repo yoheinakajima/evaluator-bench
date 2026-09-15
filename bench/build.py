@@ -28,13 +28,13 @@ data/ and any diff in CI means data changed.
 from __future__ import annotations
 import json, pathlib, shutil
 from activegraph import Graph, IDGen, FrozenClock, JSONLEventSink
-from .load import load, ROOT, DIMS
+from .load import load, ROOT, DIMS, EVIDENCE_CLOCK
 from .score import score
 
 GRAPH_DIR = ROOT / "graph"
 DIST = ROOT / "dist"
 SITE = ROOT / "site"
-BUILD_CLOCK = "2026-09-14T00:00:00Z"   # bump when re-curating; keeps the log reproducible
+BUILD_CLOCK = f"{EVIDENCE_CLOCK}T00:00:00Z"   # frozen evidence clock; bump EVIDENCE_CLOCK in load.py when re-curating
 RUN_ID = "evaluator-bench-build"
 
 def build(write: bool = True) -> dict:
@@ -120,6 +120,13 @@ def build(write: bool = True) -> dict:
         "sources": d["sources"],
         "evaluators": [],
     }
+    TIER_RANK = {"filing": 1, "index": 1, "ledger": 2, "self": 3, "press": 4, "docket": 5}
+    TIER_NAME = {1: "tier 1 (filing/index)", 2: "tier 2 (ledger)", 3: "tier 3 (self)", 4: "tier 4 (press)", 5: "docket draft"}
+    def _evidence_tier(a):
+        ranks = [TIER_RANK.get(d["sources"][sid2].get("source_type"), 9)
+                 for sid in a.get("signals", []) if sid in d["signals"]
+                 for sid2 in d["signals"][sid].get("sources", []) if sid2 in d["sources"]]
+        return TIER_NAME.get(min(ranks), "unknown") if ranks else "unknown"
     for e in d["evaluators"].values():
         eid = e["id"]
         sigs = [s for s in d["signals"].values() if s["evaluator"] == eid]
@@ -128,7 +135,7 @@ def build(write: bool = True) -> dict:
             **e,
             "graph_id": ids[f"ev:{eid}"],
             "values": {k: ass[k]["value"] for k in DIMS},
-            "assessments": {k: {**ass[k], "graph_id": ids[f"ass:{eid}:{k}"]} for k in DIMS},
+            "assessments": {k: {**ass[k], "graph_id": ids[f"ass:{eid}:{k}"], "evidence_tier": _evidence_tier(ass[k])} for k in DIMS},
             "signals": [{**s, "graph_id": ids[f"sig:{s['id']}"], "source_graph_ids": [ids[f"src:{x}"] for x in s["sources"]]} for s in sigs],
             "scores": scores[eid],
         })

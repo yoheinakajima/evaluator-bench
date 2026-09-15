@@ -1,143 +1,143 @@
 [
-  {
-    "id": "caisi.01",
-    "evaluator": "caisi",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Public funding; formal access agreements with five developers.",
-    "sources": [
-      "csa-caisi",
-      "nist-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.02",
-    "evaluator": "caisi",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "More than 40 evaluations including unreleased models; classified CBRN and cyber work via the TRAINS taskforce.",
-    "sources": [
-      "csa-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.03",
-    "evaluator": "caisi",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Refocused in 2025 from broad safety research to demonstrable national-security risks; mandate is politically steerable.",
-    "sources": [
-      "csa-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.04",
-    "evaluator": "caisi",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Publishes little per model; findings mostly stay inside government.",
-    "sources": [
-      "csa-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.05",
-    "evaluator": "caisi",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Authorized Scale AI, a company 49% owned by Meta, to run evaluations on its behalf.",
-    "sources": [
-      "scale-framework",
-      "longtermwiki-audit"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.06",
-    "evaluator": "caisi",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Government defines risk domains.",
-    "sources": [
-      "scale-framework"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.07",
-    "evaluator": "caisi",
-    "dimension": "M",
-    "direction": "against",
-    "claim": "Methods partly published through NIST; per-evaluation methods not public.",
-    "sources": [
-      "nist-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.08",
-    "evaluator": "caisi",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "nist-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "caisi.09",
-    "evaluator": "caisi",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "Appropriation of about $10M in FY2026 within NIST's AI line; the director resigned in July 2026 and the NIST director is acting head.",
-    "sources": [
-      "caisi-funding",
-      "evaluators-ledger"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "caisi.10",
-    "evaluator": "caisi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file.",
-    "sources": [
-      "caisi-funding",
-      "nist-caisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "caisi.11",
-    "evaluator": "caisi",
-    "dimension": "G",
-    "direction": "against",
-    "claim": "About $15M available in FY2026 ($10M appropriated plus a Technology Modernization Fund loan) against an estimated $84M per year to be fully equipped; the director resigned on 20 July 2026 three months after appointment, the third leadership change in six months.",
-    "sources": [
-      "ifp-caisi-funding",
-      "cnbc-caisi-fall"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-07-20",
-    "quote": "resigned from his role as director just three months after he was picked for the job"
-  }
+ {
+  "id": "caisi.01",
+  "evaluator": "caisi",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Public funding; formal access agreements with five developers.",
+  "sources": [
+   "csa-caisi",
+   "nist-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.02",
+  "evaluator": "caisi",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "More than 40 evaluations including unreleased models; classified CBRN and cyber work via the TRAINS taskforce.",
+  "sources": [
+   "csa-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.03",
+  "evaluator": "caisi",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Refocused in 2025 from broad safety research to demonstrable national-security risks; mandate is politically steerable.",
+  "sources": [
+   "csa-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.04",
+  "evaluator": "caisi",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Publishes little per model; findings mostly stay inside government.",
+  "sources": [
+   "csa-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.05",
+  "evaluator": "caisi",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Authorized Scale AI, a company 49% owned by Meta, to run evaluations on its behalf.",
+  "sources": [
+   "scale-framework",
+   "longtermwiki-audit"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.06",
+  "evaluator": "caisi",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Government defines risk domains.",
+  "sources": [
+   "scale-framework"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.07",
+  "evaluator": "caisi",
+  "dimension": "M",
+  "direction": "against",
+  "claim": "Methods partly published through NIST; per-evaluation methods not public.",
+  "sources": [
+   "nist-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.08",
+  "evaluator": "caisi",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "nist-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "caisi.09",
+  "evaluator": "caisi",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "Appropriation of about $10M in FY2026 within NIST's AI line; the director resigned in July 2026 and the NIST director is acting head.",
+  "sources": [
+   "caisi-funding",
+   "evaluators-ledger"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "caisi.10",
+  "evaluator": "caisi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file.",
+  "sources": [
+   "caisi-funding",
+   "nist-caisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "caisi.11",
+  "evaluator": "caisi",
+  "dimension": "G",
+  "direction": "against",
+  "claim": "The CAISI director resigned on 20 July 2026, three months after appointment — the third leadership change in six months.",
+  "sources": [
+   "ifp-caisi-funding",
+   "cnbc-caisi-fall"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-07-20",
+  "quote": "resigned from his role as director just three months after he was picked for the job"
+ }
 ]

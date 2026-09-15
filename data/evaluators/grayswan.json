@@ -1,14 +1,15 @@
 {
-  "id": "grayswan",
-  "name": "Gray Swan",
-  "type": "vc",
-  "hq": "Pittsburgh, US",
-  "domains": [
-    "jailbreak",
-    "cyber",
-    "misuse"
-  ],
-  "confidence": "high",
-  "summary": "Crowdsourced adversarial testing (Arena) plus Shade and Cygnal defense products; cited in 11 recent system cards.",
-  "what_would_move_the_score": "Structural separation of the evaluation business, and independent governance for the OpenAI-related conflict beyond personal recusal."
+ "id": "grayswan",
+ "name": "Gray Swan",
+ "type": "vc",
+ "hq": "Pittsburgh, US",
+ "domains": [
+  "jailbreak",
+  "cyber",
+  "misuse"
+ ],
+ "confidence": "high",
+ "summary": "Crowdsourced adversarial testing (Arena) plus Shade and Cygnal defense products; cited in 11 recent system cards.",
+ "what_would_move_the_score": "Structural separation of the evaluation business, and independent governance for the OpenAI-related conflict beyond personal recusal.",
+ "role": "vendor"
 }

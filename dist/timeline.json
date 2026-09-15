@@ -324,15 +324,15 @@
    "S3": 2026,
    "S4": 2025,
    "S5": null,
-   "S6": 2026,
+   "S6": null,
    "S7": 2025
   },
-  "reached": 6,
+  "reached": 5,
   "highest": "S7",
   "rollback": false,
   "delegation": true,
   "span": 6,
   "voluntary_to_mandate": 4,
-  "start_to_independence": 6
+  "start_to_independence": null
  }
 ]

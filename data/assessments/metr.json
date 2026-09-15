@@ -1,121 +1,121 @@
 [
-  {
-    "evaluator": "metr",
-    "dimension": "F",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "metr.01",
-      "metr.02",
-      "metr.03",
-      "metr.14",
-      "metr.15",
-      "metr.16",
-      "metr.18",
-      "metr.19",
-      "metr.20",
-      "metr.21"
-    ],
-    "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
-      "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
-      "Confirm the donor-rule capture history against the Wayback Machine directly.",
-      "The live page names David Farhi among donors while stating it cannot accept donations from frontier AI company employees; the timing of the gift relative to his OpenAI role and to the rule is not established."
-    ]
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "G",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "metr.10"
-    ],
-    "rationale": "Anchor 4 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "P",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "metr.09",
-      "metr.17"
-    ],
-    "rationale": "Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0.3",
-    "open_questions": [
-      "Fetch dated captures of metr.org/team to confirm current versus former roles.",
-      "Ask METR whether a recusal or cooling-off policy exists."
-    ]
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "A",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "metr.04",
-      "metr.05",
-      "metr.13"
-    ],
-    "rationale": "Anchor 4 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "S",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "metr.06"
-    ],
-    "rationale": "Anchor 3 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "R",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "metr.07",
-      "metr.08"
-    ],
-    "rationale": "Anchor 3 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "M",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "metr.11"
-    ],
-    "rationale": "Anchor 4 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "metr",
-    "dimension": "X",
-    "value": 4,
-    "anchor": 4,
-    "signals": [
-      "metr.12"
-    ],
-    "rationale": "Anchor 4 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "metr",
+  "dimension": "F",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "metr.01",
+   "metr.02",
+   "metr.03",
+   "metr.14",
+   "metr.15",
+   "metr.16",
+   "metr.18",
+   "metr.19",
+   "metr.20",
+   "metr.21"
+  ],
+  "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Re-derive the five negative-evidence rows from the cited filings and index (audit_status imported to confirmed).",
+   "Identify the donors behind the $4.0M Vanguard Charitable grant and the Audacious commitment.",
+   "Confirm the donor-rule capture history against the Wayback Machine directly.",
+   "The live page names David Farhi among donors while stating it cannot accept donations from frontier AI company employees; the timing of the gift relative to his OpenAI role and to the rule is not established."
+  ]
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "G",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "metr.10"
+  ],
+  "rationale": "Anchor 3: nonprofit with a written independence policy and a no-lab-money rule (metr.10). Independent board and external review are not evidenced at tier 1, so 4 is unearned under the tier rule (C10).",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "metr.09",
+   "metr.17"
+  ],
+  "rationale": "Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0.3",
+  "open_questions": [
+   "Fetch dated captures of metr.org/team to confirm current versus former roles.",
+   "Ask METR whether a recusal or cooling-off policy exists."
+  ]
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "A",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "metr.04",
+   "metr.05",
+   "metr.13"
+  ],
+  "rationale": "Anchor 4 on access given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "S",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "metr.06"
+  ],
+  "rationale": "Anchor 3 on scope given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "R",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "metr.07",
+   "metr.08"
+  ],
+  "rationale": "Anchor 3 on publication given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "M",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "metr.11"
+  ],
+  "rationale": "Anchor 4 on methods given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "metr",
+  "dimension": "X",
+  "value": 4,
+  "anchor": 4,
+  "signals": [
+   "metr.12"
+  ],
+  "rationale": "Anchor 4 on products given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

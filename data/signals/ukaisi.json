@@ -1,155 +1,155 @@
 [
-  {
-    "id": "ukaisi.01",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Taxpayer funded; no commercial relationship with labs.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.02",
-    "evaluator": "ukaisi",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open-source Inspect framework and published methodology.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.03",
-    "evaluator": "ukaisi",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0",
-    "quote": "AISI found universal jailbreaks across every tested system"
-  },
-  {
-    "id": "ukaisi.04",
-    "evaluator": "ukaisi",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "Most per-model results stay confidential; the public sees aggregated trends.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.05",
-    "evaluator": "ukaisi",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026.",
-    "sources": [
-      "csa-aisi-trends",
-      "resultsense-aisi",
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.06",
-    "evaluator": "ukaisi",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.",
-    "sources": [
-      "aiwiki-ukaisi",
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.07",
-    "evaluator": "ukaisi",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Staff move between the institute and labs in both directions.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.08",
-    "evaluator": "ukaisi",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Public body with civil-service conflict rules.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.09",
-    "evaluator": "ukaisi",
-    "dimension": "S",
-    "direction": "for",
-    "claim": "Sets its own evaluation agenda within MOU terms.",
-    "sources": [
-      "csa-aisi-trends"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.10",
-    "evaluator": "ukaisi",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "regulations-ai-aisi"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "ukaisi.11",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
-    "sources": [
-      "aisi-grants"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.4",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "ukaisi.12",
-    "evaluator": "ukaisi",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Alignment Project reached £27m with £12m additional funding including £5.6m from OpenAI; backers include OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, Halcyon Futures, Safe AI Fund and Sympatico Ventures; OpenAI states its funding does not influence the selection process.",
-    "sources": [
-      "aisi-alignment-60",
-      "alignment-project-about",
-      "openai-alignment-project"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-02",
-    "quote": "including £5.6m from OpenAI"
-  }
+ {
+  "id": "ukaisi.01",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Taxpayer funded; no commercial relationship with labs.",
+  "sources": [
+   "regulations-ai-aisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.02",
+  "evaluator": "ukaisi",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open-source Inspect framework and published methodology.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.03",
+  "evaluator": "ukaisi",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0",
+  "quote": "AISI found universal jailbreaks across every tested system"
+ },
+ {
+  "id": "ukaisi.04",
+  "evaluator": "ukaisi",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "Most per-model results stay confidential; the public sees aggregated trends.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.05",
+  "evaluator": "ukaisi",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026.",
+  "sources": [
+   "csa-aisi-trends",
+   "resultsense-aisi",
+   "regulations-ai-aisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.06",
+  "evaluator": "ukaisi",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.",
+  "sources": [
+   "aiwiki-ukaisi",
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.07",
+  "evaluator": "ukaisi",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Staff move between the institute and labs in both directions.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.08",
+  "evaluator": "ukaisi",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Public body with civil-service conflict rules.",
+  "sources": [
+   "regulations-ai-aisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.09",
+  "evaluator": "ukaisi",
+  "dimension": "S",
+  "direction": "for",
+  "claim": "Sets its own evaluation agenda within MOU terms.",
+  "sources": [
+   "csa-aisi-trends"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.10",
+  "evaluator": "ukaisi",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "regulations-ai-aisi"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "ukaisi.11",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
+  "sources": [
+   "aisi-grants"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.4",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "ukaisi.12",
+  "evaluator": "ukaisi",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.",
+  "sources": [
+   "aisi-alignment-60",
+   "alignment-project-about",
+   "openai-alignment-project"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-02",
+  "quote": "including £5.6m from OpenAI"
+ }
 ]

@@ -1,15 +1,16 @@
 {
-  "id": "metr",
-  "name": "METR",
-  "type": "nonprofit",
-  "hq": "Berkeley, US",
-  "domains": [
-    "autonomy",
-    "scheming",
-    "incident",
-    "assurance"
-  ],
-  "confidence": "high",
-  "summary": "Reference evaluator for autonomy and AI R&D capability. Named by Anthropic as the model for embedded evaluators in September 2026; led the on-site investigation of the OpenAI agent swarm incident.",
-  "what_would_move_the_score": "Contract terms for the Anthropic embedded program that fix scope-setting and publication rights in writing, plus a public cooling-off policy."
+ "id": "metr",
+ "name": "METR",
+ "type": "nonprofit",
+ "hq": "Berkeley, US",
+ "domains": [
+  "autonomy",
+  "scheming",
+  "incident",
+  "assurance"
+ ],
+ "confidence": "high",
+ "summary": "Reference evaluator for autonomy and AI R&D capability. Named by Anthropic as the model for embedded evaluators in September 2026; led the on-site investigation of the OpenAI agent swarm incident.",
+ "what_would_move_the_score": "Contract terms for the Anthropic embedded program that fix scope-setting and publication rights in writing, plus a public cooling-off policy.",
+ "role": "referee"
 }

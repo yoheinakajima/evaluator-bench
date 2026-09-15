@@ -11,6 +11,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 SCHEMA = ROOT / "schema"
 DIMS = ["F","G","P","A","S","R","M","X"]
+# Frozen evidence clock: no record may be dated after this. Bump when re-curating;
+# build.py derives BUILD_CLOCK from it so the event log stays reproducible.
+EVIDENCE_CLOCK = "2026-09-15"
 
 def _read(p: pathlib.Path) -> Any:
     return json.loads(p.read_text())

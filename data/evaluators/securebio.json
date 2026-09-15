@@ -1,13 +1,14 @@
 {
-  "id": "securebio",
-  "name": "SecureBio",
-  "type": "nonprofit",
-  "hq": "Cambridge, US",
-  "domains": [
-    "bio",
-    "misuse"
-  ],
-  "confidence": "high",
-  "summary": "Main biosecurity evaluator; author of the Virology Capabilities Test; founding member of the AI Evaluator Forum.",
-  "what_would_move_the_score": "Publish the AI division's client mix and the written terms that insulate it from Detection's funders."
+ "id": "securebio",
+ "name": "SecureBio",
+ "type": "nonprofit",
+ "hq": "Cambridge, US",
+ "domains": [
+  "bio",
+  "misuse"
+ ],
+ "confidence": "high",
+ "summary": "Main biosecurity evaluator; author of the Virology Capabilities Test; founding member of the AI Evaluator Forum.",
+ "what_would_move_the_score": "Publish the AI division's client mix and the written terms that insulate it from Detection's funders.",
+ "role": "referee"
 }

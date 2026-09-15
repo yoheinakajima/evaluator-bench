@@ -6,10 +6,10 @@
 Format epistemedia-certificate-v0.1 (proposed here; not yet part of Epistemedia).
 A certificate binds a verdict to the exact bytes of a proposal (its SHA-256 and
 Epistemedia proposal_id), names the reviewer (a person, or a model with its
-identity), lists the checks run, and carries a signature slot. Version 0 is
-manual and unsigned: the operator read the spans against the sources and said
-yes. A later version is issued by an automated verifier and signed by the
-realm's key; the site shows the badge and links the certificate either way.
+identity), lists the checks run, and carries a signature slot. Manual v0 self-certification was retired (it was circular: the same operator
+drafted, reviewed, and cited the docket). Certificates are issued only from
+independent review at epistemedia.org by someone other than the drafter, and
+are signed by the realm's key.
 """
 from __future__ import annotations
 import json, hashlib, sys, datetime, pathlib
@@ -64,6 +64,10 @@ def main(argv=None) -> int:
         print(f"{slug}: " + ("valid binding" if not hard else "INVALID") + (("; " + "; ".join(errs)) if errs else "")); return 0 if not hard else 1
     if cmd == "issue":
         opts = dict(zip(argv[2::2], argv[3::2]))
+        if opts.get("--kind", "manual") == "manual":
+            print("refused: manual/self-reviewed certificates were retired (see paper/CERTIFICATION.md). "
+                  "Certificates are issued only from independent review at epistemedia.org by someone other than the drafter.")
+            return 2
         checks = [{"check": "structural-validation", "result": "pass", "note": "epistemedia research validate: only ready-for-review and artifact digests outstanding"},
                   {"check": "spans-read-against-source", "result": "pass", "note": "reviewer re-read each quoted span on the live page"},
                   {"check": "calculations-reproduced", "result": "pass", "note": "arithmetic checked by hand"},

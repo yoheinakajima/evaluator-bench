@@ -19,7 +19,7 @@ def rows():
         v = first(ms, {"voluntary_assurance"})
         t = first(ms, {"trigger"})
         m = first(ms, {"mandate"})
-        r = first(ms, {"independence_rule", "accreditation", "delegation_reform", "payer_reform", "publication_rule"})
+        r = first(ms, {"independence_rule", "delegation_reform", "payer_reform"})  # S6 only; accreditation is S5 (oversight), not independence
         start = min(x for x in [v, m, t] if x is not None)
         triggers = sorted(mm["year"] for mm in ms if mm["kind"] == "trigger")
         def lag(target):

@@ -1,104 +1,105 @@
 [
-  {
-    "evaluator": "irregular",
-    "dimension": "F",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "irregular.01",
-      "irregular.02",
-      "irregular.06",
-      "irregular.12"
-    ],
-    "rationale": "Anchor 1 on funding given the cited signals.",
-    "assessed": "2026-09-15",
-    "assessor": "yohei/claude v1.0",
-    "open_questions": [
-      "Re-run the Coefficient index search under both Irregular and Pattern Labs and record the snapshot."
-    ]
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "G",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "irregular.03"
-    ],
-    "rationale": "Anchor 1 on governance given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "P",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "irregular.10"
-    ],
-    "rationale": "Anchor 2 on personnel given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "A",
-    "value": 3,
-    "anchor": 3,
-    "signals": [
-      "irregular.05"
-    ],
-    "rationale": "Anchor 3 on access given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "S",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "irregular.09"
-    ],
-    "rationale": "Anchor 2 on scope given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "R",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "irregular.08"
-    ],
-    "rationale": "Anchor 2 on publication given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "M",
-    "value": 2,
-    "anchor": 2,
-    "signals": [
-      "irregular.07"
-    ],
-    "rationale": "Anchor 2 on methods given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  },
-  {
-    "evaluator": "irregular",
-    "dimension": "X",
-    "value": 1,
-    "anchor": 1,
-    "signals": [
-      "irregular.04"
-    ],
-    "rationale": "Anchor 1 on products given the cited signals.",
-    "assessed": "2026-09-14",
-    "assessor": "yohei/claude v0"
-  }
+ {
+  "evaluator": "irregular",
+  "dimension": "F",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "irregular.01",
+   "irregular.02",
+   "irregular.06",
+   "irregular.11",
+   "irregular.12"
+  ],
+  "rationale": "Anchor 1: a $6.8M Coefficient Giving grant appears in the index under the former name Pattern Labs (irregular.11; ledger T09 marked differs, unreconciled). A name-search under ‘Irregular’ found nothing (irregular.12), which does not rebut the old-name row — the project treats the two names as the same company. Material lab-adjacent funding with disputed attribution.",
+  "assessed": "2026-09-15",
+  "assessor": "yohei/claude v1.0",
+  "open_questions": [
+   "Re-run the Coefficient index search under both Irregular and Pattern Labs and record the snapshot."
+  ]
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "G",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "irregular.03"
+  ],
+  "rationale": "Anchor 1 on governance given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "P",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "irregular.10"
+  ],
+  "rationale": "Anchor 2 on personnel given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "A",
+  "value": 3,
+  "anchor": 3,
+  "signals": [
+   "irregular.05"
+  ],
+  "rationale": "Anchor 3 on access given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "S",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "irregular.09"
+  ],
+  "rationale": "Anchor 2 on scope given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "R",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "irregular.08"
+  ],
+  "rationale": "Anchor 2 on publication given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "M",
+  "value": 2,
+  "anchor": 2,
+  "signals": [
+   "irregular.07"
+  ],
+  "rationale": "Anchor 2 on methods given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ },
+ {
+  "evaluator": "irregular",
+  "dimension": "X",
+  "value": 1,
+  "anchor": 1,
+  "signals": [
+   "irregular.04"
+  ],
+  "rationale": "Anchor 1 on products given the cited signals.",
+  "assessed": "2026-09-14",
+  "assessor": "yohei/claude v0"
+ }
 ]

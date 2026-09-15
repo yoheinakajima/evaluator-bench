@@ -1,284 +1,283 @@
 [
-  {
-    "id": "metr.01",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Hard rule against accepting money from AI companies, including donations directed by their staff; ~$71M raised in 2026 from foundations and individuals.",
-    "sources": [
-      "metr-about",
-      "alphasignal-metr-71m",
-      "metr-funding-2026"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.02",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Funder base widened beyond the effective-altruism network, including Pew Charitable Trusts.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.03",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Runs on large volumes of free tokens and privileged access from the labs it evaluates.",
-    "sources": [
-      "metr-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.04",
-    "evaluator": "metr",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Investigated the OpenAI incident on site over six days with a Redwood contractor.",
-    "sources": [
-      "metr-hf-investigation",
-      "techtimes-metr-hf"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.05",
-    "evaluator": "metr",
-    "dimension": "A",
-    "direction": "for",
-    "claim": "Named by Anthropic as the example embedded evaluator with employee-level access.",
-    "sources": [
-      "unite-altman-match",
-      "marktechpost-pace"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.06",
-    "evaluator": "metr",
-    "dimension": "S",
-    "direction": "against",
-    "claim": "OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope.",
-    "sources": [
-      "pebblous-scope",
-      "metr-hf-investigation"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.07",
-    "evaluator": "metr",
-    "dimension": "R",
-    "direction": "for",
-    "claim": "Published its own 91-page report with a redaction summary statement; took no payment for the investigation.",
-    "sources": [
-      "metr-hf-investigation",
-      "marktechpost-pace"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.08",
-    "evaluator": "metr",
-    "dimension": "R",
-    "direction": "against",
-    "claim": "OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.",
-    "sources": [
-      "metr-hf-investigation"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.09",
-    "evaluator": "metr",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Hires from the labs it evaluates; a former Anthropic researcher joined in September 2026.",
-    "sources": [
-      "wapo-examiner-benton"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.10",
-    "evaluator": "metr",
-    "dimension": "G",
-    "direction": "for",
-    "claim": "Nonprofit with a written independence policy and a no-lab-money rule.",
-    "sources": [
-      "metr-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.11",
-    "evaluator": "metr",
-    "dimension": "M",
-    "direction": "for",
-    "claim": "Open task suites and published time-horizon methodology; results appear in system cards.",
-    "sources": [
-      "metr-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.12",
-    "evaluator": "metr",
-    "dimension": "X",
-    "direction": "for",
-    "claim": "No commercial products.",
-    "sources": [
-      "metr-about"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.13",
-    "evaluator": "metr",
-    "dimension": "A",
-    "direction": "against",
-    "claim": "Access remains voluntary; no law requires any lab to grant it.",
-    "sources": [
-      "itbb-watchdogs"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0"
-  },
-  {
-    "id": "metr.14",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "The no-lab-money rule is recent and its wording has moved: absent from the April 2024 page, a compensation footnote in April 2025, 'has not accepted funding from AI companies' with free-credit language from August 2025, and a September 2025 footnote that donations from individual lab employees are accepted. An OpenAI technical lead is named among individual donors.",
-    "sources": [
-      "metr-donor-rule-history"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.3",
-    "as_of": "2025-12"
-  },
-  {
-    "id": "metr.15",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.",
-    "sources": [
-      "coefficient-index",
-      "metr-990-fy2024",
-      "metr-money-figure"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.3",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "metr.16",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Bounded negatives on file: no METR-named grant in Coefficient's 2,911-row index (snapshot 2026-09-11) or in the Good Ventures, Schmidt Sciences, Pew, and Packard filings checked; all imported and awaiting re-derivation.",
-    "sources": [
-      "coefficient-index",
-      "metr-money-figure"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.3",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "metr.17",
-    "evaluator": "metr",
-    "dimension": "P",
-    "direction": "against",
-    "claim": "Board and advisors carry lab ties one or two steps out: a director who founded FAR.AI, which is paid by OpenAI for red-teaming; an advisor who is an a16z partner, the firm that led Thinking Machines' seed; an ex-OpenAI advisor who advises Thinking Machines; a director who leads an insurance-certification startup seeded by an Anthropic co-founder. Former advisors moved to Anthropic and to the OpenAI Foundation board.",
-    "sources": [
-      "metr-team",
-      "metr-990-fy2024",
-      "metr-money-figure"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.3",
-    "as_of": "2026-09-14"
-  },
-  {
-    "id": "metr.18",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "Current page (re-fetched 14 Sep 2026) states METR cannot accept donations made by or at the direction of frontier AI company employees, tighter than the September 2025 footnote; the SFF 2025 recommendation of $548,000 is confirmed on the fund's page and FY2024 revenue of $13.6M on ProPublica.",
-    "sources": [
-      "metr-about",
-      "sff-2025",
-      "propublica-metr-arc",
-      "docket-metr-lab-money"
-    ],
-    "recorded": "2026-09-14",
-    "curator": "yohei/claude v0.5",
-    "as_of": "2026-09-14",
-    "quote": "METR has not accepted funding from AI companies"
-  },
-  {
-    "id": "metr.19",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "for",
-    "claim": "METR raised commitments of about $71 million in the six months to August 2026, per its funding update.",
-    "sources": [
-      "metr-funding-2026"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2026-08-14",
-    "quote": "In the last 6 months, METR raised commitments of around $71 million"
-  },
-  {
-    "id": "metr.20",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Audacious Project commitment of about $38 million to RAND and METR for Canary, about $17 million for METR; the Audacious funder collective includes the Gates Foundation, Emerson Collective, MacKenzie Scott, Skoll, Valhalla and ELMA.",
-    "sources": [
-      "metr-audacious-2024",
-      "rand-audacious-2024",
-      "audacious-project"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2024-10-09",
-    "quote": "Approximately $17 million of this will support work at METR."
-  },
-  {
-    "id": "metr.21",
-    "evaluator": "metr",
-    "dimension": "F",
-    "direction": "against",
-    "claim": "Second-hop routes for METR's philanthropic money: ARC (a $4,553,935 grant to METR in its 2024 filing, per a 990 extraction) was itself funded by Coefficient; Longview (a pooled fund named by METR) received a $15,961,273 operational grant from Coefficient; Constellation, which shares people with METR, received $16,750,000.",
-    "sources": [
-      "instrumentl-arc-990",
-      "op-longview",
-      "op-constellation"
-    ],
-    "recorded": "2026-09-15",
-    "curator": "yohei/claude v1.0",
-    "as_of": "2025",
-    "quote": "contributed $4,553,935 in grants during 2024"
-  }
+ {
+  "id": "metr.01",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Hard rule against accepting money from AI companies, including donations directed by their staff; ~$71M raised in 2026 from foundations and individuals.",
+  "sources": [
+   "metr-about",
+   "alphasignal-metr-71m",
+   "metr-funding-2026"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.02",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Funder base widened beyond the effective-altruism network, including Pew Charitable Trusts.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.03",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Runs on large volumes of free tokens and privileged access from the labs it evaluates.",
+  "sources": [
+   "metr-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.04",
+  "evaluator": "metr",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Investigated the OpenAI incident on site over six days with a Redwood contractor.",
+  "sources": [
+   "metr-hf-investigation",
+   "techtimes-metr-hf"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.05",
+  "evaluator": "metr",
+  "dimension": "A",
+  "direction": "for",
+  "claim": "Named by Anthropic as the example embedded evaluator with employee-level access.",
+  "sources": [
+   "unite-altman-match",
+   "marktechpost-pace"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.06",
+  "evaluator": "metr",
+  "dimension": "S",
+  "direction": "against",
+  "claim": "OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope.",
+  "sources": [
+   "pebblous-scope",
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.07",
+  "evaluator": "metr",
+  "dimension": "R",
+  "direction": "for",
+  "claim": "Published its own 91-page report with a redaction summary statement; took no payment for the investigation.",
+  "sources": [
+   "metr-hf-investigation",
+   "marktechpost-pace"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.08",
+  "evaluator": "metr",
+  "dimension": "R",
+  "direction": "against",
+  "claim": "OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.",
+  "sources": [
+   "metr-hf-investigation"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.09",
+  "evaluator": "metr",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Hires from the labs it evaluates; a former Anthropic researcher joined in September 2026.",
+  "sources": [
+   "wapo-examiner-benton"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.10",
+  "evaluator": "metr",
+  "dimension": "G",
+  "direction": "for",
+  "claim": "Nonprofit with a written independence policy and a no-lab-money rule.",
+  "sources": [
+   "metr-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.11",
+  "evaluator": "metr",
+  "dimension": "M",
+  "direction": "for",
+  "claim": "Open task suites and published time-horizon methodology; results appear in system cards.",
+  "sources": [
+   "metr-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.12",
+  "evaluator": "metr",
+  "dimension": "X",
+  "direction": "for",
+  "claim": "No commercial products.",
+  "sources": [
+   "metr-about"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.13",
+  "evaluator": "metr",
+  "dimension": "A",
+  "direction": "against",
+  "claim": "Access remains voluntary; no law requires any lab to grant it.",
+  "sources": [
+   "itbb-watchdogs"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0"
+ },
+ {
+  "id": "metr.14",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "The no-lab-money rule is recent and its wording has moved: absent from the April 2024 page, a compensation footnote in April 2025, 'has not accepted funding from AI companies' with free-credit language from August 2025, and a September 2025 footnote that donations from individual lab employees are accepted. An OpenAI technical lead is named among individual donors.",
+  "sources": [
+   "metr-donor-rule-history"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.3",
+  "as_of": "2025-12"
+ },
+ {
+  "id": "metr.15",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.",
+  "sources": [
+   "coefficient-index",
+   "metr-990-fy2024",
+   "metr-money-figure"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.3",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "metr.16",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Bounded negatives on file: no METR-named grant in Coefficient's 2,911-row index (snapshot 2026-09-11) or in the Good Ventures, Schmidt Sciences, Pew, and Packard filings checked; all imported and awaiting re-derivation.",
+  "sources": [
+   "coefficient-index",
+   "metr-money-figure"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.3",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "metr.17",
+  "evaluator": "metr",
+  "dimension": "P",
+  "direction": "against",
+  "claim": "Board and advisors carry lab ties one or two steps out: a director who founded FAR.AI, which is paid by OpenAI for red-teaming; an advisor who is an a16z partner, the firm that led Thinking Machines' seed; an ex-OpenAI advisor who advises Thinking Machines; a director who leads an insurance-certification startup seeded by an Anthropic co-founder. Former advisors moved to Anthropic and to the OpenAI Foundation board.",
+  "sources": [
+   "metr-team",
+   "metr-990-fy2024",
+   "metr-money-figure"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.3",
+  "as_of": "2026-09-14"
+ },
+ {
+  "id": "metr.18",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "Current page (re-fetched 14 Sep 2026) states METR cannot accept donations made by or at the direction of frontier AI company employees, tighter than the September 2025 footnote; the SFF 2025 recommendation of $548,000 is confirmed on the fund's page and FY2024 revenue of $13.6M on ProPublica.",
+  "sources": [
+   "metr-about",
+   "sff-2025",
+   "propublica-metr-arc"
+  ],
+  "recorded": "2026-09-14",
+  "curator": "yohei/claude v0.5",
+  "as_of": "2026-09-14",
+  "quote": "METR has not accepted funding from AI companies"
+ },
+ {
+  "id": "metr.19",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "for",
+  "claim": "METR raised commitments of about $71 million in the six months to August 2026, per its funding update.",
+  "sources": [
+   "metr-funding-2026"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2026-08-14",
+  "quote": "In the last 6 months, METR raised commitments of around $71 million"
+ },
+ {
+  "id": "metr.20",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "The Audacious Project committed approximately $17M to METR for Canary work. The $38M combined figure and the funder-collective membership are per the cited sources; spans not yet captured.",
+  "sources": [
+   "metr-audacious-2024",
+   "rand-audacious-2024",
+   "audacious-project"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2024-10-09",
+  "quote": "Approximately $17 million of this will support work at METR."
+ },
+ {
+  "id": "metr.21",
+  "evaluator": "metr",
+  "dimension": "F",
+  "direction": "against",
+  "claim": "Second-hop routes for METR's philanthropic money: ARC (a $4,553,935 grant to METR in its 2024 filing, per a 990 extraction) was itself funded by Coefficient; Longview (a pooled fund named by METR) received a $15,961,273 operational grant from Coefficient; Constellation, which shares people with METR, received $16,750,000.",
+  "sources": [
+   "instrumentl-arc-990",
+   "op-longview",
+   "op-constellation"
+  ],
+  "recorded": "2026-09-15",
+  "curator": "yohei/claude v1.0",
+  "as_of": "2025",
+  "quote": "contributed $4,553,935 in grants during 2024"
+ }
 ]

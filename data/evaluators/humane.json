@@ -1,13 +1,14 @@
 {
-  "id": "humane",
-  "name": "Humane Intelligence",
-  "type": "nonprofit",
-  "hq": "New York, US",
-  "domains": [
-    "misuse",
-    "jailbreak"
-  ],
-  "confidence": "med",
-  "summary": "Public red-teaming exercises with NIST and IMDA; societal harms rather than catastrophic risk.",
-  "what_would_move_the_score": "Pre-release access for the harms it covers."
+ "id": "humane",
+ "name": "Humane Intelligence",
+ "type": "nonprofit",
+ "hq": "New York, US",
+ "domains": [
+  "misuse",
+  "jailbreak"
+ ],
+ "confidence": "med",
+ "summary": "Public red-teaming exercises with NIST and IMDA; societal harms rather than catastrophic risk.",
+ "what_would_move_the_score": "Pre-release access for the harms it covers.",
+ "role": "referee"
 }
