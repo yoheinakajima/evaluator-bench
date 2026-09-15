@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours.
+cff-version: 1.2.0
+title: "Who Pays the Referee? Measuring Third-Party Evaluator Independence in Frontier AI Against the History of Assurance Regimes"
+message: "If you use this software, please cite it as below."
+version: 0.1.0
+date-released: 2026-09-15
+authors:
+  - family-names: Nakajima
+    given-names: Yohei
+repository-code: "https://github.com/yoheinakajima/evaluator-bench"
+url: "https://github.com/yoheinakajima/evaluator-bench"
+abstract: "Two open datasets. Dataset A scores 24 organizations that evaluate frontier models for safety-relevant properties on eight independence dimensions, every value derived from sourced signals under published rules. Dataset B codes the lifecycle of sixteen assurance regimes across fifteen industries as dated milestones. Everything regenerates from an append-only event log."
+keywords:
+  - AI evaluation
+  - evaluator independence
+  - assurance regimes
+  - third-party audit
+# Code in this repository is Apache-2.0. Data files under data/ and generated
+# logs under graph/ and dist/bench.json are CC BY 4.0 (see LICENSE).
+# CFF carries a single license identifier, so it names the code license here.
+license: Apache-2.0
