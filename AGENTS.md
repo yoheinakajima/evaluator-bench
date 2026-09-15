@@ -18,7 +18,7 @@ Scores, presets, anchors, the CONTRACT, the verifier, or the build. Do not edit 
 ## Recipe A: add evidence about an evaluator
 
 1. Fetch the source yourself. Save its URL, the date, and the exact sentence you rely on.
-2. Add the source file. Set `source_type` honestly (filing, index, ledger, self, press). Set `audit_status: confirmed`.
+2. Add the source file. Set `source_type` to what the source is (filing, index, ledger, self, press). Set `audit_status: confirmed`.
 3. Add the signal with a `quote` copied verbatim and an `as_of` date.
 4. If the signal moves an assessment, edit the value and the rationale. Say in the PR which anchor text now applies.
 5. Run `python -m bench verify && python -m bench build && pytest -q`. Commit the regenerated `graph/` and `dist/`.
