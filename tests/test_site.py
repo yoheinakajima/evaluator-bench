@@ -120,3 +120,13 @@ def test_evaluators_page_hides_number_until_scored():
     assert all(c == "–" for c in cells), "a weighted number is visible before the reader chooses weights"
     assert 'data-lab="' in html and 'id="evscore-btn"' in html
     assert "Score with these weights" in html
+
+def test_unranked_entries_show_not_ranked_not_a_band():
+    html = (DIST / "entity" / "hfoai.html").read_text()
+    assert "not ranked" in html
+    assert "Disqualifying floor" not in html
+    idx = (DIST / "evaluators" / "index.html").read_text()
+    for eid in ("hfoai", "epoch", "hal"):
+        pass
+    # watchlist and out-of-scope rows in the directory carry no band chip
+    assert idx.count("not ranked") >= 3

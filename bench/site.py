@@ -243,7 +243,7 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
     for k in DIMS:
         ptbl += f"<tr><td>{esc(dims[k]['label'])}</td>" + "".join(f'<td class="num">{"–" if ev["values_by_policy"][p][k] is None else ev["values_by_policy"][p][k]}</td>' for p in POLICY_ORDER) + "</tr>"
     for pname in bench["presets"]:
-        ptbl += f"<tr><td>Score, {esc(bench['presets'][pname]['label'])}</td>" + "".join(f'<td class="num">{ev["scores_by_policy"][p][pname]["score"] if ev["scores_by_policy"][p][pname]["score"] is not None else "–"} <span class="gid">{esc(BAND_LABEL[ev["scores_by_policy"][p][pname]["band"]])}, {ev["scores_by_policy"][p][pname]["coverage"]}/8</span></td>' for p in POLICY_ORDER) + "</tr>"
+        ptbl += f"<tr><td>Score, {esc(bench['presets'][pname]['label'])}</td>" + "".join(f'<td class="num">{ev["scores_by_policy"][p][pname]["score"] if ev["scores_by_policy"][p][pname]["score"] is not None else "–"} <span class="gid">{("not ranked" if ev.get("status", "ranked") != "ranked" else esc(BAND_LABEL[ev["scores_by_policy"][p][pname]["band"]]))}, {ev["scores_by_policy"][p][pname]["coverage"]}/8</span></td>' for p in POLICY_ORDER) + "</tr>"
     ptbl += "</table>"
     moves = ev.get("what_moves", {}).get("lab", [])[:3]
     mv = "".join(f'<li>{esc(DIM_LABEL[m["dimension"]])} {m["from_value"]} to {m["to_value"]}: score {m["score"] if m["score"] is not None else "–"}{(", band becomes " + BAND_LABEL[m["band"]].lower()) if BAND_ORDER[m["band"]] < BAND_ORDER[b] else ""}</li>' for m in moves)
@@ -256,7 +256,7 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
         exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(bb) if bb else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " excluded after a re-fetch disagreed or could not be verified: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}{(" Evaluation credits recorded but never counted: " + ", ".join(ex["credit_ids"]) + ".") if ex.get("credit_rows") else ""} Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Checked and not found: {len(ex["negatives"])}.</p></div>'
     return f"""<div class="card"><h3>Scorecard</h3><p style="font-size:13.5px">{esc(ev['summary'])}</p>
       <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. {esc(ROLE_LABEL.get(ev['role'], ev['role']))}; listed with {esc(GROUP_LABEL.get(ev.get('list_group', 'referee'), '').lower())}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}.</p>
-      <p style="font-size:13.5px">{bandchip(b)} <span class="gid">{cov}/8 evidenced under the standard policy</span> Scores by preset: {scores}. Weakest evidenced dimension: {esc(dims[fl]['label'].lower()) if fl else 'none'} {vals[fl] if fl else ''}{'/4' if fl else ''}. {esc(BAND_DESC[b])}</p>
+      <p style="font-size:13.5px">{bandchip(b) if ev.get("status", "ranked") == "ranked" else '<span class="band" style="color:var(--muted)">not ranked</span>'} <span class="gid">{cov}/8 evidenced under the standard policy</span> Scores by preset: {scores}. Weakest evidenced dimension: {esc(dims[fl]['label'].lower()) if fl else 'none'} {vals[fl] if fl else ''}{'/4' if fl else ''}.{(" " + esc(BAND_DESC[b])) if ev.get("status", "ranked") == "ranked" else ""}</p>
       <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>{('<ul style="font-size:13.5px;margin:0 0 8px 18px">' + mv + '</ul>') if mv else ''}
       {('<p style="font-size:13.5px"><b>Dissent, lower.</b> ' + esc(dissent.get('lower')) + '</p><p style="font-size:13.5px"><b>Dissent, higher.</b> ' + esc(dissent.get('higher')) + '</p>') if dissent else ''}
       <p style="font-size:12.5px;color:var(--muted)">Each value is the tightest admissible cap or, with no cap, the highest admissible floor, under <a href="{REPO}RULES.md">RULES.md</a>. The binding signal is highlighted. A dash means no admissible signal sets a bound under the standard policy.</p>
@@ -326,7 +326,9 @@ def _ev_row(e: dict, bench: dict, dims: dict, C: dict) -> str:
     cells = ["<tr>"]
     cells.append('<td><a href="../entity/' + lid + '.html">' + esc(e["name"]) + "</a><br>" +
                  '<span style="color:var(--muted);font-size:12px">' + esc(bench["types"][e["type"]]) + ", " + esc(e["hq"]) + "</span></td>")
-    cells.append("<td>" + esc(ROLE_LABEL.get(e["role"], e["role"])) + "</td><td>" + bandchip(e["band"]) + "</td>")
+    role = esc(ROLE_LABEL.get(e["role"], e["role"]))
+    band = bandchip(e["band"]) if e.get("status", "ranked") == "ranked" else '<span class="band" style="color:var(--muted)">not ranked</span>'
+    cells.append("<td>" + role + "</td><td>" + band + "</td>")
     cells.append('<td class="num evscore" data-lab="' + sd["lab"] + '" data-regulator="' + sd["regulator"] +
                  '" data-public="' + sd["public"] + '" data-equal="' + sd["equal"] + '">\u2013</td>')
     cells.append('<td class="num">' + str(e["coverage"]) + "/8</td>")
