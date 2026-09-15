@@ -1,0 +1,630 @@
+{
+ "format": "epistemedia-research-proposal-v0.2",
+ "status": "draft",
+ "cutoff": "2026-09-14",
+ "question": "Does METR accept money from the frontier AI companies whose models it evaluates?",
+ "scope": {
+  "included": "METR's own funding statements and donor rule as published on metr.org/about on 2026-09-14; the Survival and Flourishing Fund's 2025 recommendation to METR; METR's FY2024 contributions as summarized by ProPublica; a third-party ledger's report that Coefficient Giving's grants index contains no METR-named grant.",
+  "excluded": "Whether any named individual donor is or was employed by a frontier lab; the underlying donors of donor-advised-fund and pooled-fund grants; the equity holdings of SFF's funder; historical versions of the donor rule (no Wayback capture in this docket); any judgment about motive or influence.",
+  "comparison_target": "The claim 'METR takes no money from AI companies' as it circulates in press and system-card summaries, compared with METR's exact wording and the traced money routes."
+ },
+ "sources": [
+  {
+   "source_id": "src-metr-about",
+   "title": "About METR",
+   "creators_or_org": "METR (Model Evaluation and Threat Research, Inc.)",
+   "date": "2026-09-14",
+   "edition": "Live web page as retrieved 2026-09-14 (text extraction; no Wayback capture in this draft)",
+   "identifier": "https://metr.org/about",
+   "url": "https://metr.org/about",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-metr-nolab",
+     "locator": "Funding section, final paragraph",
+     "quote": "METR has not accepted funding from AI companies",
+     "supports": "METR's self-statement that it has taken no lab funding."
+    },
+    {
+     "span_id": "span-metr-tokens",
+     "locator": "Funding section, final paragraph",
+     "quote": "we make use of significant free tokens",
+     "supports": "METR accepts in-kind resources from AI companies."
+    },
+    {
+     "span_id": "span-metr-partners",
+     "locator": "Partnerships section",
+     "quote": "These companies have also provided access and tokens",
+     "supports": "The companies providing tokens are the partners it evaluates (OpenAI, Anthropic, Google DeepMind, Meta, Amazon)."
+    },
+    {
+     "span_id": "span-metr-rule",
+     "locator": "Funding section, parenthetical note after the donation link",
+     "quote": "METR cannot accept donations made by or at the direction of frontier AI company employees",
+     "supports": "The donor rule as worded on 2026-09-14 excludes lab employees."
+    },
+    {
+     "span_id": "span-metr-farhi",
+     "locator": "Funding section, list of supporters",
+     "quote": "such as David Farhi, Geoff Ralston, Dylan Field and Steve Newman",
+     "supports": "Named individual donors on the same page."
+    },
+    {
+     "span_id": "span-metr-sff",
+     "locator": "Funding section, list of supporters",
+     "quote": "recommendations by the Survival and Flourishing Fund",
+     "supports": "SFF is among METR's stated funding routes."
+    },
+    {
+     "span_id": "span-metr-eu",
+     "locator": "Funding section",
+     "quote": "a small part of our income is from a technical assistance contract with the European AI Office",
+     "supports": "A government contract is the only non-donation income METR names."
+    }
+   ]
+  },
+  {
+   "source_id": "src-sff-2025",
+   "title": "SFF-2025 S-Process Recommendations Announcement",
+   "creators_or_org": "Survival and Flourishing Fund",
+   "date": "2025",
+   "edition": "Live web page as retrieved 2026-09-14 (text extraction)",
+   "identifier": "https://survivalandflourishing.fund/2025/recommendations",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-sff-funder",
+     "locator": "Opening paragraph",
+     "quote": "a grant-recommendation process for Funder Jaan Tallinn",
+     "supports": "The 2025 round's funder is Jaan Tallinn."
+    },
+    {
+     "span_id": "span-sff-metr-total",
+     "locator": "Final recommendations table, row 'Model Evaluation & Threat Research (METR)', Total Funding Rec. column",
+     "quote": "$548,000",
+     "supports": "Total 2025 recommendation to METR."
+    },
+    {
+     "span_id": "span-sff-metr-spec",
+     "locator": "Same row",
+     "quote": "Speculation: ($120,000)",
+     "supports": "Portion already distributed as a Speculation Grant."
+    },
+    {
+     "span_id": "span-sff-metr-match",
+     "locator": "Same row and the Matching Pledge table",
+     "quote": "Matching: {$428,000}",
+     "supports": "Portion conditional on outside funds, deadline September 30, 2026."
+    }
+   ]
+  },
+  {
+   "source_id": "src-propublica-metr",
+   "title": "Model Evaluation And Threat Research, Nonprofit Explorer organization summary (EIN 99-1219864)",
+   "creators_or_org": "ProPublica, from IRS Form 990 e-file data",
+   "date": "2025",
+   "edition": "Organization summary page as retrieved 2026-09-14 (text extraction); fiscal year ending December 2024",
+   "identifier": "EIN 99-1219864",
+   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
+   "media_type": "text/html",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-pp-contrib",
+     "locator": "Extracted Financial Data, Notable Sources of Revenue",
+     "quote": "Contributions $13,603,035",
+     "supports": "Nearly all FY2024 revenue was contributions."
+    },
+    {
+     "span_id": "span-pp-rev",
+     "locator": "Extracted Financial Data",
+     "quote": "Revenue $13,639,155",
+     "supports": "FY2024 total revenue."
+    }
+   ]
+  },
+  {
+   "source_id": "src-mmf-ledger",
+   "title": "metr-money-figure research ledger, money_flows.csv row M33",
+   "creators_or_org": "Kevin Bass (GitHub: kevinnbass/metr-money-figure)",
+   "date": "2026-09-14",
+   "edition": "Git clone at commit f64df65a16400fd88a77536111851695acc9a928, research/money_flows.csv",
+   "identifier": "https://github.com/kevinnbass/metr-money-figure",
+   "url": "https://github.com/kevinnbass/metr-money-figure",
+   "media_type": "text/csv",
+   "retrieval_status": "retrieved",
+   "license": {
+    "identifier": "unknown",
+    "status": "unknown",
+    "basis_span_id": "none"
+   },
+   "exact_spans": [
+    {
+     "span_id": "span-mmf-m33",
+     "locator": "research/money_flows.csv, row M33, notes column",
+     "quote": "no direct grant in 2,911-row index snapshot 2026-09-11",
+     "supports": "A third party reports finding no METR-named grant in Coefficient Giving's index; not re-derived here."
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "result_id": "result-1",
+   "proposition": "As of 2026-09-14, METR states it has not accepted funding from AI companies, and states that it uses significant free tokens and access provided by the companies it partners with.",
+   "interpretation": "The no-funding statement is METR's own and is bounded to cash: the same page discloses in-kind tokens and access from OpenAI, Anthropic, Google DeepMind, Meta and Amazon.",
+   "warrant": "Both statements appear verbatim on the organization's funding and partnerships sections.",
+   "scope": {
+    "dataset_or_population": "METR's public statements",
+    "metric_scope": "Self-reported funding policy; does not measure dollars",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "page state on 2026-09-14",
+    "tool_and_retrieval_path": "direct HTTPS fetch of metr.org/about"
+   },
+   "reported_value": {
+    "comparison": "cash funding versus in-kind resources",
+    "numerator": "not reported",
+    "denominator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-1a",
+     "kind": "finding",
+     "status": "supported",
+     "text": "METR states it has not accepted funding from AI companies.",
+     "source_ids": [
+      "src-metr-about"
+     ],
+     "exact_span_ids": [
+      "span-metr-nolab"
+     ]
+    },
+    {
+     "atom_id": "atom-1b",
+     "kind": "boundary",
+     "status": "supported",
+     "text": "METR uses free tokens and access provided by the companies it evaluates.",
+     "source_ids": [
+      "src-metr-about"
+     ],
+     "exact_span_ids": [
+      "span-metr-tokens",
+      "span-metr-partners"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-metr-about"
+   ],
+   "exact_span_ids": [
+    "span-metr-nolab",
+    "span-metr-tokens",
+    "span-metr-partners"
+   ],
+   "dependency_ids": [
+    "dep-self-statement"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable",
+   "uncertainty": "Self-statement; not reconciled against filings in this docket. The dollar value of tokens is not stated on the page."
+  },
+  {
+   "result_id": "result-2",
+   "proposition": "In the 2025 SFF round, a grant-recommendation process for funder Jaan Tallinn, the total recommendation to METR was $548,000, of which $120,000 had been distributed as a speculation grant and $428,000 is a matching pledge conditional on outside funds.",
+   "interpretation": "Money reaches METR through a recommendation process whose funder is an individual, not an AI company. Whether that individual holds equity in a frontier lab is outside this docket's sources.",
+   "warrant": "The table row and the matching-pledge table state the amounts; the opening paragraph names the funder.",
+   "scope": {
+    "dataset_or_population": "SFF 2025 round",
+    "metric_scope": "Recommended amounts, not payments made",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "2025 round, matching deadline 2026-09-30",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "recommendation components",
+    "numerator": "548000",
+    "denominator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-2a",
+     "kind": "finding",
+     "status": "supported",
+     "text": "SFF 2025 recommended $548,000 to METR.",
+     "source_ids": [
+      "src-sff-2025"
+     ],
+     "exact_span_ids": [
+      "span-sff-metr-total"
+     ]
+    },
+    {
+     "atom_id": "atom-2b",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "The round's funder is Jaan Tallinn.",
+     "source_ids": [
+      "src-sff-2025"
+     ],
+     "exact_span_ids": [
+      "span-sff-funder"
+     ]
+    },
+    {
+     "atom_id": "atom-2c",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "Whether the funder holds a stake in a frontier AI company is not established within this docket.",
+     "source_ids": [
+      "src-sff-2025"
+     ],
+     "exact_span_ids": [
+      "span-sff-funder"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-sff-2025"
+   ],
+   "exact_span_ids": [
+    "span-sff-funder",
+    "span-sff-metr-total",
+    "span-sff-metr-spec",
+    "span-sff-metr-match"
+   ],
+   "dependency_ids": [
+    "dep-sff-page"
+   ],
+   "calculation_ids": [
+    "calc-sff-sum"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "A recommendation is not a payment; the page itself notes recommendations may not be finalized."
+  },
+  {
+   "result_id": "result-3",
+   "proposition": "METR's donor rule as worded on 2026-09-14 excludes donations made by or at the direction of frontier AI company employees, and the same page names David Farhi among individual donors.",
+   "interpretation": "Two statements on one page; whether they conflict depends on the timing of the gift and the donor's employment, neither of which this docket establishes.",
+   "warrant": "Both spans are on the funding section of the same page.",
+   "scope": {
+    "dataset_or_population": "metr.org/about text",
+    "metric_scope": "Policy wording",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "2026-09-14",
+    "tool_and_retrieval_path": "direct HTTPS fetch"
+   },
+   "reported_value": {
+    "comparison": "rule wording versus donor list",
+    "numerator": "not reported",
+    "denominator": "not reported",
+    "rate": "not reported"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-3a",
+     "kind": "process",
+     "status": "supported",
+     "text": "The current rule excludes donations by or at the direction of lab employees.",
+     "source_ids": [
+      "src-metr-about"
+     ],
+     "exact_span_ids": [
+      "span-metr-rule"
+     ]
+    },
+    {
+     "atom_id": "atom-3b",
+     "kind": "metadata",
+     "status": "supported",
+     "text": "David Farhi is named among individual donors.",
+     "source_ids": [
+      "src-metr-about"
+     ],
+     "exact_span_ids": [
+      "span-metr-farhi"
+     ]
+    },
+    {
+     "atom_id": "atom-3c",
+     "kind": "boundary",
+     "status": "unresolved",
+     "text": "The donor's employment at the time of the gift is not established here.",
+     "source_ids": [
+      "src-metr-about"
+     ],
+     "exact_span_ids": [
+      "span-metr-farhi"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-metr-about"
+   ],
+   "exact_span_ids": [
+    "span-metr-rule",
+    "span-metr-farhi"
+   ],
+   "dependency_ids": [
+    "dep-self-statement"
+   ],
+   "calculation_ids": [],
+   "calculation_status": "not-applicable",
+   "uncertainty": "No dated capture history in this docket; a third-party ledger reports the wording changed during 2025."
+  },
+  {
+   "result_id": "result-4",
+   "proposition": "METR's FY2024 revenue of $13,639,155 was almost entirely contributions ($13,603,035).",
+   "interpretation": "Consistent with a donation-funded organization; the filing summary does not identify donors.",
+   "warrant": "The extracted financial data lists the two figures.",
+   "scope": {
+    "dataset_or_population": "IRS Form 990, FY ending December 2024",
+    "metric_scope": "Revenue composition, not donor identity",
+    "models_or_agents": [
+     "not applicable"
+    ],
+    "time": "FY2024",
+    "tool_and_retrieval_path": "ProPublica summary page"
+   },
+   "reported_value": {
+    "comparison": "contributions to total revenue",
+    "numerator": "13603035",
+    "denominator": "13639155",
+    "rate": "0.997"
+   },
+   "claim_atoms": [
+    {
+     "atom_id": "atom-4a",
+     "kind": "finding",
+     "status": "supported",
+     "text": "Contributions were 99.7% of FY2024 revenue.",
+     "source_ids": [
+      "src-propublica-metr"
+     ],
+     "exact_span_ids": [
+      "span-pp-contrib",
+      "span-pp-rev"
+     ]
+    }
+   ],
+   "source_ids": [
+    "src-propublica-metr"
+   ],
+   "exact_span_ids": [
+    "span-pp-contrib",
+    "span-pp-rev"
+   ],
+   "dependency_ids": [
+    "dep-990-summary"
+   ],
+   "calculation_ids": [
+    "calc-contrib-share"
+   ],
+   "calculation_status": "reproduced",
+   "uncertainty": "Summary extraction, not the full filing; Schedule B donors are not public."
+  }
+ ],
+ "calculations": [
+  {
+   "calculation_id": "calc-sff-sum",
+   "equation": "120000 + 428000 = 548000",
+   "inputs": [
+    {
+     "input_id": "in-spec",
+     "name": "speculation grant",
+     "origin": "source-span",
+     "source_id": "src-sff-2025",
+     "span_id": "span-sff-metr-spec",
+     "json_pointer": "/sources/1/exact_spans/2/quote",
+     "value": "120000"
+    },
+    {
+     "input_id": "in-match",
+     "name": "matching pledge",
+     "origin": "source-span",
+     "source_id": "src-sff-2025",
+     "span_id": "span-sff-metr-match",
+     "json_pointer": "/sources/1/exact_spans/3/quote",
+     "value": "428000"
+    }
+   ],
+   "output": "548000",
+   "uncertainty": "exact; matches the stated total",
+   "depends_on": []
+  },
+  {
+   "calculation_id": "calc-contrib-share",
+   "equation": "13603035 / 13639155 = 0.9974",
+   "inputs": [
+    {
+     "input_id": "in-contrib",
+     "name": "contributions",
+     "origin": "source-span",
+     "source_id": "src-propublica-metr",
+     "span_id": "span-pp-contrib",
+     "json_pointer": "/sources/2/exact_spans/0/quote",
+     "value": "13603035"
+    },
+    {
+     "input_id": "in-rev",
+     "name": "revenue",
+     "origin": "source-span",
+     "source_id": "src-propublica-metr",
+     "span_id": "span-pp-rev",
+     "json_pointer": "/sources/2/exact_spans/1/quote",
+     "value": "13639155"
+    }
+   ],
+   "output": "0.9974",
+   "uncertainty": "rounding only",
+   "depends_on": []
+  }
+ ],
+ "counterevidence": [
+  {
+   "claim": "METR is funded independently of the companies it evaluates",
+   "evidence": "The same page that states no cash funding discloses significant free tokens and access from the partner companies.",
+   "source_ids": [
+    "src-metr-about"
+   ],
+   "exact_span_ids": [
+    "span-metr-tokens",
+    "span-metr-partners"
+   ],
+   "qualification": "In-kind, not cash; value not stated. Disposition: bounds the claim to cash."
+  }
+ ],
+ "negative_results": [
+  {
+   "kind": "no-evidence-located",
+   "scope": "Coefficient Giving grants index, 2,911 rows, snapshot 2026-09-11, searched for METR under any name, as reported by a third-party ledger",
+   "result": "No METR-named grant reported",
+   "disposition": "Retained as a third-party report; absence not converted to zero; not re-derived in this docket.",
+   "source_ids": [
+    "src-mmf-ledger"
+   ],
+   "exact_span_ids": [
+    "span-mmf-m33"
+   ],
+   "retrieval_attempt_ids": [
+    "attempt-mmf"
+   ]
+  }
+ ],
+ "dependencies": [
+  {
+   "dependency_id": "dep-self-statement",
+   "kind": "source",
+   "description": "Results 1 and 3 rest on METR's own page; no independent filing corroborates the no-lab-funding statement within this docket.",
+   "source_ids": [
+    "src-metr-about"
+   ],
+   "exact_span_ids": [
+    "span-metr-nolab"
+   ]
+  },
+  {
+   "dependency_id": "dep-sff-page",
+   "kind": "source",
+   "description": "Result 2 rests on the fund's own announcement page; SFF is a recommender, and payment is by the funder.",
+   "source_ids": [
+    "src-sff-2025"
+   ],
+   "exact_span_ids": [
+    "span-sff-metr-total"
+   ]
+  },
+  {
+   "dependency_id": "dep-990-summary",
+   "kind": "source",
+   "description": "Result 4 rests on ProPublica's extraction of the e-filed 990, not the filing itself.",
+   "source_ids": [
+    "src-propublica-metr"
+   ],
+   "exact_span_ids": [
+    "span-pp-rev"
+   ]
+  }
+ ],
+ "retrieval_attempts": [
+  {
+   "attempt_id": "attempt-metr",
+   "source_id": "src-metr-about",
+   "url": "https://metr.org/about",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-sff",
+   "source_id": "src-sff-2025",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-pp",
+   "source_id": "src-propublica-metr",
+   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  },
+  {
+   "attempt_id": "attempt-mmf",
+   "source_id": "src-mmf-ledger",
+   "url": "https://github.com/kevinnbass/metr-money-figure",
+   "transport": "https",
+   "attempted_at": "2026-09-14T00:00:00Z",
+   "outcome": "retrieved",
+   "failure_code": "none",
+   "artifact_sha256": "PENDING-networked-refetch"
+  }
+ ],
+ "lineage": {
+  "prompt_sha256": "unknown",
+  "provider_model_identity": "Claude (Anthropic), assistant session",
+  "retrieval_environment": "assistant web fetch tool plus git clone; no byte-level artifacts saved",
+  "run_identity": "evaluator-bench docket draft 2026-09-14",
+  "shared_dependencies": [
+   "All spans read from live pages on one day by one agent; the Coefficient negative is a third-party report, not an independent retrieval."
+  ]
+ },
+ "runtime": {
+  "agent": "evaluator-bench/bench.docket",
+  "started_at": "2026-09-14T00:00:00Z",
+  "completed_at": "unknown",
+  "toolchain": [
+   "web fetch",
+   "git",
+   "python"
+  ]
+ },
+ "limitations": [
+  "Spans are from text extractions of live pages, not Wayback captures; artifact digests are pending a networked re-fetch.",
+  "The docket does not establish who funds SFF's funder, who the DAF donors are, or when the named individual donor gave.",
+  "The Coefficient index negative is reported, not re-derived."
+ ],
+ "unresolved": [
+  "Artifact SHA-256 for each source (requires a networked run through `epistemedia research submit`).",
+  "Dated capture history of the donor rule wording (Wayback).",
+  "Employment status and gift timing of the named individual donor.",
+  "Equity holdings of SFF's funder in frontier AI companies."
+ ],
+ "search_notes": [
+  "Prior art: epistemedia.org open dockets and How We Know cases checked on 2026-09-14; none concern evaluator funding or METR.",
+  "Origin: Evaluator Bench signals metr.01, metr.14 to metr.18 and ledger rows T11 to T19 and N01; the question was chosen because press and system-card summaries repeat 'independent' without the in-kind and routing detail."
+ ]
+}

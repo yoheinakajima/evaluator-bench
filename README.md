@@ -35,6 +35,7 @@ python -m bench timeline      # stage ladder (Figure 1); build writes dist/timel
 python -m bench paths         # path signatures, nearest analogues to AI, trigger-response strength, mechanisms
 python -m bench exposure      # ledger check and inflows by hop distance from a lab, per evaluator
 python -m bench audit T12 R10 # re-fetch cited sources, hash them into data/artifacts.csv (needs network)
+python -m bench docket build metr-lab-money   # Bench draft -> Epistemedia proposal; validate with `docket validate`
 ```
 
 ## The rubric
@@ -58,6 +59,10 @@ The site's "Where we are" and "Paths" sections place frontier AI next to fifteen
 ## Site structure
 
 `index.html` is the overview: the scored directory with adjustable weights, the stage ladder, the path, response, mechanism, exposure and funding-graph figures. Four index pages list each item type with summary data, and every entity, regime, and source has its own page. An entity page shows the scorecard (for evaluators), every ledger row in and out with source and audit status, one-hop neighbours, and the funding graph focused on that node. On any graph, hovering a name isolates it and its neighbours.
+
+## Epistemedia
+
+Bench is an index with a scoring policy; Epistemedia (epistemedia.org) adjudicates one contestable claim at a time with source spans and a separate reviewer. `dockets/` holds proposals drafted from Bench evidence in Epistemedia's format, and `bench docket` builds and validates them with Epistemedia's own validator. Reviewed dockets come back as the strongest source a signal can cite. See `paper/EPISTEMEDIA.md`.
 
 ## Contributing evidence
 
