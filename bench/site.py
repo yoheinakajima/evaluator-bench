@@ -279,13 +279,13 @@ def dockets_index(C: dict) -> str:
 def status_index(bench: dict, C: dict) -> str:
     import subprocess
     L = C["L"]; d = load_data_counts(bench)
-    try: commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
-    except Exception: commit = "unknown"
+    import hashlib
+    ev = ROOT / "graph" / "events.jsonl"; commit = hashlib.sha256(ev.read_bytes()).hexdigest()[:12] if ev.exists() else "unknown"
     tr = L["transfers"]; conf = sum(1 for t in tr if t["audit_status"] == "confirmed"); imp = sum(1 for t in tr if t["audit_status"] == "imported")
     srcs = bench["sources"].values(); sconf = sum(1 for s in srcs if s.get("audit_status") == "confirmed"); simp = sum(1 for s in srcs if s.get("audit_status") == "imported")
     ex = C["ex"].values(); near = sum(1 for x in ex if any(k in ("hop0", "hop1") for k in x["buckets"])); traced = sum(x["second_hop"]["traced"] for x in ex); srcn = sum(x["second_hop"]["sources"] for x in ex)
     quotes = sum(1 for e in bench["evaluators"] for s in e["signals"] if s.get("quote"))
-    body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])} at commit {esc(commit)}.</p></div>
+    body = f"""<div class="pagehead"><h1>Status</h1><p class="lead">What the record holds, how much of it has been re-derived, and what is still open. Built {esc(bench['built_at'][:10])}; event-log digest {esc(commit)}.</p></div>
     <div class="cols">
     <div class="card"><h3>Coverage</h3><table class="tbl">
       <tr><td>Evaluators</td><td class="num">{len(bench['evaluators'])}</td></tr><tr><td>Signals</td><td class="num">{d['signals']}</td></tr><tr><td>Signals with an exact quote</td><td class="num">{quotes}</td></tr>

@@ -138,7 +138,7 @@ def build(write: bool = True) -> dict:
         from .timeline import write as write_timeline
         rows = write_timeline(DIST)
         from .ledger import exposure, distances
-        (DIST / "exposure.json").write_text(json.dumps({"distances": distances(L), "evaluators": exposure(L)}, indent=1))
+        (DIST / "exposure.json").write_text(json.dumps({"distances": distances(L), "evaluators": exposure(L)}, indent=1, sort_keys=True))
         from .figures import write as write_figures
         write_figures(DIST, ROOT / "paper" / "figures")
         _write_site(bench, rows)

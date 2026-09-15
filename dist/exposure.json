@@ -1,172 +1,173 @@
 {
  "distances": {
-  "anthropic": 0,
-  "thinking-machines": 0,
-  "openai": 0,
-  "g42": 0,
-  "google": 0,
-  "amazon": 0,
-  "xai": 0,
-  "meta": 0,
-  "microsoft": 0,
-  "tallinn": 1,
-  "moskovitz": 1,
-  "macroscopic": 1,
-  "far-ai": 1,
   "a16z": 1,
-  "karnofsky": 1,
-  "mann": 1,
-  "sequoia": 1,
-  "kolter": 1,
-  "farhi": 1,
-  "oaif": 1,
-  "chowdhury": 1,
-  "ladish": 1,
-  "brundage": 1,
-  "wang": 1,
-  "mattson": 1,
-  "nvidia": 1,
-  "anthropic-employees": 1,
-  "openai-employees": 1,
-  "lab-employees": 1,
-  "deshaw": 1,
-  "metr": 1,
-  "coefficient": 2,
-  "good-ventures": 2,
-  "sff": 2,
-  "longview": 2,
-  "rand": 3,
-  "redwood": 2,
-  "constellation": 3,
-  "irregular": 1,
-  "gray-swan": 1,
-  "securebio": 1,
   "aisf": 1,
-  "apollo": 2,
-  "epoch": 1,
-  "palisade": 2,
   "aiuc": 2,
-  "gleave": 2,
-  "mascorro": 2,
-  "christiano": 2,
-  "dattani": 2,
-  "transluce": 2,
+  "amazon": 0,
   "andon": 1,
-  "ukaisi": 1,
+  "anthropic": 0,
+  "anthropic-employees": 1,
+  "apollo": 2,
+  "arc": 3,
   "averi": 2,
-  "saferai": 1,
-  "scale": 1,
-  "mlcommons": 1,
-  "hfoai": 1,
+  "brundage": 1,
   "cais": 3,
+  "chowdhury": 1,
+  "christiano": 2,
+  "coefficient": 2,
+  "constellation": 3,
+  "dattani": 2,
+  "delangue": 2,
+  "deshaw": 1,
+  "droege": 2,
+  "epoch": 1,
+  "far-ai": 1,
+  "farhi": 1,
+  "g42": 0,
+  "gleave": 2,
+  "good-ventures": 2,
+  "google": 0,
+  "gray-swan": 1,
+  "hendrycks": 4,
+  "hfoai": 1,
+  "hilton": 4,
+  "irregular": 1,
+  "karnofsky": 1,
+  "kolter": 1,
+  "lab-employees": 1,
+  "ladish": 1,
+  "longview": 2,
+  "macroscopic": 1,
+  "mann": 1,
+  "mascorro": 2,
+  "mattson": 1,
+  "mccormick": 3,
+  "meta": 0,
+  "metr": 1,
+  "microsoft": 0,
+  "mlcommons": 1,
+  "moskovitz": 1,
   "msft": 1,
   "nemesys": 1,
-  "hendrycks": 4,
-  "mccormick": 3,
+  "nvidia": 1,
+  "oaif": 1,
+  "openai": 0,
+  "openai-employees": 1,
+  "palisade": 2,
+  "rand": 3,
+  "redwood": 2,
+  "saferai": 1,
+  "scale": 1,
+  "securebio": 1,
+  "sequoia": 1,
+  "sff": 2,
   "stosz": 3,
-  "delangue": 2,
-  "droege": 2,
-  "arc": 3,
-  "hilton": 4
+  "tallinn": 1,
+  "thinking-machines": 0,
+  "transluce": 2,
+  "ukaisi": 1,
+  "wang": 1,
+  "xai": 0
  },
  "evaluators": [
   {
-   "id": "metr",
-   "name": "METR",
-   "kind_note": "",
-   "inflow_rows": 9,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "in_kind": 400000.0
      },
+     "rows": 1,
      "sources": [
       "openai"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop2": {
-     "rows": 3,
-     "undisclosed": 0,
      "by_measure": {
-      "recommendation": 752000.0,
-      "grant": 220000.0
+      "grant": 220000.0,
+      "recommendation": 752000.0
      },
+     "rows": 3,
      "sources": [
       "longview",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop3": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "transfer": 4553935.0
      },
+     "rows": 1,
      "sources": [
       "arc"
-     ]
+     ],
+     "undisclosed": 0
     },
     "unattributed": {
-     "rows": 4,
-     "undisclosed": 0,
      "by_measure": {
-      "daf_grant": 4204000.0,
-      "commitment": 17000000.0
+      "commitment": 17000000.0,
+      "daf_grant": 4204000.0
      },
+     "rows": 4,
      "sources": [
       "audacious",
       "founders-pledge",
       "svcf",
       "vanguard-charitable"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 2,
+   "id": "metr",
+   "inflow_rows": 9,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 2,
      "person": "gleave",
      "role": "board",
-     "via": "Adam Gleave",
-     "distance": 2,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Adam Gleave"
     },
     {
+     "distance": 2,
      "person": "mascorro",
      "role": "advisor",
-     "via": "Marco Mascorro",
-     "distance": 2,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Marco Mascorro"
     },
     {
+     "distance": 1,
      "person": "karnofsky",
      "role": "advisor (former)",
-     "via": "Holden Karnofsky",
-     "distance": 1,
-     "status": "imported"
+     "status": "imported",
+     "via": "Holden Karnofsky"
     },
     {
+     "distance": 2,
      "person": "christiano",
      "role": "board (former)",
-     "via": "Paul Christiano",
-     "distance": 2,
-     "status": "imported"
+     "status": "imported",
+     "via": "Paul Christiano"
     },
     {
+     "distance": 2,
      "person": "dattani",
      "role": "board",
-     "via": "Rajiv Dattani",
-     "distance": 2,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Rajiv Dattani"
     },
     {
+     "distance": 1,
      "person": "farhi",
      "role": "donor",
-     "via": "David Farhi",
-     "distance": 1,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "David Farhi"
     }
    ],
+   "name": "METR",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving to METR under any name",
@@ -205,7 +206,6 @@
      "status": "unaudited"
     }
    ],
-   "confirmed_rows": 2,
    "second_hop": {
     "sources": 8,
     "traced": 5,
@@ -217,47 +217,47 @@
    }
   },
   {
-   "id": "rand",
-   "name": "RAND Corporation",
-   "kind_note": "Canary joint project with METR",
-   "inflow_rows": 5,
    "buckets": {
     "hop2": {
-     "rows": 3,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 86955751.0,
       "recommendation": 1022000.0
      },
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "contract": 488777692.0
      },
+     "rows": 1,
      "sources": [
       "us-gov"
-     ]
+     ],
+     "undisclosed": 0
     },
     "unattributed": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "commitment": 38000000.0
      },
+     "rows": 1,
      "sources": [
       "audacious"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 1,
+   "id": "rand",
+   "inflow_rows": 5,
+   "kind_note": "Canary joint project with METR",
+   "lab_tied_seats": [],
+   "name": "RAND Corporation",
+   "negatives": [],
    "second_hop": {
     "sources": 4,
     "traced": 4,
@@ -265,56 +265,56 @@
    }
   },
   {
-   "id": "far-ai",
-   "name": "FAR.AI",
-   "kind_note": "",
-   "inflow_rows": 8,
    "buckets": {
     "hop1": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "aisf"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop2": {
-     "rows": 4,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 88022676.0,
       "recommendation": 6512577.0
      },
+     "rows": 4,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "contract": 1434080.0
      },
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 0
     },
     "unattributed": {
-     "rows": 2,
-     "undisclosed": 1,
      "by_measure": {
       "grant": 500000.0
      },
+     "rows": 2,
      "sources": [
       "founders-pledge-fund",
       "schmidt"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 3,
+   "id": "far-ai",
+   "inflow_rows": 8,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "FAR.AI",
+   "negatives": [],
    "second_hop": {
     "sources": 6,
     "traced": 5,
@@ -324,37 +324,37 @@
    }
   },
   {
-   "id": "redwood",
-   "name": "Redwood Research",
-   "kind_note": "",
-   "inflow_rows": 4,
    "buckets": {
     "hop1": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "daf_grant": 1330000.0
      },
+     "rows": 1,
      "sources": [
       "tallinn"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop2": {
-     "rows": 3,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 99652000.0,
       "recommendation": 2372000.0
      },
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 0,
+   "id": "redwood",
+   "inflow_rows": 4,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Redwood Research",
+   "negatives": [],
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -362,49 +362,50 @@
    }
   },
   {
-   "id": "irregular",
-   "name": "Irregular (formerly Pattern Labs)",
-   "kind_note": "",
-   "inflow_rows": 3,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "openai"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop1": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 80000000.0
      },
+     "rows": 1,
      "sources": [
       "sequoia"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop2": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 6799999.0
      },
+     "rows": 1,
      "sources": [
       "coefficient"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 2,
+   "id": "irregular",
+   "inflow_rows": 3,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 1,
      "person": "sequoia",
      "role": "investor",
-     "via": "Sequoia Capital",
-     "distance": 1,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Sequoia Capital"
     }
    ],
+   "name": "Irregular (formerly Pattern Labs)",
    "negatives": [
     {
      "claim": "no grant to Irregular or Pattern Labs found on Coefficient Giving's grants pages",
@@ -413,7 +414,6 @@
      "status": "unaudited"
     }
    ],
-   "confirmed_rows": 2,
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -421,33 +421,33 @@
    }
   },
   {
-   "id": "gray-swan",
-   "name": "Gray Swan",
-   "kind_note": "",
-   "inflow_rows": 3,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "anthropic"
-     ]
+     ],
+     "undisclosed": 1
     },
     "unattributed": {
-     "rows": 2,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 80000000.0
      },
+     "rows": 2,
      "sources": [
       "wing"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 2,
+   "id": "gray-swan",
+   "inflow_rows": 3,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Gray Swan",
+   "negatives": [],
    "second_hop": {
     "sources": 2,
     "traced": 1,
@@ -457,43 +457,43 @@
    }
   },
   {
-   "id": "securebio",
-   "name": "SecureBio",
-   "kind_note": "",
-   "inflow_rows": 3,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "openai"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop1": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 17200000.0
      },
+     "rows": 1,
      "sources": [
       "oaif"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop2": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "recommendation": 754000.0
      },
+     "rows": 1,
      "sources": [
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 2,
+   "id": "securebio",
+   "inflow_rows": 3,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "SecureBio",
+   "negatives": [],
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -501,51 +501,51 @@
    }
   },
   {
-   "id": "apollo",
-   "name": "Apollo Research",
-   "kind_note": "",
-   "inflow_rows": 4,
    "buckets": {
     "hop1": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "macroscopic"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop2": {
-     "rows": 2,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 4410180.0,
       "recommendation": 1133500.0
      },
+     "rows": 2,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     },
     "unattributed": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "fifty-years"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 2,
+   "id": "apollo",
+   "inflow_rows": 4,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 1,
      "person": "macroscopic",
      "role": "investor",
-     "via": "Macroscopic Ventures (formerly Center for Emerging Risk Research)",
-     "distance": 1,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Macroscopic Ventures (formerly Center for Emerging Risk Research)"
     }
    ],
+   "name": "Apollo Research",
    "negatives": [],
-   "confirmed_rows": 2,
    "second_hop": {
     "sources": 4,
     "traced": 3,
@@ -555,48 +555,48 @@
    }
   },
   {
-   "id": "epoch",
-   "name": "Epoch AI",
-   "kind_note": "",
-   "inflow_rows": 8,
    "buckets": {
     "hop0": {
-     "rows": 4,
-     "undisclosed": 4,
      "by_measure": {},
+     "rows": 4,
      "sources": [
       "anthropic",
       "google",
       "openai",
       "xai"
-     ]
+     ],
+     "undisclosed": 4
     },
     "hop1": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "daf_grant": 600000.0
      },
+     "rows": 1,
      "sources": [
       "tallinn"
-     ]
+     ],
+     "undisclosed": 0
     },
     "hop2": {
-     "rows": 3,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 33013611.0,
       "recommendation": 195000.0
      },
+     "rows": 3,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 1,
+   "id": "epoch",
+   "inflow_rows": 8,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Epoch AI",
+   "negatives": [],
    "second_hop": {
     "sources": 7,
     "traced": 7,
@@ -604,27 +604,27 @@
    }
   },
   {
-   "id": "palisade",
-   "name": "Palisade Research",
-   "kind_note": "",
-   "inflow_rows": 4,
    "buckets": {
     "hop2": {
-     "rows": 4,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 5926926.0,
       "recommendation": 3212627.0
      },
+     "rows": 4,
      "sources": [
       "coefficient",
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 1,
+   "id": "palisade",
+   "inflow_rows": 4,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Palisade Research",
+   "negatives": [],
    "second_hop": {
     "sources": 2,
     "traced": 2,
@@ -632,38 +632,39 @@
    }
   },
   {
-   "id": "transluce",
-   "name": "Transluce",
-   "kind_note": "",
-   "inflow_rows": 3,
    "buckets": {
     "hop1": {
-     "rows": 2,
-     "undisclosed": 2,
      "by_measure": {},
+     "rows": 2,
      "sources": [
       "anthropic-employees",
       "openai-employees"
-     ]
+     ],
+     "undisclosed": 2
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 2,
+   "id": "transluce",
+   "inflow_rows": 3,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 1,
      "person": "chowdhury",
      "role": "advisor",
-     "via": "Neil Chowdhury",
-     "distance": 1,
-     "status": "confirmed"
+     "status": "confirmed",
+     "via": "Neil Chowdhury"
     }
    ],
+   "name": "Transluce",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -678,7 +679,6 @@
      "status": "confirmed"
     }
    ],
-   "confirmed_rows": 2,
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -686,33 +686,33 @@
    }
   },
   {
-   "id": "andon",
-   "name": "Andon Labs",
-   "kind_note": "",
-   "inflow_rows": 2,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "anthropic"
-     ]
+     ],
+     "undisclosed": 1
     },
     "unattributed": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 500000.0
      },
+     "rows": 1,
      "sources": [
       "yc"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 0,
+   "id": "andon",
+   "inflow_rows": 2,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Andon Labs",
+   "negatives": [],
    "second_hop": {
     "sources": 2,
     "traced": 1,
@@ -722,29 +722,30 @@
    }
   },
   {
-   "id": "ukaisi",
-   "name": "UK AI Security Institute",
-   "kind_note": "",
-   "inflow_rows": 3,
    "buckets": {
     "hop0": {
-     "rows": 2,
-     "undisclosed": 2,
      "by_measure": {},
+     "rows": 2,
      "sources": [
       "openai"
-     ]
+     ],
+     "undisclosed": 2
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "uk-gov"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 0,
+   "id": "ukaisi",
+   "inflow_rows": 3,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "UK AI Security Institute",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -753,7 +754,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 2,
     "traced": 2,
@@ -761,23 +761,24 @@
    }
   },
   {
-   "id": "caisi",
-   "name": "US CAISI (NIST)",
-   "kind_note": "",
-   "inflow_rows": 2,
    "buckets": {
     "public": {
-     "rows": 2,
-     "undisclosed": 0,
      "by_measure": {
       "grant": 25000000.0
      },
+     "rows": 2,
      "sources": [
       "us-gov"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 0,
+   "id": "caisi",
+   "inflow_rows": 2,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "US CAISI (NIST)",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -792,7 +793,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -800,23 +800,24 @@
    }
   },
   {
-   "id": "euaio",
-   "name": "EU AI Office",
-   "kind_note": "",
-   "inflow_rows": 1,
    "buckets": {
     "public": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "contract": 7373017.0
      },
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 0,
+   "id": "euaio",
+   "inflow_rows": 1,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "EU AI Office",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -825,7 +826,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -833,38 +833,39 @@
    }
   },
   {
-   "id": "averi",
-   "name": "AVERI",
-   "kind_note": "",
-   "inflow_rows": 4,
    "buckets": {
     "hop1": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "lab-employees"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop2": {
-     "rows": 2,
-     "undisclosed": 2,
      "by_measure": {},
+     "rows": 2,
      "sources": [
       "aiuc",
       "coefficient"
-     ]
+     ],
+     "undisclosed": 2
     },
     "unattributed": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "halcyon"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 4,
+   "id": "averi",
+   "inflow_rows": 4,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "AVERI",
    "negatives": [
     {
      "claim": "no single donor is a majority of funding",
@@ -879,7 +880,6 @@
      "status": "unaudited"
     }
    ],
-   "confirmed_rows": 4,
    "second_hop": {
     "sources": 4,
     "traced": 3,
@@ -889,39 +889,40 @@
    }
   },
   {
-   "id": "saferai",
-   "name": "SaferAI",
-   "kind_note": "",
-   "inflow_rows": 4,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "g42"
-     ]
+     ],
+     "undisclosed": 1
     },
     "hop2": {
-     "rows": 2,
-     "undisclosed": 0,
      "by_measure": {
       "recommendation": 1056800.0
      },
+     "rows": 2,
      "sources": [
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 1,
+   "id": "saferai",
+   "inflow_rows": 4,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "SaferAI",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -930,7 +931,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 1,
    "second_hop": {
     "sources": 3,
     "traced": 3,
@@ -938,31 +938,32 @@
    }
   },
   {
-   "id": "scale",
-   "name": "Scale AI (SEAL)",
-   "kind_note": "",
-   "inflow_rows": 1,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 14300000000.0
      },
+     "rows": 1,
      "sources": [
       "meta"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 0,
+   "id": "scale",
+   "inflow_rows": 1,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 0,
      "person": "meta",
      "role": "investor",
-     "via": "Meta",
-     "distance": 0,
-     "status": "imported"
+     "status": "imported",
+     "via": "Meta"
     }
    ],
+   "name": "Scale AI (SEAL)",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -971,7 +972,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -979,21 +979,22 @@
    }
   },
   {
-   "id": "mlcommons",
-   "name": "MLCommons",
-   "kind_note": "",
-   "inflow_rows": 1,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "google"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 0,
+   "id": "mlcommons",
+   "inflow_rows": 1,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "MLCommons",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -1002,7 +1003,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -1010,55 +1010,56 @@
    }
   },
   {
-   "id": "hfoai",
-   "name": "Hugging Face Open Alignment Initiative",
-   "kind_note": "",
-   "inflow_rows": 2,
    "buckets": {
     "hop1": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 12930000000.0
      },
+     "rows": 1,
      "sources": [
       "nvidia"
-     ]
+     ],
+     "undisclosed": 0
     },
     "unattributed": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "investment": 235000000.0
      },
+     "rows": 1,
      "sources": [
       "salesforce-ventures"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 1,
+   "id": "hfoai",
+   "inflow_rows": 2,
+   "kind_note": "",
    "lab_tied_seats": [
     {
+     "distance": 0,
      "person": "google",
      "role": "investor",
-     "via": "Google / Google DeepMind",
-     "distance": 0,
-     "status": "imported"
+     "status": "imported",
+     "via": "Google / Google DeepMind"
     },
     {
+     "distance": 0,
      "person": "amazon",
      "role": "investor",
-     "via": "Amazon",
-     "distance": 0,
-     "status": "imported"
+     "status": "imported",
+     "via": "Amazon"
     },
     {
+     "distance": 1,
      "person": "nvidia",
      "role": "investor",
-     "via": "Nvidia",
-     "distance": 1,
-     "status": "imported"
+     "status": "imported",
+     "via": "Nvidia"
     }
    ],
+   "name": "Hugging Face Open Alignment Initiative",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -1067,7 +1068,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 1,
    "second_hop": {
     "sources": 2,
     "traced": 1,
@@ -1077,25 +1077,25 @@
    }
   },
   {
-   "id": "cais",
-   "name": "Center for AI Safety",
-   "kind_note": "",
-   "inflow_rows": 2,
    "buckets": {
     "hop2": {
-     "rows": 2,
-     "undisclosed": 0,
      "by_measure": {
       "recommendation": 1389000.0
      },
+     "rows": 2,
      "sources": [
       "sff"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 2,
+   "id": "cais",
+   "inflow_rows": 2,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Center for AI Safety",
+   "negatives": [],
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -1103,23 +1103,23 @@
    }
   },
   {
-   "id": "msft",
-   "name": "Microsoft AI Red Team",
-   "kind_note": "",
-   "inflow_rows": 1,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "microsoft"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
-   "lab_tied_seats": [],
-   "negatives": [],
    "confirmed_rows": 1,
+   "id": "msft",
+   "inflow_rows": 1,
+   "kind_note": "",
+   "lab_tied_seats": [],
+   "name": "Microsoft AI Red Team",
+   "negatives": [],
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -1127,14 +1127,14 @@
    }
   },
   {
+   "buckets": {},
+   "confirmed_rows": 0,
    "id": "dreadnode",
+   "inflow_rows": 0,
+   "kind_note": "",
+   "lab_tied_seats": [],
    "name": "Dreadnode",
-   "kind_note": "",
-   "inflow_rows": 0,
-   "buckets": {},
-   "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
@@ -1142,14 +1142,14 @@
    }
   },
   {
+   "buckets": {},
+   "confirmed_rows": 0,
    "id": "humane",
+   "inflow_rows": 0,
+   "kind_note": "",
+   "lab_tied_seats": [],
    "name": "Humane Intelligence",
-   "kind_note": "",
-   "inflow_rows": 0,
-   "buckets": {},
-   "lab_tied_seats": [],
    "negatives": [],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
@@ -1157,14 +1157,14 @@
    }
   },
   {
+   "buckets": {},
+   "confirmed_rows": 0,
    "id": "hal",
-   "name": "Holistic Agent Leaderboard (Princeton)",
-   "kind_note": "",
    "inflow_rows": 0,
-   "buckets": {},
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "Holistic Agent Leaderboard (Princeton)",
    "negatives": [],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
@@ -1172,12 +1172,13 @@
    }
   },
   {
-   "id": "big4",
-   "name": "Assurance firms (Big Four and peers)",
-   "kind_note": "",
-   "inflow_rows": 0,
    "buckets": {},
+   "confirmed_rows": 0,
+   "id": "big4",
+   "inflow_rows": 0,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "Assurance firms (Big Four and peers)",
    "negatives": [
     {
      "claim": "no Big Four firm has announced a dedicated frontier-AI audit practice for Illinois SB 315",
@@ -1186,7 +1187,6 @@
      "status": "unaudited"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 0,
     "traced": 0,
@@ -1194,23 +1194,24 @@
    }
   },
   {
-   "id": "equistamp",
-   "name": "EquiStamp",
-   "kind_note": "",
-   "inflow_rows": 1,
    "buckets": {
     "public": {
-     "rows": 1,
-     "undisclosed": 0,
      "by_measure": {
       "contract": 1167484.0
      },
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 0
     }
    },
+   "confirmed_rows": 0,
+   "id": "equistamp",
+   "inflow_rows": 1,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "EquiStamp",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -1219,7 +1220,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 1,
     "traced": 1,
@@ -1227,29 +1227,30 @@
    }
   },
   {
-   "id": "nemesys",
-   "name": "Nemesys Insights",
-   "kind_note": "",
-   "inflow_rows": 2,
    "buckets": {
     "hop0": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "amazon"
-     ]
+     ],
+     "undisclosed": 1
     },
     "public": {
-     "rows": 1,
-     "undisclosed": 1,
      "by_measure": {},
+     "rows": 1,
      "sources": [
       "eu-budget"
-     ]
+     ],
+     "undisclosed": 1
     }
    },
+   "confirmed_rows": 0,
+   "id": "nemesys",
+   "inflow_rows": 2,
+   "kind_note": "",
    "lab_tied_seats": [],
+   "name": "Nemesys Insights",
    "negatives": [
     {
      "claim": "no grant from Coefficient Giving in its index",
@@ -1258,7 +1259,6 @@
      "status": "imported"
     }
    ],
-   "confirmed_rows": 0,
    "second_hop": {
     "sources": 2,
     "traced": 2,
