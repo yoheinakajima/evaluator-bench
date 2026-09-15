@@ -41,7 +41,7 @@ Follows `paper/PLAN-v0.1.md`, written the same day against the v0 preview and tw
 
 - 27 organizations (26 ranked, 1 watchlist); 357 signals (309 with a quoted span); 194 sources; 216 assessments, 1 unevidenced even with leads included (Redwood personnel).
 - Ranked population, standard policy, lab preset: 8 clear, 12 conditional, 6 disqualifying; METR 79 to Scale 36. Unevidenced assessments under standard 6 of 208; against interest 52; verified spans 27; primary only 187.
-- 94 values moved when the rules were applied to the v0 record; 12 floor-cap conflicts resolved by a named rule; 13 assessments held at a supportable anchor by the span or second-source tests.
+- 94 values moved when the rules were applied to the v0 record; 12 floor-cap conflicts resolved by a named rule; 8 assessments held at a supportable anchor by the span or second-source tests.
 - Gates: 23 binding signals still without a span; 16 extremes awaiting a second coder; 53 reply packets generated, none sent.
 
 ### Known limits (v0.1 candidate)
