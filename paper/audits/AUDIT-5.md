@@ -20,11 +20,13 @@ Independently re-fetched by me (2026-09-15):
 
 Grok-reported only (not independently re-fetched — flagged in row notes):
 - T22 (oaif->securebio $17.2M, was unaudited): SecureBio X post: "OpenAI Foundation has granted SecureBio Detection $17.2M".
-- T41 (eu-budget->saferai, no amount): TED 864574-2025 LOT-0001 value 1,434,080.00 EUR is the consortium lot total (FAR AI lead; SaferAI named winner), not SaferAI's share. Amount recorded as 1434080 EUR with that caveat.
-- T48 (eu-budget->euaio EUR 7,373,017): TED 864574-2025: "Value of all contracts awarded in this notice: 7 373 017,50 EUR". URL re-pointed off ted.europa.eu homepage.
 - T52 (meta->scale $14.3B): CNBC: Meta $14.3B for 49% of Scale (June 2025). Company-level investment, not eval funding. URL re-pointed off the Scale USAISI blog post.
 - T54 (nvidia->hfoai $12.93B): TNW/Fortune: Nvidia agreed to acquire Hugging Face for $12.93bn, announced 3 Sep 2026, pending close. Not evaluator grant funding.
-- T60 (eu-budget->equistamp EUR 1,167,484): TED 864574-2025 LOT-0003: EquiStamp Inc. 1,167,484.00 EUR (consortium with METR and Epoch); contract 4500137790, concluded 15/12/2025. URL re-pointed off TED homepage.
+
+Independently verified via delegated browser task (2026-09-15, TED notice 864574-2025 read live):
+- T41: LOT-0001 "CBRN Risk Modelling and Evaluation", tender value 1,434,080.00 EUR; winners FAR AI (leader), SecureBio, SaferAI; contract 4500135276, concluded 16/12/2025. Consortium lot total, not SaferAI's share.
+- T48: notice "ARTIFICIAL INTELLIGENCE ACT: TECHNICAL ASSISTANCE FOR AI SAFETY" (EC, DG CNECT), published 26/12/2025; total value of all contracts awarded: 7,373,017.50 EUR across six lots.
+- T60: LOT-0003 "Loss of Control Risk Modelling and Evaluation", tender value 1,167,484.00 EUR; winners EquiStamp Inc. (leader), METR, Epoch; contract 4500137790, concluded 15/12/2025.
 
 ## Ledger moved to differs
 
