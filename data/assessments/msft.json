@@ -21,7 +21,7 @@
    "msft.02",
    "msft.09"
   ],
-  "rationale": "Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+  "rationale": "Anchor 0 on governance given the cited signals.",
   "assessed": "2026-09-15",
   "assessor": "rules v0.1 (RULES.md)"
  },

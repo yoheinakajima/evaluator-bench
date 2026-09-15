@@ -13472,7 +13472,7 @@
      "signals": [
       "equistamp.03"
      ],
-     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "graph_id": "assessment#709",
@@ -13883,7 +13883,7 @@
      "signals": [
       "equistamp.09"
      ],
-     "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 3) until a live source is confirmed.",
+     "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "graph_id": "assessment#715",
@@ -27673,7 +27673,7 @@
       "msft.02",
       "msft.09"
      ],
-     "rationale": "Anchor 0 on governance given the cited signals. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 1 (the reading on the record would be 0) until a live source is confirmed.",
+     "rationale": "Anchor 0 on governance given the cited signals.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "graph_id": "assessment#789",
@@ -28952,7 +28952,7 @@
      "signals": [
       "nemesys.03"
      ],
-     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "graph_id": "assessment#797",
@@ -29157,7 +29157,7 @@
      "signals": [
       "nemesys.06"
      ],
-     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "graph_id": "assessment#800",
@@ -29225,7 +29225,7 @@
      "signals": [
       "nemesys.07"
      ],
-     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.",
+     "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
      "assessed": "2026-09-15",
      "assessor": "rules v0.1 (RULES.md)",
      "mechanism": "lab-controlled",
