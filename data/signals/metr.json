@@ -509,6 +509,8 @@
   "as_of": "2026-09-15",
   "bound": null,
   "bound_note": "Documents an open question rather than asserting a value: the payer structure is confirmed (partners pay RAND directly; TED does not fund grantees), but METR's own Audacious share is not visible in any filing checked, so this neither raises nor lowers the funding value on its own.",
-  "rule": "0"
+  "rule": "0",
+  "quote": "TED itself does not provide funding for grantees.",
+  "quote_source": "audacious-faq"
  }
 ]
