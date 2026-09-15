@@ -9,8 +9,8 @@ Correction window open through 29 Sep 2026.
 - 26 ranked evaluators + a 2-entry watchlist (`big4`, `hfoai` — expected
   entrants, scored on the same rubric but excluded from rankings and
   homepage statistics).
-- 125 sources, 308 signals, 224 assessments; 39 signals carry exact quotes.
-- 84 ledger transfer rows, of which 74 are evidential; 26 confirmed.
+- 123 sources, 308 signals, 224 assessments; 39 signals carry exact quotes.
+- 84 ledger transfer rows, of which 51 are evidential; 38 confirmed.
 - Eight independence dimensions: Funding, Governance, Personnel, Access depth
   (lab-granted), Scope control, Publication rights, Method transparency,
   Role incompatibility.
@@ -54,8 +54,13 @@ Correction window open through 29 Sep 2026.
 
 ## Known limits (v0)
 
+- 2026-09-15 verification pass: all 38 imported ledger rows re-derived from
+  their cited sources — 12 confirmed, 5 differ from the cited figure, 23
+  quarantined as unverifiable (cited pages do not support the recorded
+  figures). Exposure figures recomputed on confirmed-only rows: 9 of 26
+  direct lab inflow (was 12), 14 of 26 lab-or-lab-tied (was 17). 79 of 123
+  sources confirmed reachable; 41 sources still unchecked (fetch failures).
 - Dataset A is single-coded; Dataset B milestone years are coded from
   secondary sources and need primary-source verification.
 - The trigger-lag and path-similarity results are hindsight-selected and
   exploratory, not causal.
-- 40 imported ledger rows are not yet re-derived from the cited source.
