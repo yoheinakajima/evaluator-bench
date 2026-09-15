@@ -17,7 +17,7 @@ Derivation: Capped at 2 by dreadnode.05 (F.3): Lab-paid engagements..
 - [against, caps at 2, F.3] Lab-paid engagements. Quote: "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more" Sources: Gemini model documentation, external testing (https://deepmind.google/); A new era of intelligence with Gemini 3 (https://blog.google/products/gemini/gemini-3/)
 
 ### Governance: 1/4 (standard policy: 1)
-Anchor 1: VC-backed for-profit with no published COI policy.
+Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by dreadnode.02 (G.2): Venture-backed; no published COI policy found..
 - [against, caps at 1, G.2] Venture-backed; no published COI policy found. Quote: "announced its $14 million Series A funding round, led by Decibel" Sources: Gemini model documentation, external testing (https://deepmind.google/); Dreadnode Secures $14M to Build AI Systems that Advance the State of Offensive Security (https://dreadnode.io/company/newsroom/series-a/); Offensive AI Startup Dreadnode Secures $14M to Stress-Test AI Systems (https://www.securityweek.com/offensive-ai-startup-dreadnode-secures-14m-to-stress-test-ai-systems/)
 

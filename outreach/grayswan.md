@@ -18,7 +18,7 @@ Derivation: Capped at 1 by grayswan.03 (F.5): $40M Series A in May 2026 at a $20
 - [for, floors at 1, F.5 (anchor text)] Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates. Sources: This AI Startup's Army of 15,000 Hackers (https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/)
 
 ### Governance: 1/4 (standard policy: 1)
-Anchor 1: VC-backed for-profit with no published COI policy.
+Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by grayswan.05 (G.2): Venture-backed for-profit; no published COI policy found..
 - [against, caps at 1, G.2] Venture-backed for-profit; no published COI policy found. Quote: "today announced a $40 million Series A round co-led by Wing Venture Capital and Madrona" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a)
 - [against, caps at 2, G.2 (anchor text); G.3 not triggered] Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board. Quote: "serves on the board of OpenAI" Sources: Why We Are Co-Leading Gray Swan's Series A (https://www.madrona.com/gray-swan-series-a/); Gray Swan raises $40M Series A to secure frontier AI (https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai)

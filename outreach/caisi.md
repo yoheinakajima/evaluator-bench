@@ -13,10 +13,11 @@ Prepared 2026-09-15. Reply requested within 14 days of sending. This is the comp
 
 ### Funding: 3/4 (standard policy: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
-Derivation: Capped at 3 by caisi.10 (F.9): Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file.. Floors up to 3 from caisi.01 do not exceed the cap.
+Derivation: Capped at 3 by caisi.10 (F.9): Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file.. Floors up to 3 from caisi.01, caisi.17 do not exceed the cap.
 Curator note: Anchor 3 pending a confirmed bounded negative (appropriations text); access from labs is in-kind.
 - [for, floors at 3, F.9] Public funding; formal access agreements with five developers. Quote: "CAISI, which operates within NIST at the Department of Commerce" Sources: CAISI Frontier Testing Agreements Reach Five Labs (https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/); Center for AI Standards and Innovation (https://www.nist.gov/caisi)
 - [against, caps at 3, F.9] Public appropriation of about $10M in FY2026; free pre-deployment access from labs is in-kind. No confirmed primary-filing negative on lab money is on file. Quote: "As of FY2026, CAISI has approximately $15 million in funding: $10 million from FY2026 appropriations" Sources: Funding for CAISI (https://ifp.org/funding-for-caisi/); Center for AI Standards and Innovation (https://www.nist.gov/caisi)
+- [for, floors at 3, F.9] The FY2026 Commerce-Justice-Science joint explanatory statement provides no less than $55,000,000 for NIST's AI research and measurement science and, within it, up to $10,000,000 to expand NIST's AI efforts through the U.S. Center for AI Standards and Innovation: appropriated public money. Quote: "up to $ I 0,000,000 is to expand on N IST's A l e ffo 11s th ro ugh the U.S. Cente r fo r A l Standards and Innovation" Sources: Division A - Commerce, Justice, Science, and Related Agencies Appropriations Act, 2026: joint explanatory statement (PDF) (https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf); Funding for CAISI (https://ifp.org/funding-for-caisi/); Award search API, spending_by_award (POST), keywords 'Center for AI Standards and Innovation' / 'CAISI' / 'AI Standards and Innovation' (https://api.usaspending.gov/api/v2/search/spending_by_award/); U.S. AI Safety Institute Signs Agreements Regarding AI Safety Research, Testing and Evaluation With Anthropic and OpenAI (https://www.nist.gov/news-events/news/2024/08/us-ai-safety-institute-signs-agreements-regarding-ai-safety-research)
 - Document request: Add a confirmed bounded negative from a primary source to restore anchor 4.
 
 ### Governance: 3/4 (standard policy: 3)
@@ -73,6 +74,7 @@ Resolution: X.6 decides 3: The specific co-production rule (X.6) decides over th
 - T79: grant from us-gov to caisi, FY2026, 15000000: about $15M available: $10M appropriated plus a Technology Modernization Fund loan [unaudited] https://ifp.org/funding-for-caisi/
 - N09: negative: no grant from Coefficient Giving in its index [Coefficient grants index, 2,911 rows, 2026-09-11] [imported] https://coefficientgiving.org/grants/
 - N18: negative: no CAISI contract to METR, Apollo, or other private evaluators found [CAISI announcements and spending search, 2026-09-14] [imported] https://www.nist.gov/caisi
+- N26: negative: no award or agreement naming the Center for AI Standards and Innovation, CAISI, or 'AI Standards and Innovation' in USAspending's award search (FY2024 to 2026-09-15, all award types) [USAspending spending_by_award API, three keyword queries, all award types; NIST news releases on CAISI agreements, 2026-09-15] [confirmed] https://api.usaspending.gov/api/v2/search/spending_by_award/
 
 ## What would move the score
 

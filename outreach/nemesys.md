@@ -20,9 +20,9 @@ Resolution: F.5 decides 1: Lab revenue is the only revenue disclosed; the public
 - [for, floors at 2, F.3] EU Lot 1 subcontractor under the FAR.AI consortium. Quote: "Nemesys Insights (chemical, biological, radiological, and nuclear threats)" Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/); FAR.AI Selected to Lead EU AI Act CBRN Risk Consortium (https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium)
 
 ### Governance: 1/4 (standard policy: 1)
-Anchor 1: VC-backed for-profit with no published COI policy.
+Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by nemesys.03 (G.2): No policy published..
-Curator note: Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.
+Curator note: Anchor 1 from the cited rows; low confidence, imported evidence.
 - [against, caps at 1, G.2] No policy published. Quote: "Nemesys Insights, LLC is a strategic analysis and advisory company" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Nemesys Insights LLC | Strategic Analysis (https://nemesysinsights.com/)
 
 ### Personnel: 2/4 (standard policy: 2)
@@ -40,13 +40,13 @@ Curator note: Anchor 2 from the cited rows; low confidence, imported evidence.
 ### Scope control: 1/4 (standard policy: 1)
 Anchor 1: Lab defines scope; evaluator picks methods.
 Derivation: Capped at 1 by nemesys.06 (S.1): Scope set by the lab client..
-Curator note: Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.
+Curator note: Anchor 1 from the cited rows; low confidence, imported evidence.
 - [against, caps at 1, S.1] Scope set by the lab client. Quote: "their final assessment of whether the model is safe and remains within the defined thresholds for public release" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Evaluating the Critical Risks of Amazon's Nova Premier under the Frontier Model Safety Framework (arXiv 2507.06260, HTML) (https://arxiv.org/html/2507.06260)
 
 ### Publication rights: 1/4 (standard policy: 1)
 Anchor 1: Lab-edited summaries only.
 Derivation: Capped at 1 by nemesys.07 (R.3): Findings appear inside the lab's papers..
-Curator note: Anchor 1 from the cited rows; low confidence, imported evidence. Evidence-limited: the cited sources are imported or unaudited only, so the value is held at 2 (the reading on the record would be 1) until a live source is confirmed.
+Curator note: Anchor 1 from the cited rows; low confidence, imported evidence.
 - [against, caps at 1, R.3] Findings appear inside the lab's papers. Quote: "reviewed results on test sets, scoring rubrics, and safety-judge notes to verify our internal findings" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Evaluating the Critical Risks of Amazon's Nova Premier under the Frontier Model Safety Framework (arXiv 2507.06260, HTML) (https://arxiv.org/html/2507.06260)
 
 ### Method transparency: 2/4 (standard policy: 2)
