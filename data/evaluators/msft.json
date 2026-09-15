@@ -1,0 +1,14 @@
+{
+  "id": "msft",
+  "name": "Microsoft AI Red Team",
+  "type": "bigtech",
+  "hq": "Redmond, US",
+  "domains": [
+    "jailbreak",
+    "cyber",
+    "misuse"
+  ],
+  "confidence": "med",
+  "summary": "External red team for other labs' models; not independent of Big Tech.",
+  "what_would_move_the_score": "Not a candidate for an independence-critical role; useful as a supplementary red team."
+}

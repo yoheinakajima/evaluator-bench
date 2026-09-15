@@ -1,0 +1,9 @@
+{
+  "id": "pebblous-scope",
+  "title": "What METR's OpenAI Agent Investigation Left Out",
+  "publisher": "Pebblous",
+  "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
+  "published": "2026-09",
+  "retrieved": "2026-09-14",
+  "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped."
+}

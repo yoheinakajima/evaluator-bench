@@ -1,0 +1,14 @@
+{
+  "id": "apollo",
+  "name": "Apollo Research",
+  "type": "pbc",
+  "hq": "London, UK / San Francisco, US",
+  "domains": [
+    "scheming",
+    "autonomy",
+    "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Scheming and deception specialist; ran evaluations for every major lab; converted to a public benefit corporation in January 2026.",
+  "what_would_move_the_score": "Disclose revenue concentration by client and separate the product business from the evaluation practice."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "irregular",
+  "name": "Irregular (formerly Pattern Labs)",
+  "type": "vc",
+  "hq": "Tel Aviv, IL / San Francisco, US",
+  "domains": [
+    "cyber",
+    "misuse"
+  ],
+  "confidence": "high",
+  "summary": "Offensive-cyber evaluator cited in OpenAI and Anthropic system cards; SOLVE framework used by UK AISI. Pattern Labs and Irregular are the same company.",
+  "what_would_move_the_score": "A published COI policy, disclosure of lab revenue share, and a firewall between evaluations and the security-products business."
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "id": "euaio.01",
+    "evaluator": "euaio",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Legal power to compel; the only body whose access does not depend on goodwill.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.02",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Contracts its own evaluators (FAR.AI-led consortium) rather than relying on lab-chosen ones.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.03",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Code sets the access floor: helpful-only versions where security allows, at least 20 business days, external evaluators for each new frontier model.",
+    "sources": [
+      "metr-regs",
+      "arxiv-access-taxonomy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.04",
+    "evaluator": "euaio",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Safety and Security Model Reports are submitted to the Office, not the public.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.05",
+    "evaluator": "euaio",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "No accreditation pathway or public reporting schema yet; thin evaluator bench.",
+    "sources": [
+      "techpolicy-aef1"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.06",
+    "evaluator": "euaio",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Public funding.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.07",
+    "evaluator": "euaio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Regulator with statutory basis.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.08",
+    "evaluator": "euaio",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Civil-service conflict rules.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "euaio.09",
+    "evaluator": "euaio",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "metr-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

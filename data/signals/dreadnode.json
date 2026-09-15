@@ -1,0 +1,98 @@
+[
+  {
+    "id": "dreadnode.01",
+    "evaluator": "dreadnode",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Named by Google DeepMind as an external cyber expert on Gemini testing.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.02",
+    "evaluator": "dreadnode",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed; no published COI policy found.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.03",
+    "evaluator": "dreadnode",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Evaluation terms and results are not public.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.04",
+    "evaluator": "dreadnode",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells offensive-security products.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.05",
+    "evaluator": "dreadnode",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Lab-paid engagements.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.06",
+    "evaluator": "dreadnode",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Undisclosed.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.07",
+    "evaluator": "dreadnode",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "dreadnode.08",
+    "evaluator": "dreadnode",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods and results are closed; no public methodology.",
+    "sources": [
+      "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "id": "frontier-ai",
+  "name": "Frontier AI evaluation",
+  "assurers": [
+    "METR",
+    "Apollo",
+    "SecureBio",
+    "UK AISI",
+    "US CAISI",
+    "EU AI Office"
+  ],
+  "payer": "Mixed: philanthropy, lab fees, government budgets. No accreditation.",
+  "access": "Voluntary pre-release API access, occasionally deeper; embedded access pledged September 2026.",
+  "publication": "System-card citations; some independent reports; redaction negotiated per engagement.",
+  "ai_analogue": "Subject of the study.",
+  "milestones": [
+    {
+      "year": 2020,
+      "kind": "proposal",
+      "event": "Toward Trustworthy AI Development calls for third-party auditing and red teaming.",
+      "source": "https://arxiv.org/abs/2004.07213"
+    },
+    {
+      "year": 2022,
+      "kind": "voluntary_assurance",
+      "event": "ARC Evals (later METR) tests GPT-4 pre-release; reported in the 2023 system card.",
+      "source": "https://metr.org/about"
+    },
+    {
+      "year": 2023,
+      "kind": "voluntary_assurance",
+      "event": "White House voluntary commitments; UK AI Safety Institute founded.",
+      "source": "https://en.wikipedia.org/wiki/AI_Safety_Institute_(United_Kingdom)"
+    },
+    {
+      "year": 2024,
+      "kind": "voluntary_assurance",
+      "event": "US AISI signs pre-deployment MOUs with OpenAI and Anthropic.",
+      "source": "https://www.nist.gov/caisi"
+    },
+    {
+      "year": 2025,
+      "kind": "trigger",
+      "event": "FrontierMath funding disclosure failure.",
+      "source": "https://epoch.ai/latest/openai-and-frontiermath"
+    },
+    {
+      "year": 2025,
+      "kind": "standards",
+      "event": "EU GPAI Code of Practice signed; AEF-1 published in December.",
+      "source": "https://aievaluatorforum.org/"
+    },
+    {
+      "year": 2026,
+      "kind": "mandate",
+      "event": "Illinois SB 315 mandates annual independent audits from 2028; EU Code enforceable in August.",
+      "source": "https://www.crowell.com/en/insights/client-alerts/illinois-imposes-transparency-and-safety-obligations-on-frontier-ai-systems"
+    },
+    {
+      "year": 2026,
+      "kind": "trigger",
+      "event": "OpenAI agent swarm breaches Hugging Face; first on-site third-party incident investigation.",
+      "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+    },
+    {
+      "year": 2026,
+      "kind": "access_expansion",
+      "event": "Anthropic and OpenAI pledge embedded evaluators with employee-level access and publication rights.",
+      "source": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

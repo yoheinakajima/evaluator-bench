@@ -1,0 +1,100 @@
+[
+  {
+    "evaluator": "irregular",
+    "dimension": "F",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "irregular.01",
+      "irregular.02",
+      "irregular.06"
+    ],
+    "rationale": "Anchor 1 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "irregular.03"
+    ],
+    "rationale": "Anchor 1 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "irregular.10"
+    ],
+    "rationale": "Anchor 2 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "irregular.05"
+    ],
+    "rationale": "Anchor 3 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "irregular.09"
+    ],
+    "rationale": "Anchor 2 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "irregular.08"
+    ],
+    "rationale": "Anchor 2 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "irregular.07"
+    ],
+    "rationale": "Anchor 2 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "irregular",
+    "dimension": "X",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "irregular.04"
+    ],
+    "rationale": "Anchor 1 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

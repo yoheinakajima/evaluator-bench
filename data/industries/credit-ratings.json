@@ -1,0 +1,52 @@
+{
+  "id": "credit-ratings",
+  "name": "Credit rating agencies",
+  "assurers": [
+    "Moody's",
+    "S&P",
+    "Fitch"
+  ],
+  "payer": "Issuer pays since the 1970s; investor-pays subscription model before that.",
+  "access": "Non-public issuer information under confidentiality (Regulation FD exemption).",
+  "publication": "Ratings public; methodologies disclosed by regulation after 2010.",
+  "ai_analogue": "A payer-conflicted assurance market that regulators chose to license and supervise rather than restructure. Outcomes in 2008 show the limits of disclosure and licensing without liability or competition.",
+  "milestones": [
+    {
+      "year": 1909,
+      "kind": "voluntary_assurance",
+      "event": "Moody's publishes the first bond ratings, sold to investors by subscription.",
+      "source": "https://en.wikipedia.org/wiki/Moody%27s_Ratings"
+    },
+    {
+      "year": 1970,
+      "kind": "trigger",
+      "event": "Penn Central default; agencies begin charging issuers rather than investors.",
+      "source": "https://en.wikipedia.org/wiki/Penn_Central_Transportation_Company"
+    },
+    {
+      "year": 1975,
+      "kind": "accreditation",
+      "event": "SEC creates the NRSRO designation, embedding ratings in regulation.",
+      "source": "https://en.wikipedia.org/wiki/Nationally_recognized_statistical_rating_organization"
+    },
+    {
+      "year": 2006,
+      "kind": "accreditation",
+      "event": "Credit Rating Agency Reform Act formalizes NRSRO registration and SEC oversight.",
+      "source": "https://en.wikipedia.org/wiki/Credit_Rating_Agency_Reform_Act_of_2006"
+    },
+    {
+      "year": 2008,
+      "kind": "trigger",
+      "event": "Structured-finance ratings fail in the financial crisis.",
+      "source": "https://en.wikipedia.org/wiki/Credit_rating_agencies_and_the_subprime_crisis"
+    },
+    {
+      "year": 2010,
+      "kind": "independence_rule",
+      "event": "Dodd-Frank Title IX: SEC Office of Credit Ratings, methodology disclosure, analyst separation from sales, expanded liability exposure.",
+      "source": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

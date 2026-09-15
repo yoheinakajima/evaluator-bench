@@ -1,0 +1,110 @@
+[
+  {
+    "id": "redwood.01",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "No lab revenue; historically about $25M from Open Philanthropy.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.02",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding concentration: revenue nearly disappeared in one year when a few large grants ended.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.03",
+    "evaluator": "redwood",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Contracted a staff member to METR for the on-site OpenAI investigation.",
+    "sources": [
+      "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.04",
+    "evaluator": "redwood",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Co-authored the incident report with a redaction statement.",
+    "sources": [
+      "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.05",
+    "evaluator": "redwood",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Co-authored alignment research with Anthropic; close talent flow with lab safety teams.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.06",
+    "evaluator": "redwood",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.07",
+    "evaluator": "redwood",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own research agenda; incident work under METR terms.",
+    "sources": [
+      "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.08",
+    "evaluator": "redwood",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes control methods and code.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "redwood.09",
+    "evaluator": "redwood",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

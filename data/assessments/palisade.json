@@ -1,0 +1,98 @@
+[
+  {
+    "evaluator": "palisade",
+    "dimension": "F",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "palisade.01"
+    ],
+    "rationale": "Anchor 4 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "palisade.06"
+    ],
+    "rationale": "Anchor 3 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "palisade.07"
+    ],
+    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "palisade.05"
+    ],
+    "rationale": "Anchor 1 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "S",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "palisade.02"
+    ],
+    "rationale": "Anchor 4 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "R",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "palisade.03"
+    ],
+    "rationale": "Anchor 4 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "palisade.04"
+    ],
+    "rationale": "Anchor 3 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "palisade",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "palisade.08"
+    ],
+    "rationale": "Anchor 4 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

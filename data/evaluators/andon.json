@@ -1,0 +1,13 @@
+{
+  "id": "andon",
+  "name": "Andon Labs",
+  "type": "vc",
+  "hq": "Stockholm, SE / San Francisco, US",
+  "domains": [
+    "autonomy",
+    "benchmarks"
+  ],
+  "confidence": "low",
+  "summary": "Long-horizon agent evaluations (Vending-Bench) and autonomous deployments; Anthropic Project Vend partner.",
+  "what_would_move_the_score": "Funding disclosure and a COI policy would move this from low to medium confidence quickly."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "hfoai",
+  "name": "Hugging Face Open Alignment Initiative",
+  "type": "vc",
+  "hq": "New York, US / Paris, FR",
+  "domains": [
+    "assurance"
+  ],
+  "confidence": "low",
+  "summary": "Announced 12 September 2026 with a request to join Anthropic's embedded-evaluator program; no evaluations yet.",
+  "what_would_move_the_score": "A governance structure that insulates the initiative from Nvidia, and a first published evaluation."
+}

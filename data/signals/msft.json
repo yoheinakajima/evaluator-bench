@@ -1,0 +1,98 @@
+[
+  {
+    "id": "msft.01",
+    "evaluator": "msft",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Microsoft is a major OpenAI investor and a frontier developer with its own CAISI agreement.",
+    "sources": [
+      "csa-caisi"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.02",
+    "evaluator": "msft",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Business unit of a frontier developer.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.03",
+    "evaluator": "msft",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Findings for other labs are rarely published under the team's own name.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.04",
+    "evaluator": "msft",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes methodology (PyRIT) openly.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.05",
+    "evaluator": "msft",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Deep access when engaged.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.06",
+    "evaluator": "msft",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Employees of a lab.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.07",
+    "evaluator": "msft",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by engagement.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "msft.08",
+    "evaluator": "msft",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells AI products.",
+    "sources": [
+      "ms-redteam"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

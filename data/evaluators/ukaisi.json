@@ -1,0 +1,16 @@
+{
+  "id": "ukaisi",
+  "name": "UK AI Security Institute",
+  "type": "gov",
+  "hq": "London, UK",
+  "domains": [
+    "cyber",
+    "bio",
+    "jailbreak",
+    "autonomy",
+    "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Largest state evaluation team; 30+ models tested; Inspect open-sourced; Frontier AI Trends Report.",
+  "what_would_move_the_score": "Statutory footing with power to compel testing and publish per-model findings."
+}

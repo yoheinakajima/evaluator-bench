@@ -1,0 +1,53 @@
+{
+  "id": "aviation",
+  "name": "Aircraft certification",
+  "assurers": [
+    "FAA",
+    "EASA",
+    "designated engineering representatives",
+    "Organization Designation Authorization units"
+  ],
+  "payer": "Manufacturer pays for certification work, much of it delegated to its own employees.",
+  "access": "Regulator has statutory access; delegation reduces what it inspects directly.",
+  "publication": "Type certificates public; findings largely internal.",
+  "ai_analogue": "Delegation of certification to the regulated firm's own staff (ODA) is the closest analogue to labs running their own safety cases. The 737 MAX reforms show delegation can be reclaimed.",
+  "milestones": [
+    {
+      "year": 1926,
+      "kind": "mandate",
+      "event": "Air Commerce Act: federal certification of aircraft and pilots.",
+      "source": "https://en.wikipedia.org/wiki/Air_Commerce_Act"
+    },
+    {
+      "year": 1956,
+      "kind": "trigger",
+      "event": "Grand Canyon mid-air collision.",
+      "source": "https://en.wikipedia.org/wiki/1956_Grand_Canyon_mid-air_collision"
+    },
+    {
+      "year": 1958,
+      "kind": "mandate",
+      "event": "Federal Aviation Act creates the FAA.",
+      "source": "https://en.wikipedia.org/wiki/Federal_Aviation_Act_of_1958"
+    },
+    {
+      "year": 2005,
+      "kind": "delegation",
+      "event": "Organization Designation Authorization lets manufacturers' employees perform certification work.",
+      "source": "https://en.wikipedia.org/wiki/Organization_Designation_Authorization"
+    },
+    {
+      "year": 2018,
+      "kind": "trigger",
+      "event": "Boeing 737 MAX crashes (2018, 2019).",
+      "source": "https://en.wikipedia.org/wiki/Boeing_737_MAX_groundings"
+    },
+    {
+      "year": 2020,
+      "kind": "delegation_reform",
+      "event": "Aircraft Certification, Safety, and Accountability Act: FAA approval of ODA unit members, expanded whistleblower protection, limits on delegation.",
+      "source": "https://en.wikipedia.org/wiki/Aircraft_Certification,_Safety,_and_Accountability_Act"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

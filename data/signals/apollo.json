@@ -1,0 +1,111 @@
+[
+  {
+    "id": "apollo.01",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Published four-rule COI policy: no outcome-contingent pay, no side grants or investments from evaluated labs, recusal for financial interests, no misrepresentation.",
+    "sources": [
+      "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.02",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.",
+    "sources": [
+      "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.03",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.",
+    "sources": [
+      "apollo-pbc"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.04",
+    "evaluator": "apollo",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Record of adverse findings published, including in-context scheming and evaluation awareness.",
+    "sources": [
+      "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.05",
+    "evaluator": "apollo",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Recusal rule for any individual with a financial interest in an evaluated organization.",
+    "sources": [
+      "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.06",
+    "evaluator": "apollo",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.",
+    "sources": [
+      "apollo-about",
+      "apollo-first-year"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.07",
+    "evaluator": "apollo",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator.",
+    "sources": [
+      "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.08",
+    "evaluator": "apollo",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells Watcher, a monitoring product, into the ecosystem it evaluates.",
+    "sources": [
+      "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "apollo.09",
+    "evaluator": "apollo",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes evaluation methodology and papers; differential publishing policy documented.",
+    "sources": [
+      "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

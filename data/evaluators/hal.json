@@ -1,0 +1,13 @@
+{
+  "id": "hal",
+  "name": "Holistic Agent Leaderboard (Princeton)",
+  "type": "academic",
+  "hq": "Princeton, US",
+  "domains": [
+    "benchmarks",
+    "autonomy"
+  ],
+  "confidence": "med",
+  "summary": "Academic agent leaderboard with fully open methodology; AEF founding member.",
+  "what_would_move_the_score": "Nothing on independence; access is the gap."
+}

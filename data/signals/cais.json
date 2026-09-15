@@ -1,0 +1,99 @@
+[
+  {
+    "id": "cais.01",
+    "evaluator": "cais",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models.",
+    "sources": [
+      "80k-funding",
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.02",
+    "evaluator": "cais",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Funded mainly by SFF rather than lab-linked pools.",
+    "sources": [
+      "80k-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.03",
+    "evaluator": "cais",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open benchmarks widely used.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.04",
+    "evaluator": "cais",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.05",
+    "evaluator": "cais",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.06",
+    "evaluator": "cais",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Public-model access.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.07",
+    "evaluator": "cais",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets own benchmark design.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "cais.08",
+    "evaluator": "cais",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes results.",
+    "sources": [
+      "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

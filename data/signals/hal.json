@@ -1,0 +1,99 @@
+[
+  {
+    "id": "hal.01",
+    "evaluator": "hal",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "No lab money; academic.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.02",
+    "evaluator": "hal",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open code and logs.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.03",
+    "evaluator": "hal",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Results published without review.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.04",
+    "evaluator": "hal",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Public API access only.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.05",
+    "evaluator": "hal",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "University-hosted; AEF member.",
+    "sources": [
+      "hal",
+      "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.06",
+    "evaluator": "hal",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Academic staff.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.07",
+    "evaluator": "hal",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Own benchmark design.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hal.08",
+    "evaluator": "hal",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No products.",
+    "sources": [
+      "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

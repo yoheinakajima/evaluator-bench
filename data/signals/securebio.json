@@ -1,0 +1,123 @@
+[
+  {
+    "id": "securebio.01",
+    "evaluator": "securebio",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Labs typically pay for evaluations of their own models; OpenAI covered the cost of the GPT-5.5 assessment.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.02",
+    "evaluator": "securebio",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Accepted an OpenAI Foundation grant in 2026 for the Detection division; the foundation's endowment is a stake in OpenAI and its board largely overlaps.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.03",
+    "evaluator": "securebio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Two-division structure with a stated firewall; leadership committed publicly to resign and disclose if the grant were used as leverage on evaluations.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.04",
+    "evaluator": "securebio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Founding member of the AI Evaluator Forum, which wrote the AEF-1 independence standard.",
+    "sources": [
+      "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.05",
+    "evaluator": "securebio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Evaluates models from many developers; consortium member on the EU AI Office CBRN contract.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.06",
+    "evaluator": "securebio",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes pre-release biological assessments and the Virology Capabilities Test.",
+    "sources": [
+      "securebio-oaif",
+      "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.07",
+    "evaluator": "securebio",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Pre-deployment access across the major Western labs.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.08",
+    "evaluator": "securebio",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Staff pipeline disclosed through philanthropic career grants; no lab board roles found.",
+    "sources": [
+      "80k-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.09",
+    "evaluator": "securebio",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Methods published; VCT is documented.",
+    "sources": [
+      "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "securebio.10",
+    "evaluator": "securebio",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products found; tools shared with governments.",
+    "sources": [
+      "securebio-oaif"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

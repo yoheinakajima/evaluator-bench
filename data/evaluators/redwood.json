@@ -1,0 +1,14 @@
+{
+  "id": "redwood",
+  "name": "Redwood Research",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+    "scheming",
+    "incident",
+    "assurance"
+  ],
+  "confidence": "med",
+  "summary": "AI control research group; contributed a contractor to the METR incident investigation.",
+  "what_would_move_the_score": "A diversified funder list and a stated policy on co-authoring with labs it evaluates."
+}

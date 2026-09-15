@@ -1,0 +1,15 @@
+{
+  "id": "transluce",
+  "name": "Transluce",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+    "misuse",
+    "autonomy",
+    "benchmarks",
+    "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Nonprofit oversight-tools lab; convenes the AI Evaluator Forum that wrote AEF-1.",
+  "what_would_move_the_score": "Routine pre-release access under AEF-1 terms."
+}

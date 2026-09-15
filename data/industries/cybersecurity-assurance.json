@@ -1,0 +1,48 @@
+{
+  "id": "cybersecurity-assurance",
+  "name": "Cybersecurity assurance",
+  "assurers": [
+    "Common Criteria labs",
+    "3PAOs (FedRAMP)",
+    "QSAs (PCI)",
+    "SOC 2 auditors",
+    "bug bounty platforms"
+  ],
+  "payer": "Vendor or merchant pays the accredited assessor.",
+  "access": "Documentation, source review, and testing environments per scheme.",
+  "publication": "Certificates public; reports confidential; bug bounty disclosures partly public.",
+  "ai_analogue": "The most direct technical analogue: accredited vendor-paid labs, repeated criticism of checkbox compliance, and crowdsourced adversarial testing that pays per finding.",
+  "milestones": [
+    {
+      "year": 1985,
+      "kind": "standards",
+      "event": "TCSEC (Orange Book): government evaluation of trusted systems.",
+      "source": "https://en.wikipedia.org/wiki/Trusted_Computer_System_Evaluation_Criteria"
+    },
+    {
+      "year": 1999,
+      "kind": "accreditation",
+      "event": "Common Criteria (ISO/IEC 15408) with accredited commercial evaluation labs.",
+      "source": "https://en.wikipedia.org/wiki/Common_Criteria"
+    },
+    {
+      "year": 2004,
+      "kind": "mandate",
+      "event": "PCI DSS: card networks require assessments by Qualified Security Assessors.",
+      "source": "https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard"
+    },
+    {
+      "year": 2011,
+      "kind": "accreditation",
+      "event": "FedRAMP accredits third-party assessment organizations for cloud services.",
+      "source": "https://en.wikipedia.org/wiki/FedRAMP"
+    },
+    {
+      "year": 2013,
+      "kind": "trigger",
+      "event": "Target breach at a PCI-compliant merchant.",
+      "source": "https://en.wikipedia.org/wiki/Target_Corporation#2013_data_breach"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

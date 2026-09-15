@@ -1,0 +1,14 @@
+{
+  "id": "rand",
+  "name": "RAND",
+  "type": "nonprofit",
+  "hq": "Santa Monica, US",
+  "domains": [
+    "bio",
+    "cyber",
+    "assurance"
+  ],
+  "confidence": "med",
+  "summary": "Think tank with CBRN and security expertise; AEF founding member.",
+  "what_would_move_the_score": "More public model-level findings."
+}

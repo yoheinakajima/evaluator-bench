@@ -1,0 +1,100 @@
+[
+  {
+    "id": "hfoai.01",
+    "evaluator": "hfoai",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap.",
+    "sources": [
+      "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.02",
+    "evaluator": "hfoai",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "No track record as an evaluator; no access yet.",
+    "sources": [
+      "tnw-hf-nvidia",
+      "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.03",
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Who pays, who selects, and on what terms is unresolved.",
+    "sources": [
+      "tnw-hf-nvidia",
+      "zvi-pace"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.04",
+    "evaluator": "hfoai",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "States findings would be published openly; open-source culture.",
+    "sources": [
+      "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.05",
+    "evaluator": "hfoai",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Public tooling.",
+    "sources": [
+      "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.06",
+    "evaluator": "hfoai",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Terms not announced.",
+    "sources": [
+      "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.07",
+    "evaluator": "hfoai",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Would be owned by a lab investor.",
+    "sources": [
+      "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "hfoai.08",
+    "evaluator": "hfoai",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Commercial platform.",
+    "sources": [
+      "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

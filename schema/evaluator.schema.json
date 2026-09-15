@@ -1,0 +1,5 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"evaluator","type":"object",
+ "required":["id","name","type","hq","domains","confidence","summary"],"additionalProperties":false,
+ "properties":{"id":{"type":"string","pattern":"^[a-z0-9][a-z0-9-]*$"},"name":{"type":"string"},"type":{"type":"string"},"hq":{"type":"string"},
+  "domains":{"type":"array","items":{"enum":["bio","cyber","autonomy","scheming","jailbreak","misuse","assurance","benchmarks","incident"]},"minItems":1},
+  "confidence":{"enum":["high","med","low"]},"summary":{"type":"string"},"what_would_move_the_score":{"type":"string"},"aliases":{"type":"array","items":{"type":"string"}}}}

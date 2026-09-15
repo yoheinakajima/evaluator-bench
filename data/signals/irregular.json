@@ -1,0 +1,124 @@
+[
+  {
+    "id": "irregular.01",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "$80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.",
+    "sources": [
+      "techcrunch-irregular",
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.02",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Millions in annual revenue from the labs it evaluates.",
+    "sources": [
+      "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.03",
+    "evaluator": "irregular",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed for-profit; no published COI or recusal policy found.",
+    "sources": [
+      "techcrunch-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.04",
+    "evaluator": "irregular",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Growth plan is to sell runtime security controls into the same customers it evaluates.",
+    "sources": [
+      "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.05",
+    "evaluator": "irregular",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.",
+    "sources": [
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.06",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Government clients (UK) alongside labs.",
+    "sources": [
+      "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.07",
+    "evaluator": "irregular",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.",
+    "sources": [
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.08",
+    "evaluator": "irregular",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Findings appear in system cards for o3, o4-mini, GPT-5 and Claude models.",
+    "sources": [
+      "techcrunch-irregular",
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.09",
+    "evaluator": "irregular",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab engagements; no public account of evaluator-set scope.",
+    "sources": [
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "irregular.10",
+    "evaluator": "irregular",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Markets itself as embedded with the labs; no recusal or cooling-off policy found.",
+    "sources": [
+      "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

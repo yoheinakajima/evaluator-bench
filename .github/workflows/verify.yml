@@ -1,0 +1,15 @@
+name: verify
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e ".[dev]"
+      - run: python -m bench verify
+      - run: python -m bench build
+      - name: committed log and projection must match a clean build
+        run: git diff --exit-code -- graph/events.jsonl dist/bench.json
+      - run: pytest -q

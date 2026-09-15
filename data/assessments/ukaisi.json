@@ -1,0 +1,100 @@
+[
+  {
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "ukaisi.01"
+    ],
+    "rationale": "Anchor 4 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "G",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "ukaisi.08"
+    ],
+    "rationale": "Anchor 4 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "ukaisi.07"
+    ],
+    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "ukaisi.05",
+      "ukaisi.06"
+    ],
+    "rationale": "Anchor 3 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "ukaisi.09"
+    ],
+    "rationale": "Anchor 3 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "ukaisi.03",
+      "ukaisi.04"
+    ],
+    "rationale": "Anchor 2 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "M",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "ukaisi.02"
+    ],
+    "rationale": "Anchor 4 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "ukaisi",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "ukaisi.10"
+    ],
+    "rationale": "Anchor 4 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

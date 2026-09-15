@@ -1,0 +1,103 @@
+[
+  {
+    "evaluator": "metr",
+    "dimension": "F",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "metr.01",
+      "metr.02",
+      "metr.03"
+    ],
+    "rationale": "Anchor 4 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "G",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "metr.10"
+    ],
+    "rationale": "Anchor 4 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "metr.09"
+    ],
+    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "A",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "metr.04",
+      "metr.05",
+      "metr.13"
+    ],
+    "rationale": "Anchor 4 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "metr.06"
+    ],
+    "rationale": "Anchor 3 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "metr.07",
+      "metr.08"
+    ],
+    "rationale": "Anchor 3 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "M",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "metr.11"
+    ],
+    "rationale": "Anchor 4 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "metr",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "metr.12"
+    ],
+    "rationale": "Anchor 4 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

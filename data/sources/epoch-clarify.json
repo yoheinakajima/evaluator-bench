@@ -1,0 +1,9 @@
+{
+  "id": "epoch-clarify",
+  "title": "Clarifying the creation and use of the FrontierMath benchmark",
+  "publisher": "Epoch AI",
+  "url": "https://epoch.ai/latest/openai-and-frontiermath",
+  "published": "2025-01-23",
+  "retrieved": "2026-09-14",
+  "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap."
+}

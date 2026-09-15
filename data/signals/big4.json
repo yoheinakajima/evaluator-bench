@@ -1,0 +1,99 @@
+[
+  {
+    "id": "big4.01",
+    "evaluator": "big4",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Existing independence frameworks (no financial interest, partner rotation) map onto SB 315's requirements.",
+    "sources": [
+      "crowell-sb315",
+      "stackaware-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.02",
+    "evaluator": "big4",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Labs are already consulting clients, recreating the audit-plus-consulting problem.",
+    "sources": [
+      "stackaware-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.03",
+    "evaluator": "big4",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "No technical capability to elicit dangerous capabilities; would need to subcontract.",
+    "sources": [
+      "lw-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.04",
+    "evaluator": "big4",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Reports would be summaries to the developer and the state rather than public findings.",
+    "sources": [
+      "crowell-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.05",
+    "evaluator": "big4",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Developer pays the auditor.",
+    "sources": [
+      "crowell-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.06",
+    "evaluator": "big4",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Partners rotate but firms retain the client.",
+    "sources": [
+      "stackaware-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.07",
+    "evaluator": "big4",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope fixed by statute and engagement letter.",
+    "sources": [
+      "dwt-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "big4.08",
+    "evaluator": "big4",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Audit methodology proprietary.",
+    "sources": [
+      "stackaware-sb315"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "evaluator": "dreadnode",
+    "dimension": "F",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "dreadnode.05"
+    ],
+    "rationale": "Anchor 1 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "dreadnode.02"
+    ],
+    "rationale": "Anchor 1 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "dreadnode.06"
+    ],
+    "rationale": "Anchor 2 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "dreadnode.01"
+    ],
+    "rationale": "Anchor 3 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "dreadnode.07"
+    ],
+    "rationale": "Anchor 2 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "R",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "dreadnode.03"
+    ],
+    "rationale": "Anchor 1 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "M",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "dreadnode.08"
+    ],
+    "rationale": "Anchor 1 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "dreadnode",
+    "dimension": "X",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "dreadnode.04"
+    ],
+    "rationale": "Anchor 1 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

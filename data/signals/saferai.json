@@ -1,0 +1,99 @@
+[
+  {
+    "id": "saferai.01",
+    "evaluator": "saferai",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes critical ratings of lab frameworks with scores attached.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.02",
+    "evaluator": "saferai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
+    "sources": [
+      "longtermwiki-far",
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.03",
+    "evaluator": "saferai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "No lab revenue found.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.04",
+    "evaluator": "saferai",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Limited pre-deployment model access to date.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.05",
+    "evaluator": "saferai",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.06",
+    "evaluator": "saferai",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab roles found.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.07",
+    "evaluator": "saferai",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Rating methodology published.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "saferai.08",
+    "evaluator": "saferai",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "saferai"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

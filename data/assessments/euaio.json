@@ -1,0 +1,99 @@
+[
+  {
+    "evaluator": "euaio",
+    "dimension": "F",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "euaio.06"
+    ],
+    "rationale": "Anchor 4 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "G",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "euaio.07"
+    ],
+    "rationale": "Anchor 4 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "euaio.08"
+    ],
+    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "euaio.01"
+    ],
+    "rationale": "Anchor 3 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "S",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "euaio.02",
+      "euaio.03"
+    ],
+    "rationale": "Anchor 4 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "euaio.04"
+    ],
+    "rationale": "Anchor 2 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "euaio.05"
+    ],
+    "rationale": "Anchor 2 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "euaio",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "euaio.09"
+    ],
+    "rationale": "Anchor 4 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

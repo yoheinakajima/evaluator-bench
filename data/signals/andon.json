@@ -1,0 +1,99 @@
+[
+  {
+    "id": "andon.01",
+    "evaluator": "andon",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes candid results, including misalignment findings on the best-scoring models.",
+    "sources": [
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.02",
+    "evaluator": "andon",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Benchmarks (Vending-Bench) cited in model cards across labs.",
+    "sources": [
+      "tooldir-andon"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.03",
+    "evaluator": "andon",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed.",
+    "sources": [
+      "andon-site",
+      "tooldir-andon"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.04",
+    "evaluator": "andon",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "No published COI policy found.",
+    "sources": [
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.05",
+    "evaluator": "andon",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Access through partnerships (Anthropic Project Vend); not routine pre-release.",
+    "sources": [
+      "tooldir-andon"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.06",
+    "evaluator": "andon",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Designs its own long-horizon tasks.",
+    "sources": [
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.07",
+    "evaluator": "andon",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Undisclosed.",
+    "sources": [
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "andon.08",
+    "evaluator": "andon",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells a commercial agent platform.",
+    "sources": [
+      "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

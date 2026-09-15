@@ -1,0 +1,48 @@
+{
+  "id": "product-safety",
+  "name": "Electrical and consumer product safety",
+  "assurers": [
+    "UL",
+    "Intertek",
+    "CSA",
+    "OSHA NRTLs",
+    "CPSC-accepted labs"
+  ],
+  "payer": "Manufacturer pays the testing lab.",
+  "access": "Samples submitted by the manufacturer; factory follow-up inspections.",
+  "publication": "Mark on product; test reports confidential; listings public.",
+  "ai_analogue": "Private manufacturer-paid certification ran for roughly ninety years before government accredited the certifiers; a 2007 incident wave made third-party testing mandatory for one product class.",
+  "milestones": [
+    {
+      "year": 1894,
+      "kind": "voluntary_assurance",
+      "event": "Underwriters Laboratories founded after electrical fires at the 1893 Chicago World's Fair; insurer-linked at origin.",
+      "source": "https://en.wikipedia.org/wiki/UL_(safety_organization)"
+    },
+    {
+      "year": 1972,
+      "kind": "mandate",
+      "event": "Consumer Product Safety Act creates the CPSC.",
+      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Act"
+    },
+    {
+      "year": 1988,
+      "kind": "accreditation",
+      "event": "OSHA Nationally Recognized Testing Laboratory program accredits third-party labs, ending single-lab dominance.",
+      "source": "https://www.osha.gov/nationally-recognized-testing-laboratory-program"
+    },
+    {
+      "year": 2007,
+      "kind": "trigger",
+      "event": "Lead-paint toy recalls.",
+      "source": "https://en.wikipedia.org/wiki/2007_Chinese_export_recalls"
+    },
+    {
+      "year": 2008,
+      "kind": "mandate",
+      "event": "CPSIA requires third-party testing of children's products by CPSC-accepted laboratories.",
+      "source": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Improvement_Act"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

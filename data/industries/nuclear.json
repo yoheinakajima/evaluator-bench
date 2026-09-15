@@ -1,0 +1,59 @@
+{
+  "id": "nuclear",
+  "name": "Nuclear safety and safeguards",
+  "assurers": [
+    "IAEA",
+    "NRC",
+    "INPO",
+    "WANO"
+  ],
+  "payer": "Operators fund INPO; states fund IAEA and national regulators.",
+  "access": "IAEA inspections by state consent; Additional Protocol expands access; INPO peer reviews on site.",
+  "publication": "INPO reports confidential to the operator and insurers; NRC findings public; IAEA reports to member states.",
+  "ai_analogue": "Two precedents: separating promotion from regulation (AEC split in 1974), and industry-funded confidential peer review that works because insurance and a public regulator sit behind it.",
+  "milestones": [
+    {
+      "year": 1957,
+      "kind": "mandate",
+      "event": "IAEA established.",
+      "source": "https://en.wikipedia.org/wiki/International_Atomic_Energy_Agency"
+    },
+    {
+      "year": 1970,
+      "kind": "access_expansion",
+      "event": "NPT safeguards agreements give the IAEA inspection rights in signatory states.",
+      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"
+    },
+    {
+      "year": 1974,
+      "kind": "independence_rule",
+      "event": "Energy Reorganization Act splits the AEC into the NRC (regulation) and ERDA (promotion).",
+      "source": "https://en.wikipedia.org/wiki/Energy_Reorganization_Act_of_1974"
+    },
+    {
+      "year": 1979,
+      "kind": "trigger",
+      "event": "Three Mile Island accident.",
+      "source": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"
+    },
+    {
+      "year": 1979,
+      "kind": "voluntary_assurance",
+      "event": "INPO founded: industry-funded peer evaluations with confidential reports tied to insurance.",
+      "source": "https://en.wikipedia.org/wiki/Institute_of_Nuclear_Power_Operations"
+    },
+    {
+      "year": 1991,
+      "kind": "trigger",
+      "event": "Iraq's undeclared program discovered after the Gulf War.",
+      "source": "https://en.wikipedia.org/wiki/IAEA_safeguards"
+    },
+    {
+      "year": 1997,
+      "kind": "access_expansion",
+      "event": "Additional Protocol expands IAEA access to undeclared sites and information.",
+      "source": "https://en.wikipedia.org/wiki/Additional_Protocol"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ship-classification",
+  "name": "Ship classification",
+  "assurers": [
+    "Lloyd's Register",
+    "DNV",
+    "ABS",
+    "IACS members"
+  ],
+  "payer": "Shipowner pays the classification society.",
+  "access": "Surveyors attend construction and periodic surveys.",
+  "publication": "Class status public; survey reports confidential.",
+  "ai_analogue": "An owner-paid assurance regime that has survived for 260 years through mutual recognition, transfer-of-class rules, and flag-state delegation, with repeated crises from class shopping.",
+  "milestones": [
+    {
+      "year": 1760,
+      "kind": "voluntary_assurance",
+      "event": "Lloyd's Register begins as an underwriters' register of ship condition.",
+      "source": "https://en.wikipedia.org/wiki/Lloyd%27s_Register"
+    },
+    {
+      "year": 1968,
+      "kind": "accreditation",
+      "event": "IACS founded to harmonize class societies.",
+      "source": "https://en.wikipedia.org/wiki/International_Association_of_Classification_Societies"
+    },
+    {
+      "year": 1999,
+      "kind": "trigger",
+      "event": "Erika sinks after changing class; 2002 Prestige sinks.",
+      "source": "https://en.wikipedia.org/wiki/MV_Erika"
+    },
+    {
+      "year": 2009,
+      "kind": "independence_rule",
+      "event": "EU Regulation 391/2009 sets recognition and independence rules for classification societies acting for flag states.",
+      "source": "https://en.wikipedia.org/wiki/Classification_society"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

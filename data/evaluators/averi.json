@@ -1,0 +1,12 @@
+{
+  "id": "averi",
+  "name": "AVERI",
+  "type": "nonprofit",
+  "hq": "Washington, US",
+  "domains": [
+    "assurance"
+  ],
+  "confidence": "med",
+  "summary": "Standards body for frontier AI auditing; ran the first double-blind enclave evaluation of a proprietary model.",
+  "what_would_move_the_score": "Funder disclosure and a first audit under statutory terms."
+}

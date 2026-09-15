@@ -1,0 +1,124 @@
+[
+  {
+    "id": "epoch.01",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "OpenAI commissioned and owns most of FrontierMath and had the problems and solutions; a contract barred disclosing this until the o3 launch.",
+    "sources": [
+      "epoch-clarify",
+      "decoder-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.02",
+    "evaluator": "epoch",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Contributors were not told the funder; disclosure came after the fact.",
+    "sources": [
+      "techcrunch-epoch",
+      "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.03",
+    "evaluator": "epoch",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "After the disclosure failure, created a 50-problem holdout OpenAI cannot see.",
+    "sources": [
+      "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.04",
+    "evaluator": "epoch",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Rigorous public data on compute, training runs and capability trends.",
+    "sources": [
+      "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.05",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Primarily philanthropically funded (Open Philanthropy).",
+    "sources": [
+      "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.06",
+    "evaluator": "epoch",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+      "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.07",
+    "evaluator": "epoch",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Cannot share the commissioned set with other labs without OpenAI's permission.",
+    "sources": [
+      "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.08",
+    "evaluator": "epoch",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Evaluates any model on FrontierMath at its discretion.",
+    "sources": [
+      "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.09",
+    "evaluator": "epoch",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab roles found.",
+    "sources": [
+      "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "epoch.10",
+    "evaluator": "epoch",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

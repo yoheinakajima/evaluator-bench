@@ -1,0 +1,15 @@
+{
+  "id": "euaio",
+  "name": "EU AI Office",
+  "type": "gov",
+  "hq": "Brussels, BE",
+  "domains": [
+    "bio",
+    "cyber",
+    "misuse",
+    "assurance"
+  ],
+  "confidence": "med",
+  "summary": "Regulator behind the GPAI Code of Practice; external-evaluator obligations enforceable since August 2026.",
+  "what_would_move_the_score": "An accreditation pathway for external evaluators and a public reporting schema."
+}

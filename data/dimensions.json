@@ -1,0 +1,18 @@
+[
+  {"key":"F","label":"Funding","desc":"Where the money comes from, and whether any of it comes from the developers being evaluated or their investors.",
+   "anchors":["Majority owned or funded by a frontier developer.","Material revenue or investment from evaluated labs or their investors.","Labs pay per engagement; otherwise diversified.","Mostly philanthropic or public money; some lab-linked pooled funds.","No lab money; diversified philanthropic or public funding, disclosed."]},
+  {"key":"G","label":"Governance","desc":"Legal form, board, and whether a conflict-of-interest policy is published.",
+   "anchors":["Unit or subsidiary of a lab or a lab's investor.","VC-backed for-profit with no published COI policy.","For-profit or PBC with a published COI policy.","Nonprofit or public body with a COI policy.","Nonprofit or public body, published COI policy, independent board, external review."]},
+  {"key":"P","label":"Personnel","desc":"Board seats, equity, advisory roles, and the revolving door between evaluator and lab.",
+   "anchors":["Leaders hold governance roles at an evaluated lab, no recusal.","Leaders hold equity or advisory roles at labs; informal recusal.","Frequent two-way hiring; recusal on request.","Recusal policy and disclosure of lab ties.","Cooling-off periods, disclosed ties, no equity in labs."]},
+  {"key":"A","label":"Access depth","desc":"How deep the evaluator gets: public API, pre-release API, safeguards off, weights and logs, or embedded during training.",
+   "anchors":["Public API only.","Pre-release API with safeguards on.","Pre-release with safeguards off or extended time.","Helpful-only or weights-level access, chain of thought, logs, on-site.","Embedded, training-time, or incident access."]},
+  {"key":"S","label":"Scope control","desc":"Who decides what gets tested, for how long, and whether the evaluator can refuse to sign off.",
+   "anchors":["Lab defines tasks and can decline findings.","Lab defines scope; evaluator picks methods.","Scope negotiated per engagement.","Evaluator sets scope and can add questions.","Evaluator sets scope, can investigate incidents, can refuse sign-off."]},
+  {"key":"R","label":"Publication rights","desc":"Whether findings reach the public unedited, and whether adverse findings have been published.",
+   "anchors":["No publication, or lab approval required.","Lab-edited summaries only.","Publishes; lab reviews with broad redaction.","Publishes; redaction limited to security; redactions disclosed.","Full editorial control, record of adverse findings, redaction statements."]},
+  {"key":"M","label":"Method transparency","desc":"Whether evaluation code, tasks, and conditions are open enough for others to reproduce.",
+   "anchors":["Closed.","Summaries only.","Methods described in prose.","Tasks or code partly open.","Open code, tasks, reproducible runs, factsheets."]},
+  {"key":"X","label":"Product conflicts","desc":"Whether the evaluator sells mitigations or services to the companies it grades.",
+   "anchors":["Sells defense or monitoring products to evaluated labs.","Sells to labs and to their customers.","Consults for labs.","Tools are open or free to the ecosystem.","No commercial products."]}
+]

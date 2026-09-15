@@ -1,0 +1,98 @@
+[
+  {
+    "evaluator": "cais",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "cais.02"
+    ],
+    "rationale": "Anchor 3 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "cais.05"
+    ],
+    "rationale": "Anchor 3 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "P",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+      "cais.01"
+    ],
+    "rationale": "Anchor 1 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "cais.06"
+    ],
+    "rationale": "Anchor 2 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "cais.07"
+    ],
+    "rationale": "Anchor 3 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "cais.08"
+    ],
+    "rationale": "Anchor 3 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "M",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "cais.03"
+    ],
+    "rationale": "Anchor 4 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "cais",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "cais.04"
+    ],
+    "rationale": "Anchor 3 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

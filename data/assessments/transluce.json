@@ -1,0 +1,98 @@
+[
+  {
+    "evaluator": "transluce",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "transluce.03"
+    ],
+    "rationale": "Anchor 3 on funding given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "transluce.01"
+    ],
+    "rationale": "Anchor 3 on governance given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "transluce.04"
+    ],
+    "rationale": "Anchor 3 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+      "transluce.06"
+    ],
+    "rationale": "Anchor 2 on access given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "S",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "transluce.07"
+    ],
+    "rationale": "Anchor 4 on scope given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "R",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "transluce.02"
+    ],
+    "rationale": "Anchor 4 on publication given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "M",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+      "transluce.08"
+    ],
+    "rationale": "Anchor 4 on methods given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  },
+  {
+    "evaluator": "transluce",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+      "transluce.05"
+    ],
+    "rationale": "Anchor 3 on products given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0"
+  }
+]

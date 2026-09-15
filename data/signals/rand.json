@@ -1,0 +1,100 @@
+[
+  {
+    "id": "rand.01",
+    "evaluator": "rand",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Government-contracted with long-standing COI and publication norms; AEF founding member.",
+    "sources": [
+      "rand-aef",
+      "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.02",
+    "evaluator": "rand",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Access through government channels, including classified work.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.03",
+    "evaluator": "rand",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Large share of AI work funded by Coefficient Giving.",
+    "sources": [
+      "rand-aef",
+      "coefficient-wiki"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.04",
+    "evaluator": "rand",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Much output is government-restricted rather than public.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.05",
+    "evaluator": "rand",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Institutional COI rules.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.06",
+    "evaluator": "rand",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets own research agenda.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.07",
+    "evaluator": "rand",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods partly public.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "rand.08",
+    "evaluator": "rand",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "rand-aef"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

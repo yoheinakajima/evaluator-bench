@@ -1,0 +1,124 @@
+[
+  {
+    "id": "grayswan.01",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.",
+    "sources": [
+      "openai-kolter-board",
+      "kolter-bio"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.02",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "The chief scientist recuses himself from Gray Swan's dealings with OpenAI.",
+    "sources": [
+      "forbes-grayswan-2024"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.03",
+    "evaluator": "grayswan",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "$40M Series A in May 2026 at a $200M valuation; revenue from every major lab.",
+    "sources": [
+      "grayswan-seriesa",
+      "forbes-grayswan-2026"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.04",
+    "evaluator": "grayswan",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates.",
+    "sources": [
+      "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.05",
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed for-profit; no published COI policy found.",
+    "sources": [
+      "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.06",
+    "evaluator": "grayswan",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates.",
+    "sources": [
+      "forbes-grayswan-2026"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.07",
+    "evaluator": "grayswan",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Embedded in pre-release safety evaluation processes; cited in 11 system cards.",
+    "sources": [
+      "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.08",
+    "evaluator": "grayswan",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Founders wrote foundational jailbreak papers; Arena results partly public.",
+    "sources": [
+      "forbes-grayswan-2026"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.09",
+    "evaluator": "grayswan",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Findings appear as lab-summarized system-card citations rather than independent reports.",
+    "sources": [
+      "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "grayswan.10",
+    "evaluator": "grayswan",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab engagements.",
+    "sources": [
+      "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

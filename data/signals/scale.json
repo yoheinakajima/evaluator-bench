@@ -1,0 +1,100 @@
+[
+  {
+    "id": "scale.01",
+    "evaluator": "scale",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Nearly half owned by Meta, itself a frontier developer.",
+    "sources": [
+      "longtermwiki-audit",
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.02",
+    "evaluator": "scale",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Primary business is selling data and evaluation services to the labs; no public COI policy addressing the Meta relationship.",
+    "sources": [
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.03",
+    "evaluator": "scale",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Government-defined risk domains and access agreements; first private evaluator authorized by the US institute.",
+    "sources": [
+      "longtermwiki-audit",
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.04",
+    "evaluator": "scale",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells data and evaluation services to labs.",
+    "sources": [
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.05",
+    "evaluator": "scale",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Leadership moved to Meta with the 2025 investment.",
+    "sources": [
+      "longtermwiki-audit"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.06",
+    "evaluator": "scale",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by government or lab clients.",
+    "sources": [
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.07",
+    "evaluator": "scale",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Results for governments not public.",
+    "sources": [
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "scale.08",
+    "evaluator": "scale",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Benchmarks partly public (SEAL leaderboards); government evaluations closed.",
+    "sources": [
+      "scale-framework"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": "scale",
+  "name": "Scale AI (SEAL / Scale Labs)",
+  "type": "bigtech",
+  "hq": "San Francisco, US",
+  "domains": [
+    "benchmarks",
+    "cyber",
+    "bio",
+    "misuse"
+  ],
+  "confidence": "high",
+  "summary": "Builds and runs evaluations for CAISI and other governments; Meta acquired 49% in 2025.",
+  "what_would_move_the_score": "Ownership separation of the evaluation unit; until then the ceiling is low."
+}

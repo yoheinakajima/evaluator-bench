@@ -1,0 +1,53 @@
+{
+  "id": "food-safety",
+  "name": "Food safety",
+  "assurers": [
+    "USDA FSIS",
+    "FDA",
+    "GFSI-benchmarked certification bodies",
+    "FDA-accredited third-party certifiers"
+  ],
+  "payer": "Producer pays private certifiers; government inspection publicly funded.",
+  "access": "Plant inspection; records; sampling.",
+  "publication": "Inspection results partly public; private audit reports confidential.",
+  "ai_analogue": "Private benchmarked certification schemes plus government accreditation of the certifiers; melamine showed private audits can miss deliberate adulteration.",
+  "milestones": [
+    {
+      "year": 1906,
+      "kind": "mandate",
+      "event": "Federal Meat Inspection Act.",
+      "source": "https://en.wikipedia.org/wiki/Federal_Meat_Inspection_Act"
+    },
+    {
+      "year": 1993,
+      "kind": "trigger",
+      "event": "Jack in the Box E. coli outbreak.",
+      "source": "https://en.wikipedia.org/wiki/1993_Jack_in_the_Box_E._coli_outbreak"
+    },
+    {
+      "year": 1996,
+      "kind": "mandate",
+      "event": "HACCP rule for meat and poultry.",
+      "source": "https://en.wikipedia.org/wiki/Hazard_analysis_and_critical_control_points"
+    },
+    {
+      "year": 2000,
+      "kind": "voluntary_assurance",
+      "event": "Global Food Safety Initiative benchmarks private certification schemes.",
+      "source": "https://en.wikipedia.org/wiki/Global_Food_Safety_Initiative"
+    },
+    {
+      "year": 2008,
+      "kind": "trigger",
+      "event": "Melamine adulteration in China.",
+      "source": "https://en.wikipedia.org/wiki/2008_Chinese_milk_scandal"
+    },
+    {
+      "year": 2011,
+      "kind": "accreditation",
+      "event": "FSMA authorizes FDA accreditation of third-party certification bodies.",
+      "source": "https://en.wikipedia.org/wiki/FDA_Food_Safety_Modernization_Act"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "transluce.01",
+    "evaluator": "transluce",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Wrote the field's independence standard (AEF-1) through the AI Evaluator Forum and applies it to itself.",
+    "sources": [
+      "aef-launch",
+      "transluce-job",
+      "aef-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.02",
+    "evaluator": "transluce",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.",
+    "sources": [
+      "transluce-mh"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.03",
+    "evaluator": "transluce",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Government contracts and philanthropy rather than lab fees.",
+    "sources": [
+      "transluce-job",
+      "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.04",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Head of governance previously led CAISI; no lab board roles found.",
+    "sources": [
+      "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.05",
+    "evaluator": "transluce",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users.",
+    "sources": [
+      "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.06",
+    "evaluator": "transluce",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely.",
+    "sources": [
+      "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.07",
+    "evaluator": "transluce",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own evaluation questions.",
+    "sources": [
+      "transluce-mh"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "transluce.08",
+    "evaluator": "transluce",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open tools (Docent) and published methods.",
+    "sources": [
+      "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

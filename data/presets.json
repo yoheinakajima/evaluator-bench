@@ -1,0 +1,6 @@
+{
+  "lab":       {"label":"Lab procurement",      "weights":{"F":18,"G":8,"P":10,"A":20,"S":16,"R":14,"M":9,"X":5}},
+  "regulator": {"label":"Regulator or auditor", "weights":{"F":15,"G":10,"P":10,"A":20,"S":20,"R":15,"M":10,"X":0}},
+  "public":    {"label":"Public trust",         "weights":{"F":25,"G":15,"P":15,"A":5,"S":10,"R":20,"M":5,"X":5}},
+  "equal":     {"label":"Equal weights",        "weights":{"F":12.5,"G":12.5,"P":12.5,"A":12.5,"S":12.5,"R":12.5,"M":12.5,"X":12.5}}
+}

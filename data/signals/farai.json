@@ -1,0 +1,110 @@
+[
+  {
+    "id": "farai.01",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "More than $30M in 2025 commitments from Coefficient Giving, Schmidt Sciences, SFF and CSET.",
+    "sources": [
+      "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.02",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.",
+    "sources": [
+      "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.03",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.04",
+    "evaluator": "farai",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes jailbreak and stress-test results across vendors.",
+    "sources": [
+      "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.05",
+    "evaluator": "farai",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit with diversified disclosed funders.",
+    "sources": [
+      "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.06",
+    "evaluator": "farai",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Pre- and post-deployment red teaming for labs and EU bodies.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.07",
+    "evaluator": "farai",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Runs field-building programs that place researchers into labs.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.08",
+    "evaluator": "farai",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes methods and papers.",
+    "sources": [
+      "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "farai.09",
+    "evaluator": "farai",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products; consulting limited to governments.",
+    "sources": [
+      "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

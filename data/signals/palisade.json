@@ -1,0 +1,98 @@
+[
+  {
+    "id": "palisade.01",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Philanthropically funded; no lab contracts found.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.02",
+    "evaluator": "palisade",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own questions and publishes without lab review.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.03",
+    "evaluator": "palisade",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes findings unwelcome to labs, including shutdown resistance and self-replication.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.04",
+    "evaluator": "palisade",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes code and transcripts.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.05",
+    "evaluator": "palisade",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Little pre-deployment access; most work is on released models.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.06",
+    "evaluator": "palisade",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.07",
+    "evaluator": "palisade",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab board roles found.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "palisade.08",
+    "evaluator": "palisade",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+      "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]

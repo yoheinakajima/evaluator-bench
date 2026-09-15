@@ -1,0 +1,46 @@
+{
+  "id": "boilers",
+  "name": "Boilers and pressure vessels",
+  "assurers": [
+    "National Board commissioned inspectors",
+    "insurer inspection departments",
+    "ASME"
+  ],
+  "payer": "Insurer employs the inspector; owner pays the insurer.",
+  "access": "On-site inspection during fabrication and in service.",
+  "publication": "Stamps and certificates public; inspection reports to insurer and jurisdiction.",
+  "ai_analogue": "The one regime that removed the owner-pays conflict by routing inspection through insurers with skin in the game. The current AI insurance-backed certification proposals are this model.",
+  "milestones": [
+    {
+      "year": 1866,
+      "kind": "voluntary_assurance",
+      "event": "Hartford Steam Boiler founded: insurance conditioned on inspection.",
+      "source": "https://en.wikipedia.org/wiki/Hartford_Steam_Boiler_Inspection_and_Insurance_Company"
+    },
+    {
+      "year": 1905,
+      "kind": "trigger",
+      "event": "Grover Shoe Factory boiler explosion kills 58.",
+      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"
+    },
+    {
+      "year": 1908,
+      "kind": "mandate",
+      "event": "Massachusetts enacts the first state boiler law.",
+      "source": "https://en.wikipedia.org/wiki/Grover_Shoe_Factory_disaster"
+    },
+    {
+      "year": 1914,
+      "kind": "standards",
+      "event": "First ASME Boiler Code published.",
+      "source": "https://en.wikipedia.org/wiki/ASME_Boiler_and_Pressure_Vessel_Code"
+    },
+    {
+      "year": 1919,
+      "kind": "accreditation",
+      "event": "National Board of Boiler and Pressure Vessel Inspectors commissions inspectors across jurisdictions.",
+      "source": "https://en.wikipedia.org/wiki/National_Board_of_Boiler_and_Pressure_Vessel_Inspectors"
+    }
+  ],
+  "status": "seed; secondary sources; verify each milestone against a primary source before citing in the paper"
+}

@@ -1,0 +1,6 @@
+Apache License 2.0 applies to the code in this repository (bench/, site/, tests/).
+See https://www.apache.org/licenses/LICENSE-2.0
+
+Data files under data/ and generated logs under graph/ and dist/bench.json are
+licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+See https://creativecommons.org/licenses/by/4.0/

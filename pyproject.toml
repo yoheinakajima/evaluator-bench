@@ -1,0 +1,20 @@
+[project]
+name = "evaluator-bench"
+version = "0.1.0"
+description = "Evidence-linked, event-sourced directory of third-party evaluators for frontier AI, built on ActiveGraph."
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = ["activegraph>=1.10.0", "jsonschema>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+bench = "bench.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["bench*"]

@@ -1,0 +1,5 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"signal","type":"object",
+ "required":["id","evaluator","dimension","direction","claim","sources","recorded"],"additionalProperties":false,
+ "properties":{"id":{"type":"string"},"evaluator":{"type":"string"},"dimension":{"enum":["F","G","P","A","S","R","M","X"]},
+  "direction":{"enum":["for","against"]},"claim":{"type":"string","minLength":10},"sources":{"type":"array","items":{"type":"string"},"minItems":1},
+  "recorded":{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}$"},"curator":{"type":"string"},"quote":{"type":"string","maxLength":120},"superseded_by":{"type":"string"}}}

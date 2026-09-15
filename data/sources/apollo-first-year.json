@@ -1,0 +1,9 @@
+{
+  "id": "apollo-first-year",
+  "title": "The First Year of Apollo Research",
+  "publisher": "Apollo Research",
+  "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
+  "published": "2024",
+  "retrieved": "2026-09-14",
+  "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API."
+}

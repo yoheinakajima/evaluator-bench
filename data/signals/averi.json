@@ -1,0 +1,101 @@
+[
+  {
+    "id": "averi.01",
+    "evaluator": "averi",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Secure-enclave double-blind protocol with DeepMind, OpenMined and MLCommons; neither party sees the other's confidential material.",
+    "sources": [
+      "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.02",
+    "evaluator": "averi",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "501(c)(3); endorsed Illinois SB 315; co-authored AEF-1.",
+    "sources": [
+      "averi-launch",
+      "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.03",
+    "evaluator": "averi",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.",
+    "sources": [
+      "averi-pilot",
+      "arxiv-frontier-auditing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.04",
+    "evaluator": "averi",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founder and several staff come from labs and lab-adjacent institutions.",
+    "sources": [
+      "averi-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.05",
+    "evaluator": "averi",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Pilot audits are voluntary and lab-selected; not yet a full-time auditor.",
+    "sources": [
+      "averi-about",
+      "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.06",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding sources not fully itemized publicly.",
+    "sources": [
+      "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.07",
+    "evaluator": "averi",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes pilot findings.",
+    "sources": [
+      "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  },
+  {
+    "id": "averi.08",
+    "evaluator": "averi",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products; tools open source.",
+    "sources": [
+      "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0"
+  }
+]
