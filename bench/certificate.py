@@ -6,10 +6,10 @@
 Format epistemedia-certificate-v0.1 (proposed here; not yet part of Epistemedia).
 A certificate binds a verdict to the exact bytes of a proposal (its SHA-256 and
 Epistemedia proposal_id), names the reviewer (a person, or a model with its
-identity), lists the checks run, and carries a signature slot. Manual v0 self-certification was retired (it was circular: the same operator
-drafted, reviewed, and cited the docket). Certificates are issued only from
-independent review at epistemedia.org by someone other than the drafter, and
-are signed by the realm's key.
+identity), lists the checks run, and carries a signature slot. Certificates are
+issued only from independent review at epistemedia.org by someone other than
+the drafter, and are signed by the realm's key. The Bench never certifies its
+own drafts.
 """
 from __future__ import annotations
 import json, hashlib, sys, datetime, pathlib
@@ -65,7 +65,7 @@ def main(argv=None) -> int:
     if cmd == "issue":
         opts = dict(zip(argv[2::2], argv[3::2]))
         if opts.get("--kind", "manual") == "manual":
-            print("refused: manual/self-reviewed certificates were retired (see paper/CERTIFICATION.md). "
+            print("refused: the Bench does not issue self-reviewed certificates (see paper/CERTIFICATION.md). "
                   "Certificates are issued only from independent review at epistemedia.org by someone other than the drafter.")
             return 2
         checks = [{"check": "structural-validation", "result": "pass", "note": "epistemedia research validate: only ready-for-review and artifact digests outstanding"},

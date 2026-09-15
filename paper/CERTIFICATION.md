@@ -1,18 +1,19 @@
 # Certification: from a manual yes to a signed machine verdict
 
-Version 1, 15 Sep 2026. Rewritten after the self-certification loop was removed.
+Version 1, 15 Sep 2026.
 
-## What changed and why
+## Policy
 
-v0 of this project contained a circular loop: the Bench operator drafted the `metr-lab-money` docket, issued themselves a "manual v0" certificate for it, marked the docket source `confirmed`, and cited it back in signal `metr.18` as the strongest tier of evidence. The site displayed an "Epistemedia reviewed (manual v0)" badge that could be read as independent third-party review, when in fact independent review was pending and the reviewer was the same operator.
+A Bench-authored docket can never certify itself. The operator who drafts a
+docket cannot be its reviewer, and no certificate the Bench issues to its own
+draft carries evidential weight. Concretely:
 
-That loop has been removed:
-
-- The self-issued certificate (`data/certificates/metr-lab-money.json`) is deleted.
-- The docket source record (`data/sources/docket-metr-lab-money.json`) is deleted; `metr.18` cites only its three primary sources.
-- No "Epistemedia reviewed" badge is shown anywhere. Docket drafts are labeled drafts.
-- `bench certificate issue` refuses to issue manual/self-reviewed certificates.
-- The verifier fails closed: a `docket`-type source may never carry `audit_status: confirmed` without an independent, signed certificate from a review at epistemedia.org by someone other than the drafter.
+- `bench certificate issue` refuses manual/self-reviewed issuance.
+- A `docket`-type source may never carry `audit_status: confirmed` without an
+  independent, signed certificate from a review at epistemedia.org by someone
+  other than the drafter; the verifier fails the build otherwise.
+- No "Epistemedia reviewed" badge is shown anywhere. Docket drafts are labeled
+  drafts.
 
 ## What exists now
 
