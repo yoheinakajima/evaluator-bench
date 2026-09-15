@@ -322,10 +322,48 @@ def source_page(sid: str, bench: dict, C: dict) -> str:
 # ---------------------------------------------------------------- index pages
 def _ev_row(e: dict, bench: dict, dims: dict, C: dict) -> str:
     lid = LEDGER_ALIAS.get(e["id"], e["id"]); ex = C["ex"].get(lid); vals = e["values_by_policy"][DEFAULT_POLICY]; fl = e.get("floor")
-    return (f'<tr><td><a href="../entity/{esc(lid)}.html">{esc(e["name"])}</a><br><span style="color:var(--muted);font-size:12px">{esc(bench["types"][e["type"]])}, {esc(e["hq"])}</span></td>'
-        + f'<td>{esc(ROLE_LABEL.get(e["role"], e["role"]))}</td><td>{bandchip(e["band"])}</td>'
-        + "".join(f'<td class="num">{e["scores"][k] if e["scores"][k] is not None else "–"}</td>' for k in ("lab", "regulator", "public", "equal"))
-        + f'<td class="num">{e["coverage"]}/8</td><td>{(esc(dims[fl]["label"].lower()) + " " + str(vals[fl])) if fl else "none"}</td><td>{esc(e["confidence"])}</td><td class="num">{(str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else ""}</td><td>{esc(", ".join(e["domains"]))}</td></tr>')
+    sd = {k: ("" if e["scores"][k] is None else str(e["scores"][k])) for k in ("lab", "regulator", "public", "equal")}
+    cells = ["<tr>"]
+    cells.append('<td><a href="../entity/' + lid + '.html">' + esc(e["name"]) + "</a><br>" +
+                 '<span style="color:var(--muted);font-size:12px">' + esc(bench["types"][e["type"]]) + ", " + esc(e["hq"]) + "</span></td>")
+    cells.append("<td>" + esc(ROLE_LABEL.get(e["role"], e["role"])) + "</td><td>" + bandchip(e["band"]) + "</td>")
+    cells.append('<td class="num evscore" data-lab="' + sd["lab"] + '" data-regulator="' + sd["regulator"] +
+                 '" data-public="' + sd["public"] + '" data-equal="' + sd["equal"] + '">\u2013</td>')
+    cells.append('<td class="num">' + str(e["coverage"]) + "/8</td>")
+    cells.append("<td>" + ((esc(dims[fl]["label"].lower()) + " " + str(vals[fl])) if fl else "none") + "</td>")
+    cells.append("<td>" + esc(e["confidence"]) + "</td>")
+    cells.append('<td class="num">' + ((str(ex["confirmed_rows"]) + "/" + str(ex["inflow_rows"])) if ex else "") + "</td>")
+    cells.append("<td>" + esc(", ".join(e["domains"])) + "</td></tr>")
+    return "".join(cells)
+
+
+EV_SCORE_SCRIPT = r"""
+<script>
+(function(){
+  var preset = "lab";
+  var labels = {lab: "Lab procurement", regulator: "Regulator or auditor", public: "Public trust", equal: "Equal weights"};
+  document.querySelectorAll('#evscore-ctl [data-preset]').forEach(function(b){
+    b.addEventListener('click', function(){
+      preset = b.getAttribute('data-preset');
+      document.querySelectorAll('#evscore-ctl [data-preset]').forEach(function(x){
+        x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+      });
+      document.getElementById('evscore-btn').textContent = 'Score with these weights (' + labels[preset] + ')';
+    });
+  });
+  document.getElementById('evscore-btn').addEventListener('click', function(){
+    document.querySelectorAll('td.evscore').forEach(function(td){
+      var v = td.getAttribute('data-' + preset);
+      td.textContent = v === '' ? '–' : v;
+    });
+    document.querySelectorAll('th.evscore-h').forEach(function(th){
+      th.textContent = 'Score (' + labels[preset] + ')';
+    });
+    var note = document.getElementById('evscore-note');
+    if (note) note.textContent = 'Showing the weighted number under the ' + labels[preset] + ' preset. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.';
+  });
+})();
+</script>"""
 
 
 def evaluators_index(bench: dict, C: dict) -> str:
@@ -334,8 +372,16 @@ def evaluators_index(bench: dict, C: dict) -> str:
     watch = [e for e in bench["evaluators"] if e.get("status") == "watchlist"]
     outs = [e for e in bench["evaluators"] if e.get("status") == "out-of-scope"]
     key = lambda e: (BAND_ORDER[e["band"]], -(e["scores"]["lab"] if e["scores"]["lab"] is not None else -1), e["name"].lower())
-    head = "<tr><th>Evaluator</th><th>Role</th><th>Band</th><th>Lab</th><th>Regulator</th><th>Public</th><th>Equal</th><th>Evidenced</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
-    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations in three lists, scored on eight independence dimensions under the standard evidence policy (confirmed sources only). Band first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor; access and methods never set a band. Columns show the score under each weight preset, how many of the eight dimensions are evidenced, the weakest evidenced dimension, confidence, and how many ledger inflow rows are confirmed. Open a row for the derivation, the binding signals, the ledger, and the focused graph. Independence only; not quality, coverage, or competence.</p></div>"""
+    head = "<tr><th>Evaluator</th><th>Role</th><th>Band</th><th class=\"evscore-h\">Score</th><th>Evidenced</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
+    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations in three lists, scored on eight independence dimensions under the standard evidence policy (confirmed sources only). Band first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor; access and methods never set a band. The band, the coverage, the weakest evidenced dimension, and the eight dimension values show by default. The weighted number is hidden until you choose a preset and press the button: two readers with different presets will see different numbers, and both are right. Open a row for the derivation, the binding signals, the ledger, and the focused graph. Independence only; not quality, coverage, or competence.</p></div>
+    <div class="card" id="evscore-ctl"><h3>Score with a weight preset</h3><p style="font-size:13.5px;color:var(--muted)" id="evscore-note">The number is yours, so it is hidden until you choose weights. Pick a preset, then press the button to reveal the weighted number for every row.</p>
+    <div class="marks" role="group" aria-label="Weight presets" style="margin:8px 0">
+      <button class="linkbtn" data-preset="lab" aria-pressed="true">Lab procurement</button>
+      <button class="linkbtn" data-preset="regulator" aria-pressed="false">Regulator or auditor</button>
+      <button class="linkbtn" data-preset="public" aria-pressed="false">Public trust</button>
+      <button class="linkbtn" data-preset="equal" aria-pressed="false">Equal weights</button>
+      <button class="cta small" id="evscore-btn" style="margin-left:8px">Score with these weights (Lab procurement)</button>
+    </div></div>{EV_SCORE_SCRIPT}"""
     for g in GROUP_ORDER:
         rows = [_ev_row(e, bench, dims, C) for e in sorted((x for x in ranked if x.get("list_group") == g), key=key)]
         body += f"""<div class="pagehead" style="margin-top:20px"><h2>{esc(GROUP_LABEL[g])} <span class="gid">{len(rows)}</span></h2><p class="lead">{esc(GROUP_DESC[g])}</p></div><div class="card"><table class="tbl">{head}{''.join(rows)}</table></div>"""

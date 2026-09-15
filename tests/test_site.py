@@ -111,3 +111,12 @@ def test_every_page_carries_build_digest():
     for p in list((DIST).rglob("*.html")):
         html = p.read_text()
         assert d in html, f"build digest missing from {p.relative_to(DIST)}"
+
+def test_evaluators_page_hides_number_until_scored():
+    import re
+    html = (DIST / "evaluators" / "index.html").read_text()
+    cells = re.findall(r'<td class="num evscore"[^>]*>(.*?)</td>', html)
+    assert cells, "no score cells found"
+    assert all(c == "–" for c in cells), "a weighted number is visible before the reader chooses weights"
+    assert 'data-lab="' in html and 'id="evscore-btn"' in html
+    assert "Score with these weights" in html
