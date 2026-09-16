@@ -13,7 +13,9 @@
   "bound": {
    "floor": 3
   },
-  "rule": "R.5"
+  "rule": "R.5",
+  "quote": "In September 2026, we released our AI red teaming app as an open source software.",
+  "quote_source": "humane-int"
  },
  {
   "id": "humane.02",
@@ -47,7 +49,9 @@
   "bound": {
    "cap": 0
   },
-  "rule": "A.6"
+  "rule": "A.6",
+  "quote": "Humane Intelligence has run more than 30 red teaming, bias bounty, and contextual evaluations",
+  "quote_source": "humane-int"
  },
  {
   "id": "humane.04",
@@ -171,6 +175,6 @@
   "rule": "P.4",
   "quote": "Dr. Diego Garcia-Olano Senior Research Scientist, Meta",
   "quote_source": "humane-board",
-  "note": "An advisor employed by a lab caps at 2 regardless of recusal (P.4); a director hired from a lab without a cooling-off rule also caps at 2 (P.3; 'He was previously a member of OpenAI’s Human Data team'). Public roles only; the open question is a document request."
+  "note": "An advisor employed by a lab caps at 2 regardless of recusal (P.4); a director hired from a lab without a cooling-off rule also caps at 2 (P.3; 'He was previously a member of OpenAI\u2019s Human Data team'). Public roles only; the open question is a document request."
  }
 ]

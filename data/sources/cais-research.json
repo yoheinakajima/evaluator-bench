@@ -1,0 +1,11 @@
+{
+  "audit_status": "confirmed",
+  "id": "cais-research",
+  "note": "Research Projects page; benchmarks (AgentHarm, WMDP, MASK) evaluate leading LLMs; no privileged access claimed. Fetched 2026-09-15.",
+  "publisher": "Center for AI Safety",
+  "retrieved": "2026-09-15",
+  "source_type": "self",
+  "self_of": "cais",
+  "title": "Research Projects | CAIS",
+  "url": "https://safe.ai/research"
+}

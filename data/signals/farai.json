@@ -121,7 +121,8 @@
   "bound": {
    "cap": 2
   },
-  "rule": "P.3"
+  "rule": "P.3",
+  "note": "[span 2026-09-16] Span pending: longtermwiki FAR page would not load via text fetch; retry with a browser fetch. (Direction recorded as against.)"
  },
  {
   "id": "farai.08",
@@ -183,7 +184,7 @@
   "evaluator": "farai",
   "dimension": "S",
   "direction": "for",
-  "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.",
+  "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.",
   "sources": [
    "ted-864574"
   ],
@@ -193,7 +194,8 @@
   "bound": {
    "floor": 3
   },
-  "rule": "S.3"
+  "rule": "S.3",
+  "note": "[span 2026-09-16] EUR 1.43M and consortium confirmed by ted-864574-notice (repo-confirmed 2026-09-15, AUDIT-5); award-notice page would not load via text fetch; span pending."
  },
  {
   "id": "farai.12",

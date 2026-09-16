@@ -99,14 +99,17 @@
   "direction": "against",
   "claim": "Public-model access.",
   "sources": [
-   "cais"
+   "cais",
+   "cais-research"
   ],
   "recorded": "2026-09-14",
   "curator": "yohei/claude v0",
   "bound": {
    "cap": 0
   },
-  "rule": "A.6"
+  "rule": "A.6",
+  "quote": "We evaluate a range of leading LLMs",
+  "quote_source": "cais-research"
  },
  {
   "id": "cais.07",

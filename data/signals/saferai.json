@@ -67,7 +67,8 @@
   "bound": {
    "cap": 1
   },
-  "rule": "A.1"
+  "rule": "A.1",
+  "note": "[span 2026-09-16] Span pending: safer-ai.org homepage and About fetched; no affirmative sentence on pre-deployment access found; span pending."
  },
  {
   "claim": "Nonprofit.",
@@ -101,7 +102,9 @@
   "bound": {
    "floor": 2
   },
-  "rule": "P.6"
+  "rule": "P.6",
+  "quote": "We're hiring people who want to shape how AI is developed.",
+  "quote_source": "saferai"
  },
  {
   "claim": "Rating methodology published.",
@@ -117,7 +120,8 @@
   "bound": {
    "floor": 2
   },
-  "rule": "M.2"
+  "rule": "M.2",
+  "note": "[span 2026-09-16] Span pending: safer-ai.org fetched; company ratings confirmed public but no sentence states the methodology itself is published; span pending."
  },
  {
   "claim": "No commercial products.",
