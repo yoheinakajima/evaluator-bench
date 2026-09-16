@@ -53,6 +53,9 @@
     "summary": {
       "type": "string"
     },
+    "funding_tension": {
+      "type": "string"
+    },
     "what_would_move_the_score": {
       "type": "string"
     },
