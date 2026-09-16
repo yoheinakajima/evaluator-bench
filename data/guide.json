@@ -45,11 +45,11 @@
   ],
   [
    "Evidence policy",
-   "The rule for which signals count: leads included, standard (the default: at least one confirmed source), against interest, verified spans, primary only."
+   "The rule for which signals count: leads included, retrieved & confirmed (the default: at least one confirmed source), against interest, verified spans, primary only."
   ],
   [
    "Band",
-   "Independence has floors. An evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor; a 1 on one of those a conditional floor; otherwise clear. Access and methods never set a band. The number ranks within the band and is hidden until you choose weights."
+   "Independence has floors. An evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor; a 1 on one of those a conditional floor; otherwise no floor is triggered. Access and methods never set a band. The number ranks within the band and is hidden until you choose weights."
   ],
   [
    "Unevidenced",

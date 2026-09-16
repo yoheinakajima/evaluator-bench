@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Evaluator Bench: an evidence-linked directory of third-party evaluators for frontier AI, with an independence score you can take apart, an evidence policy you choose, and a ledger of who pays whom.">
-<title>Evaluator Bench: find and score third-party evaluators for frontier AI</title>
+<meta name="description" content="Evaluator Bench — the AI evaluator independence ledger: an evidence-linked directory of third-party evaluators for frontier AI, with an independence score you can take apart, an evidence policy you choose, and a ledger of who pays whom.">
+<title>Evaluator Bench — the AI evaluator independence ledger</title>
 <link rel="canonical" href="https://evaluatorbench.com/">
 <meta name="theme-color" content="#0F766E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Evaluator Bench">
-<meta property="og:title" content="Evaluator Bench: independence, scored">
-<meta property="og:description" content="Third-party evaluators of frontier AI, scored on independence from the labs they test. Every score traces to a signal and a source, under an evidence policy you choose.">
+<meta property="og:title" content="Evaluator Bench — the AI evaluator independence ledger">
+<meta property="og:description" content="Third-party evaluators of frontier AI, scored on six dimensions of structural independence plus two evaluation conditions. Every score traces to a signal and a source, under an evidence policy you choose.">
 <meta property="og:url" content="https://evaluatorbench.com/">
 <meta property="og:image" content="https://evaluatorbench.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Evaluator Bench: independence, scored">
-<meta name="twitter:description" content="Third-party evaluators of frontier AI, scored on independence from the labs they test, under an evidence policy you choose.">
+<meta name="twitter:title" content="Evaluator Bench — the AI evaluator independence ledger">
+<meta name="twitter:description" content="Third-party evaluators of frontier AI, scored on structural independence, under an evidence policy you choose.">
 <meta name="twitter:image" content="https://evaluatorbench.com/og.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F766E'/%3E%3Crect x='14' y='18' width='36' height='6' rx='2' fill='%23fff'/%3E%3Crect x='14' y='29' width='26' height='6' rx='2' fill='%23fff'/%3E%3Crect x='14' y='40' width='36' height='6' rx='2' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,7 +219,7 @@
   <div class="wrap hero" id="directory">
     <span class="stamp" id="stamp">Evidence current to 15 Sep 2026</span><span class="stamp warn" title="Independence is one axis. Competence, domain coverage, staffing, and turnaround are others.">Independence only. Not quality, coverage, or competence.</span>
     <h1>Independence, scored.</h1>
-    <p class="lede">Evaluators, government institutes, vendors and benchmarks, scored on independence from the labs they test. Every score is built from signals and ledger rows you can open, under an evidence policy you choose.</p>
+    <p class="lede">An open ledger of the organizations that evaluate frontier AI — who pays them, who governs them, and whether they can publish what they find. Six dimensions of structural independence, two evaluation conditions, every claim sourced and every score re-derivable.</p>
     <p class="note">Money is traced by <b>hops</b>: hop 0 is a lab; hop 1 is a lab investor, observer, board member, employee, or contractor; higher hops run through principals or funders. A score is a reading of the public record on a date. It is not an endorsement, and a low score is not an accusation.</p>
     <div class="byline" id="byline">Curated by <b>Yohei Nakajima</b>, managing partner at Untapped Capital. First draft by <b>Claude</b> (Anthropic); reviewed and criticized by Codex (OpenAI), Grok (xAI), Gemini (Google), and Muse; their review is recorded in paper/audits/ as part of the independence record, not as assurance of correctness.</div>
 
@@ -293,9 +293,9 @@
   <section class="alt read" id="howto">
     <div class="wrap">
       <h2>How to read this</h2>
-      <p><b>The band comes first.</b> An evidenced 0 on a conflict dimension, funding, governance, personnel, role incompatibility, scope, or publication, puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise it is clear. Clear means no disqualifying conflict is on file, not a pass. Access and methods count in the number but never set a band: a 0 there means the labs have not let the organization in, or it has not published its methods, not that it is compromised. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number.</p>
+      <p><b>The band comes first.</b> Six dimensions score structural independence: funding, governance, personnel, role incompatibility, scope, and publication. Two more, access depth and method transparency, record the evaluation conditions: they count in the number and never set a band, because deeper access is granted by the lab being evaluated. An evidenced 0 on a conflict dimension puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise <b>no floor is triggered</b> — no disqualifying conflict is on file, not a pass. Bands are qualified by evidence coverage: the fraction of dimensions evidenced (x/8) is shown with every scorecard, and a triggered-no-floor band on partial evidence says only that the evidence on file raised no floor.</p>
       <p><b>The number is yours, so it is hidden until you choose weights.</b> By default each row shows the band and the weakest evidenced dimension, neither of which depends on anyone's priorities. Press "Score with these weights" after picking a preset and the weighted number appears. Open a row to read the full card, derivation, dissent, and ledger on its entity page. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.</p>
-      <p><b>The evidence policy decides what counts.</b> Under the default, Standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible but count for nothing. Switch to Against interest and an organization's own statements count only when they are against its interest. Switch to Primary only and you see what can be verified from outside the field: not much, which is the finding.</p>
+      <p><b>The evidence policy decides what counts.</b> Under the default, Retrieved & confirmed, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible but count for nothing. Switch to Against interest and an organization's own statements count only when they are against its interest. Switch to Primary only and you see what can be verified from outside the field: not much, which is the finding.</p>
       <p><b>A dash is not a zero.</b> When no admissible signal sets a bound on a dimension, the card shows a dash and the score is computed over the dimensions that are evidenced, with the coverage count beside it. Silence earns nothing either way.</p>
       <p><b>Every value is derived, not typed.</b> Each signal names the anchor it supports and the rule in <a href="rubric/index.html">RULES.md</a> that says so. The value is the tightest cap, or, with no cap, the highest floor. Where a floor and a cap disagree, the card shows the conflict and the rule that resolved it. Open any row's entity page to read the derivation, the binding signal, and the quoted span.</p>
       <p><b>Independence is not competence.</b> A highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters beside the score, and read the dissent on each entity page: the strongest case that the weakest dimension should be one notch lower, and one notch higher.</p>
@@ -319,7 +319,7 @@
 
 <footer>
   <div class="wrap">
-    <span>Evaluator Bench, an open dataset built on ActiveGraph. Every score traces to signals and sources in the event log.</span>
+    <span>Evaluator Bench — the AI evaluator independence ledger, an open dataset built on ActiveGraph. Every score traces to signals and sources in the event log.</span>
     <span>Last review 15 Sep 2026 · build <!--__EVENT_DIGEST__--></span>
   </div>
 </footer>
@@ -418,12 +418,13 @@ function visible(){
     return true;
   });
 }
-function rowHTML({x:e,v,b},rank){
+function rowHTML({x:e,v,b,c},rank){
   const row=document.createElement("div"); row.className="row row-main";
+  const covNote = (b === "clear" && c < 8) ? " Partial evidence (" + c + "/8)." : "";
   row.innerHTML=`
       <span class="rank">${scored?rank:"&middot;"}</span>
       <span class="name">${esc(e.name)}<small>${ROLES[e.role]||""} &middot; ${TYPES[e.type]}, ${esc(e.hq)}</small></span>
-      <span class="bandcol"><span class="band ${b}" title="${esc(BANDS[b].desc)}">${BANDS[b].label}</span></span>
+      <span class="bandcol"><span class="band ${b}" title="${esc(BANDS[b].desc)}${esc(covNote)}">${BANDS[b].label}</span></span>
       <span class="floorcol">${floorOf(e)}</span>
       <span class="score">${scored?(v==null?"&ndash;":v):`<span class="scorenote">hidden: choose weights</span>`}</span>
       <a class="openlink" href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html">Open&nbsp;&rarr;</a>`;
@@ -442,7 +443,7 @@ function sortList(list){
   return list;
 }
 function renderRows(){
-  const items = visible().map(e=>({x:e, v:score(e), b:bandOf(vals(e))}));
+  const items = visible().map(e=>({x:e, v:score(e), b:bandOf(vals(e)), c:coverage(vals(e))}));
   const host=$("#groups"); host.innerHTML="";
   const groups = oneList ? [["all", {label:"All ranked organizations", desc:"One sorted list across referees, government institutes, and commercial or first-party teams. The three-list view is the default because the three are not comparable on a single sort."}]] : GROUP_ORDER.map(g=>[g, GROUPS[g]]);
   let any=false;
@@ -457,10 +458,10 @@ function renderRows(){
     host.appendChild(box);
   }
   if(!any) host.innerHTML=`<div class="ledger"><div class="empty">No evaluators match. Clear a filter or search a broader term.</div></div>`;
-  const wl = sortList(DATA.filter(e=>e.status==="watchlist").map(e=>({x:e, v:score(e), b:bandOf(vals(e))})));
+  const wl = sortList(DATA.filter(e=>e.status==="watchlist").map(e=>({x:e, v:score(e), b:bandOf(vals(e)), c:coverage(vals(e))})));
   const wh=$("#watchrows"); wh.innerHTML="";
   wl.forEach((t,i)=>wh.appendChild(rowHTML(t,"W"+(i+1))));
-  const ol = sortList(DATA.filter(e=>e.status==="out-of-scope").map(e=>({x:e, v:score(e), b:bandOf(vals(e))})));
+  const ol = sortList(DATA.filter(e=>e.status==="out-of-scope").map(e=>({x:e, v:score(e), b:bandOf(vals(e)), c:coverage(vals(e))})));
   const oh=$("#outrows"); oh.innerHTML="";
   ol.forEach((t,i)=>oh.appendChild(rowHTML(t,"O"+(i+1))));
 }

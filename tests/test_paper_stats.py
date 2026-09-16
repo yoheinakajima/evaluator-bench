@@ -63,7 +63,7 @@ def test_section_5_5_bands_match_paper():
     s = _stats()
     text = _paper()
     b = s["bands"]
-    assert (f"{b['clear']} of the {s['n_ranked']} ranked organizations are in the clear band, "
+    assert (f"{b['clear']} of the {s['n_ranked']} ranked organizations trigger no floor, "
             f"{b['conditional']} carry a conditional floor") in text
     assert f"and {b['disqualifying']} carry a disqualifying floor" in text
 

@@ -18,12 +18,12 @@ PROVENANCE_LABEL = {1: "tier 1 (filing/index)", 2: "tier 2 (ledger)", 3: "tier 3
 POLICIES = {
     "leads": {"label": "Leads included", "short": "everything",
               "desc": "Every signal that is not quarantined counts, including imported and unverifiable leads, which can support only a 2. For research, not for citation."},
-    "standard": {"label": "Standard", "short": "confirmed sources",
+    "standard": {"label": "Retrieved & confirmed", "short": "confirmed sources",
                  "desc": "A signal counts only if at least one cited source was re-fetched and confirmed. The default: no number moves on a source you cannot open and check."},
     "against_interest": {"label": "Against interest", "short": "no self-serving self-report",
-                         "desc": "Standard, and an organization's own statements count only when they are against its interest or backed by a non-self source."},
+                         "desc": "Retrieved & confirmed, and an organization's own statements count only when they are against its interest or backed by a non-self source."},
     "spans": {"label": "Verified spans", "short": "quoted spans only",
-              "desc": "Standard, and the signal carries a quoted span you can find on the page."},
+              "desc": "Retrieved & confirmed, and the signal carries a quoted span you can find on the page."},
     "primary": {"label": "Primary only", "short": "filings and indexes",
                 "desc": "Only confirmed filings, funder indexes, or third-party ledgers with a quoted span: what can be verified from outside the field."},
 }
