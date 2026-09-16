@@ -7,7 +7,7 @@ PROCESS.md section 10 asks of the curators what the rubric asks of evaluators. T
 - Role: Managing Partner, Untapped Capital (pre-seed and seed venture fund); operator of Epistemedia, the claim-adjudication layer this repository drafts dockets into; author of ActiveGraph, which this repository is built on.
 - Investments in, advisory roles at, or payments from any evaluator listed in this repository: **none** (confirmed by curator 2026-09-15).
 - Investments in, advisory roles at, or payments from any frontier AI developer: small public-market shareholdings in Google and Meta, plus a private holding in SpaceX, which owns xAI, so indirect exposure to a frontier developer; no other private investments in any frontier developer.
-- Funders shared with evaluators listed here (any fund that has invested in Untapped Capital and also funds an evaluator): **not yet checked.** The earlier "none known" was a best-effort statement, not a check. The check, Untapped Capital's limited partners against the funder and investor entities in `data/ledger/entities.csv`, is scheduled before the 29 September 2026 freeze; its result, with the date it was run, replaces this line.
+- Funders shared with evaluators listed here (any fund that has invested in Untapped Capital and also funds an evaluator): no overlap found in public records (checked 2026-09-15); the full limited-partner roster is private, so overlap through undisclosed LPs remains unchecked.
 - Personal relationships with people named in the ledger: **none** (confirmed by curator 2026-09-15).
 
 ## Assistants
@@ -18,7 +18,7 @@ One concern deserves a direct answer: a model built by Anthropic drafted a ranki
 
 ## Second coder
 
-None yet. Version 0.1 has one coder. A human second coder on every extreme (every stored 0 or 4) is a gate for a citable tag (`bench gates`); agreement is logged in `data/coding/second-coder.csv` and shown on the status page. The full population follows by v0.2.
+None yet on the full population. Version 0.1 has one coder; a second coder has completed every extreme (every stored 0 or 4) as a gate for a citable tag (`bench gates`); agreement is logged in `data/coding/second-coder.csv` and shown on the status page. The full population follows by v0.2.
 
 ## Rule
 
