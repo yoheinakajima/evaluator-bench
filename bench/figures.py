@@ -173,61 +173,86 @@ def exposure_matrix() -> str:
 GRAPH_ROLES = ("investor", "principal", "pays", "board", "employee", "observer", "founder", "advisor")
 
 
-def _trace_paths(focus, transfers, rels, kinds):
-    """Nodes and edges on shortest paths from ``focus`` to every lab and every evaluator.
+def _trace_paths(focus, transfers, rels, kinds, col):
+    """Nodes and edges on one-direction shortest paths from ``focus`` to every lab and every evaluator.
 
-    Undirected over the drawn money (transfer) and role edges: from any node
-    this is every chain a reader could follow to answer "how does this connect
-    to the labs / to the evaluators", however many hops each chain takes.
+    Chains to a lab move leftward across the graph (non-increasing column);
+    chains to an evaluator move rightward (non-decreasing column). A chain
+    never reverses direction mid-way, so the highlighted lines flow one way
+    instead of zigzagging back and forth across the columns.
     """
     from collections import deque
     pairs = [(t["from"], t["to"]) for t in transfers]
     pairs += [(r["subject"], r["object"]) for r in rels]
-    adj = {}
+    nodes = set()
     for a, b in pairs:
-        adj.setdefault(a, set()).add(b)
-        adj.setdefault(b, set()).add(a)
-    def bfs(sources):
-        dist = {}
-        q = deque()
-        for s in sources:
-            if s not in dist:
-                dist[s] = 0
-                q.append(s)
-        while q:
-            u = q.popleft()
-            for w in adj.get(u, ()):
-                if w not in dist:
-                    dist[w] = dist[u] + 1
-                    q.append(w)
-        return dist
-    d1 = bfs([focus])
-    keep_n = {focus}
-    keep_e = set()
-    targets = [n for n in adj if kinds.get(n) in ("lab", "evaluator")]
-    for t in targets:
-        D = d1.get(t)
-        if D is None:
-            continue
-        d2 = bfs([t])
-        for v in adj:
-            if v in d1 and v in d2 and d1[v] + d2[v] == D:
-                keep_n.add(v)
+        nodes.add(a); nodes.add(b)
+
+    def oriented(leftward):
+        """Directed moves that keep the column monotonic: non-increasing when
+        tracing toward labs, non-decreasing when tracing toward evaluators."""
+        moves = []
         for a, b in pairs:
-            if (a in d1 and b in d2 and d1[a] + 1 + d2[b] == D) or \
-               (b in d1 and a in d2 and d1[b] + 1 + d2[a] == D):
-                keep_e.add(frozenset((a, b)))
-    return keep_n, keep_e
+            ca, cb = col.get(a, 4), col.get(b, 4)
+            if leftward:
+                if cb <= ca: moves.append((a, b))
+                if ca <= cb: moves.append((b, a))
+            else:
+                if cb >= ca: moves.append((a, b))
+                if ca >= cb: moves.append((b, a))
+        return moves
+
+    def trace(moves, targets):
+        adj, radj = {}, {}
+        for a, b in moves:
+            adj.setdefault(a, set()).add(b)
+            radj.setdefault(b, set()).add(a)
+        def bfs(g, sources):
+            dist = {}
+            q = deque()
+            for s in sources:
+                if s not in dist:
+                    dist[s] = 0
+                    q.append(s)
+            while q:
+                u = q.popleft()
+                for w in g.get(u, ()):
+                    if w not in dist:
+                        dist[w] = dist[u] + 1
+                        q.append(w)
+            return dist
+        d1 = bfs(adj, [focus])
+        keep_n = {focus}
+        keep_e = set()
+        for t in targets:
+            D = d1.get(t)
+            if D is None:
+                continue
+            d2 = bfs(radj, [t])
+            for v in d1:
+                if v in d2 and d1[v] + d2[v] == D:
+                    keep_n.add(v)
+            for a, b in moves:
+                if a in d1 and b in d2 and d1[a] + 1 + d2[b] == D:
+                    keep_e.add(frozenset((a, b)))
+        return keep_n, keep_e
+
+    labs = sorted(n for n in nodes if kinds.get(n) == "lab")
+    evaluators = sorted(n for n in nodes if kinds.get(n) == "evaluator")
+    n1, e1 = trace(oriented(leftward=True), labs)
+    n2, e2 = trace(oriented(leftward=False), evaluators)
+    return n1 | n2, e1 | e2
 
 
 def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
     """Figure 6: entities placed by distance from a lab, with money and role edges.
 
     With ``focus`` set, the focused node and the nodes and edges on its
-    shortest paths to every lab and every evaluator are drawn at full opacity and
-    everything else is faded, which is the state the hover interaction produces
-    on the site. Nodes carry data-node and data-kind, edges carry data-from
-    and data-to, so a few lines of script can do the same live.
+    one-direction shortest paths to every lab and every evaluator are drawn at
+    full opacity and everything else is faded, which is the state the hover
+    interaction produces on the site. Nodes carry data-node, data-kind and
+    data-col, edges carry data-from and data-to, so a few lines of script can
+    do the same live.
     """
     from .ledger import load_ledger, distances
     L = L or load_ledger(); E = L["entities"]; d = distances(L)
@@ -249,7 +274,7 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" class="fundgraph" viewBox="0 0 {w} {h}" {FONT} font-size="11">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">{_esc(title)}</text>',
-         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to trace all its paths to the labs and evaluators; hover a line for the row. Every element is a row in data/ledger/.</text>']
+         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to trace its chains to the labs and evaluators — each chain runs one way across the columns, never doubling back; hover a line for the row. Every element is a row in data/ledger/.</text>']
     for c, names in cols.items():
         x = pad + c * cw
         o.append(f'<text x="{x}" y="{top - 12}" fill="{INK}" font-weight="600">{labels[c]}</text>')
@@ -257,10 +282,11 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
             y = top + i * rh; pos[e] = (x, y)
     def nm(e): return E[e]["name"][:30]
     kinds = {e: E[e]["kind"] for e in pos}
+    colmap = {e: col(e) for e in pos}
     transfers_drawn = [t for t in L["transfers"] if t["from"] in pos and t["to"] in pos]
     rels_drawn = [r for r in L["relationships"] if r["subject"] in pos and r["object"] in pos and r["role"] in GRAPH_ROLES]
     if focus:
-        keep_n, keep_e = _trace_paths(focus, transfers_drawn, rels_drawn, kinds)
+        keep_n, keep_e = _trace_paths(focus, transfers_drawn, rels_drawn, kinds, colmap)
     else:
         keep_n, keep_e = set(), set()
     def nfade(e): return "" if (not focus or e in keep_n) else ' opacity="0.12"'
@@ -281,6 +307,6 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
         dd = d.get(e); k = E[e]["kind"]
         tip = f"{E[e]['name']}: {k}; distance {'unattributed' if dd is None else int(dd)} from a lab. {E[e].get('notes','')}"
         ring = f'<rect x="{x - 4}" y="{y - 13}" width="{min(len(nm(e)) * 6 + 10, cw - 10)}" height="17" fill="none" stroke="{INK}" stroke-width="1.2" rx="3"/>' if e == focus else ""
-        o.append(f'<g class="node" data-node="{e}" data-tip="{_esc(tip)}" data-kind="{k}"{nfade(e)} style="cursor:pointer"><rect x="{x - 2}" y="{y - 12}" width="{min(len(nm(e)) * 6 + 6, cw - 14)}" height="15" fill="{PAPER}"/>{ring}<a href="/entity/{e}.html"><text x="{x}" y="{y}" fill="{"#9B2C2C" if k == "lab" else INK}" font-weight="{"600" if k in ("lab", "evaluator") or e == focus else "400"}">{_esc(nm(e))}</text></a></g>')
+        o.append(f'<g class="node" data-node="{e}" data-tip="{_esc(tip)}" data-kind="{k}" data-col="{colmap[e]}"{nfade(e)} style="cursor:pointer"><rect x="{x - 2}" y="{y - 12}" width="{min(len(nm(e)) * 6 + 6, cw - 14)}" height="15" fill="{PAPER}"/>{ring}<a href="/entity/{e}.html"><text x="{x}" y="{y}" fill="{"#9B2C2C" if k == "lab" else INK}" font-weight="{"600" if k in ("lab", "evaluator") or e == focus else "400"}">{_esc(nm(e))}</text></a></g>')
     o.append('</svg>')
     return "\n".join(o)

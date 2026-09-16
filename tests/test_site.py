@@ -20,13 +20,43 @@ def test_focus_traces_paths_to_lab_and_evaluator():
     def faded(html, eid):
         i = html.index(f'data-node="{eid}"')
         return 'opacity="0.12"' in html[i:html.index(">", i)]
-    # nodes on a shortest path to a lab or an evaluator stay bright:
-    # coefficient -> apollo (evaluator); coefficient -> epoch -> anthropic (lab);
-    # coefficient -> moskovitz -> anthropic (lab); coefficient -> palisade (evaluator)
-    for eid in ("coefficient", "apollo", "epoch", "anthropic", "moskovitz", "palisade"):
+    def edge_faded(html, a, b):
+        tag = f'<path class="edge" data-from="{a}" data-to="{b}"'
+        i = html.find(tag)
+        if i < 0:
+            tag = f'<path class="edge" data-from="{b}" data-to="{a}"'
+            i = html.find(tag)
+        assert i >= 0, (a, b)
+        return 'opacity="0.08"' in html[i:html.index(">", i)]
+    # nodes on a one-direction shortest path to a lab or an evaluator stay bright:
+    # coefficient -> apollo (evaluator); coefficient -> epoch (evaluator);
+    # coefficient -> moskovitz -> anthropic (lab, leftward only);
+    # coefficient -> palisade (evaluator); coefficient -> arc/longview -> metr (evaluator)
+    for eid in ("coefficient", "apollo", "epoch", "anthropic", "moskovitz", "palisade", "metr"):
         assert not faded(s, eid), eid
-    # a node on no shortest path from the focus is faded
+    # a node on no one-direction shortest path from the focus is faded
     assert faded(s, "tallinn")
+
+def test_focus_chains_never_double_back():
+    # the zigzag that reached labs through the evaluator column must be gone:
+    # openai/google/xai are reachable from coefficient only by going right to
+    # epoch and then back left, so they fade, and the anthropic->epoch edge
+    # that carried the doubling-back fades with them; the legitimate one-way
+    # lab chain (coefficient -> moskovitz -> anthropic) stays bright.
+    s = funding_graph(focus="coefficient")
+    def faded(html, eid):
+        i = html.index(f'data-node="{eid}"')
+        return 'opacity="0.12"' in html[i:html.index(">", i)]
+    def edge_faded(html, a, b):
+        tag = f'<path class="edge" data-from="{a}" data-to="{b}"'
+        i = html.find(tag)
+        assert i >= 0, (a, b)
+        return 'opacity="0.08"' in html[i:html.index(">", i)]
+    for eid in ("openai", "google", "xai"):
+        assert faded(s, eid), eid
+    assert edge_faded(s, "anthropic", "epoch")
+    assert not faded(s, "moskovitz")
+    assert not edge_faded(s, "moskovitz", "anthropic")
 
 def test_lab_focus_shows_hopped_assessor_paths():
     s = funding_graph(focus="anthropic")
@@ -34,8 +64,9 @@ def test_lab_focus_shows_hopped_assessor_paths():
     def faded(html, eid):
         i = html.index(f'data-node="{eid}"')
         return 'opacity="0.12"' in html[i:html.index(">", i)]
-    # hopped connections stay bright: anthropic -> tallinn -> redwood (2 hops),
-    # anthropic -> epoch -> coefficient -> palisade (3 hops)
+    # hopped connections stay bright, each chain running one way across the
+    # columns: anthropic -> tallinn -> redwood (2 hops),
+    # anthropic -> moskovitz -> coefficient -> palisade (3 hops)
     for eid in ("anthropic", "tallinn", "redwood", "epoch", "coefficient", "palisade"):
         assert not faded(s, eid), eid
     assert faded(s, "schmidt")
