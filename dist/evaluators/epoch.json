@@ -1,0 +1,1655 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/epoch.html"
+ },
+ "evaluator": {
+  "id": "epoch",
+  "name": "Epoch AI",
+  "type": "nonprofit",
+  "hq": "Remote",
+  "domains": [
+   "benchmarks"
+  ],
+  "confidence": "high",
+  "summary": "Capability-tracking and benchmark nonprofit; the FrontierMath episode is the canonical undisclosed-funding case.",
+  "what_would_move_the_score": "A standing rule against confidential lab funding of any evaluation asset.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Funding should be 1. OpenAI commissioned and owns FrontierMath, the asset Epoch's reputation rests on, and held approval over disclosing that fact for a year. OpenAI, Google DeepMind, xAI and Anthropic are all paying clients, the revenue split is undisclosed, and Epoch invests in AI stocks. 'Every major lab' as clients with an undisclosed share reads as F.5's material lab revenue, not F.3's occasional fee.",
+   "higher": "Funding should be 3. Coefficient's $25.1M over eight grants dwarfs client fees, and Epoch discloses every donation above $70,000 and every client by name and year. It charges at least consultant rates so labs do not get subsidised work, keeps a 50-problem holdout OpenAI cannot see, and publishes evaluations of every lab's models on the same benchmark, including results OpenAI did not commission."
+  },
+  "list_group": "referee",
+  "status": "out-of-scope",
+  "graph_id": "evaluator#266",
+  "values": {
+   "F": 2,
+   "G": 2,
+   "P": 2,
+   "A": 1,
+   "S": 3,
+   "R": 2,
+   "M": 3,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 2
+   },
+   "standard": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 2
+   },
+   "spans": {
+    "F": 2,
+    "G": 2,
+    "P": null,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": null,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "anchor": 2,
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0-final",
+    "dimension": "F",
+    "evaluator": "epoch",
+    "rationale": "Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (contract row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.",
+    "signals": [
+     "epoch.01",
+     "epoch.05",
+     "epoch.11",
+     "epoch.13",
+     "epoch.15"
+    ],
+    "value": 2,
+    "resolution": {
+     "rule": "F.3",
+     "value": 2,
+     "note": "F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6."
+    },
+    "graph_id": "assessment#705",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "epoch.01",
+       "epoch.11",
+       "epoch.13"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "epoch.01",
+       "epoch.11",
+       "epoch.13"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "epoch.01",
+       "epoch.11",
+       "epoch.13"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": [
+       "epoch.15"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "epoch.01",
+       "epoch.11",
+       "epoch.13"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.01",
+       "epoch.05",
+       "epoch.11",
+       "epoch.13",
+       "epoch.15"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from epoch.05 (F.6) against cap 2 from epoch.01, epoch.11, epoch.13 (F.3, F.3, F.3); resolved at 2 by F.3: F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6.",
+    "rationale_leads": "Conflict: floor 3 from epoch.05 (F.6) against cap 2 from epoch.01, epoch.11, epoch.13 (F.3, F.3, F.3); resolved at 2 by F.3: F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6."
+   },
+   "G": {
+    "anchor": 2,
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "dimension": "G",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.06"
+    ],
+    "value": 2,
+    "graph_id": "assessment#706",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "epoch.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "epoch.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "epoch.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "epoch.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by epoch.06 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by epoch.06 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "anchor": 2,
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "dimension": "P",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.09"
+    ],
+    "value": 2,
+    "graph_id": "assessment#707",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "epoch.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "epoch.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "epoch.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.09"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.09"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by epoch.09 (P.6): No lab roles found.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by epoch.09 (P.6): No lab roles found.. No admissible signal caps it."
+   },
+   "A": {
+    "anchor": 1,
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "dimension": "A",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.07",
+     "epoch.18"
+    ],
+    "value": 1,
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#708",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "epoch.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "epoch.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "epoch.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "epoch.18"
+      ]
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "epoch.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.07",
+       "epoch.18"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by epoch.07 (A.1): Cannot share the commissioned set with other labs without OpenAI's permission.. Floors up to 1 from epoch.18 do not exceed the cap.",
+    "rationale_leads": "Capped at 1 by epoch.07 (A.1): Cannot share the commissioned set with other labs without OpenAI's permission.. Floors up to 1 from epoch.18 do not exceed the cap."
+   },
+   "S": {
+    "anchor": 3,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "S",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.08",
+     "epoch.17"
+    ],
+    "value": 3,
+    "graph_id": "assessment#709",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "epoch.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "epoch.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "epoch.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "epoch.08"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "epoch.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.08",
+       "epoch.17"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by epoch.17 (S.6): FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.. Floors up to 3 from epoch.08 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by epoch.17 (S.6): FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.. Floors up to 3 from epoch.08 do not exceed the cap."
+   },
+   "R": {
+    "anchor": 2,
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "dimension": "R",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.02",
+     "epoch.03"
+    ],
+    "value": 2,
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#710",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "epoch.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "epoch.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "epoch.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "epoch.03"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "epoch.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.02",
+       "epoch.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by epoch.02 (R.2): Contributors were not told the funder; disclosure came after the fact.. Floors up to 2 from epoch.03 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by epoch.02 (R.2): Contributors were not told the funder; disclosure came after the fact.. Floors up to 2 from epoch.03 do not exceed the cap."
+   },
+   "M": {
+    "anchor": 3,
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "dimension": "M",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.04"
+    ],
+    "value": 3,
+    "graph_id": "assessment#711",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "epoch.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "epoch.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "epoch.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.04"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by epoch.04 (M.1): Rigorous public data on compute, training runs and capability trends.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by epoch.04 (M.1): Rigorous public data on compute, training runs and capability trends.. No admissible signal caps it."
+   },
+   "X": {
+    "anchor": 2,
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "dimension": "X",
+    "evaluator": "epoch",
+    "signals": [
+     "epoch.10",
+     "epoch.14",
+     "epoch.16"
+    ],
+    "value": 2,
+    "open_questions": [
+     "Which AI stocks Epoch holds and whether they include developers it evaluates."
+    ],
+    "resolution": {
+     "rule": "X.3",
+     "value": 2,
+     "note": "epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page."
+    },
+    "graph_id": "assessment#712",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "epoch.16"
+      ],
+      "h": true,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "epoch.16"
+      ],
+      "h": true,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "epoch.16"
+      ],
+      "h": true,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "epoch.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "epoch.10"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "epoch.10",
+       "epoch.14",
+       "epoch.16"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from epoch.10 (X.7) against cap 2 from epoch.16 (X.3); resolved at 2 by X.3: epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page.",
+    "rationale_leads": "Conflict: floor 3 from epoch.10 (X.7) against cap 2 from epoch.16 (X.3); resolved at 2 by X.3: epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page."
+   }
+  },
+  "signals": [
+   {
+    "id": "epoch.01",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "OpenAI commissioned and owns most of FrontierMath and had the problems and solutions; a contract barred disclosing this until the o3 launch.",
+    "sources": [
+     "epoch-clarify",
+     "decoder-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.3",
+    "quote_source": "epoch-clarify",
+    "graph_id": "signal#368",
+    "source_graph_ids": [
+     "source#80",
+     "source#72"
+    ]
+   },
+   {
+    "id": "epoch.02",
+    "evaluator": "epoch",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Contributors were not told the funder; disclosure came after the fact.",
+    "sources": [
+     "techcrunch-epoch",
+     "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.2",
+    "quote": "Per our agreement, we needed OpenAI’s permission before publicly disclosing their involvement",
+    "quote_source": "epoch-clarify",
+    "graph_id": "signal#369",
+    "source_graph_ids": [
+     "source#224",
+     "source#80"
+    ]
+   },
+   {
+    "id": "epoch.03",
+    "evaluator": "epoch",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "After the disclosure failure, created a 50-problem holdout OpenAI cannot see.",
+    "sources": [
+     "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.1",
+    "quote": "We are finalizing a 50-problem set for which OpenAI will only receive the problem statements and not the solutions",
+    "quote_source": "epoch-clarify",
+    "graph_id": "signal#370",
+    "source_graph_ids": [
+     "source#80"
+    ]
+   },
+   {
+    "id": "epoch.04",
+    "evaluator": "epoch",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Rigorous public data on compute, training runs and capability trends.",
+    "sources": [
+     "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "graph_id": "signal#371",
+    "source_graph_ids": [
+     "source#224"
+    ]
+   },
+   {
+    "id": "epoch.05",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Primarily philanthropically funded (Open Philanthropy).",
+    "sources": [
+     "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.6",
+    "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+    "quote_source": "techcrunch-epoch",
+    "graph_id": "signal#372",
+    "source_graph_ids": [
+     "source#224"
+    ]
+   },
+   {
+    "id": "epoch.06",
+    "evaluator": "epoch",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+     "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "Epoch AI, a nonprofit primarily funded by Open Philanthropy",
+    "quote_source": "techcrunch-epoch",
+    "graph_id": "signal#373",
+    "source_graph_ids": [
+     "source#224"
+    ]
+   },
+   {
+    "id": "epoch.07",
+    "evaluator": "epoch",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Cannot share the commissioned set with other labs without OpenAI's permission.",
+    "sources": [
+     "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "A.1",
+    "quote": "we cannot share the questions and answers with other parties without written permission from OpenAI",
+    "quote_source": "epoch-clarify",
+    "graph_id": "signal#374",
+    "source_graph_ids": [
+     "source#80"
+    ]
+   },
+   {
+    "id": "epoch.08",
+    "evaluator": "epoch",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Evaluates any model on FrontierMath at its discretion.",
+    "sources": [
+     "epoch-clarify"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "Epoch AI is free to conduct and publish evaluations of any models using the FrontierMath problem set",
+    "quote_source": "epoch-clarify",
+    "graph_id": "signal#375",
+    "source_graph_ids": [
+     "source#80"
+    ]
+   },
+   {
+    "id": "epoch.09",
+    "evaluator": "epoch",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab roles found.",
+    "sources": [
+     "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "graph_id": "signal#376",
+    "source_graph_ids": [
+     "source#224"
+    ]
+   },
+   {
+    "id": "epoch.10",
+    "evaluator": "epoch",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "techcrunch-epoch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "graph_id": "signal#377",
+    "source_graph_ids": [
+     "source#224"
+    ]
+   },
+   {
+    "id": "epoch.11",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Transparency page lists Google DeepMind and OpenAI as paying consultation clients and a $600K Tallinn DAF gift; Coefficient grants of about $24.5M per index.",
+    "sources": [
+     "epoch-transparency",
+     "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.3",
+    "quote": "Google DeepMind 2026 Evaluating the AI co-mathematician on FrontierMath 2025 Model Evaluations",
+    "quote_source": "epoch-transparency",
+    "graph_id": "signal#378",
+    "source_graph_ids": [
+     "source#84",
+     "source#64"
+    ]
+   },
+   {
+    "id": "epoch.12",
+    "evaluator": "epoch",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes a transparency page listing donations above $70K and paying clients.",
+    "sources": [
+     "epoch-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": null,
+    "rule": "M.2",
+    "bound_note": "Informational: a funding-transparency page is not evidence about method transparency; no M anchor or rule maps it. Recommend re-dimensioning to F (for) where the disclosure counts toward anchor 4's 'disclosed'.",
+    "quote": "Here, we list only donations of $70,000 USD or more",
+    "quote_source": "epoch-transparency",
+    "graph_id": "signal#379",
+    "source_graph_ids": [
+     "source#84"
+    ]
+   },
+   {
+    "id": "epoch.13",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Transparency page lists eight Coefficient grants (largest $8,500,000 in April 2025; about $25M cumulative), a $600,000 Tallinn DAF gift, $195,000 from SFF, and paying clients including OpenAI, Google DeepMind, xAI, an Anthropic pilot, the EU AI Office, Sequoia Capital Global Equities and Bridgewater.",
+    "sources": [
+     "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.3",
+    "quote": "xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark",
+    "quote_source": "epoch-transparency-page",
+    "graph_id": "signal#380",
+    "source_graph_ids": [
+     "source#83"
+    ]
+   },
+   {
+    "id": "epoch.14",
+    "evaluator": "epoch",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Epoch states it invests part of its funds in semiconductor and AI stocks as part of a diversified portfolio.",
+    "sources": [
+     "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2026",
+    "quote": "We invest part of our funds in semiconductor and AI stocks as part of a diversified portfolio",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "X.5",
+    "quote_source": "epoch-transparency-page",
+    "graph_id": "signal#381",
+    "source_graph_ids": [
+     "source#83"
+    ]
+   },
+   {
+    "id": "epoch.15",
+    "evaluator": "epoch",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Epoch says it charges lab and industry clients at least industry-consultant rates so it is not subsidising their work, and commits to disclosing sponsorship and data-access agreements; its eight Coefficient grants sum to $25.1M by its own list.",
+    "sources": [
+     "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0-final",
+    "as_of": "2026",
+    "quote": "We aim to charge prices at least on par with industry consultants",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "F.3",
+    "quote_source": "epoch-transparency-page",
+    "graph_id": "signal#382",
+    "source_graph_ids": [
+     "source#83"
+    ]
+   },
+   {
+    "id": "epoch.16",
+    "evaluator": "epoch",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Epoch's transparency page lists paid consultation and evaluation work for OpenAI (2024 to 2026), Google DeepMind (2024 to 2026), xAI (2025) and an Anthropic pilot (2024).",
+    "sources": [
+     "epoch-transparency-page"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.3",
+    "quote": "OpenAI 2026 FrontierMath Data Audit",
+    "quote_source": "epoch-transparency-page",
+    "note": "Paid consultation clients listed on a transparency page count (X.3). Also on the page: 'xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark'. Derived X is 2, not the stored 3.",
+    "graph_id": "signal#383",
+    "source_graph_ids": [
+     "source#83"
+    ]
+   },
+   {
+    "id": "epoch.17",
+    "evaluator": "epoch",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.",
+    "sources": [
+     "epoch-clarify"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.6",
+    "quote": "OpenAI commissioned Epoch AI to produce 300 advanced math problems for AI evaluation",
+    "quote_source": "epoch-clarify",
+    "note": "A lab-commissioned evaluation asset used to evaluate that lab is co-production in the sense of S.6 (cap 3). Not binding today (floor is 3) but rule-required.",
+    "graph_id": "signal#384",
+    "source_graph_ids": [
+     "source#80"
+    ]
+   },
+   {
+    "id": "epoch.18",
+    "evaluator": "epoch",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Epoch reports pre-release access to evaluate GPT-5.4 (March 2026) and Meta's Muse Spark on FrontierMath.",
+    "sources": [
+     "epoch-gpt54-frontiermath",
+     "epoch-musespark-x"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "A.1",
+    "quote": "We had pre-release access to evaluate the model",
+    "quote_source": "epoch-gpt54-frontiermath",
+    "note": "Deepest documented engagement is pre-release API access; no safeguards-off, extended-window, or weights-level access is documented, so anchor 1 (A.1).",
+    "graph_id": "signal#385",
+    "source_graph_ids": [
+     "source#81",
+     "source#82"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 51,
+   "regulator": 53,
+   "public": 53,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 51,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      51,
+      51
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 51,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      51,
+      51
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 51,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      51,
+      51
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 49,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      40,
+      59
+     ]
+    },
+    "regulator": {
+     "score": 50,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      40,
+      60
+     ]
+    },
+    "public": {
+     "score": 52,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      41,
+      61
+     ]
+    },
+    "equal": {
+     "score": 50,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      38,
+      63
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 56,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "clear",
+     "base": 51
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "clear",
+     "base": 51
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "clear",
+     "base": 53
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "decoder-epoch": {
+   "audit_status": "confirmed",
+   "id": "decoder-epoch",
+   "note": "Agreement prevented revealing support until o3 announcement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: epoch.01 — needs curator review [verify 2026-09-15 grok-pass] Full slug .../openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/. Confirms OpenAI funded FrontierMath (paper thanks OpenAI); no amount.",
+   "published": "2025-01-19",
+   "publisher": "The Decoder",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "OpenAI quietly funded independent math benchmark",
+   "url": "https://the-decoder.com/openai-quietly-funded-independent-math-benchmark-before-setting-record-with-o3/",
+   "press_kind": "primary"
+  },
+  "epoch-clarify": {
+   "audit_status": "confirmed",
+   "id": "epoch-clarify",
+   "note": "OpenAI commissioned 300 problems, owns them, has statements and solutions except 50-problem holdout; contractor communication gap. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2025-01-23",
+   "publisher": "Epoch AI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Clarifying the creation and use of the FrontierMath benchmark",
+   "url": "https://epoch.ai/latest/openai-and-frontiermath",
+   "self_of": "epoch"
+  },
+  "epoch-gpt54-frontiermath": {
+   "id": "epoch-gpt54-frontiermath",
+   "title": "GPT-5.4 set a new record on FrontierMath",
+   "publisher": "Epoch AI (Substack)",
+   "url": "https://epochai.substack.com/p/gpt-54-set-a-new-record-on-frontiermath",
+   "published": "2026-03-05",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "States 'We had pre-release access to evaluate the model' and that FrontierMath was funded by OpenAI. Fetched 2026-09-15; span present.",
+   "self_of": "epoch"
+  },
+  "epoch-musespark-x": {
+   "id": "epoch-musespark-x",
+   "title": "Epoch AI on X: pre-release access to Meta's Muse Spark",
+   "publisher": "Epoch AI (X)",
+   "url": "https://x.com/EpochAIResearch/status/2041947954202988757",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "'We had pre-release access to Meta’s new Muse Spark model and evaluated it on FrontierMath.' Fetched 2026-09-15; span present.",
+   "self_of": "epoch"
+  },
+  "epoch-transparency": {
+   "audit_status": "confirmed",
+   "id": "epoch-transparency",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV03",
+   "note": "Donations above $70K listed; Google DeepMind and OpenAI as paying consultation clients; Tallinn DAF $600K. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "Epoch AI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Transparency",
+   "url": "https://epoch.ai/about/transparency",
+   "self_of": "epoch"
+  },
+  "epoch-transparency-page": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "epoch-transparency-page",
+   "note": "Re-read in full 2026-09-15. Funders above $70K: Coefficient (8 grants, $25,113,611 total), SFF $195,000 (May 2026), Girish Sastry $100,000, Tallinn $600,000 DAF, Aschenbrenner $200,000 via Manifund, Govindaiah $400,000 DAF, Schmidt Sciences (FrontierMath Open Problems pilot), Sentinel Bio $165,000, Shulman $100,000. Clients: Bridgewater AIA Labs, EU AI Office, Google DeepMind (2024-2026), OpenAI (2024-2026), ARIA, AI Index, Blitzy, EPRI, METR, Sequoia Capital Global Equities, UK DSIT, xAI (2025), Anthropic (2024 pilot). States it invests part of its funds in semiconductor and AI stocks and charges at least industry-consultant rates.",
+   "published": "2026",
+   "publisher": "Epoch AI",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Transparency",
+   "url": "https://epoch.ai/about/transparency",
+   "self_of": "epoch"
+  },
+  "techcrunch-epoch": {
+   "audit_status": "confirmed",
+   "id": "techcrunch-epoch",
+   "note": "Primarily Open Philanthropy funded; disclosure timing. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-01-19",
+   "publisher": "TechCrunch",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "AI benchmarking organization criticized for waiting to disclose funding from OpenAI",
+   "url": "https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai",
+   "press_kind": "primary"
+  }
+ }
+}

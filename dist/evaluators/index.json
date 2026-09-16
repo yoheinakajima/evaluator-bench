@@ -1,0 +1,249 @@
+{
+ "built_at": "2026-09-15T00:00:00Z",
+ "count": 27,
+ "evaluators": [
+  {
+   "slug": "andon",
+   "name": "Andon Labs",
+   "type": "vc",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/andon.json",
+   "page_url": "entity/andon.html"
+  },
+  {
+   "slug": "apollo",
+   "name": "Apollo Research",
+   "type": "pbc",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/apollo.json",
+   "page_url": "entity/apollo.html"
+  },
+  {
+   "slug": "averi",
+   "name": "AVERI",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/averi.json",
+   "page_url": "entity/averi.html"
+  },
+  {
+   "slug": "cais",
+   "name": "Center for AI Safety",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/cais.json",
+   "page_url": "entity/cais.html"
+  },
+  {
+   "slug": "caisi",
+   "name": "US CAISI (NIST)",
+   "type": "gov",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/caisi.json",
+   "page_url": "entity/caisi.html"
+  },
+  {
+   "slug": "dreadnode",
+   "name": "Dreadnode",
+   "type": "vc",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/dreadnode.json",
+   "page_url": "entity/dreadnode.html"
+  },
+  {
+   "slug": "epoch",
+   "name": "Epoch AI",
+   "type": "nonprofit",
+   "status": "out-of-scope",
+   "band": "clear",
+   "json_url": "evaluators/epoch.json",
+   "page_url": "entity/epoch.html"
+  },
+  {
+   "slug": "equistamp",
+   "name": "EquiStamp",
+   "type": "private",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/equistamp.json",
+   "page_url": "entity/equistamp.html"
+  },
+  {
+   "slug": "euaio",
+   "name": "EU AI Office",
+   "type": "gov",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/euaio.json",
+   "page_url": "entity/euaio.html"
+  },
+  {
+   "slug": "far-ai",
+   "name": "FAR.AI",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/far-ai.json",
+   "page_url": "entity/far-ai.html"
+  },
+  {
+   "slug": "gray-swan",
+   "name": "Gray Swan",
+   "type": "vc",
+   "status": "ranked",
+   "band": "disqualifying",
+   "json_url": "evaluators/gray-swan.json",
+   "page_url": "entity/gray-swan.html"
+  },
+  {
+   "slug": "hal",
+   "name": "Holistic Agent Leaderboard (Princeton)",
+   "type": "academic",
+   "status": "out-of-scope",
+   "band": "clear",
+   "json_url": "evaluators/hal.json",
+   "page_url": "entity/hal.html"
+  },
+  {
+   "slug": "hfoai",
+   "name": "Hugging Face Open Alignment Initiative",
+   "type": "vc",
+   "status": "watchlist",
+   "band": "disqualifying",
+   "json_url": "evaluators/hfoai.json",
+   "page_url": "entity/hfoai.html"
+  },
+  {
+   "slug": "humane",
+   "name": "Humane Intelligence",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/humane.json",
+   "page_url": "entity/humane.html"
+  },
+  {
+   "slug": "irregular",
+   "name": "Irregular (formerly Pattern Labs)",
+   "type": "vc",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/irregular.json",
+   "page_url": "entity/irregular.html"
+  },
+  {
+   "slug": "metr",
+   "name": "METR",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/metr.json",
+   "page_url": "entity/metr.html"
+  },
+  {
+   "slug": "mlcommons",
+   "name": "MLCommons (AILuminate)",
+   "type": "consortium",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/mlcommons.json",
+   "page_url": "entity/mlcommons.html"
+  },
+  {
+   "slug": "msft",
+   "name": "Microsoft AI Red Team",
+   "type": "bigtech",
+   "status": "ranked",
+   "band": "disqualifying",
+   "json_url": "evaluators/msft.json",
+   "page_url": "entity/msft.html"
+  },
+  {
+   "slug": "nemesys",
+   "name": "Nemesys Insights",
+   "type": "private",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/nemesys.json",
+   "page_url": "entity/nemesys.html"
+  },
+  {
+   "slug": "palisade",
+   "name": "Palisade Research",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/palisade.json",
+   "page_url": "entity/palisade.html"
+  },
+  {
+   "slug": "rand",
+   "name": "RAND",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/rand.json",
+   "page_url": "entity/rand.html"
+  },
+  {
+   "slug": "redwood",
+   "name": "Redwood Research",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/redwood.json",
+   "page_url": "entity/redwood.html"
+  },
+  {
+   "slug": "saferai",
+   "name": "SaferAI",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/saferai.json",
+   "page_url": "entity/saferai.html"
+  },
+  {
+   "slug": "scale",
+   "name": "Scale AI (SEAL / Scale Labs)",
+   "type": "vc",
+   "status": "ranked",
+   "band": "disqualifying",
+   "json_url": "evaluators/scale.json",
+   "page_url": "entity/scale.html"
+  },
+  {
+   "slug": "securebio",
+   "name": "SecureBio",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "conditional",
+   "json_url": "evaluators/securebio.json",
+   "page_url": "entity/securebio.html"
+  },
+  {
+   "slug": "transluce",
+   "name": "Transluce",
+   "type": "nonprofit",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/transluce.json",
+   "page_url": "entity/transluce.html"
+  },
+  {
+   "slug": "ukaisi",
+   "name": "UK AI Security Institute",
+   "type": "gov",
+   "status": "ranked",
+   "band": "clear",
+   "json_url": "evaluators/ukaisi.json",
+   "page_url": "entity/ukaisi.html"
+  }
+ ]
+}

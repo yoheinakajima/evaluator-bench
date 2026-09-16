@@ -1,0 +1,1656 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/palisade.html"
+ },
+ "evaluator": {
+  "id": "palisade",
+  "name": "Palisade Research",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+   "cyber",
+   "autonomy",
+   "scheming"
+  ],
+  "confidence": "med",
+  "summary": "Independent capability-elicitation research on released models: shutdown resistance, self-replication, offensive cyber.",
+  "what_would_move_the_score": "Pre-release access on published terms would raise the access score without touching the others.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Access should be 0. Every published Palisade study (shutdown resistance, specification gaming, self-replication, Badllama) ran on released models through public APIs or open weights; no system card names Palisade as a pre-release tester and no engagement with a lab is on record. 'Little' pre-deployment access, with none documented, is anchor 0, and the 1 rests only on the claim's wording.",
+   "higher": "Access should be 2. Palisade's work is cited by Anthropic's CEO and briefed to Congress, and labs have responded to its findings; if any developer supplied early checkpoints or extended API windows for the shutdown or hacking studies, that is anchor 2. The record says 'little', not none, and a single documented pre-release run with extended time would move it."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#279",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 1,
+   "S": 3,
+   "R": 4,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 4,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 4,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": 2,
+    "A": 1,
+    "S": null,
+    "R": 4,
+    "M": null,
+    "X": 3
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 4,
+    "M": 3,
+    "X": 3
+   },
+   "primary": {
+    "F": 3,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 3
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "palisade",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "palisade.01",
+     "palisade.09",
+     "palisade.11",
+     "palisade.13",
+     "palisade.14"
+    ],
+    "rationale": "Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Request to Palisade Research: the Form 990 Schedule B or a donor list naming contributors above $5,000 for 2024 and 2025, and any policy on accepting money from AI developers.",
+     "Request to Coefficient Giving: the grant pages for the two Palisade Research general-support grants ($1,680,000 June 2024; $2,123,463 May 2025) so the $2,123,463 figure can be verified against the superseded $3,803,463 index total."
+    ],
+    "graph_id": "assessment#809",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "palisade.09",
+       "palisade.11",
+       "palisade.13",
+       "palisade.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "palisade.09",
+       "palisade.13",
+       "palisade.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.11"
+      ]
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "palisade.09",
+       "palisade.13",
+       "palisade.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.11"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "palisade.13",
+       "palisade.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.09",
+       "palisade.11"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "palisade.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.09",
+       "palisade.11",
+       "palisade.13"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by palisade.09 (F.6): About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.; capped at 3 by palisade.13 (F.6): SFF recommended $1,133,000 to Palisade in 2025 (plus a $928,000 matching pledge); SFF's funder Jaan Tallinn led Anthropic's Series A.; capped at 3 by palisade.14 (F.6): Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.. Floors up to 3 from palisade.01 do not exceed the cap. Not counted under this policy: palisade.11 (no confirmed source (imported, unaudited)).",
+    "rationale_leads": "Capped at 3 by palisade.09 (F.6): About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.; capped at 3 by palisade.11 (F.6): Coefficient Giving's database records two grants totaling $2,123,463 for general support; the imported index total of $3,803,463 is marked differs pending reconciliation.; capped at 3 by palisade.13 (F.6): SFF recommended $1,133,000 to Palisade in 2025 (plus a $928,000 matching pledge); SFF's funder Jaan Tallinn led Anthropic's Series A.; capped at 3 by palisade.14 (F.6): Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.. Floors up to 3 from palisade.01 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "palisade",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "palisade.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#810",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "palisade.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "palisade.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.06"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "palisade.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by palisade.06 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by palisade.06 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "palisade",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "palisade.07",
+     "palisade.10"
+    ],
+    "rationale": "Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. Provisional readings are open to public correction through the contribution path.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "open_questions": [
+     "Request to Palisade Research: a written statement of any cooling-off or recusal rule for staff formerly employed by evaluated developers, and the start and end dates of the executive director's Anthropic employment as published on the about page."
+    ],
+    "graph_id": "assessment#811",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "palisade.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "palisade.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "palisade.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.07"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "palisade.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.07"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.07",
+       "palisade.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by palisade.10 (P.3): Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.. Floors up to 2 from palisade.07 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by palisade.10 (P.3): Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.. Floors up to 2 from palisade.07 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "palisade",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "palisade.05"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#812",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "palisade.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "palisade.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "palisade.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "palisade.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by palisade.05 (A.1): Little pre-deployment access; most work is on released models..",
+    "rationale_leads": "Capped at 1 by palisade.05 (A.1): Little pre-deployment access; most work is on released models.."
+   },
+   "S": {
+    "evaluator": "palisade",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "palisade.02"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#813",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "palisade.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "palisade.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.02"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "palisade.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.02"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by palisade.02 (S.5): Sets its own questions and publishes without lab review.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by palisade.02 (S.5): Sets its own questions and publishes without lab review.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "palisade",
+    "dimension": "R",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "palisade.03"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#814",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "palisade.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "palisade.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "palisade.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "palisade.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by palisade.03 (R.5): Publishes findings unwelcome to labs, including shutdown resistance and self-replication.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by palisade.03 (R.5): Publishes findings unwelcome to labs, including shutdown resistance and self-replication.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "palisade",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "palisade.04"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#815",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "palisade.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "palisade.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.04"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "palisade.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "palisade.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by palisade.04 (M.1): Publishes code and transcripts.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by palisade.04 (M.1): Publishes code and transcripts.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "palisade",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "palisade.08",
+     "palisade.12"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#816",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "palisade.12"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "palisade.12"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "palisade.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.08"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "palisade.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.08"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "palisade.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "palisade.08"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by palisade.12 (X.7): Palisade's FY2024 Form 990 reports $344,829 (10.7% of revenue) from program services; the counterparty is not disclosed.. Floors up to 3 from palisade.08 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by palisade.12 (X.7): Palisade's FY2024 Form 990 reports $344,829 (10.7% of revenue) from program services; the counterparty is not disclosed.. Floors up to 3 from palisade.08 do not exceed the cap."
+   }
+  },
+  "signals": [
+   {
+    "id": "palisade.01",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Philanthropically funded; no lab contracts found.",
+    "sources": [
+     "palisade",
+     "propublica-palisade-990",
+     "palisade-donate"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.11",
+    "quote": "Contributions $2,887,428 89.3%",
+    "quote_source": "propublica-palisade-990",
+    "graph_id": "signal#540",
+    "source_graph_ids": [
+     "source#184",
+     "source#193",
+     "source#181"
+    ]
+   },
+   {
+    "id": "palisade.02",
+    "evaluator": "palisade",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own questions and publishes without lab review.",
+    "sources": [
+     "palisade",
+     "palisade-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "So Jeffrey assembled a team to investigate emerging AI behavior and strategic capabilities.",
+    "quote_source": "palisade-about",
+    "graph_id": "signal#541",
+    "source_graph_ids": [
+     "source#184",
+     "source#180"
+    ]
+   },
+   {
+    "id": "palisade.03",
+    "evaluator": "palisade",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes findings unwelcome to labs, including shutdown resistance and self-replication.",
+    "sources": [
+     "palisade",
+     "computerworld-palisade-shutdown",
+     "techrepublic-palisade-shutdown"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "R.5",
+    "quote": "the first time AI models have been observed preventing themselves from being shut down despite explicit instructions",
+    "quote_source": "palisade",
+    "graph_id": "signal#542",
+    "source_graph_ids": [
+     "source#184",
+     "source#67",
+     "source#228"
+    ]
+   },
+   {
+    "id": "palisade.04",
+    "evaluator": "palisade",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes code and transcripts.",
+    "sources": [
+     "palisade",
+     "palisade-shutdown",
+     "palisade-selfrep"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "View Published Paper Code Access Paper",
+    "quote_source": "palisade-shutdown",
+    "graph_id": "signal#543",
+    "source_graph_ids": [
+     "source#184",
+     "source#183",
+     "source#182"
+    ]
+   },
+   {
+    "id": "palisade.05",
+    "evaluator": "palisade",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Little pre-deployment access; most work is on released models.",
+    "sources": [
+     "palisade",
+     "palisade-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "A.1",
+    "quote": "As the companies shipped model after model, Palisade kept finding what researchers had been warning about for years",
+    "quote_source": "palisade-about",
+    "graph_id": "signal#544",
+    "source_graph_ids": [
+     "source#184",
+     "source#180"
+    ]
+   },
+   {
+    "id": "palisade.06",
+    "evaluator": "palisade",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+     "palisade",
+     "palisade-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "Palisade Research is a nonprofit based in Berkeley, California",
+    "quote_source": "palisade-about",
+    "graph_id": "signal#545",
+    "source_graph_ids": [
+     "source#184",
+     "source#180"
+    ]
+   },
+   {
+    "id": "palisade.07",
+    "evaluator": "palisade",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab board roles found.",
+    "sources": [
+     "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "graph_id": "signal#546",
+    "source_graph_ids": [
+     "source#184"
+    ]
+   },
+   {
+    "id": "palisade.08",
+    "evaluator": "palisade",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "palisade"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "graph_id": "signal#547",
+    "source_graph_ids": [
+     "source#184"
+    ]
+   },
+   {
+    "id": "palisade.09",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.",
+    "sources": [
+     "coefficient-index",
+     "metr-money-figure"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.3",
+    "as_of": "2026-09-11",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "note": "[span 2026-09-16] Span pending: OP archive URLs would not load via text fetch; ledger rows T75 ($2,123,463) and T91 ($1,680,000), both confirmed, back the $3.8M figure; retry with a browser fetch.",
+    "graph_id": "signal#548",
+    "source_graph_ids": [
+     "source#64",
+     "source#139"
+    ]
+   },
+   {
+    "id": "palisade.10",
+    "evaluator": "palisade",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.",
+    "sources": [
+     "evaluators-ledger",
+     "palisade-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.3",
+    "quote": "In 2022, Jeffrey was helping to build out the security team at Anthropic",
+    "quote_source": "palisade-about",
+    "graph_id": "signal#549",
+    "source_graph_ids": [
+     "source#96",
+     "source#180"
+    ]
+   },
+   {
+    "id": "palisade.11",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient Giving's database records two grants totaling $2,123,463 for general support; the imported index total of $3,803,463 is marked differs pending reconciliation.",
+    "sources": [
+     "op-palisade",
+     "evaluators-ledger"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "$2,123,463 2025-05",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote_source": "evaluators-ledger",
+    "graph_id": "signal#550",
+    "source_graph_ids": [
+     "source#166",
+     "source#96"
+    ]
+   },
+   {
+    "id": "palisade.12",
+    "evaluator": "palisade",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Palisade's FY2024 Form 990 reports $344,829 (10.7% of revenue) from program services; the counterparty is not disclosed.",
+    "sources": [
+     "propublica-palisade-990"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "X.7",
+    "quote": "Program Services $344,829 10.7%",
+    "quote_source": "propublica-palisade-990",
+    "note": "Rule gap: no X rule covers undisclosed program-service revenue. By anchor text a bounded 'no commercial products' (4) is not established while service revenue exists, so the cap is 3 pending a document request naming the counterparty; X.1 would cap at 2 only if the services were sold into the evaluated ecosystem.",
+    "graph_id": "signal#551",
+    "source_graph_ids": [
+     "source#193"
+    ]
+   },
+   {
+    "id": "palisade.13",
+    "evaluator": "palisade",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "SFF recommended $1,133,000 to Palisade in 2025 (plus a $928,000 matching pledge); SFF's funder Jaan Tallinn led Anthropic's Series A.",
+    "sources": [
+     "sff-2025",
+     "anthropic-series-a"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Palisade Research Main: $477,000 Freedom: $441,000 Fairness: $0 Mean: $216,000 $1,133,000",
+    "quote_source": "sff-2025",
+    "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger row T66 records the transfer; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'.",
+    "graph_id": "signal#552",
+    "source_graph_ids": [
+     "source#223",
+     "source#31"
+    ]
+   },
+   {
+    "evaluator": "palisade",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "palisade.14",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.",
+    "sources": [
+     "op-palisade-2024",
+     "op-palisade-2025",
+     "wayback-cdx-op-grants-p"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Open Philanthropy recommended two grants totaling $2,123,463 to Palisade Research for general support.",
+    "quote_source": "op-palisade-2025",
+    "graph_id": "signal#553",
+    "source_graph_ids": [
+     "source#164",
+     "source#165",
+     "source#256"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 64,
+   "regulator": 64,
+   "public": 70,
+   "equal": 66
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "regulator": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "public": {
+     "score": 70,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      70,
+      70
+     ]
+    },
+    "equal": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "regulator": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "public": {
+     "score": 70,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      70,
+      70
+     ]
+    },
+    "equal": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 62,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      41,
+      74
+     ]
+    },
+    "regulator": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      36,
+      76
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      51,
+      81
+     ]
+    },
+    "equal": {
+     "score": 65,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      41,
+      78
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "regulator": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "public": {
+     "score": 70,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      70,
+      70
+     ]
+    },
+    "equal": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      17,
+      94
+     ]
+    },
+    "regulator": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      11,
+      96
+     ]
+    },
+    "public": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      23,
+      93
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      19,
+      94
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 67,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 69,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 68,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 65,
+     "band": "clear",
+     "base": 64
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 68,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 69,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 64,
+     "band": "clear",
+     "base": 64
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 74,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 74,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 71,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 73,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 71,
+     "band": "clear",
+     "base": 70
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 71,
+     "band": "clear",
+     "base": 70
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    }
+   ]
+  }
+ },
+ "sources": {
+  "anthropic-series-a": {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it.",
+   "self_of": "anthropic"
+  },
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "computerworld-palisade-shutdown": {
+   "id": "computerworld-palisade-shutdown",
+   "title": "OpenAI's Skynet moment: Models defy human commands, actively resist orders to shut down",
+   "publisher": "Computerworld",
+   "url": "https://www.computerworld.com/article/3999190/openais-skynet-moment-models-defy-human-commands-actively-resist-orders-to-shut-down.html",
+   "published": "2025-05",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Reports Palisade's finding that o3 sabotaged the shutdown mechanism in 7 of 100 runs under explicit instruction. Fetched 2026-09-15; span present.",
+   "press_kind": "primary"
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "metr-money-figure": {
+   "audit_status": "confirmed",
+   "capture": "git clone --depth 1, commit f64df65a16400fd88a77536111851695acc9a928",
+   "discovered_via": "https://x.com/kevinnbass/status/2099621874279817638",
+   "id": "metr-money-figure",
+   "note": "Third-party investigative ledger: 150 money-flow rows, 990 e-file object ids, SFF and Tallinn ledgers, DAF Schedule I rows, Wayback captures, four internal audits with per-row verdicts. Its own audit flags overclaims in the rendered figure's legend and 'Direct: $0' wording. Treated here as leads, not findings. Cloned at commit f64df65a1640 on 2026-09-14. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-14",
+   "publisher": "Kevin Bass (GitHub)",
+   "retrieved": "2026-09-15",
+   "source_type": "ledger",
+   "title": "metr-money-figure research ledger and audits",
+   "url": "https://github.com/kevinnbass/metr-money-figure/tree/master"
+  },
+  "op-palisade": {
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "op-palisade",
+   "note": "Two grants totaling $2,123,463 to Palisade Research for general support (per the grants database). [verify 2026-09-15] fetched 2026-09-15; page reachable BUT quoted span(s) not found: palisade.11 — needs curator review [verify 2026-09-15] reachable BUT span(s) not found: palisade.11 — needs curator review",
+   "published": "2025",
+   "publisher": "Open Philanthropy / Coefficient Giving",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "title": "Palisade Research grants",
+   "url": "https://www.openphilanthropy.org/grants/"
+  },
+  "op-palisade-2024": {
+   "id": "op-palisade-2024",
+   "title": "Palisade Research — General Support (Wayback capture 2024-08-05 of the Open Philanthropy grant page)",
+   "publisher": "Open Philanthropy via Internet Archive",
+   "url": "https://web.archive.org/web/20240805094803/https://www.openphilanthropy.org/grants/palisade-research-general-support/",
+   "published": "2024-06",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Amount $1,680,000; award date June 2024; general support; amount updated August 2024. Live coefficientgiving.org slug 404 in the 2026-08-30 capture."
+  },
+  "op-palisade-2025": {
+   "id": "op-palisade-2025",
+   "title": "Palisade Research — General Support (2025) (Wayback capture 2025-10-05 of the Open Philanthropy grant page)",
+   "publisher": "Open Philanthropy via Internet Archive",
+   "url": "https://web.archive.org/web/20251005184735/https://www.openphilanthropy.org/grants/palisade-research-general-support-2025/",
+   "published": "2025-05",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Amount $2,123,463; award date May 2025; 'two grants totaling'; follows the June 2024 support."
+  },
+  "palisade": {
+   "audit_status": "confirmed",
+   "id": "palisade",
+   "note": "Shutdown resistance, self-replication, offensive cyber studies on released models. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "Palisade Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Palisade Research",
+   "url": "https://palisaderesearch.org/",
+   "self_of": "palisade"
+  },
+  "palisade-about": {
+   "id": "palisade-about",
+   "title": "About Palisade Research",
+   "publisher": "Palisade Research",
+   "url": "https://palisaderesearch.org/about",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Nonprofit based in Berkeley; founder helped build Anthropic's security team in 2022; team and two board members listed. Fetched 2026-09-15; spans present.",
+   "self_of": "palisade"
+  },
+  "palisade-donate": {
+   "id": "palisade-donate",
+   "title": "Donate | Palisade Research",
+   "publisher": "Palisade Research",
+   "url": "https://palisaderesearch.org/donate",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "'We're a 501(c)(3) nonprofit, so your donation is tax-deductible.' Fetched 2026-09-15; span present.",
+   "self_of": "palisade"
+  },
+  "palisade-selfrep": {
+   "id": "palisade-selfrep",
+   "title": "Language Models Can Autonomously Hack and Self-Replicate",
+   "publisher": "Palisade Research",
+   "url": "https://palisaderesearch.org/research/self-replication",
+   "published": "2026-05-07",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Research page linking paper and code. Fetched 2026-09-15; span present.",
+   "self_of": "palisade"
+  },
+  "palisade-shutdown": {
+   "id": "palisade-shutdown",
+   "title": "Shutdown resistance in reasoning models",
+   "publisher": "Palisade Research",
+   "url": "https://palisaderesearch.org/research/shutdown-resistance",
+   "published": "2025-07-05",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Research page linking paper and code; o3 sabotaged the shutdown mechanism in 79/100 initial runs. Fetched 2026-09-15; span present.",
+   "self_of": "palisade"
+  },
+  "propublica-palisade-990": {
+   "id": "propublica-palisade-990",
+   "title": "Palisade Research Inc, Form 990 FY2024 (Nonprofit Explorer)",
+   "publisher": "ProPublica",
+   "url": "https://projects.propublica.org/nonprofits/organizations/931591014",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "EIN 93-1591014, 501(c)(3), Dover DE. FY ending Dec 2024: revenue $3,232,257; contributions $2,887,428 (89.3%); program services $344,829 (10.7%). Fetched 2026-09-15; spans present."
+  },
+  "sff-2025": {
+   "id": "sff-2025",
+   "title": "SFF-2025 S-Process Recommendations Announcement",
+   "publisher": "Survival and Flourishing Fund",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "Funder Jaan Tallinn; $34.33M recommended; METR $548,000; Palisade $1,133,000; FAR AI $919,000; SaferAI $311,000; SecureBio $754,000; RAND TASP $1,022,000; CAIS $289,000.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "sff"
+  },
+  "techrepublic-palisade-shutdown": {
+   "id": "techrepublic-palisade-shutdown",
+   "title": "These AI Models From OpenAI Defy Shutdown Commands, Sabotage Scripts",
+   "publisher": "TechRepublic",
+   "url": "https://www.techrepublic.com/article/news-openai-models-defy-shutdown-commands/",
+   "published": "2025-05",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Quotes Palisade: three OpenAI models sabotaged the shutdown script at least once; Claude, Gemini and Grok complied. Fetched 2026-09-15; span present.",
+   "press_kind": "primary"
+  },
+  "wayback-cdx-op-grants-p": {
+   "id": "wayback-cdx-op-grants-p",
+   "title": "Wayback CDX index of openphilanthropy.org/grants/p* (status 200, one row per URL)",
+   "publisher": "Internet Archive",
+   "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/p*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "126 distinct 'p' slugs; both Palisade pages present; no pattern-labs slug. The 'i' query (101 slugs) has no irregular slug. CDX for openphilanthropy.org/grants/?organization-name=pattern-labs returns no capture."
+  }
+ }
+}

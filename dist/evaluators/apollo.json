@@ -1,0 +1,1822 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/apollo.html"
+ },
+ "evaluator": {
+  "id": "apollo",
+  "name": "Apollo Research",
+  "type": "pbc",
+  "hq": "London, UK / San Francisco, US",
+  "domains": [
+   "scheming",
+   "autonomy",
+   "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Scheming and deception specialist; ran evaluations for every major lab; converted to a public benefit corporation in January 2026.",
+  "what_would_move_the_score": "Disclose revenue concentration by client and separate the product business from the evaluation practice.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Funding could be 1. Apollo asks the parties it evaluates to pay fair market value, says it ran evaluations for all major labs in 2025, and publishes no revenue split; its 2024 self-report named only about $2M of philanthropy, and its 2026 seed round included Macroscopic Ventures, an Anthropic Series A and B investor. If lab fees are the principal revenue, F.5 caps at 1, and a material lab-investor stake would cap at 1 under F.4.",
+   "higher": "Funding could be 3. Apollo's norms bar outcome-contingent pay and side grants or investments from evaluated labs; the PBC post says it remains partly philanthropy-supported, and the index records about $4.4M from Coefficient and $1.1M from SFF. A published cap holding lab revenue at or below 10% of annual revenue, with market rates and publication rights, would lift the F.3 cap to 3, the anchor for mostly philanthropic money with some lab-linked pooled funds."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#261",
+  "values": {
+   "F": 2,
+   "G": 2,
+   "P": 2,
+   "A": 2,
+   "S": 3,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 2,
+    "G": 2,
+    "P": null,
+    "A": null,
+    "S": 3,
+    "R": null,
+    "M": null,
+    "X": 2
+   },
+   "spans": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": 3,
+    "G": 3,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "apollo",
+    "dimension": "F",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.02",
+     "apollo.11",
+     "apollo.12",
+     "apollo.15",
+     "apollo.16",
+     "apollo.17"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Reconcile the self-reported $1.5M with the index total of $4.41M by date."
+    ],
+    "graph_id": "assessment#665",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.02",
+       "apollo.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.02",
+       "apollo.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.11"
+      ]
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "apollo.02",
+       "apollo.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.11",
+       "apollo.12"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.02",
+       "apollo.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.11"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "apollo.16",
+       "apollo.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.02",
+       "apollo.11",
+       "apollo.12",
+       "apollo.15"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by apollo.02 (F.3): Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.; capped at 2 by apollo.15 (F.4): Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.. Floors up to 2 from apollo.12 do not exceed the cap. Not counted under this policy: apollo.11 (no confirmed source (imported)).",
+    "rationale_leads": "Capped at 2 by apollo.02 (F.3): Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.; capped at 2 by apollo.15 (F.4): Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.. Floors up to 2 from apollo.12 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "apollo",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.01",
+     "apollo.03",
+     "apollo.10",
+     "apollo.13",
+     "apollo.14",
+     "apollo.18"
+    ],
+    "rationale": "Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Round size and Macroscopic's share.",
+     "Who holds the mission seats."
+    ],
+    "graph_id": "assessment#666",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.03",
+       "apollo.10",
+       "apollo.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.03",
+       "apollo.10",
+       "apollo.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "apollo.03",
+       "apollo.10",
+       "apollo.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.01",
+       "apollo.13"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.03",
+       "apollo.10",
+       "apollo.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "apollo.18"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "apollo.01",
+       "apollo.03",
+       "apollo.10",
+       "apollo.13",
+       "apollo.14"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by apollo.03 (G.2): Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.; capped at 2 by apollo.10 (G.3): January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.; capped at 2 by apollo.14 (G.3): Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.. Floors up to 2 from apollo.01, apollo.13 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by apollo.03 (G.2): Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.; capped at 2 by apollo.10 (G.3): January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.; capped at 2 by apollo.14 (G.3): Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.. Floors up to 2 from apollo.01, apollo.13 do not exceed the cap."
+   },
+   "P": {
+    "evaluator": "apollo",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#667",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.05"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by apollo.05 (P.5): Recusal rule for any individual with a financial interest in an evaluated organization.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by apollo.05 (P.5): Recusal rule for any individual with a financial interest in an evaluated organization.. No admissible signal caps it."
+   },
+   "A": {
+    "evaluator": "apollo",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#668",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.06"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by apollo.06 (A.1): Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by apollo.06 (A.1): Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "apollo",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "apollo.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#669",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "apollo.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "apollo.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "apollo.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "apollo.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by apollo.07 (S.6): Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator..",
+    "rationale_leads": "Capped at 3 by apollo.07 (S.6): Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator.."
+   },
+   "R": {
+    "evaluator": "apollo",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "unknown",
+    "graph_id": "assessment#670",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.04"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by apollo.04 (R.7): Record of adverse findings published, including in-context scheming and evaluation awareness.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by apollo.04 (R.7): Record of adverse findings published, including in-context scheming and evaluation awareness.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "apollo",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.09"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#671",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.09"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.09"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by apollo.09 (M.2): Publishes evaluation methodology and papers; differential publishing policy documented.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by apollo.09 (M.2): Publishes evaluation methodology and papers; differential publishing policy documented.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "apollo",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "apollo.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#672",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "apollo.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "apollo.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "apollo.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "apollo.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "apollo.08"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by apollo.08 (X.1): Sells Watcher, a monitoring product, into the ecosystem it evaluates..",
+    "rationale_leads": "Capped at 2 by apollo.08 (X.1): Sells Watcher, a monitoring product, into the ecosystem it evaluates.."
+   }
+  },
+  "signals": [
+   {
+    "id": "apollo.01",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Published four-rule COI policy: no outcome-contingent pay, no side grants or investments from evaluated labs, recusal for financial interests, no misrepresentation.",
+    "sources": [
+     "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "We do not accept work where compensation is contingent upon the outcome",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.2",
+    "quote_source": "apollo-norms",
+    "graph_id": "signal#298",
+    "source_graph_ids": [
+     "source#35"
+    ]
+   },
+   {
+    "id": "apollo.02",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.",
+    "sources": [
+     "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.3",
+    "quote": "we generally request that the parties for whom we conduct work compensate us at a fair market value for the work",
+    "quote_source": "apollo-norms",
+    "graph_id": "signal#299",
+    "source_graph_ids": [
+     "source#35"
+    ]
+   },
+   {
+    "id": "apollo.03",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.",
+    "sources": [
+     "apollo-pbc"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "G.2",
+    "quote": "Apollo is spinning off from our fiscal sponsor into a Public Benefit Corporation (PBC)",
+    "quote_source": "apollo-pbc",
+    "graph_id": "signal#300",
+    "source_graph_ids": [
+     "source#38"
+    ]
+   },
+   {
+    "id": "apollo.04",
+    "evaluator": "apollo",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Record of adverse findings published, including in-context scheming and evaluation awareness.",
+    "sources": [
+     "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "published the first evidence that frontier models can scheme in context",
+    "quote_source": "apollo-about",
+    "graph_id": "signal#301",
+    "source_graph_ids": [
+     "source#32"
+    ]
+   },
+   {
+    "id": "apollo.05",
+    "evaluator": "apollo",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Recusal rule for any individual with a financial interest in an evaluated organization.",
+    "sources": [
+     "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.5",
+    "quote": "We recuse any individual who is considered to have a financial interest in an organization we are evaluating",
+    "quote_source": "apollo-norms",
+    "graph_id": "signal#302",
+    "source_graph_ids": [
+     "source#35"
+    ]
+   },
+   {
+    "id": "apollo.06",
+    "evaluator": "apollo",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.",
+    "sources": [
+     "apollo-about",
+     "apollo-first-year"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "A.1",
+    "quote": "partnered with OpenAI to test their o1 model before public deployment",
+    "quote_source": "apollo-about",
+    "graph_id": "signal#303",
+    "source_graph_ids": [
+     "source#32",
+     "source#33"
+    ]
+   },
+   {
+    "id": "apollo.07",
+    "evaluator": "apollo",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator.",
+    "sources": [
+     "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.6",
+    "quote": "partnered with OpenAI to study anti-scheming interventions on frontier models",
+    "quote_source": "apollo-about",
+    "graph_id": "signal#304",
+    "source_graph_ids": [
+     "source#32"
+    ]
+   },
+   {
+    "id": "apollo.08",
+    "evaluator": "apollo",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells Watcher, a monitoring product, into the ecosystem it evaluates.",
+    "sources": [
+     "apollo-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1",
+    "quote": "building an AI security tool to monitor frontier AI agents",
+    "quote_source": "apollo-about",
+    "graph_id": "signal#305",
+    "source_graph_ids": [
+     "source#32"
+    ]
+   },
+   {
+    "id": "apollo.09",
+    "evaluator": "apollo",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes evaluation methodology and papers; differential publishing policy documented.",
+    "sources": [
+     "apollo-norms"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "We engage in differential publishing",
+    "quote_source": "apollo-norms",
+    "graph_id": "signal#306",
+    "source_graph_ids": [
+     "source#35"
+    ]
+   },
+   {
+    "id": "apollo.10",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.",
+    "sources": [
+     "apollo-pbc-round"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "raised a Seed round led by 50Y",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "G.3",
+    "quote_source": "apollo-pbc-round",
+    "graph_id": "signal#307",
+    "source_graph_ids": [
+     "source#37"
+    ]
+   },
+   {
+    "id": "apollo.11",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "SFF recommendations of about $1.1M and Coefficient grants of about $4.4M per the index snapshot; both funders are one to two steps from an Anthropic investor.",
+    "sources": [
+     "evaluators-ledger",
+     "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "graph_id": "signal#308",
+    "source_graph_ids": [
+     "source#96",
+     "source#64"
+    ]
+   },
+   {
+    "id": "apollo.12",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Self-reported philanthropic base: about $1.5M from Open Philanthropy and about $500K from SFF at the time of its Manifund listing; a later index total of $4.41M is recorded as an imported row and the two figures are not reconciled.",
+    "sources": [
+     "apollo-manifund",
+     "evaluators-ledger"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "We have received ~$1.5M from OpenPhil and ~$500k from SFF",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "F.5",
+    "quote_source": "apollo-manifund",
+    "graph_id": "signal#309",
+    "source_graph_ids": [
+     "source#34",
+     "source#96"
+    ]
+   },
+   {
+    "id": "apollo.13",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Mission seats on the PBC board are held by directors independent of the company and its funders, with a mandate to prioritize mission.",
+    "sources": [
+     "apollo-pbc-mission"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "who are independent to Apollo Research PBC and our funders",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.2",
+    "quote_source": "apollo-pbc-mission",
+    "graph_id": "signal#310",
+    "source_graph_ids": [
+     "source#36"
+    ]
+   },
+   {
+    "id": "apollo.14",
+    "evaluator": "apollo",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.",
+    "sources": [
+     "premieralts-macroscopic",
+     "apollo-pbc-round"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "G.3",
+    "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+    "quote_source": "apollo-pbc-round",
+    "graph_id": "signal#311",
+    "source_graph_ids": [
+     "source#188",
+     "source#37"
+    ]
+   },
+   {
+    "id": "apollo.15",
+    "evaluator": "apollo",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.",
+    "sources": [
+     "apollo-pbc-round",
+     "premieralts-macroscopic"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.4",
+    "quote": "further investments from Juniper Ventures , Macroscopic Ventures",
+    "quote_source": "apollo-pbc-round",
+    "note": "F.4 caps at 1 only for a material investment (a priced round the fund led or co-led, or a stake of 5% or more); Macroscopic did not lead and its share is undisclosed, so the cap stays at 2 (equity from a lab investor bars anchor 3). Document request: Macroscopic's share of the round.",
+    "graph_id": "signal#312",
+    "source_graph_ids": [
+     "source#37",
+     "source#188"
+    ]
+   },
+   {
+    "evaluator": "apollo",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "apollo.16",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient / Open Philanthropy recommended $1,535,480 (June 2023, startup costs) and $2,178,700 (May 2024, general support) to Apollo per archived grant pages, with a further $696,000 (May 2026) in the removed index; Coefficient's principal funder is an Anthropic investor.",
+    "sources": [
+     "op-apollo-startup-2023",
+     "op-apollo-general-2024",
+     "apollo-manifund",
+     "wayback-cdx-op-grants-a"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Open Philanthropy recommended a grant of $2,178,700 to Apollo Research for general support.",
+    "quote_source": "op-apollo-general-2024",
+    "graph_id": "signal#313",
+    "source_graph_ids": [
+     "source#160",
+     "source#159",
+     "source#34",
+     "source#254"
+    ]
+   },
+   {
+    "evaluator": "apollo",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "apollo.17",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "The January 2026 seed round's size and each investor's stake, including Macroscopic Ventures' (an Anthropic Series A and B investor), are undisclosed: no Form D in EDGAR, no share allotment at Companies House, and the PBC is a Delaware entity with no public cap table.",
+    "sources": [
+     "apollo-pbc-round",
+     "edgar-fts-apollo-form-d",
+     "ch-apollo-research-ai-filings",
+     "ch-apollo-research-ai-psc",
+     "ch-apollo-research-ai",
+     "ch-apollo-mr01"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.10",
+    "quote": "The round was oversubscribed.",
+    "quote_source": "apollo-pbc-round",
+    "graph_id": "signal#314",
+    "source_graph_ids": [
+     "source#37",
+     "source#79",
+     "source#55",
+     "source#57",
+     "source#58",
+     "source#54"
+    ]
+   },
+   {
+    "evaluator": "apollo",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "apollo.18",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "The PBC board has three seats, of which the 3rd (and later 6th) are designated mission seats; only the first mission director, Daniel Kokotajlo, is named, and the remaining directors are not published on Apollo's pages or in Companies House (which shows only the UK subsidiary's directors, Hobbhahn and Akin).",
+    "sources": [
+     "apollo-pbc-round",
+     "ch-apollo-research-ai-officers",
+     "apollo-team"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "G.8",
+    "quote": "Our first mission director is Daniel Kokotajlo.",
+    "quote_source": "apollo-pbc-round",
+    "graph_id": "signal#315",
+    "source_graph_ids": [
+     "source#37",
+     "source#56",
+     "source#39"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 54,
+   "regulator": 55,
+   "public": 53,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      28,
+      81
+     ]
+    },
+    "regulator": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      28,
+      83
+     ]
+    },
+    "public": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      30,
+      75
+     ]
+    },
+    "equal": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      28,
+      78
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      20,
+      94
+     ]
+    },
+    "regulator": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      19,
+      94
+     ]
+    },
+    "public": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      30,
+      90
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      19,
+      94
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "F",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 58,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 54
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 60,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 55
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 53
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "apollo-about": {
+   "audit_status": "confirmed",
+   "id": "apollo-about",
+   "note": "Ran evaluations for all major labs; partnered with OpenAI on anti-scheming; Watcher product. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "About",
+   "url": "https://www.apolloresearch.ai/about",
+   "self_of": "apollo"
+  },
+  "apollo-first-year": {
+   "audit_status": "confirmed",
+   "id": "apollo-first-year",
+   "note": "Contracted by UK AISI for deception evals; red-teamed OpenAI fine-tuning API. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2024",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "The First Year of Apollo Research",
+   "url": "https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research",
+   "self_of": "apollo"
+  },
+  "apollo-manifund": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "apollo-manifund",
+   "note": "Self-report: about $1.5M from Open Philanthropy and about $500K from SFF at the time of the listing; date of the figures not stated. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2024",
+   "publisher": "Manifund",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Apollo Research on Manifund",
+   "url": "https://manifund.org/apolloresearch",
+   "self_of": "apollo"
+  },
+  "apollo-norms": {
+   "audit_status": "confirmed",
+   "id": "apollo-norms",
+   "note": "Four COI rules: no contingent compensation; no side grants/investments from evaluated orgs; recusal; no misrepresentation. States labs pay fair market value. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2025-11-26",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Our Norms on Security, Science Communication and Conflicts of Interest",
+   "url": "https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/",
+   "self_of": "apollo"
+  },
+  "apollo-pbc": {
+   "audit_status": "confirmed",
+   "id": "apollo-pbc",
+   "note": "Spin-out from fiscal sponsor into public benefit corporation. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-01-20",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Apollo Research is becoming a PBC",
+   "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+   "self_of": "apollo"
+  },
+  "apollo-pbc-mission": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "apollo-pbc-mission",
+   "note": "Mission seats on the board held by directors independent of the PBC and its funders. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-01-20",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Apollo Research is becoming a PBC (governance)",
+   "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+   "self_of": "apollo"
+  },
+  "apollo-pbc-round": {
+   "audit_status": "confirmed",
+   "id": "apollo-pbc-round",
+   "note": "Seed led by 50Y with Juniper, Macroscopic, Common Metal, SAIF, Ocean, Progress Fund, individuals; mission board seats. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-01-20",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Apollo Research is becoming a PBC (investment section)",
+   "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+   "self_of": "apollo"
+  },
+  "apollo-team": {
+   "id": "apollo-team",
+   "title": "Team",
+   "publisher": "Apollo Research",
+   "url": "https://www.apolloresearch.ai/team",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Footer gives 'EIN 93-4310599 DE, USA' (the Delaware PBC) and the EU transparency register number. The 'Directors & Advisors' filter renders no names to a text reader or fetch_text (2026-09-15).",
+   "self_of": "apollo"
+  },
+  "ch-apollo-mr01": {
+   "id": "ch-apollo-mr01",
+   "title": "MR01 Registration of charge 152891590001 (PDF)",
+   "publisher": "Companies House",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history/MzQ5MzM2MjM4NWFkaXF6a2N4/document?format=pdf&download=0",
+   "published": "2025-12-10",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Persons entitled: HSBC INNOVATION BANKING; 'Contains fixed charge(s)'. A bank security, not an equity record."
+  },
+  "ch-apollo-research-ai": {
+   "id": "ch-apollo-research-ai",
+   "title": "APOLLO RESEARCH AI LTD (company 15289159), overview",
+   "publisher": "Companies House",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15289159",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Incorporated 16 November 2023; active; accounts to 31 December 2024 (micro); SIC 62020. The other 'Apollo Research Ltd' (14070094) is an unrelated retail company, dissolved 9 June 2026."
+  },
+  "ch-apollo-research-ai-filings": {
+   "id": "ch-apollo-research-ai-filings",
+   "title": "APOLLO RESEARCH AI LTD filing history",
+   "publisher": "Companies House",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "No SH01 (return of allotment) or statement of capital after the incorporation statement of capital of GBP .01 (2023-11-16). MR01 registration of charge 152891590001 created 9 December 2025 (persons entitled: HSBC Innovation Banking; fixed charge). AP01 Christopher Akin appointed director 15 March 2026; TM01 Lee Sharkey terminated 15 March 2026."
+  },
+  "ch-apollo-research-ai-officers": {
+   "id": "ch-apollo-research-ai-officers",
+   "title": "APOLLO RESEARCH AI LTD officers",
+   "publisher": "Companies House",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/officers",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "3 officers, 1 resignation: Christopher Akin (appointed 15 March 2026, American), Marius Hobbhahn (appointed 16 November 2023), Lee Darren Sharkey (resigned 15 March 2026)."
+  },
+  "ch-apollo-research-ai-psc": {
+   "id": "ch-apollo-research-ai-psc",
+   "title": "APOLLO RESEARCH AI LTD persons with significant control",
+   "publisher": "Companies House",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15289159/persons-with-significant-control",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "0 active PSCs; active statement that there is no registrable person or registrable relevant legal entity, notified 16 November 2023."
+  },
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "edgar-fts-apollo-form-d": {
+   "id": "edgar-fts-apollo-form-d",
+   "title": "EDGAR full-text search: \"Apollo Research\", form D, 2025-06-01 to 2026-09-15",
+   "publisher": "U.S. Securities and Exchange Commission",
+   "url": "https://efts.sec.gov/LATEST/search-index?q=%22Apollo%20Research%22&forms=D&dateRange=custom&startdt=2025-06-01&enddt=2026-09-15",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "0 hits. Also 0 hits without a form filter for \"Apollo Research PBC\", \"Apollo Research, PBC\" and \"Apollo Research\" AND \"Macroscopic\" (2025-01-01 to 2026-09-15); the EDGAR company-name search for 'apollo research' lists no filer."
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "op-apollo-general-2024": {
+   "id": "op-apollo-general-2024",
+   "title": "Apollo Research — General Support (Wayback capture 2024-07-17 of the Open Philanthropy grant page)",
+   "publisher": "Open Philanthropy via Internet Archive",
+   "url": "https://web.archive.org/web/20240717140504/https://www.openphilanthropy.org/grants/apollo-research-general-support/",
+   "published": "2024-05",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Amount $2,178,700, award date May 2024; 'This follows our June 2023 support'. No later Apollo grant page was ever captured (CDX, 2026-09-15); kevinnbass's Algolia extract lists a third award, $696,000 'Staff Support' dated 2026-05, which never had a public page."
+  },
+  "op-apollo-startup-2023": {
+   "id": "op-apollo-startup-2023",
+   "title": "Apollo Research — Startup Funding (Wayback capture 2023-09-12 of the Open Philanthropy grant page)",
+   "publisher": "Open Philanthropy via Internet Archive",
+   "url": "https://web.archive.org/web/20230912095624/https://www.openphilanthropy.org/grants/apollo-research-startup-funding/",
+   "published": "2023-06",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Amount $1,535,480, award date June 2023, focus area Potential Risks from Advanced AI. The live coefficientgiving.org slug returned 404 in the 2026-08-30 capture."
+  },
+  "premieralts-macroscopic": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "premieralts-macroscopic",
+   "note": "Lists Anthropic Series A and Series B, Apollo Research, FutureSearch, ChinaTalk, San Francisco Compute among investments. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026",
+   "publisher": "Premier Alts",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "title": "Macroscopic Ventures investor profile",
+   "url": "https://premieralts.com/investors/macroscopic-ventures",
+   "press_kind": "aggregator"
+  },
+  "wayback-cdx-op-grants-a": {
+   "id": "wayback-cdx-op-grants-a",
+   "title": "Wayback CDX index of openphilanthropy.org/grants/a* (status 200, one row per URL)",
+   "publisher": "Internet Archive",
+   "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/a*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "250 distinct slugs; includes both ARC and both Apollo Research grant pages."
+  }
+ }
+}

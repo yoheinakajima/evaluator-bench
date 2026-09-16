@@ -1,0 +1,1623 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/averi.html"
+ },
+ "evaluator": {
+  "id": "averi",
+  "name": "AVERI",
+  "type": "nonprofit",
+  "hq": "Washington, US",
+  "domains": [
+   "assurance"
+  ],
+  "confidence": "med",
+  "summary": "Standards body for frontier AI auditing; ran the first double-blind enclave evaluation of a proprietary model.",
+  "what_would_move_the_score": "Funder disclosure and a first audit under statutory terms.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Access is at the floor; no lower notch exists. The public record supports 0: AVERI's only completed engagement queried Gemini 2.5 Flash-Lite, a model public since July 2025, inside an enclave that hid the weights from the auditors, and the report says the pilot addressed some but not all ways a developer could tamper with the evaluation. No pre-release checkpoint, safeguards-off run, log or on-site access appears anywhere on the record.",
+   "higher": "Access could be 1. AVERI reports API credits from six labs \"as donations or compensation\" and says it is pursuing pilots on whether companies follow their own safety and security frameworks; Google DeepMind ran a proprietary model for it inside a trusted execution environment it did not control. A nonpublic endpoint or pre-release checkpoint in the current pilots would meet anchor 1, and the enclave protocol is a documented route to deeper access."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#262",
+  "values": {
+   "F": 3,
+   "G": 3,
+   "P": 3,
+   "A": 0,
+   "S": 3,
+   "R": 2,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": 3,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": null
+   },
+   "spans": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "averi",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.06",
+     "averi.09",
+     "averi.11",
+     "averi.12",
+     "averi.14",
+     "averi.17"
+    ],
+    "rationale": "Anchor 3: philanthropic and diversified with named funders and a no-majority rule; lab-employee donations and two lab-adjacent funders keep it off anchor 4.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Dollar shares per funder."
+    ],
+    "graph_id": "assessment#673",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.06",
+       "averi.11",
+       "averi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.06",
+       "averi.11",
+       "averi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "averi.06",
+       "averi.11",
+       "averi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "averi.09"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.06",
+       "averi.11",
+       "averi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.06",
+       "averi.09",
+       "averi.11",
+       "averi.12",
+       "averi.14",
+       "averi.17"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by averi.06 (F.12): Funding sources not fully itemized publicly.; capped at 3 by averi.11 (F.6): AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.; capped at 3 by averi.14 (F.7): AVERI accepts and has received donations from current and former non-executive employees and alumni of frontier AI companies; amounts are not disclosed.. Floors up to 3 from averi.09, averi.12 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by averi.06 (F.12): Funding sources not fully itemized publicly.; capped at 3 by averi.11 (F.6): AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.; capped at 3 by averi.14 (F.7): AVERI accepts and has received donations from current and former non-executive employees and alumni of frontier AI companies; amounts are not disclosed.. Floors up to 3 from averi.09, averi.12 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "averi",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.02",
+     "averi.13"
+    ],
+    "rationale": "Anchor 3: 501(c)(3) nonprofit (averi.02). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#674",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.02",
+       "averi.13"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.02",
+       "averi.13"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by averi.13 (G.2): Published conflict-of-interest rules: all employees, board members and contractors disclose conflicts on starting and biannually; material conflicts trigger mandatory recusal or declining the engagement; no cash donations or compensation are accepted from frontier AI companies or their executives; lab API credits and lab-employee donations are disclosed; the most significant conflicts are disclosed publicly.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by averi.13 (G.2): Published conflict-of-interest rules: all employees, board members and contractors disclose conflicts on starting and biannually; material conflicts trigger mandatory recusal or declining the engagement; no cash donations or compensation are accepted from frontier AI companies or their executives; lab API credits and lab-employee donations are disclosed; the most significant conflicts are disclosed publicly.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "averi",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.04",
+     "averi.10"
+    ],
+    "rationale": "Anchor 3: recusal policy with a stated cooling-off for the director and disclosed ties; short of anchor 4 because the cooling-off is person-specific rather than a standing rule.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "graph_id": "assessment#675",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "averi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "averi.10"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.04",
+       "averi.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by averi.04 (P.3): Founder and several staff come from labs and lab-adjacent institutions.. Floors up to 3 from averi.10 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by averi.04 (P.3): Founder and several staff come from labs and lab-adjacent institutions.. Floors up to 3 from averi.10 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "averi",
+    "dimension": "A",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "averi.01",
+     "averi.16"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#676",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "averi.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "averi.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "averi.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "averi.01"
+      ]
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "averi.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.01",
+       "averi.16"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by averi.16 (A.1): AVERI's only completed engagement evaluated Gemini 2.5 Flash-Lite, a publicly released model, inside a secure enclave that hid the weights; no pre-release, safeguards-off, helpful-only, log or on-site access has been documented.. Floors up to 0 from averi.01 do not exceed the cap.",
+    "rationale_leads": "Capped at 0 by averi.16 (A.1): AVERI's only completed engagement evaluated Gemini 2.5 Flash-Lite, a publicly released model, inside a secure enclave that hid the weights; no pre-release, safeguards-off, helpful-only, log or on-site access has been documented.. Floors up to 0 from averi.01 do not exceed the cap."
+   },
+   "S": {
+    "evaluator": "averi",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.05"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#677",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "averi.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by averi.05 (S.4): Pilot audits are voluntary and lab-selected; not yet a full-time auditor..",
+    "rationale_leads": "Capped at 3 by averi.05 (S.4): Pilot audits are voluntary and lab-selected; not yet a full-time auditor.."
+   },
+   "R": {
+    "evaluator": "averi",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "averi.07",
+     "averi.15"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#678",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "averi.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "averi.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "averi.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "averi.07"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "averi.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.07",
+       "averi.15"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by averi.15 (R.2): The findings of the only completed pilot were delivered to Google DeepMind as a confidential report; the public pilot report describes the protocol and the types of successes and failure modes without quantitative results, prompts or outputs.. Floors up to 2 from averi.07 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by averi.15 (R.2): The findings of the only completed pilot were delivered to Google DeepMind as a confidential report; the public pilot report describes the protocol and the types of successes and failure modes without quantitative results, prompts or outputs.. Floors up to 2 from averi.07 do not exceed the cap."
+   },
+   "M": {
+    "evaluator": "averi",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#679",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "averi.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by averi.03 (M.1): Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by averi.03 (M.1): Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "averi",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "averi.08"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#680",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "averi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "averi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.08"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "averi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "averi.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by averi.08 (X.4): No commercial products; tools open source.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by averi.08 (X.4): No commercial products; tools open source.. No admissible signal caps it."
+   }
+  },
+  "signals": [
+   {
+    "id": "averi.01",
+    "evaluator": "averi",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Secure-enclave double-blind protocol with DeepMind, OpenMined and MLCommons; neither party sees the other's confidential material.",
+    "sources": [
+     "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 0
+    },
+    "rule": "A.1",
+    "quote": "The pilot tested Gemini 2.5 Flash-Lite using never-before-used prompts from the MLCommons safety benchmark family",
+    "quote_source": "averi-pilot",
+    "graph_id": "signal#316",
+    "source_graph_ids": [
+     "source#47"
+    ]
+   },
+   {
+    "id": "averi.02",
+    "evaluator": "averi",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "501(c)(3); endorsed Illinois SB 315; co-authored AEF-1.",
+    "sources": [
+     "averi-launch",
+     "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "AVERI is a 501(c)(3), US-based non-profit think tank",
+    "quote_source": "averi-launch",
+    "graph_id": "signal#317",
+    "source_graph_ids": [
+     "source#46",
+     "source#44"
+    ]
+   },
+   {
+    "id": "averi.03",
+    "evaluator": "averi",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes pilot reports and open tooling; framework paper with AI Assurance Levels.",
+    "sources": [
+     "averi-pilot",
+     "arxiv-frontier-auditing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "converts what we learn into auditing standards, policy analysis, and open source tools",
+    "quote_source": "averi-pilot",
+    "graph_id": "signal#318",
+    "source_graph_ids": [
+     "source#47",
+     "source#41"
+    ]
+   },
+   {
+    "id": "averi.04",
+    "evaluator": "averi",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founder and several staff come from labs and lab-adjacent institutions.",
+    "sources": [
+     "averi-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "P.3",
+    "quote": "I hope that AVERI will also benefit from the practical experiences I had at OpenAI",
+    "quote_source": "averi-launch",
+    "graph_id": "signal#319",
+    "source_graph_ids": [
+     "source#46"
+    ]
+   },
+   {
+    "id": "averi.05",
+    "evaluator": "averi",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Pilot audits are voluntary and lab-selected; not yet a full-time auditor.",
+    "sources": [
+     "averi-about",
+     "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.4",
+    "quote": "some companies have chosen to conduct voluntary pilots with AVERI and other organizations",
+    "quote_source": "averi-about",
+    "graph_id": "signal#320",
+    "source_graph_ids": [
+     "source#44",
+     "source#47"
+    ]
+   },
+   {
+    "id": "averi.06",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding sources not fully itemized publicly.",
+    "sources": [
+     "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.12",
+    "quote": "Our funders include the AI Underwriting Company, Coefficient Giving, Craig Falls, Geoff Ralston, Good Forever Foundation",
+    "quote_source": "averi-about",
+    "graph_id": "signal#321",
+    "source_graph_ids": [
+     "source#44"
+    ]
+   },
+   {
+    "id": "averi.07",
+    "evaluator": "averi",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes pilot findings.",
+    "sources": [
+     "averi-pilot"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.2",
+    "quote": "We provided Google DeepMind with a confidential report of the findings",
+    "quote_source": "averi-pilot",
+    "graph_id": "signal#322",
+    "source_graph_ids": [
+     "source#47"
+    ]
+   },
+   {
+    "id": "averi.08",
+    "evaluator": "averi",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products; tools open source.",
+    "sources": [
+     "averi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.4",
+    "quote": "We convert insights from these processes into open source tools",
+    "quote_source": "averi-about",
+    "graph_id": "signal#323",
+    "source_graph_ids": [
+     "source#44"
+    ]
+   },
+   {
+    "id": "averi.09",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Funders disclosed by name (AIUC, Coefficient, Halcyon, Fathom, Sympatico Ventures, individuals) with no donor a majority; donations from non-executive lab employees disclosed; API credits offered by six labs and disclosed.",
+    "sources": [
+     "averi-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "No donor makes up a majority of our funding",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote_source": "averi-funding",
+    "graph_id": "signal#324",
+    "source_graph_ids": [
+     "source#45"
+    ]
+   },
+   {
+    "id": "averi.10",
+    "evaluator": "averi",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Executive director recused from auditing OpenAI for at least two years after leaving and sold eligible shares; team members' individual holdings disclosed; mandatory recusal for material conflicts.",
+    "sources": [
+     "averi-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "Miles is recused from directly auditing OpenAI until two years after his October 2024 departure",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "P.5",
+    "quote_source": "averi-funding",
+    "graph_id": "signal#325",
+    "source_graph_ids": [
+     "source#45"
+    ]
+   },
+   {
+    "id": "averi.11",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AIUC, a funder, was seeded by an Anthropic co-founder; Halcyon's CEO chairs Transluce's board; Coefficient's principal is an Anthropic investor. Two of the named funders are two steps from labs.",
+    "sources": [
+     "averi-funding",
+     "apollo-pbc-round"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Our funders include the AI Underwriting Company, Coefficient Giving",
+    "quote_source": "averi-funding",
+    "graph_id": "signal#326",
+    "source_graph_ids": [
+     "source#45",
+     "source#37"
+    ]
+   },
+   {
+    "id": "averi.12",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Raised $7.5 million toward a $13 million goal at launch; funders named; a search of Coefficient's grants pages found no discrete AVERI grant page though AVERI names Coefficient as a funder.",
+    "sources": [
+     "fortune-averi",
+     "averi-funding"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-01-15",
+    "quote": "AVERI said it has raised $7.5 million toward a goal of $13 million",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote_source": "fortune-averi",
+    "graph_id": "signal#327",
+    "source_graph_ids": [
+     "source#101",
+     "source#45"
+    ]
+   },
+   {
+    "id": "averi.13",
+    "evaluator": "averi",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Published conflict-of-interest rules: all employees, board members and contractors disclose conflicts on starting and biannually; material conflicts trigger mandatory recusal or declining the engagement; no cash donations or compensation are accepted from frontier AI companies or their executives; lab API credits and lab-employee donations are disclosed; the most significant conflicts are disclosed publicly.",
+    "sources": [
+     "averi-funding"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "G.2",
+    "quote": "mitigation steps may include recusing personnel from projects or declining an engagement entirely",
+    "quote_source": "averi-funding",
+    "note": "G.2: a nonprofit with a published policy naming at least two of recusal for financial interests, no side money from evaluated labs, and disclosure of lab-linked revenue floors at 3. G.7 (4) needs tier-1 evidence of an independent board and external review.",
+    "graph_id": "signal#328",
+    "source_graph_ids": [
+     "source#45"
+    ]
+   },
+   {
+    "id": "averi.14",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AVERI accepts and has received donations from current and former non-executive employees and alumni of frontier AI companies; amounts are not disclosed.",
+    "sources": [
+     "averi-funding",
+     "fortune-averi"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.7",
+    "quote": "several non-executive employees and alumni of frontier AI companies",
+    "quote_source": "averi-funding",
+    "note": "F.7: undisclosed amounts carry no bound, but a policy that permits lab-employee donations caps at 3. Fortune corroborates (\"donations from current and former non-executive employees of frontier AI companies\").",
+    "graph_id": "signal#329",
+    "source_graph_ids": [
+     "source#45",
+     "source#101"
+    ]
+   },
+   {
+    "id": "averi.15",
+    "evaluator": "averi",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "The findings of the only completed pilot were delivered to Google DeepMind as a confidential report; the public pilot report describes the protocol and the types of successes and failure modes without quantitative results, prompts or outputs.",
+    "sources": [
+     "averi-pilot"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.2",
+    "quote": "We provided Google DeepMind with a confidential report of the findings",
+    "quote_source": "averi-pilot",
+    "note": "Anchor 2 at most: publication with the findings withheld. No rule names this case (R.2 covers editorial feedback, R.3 system-card-only); recorded as a gap and capped by the anchor text.",
+    "graph_id": "signal#330",
+    "source_graph_ids": [
+     "source#47"
+    ]
+   },
+   {
+    "id": "averi.16",
+    "evaluator": "averi",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "AVERI's only completed engagement evaluated Gemini 2.5 Flash-Lite, a publicly released model, inside a secure enclave that hid the weights; no pre-release, safeguards-off, helpful-only, log or on-site access has been documented.",
+    "sources": [
+     "averi-pilot",
+     "averi-about"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.1",
+    "quote": "The pilot tested Gemini 2.5 Flash-Lite",
+    "quote_source": "averi-pilot",
+    "note": "A.1 scores what was granted: public-model access is anchor 0. C17: an against-signal from the organization's own page with a span is an admission against interest, so the 0 is effective. Flagged for review: the stored 3 read the enclave protocol as access depth.",
+    "graph_id": "signal#331",
+    "source_graph_ids": [
+     "source#47",
+     "source#44"
+    ]
+   },
+   {
+    "id": "averi.17",
+    "evaluator": "averi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AVERI has received API credits \"as donations or compensation\" from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI and Thinking Machines Lab; amounts are undisclosed.",
+    "sources": [
+     "averi-funding"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": null,
+    "rule": "F.11",
+    "quote": "We've received API credits as donations or compensation from Amazon, Anthropic, Google DeepMind, Microsoft, OpenAI",
+    "quote_source": "averi-funding",
+    "note": "F.11: undisclosed in-kind credits with no dependency statement carry no funding bound; recorded on the access mechanism. The page says credits came \"as donations or compensation\": credits received as compensation for pilot work would be per-engagement lab payment in kind (F.3, cap 2). Document request: which labs provided credits as compensation and for which engagement. Bound left null pending that document.",
+    "bound_note": "F.11: undisclosed in-kind credits without a dependency statement set no funding bound; recorded on the access mechanism. Null pending a document on which credits were compensation for pilot work (F.3 would then cap at 2).",
+    "graph_id": "signal#332",
+    "source_graph_ids": [
+     "source#45"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 56,
+   "regulator": 56,
+   "public": 66,
+   "equal": 63
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "public": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "public": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      47,
+      60
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      49,
+      59
+     ]
+    },
+    "public": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      51,
+      71
+     ]
+    },
+    "equal": {
+     "score": 58,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      44,
+      69
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "public": {
+     "score": 66,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      66,
+      66
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 62,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 60,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 58,
+     "band": "clear",
+     "base": 56
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 61,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 60,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 56
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 73,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 70,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 70,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 68,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 71,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 68,
+     "band": "clear",
+     "base": 66
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 68,
+     "band": "clear",
+     "base": 66
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    }
+   ]
+  }
+ },
+ "sources": {
+  "apollo-pbc-round": {
+   "audit_status": "confirmed",
+   "id": "apollo-pbc-round",
+   "note": "Seed led by 50Y with Juniper, Macroscopic, Common Metal, SAIF, Ocean, Progress Fund, individuals; mission board seats. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-01-20",
+   "publisher": "Apollo Research",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Apollo Research is becoming a PBC (investment section)",
+   "url": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc",
+   "self_of": "apollo"
+  },
+  "arxiv-frontier-auditing": {
+   "audit_status": "confirmed",
+   "id": "arxiv-frontier-auditing",
+   "note": "AI Assurance Levels; cross-industry precedents (FAA, UL, melamine, HackerOne). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-02-07",
+   "publisher": "arXiv",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Frontier AI Auditing: Toward Rigorous Third-Party Assessment (arXiv 2601.11699)",
+   "url": "https://arxiv.org/abs/2601.11699",
+   "press_kind": "primary"
+  },
+  "averi-about": {
+   "audit_status": "confirmed",
+   "id": "averi-about",
+   "note": "Endorsed SB 315; co-authored AEF-1; pilots are voluntary. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "AVERI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "About",
+   "url": "https://www.averi.org/about",
+   "self_of": "averi"
+  },
+  "averi-funding": {
+   "audit_status": "confirmed",
+   "id": "averi-funding",
+   "note": "Funders: AIUC, Coefficient, Falls, Ralston, Good Forever, Fathom, Halcyon, Sympatico, non-executive lab employees; no donor majority; recusal rules; Brundage recused from auditing OpenAI two years; sold eligible shares; API credits offered by six labs. [verify 2026-09-15] reachable BUT span(s) not found: averi.10; averi.12 — needs curator review",
+   "published": "2026",
+   "publisher": "AVERI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "About (funding and conflicts)",
+   "url": "https://www.averi.org/about",
+   "self_of": "averi"
+  },
+  "averi-launch": {
+   "audit_status": "confirmed",
+   "id": "averi-launch",
+   "note": "501(c)(3); founder formerly OpenAI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-01-15",
+   "publisher": "Miles Brundage (Substack)",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "The Launch of AVERI",
+   "url": "https://milesbrundage.substack.com/p/the-launch-of-averi",
+   "self_of": "averi"
+  },
+  "averi-pilot": {
+   "audit_status": "confirmed",
+   "id": "averi-pilot",
+   "note": "Gemini 2.5 Flash-Lite in secure enclave with DeepMind, OpenMined, MLCommons; notes EU CoP and Illinois SB 315 requirements. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-08",
+   "publisher": "AVERI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model",
+   "url": "https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval",
+   "self_of": "averi"
+  },
+  "fortune-averi": {
+   "id": "fortune-averi",
+   "title": "Former OpenAI policy chief debuts new institute called AVERI",
+   "publisher": "Fortune",
+   "url": "https://fortune.com/2026/01/15/former-openai-policy-chief-creates-nonprofit-institute-calls-for-independent-safety-audits-of-frontier-ai-models/",
+   "published": "2026-01-15",
+   "retrieved": "2026-09-15",
+   "note": "$7.5M raised toward $13M; funders incl. AIUC, Coefficient, Halcyon, Fathom; donations from non-executive lab employees. [verify 2026-09-15 grok-pass] AVERI raised $7.5M toward $13M; funders match AVERI about; 'will not conduct audits itself' is dated (they now do audits) — date the claim.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "primary"
+  }
+ }
+}

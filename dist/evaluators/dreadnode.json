@@ -1,0 +1,1384 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/dreadnode.html"
+ },
+ "evaluator": {
+  "id": "dreadnode",
+  "name": "Dreadnode",
+  "type": "vc",
+  "hq": "Remote",
+  "domains": [
+   "cyber"
+  ],
+  "confidence": "low",
+  "summary": "Offensive-security firm named by Google DeepMind as an external expert on Gemini testing.",
+  "what_would_move_the_score": "Published engagement terms and a first public report.",
+  "role": "vendor",
+  "dissent": {
+   "lower": "Publication rights (1 to 0). Nothing from the Gemini engagement has reached the public: no summary, no finding, only the firm's name in Google's launch post and a spokesperson's sentence to Time. A name mention is not a lab-edited summary. Anchor 0 reads 'no publication, or lab approval required', and on the documented record there is no publication at all.",
+   "higher": "Access depth (1 to 2). Google's external-testing programme shares pre-release models with selected experts for structured testing over a period before launch, and Dreadnode was named for both Gemini 2.5 Pro and Gemini 3. If the engagement ran for weeks against a pre-release checkpoint, that is extended-time access, anchor 2, rather than a one-off pre-release API test."
+  },
+  "list_group": "commercial",
+  "graph_id": "evaluator#265",
+  "values": {
+   "F": 2,
+   "G": 1,
+   "P": 2,
+   "A": 1,
+   "S": 2,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 2,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 2,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 2,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": 1,
+    "X": 2
+   },
+   "spans": {
+    "F": 2,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "dreadnode",
+    "dimension": "F",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#697",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "dreadnode.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "dreadnode.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "dreadnode.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by dreadnode.05 (F.3): Lab-paid engagements..",
+    "rationale_leads": "Capped at 2 by dreadnode.05 (F.3): Lab-paid engagements.."
+   },
+   "G": {
+    "evaluator": "dreadnode",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "dreadnode.02"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#698",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "dreadnode.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "dreadnode.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "dreadnode.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "dreadnode.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.02"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by dreadnode.02 (G.2): Venture-backed; no published COI policy found..",
+    "rationale_leads": "Capped at 1 by dreadnode.02 (G.2): Venture-backed; no published COI policy found.."
+   },
+   "P": {
+    "evaluator": "dreadnode",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#699",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.06"
+      ]
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.06"
+      ]
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.06"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.06"
+      ]
+     }
+    },
+    "rationale_derived": "Unevidenced under this policy: no admissible signal sets a bound. Not counted: dreadnode.06 (no confirmed source (unverifiable)).",
+    "rationale_leads": "Capped at 2 by dreadnode.06 (P.5): Undisclosed.."
+   },
+   "A": {
+    "evaluator": "dreadnode",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "dreadnode.01"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#700",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "dreadnode.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "dreadnode.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "dreadnode.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "dreadnode.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.01"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 1 by dreadnode.01 (A.1): Named by Google DeepMind as an external cyber expert on Gemini testing.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 1 by dreadnode.01 (A.1): Named by Google DeepMind as an external cyber expert on Gemini testing.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "dreadnode",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#701",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "dreadnode.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "dreadnode.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "dreadnode.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by dreadnode.07 (S.2): Scope set by lab..",
+    "rationale_leads": "Capped at 2 by dreadnode.07 (S.2): Scope set by lab.."
+   },
+   "R": {
+    "evaluator": "dreadnode",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#702",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "dreadnode.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "dreadnode.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "dreadnode.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by dreadnode.03 (R.3): Evaluation terms and results are not public..",
+    "rationale_leads": "Capped at 2 by dreadnode.03 (R.3): Evaluation terms and results are not public.."
+   },
+   "M": {
+    "evaluator": "dreadnode",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.08",
+     "dreadnode.09"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "resolution": {
+     "rule": "M.2",
+     "value": 2,
+     "note": "See assessments.M.resolution: engagement-level closure (cap 1) against open self-directed benchmark code (floor 3); resolved at anchor 2, methods described in prose, consistent with Gray Swan and Scale."
+    },
+    "evidence_limited": true,
+    "graph_id": "assessment#703",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.08"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "dreadnode.08"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "dreadnode.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "dreadnode.09"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "dreadnode.08"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.08",
+       "dreadnode.09"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from dreadnode.09 (M.1) against cap 1 from dreadnode.08 (M.2); resolved at 2 by M.2: See assessments.M.resolution: engagement-level closure (cap 1) against open self-directed benchmark code (floor 3); resolved at anchor 2, methods described in prose, consistent with Gray Swan and Scale.",
+    "rationale_leads": "Conflict: floor 3 from dreadnode.09 (M.1) against cap 1 from dreadnode.08 (M.2); resolved at 2 by M.2: See assessments.M.resolution: engagement-level closure (cap 1) against open self-directed benchmark code (floor 3); resolved at anchor 2, methods described in prose, consistent with Gray Swan and Scale."
+   },
+   "X": {
+    "evaluator": "dreadnode",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "dreadnode.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#704",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "dreadnode.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "dreadnode.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "dreadnode.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "dreadnode.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "dreadnode.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by dreadnode.04 (X.1 (second sentence)): Sells offensive-security products..",
+    "rationale_leads": "Capped at 2 by dreadnode.04 (X.1 (second sentence)): Sells offensive-security products.."
+   }
+  },
+  "signals": [
+   {
+    "id": "dreadnode.01",
+    "evaluator": "dreadnode",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Named by Google DeepMind as an external cyber expert on Gemini testing.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-google-gemini3",
+     "dreadnode-time-gdm-pledge"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "A.1",
+    "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+    "quote_source": "dreadnode-google-gemini3",
+    "graph_id": "signal#359",
+    "source_graph_ids": [
+     "source#104",
+     "source#75",
+     "source#78"
+    ]
+   },
+   {
+    "id": "dreadnode.02",
+    "evaluator": "dreadnode",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed; no published COI policy found.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-seriesa",
+     "dreadnode-securityweek"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "G.2",
+    "quote": "announced its $14 million Series A funding round, led by Decibel",
+    "quote_source": "dreadnode-seriesa",
+    "graph_id": "signal#360",
+    "source_graph_ids": [
+     "source#104",
+     "source#77",
+     "source#76"
+    ]
+   },
+   {
+    "id": "dreadnode.03",
+    "evaluator": "dreadnode",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Evaluation terms and results are not public.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-time-gdm-pledge",
+     "dreadnode-arxiv-airtbench"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.3",
+    "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+    "quote_source": "dreadnode-time-gdm-pledge",
+    "graph_id": "signal#361",
+    "source_graph_ids": [
+     "source#104",
+     "source#78",
+     "source#73"
+    ]
+   },
+   {
+    "id": "dreadnode.04",
+    "evaluator": "dreadnode",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells offensive-security products.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-seriesa",
+     "dreadnode-securityweek"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1 (second sentence)",
+    "quote": "two new products — Strikes and Spyglass — that form the core of its platform",
+    "quote_source": "dreadnode-securityweek",
+    "graph_id": "signal#362",
+    "source_graph_ids": [
+     "source#104",
+     "source#77",
+     "source#76"
+    ]
+   },
+   {
+    "id": "dreadnode.05",
+    "evaluator": "dreadnode",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Lab-paid engagements.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-google-gemini3"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.3",
+    "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+    "quote_source": "dreadnode-google-gemini3",
+    "graph_id": "signal#363",
+    "source_graph_ids": [
+     "source#104",
+     "source#75"
+    ]
+   },
+   {
+    "id": "dreadnode.06",
+    "evaluator": "dreadnode",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Undisclosed.",
+    "sources": [
+     "gdm-gemini-testing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.5",
+    "graph_id": "signal#364",
+    "source_graph_ids": [
+     "source#104"
+    ]
+   },
+   {
+    "id": "dreadnode.07",
+    "evaluator": "dreadnode",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-time-gdm-pledge"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "S.2",
+    "quote": "a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis",
+    "quote_source": "dreadnode-time-gdm-pledge",
+    "graph_id": "signal#365",
+    "source_graph_ids": [
+     "source#104",
+     "source#78"
+    ]
+   },
+   {
+    "id": "dreadnode.08",
+    "evaluator": "dreadnode",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods and results are closed; no public methodology.",
+    "sources": [
+     "gdm-gemini-testing",
+     "dreadnode-google-gemini3"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "M.2",
+    "quote": "obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more",
+    "quote_source": "dreadnode-google-gemini3",
+    "graph_id": "signal#366",
+    "source_graph_ids": [
+     "source#104",
+     "source#75"
+    ]
+   },
+   {
+    "id": "dreadnode.09",
+    "evaluator": "dreadnode",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes AIRTBench, an AI red-teaming benchmark with open code (Apache-2.0) and results on Claude 3.7 Sonnet, Gemini 2.5 Pro and GPT-4.5; the Gemini engagement itself remains closed.",
+    "sources": [
+     "dreadnode-arxiv-airtbench",
+     "dreadnode-github-airtbench"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "challenges from the Crucible challenge environment on the Dreadnode platform",
+    "quote_source": "dreadnode-arxiv-airtbench",
+    "note": "Needed because dreadnode.08's claim ('no public methodology') is contradicted at the organization level; M.1 gives 3 for open code alone. Rule 9 does not hold this floor down: AIRTBench is a published evaluation of frontier models. Conflicts with the cap of 1 on dreadnode.08; see the M resolution.",
+    "graph_id": "signal#367",
+    "source_graph_ids": [
+     "source#73",
+     "source#74"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 42,
+   "regulator": 42,
+   "public": 44,
+   "equal": 43
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 43,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      43,
+      43
+     ]
+    },
+    "regulator": {
+     "score": 43,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      43,
+      43
+     ]
+    },
+    "public": {
+     "score": 45,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      45,
+      45
+     ]
+    },
+    "equal": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      44,
+      44
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      48
+     ]
+    },
+    "regulator": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      48
+     ]
+    },
+    "public": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      53
+     ]
+    },
+    "equal": {
+     "score": 43,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      50
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 40,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      36,
+      46
+     ]
+    },
+    "regulator": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      35,
+      45
+     ]
+    },
+    "public": {
+     "score": 43,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      36,
+      51
+     ]
+    },
+    "equal": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      34,
+      47
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      48
+     ]
+    },
+    "regulator": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      48
+     ]
+    },
+    "public": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      53
+     ]
+    },
+    "equal": {
+     "score": 43,
+     "band": "conditional",
+     "coverage": 7,
+     "range": [
+      38,
+      50
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "conditional",
+  "coverage": 7,
+  "floor": "G",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "clear",
+     "base": 42
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 48,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 45,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 42
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "clear",
+     "base": 42
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 42,
+     "band": "conditional",
+     "base": 42
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 49,
+     "band": "clear",
+     "base": 44
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 47,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 46,
+     "band": "clear",
+     "base": 43
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 43
+    }
+   ]
+  }
+ },
+ "sources": {
+  "dreadnode-arxiv-airtbench": {
+   "id": "dreadnode-arxiv-airtbench",
+   "title": "AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models",
+   "publisher": "arXiv (Dreadnode authors)",
+   "url": "https://arxiv.org/abs/2506.14682",
+   "published": "2025-06-17",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Paper by Dreadnode staff (Dawson, Mulla, Landers, Caldwell); self-published research. Fetched 2026-09-15; span 'challenges from the Crucible challenge environment on the Dreadnode platform' present. Reports results on Claude 3.7 Sonnet, Gemini 2.5 Pro, GPT-4.5 and others: a published evaluation of frontier models.",
+   "self_of": "dreadnode"
+  },
+  "dreadnode-github-airtbench": {
+   "id": "dreadnode-github-airtbench",
+   "title": "dreadnode/AIRTBench-Code",
+   "publisher": "GitHub (Dreadnode)",
+   "url": "https://github.com/dreadnode/AIRTBench-Code",
+   "published": "2025-06",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Code repository for AIRTBench, Apache-2.0 badge; fetched 2026-09-15 (page title 'Code Repository for: AIRTBench: Measuring Autonomous AI Red Teaming Capabilities in Language Models'). Supports M.1 (open code) for the organization's own benchmark.",
+   "self_of": "dreadnode"
+  },
+  "dreadnode-google-gemini3": {
+   "id": "dreadnode-google-gemini3",
+   "title": "A new era of intelligence with Gemini 3",
+   "publisher": "Google",
+   "url": "https://blog.google/products/gemini/gemini-3/",
+   "published": "2025-11-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Lab-published launch post (third-party primary document, typed self per repo precedent for lab pages such as openai-kolter-board and gdm-gemini-testing). Fetched 2026-09-15; span 'obtained independent assessments from industry experts like Apollo, Vaultis, Dreadnode and more' present. This is the document the existing gdm-gemini-testing record describes; that record's URL points at the homepage and should be retargeted here or dropped.",
+   "self_of": "google"
+  },
+  "dreadnode-securityweek": {
+   "id": "dreadnode-securityweek",
+   "title": "Offensive AI Startup Dreadnode Secures $14M to Stress-Test AI Systems",
+   "publisher": "SecurityWeek",
+   "url": "https://www.securityweek.com/offensive-ai-startup-dreadnode-secures-14m-to-stress-test-ai-systems/",
+   "published": "2025-02-25",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; span 'two new products — Strikes and Spyglass — that form the core of its platform' present. Non-self corroboration of the round and products.",
+   "press_kind": "primary"
+  },
+  "dreadnode-seriesa": {
+   "id": "dreadnode-seriesa",
+   "title": "Dreadnode Secures $14M to Build AI Systems that Advance the State of Offensive Security",
+   "publisher": "Dreadnode",
+   "url": "https://dreadnode.io/company/newsroom/series-a/",
+   "published": "2025-02-25",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; spans present: 'announced its $14 million Series A funding round, led by Decibel'; 'The company reveals two new advanced offensive AI solutions—Strikes and Spyglass'. Own-page admission of venture backing and of the product line.",
+   "self_of": "dreadnode"
+  },
+  "dreadnode-time-gdm-pledge": {
+   "id": "dreadnode-time-gdm-pledge",
+   "title": "Exclusive: 60 U.K. Lawmakers Accuse Google of Breaking AI Safety Pledge",
+   "publisher": "Time",
+   "url": "https://time.com/7313320/google-deepmind-gemini-ai-safety-pledge/",
+   "published": "2025-08-29",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Fetched 2026-09-15; span 'a “diverse group of external experts,” including Apollo Research, Dreadnode, and Vaultis' present (DeepMind spokesperson on Gemini 2.5 Pro sharing). Independent editorial corroboration of the Dreadnode engagement.",
+   "press_kind": "primary"
+  },
+  "gdm-gemini-testing": {
+   "audit_status": "unverifiable",
+   "id": "gdm-gemini-testing",
+   "note": "Dreadnode and Vaultis named as external experts (cyber, CBRN, extremism). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches [audit 2026-09-15] the URL resolves to the deepmind.google homepage, which does not mention Dreadnode; the Gemini 3 launch post and press are cited instead. Supports nothing.",
+   "published": "2025",
+   "publisher": "Google DeepMind",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Gemini model documentation, external testing",
+   "url": "https://deepmind.google/",
+   "self_of": "google"
+  }
+ }
+}

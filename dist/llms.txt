@@ -1,0 +1,28 @@
+# Evaluator Bench
+A curator's ledger of third-party AI-evaluator independence conflicts (funding, governance,
+personnel, role incompatibility, scope, publication, access, methods). Each evaluator gets 0-4
+per dimension, derived as the tightest admissible cap (or highest admissible floor) from
+bounded public signals under written rules — re-derivable by anyone from the quoted spans.
+An entry is not an endorsement; a low score is not an accusation; a clear band means no
+disqualifying conflict is on file, not a pass. Curator: Yohei Nakajima (Untapped Capital).
+
+## Machine data
+- bench.json — everything: 27 evaluators, 370 signals,
+  251 sources, rules, evidence policies, weight presets (0-4 ordinal, not ratios).
+- evaluators/index.json — slug, name, type, status, band, and JSON URL for every evaluator.
+- evaluators/<slug>.json — one evaluator's full record: assessments with per-policy derivations,
+  binding signals with verbatim quoted spans (<120 chars), and the sources those signals cite.
+- exposure.json, timeline.json — ledger exposure and the regime timeline.
+Slugs match the entity pages: evaluators/<slug>.json <-> entity/<slug>.html.
+
+## How to read it
+Method: /method/. A 0 on a conflict dimension needs a quoted span; an extreme (0 or 4) is
+second-coded. Values are derived, never typed; the verifier rejects stored values that
+disagree with their derivation. Scores move when evidence moves: open a PR with a source.
+
+## Disclosure
+Holdings: Google and Meta shares; SpaceX (owner of xAI). Shared-funder overlap with evaluator
+funders: no overlap found in public records (checked 2026-09-15); the full LP roster is private,
+so overlap through undisclosed LPs remains unchecked. Full: DISCLOSURE.md.
+
+Built 2026-09-15T00:00:00Z (RULES.md v0.1 (2026-09-15)); 24 of 27 evaluators ranked.

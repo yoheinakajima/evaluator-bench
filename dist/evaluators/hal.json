@@ -1,0 +1,1412 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/hal.html"
+ },
+ "evaluator": {
+  "id": "hal",
+  "name": "Holistic Agent Leaderboard (Princeton)",
+  "type": "academic",
+  "hq": "Princeton, US",
+  "domains": [
+   "benchmarks",
+   "autonomy"
+  ],
+  "confidence": "med",
+  "summary": "Academic agent leaderboard with fully open methodology; AEF founding member.",
+  "what_would_move_the_score": "Nothing on independence; access is the gap.",
+  "role": "benchmark",
+  "dissent": {
+   "lower": "Access is already 0 and cannot go lower, so the weakest movable dimension is Personnel, which should be 1. A co-author is listed at xAI, staff of Anthropic, Google DeepMind and UK AISI are acknowledged on the page, OpenAI and Google supply the API credits, and no recusal or contributor conflict rule exists; lab-affiliated authors on a leaderboard that grades their employers is anchor 1's informal arrangement.",
+   "higher": "Personnel should be 3. Every co-author's affiliation is disclosed on the page, the project sits inside Princeton, whose faculty are bound by a university conflict-of-interest policy, no HAL leader holds a lab role, and the leaderboard's scoring is open code anyone can re-run. Disclosed ties under an institutional policy is anchor 3, not anchor 2."
+  },
+  "list_group": "referee",
+  "status": "out-of-scope",
+  "graph_id": "evaluator#271",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 0,
+   "S": 3,
+   "R": 3,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "hal",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "hal.01",
+     "hal.09",
+     "hal.10"
+    ],
+    "rationale": "Anchor 3 pending a bounded negative (university sponsorship disclosures or a funder index search).",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+     "Request to the HAL team: the amount or approximate value of the OpenAI and Google API credits received and whether any evaluation depends on them, plus a funder list with amounts so a bounded negative on lab money can be recorded."
+    ],
+    "graph_id": "assessment#745",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "hal.09",
+       "hal.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "hal.09",
+       "hal.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "hal.09",
+       "hal.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "hal.01"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "hal.09",
+       "hal.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "hal.01"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.01",
+       "hal.09",
+       "hal.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by hal.09 (F.11): University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).; capped at 3 by hal.10 (F.6): HAL is funded by Coefficient Giving, whose principal is an Anthropic investor, and receives API credits from OpenAI and Google to evaluate their models.. Floors up to 3 from hal.01 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by hal.09 (F.11): University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).; capped at 3 by hal.10 (F.6): HAL is funded by Coefficient Giving, whose principal is an Anthropic investor, and receives API credits from OpenAI and Google to evaluate their models.. Floors up to 3 from hal.01 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "hal",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hal.05"
+    ],
+    "rationale": "Anchor 3: university-hosted academic project and AEF member (hal.05). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#746",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hal.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hal.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hal.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hal.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by hal.05 (G.1): University-hosted; AEF member.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by hal.05 (G.1): University-hosted; AEF member.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "hal",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hal.06",
+     "hal.11"
+    ],
+    "rationale": "Anchor 3 (provisional): academic staff (hal.06); no lab-tie disclosures or cooling-off periods are documented at any tier, so 4 is unearned under the tier rule (C10). Provisional readings are open to public correction through the contribution path.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "open_questions": [
+     "Request to the HAL team at Princeton: the contributor conflict-of-interest or recusal rule that applies to the leaderboard, if any, and the date on which the xAI-affiliated co-author's affiliation began relative to the runs they contributed."
+    ],
+    "graph_id": "assessment#747",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hal.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hal.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hal.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "hal.06"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hal.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.06",
+       "hal.11"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by hal.11 (P.4): HAL's author list includes a co-author affiliated with xAI, and its acknowledgments name staff at Anthropic, Google DeepMind and UK AISI; no contributor recusal or cooling-off rule is published.. Floors up to 2 from hal.06 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by hal.11 (P.4): HAL's author list includes a co-author affiliated with xAI, and its acknowledgments name staff at Anthropic, Google DeepMind and UK AISI; no contributor recusal or cooling-off rule is published.. Floors up to 2 from hal.06 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "hal",
+    "dimension": "A",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "hal.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#748",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "hal.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "hal.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "hal.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "hal.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by hal.04 (A.6): Public API access only..",
+    "rationale_leads": "Capped at 0 by hal.04 (A.6): Public API access only.."
+   },
+   "S": {
+    "evaluator": "hal",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "hal.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#749",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "hal.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "hal.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.07"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "hal.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by hal.07 (S.5): Own benchmark design.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by hal.07 (S.5): Own benchmark design.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "hal",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "hal.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#750",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "hal.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "hal.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.03"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "hal.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by hal.03 (R.5): Results published without review.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by hal.03 (R.5): Results published without review.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "hal",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "hal.02"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#751",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "hal.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "hal.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.02"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "hal.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.02"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by hal.02 (M.1): Open code and logs.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by hal.02 (M.1): Open code and logs.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "hal",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "hal.08"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "evidence_limited": true,
+    "graph_id": "assessment#752",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "hal.08"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "hal.08"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.08"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "hal.08"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hal.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by hal.08 (X.7): No products.. No admissible signal caps it. Held: C16: a 4 needs a tier-1/2 source or two independent sources, one not self-published.",
+    "rationale_leads": "Floored at 3 by hal.08 (X.7): No products.. No admissible signal caps it. Held: C16: a 4 needs a tier-1/2 source or two independent sources, one not self-published."
+   }
+  },
+  "signals": [
+   {
+    "id": "hal.01",
+    "evaluator": "hal",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "No lab money; academic.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "F.11",
+    "graph_id": "signal#440",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.02",
+    "evaluator": "hal",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open code and logs.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "HAL is an open-source project and we welcome contributions from the community",
+    "quote_source": "hal",
+    "graph_id": "signal#441",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.03",
+    "evaluator": "hal",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Results published without review.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "R.5",
+    "quote": "The standardized, cost-aware, and third-party leaderboard for evaluating agents",
+    "quote_source": "hal",
+    "graph_id": "signal#442",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.04",
+    "evaluator": "hal",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Public API access only.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.6",
+    "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+    "quote_source": "hal",
+    "graph_id": "signal#443",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.05",
+    "evaluator": "hal",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "University-hosted; AEF member.",
+    "sources": [
+     "hal",
+     "aef-launch"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "By the SAgE team at Princeton University",
+    "quote_source": "hal",
+    "graph_id": "signal#444",
+    "source_graph_ids": [
+     "source#113",
+     "source#10"
+    ]
+   },
+   {
+    "id": "hal.06",
+    "evaluator": "hal",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Academic staff.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "quote": "Sayash Kapoor Princeton University Benedikt Stroebl Princeton University",
+    "quote_source": "hal",
+    "graph_id": "signal#445",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.07",
+    "evaluator": "hal",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Own benchmark design.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "We have paused updating HAL leaderboard with new models and are currently focusing on measuring reliability in AI agents",
+    "quote_source": "hal",
+    "graph_id": "signal#446",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.08",
+    "evaluator": "hal",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No products.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "quote": "HAL is an open-source project",
+    "quote_source": "hal",
+    "graph_id": "signal#447",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.09",
+    "evaluator": "hal",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "University-hosted leaderboard; no lab money found, and no bounded negative on file (no filing or index searched yet).",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.11",
+    "quote": "HAL is funded by Coefficient Giving , Schmidt Sciences , the Princeton AI Lab",
+    "quote_source": "hal",
+    "graph_id": "signal#448",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   },
+   {
+    "id": "hal.10",
+    "evaluator": "hal",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "HAL is funded by Coefficient Giving, whose principal is an Anthropic investor, and receives API credits from OpenAI and Google to evaluate their models.",
+    "sources": [
+     "hal",
+     "anthropic-series-a"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "We are grateful to OpenAI and Google for providing API credits to evaluate their models",
+    "quote_source": "hal",
+    "note": "F.6 caps Coefficient money at 3 ('HAL is funded by Coefficient Giving , Schmidt Sciences'; Moskovitz participated in Anthropic's Series A). The lab API credits are undisclosed in-kind with no dependency statement, a gap in F.2; by anchor text they exclude 'no lab money'.",
+    "graph_id": "signal#449",
+    "source_graph_ids": [
+     "source#113",
+     "source#31"
+    ]
+   },
+   {
+    "id": "hal.11",
+    "evaluator": "hal",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "HAL's author list includes a co-author affiliated with xAI, and its acknowledgments name staff at Anthropic, Google DeepMind and UK AISI; no contributor recusal or cooling-off rule is published.",
+    "sources": [
+     "hal"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.4",
+    "quote": "Yifei Zhou xAI",
+    "quote_source": "hal",
+    "note": "A lab employee among the project's contributors with no recusal rule caps at 2 (P.4 by analogy; P.3 if the affiliation followed the contribution). Public role only; the open question is a document request.",
+    "graph_id": "signal#450",
+    "source_graph_ids": [
+     "source#113"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 56,
+   "regulator": 55,
+   "public": 64,
+   "equal": 59
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "equal": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "equal": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 40,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      23,
+      67
+     ]
+    },
+    "regulator": {
+     "score": 39,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      21,
+      66
+     ]
+    },
+    "public": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      34,
+      74
+     ]
+    },
+    "equal": {
+     "score": 44,
+     "band": "clear",
+     "coverage": 4,
+     "range": [
+      22,
+      72
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      56,
+      56
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "public": {
+     "score": 64,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      64,
+      64
+     ]
+    },
+    "equal": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 58,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 61,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 58,
+     "band": "clear",
+     "base": 56
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 56
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 60,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "clear",
+     "base": 55
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 70,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 68,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 68,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 65,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 69,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 65,
+     "band": "clear",
+     "base": 64
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 65,
+     "band": "clear",
+     "base": 64
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    }
+   ]
+  }
+ },
+ "sources": {
+  "aef-launch": {
+   "audit_status": "confirmed",
+   "id": "aef-launch",
+   "note": "Founding members: Transluce, METR, RAND, HAL, SecureBio, CIP, AVERI/Brundage. AEF-1 minimum operating conditions. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2025-12-04",
+   "publisher": "AI Evaluator Forum",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "AI Evaluator Forum launch and AEF-1",
+   "url": "https://aievaluatorforum.org/",
+   "self_of": "aef"
+  },
+  "anthropic-series-a": {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it.",
+   "self_of": "anthropic"
+  },
+  "hal": {
+   "audit_status": "confirmed",
+   "id": "hal",
+   "note": "Open agent leaderboard; AEF founding member. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "Princeton",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Holistic Agent Leaderboard",
+   "url": "https://hal.cs.princeton.edu/",
+   "self_of": "hal"
+  }
+ }
+}

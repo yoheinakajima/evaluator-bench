@@ -1,0 +1,1502 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/transluce.html"
+ },
+ "evaluator": {
+  "id": "transluce",
+  "name": "Transluce",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+   "misuse",
+   "autonomy",
+   "benchmarks",
+   "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Nonprofit oversight-tools lab; convenes the AI Evaluator Forum that wrote AEF-1.",
+  "what_would_move_the_score": "Routine pre-release access under AEF-1 terms.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Funding could be 1. In FY2025, 38% of Transluce's revenue came from the personal holdings of Anthropic and OpenAI employees, which are lab equity by another name; anchor 1 is material revenue or investment from evaluated labs or their investors, and 38% is material by any accounting test. The policy permits such donations, and the donors are not named or bounded in size.",
+   "higher": "Funding could be 3. No revenue came from developers as organizations, no evaluation has been paid, the employee donations were unrestricted and are disclosed by share each year under a published policy aligned to AEF-1, and the remainder is philanthropy and government contracts including an EU AI Office consortium seat. Anchor 3 is mostly philanthropic or public money with some lab-linked funds, which describes 62% of the base."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#285",
+  "values": {
+   "F": 2,
+   "G": 3,
+   "P": 2,
+   "A": 2,
+   "S": 3,
+   "R": 2,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 2,
+    "G": 3,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 2,
+    "G": 3,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 2,
+    "G": 2,
+    "P": 2,
+    "A": 2,
+    "S": null,
+    "R": 2,
+    "M": null,
+    "X": 3
+   },
+   "spans": {
+    "F": 2,
+    "G": 3,
+    "P": 2,
+    "A": 2,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "transluce",
+    "dimension": "F",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "transluce.03",
+     "transluce.09"
+    ],
+    "rationale": "Anchor 2: no money from developers as organizations and no paid evaluations, but 38% of FY2025 revenue came from lab employees' personal holdings, which are lab equity. The disclosure is the best in the population; the exposure is still material.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+     "Whether employee donors are named or bounded in size.",
+     "How the 38% moves in FY2026."
+    ],
+    "resolution": {
+     "rule": "F.7",
+     "value": 2,
+     "note": "Transluce's disclosed FY2025 revenue includes 38% from the personal holdings of Anthropic and OpenAI employees, above the 10% threshold; F.7 caps at 2 despite the government and philanthropic base."
+    },
+    "graph_id": "assessment#857",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "transluce.09"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "transluce.09"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "transluce.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "transluce.03"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "transluce.09"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.03",
+       "transluce.09"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from transluce.03 (F.12) against cap 2 from transluce.09 (F.7); resolved at 2 by F.7: Transluce's disclosed FY2025 revenue includes 38% from the personal holdings of Anthropic and OpenAI employees, above the 10% threshold; F.7 caps at 2 despite the government and philanthropic base.",
+    "rationale_leads": "Conflict: floor 3 from transluce.03 (F.12) against cap 2 from transluce.09 (F.7); resolved at 2 by F.7: Transluce's disclosed FY2025 revenue includes 38% from the personal holdings of Anthropic and OpenAI employees, above the 10% threshold; F.7 caps at 2 despite the government and philanthropic base."
+   },
+   "G": {
+    "evaluator": "transluce",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "transluce.01",
+     "transluce.10"
+    ],
+    "rationale": "Anchor 3: nonprofit with a published COI policy and disclosure duties; board of three includes the CEO, so independent-board evidence is thin.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "graph_id": "assessment#858",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "transluce.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "transluce.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "transluce.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "transluce.10"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "transluce.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.01",
+       "transluce.10"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by transluce.10 (G.2): Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by transluce.10 (G.2): Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "transluce",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "transluce.04",
+     "transluce.12"
+    ],
+    "rationale": "Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). Provisional readings are open to public correction through the contribution path.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#859",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "transluce.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "transluce.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "transluce.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "transluce.04"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "transluce.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.04",
+       "transluce.12"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by transluce.12 (P.4): An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.. Floors up to 2 from transluce.04 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by transluce.12 (P.4): An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.. Floors up to 2 from transluce.04 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "transluce",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "transluce.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#860",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "transluce.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "transluce.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "transluce.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "transluce.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by transluce.06 (A.1): Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely..",
+    "rationale_leads": "Capped at 2 by transluce.06 (A.1): Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely.."
+   },
+   "S": {
+    "evaluator": "transluce",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "transluce.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#861",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "transluce.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "transluce.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.07"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "transluce.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by transluce.07 (S.5): Sets its own evaluation questions.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by transluce.07 (S.5): Sets its own evaluation questions.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "transluce",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "transluce.02"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#862",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "transluce.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "transluce.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "transluce.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "transluce.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.02"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by transluce.02 (R.7): Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by transluce.02 (R.7): Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "transluce",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "transluce.08"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#863",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "transluce.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "transluce.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.08"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "transluce.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by transluce.08 (M.1): Open tools (Docent) and published methods.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by transluce.08 (M.1): Open tools (Docent) and published methods.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "transluce",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "transluce.05"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#864",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "transluce.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "transluce.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "transluce.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "transluce.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "transluce.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by transluce.05 (X.4): Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users..",
+    "rationale_leads": "Capped at 3 by transluce.05 (X.4): Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users.."
+   }
+  },
+  "signals": [
+   {
+    "id": "transluce.01",
+    "evaluator": "transluce",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Wrote the field's independence standard (AEF-1) through the AI Evaluator Forum and applies it to itself.",
+    "sources": [
+     "aef-launch",
+     "transluce-job",
+     "aef-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "Transluce organizes the   AI Evaluator Forum",
+    "quote_source": "transluce-job",
+    "graph_id": "signal#630",
+    "source_graph_ids": [
+     "source#10",
+     "source#239",
+     "source#11"
+    ]
+   },
+   {
+    "id": "transluce.02",
+    "evaluator": "transluce",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.",
+    "sources": [
+     "transluce-mh",
+     "axios-transluce-mh"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+    "quote_source": "transluce-mh",
+    "graph_id": "signal#631",
+    "source_graph_ids": [
+     "source#241",
+     "source#48"
+    ]
+   },
+   {
+    "id": "transluce.03",
+    "evaluator": "transluce",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Government contracts and philanthropy rather than lab fees.",
+    "sources": [
+     "transluce-job",
+     "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "We build this technology using philanthropic funding",
+    "quote_source": "transluce-manifund",
+    "graph_id": "signal#632",
+    "source_graph_ids": [
+     "source#239",
+     "source#240"
+    ]
+   },
+   {
+    "id": "transluce.04",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Head of governance previously led CAISI; no lab board roles found.",
+    "sources": [
+     "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "quote": "previously led the U.S. Center for Standards and Innovation",
+    "quote_source": "transluce-manifund",
+    "graph_id": "signal#633",
+    "source_graph_ids": [
+     "source#240"
+    ]
+   },
+   {
+    "id": "transluce.05",
+    "evaluator": "transluce",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users.",
+    "sources": [
+     "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "X.4",
+    "quote": "has been used by over 25 organizations, including frontier AI labs (Anthropic, DeepMind, Thinking Machines",
+    "quote_source": "transluce-manifund",
+    "graph_id": "signal#634",
+    "source_graph_ids": [
+     "source#240"
+    ]
+   },
+   {
+    "id": "transluce.06",
+    "evaluator": "transluce",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely.",
+    "sources": [
+     "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "A.1",
+    "quote": "It was also used as part of Claude 4's pre-deployment safety analysis",
+    "quote_source": "transluce-manifund",
+    "graph_id": "signal#635",
+    "source_graph_ids": [
+     "source#240"
+    ]
+   },
+   {
+    "id": "transluce.07",
+    "evaluator": "transluce",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own evaluation questions.",
+    "sources": [
+     "transluce-mh"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises",
+    "quote_source": "transluce-mh",
+    "graph_id": "signal#636",
+    "source_graph_ids": [
+     "source#241"
+    ]
+   },
+   {
+    "id": "transluce.08",
+    "evaluator": "transluce",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open tools (Docent) and published methods.",
+    "sources": [
+     "transluce-manifund"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "Our open-source, AI-backed tools provide a technology stack that powers this public accountability",
+    "quote_source": "transluce-manifund",
+    "graph_id": "signal#637",
+    "source_graph_ids": [
+     "source#240"
+    ]
+   },
+   {
+    "id": "transluce.09",
+    "evaluator": "transluce",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "FY2025 revenue: 32% from personal holdings of Anthropic employees and 6% from OpenAI employees, unrestricted, disclosed under its own policy; no revenue from developers as organizations.",
+    "sources": [
+     "transluce-policy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "32% of its revenue from the personal holdings of Anthropic employees",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.7",
+    "quote_source": "transluce-policy",
+    "graph_id": "signal#638",
+    "source_graph_ids": [
+     "source#242"
+    ]
+   },
+   {
+    "id": "transluce.10",
+    "evaluator": "transluce",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.",
+    "sources": [
+     "transluce-policy",
+     "transluce-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "consistent with requirement 2.3 of the AEF-1 standard",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "G.2",
+    "quote_source": "transluce-policy",
+    "graph_id": "signal#639",
+    "source_graph_ids": [
+     "source#242",
+     "source#238"
+    ]
+   },
+   {
+    "id": "transluce.11",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider.",
+    "sources": [
+     "transluce-policy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "Transluce recuses any employee with a significant financial interest",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "P.5",
+    "quote_source": "transluce-policy",
+    "graph_id": "signal#640",
+    "source_graph_ids": [
+     "source#242"
+    ]
+   },
+   {
+    "id": "transluce.12",
+    "evaluator": "transluce",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.",
+    "sources": [
+     "transluce-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.4",
+    "quote": "Thinking Machines Board of Directors Alex Allain Co-Founder, U.S. Digital Response Mike McCormick CEO, Halcyon Futures",
+    "quote_source": "transluce-about",
+    "graph_id": "signal#641",
+    "source_graph_ids": [
+     "source#238"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 60,
+   "regulator": 60,
+   "public": 59,
+   "equal": 63
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "regulator": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "public": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "regulator": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "public": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 52,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      39,
+      64
+     ]
+    },
+    "regulator": {
+     "score": 50,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      35,
+      65
+     ]
+    },
+    "public": {
+     "score": 51,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      44,
+      59
+     ]
+    },
+    "equal": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      41,
+      66
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "regulator": {
+     "score": 60,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      60,
+      60
+     ]
+    },
+    "public": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      59,
+      59
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      63,
+      63
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "F",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 64,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 62,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 62,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 65,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 64,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 62,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "clear",
+     "base": 60
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 64,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 65,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 65,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 64,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 60
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 60
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 65,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 60,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 64,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 59
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 59
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 63
+    }
+   ]
+  }
+ },
+ "sources": {
+  "aef-launch": {
+   "audit_status": "confirmed",
+   "id": "aef-launch",
+   "note": "Founding members: Transluce, METR, RAND, HAL, SecureBio, CIP, AVERI/Brundage. AEF-1 minimum operating conditions. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2025-12-04",
+   "publisher": "AI Evaluator Forum",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "AI Evaluator Forum launch and AEF-1",
+   "url": "https://aievaluatorforum.org/",
+   "self_of": "aef"
+  },
+  "aef-transparency": {
+   "audit_status": "confirmed",
+   "id": "aef-transparency",
+   "note": "Editorial control, access, and transparency disclosures expected of third-party evaluators. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "AI Evaluator Forum",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Evaluation Transparency Letter",
+   "url": "https://t.co/Nm0RMxOWzw",
+   "self_of": "aef"
+  },
+  "axios-transluce-mh": {
+   "id": "axios-transluce-mh",
+   "title": "Study: Chatbots are getting better at identifying suicide risk",
+   "publisher": "Axios",
+   "url": "https://www.axios.com/2026/08/31/chatbots-suicide-risks-identification",
+   "published": "2026-08-31",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "primary",
+   "audit_status": "confirmed",
+   "note": "Independent coverage of Transluce's mental-health evaluation: \"A new independent evaluation finds that leading AI models are far less likely than earlier versions to explicitly encourage suicide or reinforce delusions\" and \"the study also found most models too willing to assist with suicide-related creative writing\"; names Transluce as a San Francisco nonprofit and quotes its chief scientist. Non-self confirmed source for transluce.02."
+  },
+  "transluce-about": {
+   "id": "transluce-about",
+   "title": "Company",
+   "publisher": "Transluce",
+   "url": "https://transluce.org/about",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Board: Allain, McCormick (Halcyon CEO), Steinhardt. Advisors include a Thinking Machines staffer; ethics hotline via third party.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "transluce"
+  },
+  "transluce-job": {
+   "id": "transluce-job",
+   "title": "Governance & Policy Fellow at Transluce",
+   "publisher": "The Economic Misfit (job listing)",
+   "url": "https://theeconomicmisfit.com/2026/04/18/governance-policy-fellow-at-transluce/",
+   "published": "2026-04-18",
+   "retrieved": "2026-09-14",
+   "note": "Organizes AEF; AEF-1 standard; government contracts. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Loads; 'independent nonprofit'; no money — thin, do not hang an anchor on it.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "transluce"
+  },
+  "transluce-manifund": {
+   "audit_status": "confirmed",
+   "id": "transluce-manifund",
+   "note": "Docent used by Anthropic, DeepMind, Thinking Machines, METR, Redwood, Apollo, Palisade; used in Claude 4 pre-deployment analysis; head of governance previously led CAISI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "Manifund",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Transluce: Fund Scalable Democratic Oversight of AI",
+   "url": "https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai",
+   "self_of": "transluce"
+  },
+  "transluce-mh": {
+   "audit_status": "confirmed",
+   "id": "transluce-mh",
+   "note": "77 model variants across eight developers. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-09",
+   "publisher": "Transluce",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Independent evaluation of model responses to mental health crises",
+   "url": "https://transluce.org/",
+   "self_of": "transluce"
+  },
+  "transluce-policy": {
+   "id": "transluce-policy",
+   "title": "Independence and Transparency Policy",
+   "publisher": "Transluce",
+   "url": "https://transluce.org/independence-and-transparency-policy",
+   "published": "2026-08-27",
+   "retrieved": "2026-09-14",
+   "note": "FY2025: 6% of revenue from OpenAI employees' personal holdings, 32% from Anthropic employees', unrestricted; no revenue from developers as organizations; no paid evaluations; recusal for financial interest; no equity; disclosure in outputs; AEF-1 2.3 aligned.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "transluce"
+  }
+ }
+}

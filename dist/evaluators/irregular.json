@@ -1,0 +1,1612 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/irregular.html"
+ },
+ "evaluator": {
+  "id": "irregular",
+  "name": "Irregular (formerly Pattern Labs)",
+  "type": "vc",
+  "hq": "Tel Aviv, IL / San Francisco, US",
+  "domains": [
+   "cyber",
+   "misuse"
+  ],
+  "confidence": "high",
+  "summary": "Offensive-cyber evaluator cited in OpenAI and Anthropic system cards; SOLVE framework used by UK AISI. Pattern Labs and Irregular are the same company.",
+  "what_would_move_the_score": "A published COI policy, disclosure of lab revenue share, and a firewall between evaluations and the security-products business.",
+  "role": "vendor",
+  "dissent": {
+   "lower": "Role incompatibility (1 to 0). Irregular says it works side by side with OpenAI and Anthropic 'to develop the defenses needed before deployment' and describes a roadmap of runtime security controls for the same customers it evaluates. If any evaluated lab pays for those defenses, X.1 places the company at 0: it would be selling the fix to the party it grades.",
+   "higher": "Funding (1 to 2). The revenue disclosed is 'millions' from lab partnerships, but the UK government uses the SOLVE framework and the company markets to enterprises beyond the labs. If a non-lab revenue base is documented, per-engagement lab fees beside that base cap at 2 under F.3 rather than 1 under F.5."
+  },
+  "list_group": "commercial",
+  "graph_id": "evaluator#274",
+  "values": {
+   "F": 1,
+   "G": 1,
+   "P": 2,
+   "A": 2,
+   "S": 2,
+   "R": 2,
+   "M": 2,
+   "X": 1
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 1,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 1
+   },
+   "standard": {
+    "F": 1,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 1
+   },
+   "against_interest": {
+    "F": 1,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 1
+   },
+   "spans": {
+    "F": 1,
+    "G": 1,
+    "P": 2,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 1
+   },
+   "primary": {
+    "F": 3,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "irregular",
+    "dimension": "F",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "irregular.01",
+     "irregular.02",
+     "irregular.06",
+     "irregular.11",
+     "irregular.12",
+     "irregular.15"
+    ],
+    "rationale": "Anchor 1: a $6.8M Coefficient Giving grant appears in the index under the former name Pattern Labs (irregular.11; ledger T09 marked differs, unreconciled). A name-search under ‘Irregular’ found nothing (irregular.12), which does not rebut the old-name row — the project treats the two names as the same company. Material lab-adjacent funding with disputed attribution.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Re-run the Coefficient index search under both Irregular and Pattern Labs and record the snapshot."
+    ],
+    "graph_id": "assessment#769",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "irregular.01",
+       "irregular.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "irregular.11"
+      ]
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "irregular.01",
+       "irregular.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "irregular.11"
+      ]
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "irregular.01",
+       "irregular.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "irregular.11"
+      ]
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "irregular.01",
+       "irregular.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "irregular.11",
+       "irregular.12"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "irregular.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "irregular.01",
+       "irregular.02",
+       "irregular.06",
+       "irregular.11",
+       "irregular.12"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by irregular.01 (F.4): $80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.; capped at 1 by irregular.02 (F.5): Millions in annual revenue from the labs it evaluates.. Floors up to 1 from irregular.06 do not exceed the cap. Not counted under this policy: irregular.11 (superseded).",
+    "rationale_leads": "Capped at 1 by irregular.01 (F.4): $80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.; capped at 1 by irregular.02 (F.5): Millions in annual revenue from the labs it evaluates.. Floors up to 1 from irregular.06 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "irregular",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "irregular.03"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#770",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "irregular.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "irregular.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "irregular.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "irregular.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by irregular.03 (G.2): Venture-backed for-profit; no published COI or recusal policy found..",
+    "rationale_leads": "Capped at 1 by irregular.03 (G.2): Venture-backed for-profit; no published COI or recusal policy found.."
+   },
+   "P": {
+    "evaluator": "irregular",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "irregular.10"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#771",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "irregular.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "irregular.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "irregular.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "irregular.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by irregular.10 (P.5): Markets itself as embedded with the labs; no recusal or cooling-off policy found..",
+    "rationale_leads": "Capped at 2 by irregular.10 (P.5): Markets itself as embedded with the labs; no recusal or cooling-off policy found.."
+   },
+   "A": {
+    "evaluator": "irregular",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "irregular.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#772",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "irregular.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "irregular.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "irregular.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "irregular.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by irregular.05 (A.1): Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by irregular.05 (A.1): Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "irregular",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "irregular.09"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#773",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "irregular.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "irregular.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "irregular.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "irregular.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.09"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by irregular.09 (S.2; S.6): Scope set by lab engagements; no public account of evaluator-set scope..",
+    "rationale_leads": "Capped at 2 by irregular.09 (S.2; S.6): Scope set by lab engagements; no public account of evaluator-set scope.."
+   },
+   "R": {
+    "evaluator": "irregular",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "irregular.08",
+     "irregular.14"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#774",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "irregular.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "irregular.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "irregular.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "irregular.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.08",
+       "irregular.14"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by irregular.14 (R.3): Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).. Floors up to 1 from irregular.08 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by irregular.14 (R.3): Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).. Floors up to 1 from irregular.08 do not exceed the cap."
+   },
+   "M": {
+    "evaluator": "irregular",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "irregular.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#775",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "irregular.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "irregular.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "irregular.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "irregular.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by irregular.07 (M.2): Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by irregular.07 (M.2): Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "irregular",
+    "dimension": "X",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "irregular.04",
+     "irregular.13"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#776",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "irregular.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "irregular.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "irregular.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "irregular.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "irregular.04",
+       "irregular.13"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by irregular.13 (X.2): Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses..",
+    "rationale_leads": "Capped at 1 by irregular.13 (X.2): Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses.."
+   }
+  },
+  "signals": [
+   {
+    "id": "irregular.01",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "$80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.",
+    "sources": [
+     "techcrunch-irregular",
+     "sequoia-irregular",
+     "irregular-xai-series-b"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "F.4",
+    "quote_source": "techcrunch-irregular",
+    "graph_id": "signal#471",
+    "source_graph_ids": [
+     "source#225",
+     "source#222",
+     "source#120"
+    ]
+   },
+   {
+    "id": "irregular.02",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Millions in annual revenue from the labs it evaluates.",
+    "sources": [
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "F.5",
+    "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+    "quote_source": "newswire-irregular",
+    "graph_id": "signal#472",
+    "source_graph_ids": [
+     "source#156"
+    ]
+   },
+   {
+    "id": "irregular.03",
+    "evaluator": "irregular",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed for-profit; no published COI or recusal policy found.",
+    "sources": [
+     "techcrunch-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "G.2",
+    "quote": "a round led by Sequoia Capital and Redpoint Ventures",
+    "quote_source": "techcrunch-irregular",
+    "graph_id": "signal#473",
+    "source_graph_ids": [
+     "source#225"
+    ]
+   },
+   {
+    "id": "irregular.04",
+    "evaluator": "irregular",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Growth plan is to sell runtime security controls into the same customers it evaluates.",
+    "sources": [
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1 (second sentence)",
+    "quote": "to develop the defenses needed before deployment",
+    "quote_source": "newswire-irregular",
+    "graph_id": "signal#474",
+    "source_graph_ids": [
+     "source#156"
+    ]
+   },
+   {
+    "id": "irregular.05",
+    "evaluator": "irregular",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.",
+    "sources": [
+     "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "A.1",
+    "quote": "By embedding directly with these cutting-edge research labs",
+    "quote_source": "sequoia-irregular",
+    "graph_id": "signal#475",
+    "source_graph_ids": [
+     "source#222"
+    ]
+   },
+   {
+    "id": "irregular.06",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Government clients (UK) alongside labs.",
+    "sources": [
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "F.5 (anchor text)",
+    "quote": "the UK government and Anthropic use Irregular's SOLVE framework",
+    "quote_source": "newswire-irregular",
+    "graph_id": "signal#476",
+    "source_graph_ids": [
+     "source#156"
+    ]
+   },
+   {
+    "id": "irregular.07",
+    "evaluator": "irregular",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.",
+    "sources": [
+     "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "the UK government and Anthropic both use the company’s SOLVE framework",
+    "quote_source": "sequoia-irregular",
+    "graph_id": "signal#477",
+    "source_graph_ids": [
+     "source#222"
+    ]
+   },
+   {
+    "id": "irregular.08",
+    "evaluator": "irregular",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Findings appear in system cards for o3, o4-mini, GPT-5 and Claude models.",
+    "sources": [
+     "techcrunch-irregular",
+     "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "R.3 (anchor 1)",
+    "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+    "quote_source": "sequoia-irregular",
+    "graph_id": "signal#478",
+    "source_graph_ids": [
+     "source#225",
+     "source#222"
+    ]
+   },
+   {
+    "id": "irregular.09",
+    "evaluator": "irregular",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab engagements; no public account of evaluator-set scope.",
+    "sources": [
+     "sequoia-irregular",
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "S.2; S.6",
+    "quote": "The company also co-authored a whitepaper with Anthropic",
+    "quote_source": "newswire-irregular",
+    "graph_id": "signal#479",
+    "source_graph_ids": [
+     "source#222",
+     "source#156"
+    ]
+   },
+   {
+    "id": "irregular.10",
+    "evaluator": "irregular",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Markets itself as embedded with the labs; no recusal or cooling-off policy found.",
+    "sources": [
+     "sequoia-irregular"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.5",
+    "quote": "By embedding directly with these cutting-edge research labs",
+    "quote_source": "sequoia-irregular",
+    "graph_id": "signal#480",
+    "source_graph_ids": [
+     "source#222"
+    ]
+   },
+   {
+    "id": "irregular.11",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "A Coefficient Giving grant of about $6.8M appears in the index for a venture-backed company; purpose to be verified.",
+    "sources": [
+     "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11",
+    "superseded_by": "irregular.12",
+    "bound": null,
+    "rule": "0 (superseded)",
+    "bound_note": "Superseded signals support nothing (RULES 0).",
+    "graph_id": "signal#481",
+    "source_graph_ids": [
+     "source#64"
+    ]
+   },
+   {
+    "id": "irregular.12",
+    "evaluator": "irregular",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "A search of Coefficient Giving's grants pages under the name Irregular found no grant (snapshot 2026-09-15); the imported row citing $6.8M under Pattern Labs is unreconciled and marked differs.",
+    "sources": [
+     "coefficient-home",
+     "evaluators-ledger"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "bound": null,
+    "rule": "F.6 (informational)",
+    "bound_note": "Informational: neither floor nor cap; recorded as a gap.",
+    "graph_id": "signal#482",
+    "source_graph_ids": [
+     "source#63",
+     "source#96"
+    ]
+   },
+   {
+    "id": "irregular.13",
+    "evaluator": "irregular",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses.",
+    "sources": [
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "X.2",
+    "quote": "Already generating millions in revenue, Irregular partners with leading labs like OpenAI and Anthropic",
+    "quote_source": "newswire-irregular",
+    "note": "Needed to apply X.2 (evaluation services delivered to an evaluated lab for money: 1); irregular.04 concerns the planned defense product and caps only at 2.",
+    "graph_id": "signal#483",
+    "source_graph_ids": [
+     "source#156"
+    ]
+   },
+   {
+    "id": "irregular.14",
+    "evaluator": "irregular",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).",
+    "sources": [
+     "sequoia-irregular",
+     "newswire-irregular"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.3",
+    "quote": "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5",
+    "quote_source": "sequoia-irregular",
+    "note": "Needed to apply R.3: system-card-only publication caps at 1, or at 2 where the organization also publishes its own reports on other work (Newswire: 'The company also co-authored a whitepaper with Anthropic'; RAND paper).",
+    "graph_id": "signal#484",
+    "source_graph_ids": [
+     "source#222",
+     "source#156"
+    ]
+   },
+   {
+    "evaluator": "irregular",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "irregular.15",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Good Ventures Foundation, Coefficient's principal funder and an Anthropic investor's foundation, paid Pattern Labs Tech Inc $4,533,333 (grant dated 5 March 2024) and $2,266,667 (FY2025) for developing software tools, products and analysis focused on global security, and held a $3,000,000 stake in the company at 30 June 2024 per its 990-PF.",
+    "sources": [
+     "good-ventures-990pf-fy2024-xml",
+     "good-ventures-990pf-fy2025-render",
+     "coefficient-site-search",
+     "kevinnbass-evaluators-csv"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "PATTERN LABS TECH INC 108 W 13TH ST STE 100 WILMINGTON DE 19801 2024-03-05 4533333",
+    "quote_source": "good-ventures-990pf-fy2024-xml",
+    "graph_id": "signal#485",
+    "source_graph_ids": [
+     "source#106",
+     "source#107",
+     "source#65",
+     "source#122"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 42,
+   "regulator": 44,
+   "public": 39,
+   "equal": 41
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      42,
+      42
+     ]
+    },
+    "regulator": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      44,
+      44
+     ]
+    },
+    "public": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "equal": {
+     "score": 41,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      42,
+      42
+     ]
+    },
+    "regulator": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      44,
+      44
+     ]
+    },
+    "public": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "equal": {
+     "score": 41,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      42,
+      42
+     ]
+    },
+    "regulator": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      44,
+      44
+     ]
+    },
+    "public": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "equal": {
+     "score": 41,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      42,
+      42
+     ]
+    },
+    "regulator": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      44,
+      44
+     ]
+    },
+    "public": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "equal": {
+     "score": 41,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 1,
+     "range": [
+      14,
+      96
+     ]
+    },
+    "regulator": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 1,
+     "range": [
+      11,
+      96
+     ]
+    },
+    "public": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 1,
+     "range": [
+      19,
+      94
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 1,
+     "range": [
+      9,
+      97
+     ]
+    }
+   }
+  },
+  "band": "conditional",
+  "coverage": 8,
+  "floor": "F",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 45,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 47,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 45,
+     "band": "conditional",
+     "base": 42
+    },
+    {
+     "dimension": "X",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 42
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 48,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 49,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 49,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 48,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "conditional",
+     "base": 44
+    },
+    {
+     "dimension": "X",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 44
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 45,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 43,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 43,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 40,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 41,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 40,
+     "band": "conditional",
+     "base": 39
+    },
+    {
+     "dimension": "X",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 40,
+     "band": "conditional",
+     "base": 39
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    },
+    {
+     "dimension": "X",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "conditional",
+     "base": 41
+    }
+   ]
+  }
+ },
+ "sources": {
+  "coefficient-home": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "coefficient-home",
+   "note": "Over $7 billion in grants since 2014; Navigating Transformative AI fund with 570+ grants. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026",
+   "publisher": "Coefficient Giving",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Coefficient Giving home",
+   "url": "https://coefficientgiving.org/",
+   "self_of": "coefficient"
+  },
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "coefficient-site-search": {
+   "id": "coefficient-site-search",
+   "title": "Site search",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/search/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Read in a browser on 2026-09-15 because curl and fetch_text receive HTTP 403. The search box is labelled 'Find an article, person or page'; queries METR (152 results, mostly 'metrics'), Model Evaluation, Apollo Research (1 result: a staff bio), Pattern Labs (8), Irregular (25), Palisade and SecureBio return no grant records. The ?s=<term>&post_type=grants route redirects to the homepage. No fetch_text-checkable span. Browser read 2026-09-15: 'Pattern Labs' 8 results and 'Irregular' 25 results, all articles or staff pages, no grant record; the site no longer serves grant pages.",
+   "self_of": "coefficient"
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "good-ventures-990pf-fy2024-xml": {
+   "id": "good-ventures-990pf-fy2024-xml",
+   "title": "Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "493 Part XV paid-grant groups; no METR or ARC line; contains the Pattern Labs Tech Inc lines used in question 4 and SecureBio $507,000. Part XV paid during the year: PATTERN LABS TECH INC, 108 W 13TH ST STE 100, WILMINGTON DE 19801, status NC, 'DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY', 4,533,333. Part XV approved for future payment: same recipient and purpose, 2,266,667. Part VII-B expenditure responsibility statement: grant date 2024-03-05, amount 4,533,333, expended by grantee 2,639,613, reports 3/15/25. Part II investments, corporate stock: PATTERN LABS TECH INC, EOY book value 3,000,000, FMV 3,000,000. SECUREBIO INC, PC, 'PROJECT ON PATHOGEN EARLY WARNING SYSTEMS', 507,000."
+  },
+  "good-ventures-990pf-fy2025-render": {
+   "id": "good-ventures-990pf-fy2025-render",
+   "title": "Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render)",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Served gzip-encoded regardless of Accept-Encoding; decoded with gzip on 2026-09-15 (2,324,373 bytes; about 900 Part XV lines). No METR, Model Evaluation or ARC line; RAND general support lines ($2,000,000; $666,667; $2,500,000); Pattern Labs Tech Inc $2,266,667; SecureBio $1,400,000, $230,000 and $2,600,000. bench.review.fetch_text does not gunzip this endpoint, so no checkable span; the XML is not yet on the S3 mirror (404). Part XIV/XV paid during the year: PATTERN LABS TECH INC ... NC DEVELOPING SOFTWARE TOOLS, PRODUCTS AND ANALYSIS FOCUSED ON GLOBAL SECURITY 2,266,667 (the second tranche). Gzip-encoded endpoint; decoded locally; no fetch_text-checkable span. SECUREBIO INC: GENERAL SUPPORT 1,400,000; PUBLIC HEALTH EARLY WARNING SYSTEM FOR PANDEMIC PREPAREDNESS 230,000; GENERAL SUPPORT 2,600,000. Gzip-encoded endpoint, decoded locally; no fetch_text-checkable span."
+  },
+  "irregular-xai-series-b": {
+   "id": "irregular-xai-series-b",
+   "title": "Series B funding round",
+   "publisher": "xAI",
+   "url": "https://x.ai/news/series-b",
+   "published": "2024-05-26",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Third-party primary document (a frontier developer's own funding post), typed self per repo precedent. Fetched 2026-09-15; span 'with participation from key investors including Valor Equity Partners, Vy Capital, Andreessen Horowitz, Sequoia Capital' present. Establishes Sequoia Capital as an investor in a frontier developer for F.4/G.3.",
+   "self_of": "xai"
+  },
+  "kevinnbass-evaluators-csv": {
+   "id": "kevinnbass-evaluators-csv",
+   "title": "evaluators.csv (row EV07)",
+   "publisher": "kevinnbass/metr-money-figure",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "source_type": "ledger",
+   "audit_status": "confirmed",
+   "note": "Third-party ledger: Coefficient index name match 'Pattern Labs' $6,799,999 'Technological Risk Mitigation' 2024-02-28; no grant under 'Irregular'. Treated as a lead; the primary record is the Good Ventures filing."
+  },
+  "newswire-irregular": {
+   "audit_status": "confirmed",
+   "id": "newswire-irregular",
+   "note": "Millions in annual revenue; works with OpenAI and Anthropic; runtime security roadmap. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-09-17",
+   "publisher": "Newswire",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Irregular Raises $80 Million",
+   "url": "https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai",
+   "press_kind": "aggregator"
+  },
+  "sequoia-irregular": {
+   "audit_status": "confirmed",
+   "id": "sequoia-irregular",
+   "note": "Evaluations cited in GPT-4/o3/o4-mini/GPT-5 system cards; UK government and Anthropic use SOLVE; embedded with labs. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page reachable BUT quoted span(s) not found: irregular.01 — needs curator review [verify 2026-09-15] reachable BUT span(s) not found: irregular.01 — needs curator review [verify 2026-09-15 grok-pass] Full slug .../partnering-with-irregular-ahead-of-the-curve/. Sequoia led recent funding; no dollar amount on page. Labs named (Anthropic, OpenAI, GDM); Pattern Labs in system cards.",
+   "published": "2025-09-17",
+   "publisher": "Sequoia Capital",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Partnering with Irregular",
+   "url": "https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/",
+   "self_of": "sequoia"
+  },
+  "techcrunch-irregular": {
+   "audit_status": "confirmed",
+   "id": "techcrunch-irregular",
+   "note": "Formerly Pattern Labs; Sequoia and Redpoint lead; $450M valuation; cited in o3, o4-mini, Claude 3.7 evaluations. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2025-09-17",
+   "publisher": "TechCrunch",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Irregular raises $80M to secure frontier AI models",
+   "url": "https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models",
+   "press_kind": "primary"
+  }
+ }
+}

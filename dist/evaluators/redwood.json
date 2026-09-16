@@ -1,0 +1,1566 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/redwood.html"
+ },
+ "evaluator": {
+  "id": "redwood",
+  "name": "Redwood Research",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+   "scheming",
+   "incident",
+   "assurance"
+  ],
+  "confidence": "med",
+  "summary": "AI control research group; contributed a contractor to the METR incident investigation.",
+  "what_would_move_the_score": "A diversified funder list and a stated policy on co-authoring with labs it evaluates.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Personnel could be 1. Redwood's chief scientist co-authored the alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude run jointly with the developer, and then worked inside OpenAI as a METR contractor; no recusal or cooling-off policy is published. Anchor 1 describes leaders with working roles at labs and informal recusal, and the record shows the roles but not the recusal.",
+   "higher": "Personnel could be 3. No board, advisory, or equity position at a lab appears in the record; the OpenAI incident work took no payment beyond API credits; the co-authored paper was research, not an evaluation engagement, and Anthropic named four independent reviewers. Anchor 3 asks for a recusal policy and disclosed ties; the ties are disclosed in the paper itself, and a published recusal rule would complete the anchor."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#281",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 4,
+   "S": 3,
+   "R": 3,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 3
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": null,
+    "X": 3
+   },
+   "primary": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 3
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "redwood",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "redwood.01",
+     "redwood.02",
+     "redwood.10",
+     "redwood.11"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "graph_id": "assessment#825",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "redwood.02",
+       "redwood.10",
+       "redwood.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "redwood.02",
+       "redwood.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.10"
+      ]
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "redwood.02",
+       "redwood.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.10"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "redwood.02",
+       "redwood.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.10"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "redwood.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.01",
+       "redwood.02",
+       "redwood.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by redwood.02 (F.6): Funding concentration: revenue nearly disappeared in one year when a few large grants ended.; capped at 3 by redwood.11 (F.6): Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.. Floors up to 3 from redwood.01 do not exceed the cap. Not counted under this policy: redwood.10 (no confirmed source (imported)).",
+    "rationale_leads": "Capped at 3 by redwood.02 (F.6): Funding concentration: revenue nearly disappeared in one year when a few large grants ended.; capped at 3 by redwood.10 (F.6): Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor.; capped at 3 by redwood.11 (F.6): Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.. Floors up to 3 from redwood.01 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "redwood",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "redwood.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#826",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "redwood.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "redwood.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "redwood.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "redwood.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 2,
+      "b": [
+       "redwood.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     }
+    },
+    "rationale_derived": "Floored at 2 by redwood.06 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by redwood.06 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "redwood",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "redwood.05"
+    ],
+    "rationale": "Anchor 2 on personnel given the cited signals.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "unevidenced": true,
+    "graph_id": "assessment#827",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": []
+     },
+     "standard": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.05"
+      ]
+     }
+    },
+    "rationale_derived": "Unevidenced under this policy: no admissible signal sets a bound.",
+    "rationale_leads": "Unevidenced under this policy: no admissible signal sets a bound."
+   },
+   "A": {
+    "evaluator": "redwood",
+    "dimension": "A",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "redwood.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#828",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "redwood.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "redwood.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "redwood.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "redwood.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by redwood.03 (A.5): Contracted a staff member to METR for the on-site OpenAI investigation.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by redwood.03 (A.5): Contracted a staff member to METR for the on-site OpenAI investigation.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "redwood",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "redwood.07",
+     "redwood.14",
+     "redwood.15"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#829",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "redwood.14",
+       "redwood.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "redwood.14",
+       "redwood.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "redwood.14",
+       "redwood.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "redwood.14",
+       "redwood.15"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.07",
+       "redwood.14",
+       "redwood.15"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by redwood.14 (S.6): Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.; capped at 3 by redwood.15 (S.1): In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.. Floors up to 3 from redwood.07 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by redwood.14 (S.6): Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.; capped at 3 by redwood.15 (S.1): In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.. Floors up to 3 from redwood.07 do not exceed the cap."
+   },
+   "R": {
+    "evaluator": "redwood",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "redwood.04",
+     "redwood.16"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#830",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "redwood.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "redwood.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "redwood.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "redwood.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.04",
+       "redwood.16"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by redwood.16 (R.2): On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.. Floors up to 2 from redwood.04 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by redwood.16 (R.2): On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.. Floors up to 2 from redwood.04 do not exceed the cap."
+   },
+   "M": {
+    "evaluator": "redwood",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "redwood.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#831",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "redwood.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "redwood.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "redwood.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.08"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "redwood.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by redwood.08 (M.1): Publishes control methods and code.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by redwood.08 (M.1): Publishes control methods and code.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "redwood",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "redwood.09",
+     "redwood.12",
+     "redwood.13"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#832",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "redwood.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "redwood.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "redwood.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "redwood.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.09"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "redwood.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "redwood.09",
+       "redwood.12"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by redwood.13 (X.8): ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.. Floors up to 3 from redwood.09, redwood.12 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by redwood.13 (X.8): ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.. Floors up to 3 from redwood.09, redwood.12 do not exceed the cap."
+   }
+  },
+  "signals": [
+   {
+    "id": "redwood.01",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "No lab revenue; historically about $25M from Open Philanthropy.",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "Open Philanthropy's grants database shows approximately $25 million in historical funding to Redwood Research",
+    "quote_source": "itbb-watchdogs",
+    "graph_id": "signal#566",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "id": "redwood.02",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding concentration: revenue nearly disappeared in one year when a few large grants ended.",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "a few large grants can make one year's revenue almost disappear in the next",
+    "quote_source": "itbb-watchdogs",
+    "graph_id": "signal#567",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "id": "redwood.03",
+    "evaluator": "redwood",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Contracted a staff member to METR for the on-site OpenAI investigation.",
+    "sources": [
+     "metr-hf-investigation",
+     "techtimes-metr-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "A.5",
+    "quote": "a Redwood Research staff member contracting with METR",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#568",
+    "source_graph_ids": [
+     "source#138",
+     "source#229"
+    ]
+   },
+   {
+    "id": "redwood.04",
+    "evaluator": "redwood",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Co-authored the incident report with a redaction statement.",
+    "sources": [
+     "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "OpenAI agreed at the outset with METR and Redwood that we would be able to describe high-level scope and terms",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#569",
+    "source_graph_ids": [
+     "source#138"
+    ]
+   },
+   {
+    "id": "redwood.05",
+    "evaluator": "redwood",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Co-authored alignment research with Anthropic; close talent flow with lab safety teams.",
+    "sources": [
+     "itbb-watchdogs",
+     "anthropic-alignment-faking"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": null,
+    "rule": "P.3",
+    "bound_note": "Section 9 (mis-dimensioned facts): the supported fact, co-authoring with Anthropic, belongs to S and is re-recorded as redwood.14; the P fact (talent flow with lab safety teams) has no source, so the signal is informational on P.",
+    "quote": "in collaboration with Redwood Research , provides the first empirical example of a large language model",
+    "quote_source": "anthropic-alignment-faking",
+    "graph_id": "signal#570",
+    "source_graph_ids": [
+     "source#121",
+     "source#28"
+    ]
+   },
+   {
+    "id": "redwood.06",
+    "evaluator": "redwood",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+     "itbb-watchdogs",
+     "propublica-redwood"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "Designated as a 501(c)(3)",
+    "quote_source": "propublica-redwood",
+    "graph_id": "signal#571",
+    "source_graph_ids": [
+     "source#121",
+     "source#195"
+    ]
+   },
+   {
+    "id": "redwood.07",
+    "evaluator": "redwood",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own research agenda; incident work under METR terms.",
+    "sources": [
+     "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "a Redwood Research staff member contracting with METR",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#572",
+    "source_graph_ids": [
+     "source#138"
+    ]
+   },
+   {
+    "id": "redwood.08",
+    "evaluator": "redwood",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes control methods and code.",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "note": "[span 2026-09-16] CAUTION: itbb-watchdogs article is about funding, not publications; the source does not support the claim. Needs a primary source (e.g. redwoodresearch.org publications).",
+    "graph_id": "signal#573",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "id": "redwood.09",
+    "evaluator": "redwood",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.7",
+    "graph_id": "signal#574",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "id": "redwood.10",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor.",
+    "sources": [
+     "evaluators-ledger",
+     "coefficient-index"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-11",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "graph_id": "signal#575",
+    "source_graph_ids": [
+     "source#96",
+     "source#64"
+    ]
+   },
+   {
+    "id": "redwood.11",
+    "evaluator": "redwood",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.",
+    "sources": [
+     "op-redwood-general-support",
+     "tnw-coefficient-ipo"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-11",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "listed in grant records at $36,566,000 for work on AI control and alignment faking",
+    "quote_source": "tnw-coefficient-ipo",
+    "graph_id": "signal#576",
+    "source_graph_ids": [
+     "source#167",
+     "source#235"
+    ]
+   },
+   {
+    "id": "redwood.12",
+    "evaluator": "redwood",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "The OpenAI incident investigation report states no payment was accepted other than API credits used in the investigation.",
+    "sources": [
+     "zvi-hf-postmortem"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-08",
+    "quote": "No payment was accepted, other than API credits used in the investigation",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.4",
+    "quote_source": "zvi-hf-postmortem",
+    "graph_id": "signal#577",
+    "source_graph_ids": [
+     "source#258"
+    ]
+   },
+   {
+    "id": "redwood.13",
+    "evaluator": "redwood",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.",
+    "sources": [
+     "propublica-redwood"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "X.8",
+    "quote": "Contributions $9,659 43.8% Program Services $0",
+    "quote_source": "propublica-redwood",
+    "note": "X.8: program-service revenue in a filing whose clients are not disclosed (FY2023, $343,734) caps at 3 until the clients are named; if a lab is among them X.2 applies (1). FY2024 shows $0. Document request: the FY2023 program-service revenue by payer.",
+    "graph_id": "signal#578",
+    "source_graph_ids": [
+     "source#195"
+    ]
+   },
+   {
+    "id": "redwood.14",
+    "evaluator": "redwood",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.",
+    "sources": [
+     "redwood-blog-af",
+     "anthropic-alignment-faking"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.6",
+    "quote": "We have a new paper (done in collaboration with Anthropic)",
+    "quote_source": "redwood-blog-af",
+    "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. Both sources are self-published (one by each party) and confirmed.",
+    "graph_id": "signal#579",
+    "source_graph_ids": [
+     "source#203",
+     "source#28"
+    ]
+   },
+   {
+    "id": "redwood.16",
+    "evaluator": "redwood",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.",
+    "sources": [
+     "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "R.2",
+    "quote": "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback",
+    "quote_source": "metr-hf-investigation",
+    "note": "R.2: disclosed editorial feedback caps at 3. Recorded on Redwood because the same fact caps METR (metr.08) on the same report.",
+    "graph_id": "signal#580",
+    "source_graph_ids": [
+     "source#138"
+    ]
+   },
+   {
+    "id": "redwood.15",
+    "evaluator": "redwood",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.",
+    "sources": [
+     "metr-hf-investigation"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.1",
+    "quote": "OpenAI defined the investigation period as June 26th through July 13th",
+    "quote_source": "metr-hf-investigation",
+    "note": "S.1: a lab-set window in the most recent major engagement caps at 3. Recorded on Redwood because the same fact already caps METR (metr.06).",
+    "graph_id": "signal#581",
+    "source_graph_ids": [
+     "source#138"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 78,
+   "regulator": 78,
+   "public": 72,
+   "equal": 75
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      71,
+      81
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      70,
+      80
+     ]
+    },
+    "public": {
+     "score": 72,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      61,
+      76
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      66,
+      78
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      71,
+      81
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      70,
+      80
+     ]
+    },
+    "public": {
+     "score": 72,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      61,
+      76
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      66,
+      78
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      71,
+      81
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      70,
+      80
+     ]
+    },
+    "public": {
+     "score": 72,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      61,
+      76
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      66,
+      78
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 79,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      64,
+      83
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      63,
+      83
+     ]
+    },
+    "public": {
+     "score": 72,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      57,
+      78
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      56,
+      81
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 69,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      21,
+      90
+     ]
+    },
+    "regulator": {
+     "score": 65,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      16,
+      91
+     ]
+    },
+    "public": {
+     "score": 67,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      30,
+      85
+     ]
+    },
+    "equal": {
+     "score": 67,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      25,
+      88
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 7,
+  "floor": "G",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 82,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 80,
+     "band": "clear",
+     "base": 78
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 82,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 82,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 78
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 72
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 76,
+     "band": "clear",
+     "base": 72
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 72
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 72
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 72
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 72
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    }
+   ]
+  }
+ },
+ "sources": {
+  "anthropic-alignment-faking": {
+   "id": "anthropic-alignment-faking",
+   "title": "Alignment faking in large language models",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/research/alignment-faking",
+   "published": "2024-12-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Lab-published research page (self-published by Anthropic, a third party to Redwood): \"A new paper from Anthropic's Alignment Science team, in collaboration with Redwood Research\"; acknowledgements name the collaboration; four independent reviewers.",
+   "self_of": "anthropic"
+  },
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "itbb-watchdogs": {
+   "audit_status": "confirmed",
+   "id": "itbb-watchdogs",
+   "note": "Funding pipeline analysis; METR diversification; Redwood revenue volatility; ~$25M Open Phil to Redwood historically. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-06-03",
+   "publisher": "Inside The Black Box (Substack)",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Who Funds the AI Safety Watchdogs",
+   "url": "https://itbb.substack.com/p/who-funds-the-watchdogs",
+   "press_kind": "aggregator"
+  },
+  "metr-hf-investigation": {
+   "audit_status": "confirmed",
+   "id": "metr-hf-investigation",
+   "note": "Terms of engagement: six days on premises, OpenAI could redact non-public info, gave feedback on structure and tone; redaction summary statement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-08-26",
+   "publisher": "METR",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident",
+   "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+   "self_of": "metr"
+  },
+  "op-redwood-general-support": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "op-redwood-general-support",
+   "note": "$36,566,000 for work on AI control and alignment faking; earlier $10M (2021) and $10M (2022). [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2025-11",
+   "publisher": "Open Philanthropy / Coefficient Giving",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "title": "Redwood Research General Support",
+   "url": "https://www.openphilanthropy.org/grants/redwood-research-general-support/"
+  },
+  "propublica-redwood": {
+   "id": "propublica-redwood",
+   "title": "Redwood Research Group Inc - Nonprofit Explorer",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/871702255",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "EIN 87-1702255, Berkeley CA, tax exemption issued Sept. 2021, \"Designated as a 501(c)(3)\". FY2024: revenue $22,060, expenses $2,922,498, contributions $9,659, program services $0. FY2023: revenue $10,036,347, contributions $9,398,000, program services $343,734."
+  },
+  "redwood-blog-af": {
+   "id": "redwood-blog-af",
+   "title": "Alignment Faking in Large Language Models",
+   "publisher": "Redwood Research (Substack)",
+   "url": "https://blog.redwoodresearch.org/p/alignment-faking-in-large-language",
+   "published": "2024-12-18",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Ryan Greenblatt and Buck Shlegeris: \"We have a new paper (done in collaboration with Anthropic)\".",
+   "self_of": "redwood"
+  },
+  "techtimes-metr-hf": {
+   "audit_status": "confirmed",
+   "id": "techtimes-metr-hf",
+   "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-08-27",
+   "publisher": "Tech Times",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "OpenAI Agents Formed Secret Swarm, Hacked Hugging Face",
+   "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm",
+   "press_kind": "primary"
+  },
+  "tnw-coefficient-ipo": {
+   "id": "tnw-coefficient-ipo",
+   "title": "The nonprofit that investigated OpenAI's rogue agents runs on a $36m grant",
+   "publisher": "TNW",
+   "url": "https://thenextweb.com/news/coefficient-giving-ai-safety-funding-ipo-correlation",
+   "published": "2026-09",
+   "retrieved": "2026-09-15",
+   "note": "Redwood's $36M Coefficient grant; funding tied to AI IPO liquidity. [verify 2026-09-15 grok-pass] One Redwood award $36,566,000 (=T73); $2B planned 2026. Not T04's $63M sum.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "primary"
+  },
+  "zvi-hf-postmortem": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "zvi-hf-postmortem",
+   "note": "Quotes the report: no payment accepted other than API credits used in the investigation. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-08",
+   "publisher": "Zvi Mowshowitz",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "title": "METR and Redwood Offer Postmortem Of The HuggingFace Hack",
+   "url": "https://thezvi.substack.com/p/metr-and-redwood-offer-holy-postmortem",
+   "press_kind": "aggregator"
+  }
+ }
+}

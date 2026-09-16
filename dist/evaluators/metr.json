@@ -1,0 +1,2336 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/metr.html"
+ },
+ "evaluator": {
+  "id": "metr",
+  "name": "METR",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+   "autonomy",
+   "scheming",
+   "incident",
+   "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Reference evaluator for autonomy and AI R&D capability. Named by Anthropic as the model for embedded evaluators in September 2026; led the on-site investigation of the OpenAI agent swarm incident.",
+  "funding_tension": "Funding is the contested dimension, and the 2-vs-3 call is unresolved. The case for the 3: bounded negatives re-derived from primary filings — no METR-named grant in the Good Ventures, Pew, Packard, Schmidt-family, or TED filings checked, and no direct Coefficient grant in the 2,911-row index — float the value to a floor of 3 under F.13 (metr.24, metr.16), and the current no-lab-money rule bars donations made by or at the direction of frontier AI company employees (metr.18). The case against: that rule is recent and its wording has moved — absent in April 2024, a compensation footnote in April 2025, and a September 2025 footnote that still accepted donations from individual lab employees, with an OpenAI technical lead among the named individual donors (metr.14); about $21M arrives through donor-advised funds and the Audacious Project with non-public underlying donors, including a $4M Vanguard Charitable grant (metr.15, metr.25); METR's ~$17M Audacious share is not visible in any filing checked (metr.26); second-hop routes run through ARC, Longview, and Constellation, all downstream of Coefficient (metr.21); METR runs on significant free tokens from the labs it evaluates (metr.03); OpenAI set the incident-investigation window and METR incorporated its structure, emphasis, clarity, and tone feedback (metr.06, metr.08); and access remains voluntary while OpenAI kept redaction rights (metr.13, metr.08). The curator has not decided between 2 and 3.",
+  "what_would_move_the_score": "Contract terms for the Anthropic embedded program that fix scope-setting and publication rights in writing, plus a public cooling-off policy.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Personnel could be 1. A METR director founded FAR.AI, which OpenAI pays for red-teaming; a METR advisor is an a16z partner while a16z backs xAI and Thinking Machines; another advisor advises Thinking Machines; former advisors moved to Anthropic and to the OpenAI Foundation board; a former Anthropic researcher joined in September 2026. If advisors count as leaders, P.2 caps advisory roles at labs at 1, and the August 2026 policy has no cooling-off period.",
+   "higher": "Personnel could be 3. The August 2026 conflict-of-interest policy requires staff disclosure before any company-identifying risk assessment, applies provisional recusal, bans direct equity in frontier AI companies, and bars frontier-company employees from the board; advisor and director affiliations are listed on the team page. Anchor 3 asks for a recusal policy and disclosure of lab ties, and both are now published; the one-hop seats are advisory, not lab roles."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#275",
+  "values": {
+   "F": 3,
+   "G": 3,
+   "P": 2,
+   "A": 4,
+   "S": 3,
+   "R": 3,
+   "M": 3,
+   "X": 4
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 3,
+    "P": 2,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 4
+   },
+   "standard": {
+    "F": 3,
+    "G": 3,
+    "P": 2,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 4
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": 2,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": null,
+    "X": 4
+   },
+   "spans": {
+    "F": 3,
+    "G": 3,
+    "P": 2,
+    "A": 4,
+    "S": 3,
+    "R": 3,
+    "M": 3,
+    "X": 4
+   },
+   "primary": {
+    "F": 3,
+    "G": null,
+    "P": 2,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 4
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "metr",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "metr.01",
+     "metr.02",
+     "metr.03",
+     "metr.14",
+     "metr.15",
+     "metr.16",
+     "metr.18",
+     "metr.19",
+     "metr.20",
+     "metr.21",
+     "metr.24",
+     "metr.25",
+     "metr.26"
+    ],
+    "rationale": "Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Request from METR the date and vehicle of the gift acknowledged on metr.org/about under \"many others, such as David Farhi\", and the text of the donor rule in force on that date; request from the donor a copy of the acknowledgment letter. (Replaces the fourth F open question, which framed the timing of a named person's gift as unresolved.)",
+     "Request the Schedule I pages of the Vanguard Charitable and Audacious Project filings naming METR, and the Coefficient index rows checked, so that N01 to N05 can move from imported to confirmed."
+    ],
+    "graph_id": "assessment#777",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "metr.14",
+       "metr.15",
+       "metr.20",
+       "metr.21",
+       "metr.25"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "metr.15",
+       "metr.20",
+       "metr.25"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.14",
+       "metr.21"
+      ]
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "metr.15",
+       "metr.20",
+       "metr.25"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.14",
+       "metr.19",
+       "metr.21"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "metr.15",
+       "metr.20",
+       "metr.25"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.14",
+       "metr.21"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "metr.15",
+       "metr.25"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.01",
+       "metr.02",
+       "metr.03",
+       "metr.14",
+       "metr.19",
+       "metr.20",
+       "metr.21"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by metr.15 (F.6): Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.; capped at 3 by metr.20 (F.6): The Audacious Project committed approximately $17M to METR for Canary work. The $38M combined figure and the funder-collective membership are per the cited sources; spans not yet captured.; capped at 3 by metr.25 (F.6): Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.. Floors up to 3 from metr.01, metr.02, metr.16, metr.18, metr.19, metr.24 do not exceed the cap. Not counted under this policy: metr.14 (no confirmed source (unverifiable)); metr.21 (no confirmed source (unaudited)).",
+    "rationale_leads": "Capped at 3 by metr.14 (F.8): The no-lab-money rule is recent and its wording has moved: absent from the April 2024 page, a compensation footnote in April 2025, 'has not accepted funding from AI companies' with free-credit language from August 2025, and a September 2025 footnote that donations from individual lab employees are accepted. An OpenAI technical lead is named among individual donors.; capped at 3 by metr.15 (F.6): Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.; capped at 3 by metr.20 (F.6): The Audacious Project committed approximately $17M to METR for Canary work. The $38M combined figure and the funder-collective membership are per the cited sources; spans not yet captured.; capped at 3 by metr.21 (F.6): Second-hop routes for METR's philanthropic money: ARC (a $4,553,935 grant to METR in its 2024 filing, per a 990 extraction) was itself funded by Coefficient; Longview (a pooled fund named by METR) received a $15,961,273 operational grant from Coefficient; Constellation, which shares people with METR, received $16,750,000.; capped at 3 by metr.25 (F.6): Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.. Floors up to 3 from metr.01, metr.02, metr.16, metr.18, metr.19, metr.24 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "metr",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "metr.10"
+    ],
+    "rationale": "Anchor 3: nonprofit with a written independence policy and a no-lab-money rule (metr.10). Independent board and external review are not evidenced at tier 1, so 4 is unearned under the tier rule (C10).",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#778",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "metr.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "metr.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.10"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "metr.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.10"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by metr.10 (G.2): Nonprofit with a written independence policy and a no-lab-money rule.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by metr.10 (G.2): Nonprofit with a written independence policy and a no-lab-money rule.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "metr",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "metr.09",
+     "metr.17",
+     "metr.23"
+    ],
+    "rationale": "Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.3",
+    "open_questions": [
+     "Request from METR the August 2026 policy's treatment of post-employment cooling-off for hires from frontier AI companies (none appears in version 1.0) and dated captures of the team page showing current versus former advisor roles."
+    ],
+    "resolution": {
+     "rule": "P.4",
+     "value": 2,
+     "note": "P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide."
+    },
+    "graph_id": "assessment#779",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "metr.09",
+       "metr.17"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "metr.09",
+       "metr.17"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "metr.09",
+       "metr.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.23"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "metr.09",
+       "metr.17"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 2,
+      "b": [
+       "metr.17"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.09",
+       "metr.23"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from metr.23 (P.5) against cap 2 from metr.09, metr.17 (P.3, P.4); resolved at 2 by P.4: P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide.",
+    "rationale_leads": "Conflict: floor 3 from metr.23 (P.5) against cap 2 from metr.09, metr.17 (P.3, P.4); resolved at 2 by P.4: P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide."
+   },
+   "A": {
+    "evaluator": "metr",
+    "dimension": "A",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "metr.04",
+     "metr.05",
+     "metr.13"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#780",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "metr.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "metr.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "metr.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "metr.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.04",
+       "metr.05",
+       "metr.13"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by metr.04 (A.5): Investigated the OpenAI incident on site over six days with a Redwood contractor.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by metr.04 (A.5): Investigated the OpenAI incident on site over six days with a Redwood contractor.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "metr",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "metr.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#781",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "metr.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "metr.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "metr.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "metr.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by metr.06 (S.1): OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope..",
+    "rationale_leads": "Capped at 3 by metr.06 (S.1): OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope.."
+   },
+   "R": {
+    "evaluator": "metr",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "metr.07",
+     "metr.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#782",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "metr.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "metr.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "metr.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "metr.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.07",
+       "metr.08"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by metr.08 (R.2): OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.. Floors up to 2 from metr.07 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by metr.08 (R.2): OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.. Floors up to 2 from metr.07 do not exceed the cap."
+   },
+   "M": {
+    "evaluator": "metr",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "metr.11"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#783",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "metr.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "metr.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.11"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "metr.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "metr.11"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by metr.11 (M.1): Open task suites and published time-horizon methodology; results appear in system cards.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by metr.11 (M.1): Open task suites and published time-horizon methodology; results appear in system cards.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "metr",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "metr.12",
+     "metr.22"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#784",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "metr.22"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "metr.22"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "metr.22"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.12"
+      ]
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "metr.22"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.12"
+      ]
+     },
+     "primary": {
+      "v": 4,
+      "b": [
+       "metr.22"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "metr.12"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by metr.22 (X.7): FY2024 Form 990 (filed 16 November 2025) reports $0 program service revenue against $13.6M of contributions, and the August 2026 conflict-of-interest policy states METR has to date received no payment for work on company-identifying risk assessments; the only earned income named is a technical-assistance contract with the European AI Office.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by metr.22 (X.7): FY2024 Form 990 (filed 16 November 2025) reports $0 program service revenue against $13.6M of contributions, and the August 2026 conflict-of-interest policy states METR has to date received no payment for work on company-identifying risk assessments; the only earned income named is a technical-assistance contract with the European AI Office.. No admissible signal caps it."
+   }
+  },
+  "signals": [
+   {
+    "claim": "Hard rule against accepting money from AI companies, including donations directed by their staff; ~$71M raised in 2026 from foundations and individuals.",
+    "curator": "yohei/claude v0",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.01",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about",
+     "alphasignal-metr-71m",
+     "metr-funding-2026"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.8",
+    "quote": "METR refuses funding from frontier AI companies and bans donations directed by their staff",
+    "quote_source": "alphasignal-metr-71m",
+    "graph_id": "signal#486",
+    "source_graph_ids": [
+     "source#131",
+     "source#19",
+     "source#136"
+    ]
+   },
+   {
+    "claim": "Funder base widened beyond the effective-altruism network, including Pew Charitable Trusts.",
+    "curator": "yohei/claude v0",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.02",
+    "recorded": "2026-09-14",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "including the Pew Charitable Trusts and several foundations outside the usual network",
+    "quote_source": "itbb-watchdogs",
+    "graph_id": "signal#487",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "claim": "Runs on large volumes of free tokens and privileged access from the labs it evaluates.",
+    "curator": "yohei/claude v0",
+    "dimension": "F",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.03",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about"
+    ],
+    "bound": null,
+    "rule": "F.11",
+    "bound_note": "F.11: free tokens whose amount is undisclosed and which METR describes as significant but not as something it depends on carry no funding bound; the fact is recorded on the access mechanism (lab-controlled).",
+    "quote": "though we make use of significant free tokens, which we use for evaluations, research, and engineering",
+    "quote_source": "metr-about",
+    "graph_id": "signal#488",
+    "source_graph_ids": [
+     "source#131"
+    ]
+   },
+   {
+    "claim": "Investigated the OpenAI incident on site over six days with a Redwood contractor.",
+    "curator": "yohei/claude v0",
+    "dimension": "A",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.04",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-hf-investigation",
+     "techtimes-metr-hf"
+    ],
+    "bound": {
+     "floor": 4
+    },
+    "rule": "A.5",
+    "quote": "worked on premises at OpenAI over a total of six days",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#489",
+    "source_graph_ids": [
+     "source#138",
+     "source#229"
+    ]
+   },
+   {
+    "claim": "Named by Anthropic as the example embedded evaluator: an ongoing, employee-like-access commitment with publication without editorial control; OpenAI's chief executive said OpenAI would do the same on access, without naming an evaluator or publication rights.",
+    "curator": "yohei/claude v0",
+    "dimension": "A",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.05",
+    "recorded": "2026-09-14",
+    "sources": [
+     "unite-altman-match",
+     "marktechpost-pace",
+     "anthropic-pace-frontier",
+     "anthropic-amodei-x-pace-frontier",
+     "openai-altman-embedded-pledge"
+    ],
+    "bound": null,
+    "rule": "A.1",
+    "bound_note": "A.1 and section 9: the Anthropic essay and the OpenAI match are pledges naming METR as the example embedded evaluator; no embedded engagement is documented as granted, so the signal is informational until access under the program is documented.",
+    "quote": "a team of embedded third-party evaluators (such as METR )",
+    "quote_source": "anthropic-pace-frontier",
+    "as_of": "2026-09-12",
+    "graph_id": "signal#490",
+    "source_graph_ids": [
+     "source#247",
+     "source#129",
+     "source#30",
+     "source#29",
+     "source#175"
+    ]
+   },
+   {
+    "claim": "OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope.",
+    "curator": "yohei/claude v0",
+    "dimension": "S",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.06",
+    "recorded": "2026-09-14",
+    "sources": [
+     "pebblous-scope",
+     "metr-hf-investigation"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.1",
+    "quote": "OpenAI defined the investigation period as June 26th through July 13th",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#491",
+    "source_graph_ids": [
+     "source#185",
+     "source#138"
+    ]
+   },
+   {
+    "claim": "Published its own 91-page report with a redaction summary statement; took no payment for the investigation.",
+    "curator": "yohei/claude v0",
+    "dimension": "R",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.07",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-hf-investigation",
+     "marktechpost-pace"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "Redaction summary statement: Except where explicitly noted in this post, OpenAI redacted no additional information",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#492",
+    "source_graph_ids": [
+     "source#138",
+     "source#129"
+    ]
+   },
+   {
+    "claim": "OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.",
+    "curator": "yohei/claude v0",
+    "dimension": "R",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.08",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-hf-investigation"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "R.2",
+    "quote": "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback",
+    "quote_source": "metr-hf-investigation",
+    "graph_id": "signal#493",
+    "source_graph_ids": [
+     "source#138"
+    ]
+   },
+   {
+    "claim": "Hires from the labs it evaluates; a former Anthropic researcher joined in September 2026.",
+    "curator": "yohei/claude v0",
+    "dimension": "P",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.09",
+    "recorded": "2026-09-14",
+    "sources": [
+     "wapo-examiner-benton"
+    ],
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.3",
+    "quote": "Joe Benton, announced this week that he is joining the independent AI safety organization METR",
+    "quote_source": "wapo-examiner-benton",
+    "graph_id": "signal#494",
+    "source_graph_ids": [
+     "source#253"
+    ]
+   },
+   {
+    "claim": "Nonprofit with a written independence policy and a no-lab-money rule.",
+    "curator": "yohei/claude v0",
+    "dimension": "G",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.10",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about",
+     "metr-coi-policy"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "G.2",
+    "quote": "Our current conflict of interest policy is here",
+    "quote_source": "metr-about",
+    "graph_id": "signal#495",
+    "source_graph_ids": [
+     "source#131",
+     "source#134"
+    ]
+   },
+   {
+    "claim": "Open task suites and published time-horizon methodology; results appear in system cards.",
+    "curator": "yohei/claude v0",
+    "dimension": "M",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.11",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about",
+     "metr-hcast-public"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "This repo contains source code for a subset of the tasks used in the HCAST",
+    "quote_source": "metr-hcast-public",
+    "graph_id": "signal#496",
+    "source_graph_ids": [
+     "source#131",
+     "source#137"
+    ]
+   },
+   {
+    "claim": "No commercial products.",
+    "curator": "yohei/claude v0",
+    "dimension": "X",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.12",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.7",
+    "graph_id": "signal#497",
+    "source_graph_ids": [
+     "source#131"
+    ]
+   },
+   {
+    "claim": "Access remains voluntary; no law requires any lab to grant it.",
+    "curator": "yohei/claude v0",
+    "dimension": "A",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.13",
+    "recorded": "2026-09-14",
+    "sources": [
+     "itbb-watchdogs"
+    ],
+    "bound": null,
+    "rule": "A.3",
+    "bound_note": "A.3: voluntary, revocable access is recorded as the mechanism (lab-controlled), not as a cap.",
+    "quote": "that access is voluntary. Companies grant it because they choose to, not because any law or agreement requires it",
+    "quote_source": "itbb-watchdogs",
+    "graph_id": "signal#498",
+    "source_graph_ids": [
+     "source#121"
+    ]
+   },
+   {
+    "as_of": "2025-12",
+    "claim": "The no-lab-money rule is recent and its wording has moved: absent from the April 2024 page, a compensation footnote in April 2025, 'has not accepted funding from AI companies' with free-credit language from August 2025, and a September 2025 footnote that donations from individual lab employees are accepted. An OpenAI technical lead is named among individual donors.",
+    "curator": "yohei/claude v0.3",
+    "dimension": "F",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.14",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-donor-rule-history"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.8",
+    "graph_id": "signal#499",
+    "source_graph_ids": [
+     "source#135"
+    ]
+   },
+   {
+    "as_of": "2026-09-14",
+    "claim": "Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.",
+    "curator": "yohei/claude v0.3",
+    "dimension": "F",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.15",
+    "recorded": "2026-09-14",
+    "sources": [
+     "coefficient-index",
+     "metr-990-fy2024",
+     "metr-money-figure"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "The accounts at SVCF and NPT that pay Coefficient-recommended grants are unattributed",
+    "quote_source": "metr-money-figure",
+    "graph_id": "signal#500",
+    "source_graph_ids": [
+     "source#64",
+     "source#130",
+     "source#139"
+    ]
+   },
+   {
+    "as_of": "2026-09-14",
+    "claim": "Bounded negatives on file: no METR-named grant in Coefficient's 2,911-row index (snapshot 2026-09-11) or in the Good Ventures, Schmidt Sciences, Pew, and Packard filings checked; all imported and awaiting re-derivation.",
+    "curator": "yohei/claude v0.3",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.16",
+    "recorded": "2026-09-14",
+    "sources": [
+     "coefficient-index",
+     "metr-money-figure"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "No direct Coefficient grant to METR appears in the checked index and filings",
+    "quote_source": "metr-money-figure",
+    "graph_id": "signal#501",
+    "source_graph_ids": [
+     "source#64",
+     "source#139"
+    ]
+   },
+   {
+    "as_of": "2026-09-14",
+    "claim": "Board and advisors carry lab ties one or two steps out: a director who founded FAR.AI, which is paid by OpenAI for red-teaming; an advisor who is an a16z partner, the firm that led Thinking Machines' seed; an ex-OpenAI advisor who advises Thinking Machines; a director who leads an insurance-certification startup seeded by an Anthropic co-founder. Former advisors moved to Anthropic and to the OpenAI Foundation board.",
+    "curator": "yohei/claude v0.3",
+    "dimension": "P",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.17",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-team",
+     "metr-990-fy2024",
+     "metr-money-figure"
+    ],
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.4",
+    "quote": "Adam Gleave (Director)",
+    "quote_source": "metr-990-fy2024",
+    "graph_id": "signal#502",
+    "source_graph_ids": [
+     "source#141",
+     "source#130",
+     "source#139"
+    ]
+   },
+   {
+    "as_of": "2026-09-14",
+    "claim": "Current page (re-fetched 14 Sep 2026) states METR cannot accept donations made by or at the direction of frontier AI company employees, tighter than the September 2025 footnote; the SFF 2025 recommendation of $548,000 is confirmed on the fund's page and FY2024 revenue of $13.6M on ProPublica.",
+    "curator": "yohei/claude v0.5",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.18",
+    "quote": "METR has not accepted funding from AI companies",
+    "recorded": "2026-09-14",
+    "sources": [
+     "metr-about",
+     "sff-2025",
+     "propublica-metr-arc"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.8",
+    "quote_source": "metr-about",
+    "graph_id": "signal#503",
+    "source_graph_ids": [
+     "source#131",
+     "source#223",
+     "source#190"
+    ]
+   },
+   {
+    "as_of": "2026-08-14",
+    "claim": "METR raised commitments of about $71 million in the six months to August 2026, per its funding update.",
+    "curator": "yohei/claude v1.0",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "metr",
+    "id": "metr.19",
+    "quote": "In the last 6 months, METR raised commitments of around $71 million",
+    "recorded": "2026-09-15",
+    "sources": [
+     "metr-funding-2026"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote_source": "metr-funding-2026",
+    "graph_id": "signal#504",
+    "source_graph_ids": [
+     "source#136"
+    ]
+   },
+   {
+    "as_of": "2024-10-09",
+    "claim": "The Audacious Project committed approximately $17M to METR for Canary work. The $38M combined figure and the funder-collective membership are per the cited sources; spans not yet captured.",
+    "curator": "yohei/claude v1.0",
+    "dimension": "F",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.20",
+    "quote": "Approximately $17 million of this will support work at METR.",
+    "recorded": "2026-09-15",
+    "sources": [
+     "metr-audacious-2024"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote_source": "metr-audacious-2024",
+    "graph_id": "signal#505",
+    "source_graph_ids": [
+     "source#132"
+    ]
+   },
+   {
+    "as_of": "2025",
+    "claim": "Second-hop routes for METR's philanthropic money: ARC (a $4,553,935 grant to METR in its 2024 filing, per a 990 extraction) was itself funded by Coefficient; Longview (a pooled fund named by METR) received a $15,961,273 operational grant from Coefficient; Constellation, which shares people with METR, received $16,750,000.",
+    "curator": "yohei/claude v1.0",
+    "dimension": "F",
+    "direction": "against",
+    "evaluator": "metr",
+    "id": "metr.21",
+    "quote": "Total giving $4,553,935",
+    "recorded": "2026-09-15",
+    "sources": [
+     "instrumentl-arc-990",
+     "op-longview",
+     "op-constellation"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote_source": "instrumentl-arc-990",
+    "graph_id": "signal#506",
+    "source_graph_ids": [
+     "source#119",
+     "source#163",
+     "source#161"
+    ]
+   },
+   {
+    "id": "metr.22",
+    "evaluator": "metr",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "FY2024 Form 990 (filed 16 November 2025) reports $0 program service revenue against $13.6M of contributions, and the August 2026 conflict-of-interest policy states METR has to date received no payment for work on company-identifying risk assessments; the only earned income named is a technical-assistance contract with the European AI Office.",
+    "sources": [
+     "metr-990-fy2024",
+     "metr-coi-policy"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "quote": "Contributions $13,603,035 99.7% Program Services $0",
+    "quote_source": "metr-990-fy2024",
+    "note": "X.7 needs a bounded statement of no commercial products with a span and a second source: the filing (tier 1) supplies both the bounded negative and the provenance; the policy PDF supplies the organization's own statement (\"To date, we have not received payment for work on company-identifying risk assessments\"). A regulator technical-assistance contract is not a commercial product.",
+    "graph_id": "signal#507",
+    "source_graph_ids": [
+     "source#130",
+     "source#134"
+    ]
+   },
+   {
+    "id": "metr.23",
+    "evaluator": "metr",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Published conflict-of-interest policy (version 1.0, 28 August 2026): staff under consideration for a company-identifying risk assessment must disclose conflicts, tiered conflicts require external disclosure in the report, provisional recusal applies during review, staff may not hold direct equity or debt in frontier AI companies, and frontier-company employees are ineligible for the board. No post-employment cooling-off period.",
+    "sources": [
+     "metr-coi-policy"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "P.5",
+    "quote": "Do not invest in direct equity or debt of frontier AI companies or reasonable economic proxies for specific companies",
+    "quote_source": "metr-coi-policy",
+    "note": "Mandatory recusal plus disclosure of individual ties floors at 3 (P.5). P.8 (4) needs a cooling-off rule, which the policy lacks, and tier-1 evidence. Span verified with pdftotext; the CI normalizer cannot read PDFs. Caps from metr.09 (P.3) and metr.17 (P.4) still decide the value; see conflicts.",
+    "graph_id": "signal#508",
+    "source_graph_ids": [
+     "source#134"
+    ]
+   },
+   {
+    "evaluator": "metr",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "metr.24",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Bounded negatives re-derived from primary filings on 2026-09-15: no METR-named grant in Good Ventures 990-PF FY2022-2025, Pew 990 Schedule I FY2021-2025, Packard 990-PF TY2021-2024, the three Schmidt-family foundations TY2020-2024, or TED Foundation 990-PF TY2021-2024; ProPublica's full-text index of e-filed 990s names METR in eight filings only.",
+    "sources": [
+     "propublica-metr-fulltext",
+     "good-ventures-propublica",
+     "pew-propublica",
+     "packard-propublica",
+     "schmidt-fsi-propublica",
+     "packard-990pf-ty2024-xml",
+     "pew-990-fy2025-xml",
+     "propublica-api-schmidt-sciences",
+     "schmidt-family-propublica",
+     "schmidt-fsi-990pf-ty2024-xml",
+     "schmidt-operating-propublica",
+     "wayback-cdx-op-grants-m",
+     "metr-coefficient-grants-index"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.13",
+    "quote": "Nonprofits (1) People (0) Filings (8)",
+    "quote_source": "propublica-metr-fulltext",
+    "graph_id": "signal#509",
+    "source_graph_ids": [
+     "source#191",
+     "source#108",
+     "source#187",
+     "source#179",
+     "source#211",
+     "source#178",
+     "source#186",
+     "source#189",
+     "source#209",
+     "source#210",
+     "source#212",
+     "source#255",
+     "source#133"
+    ]
+   },
+   {
+    "evaluator": "metr",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "metr.25",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.",
+    "sources": [
+     "vanguard-fy2025-schedi-render",
+     "propublica-metr-zip-search",
+     "vanguard-990-fy2023-xml",
+     "vanguard-990-fy2024-xml"
+    ],
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Vanguard Charitable Endowment Program — Form 990, Schedule I (2025) Malvern, PA",
+    "quote_source": "propublica-metr-zip-search",
+    "graph_id": "signal#510",
+    "source_graph_ids": [
+     "source#252",
+     "source#192",
+     "source#250",
+     "source#251"
+    ]
+   },
+   {
+    "id": "metr.26",
+    "evaluator": "metr",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "TED Foundation's 990-PFs show no grant to METR, RAND, or Canary in TY2021-2024, and the Audacious Project's own FAQ says TED itself does not fund grantees; the only filed Canary payments are Valhalla ($10M) and High Tide ($333,334) paying RAND directly in TY2024, with no METR line. METR's approximately $17M Audacious share is therefore confirmed at the RAND/Canary level but not, in any filing checked, at the METR level.",
+    "sources": [
+     "ted-foundation-propublica",
+     "ted-990pf-ty2024-xml",
+     "audacious-faq",
+     "valhalla-990pf-ty2024-xml",
+     "high-tide-990pf-ty2024-xml"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "bound": null,
+    "bound_note": "Documents an open question rather than asserting a value: the payer structure is confirmed (partners pay RAND directly; TED does not fund grantees), but METR's own Audacious share is not visible in any filing checked, so this neither raises nor lowers the funding value on its own.",
+    "rule": "0",
+    "quote": "TED itself does not provide funding for grantees.",
+    "quote_source": "audacious-faq",
+    "graph_id": "signal#511",
+    "source_graph_ids": [
+     "source#233",
+     "source#232",
+     "source#43",
+     "source#249",
+     "source#115"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 79,
+   "regulator": 78,
+   "public": 74,
+   "equal": 78
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 79,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      79,
+      79
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    },
+    "public": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "equal": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 79,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      79,
+      79
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    },
+    "public": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "equal": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 80,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      66,
+      83
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      63,
+      83
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      59,
+      79
+     ]
+    },
+    "equal": {
+     "score": 79,
+     "band": "clear",
+     "coverage": 6,
+     "range": [
+      59,
+      84
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 79,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      79,
+      79
+     ]
+    },
+    "regulator": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    },
+    "public": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "equal": {
+     "score": 78,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      78,
+      78
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      24,
+      91
+     ]
+    },
+    "regulator": {
+     "score": 65,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      16,
+      91
+     ]
+    },
+    "public": {
+     "score": 69,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      31,
+      86
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      28,
+      91
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "P",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 79
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 79
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 81,
+     "band": "clear",
+     "base": 79
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 79
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 82,
+     "band": "clear",
+     "base": 79
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 79
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 80,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 80,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 83,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 80,
+     "band": "clear",
+     "base": 78
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 80,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 74
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 81,
+     "band": "clear",
+     "base": 78
+    }
+   ]
+  }
+ },
+ "sources": {
+  "alphasignal-metr-71m": {
+   "audit_status": "confirmed",
+   "id": "alphasignal-metr-71m",
+   "note": "Reports ~$71M in commitments from foundations and individuals; hard rule on lab money. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-08",
+   "publisher": "AlphaSignal",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "METR raises $71M to independently stress-test AI",
+   "url": "https://alphasignal.ai/news/metr-raises-71m-to-independently-stress-test-the-world-s-most-powerful-ai",
+   "press_kind": "aggregator"
+  },
+  "anthropic-amodei-x-pace-frontier": {
+   "id": "anthropic-amodei-x-pace-frontier",
+   "title": "Dario Amodei on X: 'We Must Pace the Frontier ... We'll provide third-party evaluators with permanent, employee-level access'",
+   "publisher": "Dario Amodei (Anthropic CEO), X",
+   "url": "https://x.com/DarioAmodei/status/2098773920774074715",
+   "published": "2026-09-12",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Announcement post (4:30 PM, Sep 12, 2026 per the page). fetch_text reads x.com status pages through their server-rendered title/OG text, so CI can check these spans (SHA-256 a9e72bbe0e27...). This is the 'employee-level' wording the paper uses; METR is not named in the post itself, only in the essay it links.",
+   "self_of": "anthropic"
+  },
+  "anthropic-pace-frontier": {
+   "id": "anthropic-pace-frontier",
+   "title": "We Must Pace the Frontier",
+   "publisher": "Dario Amodei (Anthropic CEO), darioamodei.com",
+   "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+   "published": "2026-09-12",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "The essay behind the 'Pace the Frontier' plan. It is hosted on the CEO's personal domain, not anthropic.com; no anthropic.com post on the commitment was found by site search or URL probing as of 2026-09-15 (anthropic.com/news lists only an Aug 2026 alignment/security post that says Anthropic is 'planning to work with METR for an independent review'). The page carries no date metadata; the date is taken from the announcement post x.com/DarioAmodei/status/2098773920774074715 (2026-09-12), which links to it. Fetched 2026-09-15 with bench.review.fetch_text, SHA-256 62b8af679fe1...; the essay says 'employee-like', the X post says 'employee-level'. The space before ')' in the METR span comes from the normalizer stripping the link tag.",
+   "self_of": "anthropic"
+  },
+  "audacious-faq": {
+   "id": "audacious-faq",
+   "title": "FAQ",
+   "publisher": "The Audacious Project (TED)",
+   "url": "https://www.audaciousproject.org/faq",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "States that TED itself does not provide funding for grantees; funding comes from a pool of donors listed on the About page (which names Good Ventures among the partners).",
+   "self_of": "audacious"
+  },
+  "coefficient-index": {
+   "id": "coefficient-index",
+   "title": "Coefficient Giving grants index",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2026-09-11",
+   "retrieved": "2026-09-14",
+   "note": "2,911-row snapshot; no METR-named grant; grants to ARC, RAND, FAR.AI, Redwood, Longview, Constellation, Epoch, Apollo, Irregular, Palisade.",
+   "source_type": "index",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:money_flows.csv M33 and evaluators.csv"
+  },
+  "good-ventures-propublica": {
+   "id": "good-ventures-propublica",
+   "title": "Good Ventures Foundation (EIN 46-1008520) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Filing list; object ids used: 202341359349105939 (FY 2021-07-01 to 2022-06-30, 315 Part XV lines), 202441369349105564 (2022-07-01 to 2023-06-30, 464), 202501349349105365 (2023-07-01 to 2024-06-30, 493), 202641359349102829 (2024-07-01 to 2025-06-30, about 900 lines, read from ProPublica's gzipped full_text render). No line names METR or Model Evaluation in any of the four; ARC appears once (FY2023, $1,250,000, 'RESEARCH RELATED TO AI ALIGNMENT')."
+  },
+  "high-tide-990pf-ty2024-xml": {
+   "id": "high-tide-990pf-ty2024-xml",
+   "title": "High Tide Foundation 990-PF TY2024 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202503179349100135_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Part XV: THE RAND CORPORATION, PC, 'To support tTHE PROJECT CANARY' (as filed), 333,334. No METR line."
+  },
+  "instrumentl-arc-990": {
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "instrumentl-arc-990",
+   "note": "Reports ARC contributed $4,553,935 in grants during 2024 (single grant); secondary extraction of the e-filed 990. [verify 2026-09-15] reachable BUT span(s) not found: metr.21 — needs curator review",
+   "published": "2025",
+   "publisher": "Instrumentl",
+   "retrieved": "2026-09-15",
+   "source_type": "ledger",
+   "title": "Alignment Research Center 990 report",
+   "url": "https://www.instrumentl.com/990-report/alignment-research-center"
+  },
+  "itbb-watchdogs": {
+   "audit_status": "confirmed",
+   "id": "itbb-watchdogs",
+   "note": "Funding pipeline analysis; METR diversification; Redwood revenue volatility; ~$25M Open Phil to Redwood historically. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-06-03",
+   "publisher": "Inside The Black Box (Substack)",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Who Funds the AI Safety Watchdogs",
+   "url": "https://itbb.substack.com/p/who-funds-the-watchdogs",
+   "press_kind": "aggregator"
+  },
+  "marktechpost-pace": {
+   "audit_status": "confirmed",
+   "id": "marktechpost-pace",
+   "note": "Investigators took no payment; ~$400K API credits; embedded evaluator terms: desks, badges, publication without editorial control. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-13",
+   "publisher": "MarkTechPost",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Anthropic's 3-Step 'Pace the Frontier' Plan",
+   "url": "https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/",
+   "press_kind": "aggregator"
+  },
+  "metr-990-fy2024": {
+   "id": "metr-990-fy2024",
+   "title": "METR FY2024 Form 990 (EIN 99-1219864)",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "Officers and directors, related organization ARC, $4.5M transfer from ARC, revenue $13.6M. ProPublica summary re-fetched 2026-09-14: revenue $13,639,155, contributions $13,603,035. [verify 2026-09-15 grok-pass] Org card FY2024 revenue $13,639,155; no Schedule I in HTML — grant-by-grant needs the PDF.",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "imported_from": "kevinnbass/metr-money-figure:finances.csv N01-N22"
+  },
+  "metr-about": {
+   "id": "metr-about",
+   "title": "About METR",
+   "publisher": "METR",
+   "url": "https://metr.org/about",
+   "published": "2026-08",
+   "retrieved": "2026-09-14",
+   "note": "States METR has not accepted funding from AI companies; notes reliance on free tokens.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "metr"
+  },
+  "metr-audacious-2024": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "metr-audacious-2024",
+   "note": "Approximately $17 million of the ~$38M Canary commitment supports work at METR. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2024-10-09",
+   "publisher": "METR",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "New Support Through The Audacious Project",
+   "url": "https://metr.org/blog/2024-10-09-new-support-through-the-audacious-project/",
+   "self_of": "metr"
+  },
+  "metr-coefficient-grants-index": {
+   "id": "metr-coefficient-grants-index",
+   "title": "Grants (index page)",
+   "publisher": "Coefficient Giving",
+   "url": "https://coefficientgiving.org/grants/",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "unverifiable",
+   "note": "Re-fetch 2026-09-15: bench.review.fetch_text gets HTTP 404; curl with a browser user-agent gets HTTP 403 (site-wide bot block, also on /grants/apollo-research-general-support/ and similar slugs); Wayback CDX captures of /grants/ on 2025-12-06, 2025-12-07, 2025-12-19 and 2026-02-28 are all status 404; openphilanthropy.org/grants/ has 301'd to coefficientgiving.org/funds since 2025-11. The 2,911-row index cited by N01 is a third-party Algolia extract (kevinnbass coefficient_pages.csv CP06) that the public site no longer serves."
+  },
+  "metr-coi-policy": {
+   "id": "metr-coi-policy",
+   "title": "Conflict of interest policy (version 1.0)",
+   "publisher": "METR",
+   "url": "https://metr.org/coi-policy.pdf",
+   "published": "2026-08-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "PDF (172 KB, about 17k characters via pdftotext) linked from metr.org/about as \"Our current conflict of interest policy\". Staff disclosure form, three conflict tiers with external-disclosure requirements, provisional recusal, ban on direct equity or debt in frontier AI companies, board ineligibility for frontier-company employees, declining donations made by or at the direction of frontier AI companies or their employees, free compute credits acceptable, and \"To date, we have not received payment for work on company-identifying risk assessments\". No cooling-off period. fetch_text cannot extract PDF text; spans verified against pdftotext output on 2026-09-15.",
+   "self_of": "metr"
+  },
+  "metr-donor-rule-history": {
+   "id": "metr-donor-rule-history",
+   "title": "METR donor rule wording over time (Wayback captures of metr.org/about and /donate)",
+   "publisher": "Internet Archive",
+   "url": "https://web.archive.org/web/2025*/metr.org/about",
+   "published": "2025-08",
+   "retrieved": "2026-09-14",
+   "note": "No lab-money rule on the April 2024 page; a footnote about compensation for evaluations appears April 2025; 'has not accepted funding from AI companies' plus free credits language from August 2025; Sept 2025 footnote says open to donations from individual lab employees. Date range of captures 2024-2026; published set to 2025-08 (first capture with the current rule wording). [verify 2026-09-15 grok-pass] Wayback wildcard 503s; use concrete snapshots (/web/202504.../, /web/202508.../) for history. Current wording is on metr.org/about.",
+   "source_type": "ledger",
+   "audit_status": "unverifiable",
+   "imported_from": "kevinnbass/metr-money-figure:donor_rule.csv DR01-DR12"
+  },
+  "metr-funding-2026": {
+   "audit_status": "confirmed",
+   "id": "metr-funding-2026",
+   "note": "Independence framing; growth in philanthropic commitments. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-08-14",
+   "publisher": "METR",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Funding update",
+   "url": "https://metr.org/blog/2026-08-14-funding-update/",
+   "self_of": "metr"
+  },
+  "metr-hcast-public": {
+   "id": "metr-hcast-public",
+   "title": "METR/hcast-public (GitHub README)",
+   "publisher": "METR (GitHub)",
+   "url": "https://github.com/METR/hcast-public",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "\"This repo contains source code for a subset of the tasks used in the HCAST: Human-Calibrated Autonomy Software Tasks paper\"; tasks conform to the METR Task Standard. Supports anchor 3 (tasks partly open); the rest of the suite is withheld, and no third-party re-run is documented, so M.1 does not reach 4.",
+   "self_of": "metr"
+  },
+  "metr-hf-investigation": {
+   "audit_status": "confirmed",
+   "id": "metr-hf-investigation",
+   "note": "Terms of engagement: six days on premises, OpenAI could redact non-public info, gave feedback on structure and tone; redaction summary statement. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-08-26",
+   "publisher": "METR",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident",
+   "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+   "self_of": "metr"
+  },
+  "metr-money-figure": {
+   "audit_status": "confirmed",
+   "capture": "git clone --depth 1, commit f64df65a16400fd88a77536111851695acc9a928",
+   "discovered_via": "https://x.com/kevinnbass/status/2099621874279817638",
+   "id": "metr-money-figure",
+   "note": "Third-party investigative ledger: 150 money-flow rows, 990 e-file object ids, SFF and Tallinn ledgers, DAF Schedule I rows, Wayback captures, four internal audits with per-row verdicts. Its own audit flags overclaims in the rendered figure's legend and 'Direct: $0' wording. Treated here as leads, not findings. Cloned at commit f64df65a1640 on 2026-09-14. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-14",
+   "publisher": "Kevin Bass (GitHub)",
+   "retrieved": "2026-09-15",
+   "source_type": "ledger",
+   "title": "metr-money-figure research ledger and audits",
+   "url": "https://github.com/kevinnbass/metr-money-figure/tree/master"
+  },
+  "metr-team": {
+   "id": "metr-team",
+   "title": "Team",
+   "publisher": "METR",
+   "url": "https://metr.org/team/",
+   "published": "2026",
+   "retrieved": "2026-09-14",
+   "note": "Board and advisors listed on the team page: Gleave (FAR.AI), Dattani (AIUC), Radford, Mascorro (a16z), Bengio; former advisors Karnofsky, Christiano appear in earlier captures. Re-fetched 2026-09-14: current advisors Gleave (board), Radford, Mascorro, Dattani (board), Bengio.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "imported_from": "kevinnbass/metr-money-figure:board.csv B05-B13",
+   "self_of": "metr"
+  },
+  "op-constellation": {
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "op-constellation",
+   "note": "$16,750,000 grant page. [verify 2026-09-15] reachable BUT span(s) not found: metr.21 — needs curator review",
+   "published": "2024",
+   "publisher": "Open Philanthropy / Coefficient Giving",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "title": "Constellation Programmatic Activities and Operating Expenses",
+   "url": "https://www.openphilanthropy.org/grants/constellation-programmatic-activities-and-operating-expenses/"
+  },
+  "op-longview": {
+   "id": "op-longview",
+   "title": "Longview Philanthropy grants",
+   "publisher": "Open Philanthropy / Coefficient Giving",
+   "url": "https://www.openphilanthropy.org/grants/longview-philanthropy-nuclear-security-grantmaking/",
+   "published": "2024",
+   "retrieved": "2026-09-15",
+   "note": "Operational-costs grant of $15,961,273 among about $21M cumulative.",
+   "source_type": "index",
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15"
+  },
+  "openai-altman-embedded-pledge": {
+   "id": "openai-altman-embedded-pledge",
+   "title": "Sam Altman on X: 'I agree with Dario that we need to pace the frontier ... we will do the same'",
+   "publisher": "Sam Altman (OpenAI CEO), X",
+   "url": "https://x.com/sama/status/2098811563415150910",
+   "published": "2026-09-12",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Quote-post of Amodei's announcement, same day. No openai.com post matching the pledge was found on or before 2026-09-15: openai.com/news and its RSS carry nothing on embedded evaluators; openai.com/index/strengthening-safety-with-external-testing/ (linked by Unite.AI) is dated November 19, 2025 and describes the existing external-testing programme (it names METR's time-horizon evaluation and SecureBio's VCT, and says third-party work is published 'after we reviewed it for confidentiality and accuracy', i.e. not the no-editorial-control commitment); openai.com/index/third-party-cyber-evaluations-involving-openai-models/ returned HTTP 403 to fetch_text, WebFetch and curl (see fetch_failures). Altman's post does not name METR and does not mention publication rights; 'we will do the same' refers to Amodei's employee-level-access commitment. Fetched 2026-09-15 with fetch_text, SHA-256 2c80308418be....",
+   "self_of": "openai"
+  },
+  "packard-990pf-ty2024-xml": {
+   "id": "packard-990pf-ty2024-xml",
+   "title": "David and Lucile Packard Foundation 990-PF TY2024 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202533209349100148_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "1,029 Part XV groups; no METR line."
+  },
+  "packard-propublica": {
+   "id": "packard-propublica",
+   "title": "David and Lucile Packard Foundation (EIN 94-2278431) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/942278431",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Four 990-PF XMLs grepped: 202223199349107432 (TY2021, 1,400 Part XV groups), 202303149349102680 (TY2022, 1,158), 202433199349102603 (TY2023, 1,097), 202533209349100148 (TY2024, 1,029). No METR, Model Evaluation or ARC line."
+  },
+  "pebblous-scope": {
+   "id": "pebblous-scope",
+   "title": "What METR's OpenAI Agent Investigation Left Out",
+   "publisher": "Pebblous",
+   "url": "https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/",
+   "published": "2026-09",
+   "retrieved": "2026-09-14",
+   "note": "Scope set by OpenAI; OpenAI's own cluster breach excluded; three of METR's standard incident questions dropped. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Scope set by OpenAI; METR+Redwood on-site; METR took no payment; 'other questions out of scope'.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "aggregator"
+  },
+  "pew-990-fy2025-xml": {
+   "id": "pew-990-fy2025-xml",
+   "title": "The Pew Charitable Trusts 990, tax period 2024-07-01 to 2025-06-30 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202620849349301332_public.xml",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "535 Schedule I recipient groups; no METR line."
+  },
+  "pew-propublica": {
+   "id": "pew-propublica",
+   "title": "Pew Charitable Trusts (EIN 56-2307147) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/562307147",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Five 990 XMLs grepped from the S3 mirror: 202221029349301247 (2020-07-01 to 2021-06-30, 439 Schedule I recipient groups), 202340889349301359 (to 2022-06-30, 407), 202440829349300334 (to 2023-06-30, 401), 202520859349300727 (to 2024-06-30, 391), 202620849349301332 (to 2025-06-30, 535). No METR, Model Evaluation or ARC line."
+  },
+  "propublica-api-schmidt-sciences": {
+   "id": "propublica-api-schmidt-sciences",
+   "title": "Organization search: schmidt sciences",
+   "publisher": "ProPublica Nonprofit Explorer API",
+   "url": "https://projects.propublica.org/nonprofits/api/v2/search.json?q=schmidt%20sciences",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Zero-result queries on this endpoint return HTTP 404 with the JSON body {\"total_results\":0,...}; read with curl on 2026-09-15 (a query for 'eric and wendy schmidt' returns HTTP 200 with two organizations). bench.review.fetch_text raises on the 404 status, so no checkable span. Conclusion: no filer named Schmidt Sciences; the Schmidt vehicles that file are the Eric and Wendy Schmidt Fund for Strategic Innovation (46-3460261), the Schmidt Family Foundation (20-4170342) and the Eric and Wendy Schmidt Operating Foundation (99-5077186)."
+  },
+  "propublica-metr-arc": {
+   "id": "propublica-metr-arc",
+   "title": "Nonprofit Explorer summaries: METR (EIN 99-1219864) and ARC (EIN 86-3605182)",
+   "publisher": "ProPublica",
+   "url": "https://projects.propublica.org/nonprofits/organizations/991219864",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "METR FY2024 revenue $13,639,155, contributions $13,603,035, expenses $8,234,524; ARC FY2024 revenue $5,219,369, expenses $9,054,183.",
+   "source_type": "filing",
+   "audit_status": "confirmed"
+  },
+  "propublica-metr-fulltext": {
+   "id": "propublica-metr-fulltext",
+   "title": "Filing text search: \"Model Evaluation and Threat Research\"",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22Model+Evaluation+and+Threat+Research%22",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Corpus: e-filed 990-series returns from fiscal years 2014 forward. Eight filings name METR: Alignment Research Center 990 Schedules R, N, I, O (2024); METR's own 990 (2024); Founders Pledge Schedule I (2024); Silicon Valley Community Foundation Schedule I (2024); Vanguard Charitable Endowment Program Schedule I (2025). None from Good Ventures, Pew, Packard, any Schmidt-family foundation or TED Foundation. The ARC Schedule I snippet reads 'MODEL EVALUATION AND THREAT RESEARCH INC 440 N BARRANCA AVE 3345 COVINA CA 991219864 4477169 76766 BOOK' and Schedule R 'B 4553935 CASH'."
+  },
+  "propublica-metr-zip-search": {
+   "id": "propublica-metr-zip-search",
+   "title": "Filing text search: \"MODEL EVALUATION AND THREAT RESEARCH\" \"917231722\"",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/full_text_search?q=%22MODEL+EVALUATION+AND+THREAT+RESEARCH%22+%22917231722%22",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Exactly one filing contains both METR's name and its ZIP+4 as written in the Vanguard row: Vanguard Charitable Endowment Program, Form 990 Schedule I (2025). fetch_text-checkable confirmation that the FY2025 Schedule I names METR; the amount is on the render above."
+  },
+  "schmidt-family-propublica": {
+   "id": "schmidt-family-propublica",
+   "title": "Schmidt Family Foundation (EIN 20-4170342) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Five 990-PF XMLs grepped (TY2020 to TY2024; 378, 367, 629, 546, 695 Part XV groups): no METR, Model Evaluation or ARC line."
+  },
+  "schmidt-fsi-990pf-ty2024-xml": {
+   "id": "schmidt-fsi-990pf-ty2024-xml",
+   "title": "Eric and Wendy Schmidt Fund for Strategic Innovation 990-PF TY2024 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202543219349108364_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "379 Part XV groups; no METR line."
+  },
+  "schmidt-fsi-propublica": {
+   "id": "schmidt-fsi-propublica",
+   "title": "Eric and Wendy Schmidt Fund for Strategic Innovation (EIN 46-3460261) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Five 990-PF XMLs grepped (TY2020 to TY2024; 99, 106, 184, 233, 379 Part XV groups): no METR, Model Evaluation or ARC line."
+  },
+  "schmidt-operating-propublica": {
+   "id": "schmidt-operating-propublica",
+   "title": "Eric and Wendy Schmidt Operating Foundation (EIN 99-5077186) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/995077186",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "One 990-PF (short tax period 2024-09-11 to 2024-12-31, object 202512279349100406): zero Part XV grant groups."
+  },
+  "sff-2025": {
+   "id": "sff-2025",
+   "title": "SFF-2025 S-Process Recommendations Announcement",
+   "publisher": "Survival and Flourishing Fund",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "Funder Jaan Tallinn; $34.33M recommended; METR $548,000; Palisade $1,133,000; FAR AI $919,000; SaferAI $311,000; SecureBio $754,000; RAND TASP $1,022,000; CAIS $289,000.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "sff"
+  },
+  "techtimes-metr-hf": {
+   "audit_status": "confirmed",
+   "id": "techtimes-metr-hf",
+   "note": "Investigators named; 44 misalignment incidents in METR Frontier Risk Report. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-08-27",
+   "publisher": "Tech Times",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "OpenAI Agents Formed Secret Swarm, Hacked Hugging Face",
+   "url": "https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm",
+   "press_kind": "primary"
+  },
+  "ted-990pf-ty2024-xml": {
+   "id": "ted-990pf-ty2024-xml",
+   "title": "TED Foundation Inc 990-PF TY2024 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502549349100435_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Two paid grants only; no METR, RAND or Canary."
+  },
+  "ted-foundation-propublica": {
+   "id": "ted-foundation-propublica",
+   "title": "TED Foundation Inc (EIN 82-1934592) filings",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/organizations/821934592",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Four 990-PF XMLs grepped from the S3 mirror: 202242949349100909 (TY2021, 3 Part XV groups), 202322779349100017 (TY2022, 6), 202442359349100919 (TY2023, 1), 202502549349100435 (TY2024, 2: Aboriginal Housing Management $63,084; Zero Emissions Innovation Centre $37,169). No METR, RAND, Model Evaluation or Canary line."
+  },
+  "unite-altman-match": {
+   "audit_status": "confirmed",
+   "id": "unite-altman-match",
+   "note": "OpenAI commits to employee-like access for independent evaluators; METR named as example. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-12",
+   "publisher": "Unite.AI",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Altman Says OpenAI Will Match Anthropic's Embedded Evaluator Pledge",
+   "url": "https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/",
+   "press_kind": "aggregator"
+  },
+  "valhalla-990pf-ty2024-xml": {
+   "id": "valhalla-990pf-ty2024-xml",
+   "title": "Valhalla Foundation 990-PF TY2024 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202502559349100000_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Part XV: RAND CORPORATION, Santa Monica, PC, 'PROJECT CANARY, AN ARTIFICIAL INTELLIGENCE SAFETY INITIATIVE', 10,000,000. No METR line."
+  },
+  "vanguard-990-fy2023-xml": {
+   "id": "vanguard-990-fy2023-xml",
+   "title": "Vanguard Charitable Endowment Program 990, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441359349309439_public.xml",
+   "published": "2024",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "21,268 recipient groups; ALIGNMENT RESEARCH CENTER $201,000; no METR line."
+  },
+  "vanguard-990-fy2024-xml": {
+   "id": "vanguard-990-fy2024-xml",
+   "title": "Vanguard Charitable Endowment Program 990, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML)",
+   "publisher": "IRS e-file via GivingTuesday 990 data lake mirror",
+   "url": "https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202511349349313096_public.xml",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "24,269 Schedule I recipient groups; ALIGNMENT RESEARCH CENTER $1,000,000; RAND $48,000; no METR line (METR was spun out in April 2024)."
+  },
+  "vanguard-fy2025-schedi-render": {
+   "id": "vanguard-fy2025-schedi-render",
+   "title": "Vanguard Charitable Endowment Program 990, fiscal year ending June 2025, Schedule I (ProPublica full-text render)",
+   "publisher": "ProPublica Nonprofit Explorer",
+   "url": "https://projects.propublica.org/nonprofits/full_text/202621329349306657/IRS990ScheduleI",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Served gzip-encoded; decoded on 2026-09-15 (104,768,626 bytes, about 24,000 recipient rows). Row (15424): 'MODEL EVALUATION AND THREAT RESEARCH 440 N BARRANCA AVE 3345 COVINA , CA 917231722 99-1219864 501(C)3 4,000,000 FMV N/A FOR RECIPIENT'S EXEMPT PURPOSE'. Row (547): 'ALIGNMENT RESEARCH CENTER ... 86-3605182 501(C)3 1,500,000'. RAND Corporation $12,000 (row 19056). bench.review.fetch_text returns the undecoded gzip bytes for this endpoint, so the span is checkable only after gunzip; the XML is not yet on the S3 mirror."
+  },
+  "wapo-examiner-benton": {
+   "id": "wapo-examiner-benton",
+   "title": "Anthropic CEO pitches AI slow-down plan",
+   "publisher": "Washington Examiner",
+   "url": "https://www.washingtonexaminer.com/policy/technology/4724950/anthropic-ceo-pitch-ai-slow-down-plan/",
+   "published": "2026-09-12",
+   "retrieved": "2026-09-14",
+   "note": "Former Anthropic researcher Joe Benton joins METR. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Amodei pacing + embedded evaluators; Altman 'we will do the same'; Benton -> METR; Sanders-Casar.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "primary"
+  },
+  "wayback-cdx-op-grants-m": {
+   "id": "wayback-cdx-op-grants-m",
+   "title": "Wayback CDX index of openphilanthropy.org/grants/m* (status 200, one row per URL)",
+   "publisher": "Internet Archive",
+   "url": "http://web.archive.org/cdx/search/cdx?url=openphilanthropy.org/grants/m*&collapse=urlkey&fl=original&filter=statuscode:200&limit=20000",
+   "published": "2026-09-15",
+   "retrieved": "2026-09-15",
+   "source_type": "index",
+   "audit_status": "confirmed",
+   "note": "Queried letter by letter (a to z) on 2026-09-15: 2,737 distinct openphilanthropy.org/grants/<slug>/ pages with a 200 capture after dropping query-string and /page/ variants. No slug begins with metr or model-evaluation (the only 'metr' matches are ayni-institute-movement-ecology-and-metrics and center-for-welfare-metrics-...); no pattern-labs or irregular slug. Present: alignment-research-center-general-support (2), apollo-research-startup-funding, apollo-research-general-support, palisade-research-general-support (2024 and 2025), six securebio-* slugs."
+  }
+ }
+}

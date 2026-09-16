@@ -1,0 +1,1579 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/euaio.html"
+ },
+ "evaluator": {
+  "id": "euaio",
+  "name": "EU AI Office",
+  "type": "gov",
+  "hq": "Brussels, BE",
+  "domains": [
+   "bio",
+   "cyber",
+   "misuse",
+   "assurance"
+  ],
+  "confidence": "med",
+  "summary": "Regulator behind the GPAI Code of Practice; external-evaluator obligations enforceable since August 2026.",
+  "what_would_move_the_score": "An accreditation pathway for external evaluators and a public reporting schema.",
+  "role": "government",
+  "dissent": {
+   "lower": "Scope (S) at 2 could be 1. The public record shows the Office has run no evaluation of any frontier model; the only scope it has exercised is a procurement of technical assistance whose deliverables are shaped by the Code that signatory labs themselves negotiated. Until the Office uses Article 92, the labs effectively define what is tested through their own Safety and Security Model Reports, which is the anchor-1 picture.",
+   "higher": "Scope (S) at 2 could be 3. Article 92 gives the Office the legal power to evaluate any general-purpose model and to compel access, including source code, with fines for refusal, and enforcement has been live since August 2026. The Office set the six risk lots of the tender itself. A body that writes the questions and can compel answers is at least anchor 3; section 9 holds it down only for lack of a published run."
+  },
+  "list_group": "government",
+  "graph_id": "evaluator#268",
+  "values": {
+   "F": 3,
+   "G": 3,
+   "P": 3,
+   "A": 3,
+   "S": 4,
+   "R": 2,
+   "M": 2,
+   "X": 4
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 4,
+    "R": 2,
+    "M": 2,
+    "X": 4
+   },
+   "standard": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 4,
+    "R": 2,
+    "M": 2,
+    "X": 4
+   },
+   "against_interest": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 4,
+    "R": 2,
+    "M": 2,
+    "X": 4
+   },
+   "spans": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 4,
+    "R": 2,
+    "M": 2,
+    "X": 4
+   },
+   "primary": {
+    "F": 3,
+    "G": null,
+    "P": null,
+    "A": 3,
+    "S": 4,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "euaio",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "euaio.06",
+     "euaio.10",
+     "euaio.14"
+    ],
+    "rationale": "Anchor 3 pending a confirmed bounded negative; funding is public by construction but the gate asks for the row.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "open_questions": [
+     "Add a confirmed bounded negative from a primary source to restore anchor 4."
+    ],
+    "graph_id": "assessment#721",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "euaio.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "euaio.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "euaio.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "euaio.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "euaio.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "euaio.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by euaio.10 (F.12): Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.. Floors up to 3 from euaio.06, euaio.14 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by euaio.10 (F.12): Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.. Floors up to 3 from euaio.06, euaio.14 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "euaio",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "euaio.07",
+     "euaio.12"
+    ],
+    "rationale": "Anchor 3: public body with a statutory basis (euaio.07). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10). Whether a formal COI policy is published is an open question.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#722",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "euaio.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "euaio.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "euaio.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "euaio.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "euaio.07",
+       "euaio.12"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by euaio.12 (G.2): AI Office staff are Commission officials bound by the EU Staff Regulations, which require screening of actual or potential conflicts of interest (Article 11a) and restrict post-employment activity for two years (Article 16).. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by euaio.12 (G.2): AI Office staff are Commission officials bound by the EU Staff Regulations, which require screening of actual or potential conflicts of interest (Article 11a) and restrict post-employment activity for two years (Article 16).. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "euaio",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "euaio.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#723",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "euaio.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "euaio.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "euaio.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "euaio.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "euaio.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by euaio.08 (P.5): Civil-service conflict rules.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by euaio.08 (P.5): Civil-service conflict rules.. No admissible signal caps it."
+   },
+   "A": {
+    "evaluator": "euaio",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "euaio.01"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "statutory",
+    "graph_id": "assessment#724",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "euaio.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "euaio.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "euaio.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "euaio.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "euaio.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     }
+    },
+    "rationale_derived": "Floored at 3 by euaio.01 (A.2): Legal power to compel; the only body whose access does not depend on goodwill.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by euaio.01 (A.2): Legal power to compel; the only body whose access does not depend on goodwill.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "euaio",
+    "dimension": "S",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "euaio.02",
+     "euaio.03",
+     "euaio.11",
+     "euaio.13"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#725",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "euaio.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "euaio.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "euaio.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "euaio.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 4,
+      "b": [
+       "euaio.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "euaio.02",
+       "euaio.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by euaio.13 (S.4): The AI Office holds the legal power under the AI Act to evaluate general-purpose models with systemic risk and to compel access and information; scope for those evaluations is set by the regulator, not the developer.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by euaio.13 (S.4): The AI Office holds the legal power under the AI Act to evaluate general-purpose models with systemic risk and to compel access and information; scope for those evaluations is set by the regulator, not the developer.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "euaio",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "euaio.04"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "statutory",
+    "graph_id": "assessment#726",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "euaio.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "euaio.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "euaio.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "euaio.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "euaio.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by euaio.04 (R.4): Safety and Security Model Reports are submitted to the Office, not the public..",
+    "rationale_leads": "Capped at 2 by euaio.04 (R.4): Safety and Security Model Reports are submitted to the Office, not the public.."
+   },
+   "M": {
+    "evaluator": "euaio",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "euaio.05"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#727",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "euaio.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "euaio.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "euaio.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "euaio.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "euaio.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by euaio.05 (M.2): No accreditation pathway or public reporting schema yet; thin evaluator bench..",
+    "rationale_leads": "Capped at 2 by euaio.05 (M.2): No accreditation pathway or public reporting schema yet; thin evaluator bench.."
+   },
+   "X": {
+    "evaluator": "euaio",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "euaio.09"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#728",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "euaio.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "euaio.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "euaio.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "euaio.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "euaio.09"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by euaio.09 (X.7): No commercial products.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by euaio.09 (X.7): No commercial products.. No admissible signal caps it."
+   }
+  },
+  "signals": [
+   {
+    "id": "euaio.01",
+    "evaluator": "euaio",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Legal power to compel; the only body whose access does not depend on goodwill.",
+    "sources": [
+     "metr-regs",
+     "euaio-ai-act-92"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "A.2",
+    "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
+    "quote_source": "euaio-ai-act-92",
+    "graph_id": "signal#395",
+    "source_graph_ids": [
+     "source#140",
+     "source#87"
+    ]
+   },
+   {
+    "id": "euaio.02",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Contracts its own evaluators (FAR.AI-led consortium) rather than relying on lab-chosen ones.",
+    "sources": [
+     "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.3",
+    "quote": "FAR AI was selected by the European Commission's AI Office to lead CBRN risk research under tender EC-CNECT/2025/OP/0032",
+    "quote_source": "longtermwiki-far",
+    "graph_id": "signal#396",
+    "source_graph_ids": [
+     "source#127"
+    ]
+   },
+   {
+    "id": "euaio.03",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Code sets the access floor: helpful-only versions where security allows, at least 20 business days, external evaluators for each new frontier model.",
+    "sources": [
+     "metr-regs",
+     "arxiv-access-taxonomy"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.4",
+    "quote": "A developer should engage independent external evaluators for each new frontier model",
+    "quote_source": "metr-regs",
+    "graph_id": "signal#397",
+    "source_graph_ids": [
+     "source#140",
+     "source#40"
+    ]
+   },
+   {
+    "id": "euaio.04",
+    "evaluator": "euaio",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Safety and Security Model Reports are submitted to the Office, not the public.",
+    "sources": [
+     "metr-regs",
+     "euaio-cop-text"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.4",
+    "quote": "Signatories commit to reporting to the AI Office information about their model",
+    "quote_source": "euaio-cop-text",
+    "graph_id": "signal#398",
+    "source_graph_ids": [
+     "source#140",
+     "source#90"
+    ]
+   },
+   {
+    "id": "euaio.05",
+    "evaluator": "euaio",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "No accreditation pathway or public reporting schema yet; thin evaluator bench.",
+    "sources": [
+     "techpolicy-aef1"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "M.2",
+    "quote": "the pool of qualified evaluators remains thin",
+    "quote_source": "techpolicy-aef1",
+    "graph_id": "signal#399",
+    "source_graph_ids": [
+     "source#227"
+    ]
+   },
+   {
+    "id": "euaio.06",
+    "evaluator": "euaio",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Public funding.",
+    "sources": [
+     "metr-regs",
+     "euaio-office-decision"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "established within the Commission as part of the administrative structure of the Directorate-General",
+    "quote_source": "euaio-office-decision",
+    "graph_id": "signal#400",
+    "source_graph_ids": [
+     "source#140",
+     "source#92"
+    ]
+   },
+   {
+    "id": "euaio.07",
+    "evaluator": "euaio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Regulator with statutory basis.",
+    "sources": [
+     "metr-regs",
+     "euaio-ai-office-page"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "established within the European Commission as the foundation for a single AI governance system",
+    "quote_source": "euaio-ai-office-page",
+    "graph_id": "signal#401",
+    "source_graph_ids": [
+     "source#140",
+     "source#88"
+    ]
+   },
+   {
+    "id": "euaio.08",
+    "evaluator": "euaio",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "Civil-service conflict rules.",
+    "sources": [
+     "metr-regs",
+     "euaio-ceo-staffregs",
+     "euaio-staff-regs"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "P.5",
+    "quote": "Article 16 of the old staff regulations included a two-year notification period after staff leave their EU job",
+    "quote_source": "euaio-ceo-staffregs",
+    "graph_id": "signal#402",
+    "source_graph_ids": [
+     "source#140",
+     "source#89",
+     "source#93"
+    ]
+   },
+   {
+    "id": "euaio.09",
+    "evaluator": "euaio",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "metr-regs",
+     "euaio-ai-office-page",
+     "euaio-newsletter-77"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "quote": "It also enforces the rules for GPAI models and supports the governance bodies in Member States",
+    "quote_source": "euaio-ai-office-page",
+    "graph_id": "signal#403",
+    "source_graph_ids": [
+     "source#140",
+     "source#88",
+     "source#91"
+    ]
+   },
+   {
+    "id": "euaio.10",
+    "evaluator": "euaio",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Public budget under the Digital Europe Programme; EUR 7.37M awarded across six lots to contracted evaluators. No confirmed negative on file.",
+    "sources": [
+     "ted-864574",
+     "euaio-newsletter-77"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.12",
+    "quote": "The €9,080,000 tender is divided into six lots",
+    "quote_source": "euaio-newsletter-77",
+    "graph_id": "signal#404",
+    "source_graph_ids": [
+     "source#231",
+     "source#91"
+    ]
+   },
+   {
+    "id": "euaio.11",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Contract notice TED 864574-2025, Technical Assistance for AI Safety, published 26 December 2025; contractors self-report include METR, FAR.AI, SecureBio, SaferAI and Epoch.",
+    "sources": [
+     "ted-864574-notice",
+     "ted-864574",
+     "euaio-tender-call",
+     "euaio-newsletter-77"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-12-26",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.3",
+    "quote": "This tender has been split into six lots",
+    "quote_source": "euaio-tender-call",
+    "graph_id": "signal#405",
+    "source_graph_ids": [
+     "source#230",
+     "source#231",
+     "source#94",
+     "source#91"
+    ]
+   },
+   {
+    "id": "euaio.12",
+    "evaluator": "euaio",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "AI Office staff are Commission officials bound by the EU Staff Regulations, which require screening of actual or potential conflicts of interest (Article 11a) and restrict post-employment activity for two years (Article 16).",
+    "sources": [
+     "euaio-ceo-staffregs",
+     "euaio-staff-regs"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "G.2",
+    "quote": "a concrete procedure for properly screening new staff for actual or potential conflicts of interest",
+    "quote_source": "euaio-ceo-staffregs",
+    "note": "Statutory civil-service conflict rules count as a conflict policy for a public body (G.2): floor 3. G.7 four needs tier-1 evidence of an independent board and external review; none.",
+    "graph_id": "signal#406",
+    "source_graph_ids": [
+     "source#89",
+     "source#93"
+    ]
+   },
+   {
+    "id": "euaio.13",
+    "evaluator": "euaio",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "The AI Office holds the legal power under the AI Act to evaluate general-purpose models with systemic risk and to compel access and information; scope for those evaluations is set by the regulator, not the developer.",
+    "sources": [
+     "metr-regs",
+     "euaio-ai-act-92"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "as_of": "2026-09-15",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "S.4",
+    "quote": "may request access to the general-purpose AI model concerned through APIs or further appropriate technical means",
+    "quote_source": "euaio-ai-act-92",
+    "graph_id": "signal#407",
+    "source_graph_ids": [
+     "source#140",
+     "source#87"
+    ]
+   },
+   {
+    "evaluator": "euaio",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "euaio.14",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Commission Decision C(2024) 390 Article 8 funds the AI Office from DG CONNECT staff, Digital Europe Programme administrative appropriations, and DEP Specific Objective 2 'Artificial Intelligence' for operational expenditure, naming no non-Union source.",
+    "sources": [
+     "eurlex-ai-office-decision-pdf",
+     "euaio-office-decision"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "Operational expenditure of the Office shall be covered by the financial resources allocated to Specific Objective 2",
+    "quote_source": "eurlex-ai-office-decision-pdf",
+    "graph_id": "signal#408",
+    "source_graph_ids": [
+     "source#95",
+     "source#92"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 75,
+   "regulator": 74,
+   "public": 73,
+   "equal": 75
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    },
+    "regulator": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    },
+    "regulator": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    },
+    "regulator": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    },
+    "regulator": {
+     "score": 74,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      74,
+      74
+     ]
+    },
+    "public": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 82,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      45,
+      91
+     ]
+    },
+    "regulator": {
+     "score": 84,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      46,
+      91
+     ]
+    },
+    "public": {
+     "score": 81,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      33,
+      93
+     ]
+    },
+    "equal": {
+     "score": 83,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      31,
+      94
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "R",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 77,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 77,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 80,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 77,
+     "band": "clear",
+     "base": 75
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 74
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 76,
+     "band": "clear",
+     "base": 74
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 79,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 74,
+     "band": "clear",
+     "base": 73
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    }
+   ]
+  }
+ },
+ "sources": {
+  "arxiv-access-taxonomy": {
+   "audit_status": "confirmed",
+   "id": "arxiv-access-taxonomy",
+   "note": "Taxonomy of access levels for external evaluators. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-01-21",
+   "publisher": "arXiv",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Expanding External Access to Frontier AI Models for Dangerous Capability Evaluations (arXiv 2601.11916)",
+   "url": "https://arxiv.org/abs/2601.11916",
+   "press_kind": "primary"
+  },
+  "euaio-ai-act-92": {
+   "id": "euaio-ai-act-92",
+   "title": "Article 92: Power to conduct evaluations (AI Act Service Desk)",
+   "publisher": "European Commission (AI Act Service Desk)",
+   "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-92",
+   "published": "2024-07-12",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Regulation (EU) 2024/1689 Article 92 text on the Commission's official service desk: the AI Office may conduct evaluations and request access through APIs or other technical means including source code; providers must comply or face fines. Typed filing as a primary legal instrument. Fetched 2026-09-15; span present."
+  },
+  "euaio-ai-office-page": {
+   "id": "euaio-ai-office-page",
+   "title": "European AI Office",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Office description: established within the Commission; enforces GPAI rules; powers include conducting evaluations, requesting information and measures, applying sanctions. Fetched 2026-09-15; spans present.",
+   "self_of": "euaio"
+  },
+  "euaio-ceo-staffregs": {
+   "id": "euaio-ceo-staffregs",
+   "title": "New EU Staff Regulations adopted: Small steps on revolving door, giant leaps still needed",
+   "publisher": "Corporate Europe Observatory",
+   "url": "https://corporateeurope.org/en/revolving-doors/2013/07/new-eu-staff-regulations-adopted-small-steps-revolving-door-giant-leaps",
+   "published": "2013-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Describes Staff Regulations Article 11 (conflict-of-interest screening) and Article 16 (two-year post-employment notification; one-year lobbying cooling-off for senior officials). NGO analysis, typed press aggregator. Fetched 2026-09-15; spans present.",
+   "press_kind": "aggregator"
+  },
+  "euaio-cop-text": {
+   "id": "euaio-cop-text",
+   "title": "General-Purpose AI Code of Practice: Safety and Security chapter (mirror)",
+   "publisher": "code-of-practice.ai (Alexander Zacherl mirror of the Commission text)",
+   "url": "https://code-of-practice.ai/?section=safety-security",
+   "published": "2025-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Verbatim mirror of the Code's Safety and Security chapter: Commitment 7 Safety and Security Model Reports submitted to the AI Office; Measure on independent external evaluators. Third-party mirror, typed press aggregator; the Commission PDF is the authoritative text. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  },
+  "euaio-newsletter-77": {
+   "id": "euaio-newsletter-77",
+   "title": "The EU AI Act Newsletter #77: AI Office Tender",
+   "publisher": "EU AI Act Newsletter (Substack)",
+   "url": "https://artificialintelligenceact.substack.com/p/the-eu-ai-act-newsletter-77-ai-office",
+   "published": "2025-05",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "States the EUR 9,080,000 technical-assistance tender is divided into six lots under Articles 89, 92 and 93 of the AI Act. Newsletter, typed press aggregator. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  },
+  "euaio-office-decision": {
+   "id": "euaio-office-decision",
+   "title": "Commission Decision Establishing the European AI Office",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/library/commission-decision-establishing-european-ai-office",
+   "published": "2024-01-24",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "The Office is established within the Commission in the administrative structure of DG CONNECT, subject to its annual management plan. Fetched 2026-09-15; span present.",
+   "self_of": "euaio"
+  },
+  "euaio-staff-regs": {
+   "id": "euaio-staff-regs",
+   "title": "Staff Regulations of Officials of the European Union (consolidated text)",
+   "publisher": "EUR-Lex",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01962R0031-20240101",
+   "published": "2024-01-01",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "unaudited",
+   "note": "Regulation No 31 (EEC), 11 (EAEC) consolidated: Article 11a (conflict of interest), Article 16 (activities after leaving the service). EUR-Lex returns an empty body to the CI normalizer and to curl; not verified by fetch. Cited for the primary text; the CEO article carries the confirmed spans."
+  },
+  "euaio-tender-call": {
+   "id": "euaio-tender-call",
+   "title": "Forthcoming call for tenders: Artificial Intelligence Act - Technical Assistance for AI Safety",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/forthcoming-call-tenders-artificial-intelligence-act-technical-assistance-ai-safety",
+   "published": "2025-04-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Commission announcement: tender split into six lots to support monitoring of compliance and assessment of GPAI systemic risks. Same record as in leads/bounds/euaio.json. Fetched 2026-09-15; span present.",
+   "self_of": "euaio"
+  },
+  "eurlex-ai-office-decision-pdf": {
+   "id": "eurlex-ai-office-decision-pdf",
+   "title": "Commission Decision of 24 January 2024 establishing the European Artificial Intelligence Office, C/2024/1459 (Official Journal PDF)",
+   "publisher": "Publications Office of the European Union, EUR-Lex",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32024D01459",
+   "published": "2024-02-14",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Article 8 Financing: (1) officials from DG CONNECT staff, (2) external statutory staff from a redeployment of Digital Europe Programme administrative support appropriations, (3) operational expenditure from DEP Specific Objective 2 'Artificial Intelligence'. Entered into force 21 February 2024. Complements the existing euaio-office-decision source (digital-strategy library page)."
+  },
+  "longtermwiki-far": {
+   "id": "longtermwiki-far",
+   "title": "FAR AI",
+   "publisher": "Longterm Wiki",
+   "url": "https://www.longtermwiki.com/wiki/E138",
+   "published": "2026-02-26",
+   "retrieved": "2026-09-14",
+   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Loads. Coefficient components ~$28.675M, $6.65M, $2.16M, $1.7M + $12M regrant; FY2024 rev $24.3M; dev-revenue cap 10%; 2025 commitments >$30M. Tier-2 lead for T03 components, not a filing.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "aggregator"
+  },
+  "metr-regs": {
+   "id": "metr-regs",
+   "title": "Frontier AI safety regulations: A reference for lab staff",
+   "publisher": "METR",
+   "url": "https://metr.org/notes/2026-01-29-frontier-ai-safety-regulations/",
+   "published": "2026-01-29",
+   "retrieved": "2026-09-14",
+   "note": "EU CoP: adequate access incl. helpful-only versions, 20 business days, external evaluators each new frontier model; enforceable Aug 2026. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] SB 315: independent auditor, no financial interest, pay not tied to findings; audits from 2028.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "metr"
+  },
+  "techpolicy-aef1": {
+   "audit_status": "confirmed",
+   "id": "techpolicy-aef1",
+   "note": "AEF-1 covers independence, access depth, transparency; thin evaluator pool. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-02-26",
+   "publisher": "TechPolicy.Press",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "The EU's Real AI Leverage Is Making Compliance the Path of Least Resistance",
+   "url": "https://www.techpolicy.press/the-eus-real-ai-leverage-is-making-compliance-the-path-of-least-resistance/",
+   "press_kind": "primary"
+  },
+  "ted-864574": {
+   "audit_status": "confirmed",
+   "id": "ted-864574",
+   "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml",
+   "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-12",
+   "publisher": "Tenders Electronic Daily",
+   "retrieved": "2026-09-14",
+   "source_type": "filing",
+   "title": "TED 864574-2025 Technical Assistance for AI Safety",
+   "url": "https://ted.europa.eu/"
+  },
+  "ted-864574-notice": {
+   "id": "ted-864574-notice",
+   "title": "TED notice 864574-2025: Artificial Intelligence Act: Technical Assistance for AI Safety",
+   "publisher": "Tenders Electronic Daily",
+   "url": "https://ted.europa.eu/en/notice/-/detail/864574-2025",
+   "published": "2025-12-26",
+   "retrieved": "2026-09-15",
+   "note": "Contract notice; lot detail not extracted. [verify 2026-09-15 grok-pass] Award values: all contracts 7,373,017.50 EUR; LOT-0003 EquiStamp 1,167,484.00 EUR (consortium w/ METR, Epoch), contract 4500137790, concluded 15/12/2025; LOT-0001 1,434,080.00 EUR (FAR AI lead; SaferAI named winner).",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15"
+  }
+ }
+}

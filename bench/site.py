@@ -514,7 +514,8 @@ def method_index(bench: dict) -> str:
     <div class="card"><h3>How good is the evidence</h3><p style="font-size:14.5px;max-width:74ch">{evidence_summary(bench)}</p></div>
     <div class="card"><h3>Who made this, and what they hold</h3><p style="font-size:14.5px;max-width:74ch">Curated by Yohei Nakajima: managing partner at Untapped Capital, a pre-seed and seed venture fund; operator of Epistemedia, the claim-adjudication layer this repository drafts dockets into; author of ActiveGraph, the runtime the build runs on. The site is a collaboration between the curator and models from several developers: the first draft of the curation and the rules pass were written by Claude (Anthropic); Codex (OpenAI) and Grok (xAI) ran independent verification passes recorded in <a href="{REPO}paper/audits/">paper/audits/</a>; Gemini (Google) and Muse reviewed and criticized the site and the paper. Their review is recorded in paper/audits/ as part of the independence record, not as assurance of correctness. Anthropic, OpenAI, xAI, and Google are labs in this ledger, evaluated by organizations scored here. On the concern that Anthropic's model produced a ranking with METR, the evaluator Anthropic named in its September 2026 commitment, at the top: every value is derived from public bounds under rules applied to every organization the same way, the ranking is re-derivable by anyone with any tool or none, and the against-interest and primary-only views are one click away; if a model's involvement had tilted a value, it would show as a bound or a rule, both open to correction. Holdings: small public-market shares in Google and Meta, and a private holding in SpaceX, which owns xAI; assessments of evaluators with confirmed ledger ties to those labs say so in their rationale. Shared funders between Untapped Capital and the evaluators' funders: no overlap found in public records (checked 2026-09-15); the full limited-partner roster is private, so overlap through undisclosed LPs remains unchecked. One coder; a second coder on every extreme is a gate for a citable tag. The full statement is in <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>
     <div class="card"><h3>What we already know is weak</h3><p style="font-size:14.5px;max-width:74ch">The first full build had nine known problems, from a ladder that implies a sequence regimes do not follow to triggers selected with hindsight. They are written up in <a href="{REPO}paper/CRITIQUE.md">the critique</a>, kept so reviewers can see what the authors already know is weak and what the current version does about each one.</p></div>
-    <div class="card"><h3>Scores move when evidence moves</h3><p style="font-size:14.5px;max-width:74ch">Send a contract term, a policy, or a correction and the entry updates with the source attached. Every ranked organization and every named person receives their card and a fourteen-day reply window before a tag is cut; the <a href="../status/index.html">status page</a> tracks who has been contacted. After first publication, a score that moves by more than one anchor triggers a fresh record packet before the next tag.</p><a class="cta" href="../contribute/index.html">How to submit evidence</a></div>"""
+    <div class="card"><h3>Scores move when evidence moves</h3><p style="font-size:14.5px;max-width:74ch">Send a contract term, a policy, or a correction and the entry updates with the source attached. Every ranked organization and every named person receives their card and a fourteen-day reply window before a tag is cut; the <a href="../status/index.html">status page</a> tracks who has been contacted. After first publication, a score that moves by more than one anchor triggers a fresh record packet before the next tag.</p><a class="cta" href="../contribute/index.html">How to submit evidence</a></div>
+    <div class="card"><h3>Agents</h3><p style="font-size:13.5px;max-width:74ch">Machine-readable: <a href="../llms.txt">llms.txt</a>, <a href="../bench.json">bench.json</a>, and per-evaluator JSON under <a href="../evaluators/index.json">evaluators/</a> (slugs match the entity pages).</p></div>"""
     return layout("Method", body, 1, "method")
 
 
@@ -662,6 +663,88 @@ def paper_index() -> str:
     return layout("Paper", f'<div class="pagehead"><div class="kicker">Working draft, regenerated from the repository</div></div>{note}{cite}<div class="card paper">{html}</div>', 1, "paper")
 
 
+# ---------------------------------------------------------------- agent access
+
+SITE_BASE = "https://yoheinakajima.github.io/evaluator-bench"
+
+
+def llms_txt(bench: dict) -> str:
+    """Compact orientation file for AI agents fetching this site."""
+    evs = bench["evaluators"]
+    ranked = [e for e in evs if e.get("status", "ranked") == "ranked"]
+    return "\n".join([
+        "# Evaluator Bench",
+        "A curator's ledger of third-party AI-evaluator independence conflicts (funding, governance,",
+        "personnel, role incompatibility, scope, publication, access, methods). Each evaluator gets 0-4",
+        "per dimension, derived as the tightest admissible cap (or highest admissible floor) from",
+        "bounded public signals under written rules — re-derivable by anyone from the quoted spans.",
+        "An entry is not an endorsement; a low score is not an accusation; a clear band means no",
+        "disqualifying conflict is on file, not a pass. Curator: Yohei Nakajima (Untapped Capital).",
+        "",
+        "## Machine data",
+        f"- bench.json — everything: {len(evs)} evaluators, {sum(len(e.get('signals', [])) for e in evs)} signals,",
+        f"  {len(bench['sources'])} sources, rules, evidence policies, weight presets (0-4 ordinal, not ratios).",
+        "- evaluators/index.json — slug, name, type, status, band, and JSON URL for every evaluator.",
+        "- evaluators/<slug>.json — one evaluator's full record: assessments with per-policy derivations,",
+        "  binding signals with verbatim quoted spans (<120 chars), and the sources those signals cite.",
+        "- exposure.json, timeline.json — ledger exposure and the regime timeline.",
+        f"Slugs match the entity pages: evaluators/<slug>.json <-> entity/<slug>.html.",
+        "",
+        "## How to read it",
+        "Method: /method/. A 0 on a conflict dimension needs a quoted span; an extreme (0 or 4) is",
+        "second-coded. Values are derived, never typed; the verifier rejects stored values that",
+        "disagree with their derivation. Scores move when evidence moves: open a PR with a source.",
+        "",
+        "## Disclosure",
+        "Holdings: Google and Meta shares; SpaceX (owner of xAI). Shared-funder overlap with evaluator",
+        "funders: no overlap found in public records (checked 2026-09-15); the full LP roster is private,",
+        "so overlap through undisclosed LPs remains unchecked. Full: DISCLOSURE.md.",
+        "",
+        f"Built {bench['built_at']} ({bench['rules']}); {len(ranked)} of {len(evs)} evaluators ranked.",
+        "",
+    ])
+
+
+def write_agent_access(bench: dict) -> int:
+    """Emit llms.txt, per-evaluator JSON records, and evaluators/index.json."""
+    slugs = {}
+    evdir = DIST / "evaluators"
+    evdir.mkdir(exist_ok=True)
+    index = []
+    for e in bench["evaluators"]:
+        slug = LEDGER_ALIAS.get(e["id"], e["id"])
+        sids = set()
+        for s in e.get("signals", []):
+            sids.update(s.get("sources", []) or [])
+            if s.get("quote_source"):
+                sids.add(s["quote_source"])
+        doc = {
+            "meta": {
+                "version": bench["version"], "rules": bench["rules"],
+                "default_policy": bench["default_policy"], "built_at": bench["built_at"],
+                "page_url": f"{SITE_BASE}/entity/{slug}.html",
+            },
+            "evaluator": e,
+            "sources": {sid: bench["sources"][sid] for sid in sorted(sids) if sid in bench["sources"]},
+        }
+        (evdir / f"{slug}.json").write_text(json.dumps(doc, indent=1, ensure_ascii=False) + "\n")
+        slugs[slug] = e["id"]
+        index.append({
+            "slug": slug, "name": e["name"], "type": e["type"],
+            "status": e.get("status", "ranked"), "band": e.get("band"),
+            "json_url": f"evaluators/{slug}.json", "page_url": f"entity/{slug}.html",
+        })
+    (evdir / "index.json").write_text(json.dumps({
+        "built_at": bench["built_at"], "count": len(index), "evaluators": index,
+    }, indent=1, ensure_ascii=False) + "\n")
+    (DIST / "llms.txt").write_text(llms_txt(bench))
+    # Sweep stale per-evaluator JSONs so a removed evaluator leaves no orphan.
+    for p in evdir.glob("*.json"):
+        if p.name != "index.json" and p.stem not in slugs:
+            p.unlink()
+    return len(slugs)
+
+
 # ---------------------------------------------------------------- driver
 def render_all(bench: dict, timeline_rows: list | None = None) -> dict:
     C = _ctx(bench)
@@ -689,6 +772,7 @@ def render_all(bench: dict, timeline_rows: list | None = None) -> dict:
     write(DIST / "status" / "index.html", status_index(bench, C))
     write(DIST / "contribute" / "index.html", contribute_index())
     write(DIST / "paper" / "index.html", paper_index())
+    agent_n = write_agent_access(bench)
     # Sweep stale pages: an entity or source removed from data/ must not linger
     # in dist/ as a reachable-but-orphaned page.
     expected = {"index.html"}

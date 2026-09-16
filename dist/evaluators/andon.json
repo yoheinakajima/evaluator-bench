@@ -1,0 +1,1476 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/andon.html"
+ },
+ "evaluator": {
+  "id": "andon",
+  "name": "Andon Labs",
+  "type": "vc",
+  "hq": "Stockholm, SE / San Francisco, US",
+  "domains": [
+   "autonomy",
+   "benchmarks"
+  ],
+  "confidence": "low",
+  "summary": "Long-horizon agent evaluations (Vending-Bench) and autonomous deployments; Anthropic Project Vend partner.",
+  "what_would_move_the_score": "Funding disclosure and a COI policy would move this from low to medium confidence quickly.",
+  "role": "vendor",
+  "dissent": {
+   "lower": "Role incompatibility (X) at 1 could be 0. Andon sells Pion, a platform for running businesses autonomously, and deploys agents inside Anthropic and xAI offices while grading those labs' models on Vending-Bench; its own site says \"Safety from humans in the loop is a mirage\" and pitches the deployments as the safety layer. If a lab buys that layer, it is a monitoring product sold to an evaluated lab, which is anchor 0.",
+   "higher": "Role incompatibility (X) at 1 could be 2. No payment from any lab is documented: Anthropic describes Project Vend as a research partnership, the ledger records no fee, and Pion has no named customer. Absent a priced engagement, the record supports research collaboration with labs rather than services sold to them, which is closer to the anchor-2 consulting picture than to a vendor relationship."
+  },
+  "list_group": "commercial",
+  "graph_id": "evaluator#260",
+  "values": {
+   "F": 2,
+   "G": 1,
+   "P": 2,
+   "A": 1,
+   "S": 3,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 2,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 2,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 2,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 2
+   },
+   "spans": {
+    "F": 2,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "andon",
+    "dimension": "F",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "andon.03"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#657",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "andon.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "andon.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "andon.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "andon.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by andon.03 (F.10): Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed..",
+    "rationale_leads": "Capped at 2 by andon.03 (F.10): Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed.."
+   },
+   "G": {
+    "evaluator": "andon",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "andon.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#658",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "andon.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "andon.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "andon.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "andon.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by andon.04 (G.1): No published COI policy found..",
+    "rationale_leads": "Capped at 1 by andon.04 (G.1): No published COI policy found.."
+   },
+   "P": {
+    "evaluator": "andon",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "andon.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#659",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "andon.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "andon.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "andon.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "andon.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by andon.07 (P.6): Undisclosed..",
+    "rationale_leads": "Capped at 2 by andon.07 (P.6): Undisclosed.."
+   },
+   "A": {
+    "evaluator": "andon",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "andon.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#660",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "andon.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "andon.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "andon.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "andon.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by andon.05 (A.1): Access through partnerships (Anthropic Project Vend); not routine pre-release..",
+    "rationale_leads": "Capped at 1 by andon.05 (A.1): Access through partnerships (Anthropic Project Vend); not routine pre-release.."
+   },
+   "S": {
+    "evaluator": "andon",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "andon.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#661",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "andon.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "andon.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.06"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "andon.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by andon.06 (S.5): Designs its own long-horizon tasks.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by andon.06 (S.5): Designs its own long-horizon tasks.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "andon",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "andon.01"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#662",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "andon.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "andon.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.01"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "andon.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.01"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by andon.01 (R.7): Publishes candid results, including misalignment findings on the best-scoring models.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by andon.01 (R.7): Publishes candid results, including misalignment findings on the best-scoring models.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "andon",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "andon.02",
+     "andon.11"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#663",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "andon.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "andon.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.11"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "andon.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.02",
+       "andon.11"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by andon.11 (M.2): Vending-Bench is described in a public paper (arXiv 2502.15840); the simulated environment is run by Andon as a service and its code is not published.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by andon.11 (M.2): Vending-Bench is described in a public paper (arXiv 2502.15840); the simulated environment is run by Andon as a service and its code is not published.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "andon",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "andon.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#664",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "andon.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "andon.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "andon.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "andon.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "andon.08"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by andon.08 (X.1): Sells a commercial agent platform..",
+    "rationale_leads": "Capped at 2 by andon.08 (X.1): Sells a commercial agent platform.."
+   }
+  },
+  "signals": [
+   {
+    "id": "andon.01",
+    "evaluator": "andon",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes candid results, including misalignment findings on the best-scoring models.",
+    "sources": [
+     "andon-site",
+     "andon-publications"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "Opus 5 on Vending-Bench: Once Again the Best Capitalist, Once Again Misaligned",
+    "quote_source": "andon-publications",
+    "graph_id": "signal#287",
+    "source_graph_ids": [
+     "source#25",
+     "source#24"
+    ]
+   },
+   {
+    "id": "andon.02",
+    "evaluator": "andon",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Benchmarks (Vending-Bench) cited in model cards across labs.",
+    "sources": [
+     "tooldir-andon"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": null,
+    "rule": "section 9",
+    "bound_note": "Section 9 (mis-dimensioned fact): being cited in model cards is a track-record fact, not method transparency; informational on M. The methods fact is re-recorded as new signal andon.11 (M.2, floor 2).",
+    "quote": "Vending-Bench results are cited in frontier-lab model cards and press",
+    "quote_source": "tooldir-andon",
+    "graph_id": "signal#288",
+    "source_graph_ids": [
+     "source#237"
+    ]
+   },
+   {
+    "id": "andon.03",
+    "evaluator": "andon",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Commercial platform (Pion) and lab partnerships; funding and client mix not disclosed.",
+    "sources": [
+     "andon-site",
+     "tooldir-andon"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.10",
+    "quote": "Introducing Pion: Run and grow real businesses autonomously",
+    "quote_source": "andon-site",
+    "graph_id": "signal#289",
+    "source_graph_ids": [
+     "source#25",
+     "source#237"
+    ]
+   },
+   {
+    "id": "andon.04",
+    "evaluator": "andon",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "No published COI policy found.",
+    "sources": [
+     "andon-site",
+     "andon-yc"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "G.1",
+    "quote": "Winter 2024 Active Machine Learning AI San Francisco",
+    "quote_source": "andon-yc",
+    "graph_id": "signal#290",
+    "source_graph_ids": [
+     "source#25",
+     "source#27"
+    ]
+   },
+   {
+    "id": "andon.05",
+    "evaluator": "andon",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Access through partnerships (Anthropic Project Vend); not routine pre-release.",
+    "sources": [
+     "tooldir-andon",
+     "andon-project-vend"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "A.1",
+    "quote": "Anthropic partnered with Andon Labs , an AI safety evaluation company",
+    "quote_source": "andon-project-vend",
+    "graph_id": "signal#291",
+    "source_graph_ids": [
+     "source#237",
+     "source#23"
+    ]
+   },
+   {
+    "id": "andon.06",
+    "evaluator": "andon",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Designs its own long-horizon tasks.",
+    "sources": [
+     "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "The data comes from our deployment of real-world autonomous organizations",
+    "quote_source": "andon-site",
+    "graph_id": "signal#292",
+    "source_graph_ids": [
+     "source#25"
+    ]
+   },
+   {
+    "id": "andon.07",
+    "evaluator": "andon",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Undisclosed.",
+    "sources": [
+     "andon-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.6",
+    "quote": "Our mission is to enable the development of safe AI by deploying and studying it in the real world.",
+    "quote_source": "andon-site",
+    "graph_id": "signal#293",
+    "source_graph_ids": [
+     "source#25"
+    ]
+   },
+   {
+    "id": "andon.08",
+    "evaluator": "andon",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells a commercial agent platform.",
+    "sources": [
+     "andon-site",
+     "andon-pion"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1",
+    "quote": "Agents that run any company fully autonomously",
+    "quote_source": "andon-pion",
+    "graph_id": "signal#294",
+    "source_graph_ids": [
+     "source#25",
+     "source#21"
+    ]
+   },
+   {
+    "id": "andon.09",
+    "evaluator": "andon",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Funding is unclear: one database reports about $500K from seven investors after YC W24, another lists no rounds; no announcement found.",
+    "sources": [
+     "andon-pitchbook",
+     "andon-yc"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.10",
+    "quote": "Andon Labs has raised $500K.",
+    "quote_source": "andon-pitchbook",
+    "graph_id": "signal#295",
+    "source_graph_ids": [
+     "source#22",
+     "source#27"
+    ]
+   },
+   {
+    "id": "andon.10",
+    "evaluator": "andon",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Operates AI-run vending and retail deployments inside Anthropic and xAI offices as commercial partnerships while benchmarking those labs' models.",
+    "sources": [
+     "tooldir-andon",
+     "andon-site",
+     "andon-project-vend",
+     "andon-fortune"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "X.2",
+    "quote": "offering custom evaluations and deployments to AI labs and agent builders",
+    "quote_source": "tooldir-andon",
+    "graph_id": "signal#296",
+    "source_graph_ids": [
+     "source#237",
+     "source#25",
+     "source#23",
+     "source#20"
+    ]
+   },
+   {
+    "id": "andon.11",
+    "evaluator": "andon",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Vending-Bench is described in a public paper (arXiv 2502.15840); the simulated environment is run by Andon as a service and its code is not published.",
+    "sources": [
+     "andon-vending-paper",
+     "andon-site"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "In this paper, we present Vending-Bench, a simulated environment",
+    "quote_source": "andon-vending-paper",
+    "note": "Methods described in prose: 2 (M.2). A public repository of the environment or tasks would floor at 3 (M.1). Re-records the methods half of andon.02, which sits on M with a track-record fact.",
+    "graph_id": "signal#297",
+    "source_graph_ids": [
+     "source#26",
+     "source#25"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 47,
+   "regulator": 48,
+   "public": 48,
+   "equal": 47
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    },
+    "regulator": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "public": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "equal": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    },
+    "regulator": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "public": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "equal": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 39,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      24,
+      63
+     ]
+    },
+    "regulator": {
+     "score": 36,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      20,
+      65
+     ]
+    },
+    "public": {
+     "score": 42,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      28,
+      63
+     ]
+    },
+    "equal": {
+     "score": 40,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      25,
+      63
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    },
+    "regulator": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "public": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      48,
+      48
+     ]
+    },
+    "equal": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      47,
+      47
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "conditional",
+  "coverage": 8,
+  "floor": "G",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 52,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 49,
+     "band": "clear",
+     "base": 47
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 52,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 51,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 49,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 48,
+     "band": "conditional",
+     "base": 47
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 50,
+     "band": "clear",
+     "base": 48
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 53,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 53,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 48,
+     "band": "conditional",
+     "base": 48
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 51,
+     "band": "clear",
+     "base": 48
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 49,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 50,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 49,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 49,
+     "band": "conditional",
+     "base": 48
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 50,
+     "band": "clear",
+     "base": 47
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 47
+    }
+   ]
+  }
+ },
+ "sources": {
+  "andon-fortune": {
+   "id": "andon-fortune",
+   "title": "Anthropic's office launched an AI-run vending machine. It evolved into AI-run stores and cafes within a year",
+   "publisher": "Fortune",
+   "url": "https://fortune.com/2026/06/02/anthropic-office-vending-machine-ai-agents-vendo-andon-lukas-petersson/",
+   "published": "2026-06-02",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Named outlet; co-founder Lukas Petersson quoted on the Anthropic deployment (Vendo). Does not mention xAI. Fetched 2026-09-15; span present in the article metadata.",
+   "press_kind": "primary"
+  },
+  "andon-pion": {
+   "id": "andon-pion",
+   "title": "Pion | Andon Labs",
+   "publisher": "Andon Labs",
+   "url": "https://andonlabs.com/pion",
+   "published": "2026-09",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Pion research preview: \"Agents that run any company fully autonomously\"; waitlist. Fetched 2026-09-15; span present.",
+   "self_of": "andon"
+  },
+  "andon-pitchbook": {
+   "audit_status": "confirmed",
+   "id": "andon-pitchbook",
+   "note": "About $500K raised; seven investors listed; conflicts with another database that lists no funding. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "PitchBook",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Andon Labs profile",
+   "url": "https://pitchbook.com/profiles/company/541549-09",
+   "press_kind": "aggregator"
+  },
+  "andon-project-vend": {
+   "id": "andon-project-vend",
+   "title": "Project Vend: Can Claude run a small shop? (And why does that matter?)",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/research/project-vend-1",
+   "published": "2025-06-27",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Anthropic's research post: \"Anthropic partnered with Andon Labs, an AI safety evaluation company, to have Claude Sonnet 3.7 operate a small, automated store in the Anthropic office\". The evaluated lab's document; typed press primary for want of a lab-document type. Fetched 2026-09-15; span present (normalizer inserts a space before the comma after \"Andon Labs\").",
+   "press_kind": "primary"
+  },
+  "andon-publications": {
+   "id": "andon-publications",
+   "title": "Publications",
+   "publisher": "Andon Labs",
+   "url": "https://andonlabs.com/publications",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "List of blog posts and papers including \"Opus 5 on Vending-Bench: Once Again the Best Capitalist, Once Again Misaligned\" (2026-07-28) and \"Fable 5 on Vending-Bench: Misbehaving, with Plausible Deniability\" (2026-06-09). Fetched 2026-09-15; span present.",
+   "self_of": "andon"
+  },
+  "andon-site": {
+   "audit_status": "confirmed",
+   "id": "andon-site",
+   "note": "Vending-Bench, Pion platform, autonomous deployments; Opus 5 results. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-07",
+   "publisher": "Andon Labs",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Andon Labs",
+   "url": "https://andonlabs.com/",
+   "self_of": "andon"
+  },
+  "andon-vending-paper": {
+   "id": "andon-vending-paper",
+   "title": "Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents (arXiv 2502.15840)",
+   "publisher": "Andon Labs (arXiv)",
+   "url": "https://arxiv.org/abs/2502.15840",
+   "published": "2025-02-20",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Andon's own paper describing the simulated vending environment. Abstract page; no code link. Fetched 2026-09-15; span present.",
+   "self_of": "andon"
+  },
+  "andon-yc": {
+   "id": "andon-yc",
+   "title": "Andon Labs: Autonomous organizations without humans in the loop",
+   "publisher": "Y Combinator (company directory)",
+   "url": "https://www.ycombinator.com/companies/andon-labs",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "YC directory entry: Winter 2024 batch, Active, San Francisco. Company-authored listing on the investor's site; typed self. Fetched 2026-09-15; span present.",
+   "self_of": "yc"
+  },
+  "tooldir-andon": {
+   "audit_status": "confirmed",
+   "id": "tooldir-andon",
+   "note": "Anthropic Project Vend partnership; results cited in model cards. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026-07-08",
+   "publisher": "tooldirectory.ai",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Andon Labs, agent safety evaluations",
+   "url": "https://tooldirectory.ai/tools/andon-labs",
+   "press_kind": "aggregator"
+  }
+ }
+}
