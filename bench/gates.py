@@ -47,7 +47,12 @@ def gates(d: dict | None = None) -> list[dict]:
     people = [i for i, e in L["entities"].items() if e["kind"] == "person"]
     need = [e["id"] for e in ranked] + people
     unsent = [i for i in need if not log.get(LEDGER_ALIAS.get(i, i), log.get(i, {})).get("contacted")]
-    out.append(dict(gate="Every ranked organization and named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} organizations, {len(people)} people)"))
+    need_ids = {LEDGER_ALIAS.get(i, i) for i in need} | set(need)
+    extra = sorted(set(log) - need_ids)
+    extra_txt = ("; the log lists " + str(len(log)) + " recipients, including "
+                 + str(len(extra)) + " non-ranked organization(s) outside the gate: "
+                 + ", ".join(extra)) if extra else ""
+    out.append(dict(gate="Every ranked organization and named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} named people){extra_txt}"))
     # 4. the default policy is standard and the primary-only view is live
     out.append(dict(gate="Default policy is Standard and the Primary-only view is live", ok=DEFAULT_POLICY == "standard" and "primary" in POLICY_ORDER, detail=f"default {DEFAULT_POLICY}; policies {', '.join(POLICY_ORDER)}"))
     # 5. RULES.md is published and every conflict cites a rule
@@ -68,7 +73,7 @@ def main(argv=None) -> int:
     gs = gates()
     if "--json" in argv:
         print(json.dumps(gs, indent=1)); return 0 if all(g["ok"] for g in gs) else 1
-    for g in gs: print(f"[{'pass' if g['ok'] else 'FAIL'}] {g['gate']}: {g['detail']}")
+    for g in gs: print(f"[{'PASS' if g['ok'] else 'FAIL'}] {g['gate']}: {g['detail']}")
     ok = all(g["ok"] for g in gs)
     print("gates:", "all pass; a citable tag may be cut" if ok else "not citable yet")
     return 0 if ok else 1
