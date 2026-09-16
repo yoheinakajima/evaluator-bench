@@ -29,12 +29,20 @@ def gates(d: dict | None = None) -> list[dict]:
     out = []
     # 1. every binding signal under the default policy carries a quoted span
     missing = []
+    missing_extreme = []
     for a in d["assessments"]:
         if a["evaluator"] not in rids: continue
         r = derive(a, d["signals"], d["sources"], DEFAULT_POLICY)
         for sid in r["binding"]:
-            if not d["signals"][sid].get("quote"): missing.append(sid)
-    out.append(dict(gate="Every binding signal has a quoted span", ok=not missing, detail=f"{len(missing)} binding signal(s) without a span" + (": " + ", ".join(missing[:12]) + ("..." if len(missing) > 12 else "") if missing else "")))
+            if not d["signals"][sid].get("quote"):
+                missing.append(sid)
+                if r["value"] in (0, 4): missing_extreme.append(sid)
+    detail = f"{len(missing)} binding signal(s) without a span" + (": " + ", ".join(missing[:12]) + ("..." if len(missing) > 12 else "") if missing else "")
+    if missing and not missing_extreme:
+        detail += "; all bind to non-extreme values (1-3), so no displayed score violates the clamp rule"
+    elif missing_extreme:
+        detail += "; WARNING: bind(s) to an extreme value: " + ", ".join(sorted(set(missing_extreme)))
+    out.append(dict(gate="Every binding signal has a quoted span", ok=not missing, detail=detail))
     # 2. every extreme (stored 0 or 4) has a second coder
     coded = {(r["evaluator"], r["dimension"]) for r in _csv(SECOND) if r.get("coder")}
     ext = [(a["evaluator"], a["dimension"]) for a in d["assessments"] if a["evaluator"] in rids and a["value"] in (0, 4) and not a.get("unevidenced")]
