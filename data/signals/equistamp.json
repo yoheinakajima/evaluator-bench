@@ -57,7 +57,9 @@
   "bound": {
    "cap": 1
   },
-  "rule": "G.2"
+  "rule": "G.2",
+  "quote": "We provide the full operational stack for AI safety research — from eval implementation to administrative overhead.",
+  "quote_source": "equistamp-site"
  },
  {
   "id": "equistamp.04",
@@ -131,7 +133,8 @@
   "bound": {
    "cap": 2
   },
-  "rule": "R.4"
+  "rule": "R.4",
+  "note": "[span 2026-09-16] Span pending: deliverables-to-AI-Office half supported by consortium announcement (nemesys-far-blog); TED notice would not load via text fetch; retry with a browser fetch."
  },
  {
   "id": "equistamp.08",

@@ -123,7 +123,8 @@
   "bound": {
    "cap": 2
   },
-  "rule": "S.2"
+  "rule": "S.2",
+  "note": "[span 2026-09-16] Span pending: Learn landing page is a link index with no body text; likely home is the \"red teaming 100 products\" paper; needs a browser fetch."
  },
  {
   "id": "msft.08",

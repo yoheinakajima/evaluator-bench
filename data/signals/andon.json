@@ -124,7 +124,9 @@
   "bound": {
    "cap": 2
   },
-  "rule": "P.6"
+  "rule": "P.6",
+  "quote": "Our mission is to enable the development of safe AI by deploying and studying it in the real world.",
+  "quote_source": "andon-site"
  },
  {
   "id": "andon.08",

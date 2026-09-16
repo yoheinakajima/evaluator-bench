@@ -39,15 +39,15 @@
  {
   "evaluator": "cais",
   "dimension": "A",
-  "value": 1,
-  "anchor": 1,
+  "value": 0,
+  "anchor": 0,
   "signals": [
    "cais.06"
   ],
   "assessed": "2026-09-15",
   "assessor": "rules v0.1 (RULES.md)",
   "mechanism": "lab-controlled",
-  "evidence_limited": true
+  "evidence_limited": false
  },
  {
   "evaluator": "cais",
