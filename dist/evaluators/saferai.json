@@ -1,0 +1,1529 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/saferai.html"
+ },
+ "evaluator": {
+  "id": "saferai",
+  "name": "SaferAI",
+  "type": "nonprofit",
+  "hq": "Paris, FR",
+  "domains": [
+   "assurance",
+   "cyber",
+   "bio",
+   "misuse"
+  ],
+  "confidence": "med",
+  "summary": "Rates lab risk-management frameworks in public; runs EU Code of Practice evaluations.",
+  "what_would_move_the_score": "Documented pre-release access under Code terms.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Access could be 0. No source records any pre-release model access for SaferAI: the goal-directedness evaluation it co-authored with Google DeepMind researchers tested models from Google DeepMind, OpenAI and Anthropic through ordinary means, and its own site describes framework ratings, risk models and advisory work rather than model testing. Anchor 0 is public API only, and that is the whole documented record.",
+   "higher": "Access could be 2. SaferAI leads the risk-modelling workstream of the EU AI Office's CBRN lot under a three-year contract, participated in all four Code of Practice working groups, and co-authors with a frontier developer's researchers; the Code contemplates external evaluator access to models before release. Documented pre-release access under Code terms, which the card names as what would move the score, would reach anchor 1 or 2."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#282",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 1,
+   "S": 3,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": null,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": null,
+    "X": 2
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": null,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "saferai",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "saferai.03",
+     "saferai.12"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#833",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "saferai.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "saferai.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "saferai.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "saferai.03"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "saferai.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "saferai.03"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.03",
+       "saferai.12"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by saferai.12 (F.6): SFF recommended $311,000 to SaferAI in 2025 (with a $111,000 match) after earlier rounds; SFF's funder is Jaan Tallinn, the Anthropic Series A lead.. Floors up to 2 from saferai.03 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by saferai.12 (F.6): SFF recommended $311,000 to SaferAI in 2025 (with a $111,000 match) after earlier rounds; SFF's funder is Jaan Tallinn, the Anthropic Series A lead.. Floors up to 2 from saferai.03 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "saferai",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "saferai.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#834",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "saferai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "saferai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.05"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "saferai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by saferai.05 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by saferai.05 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "saferai",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "saferai.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#835",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "saferai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "saferai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.06"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "saferai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by saferai.06 (P.6): No lab roles found.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by saferai.06 (P.6): No lab roles found.. No admissible signal caps it."
+   },
+   "A": {
+    "evaluator": "saferai",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "saferai.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "unknown",
+    "graph_id": "assessment#836",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "saferai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "saferai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "saferai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.04"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by saferai.04 (A.1): Limited pre-deployment model access to date..",
+    "rationale_leads": "Capped at 1 by saferai.04 (A.1): Limited pre-deployment model access to date.."
+   },
+   "S": {
+    "evaluator": "saferai",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "saferai.02",
+     "saferai.13"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#837",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "saferai.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "saferai.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "saferai.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "saferai.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.02",
+       "saferai.13"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by saferai.13 (S.6): SaferAI's executive director and founder co-authored \"Evaluating the Goal-Directedness of Large Language Models\" (April 2025) with Google DeepMind researchers, an evaluation of models from Google DeepMind, OpenAI and Anthropic, while SaferAI publicly rates Google DeepMind's risk-management framework.. Floors up to 3 from saferai.02 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by saferai.13 (S.6): SaferAI's executive director and founder co-authored \"Evaluating the Goal-Directedness of Large Language Models\" (April 2025) with Google DeepMind researchers, an evaluation of models from Google DeepMind, OpenAI and Anthropic, while SaferAI publicly rates Google DeepMind's risk-management framework.. Floors up to 3 from saferai.02 do not exceed the cap."
+   },
+   "R": {
+    "evaluator": "saferai",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "saferai.01"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#838",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "saferai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "saferai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "saferai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "saferai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.01"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by saferai.01 (R.7): Publishes critical ratings of lab frameworks with scores attached.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by saferai.01 (R.7): Publishes critical ratings of lab frameworks with scores attached.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "saferai",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "saferai.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#839",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "saferai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "saferai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.07"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "saferai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by saferai.07 (M.2): Rating methodology published.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by saferai.07 (M.2): Rating methodology published.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "saferai",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "saferai.08",
+     "saferai.09",
+     "saferai.11"
+    ],
+    "rationale": "Anchor 2: paid advisory work for at least one major AI company while rating companies' frameworks in public. If the unnamed client is not a frontier developer, restore to 4.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Identity of the major AI company client.",
+     "A published lab-money policy."
+    ],
+    "resolution": {
+     "rule": "X.3",
+     "value": 2,
+     "note": "SaferAI's own page records framework work for G42 and for a major AI company; consulting for a lab caps at 2 even with no products."
+    },
+    "graph_id": "assessment#840",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "saferai.09",
+       "saferai.11"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "saferai.11"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": [
+       "saferai.09"
+      ]
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "saferai.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "saferai.08",
+       "saferai.09"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "saferai.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "saferai.08",
+       "saferai.09"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "saferai.08",
+       "saferai.09",
+       "saferai.11"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from saferai.08 (X.4) against cap 2 from saferai.11 (X.3); resolved at 2 by X.3: SaferAI's own page records framework work for G42 and for a major AI company; consulting for a lab caps at 2 even with no products. Not counted under this policy: saferai.09 (no confirmed source (imported)).",
+    "rationale_leads": "Conflict: floor 3 from saferai.08 (X.4) against cap 2 from saferai.09, saferai.11 (X.3, X.3); resolved at 2 by X.3: SaferAI's own page records framework work for G42 and for a major AI company; consulting for a lab caps at 2 even with no products."
+   }
+  },
+  "signals": [
+   {
+    "claim": "Publishes critical ratings of lab frameworks with scores attached.",
+    "curator": "yohei/claude v0",
+    "dimension": "R",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.01",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai",
+     "time-saferai-ratings"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "We independently evaluate and rate how well leading AI companies manage risks",
+    "quote_source": "saferai",
+    "graph_id": "signal#582",
+    "source_graph_ids": [
+     "source#206",
+     "source#234"
+    ]
+   },
+   {
+    "claim": "Part of the EU AI Office evaluation consortium; sets its own rating methodology.",
+    "curator": "yohei/claude v0",
+    "dimension": "S",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.02",
+    "recorded": "2026-09-14",
+    "sources": [
+     "longtermwiki-far",
+     "saferai"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "We actively shaped the EU's Code of Practice for general-purpose AI models",
+    "quote_source": "saferai",
+    "graph_id": "signal#583",
+    "source_graph_ids": [
+     "source#127",
+     "source#206"
+    ]
+   },
+   {
+    "claim": "No lab revenue found.",
+    "curator": "yohei/claude v0",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.03",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "F.10",
+    "graph_id": "signal#584",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "claim": "Limited pre-deployment model access to date.",
+    "curator": "yohei/claude v0",
+    "dimension": "A",
+    "direction": "against",
+    "evaluator": "saferai",
+    "id": "saferai.04",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "cap": 1
+    },
+    "rule": "A.1",
+    "note": "[span 2026-09-16] Span pending: safer-ai.org homepage and About fetched; no affirmative sentence on pre-deployment access found; span pending.",
+    "graph_id": "signal#585",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "claim": "Nonprofit.",
+    "curator": "yohei/claude v0",
+    "dimension": "G",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.05",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "SaferAI, a registered non-profit (reg no. 919 185 199 00016",
+    "quote_source": "saferai",
+    "graph_id": "signal#586",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "claim": "No lab roles found.",
+    "curator": "yohei/claude v0",
+    "dimension": "P",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.06",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "quote": "We're hiring people who want to shape how AI is developed.",
+    "quote_source": "saferai",
+    "graph_id": "signal#587",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "claim": "Rating methodology published.",
+    "curator": "yohei/claude v0",
+    "dimension": "M",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.07",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "note": "[span 2026-09-16] Span pending: safer-ai.org fetched; company ratings confirmed public but no sentence states the methodology itself is published; span pending.",
+    "quote": "how they identify risks, assess their severity, implement safeguards, and govern their systems",
+    "quote_source": "saferai",
+    "graph_id": "signal#588",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "claim": "No commercial products.",
+    "curator": "yohei/claude v0",
+    "dimension": "X",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.08",
+    "recorded": "2026-09-14",
+    "sources": [
+     "saferai"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.4",
+    "graph_id": "signal#589",
+    "source_graph_ids": [
+     "source#206"
+    ]
+   },
+   {
+    "as_of": "2026-09-11",
+    "claim": "Advisory work for G42 and for an unnamed major AI company, alongside public framework ratings; no lab-money policy on the site.",
+    "curator": "yohei/claude v0.4",
+    "dimension": "X",
+    "direction": "against",
+    "evaluator": "saferai",
+    "id": "saferai.09",
+    "recorded": "2026-09-14",
+    "sources": [
+     "evaluators-ledger"
+    ],
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.3",
+    "quote": "advised G42 and 'a major AI company' on frontier safety frameworks",
+    "quote_source": "evaluators-ledger",
+    "graph_id": "signal#590",
+    "source_graph_ids": [
+     "source#96"
+    ]
+   },
+   {
+    "as_of": "2026-09-11",
+    "claim": "SFF recommendations of about $1.06M over 2022 to 2025; EU AI Office Lot 1 consortium member.",
+    "curator": "yohei/claude v0.4",
+    "dimension": "F",
+    "direction": "for",
+    "evaluator": "saferai",
+    "id": "saferai.10",
+    "recorded": "2026-09-14",
+    "sources": [
+     "evaluators-ledger",
+     "ted-864574",
+     "sff-2025"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+    "quote_source": "sff-2025",
+    "graph_id": "signal#591",
+    "source_graph_ids": [
+     "source#96",
+     "source#231",
+     "source#223"
+    ]
+   },
+   {
+    "as_of": "2026-09-15",
+    "claim": "SaferAI says it contributed to frameworks for G42 and a major AI company and co-drafted G42's Frontier AI Safety policy; G42 names METR and SaferAI as supporting experts.",
+    "curator": "yohei/claude v1.0",
+    "dimension": "X",
+    "direction": "against",
+    "evaluator": "saferai",
+    "id": "saferai.11",
+    "quote": "We've contributed to frameworks for G42 and a major AI company",
+    "recorded": "2026-09-15",
+    "sources": [
+     "saferai-about"
+    ],
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.3",
+    "quote_source": "saferai-about",
+    "graph_id": "signal#592",
+    "source_graph_ids": [
+     "source#205"
+    ]
+   },
+   {
+    "id": "saferai.12",
+    "evaluator": "saferai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "SFF recommended $311,000 to SaferAI in 2025 (with a $111,000 match) after earlier rounds; SFF's funder is Jaan Tallinn, the Anthropic Series A lead.",
+    "sources": [
+     "sff-2025"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "SaferAI Main: $0 Freedom: $307,000 Fairness: $4,000 Mean: $0 $311,000",
+    "quote_source": "sff-2025",
+    "note": "F.6: grants from a funder whose principal is an investor in a frontier developer cap at 3 (ledger R01, R08 confirmed).",
+    "graph_id": "signal#593",
+    "source_graph_ids": [
+     "source#223"
+    ]
+   },
+   {
+    "id": "saferai.13",
+    "evaluator": "saferai",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "SaferAI's executive director and founder co-authored \"Evaluating the Goal-Directedness of Large Language Models\" (April 2025) with Google DeepMind researchers, an evaluation of models from Google DeepMind, OpenAI and Anthropic, while SaferAI publicly rates Google DeepMind's risk-management framework.",
+    "sources": [
+     "arxiv-goal-directedness",
+     "saferai-about"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.6",
+    "quote": "Authors: Tom Everitt , Cristina Garbacea , Alexis Bellot , Jonathan Richens , Henry Papadatos , Siméon Campos",
+    "quote_source": "arxiv-goal-directedness",
+    "note": "S.6: co-authoring research with a lab while evaluating it caps at 3. The same paper establishes a published evaluation of frontier models, so section 9 (no published evaluation of a frontier model) does not apply to SaferAI. Affiliations: the about page lists Henry Papadatos as Executive Director; the ledger lists Siméon Campos as founder and board chair.",
+    "graph_id": "signal#594",
+    "source_graph_ids": [
+     "source#42",
+     "source#205"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 54,
+   "regulator": 54,
+   "public": 57,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "public": {
+     "score": 57,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      57,
+      57
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "public": {
+     "score": 57,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      57,
+      57
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      40,
+      67
+     ]
+    },
+    "regulator": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      39,
+      69
+     ]
+    },
+    "public": {
+     "score": 62,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      40,
+      75
+     ]
+    },
+    "equal": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      34,
+      72
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      49,
+      69
+     ]
+    },
+    "regulator": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      49,
+      69
+     ]
+    },
+    "public": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      56,
+      61
+     ]
+    },
+    "equal": {
+     "score": 57,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      50,
+      63
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 58,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 54
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 54
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 64,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 61,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 61,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "arxiv-goal-directedness": {
+   "id": "arxiv-goal-directedness",
+   "title": "Evaluating the Goal-Directedness of Large Language Models (arXiv:2504.11844)",
+   "publisher": "arXiv",
+   "url": "https://arxiv.org/abs/2504.11844",
+   "published": "2025-04-16",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "aggregator",
+   "audit_status": "confirmed",
+   "note": "Authors Tom Everitt, Cristina Garbacea, Alexis Bellot, Jonathan Richens (Google DeepMind), Henry Papadatos, Siméon Campos (SaferAI), Rohin Shah (Google DeepMind). \"Our evaluations of LLMs from Google DeepMind, OpenAI, and Anthropic show that goal-directedness is relatively consistent across tasks\". Typed press/aggregator to match the existing arxiv-frontier-auditing record; a preprint server is not an editorial outlet."
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "longtermwiki-far": {
+   "id": "longtermwiki-far",
+   "title": "FAR AI",
+   "publisher": "Longterm Wiki",
+   "url": "https://www.longtermwiki.com/wiki/E138",
+   "published": "2026-02-26",
+   "retrieved": "2026-09-14",
+   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Loads. Coefficient components ~$28.675M, $6.65M, $2.16M, $1.7M + $12M regrant; FY2024 rev $24.3M; dev-revenue cap 10%; 2025 commitments >$30M. Tier-2 lead for T03 components, not a filing.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "aggregator"
+  },
+  "saferai": {
+   "audit_status": "confirmed",
+   "id": "saferai",
+   "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches [2026-09-15] homepage fetched; tracker-frame span \"how they identify risks, assess their severity, implement safeguards, and govern their systems\" quoted verbatim for saferai.07 (rating methodology).",
+   "published": "2026",
+   "publisher": "SaferAI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "SaferAI",
+   "url": "https://www.safer-ai.org/",
+   "self_of": "saferai"
+  },
+  "saferai-about": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "saferai-about",
+   "note": "Contributed to frameworks for G42 and a major AI company. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026",
+   "publisher": "SaferAI",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "About",
+   "url": "https://www.safer-ai.org/about",
+   "self_of": "saferai"
+  },
+  "sff-2025": {
+   "id": "sff-2025",
+   "title": "SFF-2025 S-Process Recommendations Announcement",
+   "publisher": "Survival and Flourishing Fund",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "Funder Jaan Tallinn; $34.33M recommended; METR $548,000; Palisade $1,133,000; FAR AI $919,000; SaferAI $311,000; SecureBio $754,000; RAND TASP $1,022,000; CAIS $289,000.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "sff"
+  },
+  "ted-864574": {
+   "audit_status": "confirmed",
+   "id": "ted-864574",
+   "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml",
+   "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-12",
+   "publisher": "Tenders Electronic Daily",
+   "retrieved": "2026-09-14",
+   "source_type": "filing",
+   "title": "TED 864574-2025 Technical Assistance for AI Safety",
+   "url": "https://ted.europa.eu/"
+  },
+  "time-saferai-ratings": {
+   "id": "time-saferai-ratings",
+   "title": "Top AI Companies Have ‘Unacceptable’ Risk Management, Studies Say",
+   "publisher": "TIME",
+   "url": "https://time.com/7302757/anthropic-xai-meta-openai-risk-management-2/",
+   "published": "2025-07-17",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "press_kind": "primary",
+   "audit_status": "confirmed",
+   "note": "\"No AI company scored better than “weak” in SaferAI’s assessment of their risk management maturity. The highest scorer was Anthropic (35%), followed by OpenAI (33%), Meta (22%), and Google DeepMind (20%). Elon Musk’s xAI scored 18%.\" Non-self confirmed source for the adverse-findings leg of R.5 on saferai.01."
+  }
+ }
+}

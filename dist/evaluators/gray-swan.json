@@ -1,0 +1,1584 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/gray-swan.html"
+ },
+ "evaluator": {
+  "id": "grayswan",
+  "name": "Gray Swan",
+  "type": "vc",
+  "hq": "Pittsburgh, US",
+  "domains": [
+   "jailbreak",
+   "cyber",
+   "misuse"
+  ],
+  "confidence": "high",
+  "summary": "Crowdsourced adversarial testing (Arena) plus Shade and Cygnal defense products; cited in 11 recent system cards.",
+  "what_would_move_the_score": "Structural separation of the evaluation business, and independent governance for the OpenAI-related conflict beyond personal recusal.",
+  "role": "vendor",
+  "dissent": {
+   "lower": "Personnel (1 to 0). The co-founder and chief scientist chairs OpenAI's Safety and Security Committee, which oversees the very releases in which Gray Swan is cited. The only evidence of recusal is one 2024 press sentence describing a personal arrangement; no written policy, scope, or administrator is public. P.1 gives 0 where a recusal is not documented, and a single unverifiable press line is thin documentation.",
+   "higher": "Role incompatibility (0 to 1). The record documents that labs use Gray Swan's platform and are named in its system-card citations, but not that any lab buys Cygnal, the runtime defense product; lab use may be limited to Arena and Shade, which are testing services. X.1's 0 requires a defense or monitoring product sold to an evaluated lab; on the documented facts, anchor 1 (services to labs) fits."
+  },
+  "list_group": "commercial",
+  "graph_id": "evaluator#270",
+  "values": {
+   "F": 1,
+   "G": 1,
+   "P": 1,
+   "A": 2,
+   "S": 2,
+   "R": 2,
+   "M": 2,
+   "X": 0
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 1,
+    "G": 1,
+    "P": 1,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 0
+   },
+   "standard": {
+    "F": 1,
+    "G": 1,
+    "P": 1,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 0
+   },
+   "against_interest": {
+    "F": 1,
+    "G": 1,
+    "P": 1,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 0
+   },
+   "spans": {
+    "F": 1,
+    "G": 1,
+    "P": 1,
+    "A": 2,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 0
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "grayswan",
+    "dimension": "F",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "grayswan.03",
+     "grayswan.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#737",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "grayswan.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "grayswan.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "grayswan.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "grayswan.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "grayswan.06"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.03",
+       "grayswan.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by grayswan.03 (F.5): $40M Series A in May 2026 at a $200M valuation; revenue from every major lab.. Floors up to 1 from grayswan.06 do not exceed the cap.",
+    "rationale_leads": "Capped at 1 by grayswan.03 (F.5): $40M Series A in May 2026 at a $200M valuation; revenue from every major lab.. Floors up to 1 from grayswan.06 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "grayswan.05",
+     "grayswan.11",
+     "grayswan.14"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "graph_id": "assessment#738",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "grayswan.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "grayswan.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "grayswan.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "grayswan.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "grayswan.14"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.05",
+       "grayswan.11",
+       "grayswan.14"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by grayswan.05 (G.2): Venture-backed for-profit; no published COI policy found..",
+    "rationale_leads": "Capped at 1 by grayswan.05 (G.2): Venture-backed for-profit; no published COI policy found.."
+   },
+   "P": {
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "grayswan.01",
+     "grayswan.02",
+     "grayswan.12"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Request from Gray Swan a copy or description of the recusal arrangement governing the chief scientist's role between Gray Swan and OpenAI's board and Safety and Security Committee (date adopted, scope, who administers it), as reported by Forbes on 29 October 2024. Per RULES 12 this goes to the person before publication.",
+     "Request from Gray Swan (or from the funds) a statement of whether Wing, Madrona, Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next or Magarac Venture Partners hold equity in a frontier developer. The public record shows Snowflake's Anthropic tie as a $200M commercial partnership (3 Dec 2025), not equity."
+    ],
+    "graph_id": "assessment#739",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "grayswan.01",
+       "grayswan.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "grayswan.01",
+       "grayswan.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "grayswan.01",
+       "grayswan.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "grayswan.01",
+       "grayswan.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.01",
+       "grayswan.02",
+       "grayswan.12"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by grayswan.01 (P.1): Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.; capped at 1 by grayswan.12 (P.1): Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.. Floors up to 1 from grayswan.02 do not exceed the cap.",
+    "rationale_leads": "Capped at 1 by grayswan.01 (P.1): Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.; capped at 1 by grayswan.12 (P.1): Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.. Floors up to 1 from grayswan.02 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "grayswan",
+    "dimension": "A",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "grayswan.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#740",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "grayswan.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "grayswan.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "grayswan.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "grayswan.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by grayswan.07 (A.1): Embedded in pre-release safety evaluation processes; cited in 11 system cards.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by grayswan.07 (A.1): Embedded in pre-release safety evaluation processes; cited in 11 system cards.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "grayswan",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "grayswan.10"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#741",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "grayswan.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "grayswan.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "grayswan.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "grayswan.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by grayswan.10 (S.2): Scope set by lab engagements..",
+    "rationale_leads": "Capped at 2 by grayswan.10 (S.2): Scope set by lab engagements.."
+   },
+   "R": {
+    "evaluator": "grayswan",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "grayswan.09"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#742",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "grayswan.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "grayswan.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "grayswan.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "grayswan.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.09"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by grayswan.09 (R.3): Findings appear as lab-summarized system-card citations rather than independent reports..",
+    "rationale_leads": "Capped at 2 by grayswan.09 (R.3): Findings appear as lab-summarized system-card citations rather than independent reports.."
+   },
+   "M": {
+    "evaluator": "grayswan",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "grayswan.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#743",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "grayswan.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "grayswan.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "grayswan.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "grayswan.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by grayswan.08 (M.2): Founders wrote foundational jailbreak papers; Arena results partly public.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by grayswan.08 (M.2): Founders wrote foundational jailbreak papers; Arena results partly public.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "grayswan",
+    "dimension": "X",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "grayswan.04",
+     "grayswan.15"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#744",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "grayswan.04"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "grayswan.04"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "grayswan.04"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "grayswan.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "grayswan.15"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "grayswan.04",
+       "grayswan.15"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by grayswan.04 (X.1): Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates..",
+    "rationale_leads": "Capped at 0 by grayswan.04 (X.1): Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates.."
+   }
+  },
+  "signals": [
+   {
+    "id": "grayswan.01",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.",
+    "sources": [
+     "openai-kolter-board",
+     "kolter-bio"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "he chairs the Safety and Security Committee",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "P.1",
+    "bound_note": "Cap depends on the recusal fact carried by grayswan.02.",
+    "quote_source": "kolter-bio",
+    "graph_id": "signal#426",
+    "source_graph_ids": [
+     "source#176",
+     "source#123"
+    ]
+   },
+   {
+    "id": "grayswan.02",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "The chief scientist recuses himself from Gray Swan's dealings with OpenAI.",
+    "sources": [
+     "forbes-grayswan-2024",
+     "grayswan-forbesau-2024"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "he has recused himself from interactions between the two companies",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "P.1",
+    "quote_source": "grayswan-forbesau-2024",
+    "graph_id": "signal#427",
+    "source_graph_ids": [
+     "source#99",
+     "source#109"
+    ]
+   },
+   {
+    "id": "grayswan.03",
+    "evaluator": "grayswan",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "$40M Series A in May 2026 at a $200M valuation; revenue from every major lab.",
+    "sources": [
+     "grayswan-seriesa",
+     "forbes-grayswan-2026"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "F.5",
+    "quote": "Gray Swan, The AI Security Company Trusted by Every Major Frontier Lab, Raises $40M Series A",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#428",
+    "source_graph_ids": [
+     "source#111",
+     "source#100"
+    ]
+   },
+   {
+    "id": "grayswan.04",
+    "evaluator": "grayswan",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates.",
+    "sources": [
+     "grayswan-seriesa",
+     "madrona-grayswan"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "Cygnal for real-time AI protection, Shade for continuous adversarial testing",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "X.1",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#429",
+    "source_graph_ids": [
+     "source#111",
+     "source#128"
+    ]
+   },
+   {
+    "id": "grayswan.05",
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Venture-backed for-profit; no published COI policy found.",
+    "sources": [
+     "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "G.2",
+    "quote": "today announced a $40 million Series A round co-led by Wing Venture Capital and Madrona",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#430",
+    "source_graph_ids": [
+     "source#111"
+    ]
+   },
+   {
+    "id": "grayswan.06",
+    "evaluator": "grayswan",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates.",
+    "sources": [
+     "forbes-grayswan-2026"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "F.5 (anchor text)",
+    "graph_id": "signal#431",
+    "source_graph_ids": [
+     "source#100"
+    ]
+   },
+   {
+    "id": "grayswan.07",
+    "evaluator": "grayswan",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Embedded in pre-release safety evaluation processes; cited in 11 system cards.",
+    "sources": [
+     "grayswan-seriesa",
+     "madrona-grayswan"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "A.1",
+    "quote": "Gray Swan’s benchmarks are embedded into the safety evaluation processes",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#432",
+    "source_graph_ids": [
+     "source#111",
+     "source#128"
+    ]
+   },
+   {
+    "id": "grayswan.08",
+    "evaluator": "grayswan",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Founders wrote foundational jailbreak papers; Arena results partly public.",
+    "sources": [
+     "forbes-grayswan-2026",
+     "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "Research Published papers and findings from our research team",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#433",
+    "source_graph_ids": [
+     "source#100",
+     "source#111"
+    ]
+   },
+   {
+    "id": "grayswan.09",
+    "evaluator": "grayswan",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Findings appear as lab-summarized system-card citations rather than independent reports.",
+    "sources": [
+     "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.3",
+    "quote": "Gray Swan is a leading security evaluator cited in 11 recent frontier model system cards",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#434",
+    "source_graph_ids": [
+     "source#111"
+    ]
+   },
+   {
+    "id": "grayswan.10",
+    "evaluator": "grayswan",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Scope set by lab engagements.",
+    "sources": [
+     "grayswan-seriesa"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "S.2",
+    "quote": "AI Red-Teaming Dedicated adversarial assessment, scoped to your deployment",
+    "quote_source": "grayswan-seriesa",
+    "graph_id": "signal#435",
+    "source_graph_ids": [
+     "source#111"
+    ]
+   },
+   {
+    "id": "grayswan.11",
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board.",
+    "sources": [
+     "madrona-grayswan",
+     "dealroom-grayswan"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-05-28",
+    "quote": "serves on the board of OpenAI",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "G.2 (anchor text); G.3 not triggered",
+    "quote_source": "madrona-grayswan",
+    "graph_id": "signal#436",
+    "source_graph_ids": [
+     "source#128",
+     "source#71"
+    ]
+   },
+   {
+    "id": "grayswan.12",
+    "evaluator": "grayswan",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.",
+    "sources": [
+     "wikipedia-kolter"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "became chair of its safety and security committee",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "P.1",
+    "quote_source": "wikipedia-kolter",
+    "graph_id": "signal#437",
+    "source_graph_ids": [
+     "source#257"
+    ]
+   },
+   {
+    "id": "grayswan.14",
+    "evaluator": "grayswan",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Snowflake, a Series A co-investor, announced a commercial agreement with Anthropic rather than an equity stake, so the co-investor is not a lab investor under F.4 or G.3.",
+    "sources": [
+     "grayswan-snowflake-anthropic"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": null,
+    "bound_note": "Informational: closes the F.4/G.3 question for one co-investor; no floor follows from the absence of a tie (RULES 0).",
+    "rule": "G.3",
+    "graph_id": "signal#438",
+    "source_graph_ids": [
+     "source#112"
+    ]
+   },
+   {
+    "id": "grayswan.15",
+    "evaluator": "grayswan",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "A podcast interview reports Shade, Gray Swan's defense product, in use at Anthropic, a lab whose models Gray Swan red-teams.",
+    "sources": [
+     "grayswan-latentspace-2026"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "X.1",
+    "note": "Lead for X.1 (a documented lab customer for the fix); the cap is already set by grayswan.04.",
+    "graph_id": "signal#439",
+    "source_graph_ids": [
+     "source#110"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 39,
+   "regulator": 41,
+   "public": 34,
+   "equal": 34
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 39,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "regulator": {
+     "score": 41,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    },
+    "public": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    },
+    "equal": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 39,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "regulator": {
+     "score": 41,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    },
+    "public": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    },
+    "equal": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 39,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "regulator": {
+     "score": 41,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    },
+    "public": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    },
+    "equal": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 39,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      39,
+      39
+     ]
+    },
+    "regulator": {
+     "score": 41,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      41,
+      41
+     ]
+    },
+    "public": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    },
+    "equal": {
+     "score": 34,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      34,
+      34
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "disqualifying",
+  "coverage": 8,
+  "floor": "X",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 43,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 41,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 41,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 43,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 42,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 41,
+     "band": "disqualifying",
+     "base": 39
+    },
+    {
+     "dimension": "X",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 40,
+     "band": "conditional",
+     "base": 39
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 45,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 44,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 46,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 45,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 44,
+     "band": "disqualifying",
+     "base": 41
+    },
+    {
+     "dimension": "X",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 41,
+     "band": "conditional",
+     "base": 41
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 40,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 35,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 36,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 39,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 35,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "X",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 35,
+     "band": "conditional",
+     "base": 34
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "A",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 38,
+     "band": "disqualifying",
+     "base": 34
+    },
+    {
+     "dimension": "X",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 38,
+     "band": "conditional",
+     "base": 34
+    }
+   ]
+  }
+ },
+ "sources": {
+  "dealroom-grayswan": {
+   "id": "dealroom-grayswan",
+   "title": "Gray Swan raises $40M Series A to secure frontier AI",
+   "publisher": "Dealroom",
+   "url": "https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai",
+   "published": "2026-06",
+   "retrieved": "2026-09-15",
+   "note": "Investors: Wing, Madrona, Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next, Magarac; cited in 11 recent frontier model system cards.",
+   "source_type": "press",
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "aggregator"
+  },
+  "forbes-grayswan-2024": {
+   "id": "forbes-grayswan-2024",
+   "title": "Gray Swan AI Is Working With OpenAI to Red Team Its Models",
+   "publisher": "Forbes",
+   "url": "https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/",
+   "published": "2024-10-29",
+   "retrieved": "2026-09-14",
+   "note": "Kolter recused from Gray Swan-OpenAI interactions; $5.5M seed. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Seed $5.5M; clients OpenAI, Anthropic, UK AISI. Partial/paywall.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "primary",
+   "archive": "https://web.archive.org/web/2025id_/https://www.forbes.com/sites/sarahemerson/2024/10/29/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai/"
+  },
+  "forbes-grayswan-2026": {
+   "id": "forbes-grayswan-2026",
+   "title": "This AI Startup's Army of 15,000 Hackers",
+   "publisher": "Forbes",
+   "url": "https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/",
+   "published": "2026-05-28",
+   "retrieved": "2026-09-14",
+   "note": "$200M valuation; clients OpenAI, Anthropic, Google DeepMind, Meta, xAI, ByteDance. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Series A $40M, $200M valuation; 15k arena users; labs + Snowflake.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "primary"
+  },
+  "grayswan-forbesau-2024": {
+   "id": "grayswan-forbesau-2024",
+   "title": "This hacker team is bulletproofing AI models for companies like OpenAI and Anthropic",
+   "publisher": "Forbes Australia",
+   "url": "https://www.forbes.com.au/news/innovation/this-hacker-team-is-bulletproofing-ai-models-for-companies-like-openai-and-anthropic/",
+   "published": "2024-11-07",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Syndicated copy of the Forbes (29 Oct 2024) article; fetched 2026-09-15 with fetch_text; span 'he has recused himself from interactions between the two companies' present verbatim. Fetchable where forbes.com is not.",
+   "press_kind": "primary"
+  },
+  "grayswan-latentspace-2026": {
+   "id": "grayswan-latentspace-2026",
+   "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+   "publisher": "Latent Space",
+   "url": "https://www.latent.space/p/gray-swan",
+   "published": "2026-06-22",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Podcast/newsletter page; fetched 2026-09-15; span 'the adversarial red teaming tool that Anthropic used to evaluate the robustness of their models' present (Shade). Lead for X.1: a lab using the evaluator's product.",
+   "press_kind": "aggregator"
+  },
+  "grayswan-seriesa": {
+   "audit_status": "confirmed",
+   "id": "grayswan-seriesa",
+   "note": "$40M; Wing and Madrona; cited in 11 system cards; Cygnal, Shade, Arena products. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-05-28",
+   "publisher": "Gray Swan",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Gray Swan announces Series A",
+   "url": "https://www.grayswan.ai/news/gray-swan-announces-series-a",
+   "self_of": "grayswan"
+  },
+  "grayswan-snowflake-anthropic": {
+   "id": "grayswan-snowflake-anthropic",
+   "title": "Snowflake and Anthropic Announce $200 Million Partnership to Bring Agentic AI to Global Enterprises",
+   "publisher": "Snowflake",
+   "url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/",
+   "published": "2025-12-03",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Third-party primary document (company press release), typed self per repo precedent for lab/investor pages. Fetched 2026-09-15; states a 'multi-year, $200 million agreement' making Claude available in Snowflake, a commercial commitment, not an equity stake. Closes the open question on Snowflake Ventures as a lab investor: no equity documented.",
+   "self_of": "snowflake-ventures"
+  },
+  "kolter-bio": {
+   "audit_status": "confirmed",
+   "id": "kolter-bio",
+   "note": "Chairs OpenAI SSC; co-founder and Chief Scientist of Gray Swan. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026",
+   "publisher": "Zico Kolter",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Bio",
+   "url": "http://zkolter.github.io/bio/",
+   "self_of": "grayswan"
+  },
+  "madrona-grayswan": {
+   "id": "madrona-grayswan",
+   "title": "Why We Are Co-Leading Gray Swan's Series A",
+   "publisher": "Madrona",
+   "url": "https://www.madrona.com/gray-swan-series-a/",
+   "published": "2026-05-28",
+   "retrieved": "2026-09-15",
+   "note": "Co-lead's account of the round; notes Kolter serves on the board of OpenAI. [verify 2026-09-15 grok-pass] $40M Series A co-led with Wing; Obvious, Snowflake Ventures, HRT, Samsung Next, Magarac.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "primary"
+  },
+  "openai-kolter-board": {
+   "audit_status": "confirmed",
+   "id": "openai-kolter-board",
+   "note": "Board seat and Safety and Security Committee membership. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] reachable BUT span(s) not found: grayswan.01 — needs curator review [verify 2026-09-15 grok-pass] 'Zico will also join the Safety & Security Committee' — JOIN, not chair. Do not cite for the chair claim.",
+   "published": "2024-08",
+   "publisher": "OpenAI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Zico Kolter Joins OpenAI's Board of Directors",
+   "url": "https://openai.com/index/zico-kolter-joins-openais-board-of-directors/",
+   "self_of": "openai"
+  },
+  "wikipedia-kolter": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "wikipedia-kolter",
+   "note": "Board of OpenAI 2024, chair of its safety and security committee; 2025 Schmidt Sciences AI safety science funding recipient. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026",
+   "publisher": "Wikipedia",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "title": "Zico Kolter",
+   "url": "https://en.wikipedia.org/wiki/Zico_Kolter",
+   "press_kind": "aggregator"
+  }
+ }
+}

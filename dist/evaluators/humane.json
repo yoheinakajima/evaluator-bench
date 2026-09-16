@@ -1,0 +1,1369 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/humane.html"
+ },
+ "evaluator": {
+  "id": "humane",
+  "name": "Humane Intelligence",
+  "type": "nonprofit",
+  "hq": "New York, US",
+  "domains": [
+   "misuse",
+   "jailbreak"
+  ],
+  "confidence": "med",
+  "summary": "Public red-teaming exercises with NIST and IMDA; societal harms rather than catastrophic risk.",
+  "what_would_move_the_score": "Pre-release access for the harms it covers.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Access should be 0. No pre-release access is documented anywhere: the public exercises, bias bounties and NIST and IMDA partnerships tested deployed models, no system card names Humane Intelligence as a pre-release tester, and no lab engagement is on record. The card shows 1 only because the anchor-0 claim lacks a quoted span (C15), not because anything above public access was ever granted.",
+   "higher": "Access should be 2. Humane Intelligence co-ran the NIST ARIA pilot and the Singapore IMDA multilingual red-teaming exercise, in which participating developers supplied models under government programs; A.4 treats government testing agreements as 3. If those exercises gave structured access beyond the public API, even with safeguards on, the documented engagement is at least anchor 2."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#273",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 0,
+   "S": 3,
+   "R": 3,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": null,
+    "G": null,
+    "P": 2,
+    "A": 0,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 2
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 0,
+    "S": 3,
+    "R": 3,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "humane",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "humane.02"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#761",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "humane.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "humane.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.02"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "humane.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.02"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by humane.02 (F.9): Government partners rather than lab clients.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by humane.02 (F.9): Government partners rather than lab clients.. No admissible signal caps it."
+   },
+   "G": {
+    "evaluator": "humane",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "humane.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#762",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "humane.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "humane.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.04"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "humane.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by humane.04 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by humane.04 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "humane",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "humane.05",
+     "humane.10"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "open_questions": [
+     "Request to Humane Intelligence: the board and advisory-group conflict-of-interest policy, and whether advisory-group members employed by a model developer recuse from evaluations involving that developer's models.",
+     "Request to Humane Intelligence: whether any cooling-off rule applies to directors previously employed by a model developer, and the dates of the board president's OpenAI employment as stated in the published bio."
+    ],
+    "graph_id": "assessment#763",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "humane.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "humane.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "humane.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "humane.05"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "humane.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "humane.05"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.05",
+       "humane.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by humane.10 (P.4): Humane Intelligence's advisory group includes a Senior Research Scientist at Meta, and its board president previously worked on OpenAI's Human Data team; no recusal or cooling-off rule is published.. Floors up to 2 from humane.05 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by humane.10 (P.4): Humane Intelligence's advisory group includes a Senior Research Scientist at Meta, and its board president previously worked on OpenAI's Human Data team; no recusal or cooling-off rule is published.. Floors up to 2 from humane.05 do not exceed the cap."
+   },
+   "A": {
+    "evaluator": "humane",
+    "dimension": "A",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "humane.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "evidence_limited": false,
+    "graph_id": "assessment#764",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "humane.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "humane.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "humane.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "humane.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by humane.03 (A.6): Public-model access only..",
+    "rationale_leads": "Capped at 0 by humane.03 (A.6): Public-model access only.."
+   },
+   "S": {
+    "evaluator": "humane",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "humane.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#765",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "humane.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "humane.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.06"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "humane.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by humane.06 (S.5): Designs its own exercises.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by humane.06 (S.5): Designs its own exercises.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "humane",
+    "dimension": "R",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "humane.01"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#766",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "humane.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "humane.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.01"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "humane.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.01"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by humane.01 (R.5): Publishes openly; public exercises.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by humane.01 (R.5): Publishes openly; public exercises.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "humane",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "humane.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#767",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "humane.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "humane.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.07"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "humane.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by humane.07 (M.2): Methods published.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by humane.07 (M.2): Methods published.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "humane",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "humane.08",
+     "humane.09"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "resolution": {
+     "rule": "X.1",
+     "value": 2,
+     "note": "humane.08's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.1 cap; X.1 decides because the paid-services statement is on the organization's own page."
+    },
+    "open_questions": [
+     "Request to Humane Intelligence: a list of paid red-teaming and contextual-evaluation clients since 2024, or a statement of whether any client is a frontier developer."
+    ],
+    "graph_id": "assessment#768",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "humane.09"
+      ],
+      "h": true,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "humane.09"
+      ],
+      "h": true,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "humane.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "humane.08"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "humane.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "humane.08"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "humane.08",
+       "humane.09"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from humane.08 (X.7) against cap 2 from humane.09 (X.1); resolved at 2 by X.1: humane.08's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.1 cap; X.1 decides because the paid-services statement is on the organization's own page.",
+    "rationale_leads": "Conflict: floor 3 from humane.08 (X.7) against cap 2 from humane.09 (X.1); resolved at 2 by X.1: humane.08's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.1 cap; X.1 decides because the paid-services statement is on the organization's own page."
+   }
+  },
+  "signals": [
+   {
+    "id": "humane.01",
+    "evaluator": "humane",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes openly; public exercises.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "R.5",
+    "quote": "In September 2026, we released our AI red teaming app as an open source software.",
+    "quote_source": "humane-int",
+    "graph_id": "signal#461",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.02",
+    "evaluator": "humane",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Government partners rather than lab clients.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "Humane Intelligence would not be able to do its important work without the support of our funders",
+    "quote_source": "humane-int",
+    "graph_id": "signal#462",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.03",
+    "evaluator": "humane",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Public-model access only.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.6",
+    "quote": "Humane Intelligence has run more than 30 red teaming, bias bounty, and contextual evaluations",
+    "quote_source": "humane-int",
+    "graph_id": "signal#463",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.04",
+    "evaluator": "humane",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "Humane Intelligence is a 501(c)(3) nonprofit dedicated to breaking down barriers to AI deployment for social good",
+    "quote_source": "humane-int",
+    "graph_id": "signal#464",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.05",
+    "evaluator": "humane",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "No lab roles found.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "P.6",
+    "graph_id": "signal#465",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.06",
+    "evaluator": "humane",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Designs its own exercises.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "We collaboratively design and run rigorous evaluations",
+    "quote_source": "humane-int",
+    "graph_id": "signal#466",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.07",
+    "evaluator": "humane",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Methods published.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "using our own software, which we are releasing under an open source software license in 2026",
+    "quote_source": "humane-int",
+    "graph_id": "signal#467",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.08",
+    "evaluator": "humane",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "graph_id": "signal#468",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.09",
+    "evaluator": "humane",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Humane Intelligence sells red-teaming events and contextual evaluations as paid services using its own software, and invites clients to 'hire us'; the client list is not published.",
+    "sources": [
+     "humane-int"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1",
+    "quote": "Humane Intelligence offers red teaming events as a paid service using our own software",
+    "quote_source": "humane-int",
+    "note": "Products or services sold to unspecified parties in the evaluated ecosystem cap at 2 until a lab customer is documented (X.1); the card carries a document request for the client list. Also on the page: 'Humane Intelligence designs and runs contextual evals as a paid service'.",
+    "graph_id": "signal#469",
+    "source_graph_ids": [
+     "source#117"
+    ]
+   },
+   {
+    "id": "humane.10",
+    "evaluator": "humane",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Humane Intelligence's advisory group includes a Senior Research Scientist at Meta, and its board president previously worked on OpenAI's Human Data team; no recusal or cooling-off rule is published.",
+    "sources": [
+     "humane-board"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.4",
+    "quote": "Dr. Diego Garcia-Olano Senior Research Scientist, Meta",
+    "quote_source": "humane-board",
+    "note": "An advisor employed by a lab caps at 2 regardless of recusal (P.4); a director hired from a lab without a cooling-off rule also caps at 2 (P.3; 'He was previously a member of OpenAI’s Human Data team'). Public roles only; the open question is a document request.",
+    "graph_id": "signal#470",
+    "source_graph_ids": [
+     "source#116"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 52,
+   "regulator": 53,
+   "public": 61,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 52,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      52,
+      52
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      61,
+      61
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 52,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      52,
+      52
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      61,
+      61
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 21,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      8,
+      73
+     ]
+    },
+    "regulator": {
+     "score": 17,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      5,
+      75
+     ]
+    },
+    "public": {
+     "score": 40,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      10,
+      85
+     ]
+    },
+    "equal": {
+     "score": 33,
+     "band": "clear",
+     "coverage": 3,
+     "range": [
+      13,
+      75
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 52,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      52,
+      52
+     ]
+    },
+    "regulator": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "public": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      61,
+      61
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 57,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 52
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "clear",
+     "base": 52
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "clear",
+     "base": 53
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 68,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 65,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 65,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 63,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 64,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 66,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 61
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 61
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "humane-board": {
+   "id": "humane-board",
+   "title": "Board & Advisory - Humane Intelligence",
+   "publisher": "Humane Intelligence",
+   "url": "https://www.humane-intelligence.org/board-advisory/",
+   "published": "2026-07",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Board of directors and advisory group with bios: board president previously on OpenAI's Human Data team; advisory-group member is a Senior Research Scientist at Meta. Fetched 2026-09-15; spans present.",
+   "self_of": "humane"
+  },
+  "humane-int": {
+   "audit_status": "confirmed",
+   "id": "humane-int",
+   "note": "Public red-teaming with NIST and IMDA. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2026",
+   "publisher": "Humane Intelligence",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Humane Intelligence",
+   "url": "https://www.humane-intelligence.org/",
+   "self_of": "humane"
+  }
+ }
+}

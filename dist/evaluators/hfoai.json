@@ -1,0 +1,1409 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/hfoai.html"
+ },
+ "evaluator": {
+  "id": "hfoai",
+  "name": "Hugging Face Open Alignment Initiative",
+  "type": "vc",
+  "hq": "New York, US / Paris, FR",
+  "domains": [
+   "assurance"
+  ],
+  "confidence": "low",
+  "summary": "Announced 12 September 2026 with a request to join Anthropic's embedded-evaluator program; no evaluations yet.",
+  "what_would_move_the_score": "A governance structure that insulates the initiative from Nvidia, and a first published evaluation.",
+  "role": "expected-entrant",
+  "status": "watchlist",
+  "dissent": {
+   "lower": "Role incompatibility (2 to 1). Hugging Face sells PRO, Team and Enterprise plans and paid inference to the same ecosystem it proposes to audit, and frontier developers distribute models through the Hub. If any evaluated lab is a paying Enterprise Hub or inference customer, anchor 1 (sells products or services to labs) applies rather than the 2 that holds only until a lab customer is documented.",
+   "higher": "Access depth (0 to 1). Anthropic committed on 12 September to give third-party evaluators permanent, employee-level access, OpenAI said it would match, and Hugging Face asked to join within hours with a named lead. If admitted, the initiative's first engagement would begin above public-API access. The record shows a live programme and a pending request, not a refusal."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#272",
+  "values": {
+   "F": 0,
+   "G": 0,
+   "P": 2,
+   "A": 0,
+   "S": 2,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 0,
+    "G": 0,
+    "P": 2,
+    "A": 0,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 0,
+    "G": 0,
+    "P": 2,
+    "A": 0,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 0,
+    "G": 0,
+    "P": 2,
+    "A": 0,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "spans": {
+    "F": 0,
+    "G": 0,
+    "P": 2,
+    "A": 0,
+    "S": 2,
+    "R": 2,
+    "M": null,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "hfoai.03",
+     "hfoai.09",
+     "hfoai.10"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#753",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "hfoai.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "hfoai.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "hfoai.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "hfoai.10"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.03",
+       "hfoai.09",
+       "hfoai.10"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by hfoai.10 (F.1): Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026..",
+    "rationale_leads": "Capped at 0 by hfoai.10 (F.1): Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026.."
+   },
+   "G": {
+    "evaluator": "hfoai",
+    "dimension": "G",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "hfoai.01"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#754",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "hfoai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "hfoai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "hfoai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "hfoai.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.01"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by hfoai.01 (G.6): Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap..",
+    "rationale_leads": "Capped at 0 by hfoai.01 (G.6): Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap.."
+   },
+   "P": {
+    "evaluator": "hfoai",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hfoai.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#755",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hfoai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hfoai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hfoai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hfoai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by hfoai.07 (P.4): Would be owned by a lab investor..",
+    "rationale_leads": "Capped at 2 by hfoai.07 (P.4): Would be owned by a lab investor.."
+   },
+   "A": {
+    "evaluator": "hfoai",
+    "dimension": "A",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "hfoai.02"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "unknown",
+    "graph_id": "assessment#756",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "hfoai.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "hfoai.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "hfoai.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "hfoai.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.02"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by hfoai.02 (A.6): No track record as an evaluator; no access yet..",
+    "rationale_leads": "Capped at 0 by hfoai.02 (A.6): No track record as an evaluator; no access yet.."
+   },
+   "S": {
+    "evaluator": "hfoai",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hfoai.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#757",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hfoai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hfoai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hfoai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hfoai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by hfoai.06 (S.2 (anchor text)): Terms not announced..",
+    "rationale_leads": "Capped at 2 by hfoai.06 (S.2 (anchor text)): Terms not announced.."
+   },
+   "R": {
+    "evaluator": "hfoai",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hfoai.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#758",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hfoai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hfoai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hfoai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hfoai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by hfoai.04 (9): States findings would be published openly; open-source culture.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by hfoai.04 (9): States findings would be published openly; open-source culture.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "hfoai",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hfoai.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#759",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hfoai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hfoai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hfoai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.05"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by hfoai.05 (9): Public tooling.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by hfoai.05 (9): Public tooling.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "hfoai",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "hfoai.08"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#760",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "hfoai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "hfoai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "hfoai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "hfoai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "hfoai.08"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by hfoai.08 (X.1 (second sentence)): Commercial platform..",
+    "rationale_leads": "Capped at 2 by hfoai.08 (X.1 (second sentence)): Commercial platform.."
+   }
+  },
+  "signals": [
+   {
+    "id": "hfoai.01",
+    "evaluator": "hfoai",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap.",
+    "sources": [
+     "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "G.6",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#451",
+    "source_graph_ids": [
+     "source#236"
+    ]
+   },
+   {
+    "id": "hfoai.02",
+    "evaluator": "hfoai",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "No track record as an evaluator; no access yet.",
+    "sources": [
+     "tnw-hf-nvidia",
+     "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.6",
+    "quote": "Hugging Face has asked to become one of the outside auditors of the AI labs",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#452",
+    "source_graph_ids": [
+     "source#236",
+     "source#226"
+    ]
+   },
+   {
+    "id": "hfoai.03",
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Who pays, who selects, and on what terms is unresolved.",
+    "sources": [
+     "tnw-hf-nvidia",
+     "zvi-pace"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "F.10",
+    "quote": "Nobody has said who pays the embedded evaluators",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#453",
+    "source_graph_ids": [
+     "source#236",
+     "source#259"
+    ]
+   },
+   {
+    "id": "hfoai.04",
+    "evaluator": "hfoai",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "States findings would be published openly; open-source culture.",
+    "sources": [
+     "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "9",
+    "quote": "won't be solved behind the closed doors of a handful of frontier labs",
+    "quote_source": "techmeme-hf",
+    "graph_id": "signal#454",
+    "source_graph_ids": [
+     "source#226"
+    ]
+   },
+   {
+    "id": "hfoai.05",
+    "evaluator": "hfoai",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Public tooling.",
+    "sources": [
+     "techmeme-hf"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "9",
+    "graph_id": "signal#455",
+    "source_graph_ids": [
+     "source#226"
+    ]
+   },
+   {
+    "id": "hfoai.06",
+    "evaluator": "hfoai",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "Terms not announced.",
+    "sources": [
+     "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "S.2 (anchor text)",
+    "quote": "Neither lab has said who gets in, on what terms, or who decides",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#456",
+    "source_graph_ids": [
+     "source#236"
+    ]
+   },
+   {
+    "id": "hfoai.07",
+    "evaluator": "hfoai",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Would be owned by a lab investor.",
+    "sources": [
+     "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.4",
+    "quote": "Nvidia was in talks to put up to $10bn into Anthropic’s IPO as an anchor investor",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#457",
+    "source_graph_ids": [
+     "source#236"
+    ]
+   },
+   {
+    "id": "hfoai.08",
+    "evaluator": "hfoai",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Commercial platform.",
+    "sources": [
+     "tnw-hf-nvidia",
+     "hfoai-hf-pricing"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.1 (second sentence)",
+    "quote": "Instant setup for growing teams $20 /month per user",
+    "quote_source": "hfoai-hf-pricing",
+    "graph_id": "signal#458",
+    "source_graph_ids": [
+     "source#236",
+     "source#114"
+    ]
+   },
+   {
+    "id": "hfoai.09",
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner.",
+    "sources": [
+     "evaluators-ledger",
+     "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "F.1",
+    "quote": "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn",
+    "quote_source": "tnw-hf-nvidia",
+    "graph_id": "signal#459",
+    "source_graph_ids": [
+     "source#96",
+     "source#236"
+    ]
+   },
+   {
+    "id": "hfoai.10",
+    "evaluator": "hfoai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026.",
+    "sources": [
+     "fortune-hf-nvidia",
+     "tnw-hf-nvidia"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-11",
+    "quote": "Nvidia has agreed to acquire Hugging Face for $12,930,300,000",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "F.1",
+    "quote_source": "fortune-hf-nvidia",
+    "graph_id": "signal#460",
+    "source_graph_ids": [
+     "source#102",
+     "source#236"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 27,
+   "regulator": 28,
+   "public": 28,
+   "equal": 31
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 27,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      27,
+      27
+     ]
+    },
+    "regulator": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "public": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "equal": {
+     "score": 31,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      31,
+      31
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 27,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      27,
+      27
+     ]
+    },
+    "regulator": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "public": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "equal": {
+     "score": 31,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      31,
+      31
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 27,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      27,
+      27
+     ]
+    },
+    "regulator": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "public": {
+     "score": 28,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      28,
+      28
+     ]
+    },
+    "equal": {
+     "score": 31,
+     "band": "disqualifying",
+     "coverage": 8,
+     "range": [
+      31,
+      31
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 25,
+     "band": "disqualifying",
+     "coverage": 7,
+     "range": [
+      23,
+      32
+     ]
+    },
+    "regulator": {
+     "score": 25,
+     "band": "disqualifying",
+     "coverage": 7,
+     "range": [
+      23,
+      33
+     ]
+    },
+    "public": {
+     "score": 26,
+     "band": "disqualifying",
+     "coverage": 7,
+     "range": [
+      25,
+      30
+     ]
+    },
+    "equal": {
+     "score": 29,
+     "band": "disqualifying",
+     "coverage": 7,
+     "range": [
+      25,
+      38
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "disqualifying",
+  "coverage": 8,
+  "floor": "F",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 32,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "G",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 29,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 30,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 32,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 29,
+     "band": "disqualifying",
+     "base": 27
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 28,
+     "band": "disqualifying",
+     "base": 27
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "G",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 30,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 30,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 33,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 33,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 30,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 28,
+     "band": "disqualifying",
+     "base": 28
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "G",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 31,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 29,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 30,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 33,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 29,
+     "band": "disqualifying",
+     "base": 28
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 29,
+     "band": "disqualifying",
+     "base": 28
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "G",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 34,
+     "band": "disqualifying",
+     "base": 31
+    }
+   ]
+  }
+ },
+ "sources": {
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "fortune-hf-nvidia": {
+   "id": "fortune-hf-nvidia",
+   "title": "Hugging Face goes from a scrappy startup to $13 billion Nvidia acquisition",
+   "publisher": "Fortune",
+   "url": "https://fortune.com/2026/09/03/hugging-face-goes-from-a-scrappy-startup-named-after-an-emoji-to-13-billion-nvidia-acquisition/",
+   "published": "2026-09-03",
+   "retrieved": "2026-09-15",
+   "note": "Nvidia agreed to acquire Hugging Face for $12,930,300,000. [verify 2026-09-15 grok-pass] 'Nvidia has agreed to acquire Hugging Face for $12,930,300,000' (3 Sep 2026).",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "primary"
+  },
+  "hfoai-hf-pricing": {
+   "id": "hfoai-hf-pricing",
+   "title": "Hugging Face – Pricing",
+   "publisher": "Hugging Face",
+   "url": "https://huggingface.co/pricing",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Own page; fetched 2026-09-15; span 'Instant setup for growing teams $20 /month per user' present (Team plan), with PRO and Enterprise tiers. Documents commercial products for X.",
+   "self_of": "hfoai"
+  },
+  "techmeme-hf": {
+   "audit_status": "confirmed",
+   "id": "techmeme-hf",
+   "note": "Initiative led by Thomas Wolf; request to join embedded evaluators. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-12",
+   "publisher": "Techmeme",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "Hugging Face Open Alignment Initiative",
+   "url": "https://www.techmeme.com/260912/p13",
+   "press_kind": "aggregator"
+  },
+  "tnw-hf-nvidia": {
+   "id": "tnw-hf-nvidia",
+   "title": "Hugging Face's Open Alignment Initiative wants lab access",
+   "publisher": "TNW",
+   "url": "https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-14",
+   "note": "Nvidia acquiring Hugging Face ($12.93B); Nvidia in talks to anchor Anthropic IPO (up to $10B); no terms announced. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] 'Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn'.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "primary"
+  },
+  "zvi-pace": {
+   "audit_status": "confirmed",
+   "id": "zvi-pace",
+   "note": "Hwang trilemma: independent, knowledgeable, sustainably funded, pick two; evaluator supply concerns. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09-14",
+   "publisher": "Zvi Mowshowitz",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "We Must Pace The Frontier",
+   "url": "https://thezvi.substack.com/p/we-must-pace-the-frontier",
+   "press_kind": "aggregator"
+  }
+ }
+}

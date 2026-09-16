@@ -1,0 +1,1340 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/equistamp.html"
+ },
+ "evaluator": {
+  "id": "equistamp",
+  "name": "EquiStamp",
+  "type": "private",
+  "hq": "Remote",
+  "domains": [
+   "assurance",
+   "autonomy"
+  ],
+  "confidence": "low",
+  "summary": "Private evaluation-services company; leads two EU AI Office technical-assistance lots (loss of control with METR and Epoch; harmful manipulation with Transluce). Clients named are evaluators and governments.",
+  "what_would_move_the_score": "Funding and ownership disclosure; a lab-money policy.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Governance (G) at 1 could be 0. The public record offers no case: nothing shows a lab or lab investor holding any stake in EquiStamp, and the company says it is converting to a public benefit corporation. The only lower reading is evidentiary, not substantive: with no funding or ownership disclosure at all, a 20% lab stake cannot be excluded, and the ledger relies on the company's own site.",
+   "higher": "Governance (G) at 1 could be 2. EquiStamp states a public benefit commitment to advance AI safety research over profit and is converting to a PBC, whose charter would bind directors to that purpose; its named clients are evaluators and governments, not labs. Anchor 2 asks for a published conflict policy; a PBC charter with a stated public benefit is the nearest published instrument and the company is not venture-backed on any record."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#267",
+  "values": {
+   "F": 3,
+   "G": 1,
+   "P": 2,
+   "A": 1,
+   "S": 2,
+   "R": 2,
+   "M": 2,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 1,
+    "P": 2,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": 2,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": null,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": 2,
+    "M": null,
+    "X": null
+   },
+   "spans": {
+    "F": 3,
+    "G": 1,
+    "P": null,
+    "A": 1,
+    "S": 2,
+    "R": null,
+    "M": null,
+    "X": 3
+   },
+   "primary": {
+    "F": 3,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": 2,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "equistamp.01",
+     "equistamp.02"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "graph_id": "assessment#713",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "equistamp.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "equistamp.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "equistamp.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "equistamp.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "equistamp.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "equistamp.02"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by equistamp.02 (F.10): Private company; no funding or ownership disclosed.. Floors up to 3 from equistamp.01 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by equistamp.02 (F.10): Private company; no funding or ownership disclosed.. Floors up to 3 from equistamp.01 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "equistamp",
+    "dimension": "G",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "equistamp.03"
+    ],
+    "rationale": "Anchor 1 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#714",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "equistamp.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "equistamp.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "equistamp.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "equistamp.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.03"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by equistamp.03 (G.2): No COI policy on the site..",
+    "rationale_leads": "Capped at 1 by equistamp.03 (G.2): No COI policy on the site.."
+   },
+   "P": {
+    "evaluator": "equistamp",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "equistamp.04"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "graph_id": "assessment#715",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "equistamp.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.04"
+      ]
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.04"
+      ]
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.04"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.04"
+      ]
+     }
+    },
+    "rationale_derived": "Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.04 (no confirmed source (imported)).",
+    "rationale_leads": "Capped at 2 by equistamp.04 (P.6): Founders' prior affiliations and any lab ties not established.."
+   },
+   "A": {
+    "evaluator": "equistamp",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "equistamp.05"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "unknown",
+    "evidence_limited": true,
+    "graph_id": "assessment#716",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "equistamp.05"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "equistamp.05"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "equistamp.05"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "equistamp.05"
+      ],
+      "h": true,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.05"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by equistamp.05 (A.6): Access is through client engagements; no pre-release lab access documented.. Held: C14: sources not all confirmed.",
+    "rationale_leads": "Capped at 1 by equistamp.05 (A.6): Access is through client engagements; no pre-release lab access documented.. Held: C14: sources not all confirmed."
+   },
+   "S": {
+    "evaluator": "equistamp",
+    "dimension": "S",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "equistamp.06"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#717",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "equistamp.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "equistamp.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "equistamp.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "equistamp.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 2,
+      "b": [
+       "equistamp.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     }
+    },
+    "rationale_derived": "Floored at 2 by equistamp.06 (S.3; section 9): Regulator as client sets scope by tender.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by equistamp.06 (S.3; section 9): Regulator as client sets scope by tender.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "equistamp",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "equistamp.07"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "mechanism": "unknown",
+    "graph_id": "assessment#718",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "equistamp.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "equistamp.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "equistamp.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.07"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by equistamp.07 (R.4): Deliverables go to the AI Office; no public reports found..",
+    "rationale_leads": "Capped at 2 by equistamp.07 (R.4): Deliverables go to the AI Office; no public reports found.."
+   },
+   "M": {
+    "evaluator": "equistamp",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "equistamp.08"
+    ],
+    "rationale": "Anchor 2 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0.4",
+    "graph_id": "assessment#719",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "equistamp.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.08"
+      ]
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.08"
+      ]
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.08"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.08"
+      ]
+     }
+    },
+    "rationale_derived": "Unevidenced under this policy: no admissible signal sets a bound. Not counted: equistamp.08 (no confirmed source (imported)).",
+    "rationale_leads": "Capped at 2 by equistamp.08 (M.2): Methods not public.."
+   },
+   "X": {
+    "evaluator": "equistamp",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "equistamp.09"
+    ],
+    "rationale": "Anchor 3 from the cited rows; low confidence, imported evidence.",
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#720",
+    "evidence_tier": "tier 2 (ledger)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "equistamp.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "equistamp.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.09"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "equistamp.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "equistamp.09"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by equistamp.09 (X.4): No lab-facing products found; clients are evaluators and governments.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by equistamp.09 (X.4): No lab-facing products found; clients are evaluators and governments.. No admissible signal caps it."
+   }
+  },
+  "signals": [
+   {
+    "id": "equistamp.01",
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Revenue from evaluators and governments; leads EU Lot 3 (EUR 1.17M to consortium) and Lot 4 (EUR 0.88M).",
+    "sources": [
+     "ted-864574",
+     "evaluators-ledger",
+     "nemesys-far-blog",
+     "equistamp-substack"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.10",
+    "quote": "organisations that won contracts: EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio",
+    "quote_source": "equistamp-substack",
+    "graph_id": "signal#386",
+    "source_graph_ids": [
+     "source#231",
+     "source#96",
+     "source#150",
+     "source#86"
+    ]
+   },
+   {
+    "id": "equistamp.02",
+    "evaluator": "equistamp",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Private company; no funding or ownership disclosed.",
+    "sources": [
+     "evaluators-ledger",
+     "equistamp-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.10",
+    "quote": "We're in the process of becoming a Public Benefit Corporation",
+    "quote_source": "equistamp-site",
+    "graph_id": "signal#387",
+    "source_graph_ids": [
+     "source#96",
+     "source#85"
+    ]
+   },
+   {
+    "id": "equistamp.03",
+    "evaluator": "equistamp",
+    "dimension": "G",
+    "direction": "against",
+    "claim": "No COI policy on the site.",
+    "sources": [
+     "evaluators-ledger",
+     "equistamp-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "G.2",
+    "quote": "We provide the full operational stack for AI safety research — from eval implementation to administrative overhead.",
+    "quote_source": "equistamp-site",
+    "graph_id": "signal#388",
+    "source_graph_ids": [
+     "source#96",
+     "source#85"
+    ]
+   },
+   {
+    "id": "equistamp.04",
+    "evaluator": "equistamp",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Founders' prior affiliations and any lab ties not established.",
+    "sources": [
+     "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.6",
+    "graph_id": "signal#389",
+    "source_graph_ids": [
+     "source#96"
+    ]
+   },
+   {
+    "id": "equistamp.05",
+    "evaluator": "equistamp",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Access is through client engagements; no pre-release lab access documented.",
+    "sources": [
+     "evaluators-ledger",
+     "equistamp-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.6",
+    "quote": "We build and run evaluations, baselines, and benchmarks",
+    "quote_source": "equistamp-site",
+    "graph_id": "signal#390",
+    "source_graph_ids": [
+     "source#96",
+     "source#85"
+    ]
+   },
+   {
+    "id": "equistamp.06",
+    "evaluator": "equistamp",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Regulator as client sets scope by tender.",
+    "sources": [
+     "ted-864574",
+     "euaio-tender-call"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "S.3; section 9",
+    "quote": "technical assistance aimed at supporting the monitoring of compliance",
+    "quote_source": "euaio-tender-call",
+    "graph_id": "signal#391",
+    "source_graph_ids": [
+     "source#231",
+     "source#94"
+    ]
+   },
+   {
+    "id": "equistamp.07",
+    "evaluator": "equistamp",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Deliverables go to the AI Office; no public reports found.",
+    "sources": [
+     "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.4",
+    "note": "[span 2026-09-16] Span pending: deliverables-to-AI-Office half supported by consortium announcement (nemesys-far-blog); TED notice would not load via text fetch; retry with a browser fetch.",
+    "graph_id": "signal#392",
+    "source_graph_ids": [
+     "source#231"
+    ]
+   },
+   {
+    "id": "equistamp.08",
+    "evaluator": "equistamp",
+    "dimension": "M",
+    "direction": "against",
+    "claim": "Methods not public.",
+    "sources": [
+     "evaluators-ledger"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "M.2",
+    "graph_id": "signal#393",
+    "source_graph_ids": [
+     "source#96"
+    ]
+   },
+   {
+    "id": "equistamp.09",
+    "evaluator": "equistamp",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No lab-facing products found; clients are evaluators and governments.",
+    "sources": [
+     "evaluators-ledger",
+     "equistamp-site"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.4",
+    "quote": "EquiStamp provides evaluation implementation, data annotation, and project operations for AI safety labs",
+    "quote_source": "equistamp-site",
+    "graph_id": "signal#394",
+    "source_graph_ids": [
+     "source#96",
+     "source#85"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 48,
+   "regulator": 45,
+   "public": 53,
+   "equal": 50
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 49,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      49,
+      49
+     ]
+    },
+    "regulator": {
+     "score": 46,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      46,
+      46
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    },
+    "equal": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      50,
+      50
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 6,
+     "range": [
+      39,
+      58
+     ]
+    },
+    "regulator": {
+     "score": 45,
+     "band": "conditional",
+     "coverage": 6,
+     "range": [
+      36,
+      56
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 6,
+     "range": [
+      43,
+      63
+     ]
+    },
+    "equal": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 6,
+     "range": [
+      38,
+      63
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 47,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      36,
+      60
+     ]
+    },
+    "regulator": {
+     "score": 45,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      36,
+      56
+     ]
+    },
+    "public": {
+     "score": 52,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      39,
+      64
+     ]
+    },
+    "equal": {
+     "score": 45,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      28,
+      66
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 48,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      32,
+      65
+     ]
+    },
+    "regulator": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      29,
+      64
+     ]
+    },
+    "public": {
+     "score": 54,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      33,
+      73
+     ]
+    },
+    "equal": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 5,
+     "range": [
+      31,
+      69
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      22,
+      88
+     ]
+    },
+    "regulator": {
+     "score": 61,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      21,
+      86
+     ]
+    },
+    "public": {
+     "score": 68,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      24,
+      89
+     ]
+    },
+    "equal": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      16,
+      91
+     ]
+    }
+   }
+  },
+  "band": "conditional",
+  "coverage": 6,
+  "floor": "G",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 51,
+     "band": "clear",
+     "base": 48
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 55,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "conditional",
+     "base": 48
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 50,
+     "band": "conditional",
+     "base": 48
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 50,
+     "band": "conditional",
+     "base": 45
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 48,
+     "band": "clear",
+     "base": 45
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 52,
+     "band": "conditional",
+     "base": 45
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 52,
+     "band": "conditional",
+     "base": 45
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 50,
+     "band": "conditional",
+     "base": 45
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 45,
+     "band": "conditional",
+     "base": 45
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 58,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 55,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 55,
+     "band": "conditional",
+     "base": 53
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "G",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 54,
+     "band": "clear",
+     "base": 50
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "S",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    }
+   ]
+  }
+ },
+ "sources": {
+  "equistamp-site": {
+   "id": "equistamp-site",
+   "title": "EquiStamp - Research Operations for AI Safety",
+   "publisher": "EquiStamp",
+   "url": "https://equistamp.com/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Company site: evaluation implementation, data annotation, red/blue teaming for AI safety organizations; \"in the process of becoming a Public Benefit Corporation\"; clients and partners list. No conflict-of-interest policy on the page. Fetched 2026-09-15; spans present.",
+   "self_of": "equistamp"
+  },
+  "equistamp-substack": {
+   "id": "equistamp-substack",
+   "title": "Isolating \"AI Safety\" to an ideological niche will backfire against fundamental rights",
+   "publisher": "Stress Testing Reality (Substack, Katalina Hernández)",
+   "url": "https://stresstestingreality.substack.com/p/isolating-ai-safety-to-an-ideological",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "note": "Names EquiStamp, METR, Epoch AI, FAR.AI, SaferAI, SecureBio, Clarity AI Research and CeSIA as winners of Lots 1, 3 and 4 of the EUR 9 million AI Office tender. Author discloses an ongoing relationship with EquiStamp (head of legal), so not independent of the company. Newsletter, typed press aggregator. Fetched 2026-09-15; span present.",
+   "press_kind": "aggregator"
+  },
+  "euaio-tender-call": {
+   "id": "euaio-tender-call",
+   "title": "Forthcoming call for tenders: Artificial Intelligence Act - Technical Assistance for AI Safety",
+   "publisher": "European Commission (DG CONNECT)",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/forthcoming-call-tenders-artificial-intelligence-act-technical-assistance-ai-safety",
+   "published": "2025-04-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Commission announcement: tender split into six lots to support monitoring of compliance and assessment of GPAI systemic risks. Same record as in leads/bounds/euaio.json. Fetched 2026-09-15; span present.",
+   "self_of": "euaio"
+  },
+  "evaluators-ledger": {
+   "id": "evaluators-ledger",
+   "title": "evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership)",
+   "publisher": "Kevin Bass (GitHub)",
+   "url": "https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv",
+   "published": "2026-09-14",
+   "retrieved": "2026-09-15",
+   "note": "Parallel scorecard with index totals per evaluator; imported as leads. Repository default branch is master (the earlier main path returned 404). Sibling files: coefficient_pages.csv, tallinn-donations-ledger-2026-09-13.csv, vanguard-fy*-schedule-i.csv, finances.csv. [audit 2026-09-15] URL repointed from the GitHub blob page (JavaScript-rendered) to the raw file so quoted spans can be checked; status set to imported, which is what it is (a row-level lead copied from another project, supporting a 2 and nothing else until re-derived).",
+   "source_type": "ledger",
+   "audit_status": "imported",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv"
+  },
+  "nemesys-far-blog": {
+   "id": "nemesys-far-blog",
+   "title": "FAR.AI Selected to Lead EU AI Act CBRN Risk Consortium",
+   "publisher": "FAR.AI",
+   "url": "https://www.far.ai/blog/far-ai-selected-to-lead-eu-ai-act-cbrn-risk-consortium",
+   "published": "2026-02-02",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Consortium lead's announcement naming subcontractors: GovAI, Nemesys Insights (CBRN), Equistamp (evaluation engineering). Published by FAR.AI, not by EquiStamp or Nemesys; typed self following the ledger convention for partner-org pages (T62). Fetched 2026-09-15; span present.",
+   "self_of": "farai"
+  },
+  "ted-864574": {
+   "audit_status": "confirmed",
+   "id": "ted-864574",
+   "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml",
+   "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-12",
+   "publisher": "Tenders Electronic Daily",
+   "retrieved": "2026-09-14",
+   "source_type": "filing",
+   "title": "TED 864574-2025 Technical Assistance for AI Safety",
+   "url": "https://ted.europa.eu/"
+  }
+ }
+}

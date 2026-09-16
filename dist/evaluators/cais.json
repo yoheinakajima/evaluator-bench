@@ -1,0 +1,1403 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/cais.html"
+ },
+ "evaluator": {
+  "id": "cais",
+  "name": "Center for AI Safety",
+  "type": "nonprofit",
+  "hq": "San Francisco, US",
+  "domains": [
+   "benchmarks",
+   "misuse"
+  ],
+  "confidence": "med",
+  "summary": "Hazard benchmarks (WMDP, HLE); director advises xAI.",
+  "what_would_move_the_score": "A public recusal policy covering the xAI relationship.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Personnel should be 0. The director advises xAI while CAIS benchmarks (HLE, WMDP, MASK) are used to grade xAI models, and no recusal statement, disclosure page, or conflict policy is published anywhere on safe.ai. P.1 sets 0 for a governance role without recusal; an unrecused standing advisory role at a graded lab, with the benchmark scoring under the same director, is the nearest thing to it.",
+   "higher": "Personnel should be 2. An advisory role is not a board or committee seat, so P.2's cap of 1 rather than P.1's 0 applies, and nothing above 1 was ever claimed. HLE and WMDP are scored mechanically on public leaderboards where xAI's results are visible to anyone, no equity, hiring flow, or second lab tie is documented, and a published recusal note would lift the value to 2."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#263",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 1,
+   "A": 0,
+   "S": 3,
+   "R": 2,
+   "M": 3,
+   "X": 3
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 1,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 1,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": 1,
+    "A": 0,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": 3
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": 1,
+    "A": 0,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 3
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "cais",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "cais.02",
+     "cais.09"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#681",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "cais.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "cais.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "cais.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "cais.09"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.02",
+       "cais.09"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by cais.09 (F.6): SFF recommended $289,000 to CAIS in 2025 (about $1.1M cumulative per 80,000 Hours); SFF's funder Jaan Tallinn led Anthropic's Series A.. Floors up to 3 from cais.02 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by cais.09 (F.6): SFF recommended $289,000 to CAIS in 2025 (about $1.1M cumulative per 80,000 Hours); SFF's funder Jaan Tallinn led Anthropic's Series A.. Floors up to 3 from cais.02 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "cais",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "cais.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#682",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "cais.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "cais.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.05"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "cais.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by cais.05 (G.1): Nonprofit.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by cais.05 (G.1): Nonprofit.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "cais",
+    "dimension": "P",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "cais.01"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "open_questions": [
+     "Request to the Center for AI Safety: the terms of the director's advisory role at xAI (start date, compensation or equity if any) and any recusal or disclosure statement covering CAIS benchmark results on xAI models."
+    ],
+    "graph_id": "assessment#683",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "cais.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "cais.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "cais.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "cais.01"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.01"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 1 by cais.01 (P.2): Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models..",
+    "rationale_leads": "Capped at 1 by cais.01 (P.2): Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models.."
+   },
+   "A": {
+    "evaluator": "cais",
+    "dimension": "A",
+    "value": 0,
+    "anchor": 0,
+    "signals": [
+     "cais.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "evidence_limited": false,
+    "graph_id": "assessment#684",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 0,
+      "b": [
+       "cais.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 0,
+      "b": [
+       "cais.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 0,
+      "b": [
+       "cais.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 0,
+      "b": [
+       "cais.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.06"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 0 by cais.06 (A.6): Public-model access..",
+    "rationale_leads": "Capped at 0 by cais.06 (A.6): Public-model access.."
+   },
+   "S": {
+    "evaluator": "cais",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "cais.07"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#685",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "cais.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "cais.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.07"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "cais.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by cais.07 (S.5): Sets own benchmark design.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by cais.07 (S.5): Sets own benchmark design.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "cais",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "cais.08"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#686",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "cais.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "cais.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.08"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "cais.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by cais.08 (R.1): Publishes results.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by cais.08 (R.1): Publishes results.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "cais",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "cais.03"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#687",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "cais.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "cais.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.03"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "cais.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.03"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by cais.03 (M.3): Open benchmarks widely used.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by cais.03 (M.3): Open benchmarks widely used.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "cais",
+    "dimension": "X",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "cais.04"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#688",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "cais.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "cais.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "cais.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "cais.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "cais.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by cais.04 (X.6): Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor..",
+    "rationale_leads": "Capped at 3 by cais.04 (X.6): Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor.."
+   }
+  },
+  "signals": [
+   {
+    "id": "cais.01",
+    "evaluator": "cais",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models.",
+    "sources": [
+     "80k-funding",
+     "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 1
+    },
+    "rule": "P.2",
+    "quote": "have driven some of the bigger successes in AI policy and advise xAI",
+    "quote_source": "80k-funding",
+    "graph_id": "signal#333",
+    "source_graph_ids": [
+     "source#9",
+     "source#50"
+    ]
+   },
+   {
+    "id": "cais.02",
+    "evaluator": "cais",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Funded mainly by SFF rather than lab-linked pools.",
+    "sources": [
+     "80k-funding"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.6",
+    "quote": "SFF gave $1.1m to CAIS and $1.6m to the action fund",
+    "quote_source": "80k-funding",
+    "graph_id": "signal#334",
+    "source_graph_ids": [
+     "source#9"
+    ]
+   },
+   {
+    "id": "cais.03",
+    "evaluator": "cais",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open benchmarks widely used.",
+    "sources": [
+     "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.3",
+    "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+    "quote_source": "cais",
+    "graph_id": "signal#335",
+    "source_graph_ids": [
+     "source#50"
+    ]
+   },
+   {
+    "id": "cais.04",
+    "evaluator": "cais",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "Co-produced Humanity's Last Exam with Scale AI, a Meta-owned vendor.",
+    "sources": [
+     "cais",
+     "lastexam-hle",
+     "cnbc-scale-meta"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "X.6",
+    "quote": "1 Center for AI Safety, 2 Scale AI",
+    "quote_source": "lastexam-hle",
+    "graph_id": "signal#336",
+    "source_graph_ids": [
+     "source#50",
+     "source#124",
+     "source#62"
+    ]
+   },
+   {
+    "id": "cais.05",
+    "evaluator": "cais",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit.",
+    "sources": [
+     "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "is a San Francisco-based research and field-building nonprofit",
+    "quote_source": "cais",
+    "graph_id": "signal#337",
+    "source_graph_ids": [
+     "source#50"
+    ]
+   },
+   {
+    "id": "cais.06",
+    "evaluator": "cais",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "Public-model access.",
+    "sources": [
+     "cais",
+     "cais-research"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 0
+    },
+    "rule": "A.6",
+    "quote": "We evaluate a range of leading LLMs",
+    "quote_source": "cais-research",
+    "graph_id": "signal#338",
+    "source_graph_ids": [
+     "source#50",
+     "source#49"
+    ]
+   },
+   {
+    "id": "cais.07",
+    "evaluator": "cais",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets own benchmark design.",
+    "sources": [
+     "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.5",
+    "quote": "CAIS develops foundational benchmarks and methods which concretize the problem",
+    "quote_source": "cais",
+    "graph_id": "signal#339",
+    "source_graph_ids": [
+     "source#50"
+    ]
+   },
+   {
+    "id": "cais.08",
+    "evaluator": "cais",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes results.",
+    "sources": [
+     "cais"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.1",
+    "quote": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems Mar 5, 2025",
+    "quote_source": "cais",
+    "graph_id": "signal#340",
+    "source_graph_ids": [
+     "source#50"
+    ]
+   },
+   {
+    "id": "cais.09",
+    "evaluator": "cais",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "SFF recommended $289,000 to CAIS in 2025 (about $1.1M cumulative per 80,000 Hours); SFF's funder Jaan Tallinn led Anthropic's Series A.",
+    "sources": [
+     "sff-2025",
+     "anthropic-series-a",
+     "80k-funding"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "Center for AI Safety (CAIS) Main: $210,000 Freedom: $78,000 Fairness: $0 Mean: $0 $289,000",
+    "quote_source": "sff-2025",
+    "note": "Grants from a funder whose principal is an investor in a frontier developer cap at 3 (F.6). Ledger rows T57 and T71; anthropic-series-a: 'The Series A round was led by Jaan Tallinn'.",
+    "graph_id": "signal#341",
+    "source_graph_ids": [
+     "source#223",
+     "source#31",
+     "source#9"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 50,
+   "regulator": 49,
+   "public": 55,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      50,
+      50
+     ]
+    },
+    "regulator": {
+     "score": 49,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      49,
+      49
+     ]
+    },
+    "public": {
+     "score": 55,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      50,
+      50
+     ]
+    },
+    "regulator": {
+     "score": 49,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      49,
+      49
+     ]
+    },
+    "public": {
+     "score": 55,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 37,
+     "band": "conditional",
+     "coverage": 4,
+     "range": [
+      20,
+      67
+     ]
+    },
+    "regulator": {
+     "score": 31,
+     "band": "conditional",
+     "coverage": 4,
+     "range": [
+      14,
+      69
+     ]
+    },
+    "public": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 4,
+     "range": [
+      26,
+      76
+     ]
+    },
+    "equal": {
+     "score": 44,
+     "band": "conditional",
+     "coverage": 4,
+     "range": [
+      22,
+      72
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 50,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      50,
+      50
+     ]
+    },
+    "regulator": {
+     "score": 49,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      49,
+      49
+     ]
+    },
+    "public": {
+     "score": 55,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      55,
+      55
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "conditional",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "conditional",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 52,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 52,
+     "band": "clear",
+     "base": 50
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 55,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 52,
+     "band": "conditional",
+     "base": 50
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 51,
+     "band": "conditional",
+     "base": 50
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 53,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 51,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 51,
+     "band": "clear",
+     "base": 49
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 54,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 54,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 53,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 51,
+     "band": "conditional",
+     "base": 49
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 49,
+     "band": "conditional",
+     "base": 49
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 61,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 55
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 56,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 60,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 55
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 55
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 0,
+     "to_value": 1,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "conditional",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "80k-funding": {
+   "audit_status": "confirmed",
+   "id": "80k-funding",
+   "note": "CAIS advises xAI, not receiving OP money; SFF grants; METR not receiving OP recently; SecureBio SFF grant. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches",
+   "published": "2025-10-13",
+   "publisher": "80,000 Hours",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "It looks like there are some good funding opportunities in AI safety right now",
+   "url": "https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/",
+   "press_kind": "primary"
+  },
+  "anthropic-series-a": {
+   "id": "anthropic-series-a",
+   "title": "Anthropic raises $124 million Series A",
+   "publisher": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems",
+   "published": "2021-05-28",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Series A led by Jaan Tallinn with participation from Dustin Moskovitz. Self-published by the lab, not by any evaluator; used as the primary record that the principals of SFF (Tallinn) and Coefficient Giving (Moskovitz) are Anthropic investors. Shared record: identical in the palisade, cais, rand and hal files; ledger rows R01 and R02 already cite it.",
+   "self_of": "anthropic"
+  },
+  "cais": {
+   "audit_status": "confirmed",
+   "id": "cais",
+   "note": "WMDP, HLE benchmarks; director advises xAI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026",
+   "publisher": "CAIS",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Center for AI Safety",
+   "url": "https://safe.ai/",
+   "self_of": "cais"
+  },
+  "cais-research": {
+   "audit_status": "confirmed",
+   "id": "cais-research",
+   "note": "Research Projects page; benchmarks (AgentHarm, WMDP, MASK) evaluate leading LLMs; no privileged access claimed. Fetched 2026-09-15.",
+   "publisher": "Center for AI Safety",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "self_of": "cais",
+   "title": "Research Projects | CAIS",
+   "url": "https://safe.ai/research"
+  },
+  "cnbc-scale-meta": {
+   "id": "cnbc-scale-meta",
+   "title": "Scale AI not winding down following Meta deal, interim CEO says",
+   "publisher": "CNBC",
+   "url": "https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html",
+   "published": "2025-06-18",
+   "retrieved": "2026-09-15",
+   "note": "Meta 49% stake after $14.3B investment; interim CEO Jason Droege; Wang to Meta. [verify 2026-09-15 grok-pass] Full slug .../scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html. Meta $14.3B for 49%; Droege: 'unequivocally an independent company'. [verify 2026-09-15] independently read via browser task: 'Meta has a 49% stake in Scale AI after investing $14.3 billion into the startup' (CNBC, Jun 18 2025). 49% non-voting; deal closed the prior week; founder Alexandr Wang joined Meta.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "press_kind": "primary"
+  },
+  "lastexam-hle": {
+   "id": "lastexam-hle",
+   "title": "Humanity's Last Exam",
+   "publisher": "Center for AI Safety and Scale AI",
+   "url": "https://lastexam.ai/",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Author affiliations '1 Center for AI Safety, 2 Scale AI'; Nature citation lists CAIS, Scale AI and the contributors consortium as authors. Fetched 2026-09-15; span present.",
+   "self_of": "cais"
+  },
+  "sff-2025": {
+   "id": "sff-2025",
+   "title": "SFF-2025 S-Process Recommendations Announcement",
+   "publisher": "Survival and Flourishing Fund",
+   "url": "https://survivalandflourishing.fund/2025/recommendations",
+   "published": "2025",
+   "retrieved": "2026-09-14",
+   "note": "Funder Jaan Tallinn; $34.33M recommended; METR $548,000; Palisade $1,133,000; FAR AI $919,000; SaferAI $311,000; SecureBio $754,000; RAND TASP $1,022,000; CAIS $289,000.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "sff"
+  }
+ }
+}

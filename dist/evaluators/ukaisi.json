@@ -1,0 +1,1632 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/ukaisi.html"
+ },
+ "evaluator": {
+  "id": "ukaisi",
+  "name": "UK AI Security Institute",
+  "type": "gov",
+  "hq": "London, UK",
+  "domains": [
+   "cyber",
+   "bio",
+   "jailbreak",
+   "autonomy",
+   "assurance"
+  ],
+  "confidence": "high",
+  "summary": "Largest state evaluation team; 30+ models tested; Inspect open-sourced; Frontier AI Trends Report.",
+  "what_would_move_the_score": "Statutory footing with power to compel testing and publish per-model findings.",
+  "role": "government",
+  "dissent": {
+   "lower": "Publication (R) at 2 could be 1. The public record shows per-model findings from more than thirty tested systems have never been published; the only public output is one aggregated Trends Report, and CSA describes the underlying work as confidential between the Institute and individual labs. Under R.4 a public body that publishes nothing per model scores 1, and one aggregate report in two years is close to nothing per model.",
+   "higher": "Publication (R) at 2 could be 3. The Trends Report published an adverse finding against every lab at once: a universal jailbreak in every system tested. The joint evaluations with CAISI produced public write-ups of ChatGPT Agent vulnerabilities and Constitutional Classifier bypasses. No lab-edited summary is documented, and the anchor-3 text (publishes, security-only redaction) is closer to that record than lab-edited summaries."
+  },
+  "list_group": "government",
+  "graph_id": "evaluator#286",
+  "values": {
+   "F": 3,
+   "G": 3,
+   "P": 3,
+   "A": 3,
+   "S": 3,
+   "R": 2,
+   "M": 3,
+   "X": 4
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 4
+   },
+   "standard": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 4
+   },
+   "against_interest": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 4
+   },
+   "spans": {
+    "F": 3,
+    "G": 3,
+    "P": 3,
+    "A": 3,
+    "S": 3,
+    "R": 2,
+    "M": 3,
+    "X": 4
+   },
+   "primary": {
+    "F": null,
+    "G": 3,
+    "P": 3,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.01",
+     "ukaisi.11",
+     "ukaisi.12",
+     "ukaisi.15"
+    ],
+    "rationale": "Anchor 3: public core budget, but the institute runs a lab-funded grant pool, which is lab money passing through it even if not into its evaluation budget.",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "open_questions": [
+     "Whether Alignment Project funds touch evaluation staff or infrastructure."
+    ],
+    "graph_id": "assessment#865",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.11",
+       "ukaisi.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.11",
+       "ukaisi.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.11",
+       "ukaisi.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "ukaisi.15"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.11",
+       "ukaisi.12"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.01",
+       "ukaisi.11",
+       "ukaisi.12",
+       "ukaisi.15"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by ukaisi.11 (F.9): AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.; capped at 3 by ukaisi.12 (F.9): The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.. Floors up to 3 from ukaisi.01, ukaisi.15 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by ukaisi.11 (F.9): AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.; capped at 3 by ukaisi.12 (F.9): The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.. Floors up to 3 from ukaisi.01, ukaisi.15 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "ukaisi",
+    "dimension": "G",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.08"
+    ],
+    "rationale": "Anchor 3: public body with civil-service conflict rules (ukaisi.08). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).",
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#866",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "ukaisi.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     }
+    },
+    "rationale_derived": "Floored at 3 by ukaisi.08 (G.2): Public body with civil-service conflict rules.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by ukaisi.08 (G.2): Public body with civil-service conflict rules.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "ukaisi",
+    "dimension": "P",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.07",
+     "ukaisi.13"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#867",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "ukaisi.07"
+      ]
+     },
+     "primary": {
+      "v": 3,
+      "b": [
+       "ukaisi.13"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "ukaisi.07"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by ukaisi.13 (P.5): AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by ukaisi.13 (P.5): AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.. No admissible signal caps it."
+   },
+   "A": {
+    "evaluator": "ukaisi",
+    "dimension": "A",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.05",
+     "ukaisi.06"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#868",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.05",
+       "ukaisi.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by ukaisi.06 (A.4): Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by ukaisi.06 (A.4): Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "ukaisi",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.09",
+     "ukaisi.14"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#869",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.14"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.09",
+       "ukaisi.14"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by ukaisi.14 (S.4): No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.. Floors up to 3 from ukaisi.09 do not exceed the cap.",
+    "rationale_leads": "Capped at 3 by ukaisi.14 (S.4): No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.. Floors up to 3 from ukaisi.09 do not exceed the cap."
+   },
+   "R": {
+    "evaluator": "ukaisi",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "ukaisi.03",
+     "ukaisi.04"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "mechanism": "statutory",
+    "graph_id": "assessment#870",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "ukaisi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "ukaisi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "ukaisi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "ukaisi.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.03",
+       "ukaisi.04"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by ukaisi.04 (R.4): Most per-model results stay confidential; the public sees aggregated trends.. Floors up to 2 from ukaisi.03 do not exceed the cap.",
+    "rationale_leads": "Capped at 2 by ukaisi.04 (R.4): Most per-model results stay confidential; the public sees aggregated trends.. Floors up to 2 from ukaisi.03 do not exceed the cap."
+   },
+   "M": {
+    "evaluator": "ukaisi",
+    "dimension": "M",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "ukaisi.02"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#871",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "ukaisi.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "ukaisi.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "ukaisi.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "ukaisi.02"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.02"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by ukaisi.02 (M.1): Open-source Inspect framework and published methodology.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by ukaisi.02 (M.1): Open-source Inspect framework and published methodology.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "ukaisi",
+    "dimension": "X",
+    "value": 4,
+    "anchor": 4,
+    "signals": [
+     "ukaisi.10"
+    ],
+    "assessed": "2026-09-14",
+    "assessor": "yohei/claude v0",
+    "graph_id": "assessment#872",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 4,
+      "b": [
+       "ukaisi.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 4,
+      "b": [
+       "ukaisi.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 4,
+      "b": [
+       "ukaisi.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 4,
+      "b": [
+       "ukaisi.10"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "ukaisi.10"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 4 by ukaisi.10 (X.7): No commercial products.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 4 by ukaisi.10 (X.7): No commercial products.. No admissible signal caps it."
+   }
+  },
+  "signals": [
+   {
+    "id": "ukaisi.01",
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Taxpayer funded; no commercial relationship with labs.",
+    "sources": [
+     "regulations-ai-aisi",
+     "ukaisi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "internal technical research directorate within the Department for Science, Innovation and Technology",
+    "quote_source": "regulations-ai-aisi",
+    "graph_id": "signal#642",
+    "source_graph_ids": [
+     "source#204",
+     "source#243"
+    ]
+   },
+   {
+    "id": "ukaisi.02",
+    "evaluator": "ukaisi",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Open-source Inspect framework and published methodology.",
+    "sources": [
+     "csa-aisi-trends",
+     "ukaisi-inspect"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "M.1",
+    "quote": "An open-source framework for large language model evaluations",
+    "quote_source": "ukaisi-inspect",
+    "graph_id": "signal#643",
+    "source_graph_ids": [
+     "source#68",
+     "source#246"
+    ]
+   },
+   {
+    "id": "ukaisi.03",
+    "evaluator": "ukaisi",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report.",
+    "sources": [
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "quote": "AISI found universal jailbreaks across every tested system",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.4",
+    "quote_source": "csa-aisi-trends",
+    "graph_id": "signal#644",
+    "source_graph_ids": [
+     "source#68"
+    ]
+   },
+   {
+    "id": "ukaisi.04",
+    "evaluator": "ukaisi",
+    "dimension": "R",
+    "direction": "against",
+    "claim": "Most per-model results stay confidential; the public sees aggregated trends.",
+    "sources": [
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "R.4",
+    "quote": "evaluation work that would otherwise remain confidential between the Institute and individual AI labs",
+    "quote_source": "csa-aisi-trends",
+    "graph_id": "signal#645",
+    "source_graph_ids": [
+     "source#68"
+    ]
+   },
+   {
+    "id": "ukaisi.05",
+    "evaluator": "ukaisi",
+    "dimension": "A",
+    "direction": "against",
+    "claim": "No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026.",
+    "sources": [
+     "csa-aisi-trends",
+     "regulations-ai-aisi"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": null,
+    "rule": "A.3",
+    "bound_note": "A.3: \"the lab can decline to renew\" is recorded as a mechanism (lab-controlled), not as a cap.",
+    "quote": "the bill had not yet been introduced to Parliament",
+    "quote_source": "csa-aisi-trends",
+    "graph_id": "signal#646",
+    "source_graph_ids": [
+     "source#68",
+     "source#204"
+    ]
+   },
+   {
+    "id": "ukaisi.06",
+    "evaluator": "ukaisi",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.",
+    "sources": [
+     "aiwiki-ukaisi",
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "A.4",
+    "quote": "running pre-deployment and post-deployment evaluations of the most capable models released by major AI developers",
+    "quote_source": "csa-aisi-trends",
+    "graph_id": "signal#647",
+    "source_graph_ids": [
+     "source#14",
+     "source#68"
+    ]
+   },
+   {
+    "id": "ukaisi.07",
+    "evaluator": "ukaisi",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Staff move between the institute and labs in both directions.",
+    "sources": [
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": null,
+    "rule": "P.3",
+    "bound_note": "P.3: two-way hiring caps at 2, but \"a statutory post-employment rule for the body's staff lifts the cap\"; the Business Appointment Rules (new signal ukaisi.13) lift it. Absent ukaisi.13 this signal caps P at 2.",
+    "graph_id": "signal#648",
+    "source_graph_ids": [
+     "source#68"
+    ]
+   },
+   {
+    "id": "ukaisi.08",
+    "evaluator": "ukaisi",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Public body with civil-service conflict rules.",
+    "sources": [
+     "regulations-ai-aisi",
+     "ukaisi-civil-service-code"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "G.2",
+    "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+    "quote_source": "regulations-ai-aisi",
+    "graph_id": "signal#649",
+    "source_graph_ids": [
+     "source#204",
+     "source#245"
+    ]
+   },
+   {
+    "id": "ukaisi.09",
+    "evaluator": "ukaisi",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Sets its own evaluation agenda within MOU terms.",
+    "sources": [
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.4",
+    "quote": "AISI’s voluntary testing arrangements with frontier developers remain the primary mechanism",
+    "quote_source": "csa-aisi-trends",
+    "graph_id": "signal#650",
+    "source_graph_ids": [
+     "source#68"
+    ]
+   },
+   {
+    "id": "ukaisi.10",
+    "evaluator": "ukaisi",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products.",
+    "sources": [
+     "regulations-ai-aisi",
+     "ukaisi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 4
+    },
+    "rule": "X.7",
+    "quote": "The Institute is an advisory technical research body rather than a formal regulator",
+    "quote_source": "regulations-ai-aisi",
+    "graph_id": "signal#651",
+    "source_graph_ids": [
+     "source#204",
+     "source#243"
+    ]
+   },
+   {
+    "id": "ukaisi.11",
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.",
+    "sources": [
+     "aisi-grants",
+     "alignment-project-about",
+     "ukaisi-about"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.9",
+    "quote": "OpenAI, Microsoft, Amazon Web Services (AWS), Schmidt Sciences, Anthropic",
+    "quote_source": "alignment-project-about",
+    "graph_id": "signal#652",
+    "source_graph_ids": [
+     "source#13",
+     "source#15",
+     "source#243"
+    ]
+   },
+   {
+    "id": "ukaisi.12",
+    "evaluator": "ukaisi",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.",
+    "sources": [
+     "aisi-alignment-60",
+     "alignment-project-about",
+     "openai-alignment-project"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-02",
+    "quote": "including £5.6m from OpenAI",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.9",
+    "quote_source": "aisi-alignment-60",
+    "graph_id": "signal#653",
+    "source_graph_ids": [
+     "source#12",
+     "source#15",
+     "source#174"
+    ]
+   },
+   {
+    "id": "ukaisi.13",
+    "evaluator": "ukaisi",
+    "dimension": "P",
+    "direction": "for",
+    "claim": "AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.",
+    "sources": [
+     "ukaisi-civil-service-code",
+     "ukaisi-bar-crown",
+     "ukaisi-about"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "P.5",
+    "quote": "two years after leaving Crown service, if you are grade SCS1 or SCS2",
+    "quote_source": "ukaisi-bar-crown",
+    "note": "Statutory post-employment rules count as cooling-off (P.3) and lift the two-way-hiring cap; the Code is a published mandatory conflict rule (P.5). Individual lab ties are declared to the department, not published, so 3 not 4 (P.8 needs disclosed ties and no equity with tier-1 evidence).",
+    "graph_id": "signal#654",
+    "source_graph_ids": [
+     "source#245",
+     "source#244",
+     "source#243"
+    ]
+   },
+   {
+    "id": "ukaisi.14",
+    "evaluator": "ukaisi",
+    "dimension": "S",
+    "direction": "against",
+    "claim": "No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.",
+    "sources": [
+     "regulations-ai-aisi",
+     "csa-aisi-trends"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "S.4",
+    "quote": "The institute cannot fine, audit, or directly penalise model developers",
+    "quote_source": "regulations-ai-aisi",
+    "note": "Voluntary memoranda: 3 (S.4). Statutory scope power would be 4.",
+    "graph_id": "signal#655",
+    "source_graph_ids": [
+     "source#204",
+     "source#68"
+    ]
+   },
+   {
+    "evaluator": "ukaisi",
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.6 (re-derivation)",
+    "as_of": "2026-09-15",
+    "id": "ukaisi.15",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Alignment Project grants are contracted and paid by each funder directly to the host organisation; DSIT/AISI's own grants are statutory grants under section 5 of the Science and Technology Act 1965 managed by an AISI research lead, and other funders issue their own terms, so OpenAI's £5.6m is not received into AISI's budget even though AISI runs the selection.",
+    "sources": [
+     "alignment-project-cq-pdf",
+     "alignment-project-how-to-apply",
+     "alignment-project-gfa-example"
+    ],
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.9",
+    "quote": "the Funding Agreement (GFA) will be between the funder(s) and the host organisation only",
+    "quote_source": "alignment-project-cq-pdf",
+    "graph_id": "signal#656",
+    "source_graph_ids": [
+     "source#16",
+     "source#18",
+     "source#17"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 73,
+   "regulator": 71,
+   "public": 71,
+   "equal": 75
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "regulator": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "public": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "regulator": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "public": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "regulator": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "public": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 73,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      73,
+      73
+     ]
+    },
+    "regulator": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "public": {
+     "score": 71,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      71,
+      71
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      75,
+      75
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      14,
+      96
+     ]
+    },
+    "regulator": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      15,
+      95
+     ]
+    },
+    "public": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      23,
+      93
+     ]
+    },
+    "equal": {
+     "score": 75,
+     "band": "clear",
+     "coverage": 2,
+     "range": [
+      19,
+      94
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "R",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 77,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 77,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 76,
+     "band": "clear",
+     "base": 73
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 73
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 76,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 75,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 71
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 75,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 73,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 74,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 76,
+     "band": "clear",
+     "base": 71
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 73,
+     "band": "clear",
+     "base": 71
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "G",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "P",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "A",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    },
+    {
+     "dimension": "M",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 78,
+     "band": "clear",
+     "base": 75
+    }
+   ]
+  }
+ },
+ "sources": {
+  "aisi-alignment-60": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "aisi-alignment-60",
+   "note": "£12m additional funding bringing the Alignment Project to £27m, including £5.6m from OpenAI. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-02",
+   "publisher": "UK AI Security Institute",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Funding 60 projects to advance AI alignment research",
+   "url": "https://www.aisi.gov.uk/blog/funding-60-projects-to-advance-ai-alignment-research",
+   "self_of": "ukaisi"
+  },
+  "aisi-grants": {
+   "audit_status": "confirmed",
+   "id": "aisi-grants",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV11",
+   "note": "GBP 27m coalition incl. GBP 5.6m from OpenAI plus Anthropic, Microsoft, AWS and others; awards up to GBP 1m per project. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025",
+   "publisher": "UK AI Security Institute",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Alignment Project grants",
+   "url": "https://www.aisi.gov.uk/grants",
+   "self_of": "ukaisi"
+  },
+  "aiwiki-ukaisi": {
+   "audit_status": "confirmed",
+   "id": "aiwiki-ukaisi",
+   "note": "Microsoft parallel agreements May 2026; Cohere MOU; publication terms. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-05-07",
+   "publisher": "AI Wiki",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "UK AI Security Institute",
+   "url": "https://aiwiki.ai/wiki/uk_aisi",
+   "press_kind": "aggregator"
+  },
+  "alignment-project-about": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "alignment-project-about",
+   "note": "Backers: UK AISI, Canadian AISI, CIFAR, Australian AISI, OpenAI, Microsoft, AWS, Anthropic, Schmidt Sciences, AI Safety Tactical Opportunities Fund, Halcyon Futures, Safe AI Fund, Sympatico Ventures, UKRI, ARIA; administered with Renaissance Philanthropy. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 — needs curator review [verify 2026-09-15 grok-pass] Fund >GBP 27M; backers incl. OpenAI, Microsoft, AWS, Anthropic, Schmidt, AISI/CAISI/CIFAR; no per-backer split.",
+   "published": "2026",
+   "publisher": "UK AI Security Institute",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "About the Alignment Project",
+   "url": "https://alignmentproject.aisi.gov.uk/about",
+   "self_of": "ukaisi"
+  },
+  "alignment-project-cq-pdf": {
+   "id": "alignment-project-cq-pdf",
+   "title": "The Alignment Project - Clarification Questions V2.0 (PDF)",
+   "publisher": "The Alignment Project (UK AI Security Institute)",
+   "url": "https://aisi.s3.eu-west-2.amazonaws.com/0825/The+Alignment+Project+-+Clarification+Questions+V2.0+(1).pdf",
+   "published": "2025-08",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "States the GFA is between the funder(s) and the host organisation only, funds are paid directly to the host organisation, the project is a coalition of funders some of which accept for-profit applicants, for-profits may receive venture capital investment while non-profits receive grants, eligible applications go to the Research Sponsors for review and a formal assessment panel independent of the Research Sponsors reviews full applications.",
+   "self_of": "ukaisi"
+  },
+  "alignment-project-gfa-example": {
+   "id": "alignment-project-gfa-example",
+   "title": "Example of DSIT-AISI Grant Funding Agreement (PDF)",
+   "publisher": "Department for Science, Innovation and Technology / AI Security Institute",
+   "url": "https://aisi.s3.eu-west-2.amazonaws.com/0825/Example+of+DSIT-AISI+Grant+Funding+Agreement.pdf",
+   "published": "2025-08",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "'The Grant is made pursuant to section 5 of the Science and Technologies Act 1965' (sic); the Authority is the Secretary of State; grant manager 'AISI Research Lead'; monthly grant review and reporting.",
+   "self_of": "ukaisi"
+  },
+  "alignment-project-how-to-apply": {
+   "id": "alignment-project-how-to-apply",
+   "title": "How to apply",
+   "publisher": "The Alignment Project (UK AI Security Institute)",
+   "url": "https://alignmentproject.aisi.gov.uk/how-to-apply",
+   "published": "2025-07-30",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Applications through the DSIT Funding Portal; AISI notifies outcomes; payments monthly in arrears; 'The GFA for DSIT/AISI funded projects is standard and not subject to negotiation'; 'Other funders may issue different terms and conditions as part of their GFA'; contact aisialignmentproject@dsit.gov.uk.",
+   "self_of": "ukaisi"
+  },
+  "csa-aisi-trends": {
+   "audit_status": "confirmed",
+   "id": "csa-aisi-trends",
+   "note": "Frontier AI Bill promised, not introduced; voluntary MOUs; universal jailbreaks found; 30+ models. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched 2026-09-15; page loads, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026-07-12",
+   "publisher": "Cloud Security Alliance",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "UK AISI's Frontier AI Trends Report: Security Implications",
+   "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/",
+   "press_kind": "primary"
+  },
+  "openai-alignment-project": {
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "id": "openai-alignment-project",
+   "note": "OpenAI states its funding does not create a new program or selection process nor influence the existing process. [verify 2026-09-15] reachable BUT span(s) not found: ukaisi.12 — needs curator review [verify 2026-09-15 grok-pass] OpenAI $7.5M (~GBP 5.6M) into the Alignment Project fund.",
+   "published": "2026",
+   "publisher": "OpenAI",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "title": "Advancing independent research on AI alignment",
+   "url": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+   "self_of": "openai"
+  },
+  "regulations-ai-aisi": {
+   "audit_status": "confirmed",
+   "id": "regulations-ai-aisi",
+   "note": "No statutory enforcement powers; voluntary testing. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2026-09",
+   "publisher": "Regulations.ai",
+   "retrieved": "2026-09-14",
+   "source_type": "press",
+   "title": "AI Security Institute (renaming)",
+   "url": "https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025",
+   "press_kind": "aggregator"
+  },
+  "ukaisi-about": {
+   "id": "ukaisi-about",
+   "title": "About the AI Security Institute",
+   "publisher": "UK AI Security Institute",
+   "url": "https://www.aisi.gov.uk/about",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Institute About page: \"research organisation within the UK government's Department for Science, Innovation and Technology\"; \"£66m in funding per financial year\". Fetched 2026-09-15 with the CI normalizer; spans present.",
+   "self_of": "ukaisi"
+  },
+  "ukaisi-bar-crown": {
+   "id": "ukaisi-bar-crown",
+   "title": "Business Appointment Rules for Crown Servants: guidance",
+   "publisher": "GOV.UK (Cabinet Office)",
+   "url": "https://www.gov.uk/government/publications/business-appointment-rules-for-crown-servants/business-appointment-rules-for-crown-servants-guidance",
+   "published": "2025",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Post-employment rules for civil servants: one year after leaving for grade 6 and below, two years for SCS1/SCS2 and above. Typed filing as a primary legal instrument. Fetched 2026-09-15; span present."
+  },
+  "ukaisi-civil-service-code": {
+   "id": "ukaisi-civil-service-code",
+   "title": "The Civil Service Code",
+   "publisher": "GOV.UK (Cabinet Office)",
+   "url": "https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code",
+   "published": "2015-03-16",
+   "retrieved": "2026-09-15",
+   "source_type": "filing",
+   "audit_status": "confirmed",
+   "note": "Statutory guidance under Part 1 of the Constitutional Reform and Governance Act 2010; typed filing as a primary legal instrument, not a self-publication of the institute. Bars misuse of official position for private interests and gifts that compromise judgement. Fetched 2026-09-15; span present."
+  },
+  "ukaisi-inspect": {
+   "id": "ukaisi-inspect",
+   "title": "Inspect: an open-source framework for large language model evaluations",
+   "publisher": "UK AI Security Institute",
+   "url": "https://inspect.aisi.org.uk/",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "note": "Inspect documentation: \"An open-source framework for large language model evaluations\"; \"developed by the UK AI Security Institute and Meridian Labs\". Fetched 2026-09-15; span present.",
+   "self_of": "ukaisi"
+  }
+ }
+}

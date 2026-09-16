@@ -1,0 +1,1619 @@
+{
+ "meta": {
+  "version": 2,
+  "rules": "RULES.md v0.1 (2026-09-15)",
+  "default_policy": "standard",
+  "built_at": "2026-09-15T00:00:00Z",
+  "page_url": "https://yoheinakajima.github.io/evaluator-bench/entity/far-ai.html"
+ },
+ "evaluator": {
+  "id": "farai",
+  "name": "FAR.AI",
+  "type": "nonprofit",
+  "hq": "Berkeley, US",
+  "domains": [
+   "jailbreak",
+   "bio",
+   "cyber",
+   "misuse"
+  ],
+  "confidence": "high",
+  "summary": "Red-teaming and adversarial-robustness nonprofit; leads the EU AI Office CBRN risk-modelling contract.",
+  "what_would_move_the_score": "Disclose the AI Safety Fund share of budget and whether lab-funded pools are excluded from evaluation work.",
+  "role": "referee",
+  "dissent": {
+   "lower": "Access could be 0. No cited source records the terms of any lab engagement: the wiki says FAR.AI began red-teaming leading models for frontier labs in late 2023 and that publicly confirmed engagements include OpenAI, but neither it nor the $30M post shows pre-release checkpoints, safeguards off, or logs. Anchor 0 is public API only, and that is all the record demonstrates; the EU contract is a regulator engagement, not lab access.",
+   "higher": "Access could be 2. OpenAI's GPT-5 system card credits FAR.AI with 80 hours of red-teaming before release, and pre-release red-teamers typically test early checkpoints under relaxed safeguards; the transparency page describes engagements with companies building frontier models under NDA. If the engagement terms show safeguards off or extended windows, anchor 2 applies, and helpful-only or log access would reach 3."
+  },
+  "list_group": "referee",
+  "graph_id": "evaluator#269",
+  "values": {
+   "F": 3,
+   "G": 2,
+   "P": 2,
+   "A": 1,
+   "S": 3,
+   "R": 2,
+   "M": 2,
+   "X": 2
+  },
+  "values_by_policy": {
+   "leads": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "standard": {
+    "F": 3,
+    "G": 2,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "against_interest": {
+    "F": 3,
+    "G": null,
+    "P": 2,
+    "A": 1,
+    "S": 3,
+    "R": null,
+    "M": null,
+    "X": 2
+   },
+   "spans": {
+    "F": 3,
+    "G": 2,
+    "P": null,
+    "A": 1,
+    "S": 3,
+    "R": 2,
+    "M": 2,
+    "X": 2
+   },
+   "primary": {
+    "F": null,
+    "G": null,
+    "P": null,
+    "A": null,
+    "S": null,
+    "R": null,
+    "M": null,
+    "X": null
+   }
+  },
+  "assessments": {
+   "F": {
+    "evaluator": "farai",
+    "dimension": "F",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "farai.01",
+     "farai.02",
+     "farai.10",
+     "farai.12",
+     "farai.14",
+     "farai.17",
+     "farai.16"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "graph_id": "assessment#729",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "farai.02",
+       "farai.12",
+       "farai.17",
+       "farai.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "farai.02",
+       "farai.12",
+       "farai.17",
+       "farai.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "farai.14"
+      ]
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "farai.02",
+       "farai.12",
+       "farai.17",
+       "farai.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "farai.01",
+       "farai.10",
+       "farai.14"
+      ]
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "farai.02",
+       "farai.12",
+       "farai.17",
+       "farai.16"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "farai.14"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.01",
+       "farai.02",
+       "farai.10",
+       "farai.12",
+       "farai.14",
+       "farai.16",
+       "farai.17"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 3 by farai.02 (F.6): Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.; capped at 3 by farai.12 (F.6): Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.; capped at 3 by farai.17 (F.6): Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.; capped at 3 by farai.16 (F.3): FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.. Floors up to 3 from farai.01, farai.10 do not exceed the cap. Not counted under this policy: farai.14 (no confirmed source (unaudited)).",
+    "rationale_leads": "Capped at 3 by farai.02 (F.6): Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.; capped at 3 by farai.12 (F.6): Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.; capped at 3 by farai.17 (F.6): Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.; capped at 3 by farai.16 (F.3): FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.. Floors up to 3 from farai.01, farai.10, farai.14 do not exceed the cap."
+   },
+   "G": {
+    "evaluator": "farai",
+    "dimension": "G",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "farai.05"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#730",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "farai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "farai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.05"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "farai.05"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.05"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by farai.05 (G.1): Nonprofit with diversified disclosed funders.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by farai.05 (G.1): Nonprofit with diversified disclosed funders.. No admissible signal caps it."
+   },
+   "P": {
+    "evaluator": "farai",
+    "dimension": "P",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "farai.07"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#731",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "farai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "farai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "farai.07"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.07"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.07"
+      ]
+     }
+    },
+    "rationale_derived": "Capped at 2 by farai.07 (P.3): Runs field-building programs that place researchers into labs..",
+    "rationale_leads": "Capped at 2 by farai.07 (P.3): Runs field-building programs that place researchers into labs.."
+   },
+   "A": {
+    "evaluator": "farai",
+    "dimension": "A",
+    "value": 1,
+    "anchor": 1,
+    "signals": [
+     "farai.06"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "lab-controlled",
+    "graph_id": "assessment#732",
+    "evidence_tier": "tier 4 (press)",
+    "derived": {
+     "leads": {
+      "v": 1,
+      "b": [
+       "farai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 1,
+      "b": [
+       "farai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 1,
+      "b": [
+       "farai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 1,
+      "b": [
+       "farai.06"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.06"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 1 by farai.06 (A.1): Pre- and post-deployment red teaming for labs and EU bodies.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 1 by farai.06 (A.1): Pre- and post-deployment red teaming for labs and EU bodies.. No admissible signal caps it."
+   },
+   "S": {
+    "evaluator": "farai",
+    "dimension": "S",
+    "value": 3,
+    "anchor": 3,
+    "signals": [
+     "farai.03",
+     "farai.11",
+     "farai.13"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "yohei/claude v1.0",
+    "graph_id": "assessment#733",
+    "evidence_tier": "tier 1 (filing/index)",
+    "derived": {
+     "leads": {
+      "v": 3,
+      "b": [
+       "farai.03",
+       "farai.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 3,
+      "b": [
+       "farai.03",
+       "farai.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 3,
+      "b": [
+       "farai.03",
+       "farai.11"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 3,
+      "b": [
+       "farai.03"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": [
+       "farai.11"
+      ]
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.03",
+       "farai.11",
+       "farai.13"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 3 by farai.03 (S.3): Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.; floored at 3 by farai.11 (S.3): Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 3 by farai.03 (S.3): Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.; floored at 3 by farai.11 (S.3): Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.. No admissible signal caps it."
+   },
+   "R": {
+    "evaluator": "farai",
+    "dimension": "R",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "farai.04"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "mechanism": "self-imposed",
+    "graph_id": "assessment#734",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "farai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "farai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.04"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "farai.04"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.04"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by farai.04 (R.7): Publishes jailbreak and stress-test results across vendors.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by farai.04 (R.7): Publishes jailbreak and stress-test results across vendors.. No admissible signal caps it."
+   },
+   "M": {
+    "evaluator": "farai",
+    "dimension": "M",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "farai.08"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "graph_id": "assessment#735",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "farai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "farai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.08"
+      ]
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "farai.08"
+      ],
+      "h": false,
+      "c": false,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.08"
+      ]
+     }
+    },
+    "rationale_derived": "Floored at 2 by farai.08 (M.2): Publishes methods and papers.. No admissible signal caps it.",
+    "rationale_leads": "Floored at 2 by farai.08 (M.2): Publishes methods and papers.. No admissible signal caps it."
+   },
+   "X": {
+    "evaluator": "farai",
+    "dimension": "X",
+    "value": 2,
+    "anchor": 2,
+    "signals": [
+     "farai.09",
+     "farai.15"
+    ],
+    "assessed": "2026-09-15",
+    "assessor": "rules v0.1 (RULES.md)",
+    "resolution": {
+     "rule": "X.3",
+     "value": 2,
+     "note": "FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free."
+    },
+    "graph_id": "assessment#736",
+    "evidence_tier": "tier 3 (self)",
+    "derived": {
+     "leads": {
+      "v": 2,
+      "b": [
+       "farai.15"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "standard": {
+      "v": 2,
+      "b": [
+       "farai.15"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "against_interest": {
+      "v": 2,
+      "b": [
+       "farai.15"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "spans": {
+      "v": 2,
+      "b": [
+       "farai.15"
+      ],
+      "h": false,
+      "c": true,
+      "u": false,
+      "x": []
+     },
+     "primary": {
+      "v": null,
+      "b": [],
+      "h": false,
+      "c": false,
+      "u": true,
+      "x": [
+       "farai.09",
+       "farai.15"
+      ]
+     }
+    },
+    "rationale_derived": "Conflict: floor 3 from farai.09 (X.4) against cap 2 from farai.15 (X.3); resolved at 2 by X.3: FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free.",
+    "rationale_leads": "Conflict: floor 3 from farai.09 (X.4) against cap 2 from farai.15 (X.3); resolved at 2 by X.3: FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free."
+   }
+  },
+  "signals": [
+   {
+    "id": "farai.01",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "More than $30M in 2025 commitments from Coefficient Giving, Schmidt Sciences, SFF and CSET.",
+    "sources": [
+     "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.12",
+    "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+    "quote_source": "far-30m",
+    "graph_id": "signal#409",
+    "source_graph_ids": [
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.02",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.",
+    "sources": [
+     "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "the AI Safety Fund (AISF), supported by the Frontier Model Forum (FMF)",
+    "quote_source": "far-30m",
+    "graph_id": "signal#410",
+    "source_graph_ids": [
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.03",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.",
+    "sources": [
+     "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.3",
+    "quote": "FAR AI was selected by the European Commission's AI Office to lead Lot 1 (CBRN Risk Modelling and Evaluation)",
+    "quote_source": "longtermwiki-far",
+    "graph_id": "signal#411",
+    "source_graph_ids": [
+     "source#127"
+    ]
+   },
+   {
+    "id": "farai.04",
+    "evaluator": "farai",
+    "dimension": "R",
+    "direction": "for",
+    "claim": "Publishes jailbreak and stress-test results across vendors.",
+    "sources": [
+     "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "R.7",
+    "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+    "quote_source": "far-30m",
+    "graph_id": "signal#412",
+    "source_graph_ids": [
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.05",
+    "evaluator": "farai",
+    "dimension": "G",
+    "direction": "for",
+    "claim": "Nonprofit with diversified disclosed funders.",
+    "sources": [
+     "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "G.1",
+    "quote": "FAR.AI is an independent nonprofit research organization",
+    "quote_source": "far-30m",
+    "graph_id": "signal#413",
+    "source_graph_ids": [
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.06",
+    "evaluator": "farai",
+    "dimension": "A",
+    "direction": "for",
+    "claim": "Pre- and post-deployment red teaming for labs and EU bodies.",
+    "sources": [
+     "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 1
+    },
+    "rule": "A.1",
+    "quote": "FAR AI began red-teaming leading language models for frontier labs in Q4 2023, including red-teaming of GPT-4",
+    "quote_source": "longtermwiki-far",
+    "graph_id": "signal#414",
+    "source_graph_ids": [
+     "source#127"
+    ]
+   },
+   {
+    "id": "farai.07",
+    "evaluator": "farai",
+    "dimension": "P",
+    "direction": "against",
+    "claim": "Runs field-building programs that place researchers into labs.",
+    "sources": [
+     "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "P.3",
+    "note": "[span 2026-09-16] Span pending: longtermwiki FAR page would not load via text fetch; retry with a browser fetch. (Direction recorded as against.)",
+    "graph_id": "signal#415",
+    "source_graph_ids": [
+     "source#127"
+    ]
+   },
+   {
+    "id": "farai.08",
+    "evaluator": "farai",
+    "dimension": "M",
+    "direction": "for",
+    "claim": "Publishes methods and papers.",
+    "sources": [
+     "far-30m"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 2
+    },
+    "rule": "M.2",
+    "quote": "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming",
+    "quote_source": "far-30m",
+    "graph_id": "signal#416",
+    "source_graph_ids": [
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.09",
+    "evaluator": "farai",
+    "dimension": "X",
+    "direction": "for",
+    "claim": "No commercial products; consulting limited to governments.",
+    "sources": [
+     "longtermwiki-far"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "X.4",
+    "quote": "FAR AI conducts empirical technical AI safety research without developing or deploying AI products of its own",
+    "quote_source": "longtermwiki-far",
+    "graph_id": "signal#417",
+    "source_graph_ids": [
+     "source#127"
+    ]
+   },
+   {
+    "id": "farai.10",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "Published cap: revenue from for-profit AI developers limited to 10% of annual revenue, charged at market rates with publication rights retained; TY2024 earned revenue $429K of $24.3M.",
+    "sources": [
+     "far-transparency"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.3",
+    "quote_source": "far-transparency",
+    "graph_id": "signal#418",
+    "source_graph_ids": [
+     "source#98"
+    ]
+   },
+   {
+    "id": "farai.11",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.",
+    "sources": [
+     "ted-864574"
+    ],
+    "recorded": "2026-09-14",
+    "curator": "yohei/claude v0.4",
+    "as_of": "2026-09-14",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "S.3",
+    "note": "[span 2026-09-16] EUR 1.43M and consortium confirmed by ted-864574-notice (repo-confirmed 2026-09-15, AUDIT-5); award-notice page would not load via text fetch; span pending.",
+    "graph_id": "signal#419",
+    "source_graph_ids": [
+     "source#231"
+    ]
+   },
+   {
+    "id": "farai.12",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.",
+    "sources": [
+     "op-far-general-support",
+     "far-30m"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2025-09",
+    "quote": "FAR.AI has secured over $30 million in funding commitments throughout 2025",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote_source": "far-30m",
+    "graph_id": "signal#420",
+    "source_graph_ids": [
+     "source#162",
+     "source#97"
+    ]
+   },
+   {
+    "id": "farai.13",
+    "evaluator": "farai",
+    "dimension": "S",
+    "direction": "for",
+    "claim": "Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+    "sources": [
+     "founderspledge-frontier"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026",
+    "bound": null,
+    "rule": "S.3",
+    "bound_note": "Section 9 (mis-dimensioned facts): a grant is a funding fact; informational on S and re-recorded on F as farai.17 (F.6). The regulator-client fact is already carried by farai.03 and farai.11.",
+    "quote": "The grant funds the evaluations FAR.AI is now developing for the EU AI Office's consortium on manipulation",
+    "quote_source": "founderspledge-frontier",
+    "graph_id": "signal#421",
+    "source_graph_ids": [
+     "source#103"
+    ]
+   },
+   {
+    "id": "farai.14",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "for",
+    "claim": "A third-party wiki records a 10% cap on for-profit developer revenue. FY2024 revenue of $24.3M against $8.6M expenses is per the same source; span not yet captured.",
+    "sources": [
+     "longtermwiki-far-cap"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v1.0",
+    "as_of": "2026-09-15",
+    "quote": "caps revenue from for-profit AI developers at 10% of total annual revenue",
+    "bound": {
+     "floor": 3
+    },
+    "rule": "F.3",
+    "quote_source": "longtermwiki-far-cap",
+    "graph_id": "signal#422",
+    "source_graph_ids": [
+     "source#126"
+    ]
+   },
+   {
+    "id": "farai.15",
+    "evaluator": "farai",
+    "dimension": "X",
+    "direction": "against",
+    "claim": "FAR.AI's transparency page publishes a consulting policy whose clients include companies building frontier AI models, charged at market rates, with revenue from for-profit developers capped at 10% of annual revenue; TY2024 earned revenue was $429K.",
+    "sources": [
+     "far-transparency"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 2
+    },
+    "rule": "X.3",
+    "quote": "we charge market rates to for-profit developers to avoid subsidizing private actors",
+    "quote_source": "far-transparency",
+    "note": "X.3: paid consultation or framework work for a lab caps at 2, and consulting clients on a transparency page count. Tension noted with section 10 (lab fees for the evaluation itself change funding, not class); the page frames this as consulting, not evaluation.",
+    "graph_id": "signal#423",
+    "source_graph_ids": [
+     "source#98"
+    ]
+   },
+   {
+    "id": "farai.17",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.",
+    "sources": [
+     "founderspledge-frontier"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.6",
+    "quote": "FAR.AI Integrity Team ($500,000)",
+    "quote_source": "founderspledge-frontier",
+    "note": "F.6: grants through donor-advised funds whose underlying donors are not public cap at 3. Re-recorded from farai.13 under section 9.",
+    "graph_id": "signal#424",
+    "source_graph_ids": [
+     "source#103"
+    ]
+   },
+   {
+    "id": "farai.16",
+    "evaluator": "farai",
+    "dimension": "F",
+    "direction": "against",
+    "claim": "FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.",
+    "sources": [
+     "far-transparency"
+    ],
+    "recorded": "2026-09-15",
+    "curator": "yohei/claude v0.5",
+    "bound": {
+     "cap": 3
+    },
+    "rule": "F.3",
+    "quote": "is capped at a maximum of 10% of FAR.AI's total annual revenue",
+    "quote_source": "far-transparency",
+    "note": "F.3: labs paying per engagement caps at 2, lifted to 3 by a published 10% cap at market rates with publication rights retained. Recorded as the against-side of farai.10 so the cap exists in the derivation.",
+    "graph_id": "signal#425",
+    "source_graph_ids": [
+     "source#98"
+    ]
+   }
+  ],
+  "scores": {
+   "lab": 54,
+   "regulator": 54,
+   "public": 57,
+   "equal": 53
+  },
+  "scores_by_policy": {
+   "leads": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "public": {
+     "score": 57,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      57,
+      57
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "standard": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      54,
+      54
+     ]
+    },
+    "public": {
+     "score": 57,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      57,
+      57
+     ]
+    },
+    "equal": {
+     "score": 53,
+     "band": "clear",
+     "coverage": 8,
+     "range": [
+      53,
+      53
+     ]
+    }
+   },
+   "against_interest": {
+    "lab": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      38,
+      69
+     ]
+    },
+    "regulator": {
+     "score": 56,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      36,
+      71
+     ]
+    },
+    "public": {
+     "score": 63,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      38,
+      78
+     ]
+    },
+    "equal": {
+     "score": 55,
+     "band": "clear",
+     "coverage": 5,
+     "range": [
+      34,
+      72
+     ]
+    }
+   },
+   "spans": {
+    "lab": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      49,
+      59
+     ]
+    },
+    "regulator": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      49,
+      59
+     ]
+    },
+    "public": {
+     "score": 59,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      50,
+      65
+     ]
+    },
+    "equal": {
+     "score": 54,
+     "band": "clear",
+     "coverage": 7,
+     "range": [
+      47,
+      59
+     ]
+    }
+   },
+   "primary": {
+    "lab": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "regulator": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "public": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    },
+    "equal": {
+     "score": null,
+     "band": "unevidenced",
+     "coverage": 0,
+     "range": [
+      0,
+      100
+     ]
+    }
+   }
+  },
+  "band": "clear",
+  "coverage": 8,
+  "floor": "A",
+  "what_moves": {
+   "lab": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 58,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 55,
+     "band": "clear",
+     "base": 54
+    }
+   ],
+   "regulator": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 59,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 57,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 54
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 54,
+     "band": "clear",
+     "base": 54
+    }
+   ],
+   "public": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 64,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 61,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 61,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 60,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 63,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 59,
+     "band": "clear",
+     "base": 57
+    }
+   ],
+   "equal": [
+    {
+     "dimension": "F",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "G",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "P",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "A",
+     "from_value": 1,
+     "to_value": 2,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "S",
+     "from_value": 3,
+     "to_value": 4,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "R",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "M",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    },
+    {
+     "dimension": "X",
+     "from_value": 2,
+     "to_value": 3,
+     "score": 56,
+     "band": "clear",
+     "base": 53
+    }
+   ]
+  }
+ },
+ "sources": {
+  "far-30m": {
+   "id": "far-30m",
+   "title": "FAR.AI Secures Over $30 Million in Multi-Funder Support",
+   "publisher": "FAR.AI",
+   "url": "https://www.far.ai/blog/30m-multi-funder-support",
+   "published": "2026-07-16",
+   "retrieved": "2026-09-14",
+   "note": "Funders: Coefficient Giving, Schmidt Sciences, SFF, CSET, AI Safety Fund (Frontier Model Forum). Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Live at /blog/ (not /news/). 'over $30M in funding commitments throughout 2025' from Coefficient, Schmidt, SFF, CSET, AISF — 2025 commitments, not a cumulative.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "self_of": "farai"
+  },
+  "far-transparency": {
+   "audit_status": "confirmed",
+   "id": "far-transparency",
+   "imported_from": "kevinnbass/metr-money-figure:evaluators.csv EV09",
+   "note": "Revenue from for-profit AI developers capped at 10% of annual revenue; market rates; right to publish retained; 990 TY2024 earned revenue $429K of $24.3M. [verify 2026-09-15] fetched; page reachable, citation matches; 1 quoted span(s) found verbatim",
+   "published": "2026",
+   "publisher": "FAR.AI",
+   "retrieved": "2026-09-14",
+   "source_type": "self",
+   "title": "Transparency",
+   "url": "https://www.far.ai/transparency",
+   "self_of": "farai"
+  },
+  "founderspledge-frontier": {
+   "id": "founderspledge-frontier",
+   "title": "Frontier AI grantmaking",
+   "publisher": "Founders Pledge",
+   "url": "https://www.founderspledge.com/research/frontier-ai-grantmaking",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "note": "$500,000 to FAR.AI Integrity Team for EU AI Office manipulation evaluations. [verify 2026-09-15 grok-pass] Live; GCR fund 'over $1M' H1 2026 — no METR $184k; cannot confirm T15.",
+   "source_type": "self",
+   "audit_status": "confirmed",
+   "found_by": "deep research pass 2026-09-15",
+   "self_of": "founders-pledge-frontier"
+  },
+  "longtermwiki-far": {
+   "id": "longtermwiki-far",
+   "title": "FAR AI",
+   "publisher": "Longterm Wiki",
+   "url": "https://www.longtermwiki.com/wiki/E138",
+   "published": "2026-02-26",
+   "retrieved": "2026-09-14",
+   "note": "EU AI Office tender EC-CNECT/2025/OP/0032, Lot 1 led by FAR.AI with SecureBio and SaferAI; FY2024 revenue. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15 grok-pass] Loads. Coefficient components ~$28.675M, $6.65M, $2.16M, $1.7M + $12M regrant; FY2024 rev $24.3M; dev-revenue cap 10%; 2025 commitments >$30M. Tier-2 lead for T03 components, not a filing.",
+   "source_type": "press",
+   "audit_status": "confirmed",
+   "press_kind": "aggregator"
+  },
+  "longtermwiki-far-cap": {
+   "id": "longtermwiki-far-cap",
+   "title": "FAR AI",
+   "publisher": "Longterm Wiki",
+   "url": "https://www.longtermwiki.com/wiki/E138",
+   "published": "2026",
+   "retrieved": "2026-09-15",
+   "note": "States FAR AI caps revenue from for-profit AI developers at 10% of total annual revenue; FY2024 990 revenue $24.3M.",
+   "source_type": "ledger",
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15"
+  },
+  "op-far-general-support": {
+   "id": "op-far-general-support",
+   "title": "FAR.AI General Support (2022)",
+   "publisher": "Open Philanthropy / Coefficient Giving",
+   "url": "https://www.openphilanthropy.org/grants/far-ai-general-support/",
+   "published": "2022",
+   "retrieved": "2026-09-15",
+   "note": "Grant page; a later page records $28,675,000 over three years (Sep 2025).",
+   "source_type": "index",
+   "audit_status": "unaudited",
+   "found_by": "deep research pass 2026-09-15"
+  },
+  "ted-864574": {
+   "audit_status": "confirmed",
+   "id": "ted-864574",
+   "imported_from": "kevinnbass/metr-money-figure:ted-864574-2025.xml",
+   "note": "Six lots totalling EUR 7.37M: FAR.AI (Lot 1, with SecureBio, SaferAI), EquiStamp (Lot 3 with METR and Epoch; Lot 4 with Transluce), Nemesys as subcontractor. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "published": "2025-12",
+   "publisher": "Tenders Electronic Daily",
+   "retrieved": "2026-09-14",
+   "source_type": "filing",
+   "title": "TED 864574-2025 Technical Assistance for AI Safety",
+   "url": "https://ted.europa.eu/"
+  }
+ }
+}
