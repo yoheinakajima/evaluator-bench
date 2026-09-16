@@ -62,7 +62,32 @@ def tier(x: dict) -> str:
 
 
 def bandchip(b: str) -> str:
-    return f'<span class="band {esc(b)}">{esc(BAND_LABEL.get(b, b))}</span>'
+    t = ' title="Clear: no disqualifying conflict on file — not a pass"' if b == "clear" else ""
+    return f'<span class="band {esc(b)}"{t}>{esc(BAND_LABEL.get(b, b))}</span>'
+
+
+def _hidden_score(v) -> str:
+    """A weighted composite, hidden until the reader asks for it."""
+    return f'<span class="evscore" data-score="{"" if v is None else v}">–</span>'
+
+
+EVSCORE_REVEAL_SCRIPT = r"""
+<script>
+(function(){
+  var btn = document.getElementById('evscore-reveal');
+  if(!btn) return;
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.evscore').forEach(function(el){
+      var v = el.getAttribute('data-score');
+      el.textContent = (v === null || v === '') ? '–' : v;
+    });
+    btn.textContent = 'Scores revealed';
+    btn.setAttribute('disabled', 'disabled');
+    var note = document.getElementById('evscore-note');
+    if (note) note.textContent = 'Showing the weighted numbers. Two readers with different priorities see different numbers, and both are right; a two-point gap means nothing.';
+  });
+})();
+</script>"""
 
 
 def money(t: dict) -> str:
@@ -217,7 +242,7 @@ def _bound_text(s: dict) -> str:
 def _scorecard(ev: dict, bench: dict, C: dict) -> str:
     dims = {x["key"]: x for x in bench["dimensions"]}
     vals = ev["values_by_policy"][DEFAULT_POLICY]; b = band(vals); cov = coverage(vals)
-    scores = "; ".join(f"{esc(bench['presets'][k]['label'])} {v if v is not None else '–'}" for k, v in ev["scores"].items())
+    scores = "; ".join(f"{esc(bench['presets'][k]['label'])} {_hidden_score(v)}" for k, v in ev["scores"].items())
     fl = ev.get("floor")
     rows = []
     for k in DIMS:
@@ -243,10 +268,10 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
     for k in DIMS:
         ptbl += f"<tr><td>{esc(dims[k]['label'])}</td>" + "".join(f'<td class="num">{"–" if ev["values_by_policy"][p][k] is None else ev["values_by_policy"][p][k]}</td>' for p in POLICY_ORDER) + "</tr>"
     for pname in bench["presets"]:
-        ptbl += f"<tr><td>Score, {esc(bench['presets'][pname]['label'])}</td>" + "".join(f'<td class="num">{ev["scores_by_policy"][p][pname]["score"] if ev["scores_by_policy"][p][pname]["score"] is not None else "–"} <span class="gid">{("not ranked" if ev.get("status", "ranked") != "ranked" else esc(BAND_LABEL[ev["scores_by_policy"][p][pname]["band"]]))}, {ev["scores_by_policy"][p][pname]["coverage"]}/8</span></td>' for p in POLICY_ORDER) + "</tr>"
+        ptbl += f"<tr><td>Score, {esc(bench['presets'][pname]['label'])}</td>" + "".join(f'<td class="num">{_hidden_score(ev["scores_by_policy"][p][pname]["score"])} <span class="gid">{("not ranked" if ev.get("status", "ranked") != "ranked" else esc(BAND_LABEL[ev["scores_by_policy"][p][pname]["band"]]))}, {ev["scores_by_policy"][p][pname]["coverage"]}/8</span></td>' for p in POLICY_ORDER) + "</tr>"
     ptbl += "</table>"
     moves = ev.get("what_moves", {}).get("lab", [])[:3]
-    mv = "".join(f'<li>{esc(DIM_LABEL[m["dimension"]])} {m["from_value"]} to {m["to_value"]}: score {m["score"] if m["score"] is not None else "–"}{(", band becomes " + BAND_LABEL[m["band"]].lower()) if BAND_ORDER[m["band"]] < BAND_ORDER[b] else ""}</li>' for m in moves)
+    mv = "".join(f'<li>{esc(DIM_LABEL[m["dimension"]])} {m["from_value"]} to {m["to_value"]}: score {_hidden_score(m["score"])}{(", band becomes " + BAND_LABEL[m["band"]].lower()) if BAND_ORDER[m["band"]] < BAND_ORDER[b] else ""}</li>' for m in moves)
     dissent = ev.get("dissent") or {}
     ex = C["ex"].get(LEDGER_ALIAS.get(ev["id"], ev["id"]))
     exp = ""
@@ -256,12 +281,13 @@ def _scorecard(ev: dict, bench: dict, C: dict) -> str:
         exp = f'<div class="card"><h3>Traced money and ties</h3><p style="font-size:13.5px">{esc(bb) if bb else "no inflow rows yet"}. Confirmed rows: {ex["confirmed_rows"]} of {ex["inflow_rows"]}{(" (" + str(ex["quarantined_rows"]) + " excluded after a re-fetch disagreed or could not be verified: " + ", ".join(ex["quarantined_ids"]) + ")") if ex["quarantined_rows"] else ""}{(" Evaluation credits recorded but never counted: " + ", ".join(ex["credit_ids"]) + ".") if ex.get("credit_rows") else ""} Dollar sums: confirmed + unaudited USD rows only; imported figures are not re-derived and never summed. Second hop traced for {ex["second_hop"]["traced"]} of {ex["second_hop"]["sources"]} sources{(": untraced " + esc(", ".join(ex["second_hop"]["untraced"]))) if ex["second_hop"]["untraced"] else ""}. Ties: {ties}. Checked and not found: {len(ex["negatives"])}.</p></div>'
     return f"""<div class="card"><h3>Scorecard</h3><p style="font-size:13.5px">{esc(ev['summary'])}</p>
       <p style="font-size:13.5px;color:var(--muted)">{esc(bench['types'][ev['type']])}, {esc(ev['hq'])}. {esc(ROLE_LABEL.get(ev['role'], ev['role']))}; listed with {esc(GROUP_LABEL.get(ev.get('list_group', 'referee'), '').lower())}. Confidence {esc(ev['confidence'])}. Domains: {esc(", ".join(ev['domains']))}.</p>
-      <p style="font-size:13.5px">{bandchip(b) if ev.get("status", "ranked") == "ranked" else '<span class="band" style="color:var(--muted)">not ranked</span>'} <span class="gid">{cov}/8 evidenced under the standard policy</span> Scores by preset: {scores}. Weakest evidenced dimension: {esc(dims[fl]['label'].lower()) if fl else 'none'} {vals[fl] if fl else ''}{'/4' if fl else ''}.{(" " + esc(BAND_DESC[b])) if ev.get("status", "ranked") == "ranked" else ""}</p>
+      <p style="font-size:13.5px">{bandchip(b) if ev.get("status", "ranked") == "ranked" else '<span class="band" style="color:var(--muted)">not ranked</span>'} <span class="gid">{cov}/8 evidenced under the standard policy</span> Scores by preset: {scores}. Weakest evidenced dimension: {esc(dims[fl]['label'].lower()) if fl else 'none'} {vals[fl] if fl else ''}{'/4' if fl else ''}.{(" " + esc(BAND_DESC[b])) if ev.get("status", "ranked") == "ranked" else ""}{" Clear means no disqualifying conflict is on file, not a pass." if b == "clear" and ev.get("status", "ranked") == "ranked" else ""}</p>
+      <p style="font-size:13px;color:var(--muted)" id="evscore-note">The weighted numbers are hidden until you ask for them: two readers with different priorities see different numbers, and neither is the site's. <button class="cta small" id="evscore-reveal">Reveal weighted scores</button></p>
       <p style="font-size:13.5px"><b>What would move the score.</b> {esc(ev.get('what_would_move_the_score',''))}</p>{('<ul style="font-size:13.5px;margin:0 0 8px 18px">' + mv + '</ul>') if mv else ''}
       {('<p style="font-size:13.5px"><b>Dissent, lower.</b> ' + esc(dissent.get('lower')) + '</p><p style="font-size:13.5px"><b>Dissent, higher.</b> ' + esc(dissent.get('higher')) + '</p>') if dissent else ''}
       <p style="font-size:12.5px;color:var(--muted)">Each value is the tightest admissible cap or, with no cap, the highest admissible floor, under <a href="{REPO}RULES.md">RULES.md</a>. The binding signal is highlighted. A dash means no admissible signal sets a bound under the standard policy.</p>
       {''.join(rows)}</div>
-      <div class="card"><h3>Values under each evidence policy</h3>{ptbl}</div>{exp}"""
+      <div class="card"><h3>Values under each evidence policy</h3>{ptbl}</div>{exp}{EVSCORE_REVEAL_SCRIPT}"""
 
 
 def _ledger_block(eid: str, C: dict) -> str:
@@ -354,7 +380,7 @@ EV_SCORE_SCRIPT = r"""
     });
   });
   document.getElementById('evscore-btn').addEventListener('click', function(){
-    document.querySelectorAll('td.evscore').forEach(function(td){
+    document.querySelectorAll('.evscore').forEach(function(td){
       var v = td.getAttribute('data-' + preset);
       td.textContent = v === '' ? '–' : v;
     });
@@ -375,7 +401,7 @@ def evaluators_index(bench: dict, C: dict) -> str:
     outs = [e for e in bench["evaluators"] if e.get("status") == "out-of-scope"]
     key = lambda e: (BAND_ORDER[e["band"]], -(e["scores"]["lab"] if e["scores"]["lab"] is not None else -1), e["name"].lower())
     head = "<tr><th>Evaluator</th><th>Role</th><th>Band</th><th class=\"evscore-h\">Score</th><th>Evidenced</th><th>Floor</th><th>Confidence</th><th>Confirmed rows</th><th>Domains</th></tr>"
-    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations in three lists, scored on eight independence dimensions under the standard evidence policy (confirmed sources only). Band first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor; access and methods never set a band. The band, the coverage, the weakest evidenced dimension, and the eight dimension values show by default. The weighted number is hidden until you choose a preset and press the button: two readers with different presets will see different numbers, and both are right. Open a row for the derivation, the binding signals, the ledger, and the focused graph. Independence only; not quality, coverage, or competence.</p></div>
+    body = f"""<div class="pagehead"><h1>Evaluators</h1><p class="lead">{len(ranked)} ranked organizations in three lists, scored on eight independence dimensions under the standard evidence policy (confirmed sources only). Band first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor; access and methods never set a band. The band, the coverage, the weakest evidenced dimension, and the eight dimension values show by default. The weighted number is hidden until you choose a preset and press the button: two readers with different presets will see different numbers, and both are right. Open a row for the derivation, the binding signals, the ledger, and the focused graph. Independence only; not quality, coverage, or competence. A clear band means no disqualifying conflict is on file; it is not a pass.</p></div>
     <div class="card" id="evscore-ctl"><h3>Score with a weight preset</h3><p style="font-size:13.5px;color:var(--muted)" id="evscore-note">The number is yours, so it is hidden until you choose weights. Pick a preset, then press the button to reveal the weighted number for every row.</p>
     <div class="marks" role="group" aria-label="Weight presets" style="margin:8px 0">
       <button class="linkbtn" data-preset="lab" aria-pressed="true">Lab procurement</button>
@@ -482,7 +508,7 @@ def method_index(bench: dict) -> str:
     body = f"""<div class="pagehead"><h1>How the scores are made</h1></div>
     <div class="card"><h3>Values</h3><p style="font-size:14.5px;max-width:74ch">Each evaluator gets a 0 to 4 on eight dimensions using only public evidence: filings, funding announcements, system cards, published policies, contracts described in reports, and press. Every signal names the anchor it supports and the rule in <a href="../rubric/index.html">RULES.md</a> that says so. The value on a dimension is the tightest admissible cap or, with no cap, the highest admissible floor. Where a floor and a cap disagree, the assessment carries a written resolution naming the rule, and the card shows the conflict. A 0 needs a quoted span; a 4 needs a span and a tier-1 or tier-2 source or two independent sources with one not self-published; a bound from sources that were not all confirmed cannot set an extreme. Bounds that fail these tests are held at the nearest supportable anchor and the card says which rule held them.</p></div>
     <div class="card"><h3>Evidence policies</h3><p style="font-size:14.5px;max-width:74ch">The reader chooses what counts. The default, standard, admits a signal only if at least one cited source was re-fetched and confirmed, so no number moves on a source you cannot open and check. Imported and unverifiable leads stay visible and count for nothing. A dimension with no admissible signal renders as a dash and is excluded from the score; the coverage count sits beside every score.</p>{policy_table(bench, "../")}</div>
-    <div class="card"><h3>Bands and scores</h3><p style="font-size:14.5px;max-width:74ch">The weighted total over the evidenced dimensions is scaled to 100 under four weight presets, each with a written derivation. Independence has floors, so the band comes first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 on one of those a conditional floor, otherwise clear. Access and methods count in the number and never set a band, because a 0 there means the labs have not let the organization in or it has not published its methods, not that it is compromised. The number ranks within a band, and on the directory it is hidden until the reader chooses weights, so two readers with different priorities see different numbers and neither is the site's. The lab-procurement preset is the confirmatory view; it was fixed in the seed script before the population pass but not registered outside this repository. The other presets are sensitivity checks, not alternative truths. Scores are ordinal projections over anchored rubrics: a ten-point gap is not twice the independence, and a two-point gap is nothing.</p></div>
+    <div class="card"><h3>Bands and scores</h3><p style="font-size:14.5px;max-width:74ch">The weighted total over the evidenced dimensions is scaled to 100 under four weight presets, each with a written derivation. Independence has floors, so the band comes first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 on one of those a conditional floor, otherwise clear — clear means no disqualifying conflict is on file, not a pass. Access and methods count in the number and never set a band, because a 0 there means the labs have not let the organization in or it has not published its methods, not that it is compromised. The number ranks within a band, and on the directory it is hidden until the reader chooses weights, so two readers with different priorities see different numbers and neither is the site's. The lab-procurement preset is the confirmatory view; it was fixed in the seed script before the population pass but not registered outside this repository. The other presets are sensitivity checks, not alternative truths. The preset weightings lean on the AI Evaluator Forum's AEF-1 operating conditions and the financial-audit independence rules that Illinois SB 315 imports for frontier AI: funding and publication rights carry the most weight where a reader of the report would first test it. Scores are ordinal projections over anchored rubrics: a ten-point gap is not twice the independence, and a two-point gap is nothing.</p></div>
     <div class="card"><h3>Independence is one axis</h3><p style="font-size:14.5px;max-width:74ch">Competence, domain coverage, staffing, and turnaround are others, and a highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters alongside the score. Government bodies are scored on what reaches the public and what access they hold, with the mechanism tagged statutory where the constraint is the law rather than a lab. An entry is not an endorsement, and a low score is not an accusation; it means the public record does not yet show the safeguards that would earn a higher one.</p></div>
     <div class="card"><h3>How good is the evidence</h3><p style="font-size:14.5px;max-width:74ch">{evidence_summary(bench)}</p></div>
     <div class="card"><h3>Who made this, and what they hold</h3><p style="font-size:14.5px;max-width:74ch">Curated by Yohei Nakajima: managing partner at Untapped Capital, a pre-seed and seed venture fund; operator of Epistemedia, the claim-adjudication layer this repository drafts dockets into; author of ActiveGraph, the runtime the build runs on. The site is a collaboration between the curator and models from several developers: the first draft of the curation and the rules pass were written by Claude (Anthropic); Codex (OpenAI) and Grok (xAI) ran independent verification passes recorded in <a href="{REPO}paper/audits/">paper/audits/</a>; Gemini (Google) and Muse reviewed and criticized the site and the paper. Anthropic, OpenAI, xAI, and Google are labs in this ledger, evaluated by organizations scored here. On the concern that Anthropic's model produced a ranking with METR, the evaluator Anthropic named in its September 2026 commitment, at the top: every value is derived from public bounds under rules applied to every organization the same way, the ranking is re-derivable by anyone with any tool or none, and the against-interest and primary-only views are one click away; if a model's involvement had tilted a value, it would show as a bound or a rule, both open to correction. Holdings: small public-market shares in Google and Meta, and a private holding in SpaceX, which owns xAI; assessments of evaluators with confirmed ledger ties to those labs say so in their rationale. Shared funders between Untapped Capital and the evaluators' funders: not yet checked; the check is scheduled before the freeze and its result will replace this sentence. One coder; a second coder on every extreme is a gate for a citable tag. The full statement is in <a href="{REPO}DISCLOSURE.md">DISCLOSURE.md</a>.</p></div>
