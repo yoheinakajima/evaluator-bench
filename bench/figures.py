@@ -174,11 +174,11 @@ GRAPH_ROLES = ("investor", "principal", "pays", "board", "employee", "observer",
 
 
 def _trace_paths(focus, transfers, rels, kinds):
-    """Nodes and edges on shortest paths from ``focus`` to the nearest lab and nearest evaluator.
+    """Nodes and edges on shortest paths from ``focus`` to every lab and every evaluator.
 
     Undirected over the drawn money (transfer) and role edges: from any node
-    this is the full chain a reader follows to answer "how does this connect
-    to a lab / to an evaluator", however many hops that takes.
+    this is every chain a reader could follow to answer "how does this connect
+    to the labs / to the evaluators", however many hops each chain takes.
     """
     from collections import deque
     pairs = [(t["from"], t["to"]) for t in transfers]
@@ -204,11 +204,12 @@ def _trace_paths(focus, transfers, rels, kinds):
     d1 = bfs([focus])
     keep_n = {focus}
     keep_e = set()
-    for want in ("lab", "evaluator"):
-        d2 = bfs([n for n in adj if kinds.get(n) == want])
-        D = d2.get(focus)
+    targets = [n for n in adj if kinds.get(n) in ("lab", "evaluator")]
+    for t in targets:
+        D = d1.get(t)
         if D is None:
             continue
+        d2 = bfs([t])
         for v in adj:
             if v in d1 and v in d2 and d1[v] + d2[v] == D:
                 keep_n.add(v)
@@ -223,7 +224,7 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
     """Figure 6: entities placed by distance from a lab, with money and role edges.
 
     With ``focus`` set, the focused node and the nodes and edges on its
-    shortest paths to a lab and to an evaluator are drawn at full opacity and
+    shortest paths to every lab and every evaluator are drawn at full opacity and
     everything else is faded, which is the state the hover interaction produces
     on the site. Nodes carry data-node and data-kind, edges carry data-from
     and data-to, so a few lines of script can do the same live.
@@ -248,7 +249,7 @@ def funding_graph(focus: str | None = None, L: dict | None = None) -> str:
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" class="fundgraph" viewBox="0 0 {w} {h}" {FONT} font-size="11">',
          f'<rect width="{w}" height="{h}" fill="{PAPER}"/>',
          f'<text x="{pad}" y="22" font-size="16" fill="{INK}">{_esc(title)}</text>',
-         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to trace its path to a lab and to an evaluator; hover a line for the row. Every element is a row in data/ledger/.</text>']
+         f'<text x="{pad}" y="40" fill="{MUTED}">Teal lines are money (transfers); amber lines are roles. Solid: confirmed; dashed: imported. Hover a name to trace all its paths to the labs and evaluators; hover a line for the row. Every element is a row in data/ledger/.</text>']
     for c, names in cols.items():
         x = pad + c * cw
         o.append(f'<text x="{x}" y="{top - 12}" fill="{INK}" font-weight="600">{labels[c]}</text>')

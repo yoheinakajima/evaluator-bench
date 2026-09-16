@@ -17,16 +17,28 @@ def test_focus_traces_paths_to_lab_and_evaluator():
     s = funding_graph(focus="coefficient")
     assert 'data-node="coefficient"' in s
     assert s.count('opacity="0.12"') > 20  # most nodes faded
-    def faded(eid):
-        i = s.index(f'data-node="{eid}"')
-        return 'opacity="0.12"' in s[i:s.index(">", i)]
+    def faded(html, eid):
+        i = html.index(f'data-node="{eid}"')
+        return 'opacity="0.12"' in html[i:html.index(">", i)]
     # nodes on a shortest path to a lab or an evaluator stay bright:
     # coefficient -> apollo (evaluator); coefficient -> epoch -> anthropic (lab);
     # coefficient -> moskovitz -> anthropic (lab); coefficient -> palisade (evaluator)
     for eid in ("coefficient", "apollo", "epoch", "anthropic", "moskovitz", "palisade"):
-        assert not faded(eid), eid
+        assert not faded(s, eid), eid
     # a node on no shortest path from the focus is faded
-    assert faded("tallinn")
+    assert faded(s, "tallinn")
+
+def test_lab_focus_shows_hopped_assessor_paths():
+    s = funding_graph(focus="anthropic")
+    assert 'data-node="anthropic"' in s
+    def faded(html, eid):
+        i = html.index(f'data-node="{eid}"')
+        return 'opacity="0.12"' in html[i:html.index(">", i)]
+    # hopped connections stay bright: anthropic -> tallinn -> redwood (2 hops),
+    # anthropic -> epoch -> coefficient -> palisade (3 hops)
+    for eid in ("anthropic", "tallinn", "redwood", "epoch", "coefficient", "palisade"):
+        assert not faded(s, eid), eid
+    assert faded(s, "schmidt")
 
 def test_build_is_deterministic_for_dist():
     import subprocess, hashlib

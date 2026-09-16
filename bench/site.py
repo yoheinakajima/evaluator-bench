@@ -125,8 +125,8 @@ SITE_JS = r"""
     edges.forEach(function(e){var a=e.dataset.from,b=e.dataset.to;if(adj[a]&&adj[b]){adj[a].push(b);adj[b].push(a);}});
     function bfs(sources){var d={},q=[];sources.forEach(function(s){if(!(s in d)){d[s]=0;q.push(s);}});while(q.length){var u=q.shift();(adj[u]||[]).forEach(function(w){if(!(w in d)){d[w]=d[u]+1;q.push(w);}});}return d;}
     function trace(id){var d1=bfs([id]),keepN={},keepE={};keepN[id]=1;
-      ['lab','evaluator'].forEach(function(want){var d2=bfs(Object.keys(adj).filter(function(n){return kind[n]===want;})),D=d2[id];
-        if(D===undefined)return;
+      Object.keys(adj).forEach(function(t){if(kind[t]!=='lab'&&kind[t]!=='evaluator')return;
+        var D=d1[t];if(D===undefined)return;var d2=bfs([t]);
         Object.keys(adj).forEach(function(v){if(d1[v]!==undefined&&d2[v]!==undefined&&d1[v]+d2[v]===D)keepN[v]=1;});
         edges.forEach(function(e){var a=e.dataset.from,b=e.dataset.to;
           if((d1[a]!==undefined&&d2[b]!==undefined&&d1[a]+1+d2[b]===D)||(d1[b]!==undefined&&d2[a]!==undefined&&d1[b]+1+d2[a]===D))keepE[a+'|'+b]=1;});});
@@ -235,7 +235,7 @@ def entity_page(eid: str, bench: dict, C: dict) -> str:
     if ev:
         parts.append(_scorecard(ev, bench, C))
     parts.append(_ledger_block(eid, C))
-    parts.append(f'<h2 style="margin-top:26px">Funding graph, focused</h2><p class="lead">The path to a lab and to an evaluator at full strength, everything else faded. Hover any name to trace its path; click a name to open its page.</p><div class="fig">{funding_graph(focus=eid, L=L)}</div><div class="figlive" aria-live="polite"></div>')
+    parts.append(f'<h2 style="margin-top:26px">Funding graph, focused</h2><p class="lead">Every chain to a lab and to an evaluator at full strength, everything else faded. Hover any name to trace its connections; click a name to open its page.</p><div class="fig">{funding_graph(focus=eid, L=L)}</div><div class="figlive" aria-live="polite"></div>')
     return layout(e["name"], "".join(parts), 1, "entities")
 
 
