@@ -2600,7 +2600,7 @@
   "saferai": {
    "audit_status": "confirmed",
    "id": "saferai",
-   "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches",
+   "note": "Rates lab risk-management frameworks; EU CoP evaluations; consortium with FAR.AI. Cited from a search snippet; not re-fetched in full. [verify 2026-09-15] fetched; page reachable, citation matches [2026-09-15] homepage fetched; tracker-frame span \"how they identify risks, assess their severity, implement safeguards, and govern their systems\" quoted verbatim for saferai.07 (rating methodology).",
    "published": "2026",
    "publisher": "SaferAI",
    "retrieved": "2026-09-14",
@@ -34457,7 +34457,7 @@
      "A": null,
      "S": 3,
      "R": 2,
-     "M": null,
+     "M": 2,
      "X": 2
     },
     "primary": {
@@ -34928,14 +34928,14 @@
        ]
       },
       "spans": {
-       "v": null,
-       "b": [],
+       "v": 2,
+       "b": [
+        "saferai.07"
+       ],
        "h": false,
        "c": false,
-       "u": true,
-       "x": [
-        "saferai.07"
-       ]
+       "u": false,
+       "x": []
       },
       "primary": {
        "v": null,
@@ -35192,6 +35192,8 @@
      },
      "rule": "M.2",
      "note": "[span 2026-09-16] Span pending: safer-ai.org fetched; company ratings confirmed public but no sentence states the methodology itself is published; span pending.",
+     "quote": "how they identify risks, assess their severity, implement safeguards, and govern their systems",
+     "quote_source": "saferai",
      "graph_id": "signal#588",
      "source_graph_ids": [
       "source#206"
@@ -35462,39 +35464,39 @@
     },
     "spans": {
      "lab": {
-      "score": 62,
+      "score": 61,
       "band": "clear",
-      "coverage": 6,
+      "coverage": 7,
       "range": [
-       44,
-       73
+       49,
+       69
       ]
      },
      "regulator": {
-      "score": 63,
+      "score": 61,
       "band": "clear",
-      "coverage": 6,
+      "coverage": 7,
       "range": [
-       44,
-       74
+       49,
+       69
       ]
      },
      "public": {
-      "score": 60,
+      "score": 59,
       "band": "clear",
-      "coverage": 6,
+      "coverage": 7,
       "range": [
-       54,
-       64
+       56,
+       61
       ]
      },
      "equal": {
-      "score": 58,
+      "score": 57,
       "band": "clear",
-      "coverage": 6,
+      "coverage": 7,
       "range": [
-       44,
-       69
+       50,
+       63
       ]
      }
     },

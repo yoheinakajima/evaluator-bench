@@ -121,7 +121,9 @@
    "floor": 2
   },
   "rule": "M.2",
-  "note": "[span 2026-09-16] Span pending: safer-ai.org fetched; company ratings confirmed public but no sentence states the methodology itself is published; span pending."
+  "note": "[span 2026-09-16] Span pending: safer-ai.org fetched; company ratings confirmed public but no sentence states the methodology itself is published; span pending.",
+  "quote": "how they identify risks, assess their severity, implement safeguards, and govern their systems",
+  "quote_source": "saferai"
  },
  {
   "claim": "No commercial products.",
