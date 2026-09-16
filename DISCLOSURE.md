@@ -6,9 +6,10 @@ PROCESS.md section 10 asks of the curators what the rubric asks of evaluators. T
 
 - Role: Managing Partner, Untapped Capital (pre-seed and seed venture fund); operator of Epistemedia, the claim-adjudication layer this repository drafts dockets into; author of ActiveGraph, which this repository is built on.
 - Investments in, advisory roles at, or payments from any evaluator listed in this repository: **none** (confirmed by curator 2026-09-15).
-- Investments in, advisory roles at, or payments from any frontier AI developer: small public-market shareholdings in Google and Meta, plus a private holding in SpaceX, which owns xAI, so indirect exposure to a frontier developer; no other private investments in any frontier developer.
-- Funders shared with evaluators listed here (any fund that has invested in Untapped Capital and also funds an evaluator): no overlap found in public records (checked 2026-09-15); the full limited-partner roster is private, so overlap through undisclosed LPs remains unchecked.
+- Investments in, advisory roles at, or payments from any frontier AI developer: small publicly disclosed shareholdings in Google, Meta, and SpaceX, which owns xAI, so indirect exposure to a frontier developer; no other private investments in any frontier developer.
+- Funders of Untapped Capital: include holders of shares in private AI labs; the limited-partner roster is private, so no further detail is disclosed.
 - Personal relationships with people named in the ledger: **none** (confirmed by curator 2026-09-15).
+- Personal relationships with people at the labs (not themselves named in the ledger): the curator knows people at some of the labs named in this ledger; no relationship is a source for any row — every claim rests on a public, cited source (confirmed by curator 2026-09-15).
 
 ## Assistants
 

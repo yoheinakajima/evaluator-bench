@@ -21,8 +21,9 @@ second-coded. Values are derived, never typed; the verifier rejects stored value
 disagree with their derivation. Scores move when evidence moves: open a PR with a source.
 
 ## Disclosure
-Holdings: Google and Meta shares; SpaceX (owner of xAI). Shared-funder overlap with evaluator
-funders: no overlap found in public records (checked 2026-09-15); the full LP roster is private,
-so overlap through undisclosed LPs remains unchecked. Full: DISCLOSURE.md.
+Holdings: publicly disclosed shares in Google, Meta, and SpaceX (owner of xAI).
+Untapped Capital's funders include holders of shares in private AI labs; the LP roster is
+private, so no further detail is disclosed. The curator knows people at some of the labs in
+this ledger; no relationship is a source for any row. Full: DISCLOSURE.md.
 
 Built 2026-09-15T00:00:00Z (RULES.md v0.1 (2026-09-15)); 24 of 27 evaluators ranked.
