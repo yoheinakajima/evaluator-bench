@@ -1,12 +1,12 @@
 """Record packets for a named organization or person: everything Bench holds about them.
 
     python -m bench outreach <evaluator-id> [...]    # organizations
-    python -m bench outreach --people [<entity-id> ...]   # every person entity in the ledger, or the named ones
-    python -m bench outreach --all                   # every ranked organization, the watchlist, and every person
+    python -m bench outreach --people [<entity-id> ...]   # materially-named people (RULES 12), or the named ones
+    python -m bench outreach --all                   # every ranked organization, the watchlist, and materially-named people
 
-Used before a citable tag (every ranked organization and every named person
-receives their card and a reply window: RULES.md section 12 and the gates in
-bench/gates.py), after first publication when a published score moves by more
+Used before a citable tag (every ranked organization and every materially-named
+person receives their card and a reply window: RULES.md section 12 and the
+gates in bench/gates.py), after first publication when a published score moves by more
 than one anchor (PROCESS.md section 8), or whenever someone asks for their record.
 
 Writes outreach/<id>.md and keeps data/outreach-log.csv current: a row per
@@ -18,6 +18,7 @@ import csv, json, sys, pathlib, datetime
 from .load import ROOT, DATA, load, DIMS
 from .ledger import load_ledger
 from .verify import LEDGER_ALIAS
+from .gates import material_people
 
 OUT = ROOT / "outreach"
 LOG = DATA / "outreach-log.csv"
@@ -111,10 +112,10 @@ def main(argv=None) -> int:
     entries = []
     orgs, people = [], []
     if "--all" in argv:
-        orgs = list(d["evaluators"]); people = [i for i, e in L["entities"].items() if e["kind"] == "person"]
+        orgs = list(d["evaluators"]); people = material_people(d, L)
     elif "--people" in argv:
         named = [a for a in argv if a != "--people"]
-        people = named or [i for i, e in L["entities"].items() if e["kind"] == "person"]
+        people = named or material_people(d, L)
     else:
         orgs = argv
     if not orgs and not people: print("usage: bench outreach <evaluator-id> [...] | --people [<entity-id> ...] | --all"); return 2

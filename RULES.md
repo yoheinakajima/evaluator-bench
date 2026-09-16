@@ -142,7 +142,7 @@ Inclusion, within that scope: cited as an external evaluator or red team in at l
 
 ## 12. People
 
-Public roles only. No inference about motive or timing. Every named individual is contacted with their card and a reply window, the same as an organization (`bench outreach --people`). An open question that concerns a named person's gift or role is phrased as a request for a document, never as an unresolved suspicion, and goes to the person as the release goes public; until the outreach log shows a contact date, the card is provisional.
+Public roles only. No inference about motive or timing. A named individual is contacted with their card and a reply window when the bench publishes a claim about them that binds to a score, or when an open question about their gift or role needs a document only they can supply (`bench outreach --people`). People named only in background role mentions — public, confirmed, and not load-bearing for any score — are covered by the public correction channel, not a cold email. An open question that concerns a named person's gift or role is phrased as a request for a document, never as an unresolved suspicion, and goes to the person as the release goes public; until the outreach log shows a contact date, the card is provisional.
 
 ## 13. Weights
 

@@ -29,10 +29,10 @@ Derivation: Capped at 2 by humane.10 (P.4): Humane Intelligence's advisory group
 - Document request: Request to Humane Intelligence: the board and advisory-group conflict-of-interest policy, and whether advisory-group members employed by a model developer recuse from evaluations involving that developer's models.
 - Document request: Request to Humane Intelligence: whether any cooling-off rule applies to directors previously employed by a model developer, and the dates of the board president's OpenAI employment as stated in the published bio.
 
-### Access depth (lab-granted): 1/4 (standard policy: 1)
-Anchor 1: Pre-release API with safeguards on.
-Derivation: Capped at 1 by humane.03 (A.6): Public-model access only.. Held: C15: a 0 needs a quoted span.
-- [against, caps at 0, A.6] Public-model access only. Sources: Humane Intelligence (https://www.humane-intelligence.org/)
+### Access depth (lab-granted): 0/4 (standard policy: 0)
+Anchor 0: Public API only.
+Derivation: Capped at 0 by humane.03 (A.6): Public-model access only..
+- [against, caps at 0, A.6] Public-model access only. Quote: "Humane Intelligence has run more than 30 red teaming, bias bounty, and contextual evaluations" Sources: Humane Intelligence (https://www.humane-intelligence.org/)
 
 ### Scope control: 3/4 (standard policy: 3)
 Anchor 3: Evaluator sets scope and can add questions.
@@ -42,7 +42,7 @@ Derivation: Floored at 3 by humane.06 (S.5): Designs its own exercises.. No admi
 ### Publication rights: 3/4 (standard policy: 3)
 Anchor 3: Publishes; redaction limited to security; redactions disclosed.
 Derivation: Floored at 3 by humane.01 (R.5): Publishes openly; public exercises.. No admissible signal caps it.
-- [for, floors at 3, R.5] Publishes openly; public exercises. Sources: Humane Intelligence (https://www.humane-intelligence.org/)
+- [for, floors at 3, R.5] Publishes openly; public exercises. Quote: "In September 2026, we released our AI red teaming app as an open source software." Sources: Humane Intelligence (https://www.humane-intelligence.org/)
 
 ### Method transparency: 2/4 (standard policy: 2)
 Anchor 2: Methods described in prose.

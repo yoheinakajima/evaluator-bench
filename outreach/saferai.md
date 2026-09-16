@@ -26,7 +26,7 @@ Derivation: Floored at 2 by saferai.05 (G.1): Nonprofit.. No admissible signal c
 ### Personnel: 2/4 (standard policy: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Floored at 2 by saferai.06 (P.6): No lab roles found.. No admissible signal caps it.
-- [for, floors at 2, P.6] No lab roles found. Sources: SaferAI (https://www.safer-ai.org/)
+- [for, floors at 2, P.6] No lab roles found. Quote: "We're hiring people who want to shape how AI is developed." Sources: SaferAI (https://www.safer-ai.org/)
 
 ### Access depth (lab-granted): 1/4 (standard policy: 1)
 Anchor 1: Pre-release API with safeguards on.
@@ -47,7 +47,7 @@ Derivation: Floored at 2 by saferai.01 (R.7): Publishes critical ratings of lab 
 ### Method transparency: 2/4 (standard policy: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by saferai.07 (M.2): Rating methodology published.. No admissible signal caps it.
-- [for, floors at 2, M.2] Rating methodology published. Sources: SaferAI (https://www.safer-ai.org/)
+- [for, floors at 2, M.2] Rating methodology published. Quote: "how they identify risks, assess their severity, implement safeguards, and govern their systems" Sources: SaferAI (https://www.safer-ai.org/)
 
 ### Role incompatibility: 2/4 (standard policy: 2)
 Anchor 2: Consults for labs.

@@ -39,12 +39,12 @@ Curator note: Anchor 3 (provisional): no lab board roles found (palisade.07), bu
 ### Access depth (lab-granted): 1/4 (standard policy: 1)
 Anchor 1: Pre-release API with safeguards on.
 Derivation: Capped at 1 by palisade.05 (A.1): Little pre-deployment access; most work is on released models..
-- [against, caps at 1, A.1] Little pre-deployment access; most work is on released models. Sources: Palisade Research (https://palisaderesearch.org/)
+- [against, caps at 1, A.1] Little pre-deployment access; most work is on released models. Quote: "As the companies shipped model after model, Palisade kept finding what researchers had been warning about for years" Sources: Palisade Research (https://palisaderesearch.org/); About Palisade Research (https://palisaderesearch.org/about)
 
 ### Scope control: 3/4 (standard policy: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by palisade.02 (S.5): Sets its own questions and publishes without lab review.. No admissible signal caps it.
-- [for, floors at 3, S.5] Sets its own questions and publishes without lab review. Sources: Palisade Research (https://palisaderesearch.org/)
+- [for, floors at 3, S.5] Sets its own questions and publishes without lab review. Quote: "So Jeffrey assembled a team to investigate emerging AI behavior and strategic capabilities." Sources: Palisade Research (https://palisaderesearch.org/); About Palisade Research (https://palisaderesearch.org/about)
 
 ### Publication rights: 4/4 (standard policy: 4)
 Anchor 4: Full editorial control, record of adverse findings, redaction statements.

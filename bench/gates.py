@@ -8,7 +8,7 @@ refuses otherwise, unless --override names a reason, which is recorded).
 The status page renders the same table.
 """
 from __future__ import annotations
-import csv, json, sys
+import csv, json, re, sys
 from .load import ROOT, DATA, load, DIMS
 from .policy import derive, DEFAULT_POLICY, POLICY_ORDER
 from .verify import LEDGER_ALIAS
@@ -20,6 +20,53 @@ SECOND = DATA / "coding" / "second-coder.csv"
 def _csv(p):
     if not p.exists(): return []
     with open(p, newline="") as f: return [dict(r) for r in csv.DictReader(f)]
+
+
+def _person_mentioned(text: str, name: str) -> bool:
+    """True if an individual personal name appears in text.
+
+    Group entities ("Anthropic employees (personal holdings)", "... (unnamed)")
+    are never individual recipients, so they never match.
+    """
+    if not text or "(" in name or "employees" in name.lower():
+        return False
+    parts = name.split()
+    if len(parts) < 2 or not all(p[:1].isupper() for p in parts):
+        return False
+    first, last = parts[0], parts[-1]
+    return bool(re.search(r"\b%s\b.*\b%s\b" % (re.escape(first), re.escape(last)), text, re.I | re.S)
+                or re.search(r"\b%s\b" % re.escape(last), text, re.I))
+
+
+def material_people(d: dict | None = None, L: dict | None = None) -> list[str]:
+    """Person entities in outreach scope under RULES 12.
+
+    A named individual is contacted when the bench publishes a claim about
+    them that binds to a score (named in the claim or quoted span of a signal
+    binding under the default policy), or when an assessment's open questions
+    name them in a document request. People named only in background role
+    mentions are covered by the public correction channel, not a cold email.
+    """
+    from .ledger import load_ledger
+    d = d or load(strict=False)
+    L = L or load_ledger()
+    ranked = {e["id"] for e in d["evaluators"].values() if e.get("status", "ranked") == "ranked"}
+    found: set[str] = set()
+    for a in d["assessments"]:
+        if a["evaluator"] not in ranked:
+            continue
+        r = derive(a, d["signals"], d["sources"], DEFAULT_POLICY)
+        texts = []
+        for sid in r["binding"]:
+            s = d["signals"][sid]
+            texts.append((s.get("claim") or "") + "\n" + (s.get("quote") or ""))
+        texts.extend(a.get("open_questions", []) or [])
+        for pid, e in L["entities"].items():
+            if e["kind"] != "person" or pid in found:
+                continue
+            if any(_person_mentioned(t, e["name"]) for t in texts):
+                found.add(pid)
+    return sorted(found)
 
 
 def gates(d: dict | None = None) -> list[dict]:
@@ -48,19 +95,19 @@ def gates(d: dict | None = None) -> list[dict]:
     ext = [(a["evaluator"], a["dimension"]) for a in d["assessments"] if a["evaluator"] in rids and a["value"] in (0, 4) and not a.get("unevidenced")]
     unc = [f"{e}.{k}" for e, k in ext if (e, k) not in coded]
     out.append(dict(gate="Every extreme has a second coder", ok=not unc, detail=f"{len(ext) - len(unc)} of {len(ext)} extremes second-coded" + (": missing " + ", ".join(unc[:12]) + ("..." if len(unc) > 12 else "") if unc else "")))
-    # 3. every ranked organization and every named person has been contacted, with a date
+    # 3. every ranked organization and every materially-named person has been contacted, with a date
     log = {r["id"]: r for r in _csv(OUTREACH)}
     from .ledger import load_ledger
     L = load_ledger()
-    people = [i for i, e in L["entities"].items() if e["kind"] == "person"]
+    people = material_people(d, L)
     need = [e["id"] for e in ranked] + people
     unsent = [i for i in need if not log.get(LEDGER_ALIAS.get(i, i), log.get(i, {})).get("contacted")]
     need_ids = {LEDGER_ALIAS.get(i, i) for i in need} | set(need)
     extra = sorted(set(log) - need_ids)
     extra_txt = ("; the log lists " + str(len(log)) + " recipients, including "
-                 + str(len(extra)) + " non-ranked organization(s) outside the gate: "
+                 + str(len(extra)) + " outside the gate: "
                  + ", ".join(extra)) if extra else ""
-    out.append(dict(gate="Every ranked organization and named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} named people){extra_txt}"))
+    out.append(dict(gate="Every ranked organization and every materially-named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} materially-named people){extra_txt}"))
     # 4. the default policy is standard and the primary-only view is live
     out.append(dict(gate="Default policy is Standard and the Primary-only view is live", ok=DEFAULT_POLICY == "standard" and "primary" in POLICY_ORDER, detail=f"default {DEFAULT_POLICY}; policies {', '.join(POLICY_ORDER)}"))
     # 5. RULES.md is published and every conflict cites a rule

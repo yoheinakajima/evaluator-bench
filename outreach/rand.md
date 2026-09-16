@@ -31,28 +31,29 @@ Derivation: Floored at 2 by rand.05 (P.6): Institutional COI rules.. No admissib
 
 ### Access depth (lab-granted): 3/4 (standard policy: 3)
 Anchor 3: Helpful-only or weights-level access, chain of thought, logs, on-site.
-Derivation: Floored at 3 by rand.02 (A.4): Access through government channels, including classified work.. No admissible signal caps it.
-- [for, floors at 3, A.4] Access through government channels, including classified work. Sources: RAND and the AI Evaluator Forum (https://www.rand.org/)
+Derivation: Floored at 3 by rand.02 (A.4): Access through government channels; defense research passes an Air Force public-release clearance gate.. No admissible signal caps it.
+- [for, floors at 3, A.4] Access through government channels; defense research passes an Air Force public-release clearance gate. Quote: "This report was cleared for public release by the Department of the Air Force on September 13, 2023." Sources: RAND and the AI Evaluator Forum (https://www.rand.org/); The Cost of the Ukraine War for Russia (RAND RRA2421-1) (https://www.rand.org/content/dam/rand/pubs/research_reports/RRA2400/RRA2421-1/RAND_RRA2421-1.pdf)
 
 ### Scope control: 3/4 (standard policy: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by rand.06 (S.3): Sets own research agenda.. No admissible signal caps it.
-- [for, floors at 3, S.3] Sets own research agenda. Sources: RAND and the AI Evaluator Forum (https://www.rand.org/)
+- [for, floors at 3, S.3] Sets own research agenda. Quote: "This project is a RAND Venture. Funding was provided by gifts from RAND supporters and income from operations." Sources: RAND and the AI Evaluator Forum (https://www.rand.org/); Algorithmic Equity: A Framework for Social Applications (https://www.rand.org/pubs/research_reports/RR2708.html)
 
-### Publication rights: 2/4 (standard policy: 2)
-Anchor 2: Publishes; lab reviews with broad redaction.
-Derivation: Capped at 2 by rand.04 (R.4): Much output is government-restricted rather than public..
+### Publication rights: 3/4 (standard policy: unevidenced)
+Anchor 3: Publishes; redaction limited to security; redactions disclosed.
+Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: rand.04b (no confirmed source (unaudited)).
 - [against, caps at 2, R.4] Much output is government-restricted rather than public. Sources: RAND and the AI Evaluator Forum (https://www.rand.org/)
+- [for, floors at 3, R.4] Thousands of RAND studies are available to the public for free on rand.org. Quote: "Thousands of RAND studies are available to the public for free on rand.org." Sources: Research Integrity (https://www.rand.org/about/research-integrity.html)
 
 ### Method transparency: 2/4 (standard policy: 2)
 Anchor 2: Methods described in prose.
 Derivation: Capped at 2 by rand.07 (M.2): Methods partly public..
-- [against, caps at 2, M.2] Methods partly public. Sources: RAND and the AI Evaluator Forum (https://www.rand.org/)
+- [against, caps at 2, M.2] Methods partly public. Quote: "We explain our research, analysis, findings, and recommendations in ways that are understandable and usable." Sources: RAND and the AI Evaluator Forum (https://www.rand.org/); RAND Standards for High-Quality and Objective Research and Analysis (https://www.rand.org/content/dam/rand/pubs/corporate_pubs/CPA1900/CPA1927-1/RAND_CPA1927-1.pdf)
 
-### Role incompatibility: 3/4 (standard policy: 3)
+### Role incompatibility: 3/4 (standard policy: unevidenced)
 Anchor 3: Tools are open or free to the ecosystem.
-Derivation: Floored at 3 by rand.08 (X.7): No commercial products.. No admissible signal caps it. Held: C15: a 4 needs a quoted span; C16: a 4 needs a tier-1/2 source or two independent sources, one not self-published.
-- [for, floors at 4, X.7] No commercial products. Sources: RAND and the AI Evaluator Forum (https://www.rand.org/)
+Derivation: Unevidenced under this policy: no admissible signal sets a bound. Not counted: rand.08 (no confirmed source (unaudited)).
+- [for, floors at 4, X.7] No commercial products. Quote: "RAND is nonprofit and nonpartisan." Sources: Research Integrity (https://www.rand.org/about/research-integrity.html)
 
 ## Dissent on the card
 

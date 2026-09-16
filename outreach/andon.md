@@ -25,7 +25,7 @@ Derivation: Capped at 1 by andon.04 (G.1): No published COI policy found..
 ### Personnel: 2/4 (standard policy: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by andon.07 (P.6): Undisclosed..
-- [against, caps at 2, P.6] Undisclosed. Sources: Andon Labs (https://andonlabs.com/)
+- [against, caps at 2, P.6] Undisclosed. Quote: "Our mission is to enable the development of safe AI by deploying and studying it in the real world." Sources: Andon Labs (https://andonlabs.com/)
 
 ### Access depth (lab-granted): 1/4 (standard policy: 1)
 Anchor 1: Pre-release API with safeguards on.

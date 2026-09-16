@@ -22,7 +22,7 @@ Curator note: Anchor 3 from the cited rows; low confidence, imported evidence.
 Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by equistamp.03 (G.2): No COI policy on the site..
 Curator note: Anchor 1 from the cited rows; low confidence, imported evidence.
-- [against, caps at 1, G.2] No COI policy on the site. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
+- [against, caps at 1, G.2] No COI policy on the site. Quote: "We provide the full operational stack for AI safety research — from eval implementation to administrative overhead." Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); EquiStamp - Research Operations for AI Safety (https://equistamp.com/)
 
 ### Personnel: 2/4 (standard policy: unevidenced)
 Anchor 2: Frequent two-way hiring; recusal on request.

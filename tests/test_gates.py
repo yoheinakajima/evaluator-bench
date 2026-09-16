@@ -24,15 +24,15 @@ def test_status_gates_table_uses_live_gates_output():
 
 def test_outreach_gate_reconciles_log_and_gate_population():
     gs = {g["gate"]: g for g in gates()}
-    detail = gs["Every ranked organization and named person has been contacted"]["detail"]
-    # the gate population is 51 (24 ranked organizations + 27 named people);
-    # the log lists 54 recipients, so the detail must name both numbers
-    assert "0 of 51 contacted" in detail
-    assert "24 ranked organizations, 27 named people" in detail
-    assert "54 recipients" in detail
-    assert "non-ranked organization" in detail
+    detail = gs["Every ranked organization and every materially-named person has been contacted"]["detail"]
+    # the gate population is 31 (24 ranked organizations + 7 materially-named people);
+    # the log lists 34 recipients, so the detail must name both numbers
+    assert "0 of 31 contacted" in detail
+    assert "24 ranked organizations, 7 materially-named people" in detail
+    assert "34 recipients" in detail
+    assert "outside the gate" in detail
 
 
 def test_status_right_of_reply_reconciles_log_and_gate_population():
     html = _status_html()
-    assert "The citable-tag gate tracks 51 of these" in html
+    assert "The citable-tag gate tracks the ranked organizations and the materially-named people" in html

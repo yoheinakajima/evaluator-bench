@@ -39,9 +39,9 @@ Derivation: Floored at 1 by farai.06 (A.1): Pre- and post-deployment red teaming
 
 ### Scope control: 3/4 (standard policy: 3)
 Anchor 3: Evaluator sets scope and can add questions.
-Derivation: Floored at 3 by farai.03 (S.3): Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.; floored at 3 by farai.11 (S.3): Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium.. No admissible signal caps it.
+Derivation: Floored at 3 by farai.03 (S.3): Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.; floored at 3 by farai.11 (S.3): Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.. No admissible signal caps it.
 - [for, floors at 3, S.3] Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client. Quote: "FAR AI was selected by the European Commission's AI Office to lead Lot 1 (CBRN Risk Modelling and Evaluation)" Sources: FAR AI (https://www.longtermwiki.com/wiki/E138)
-- [for, floors at 3, S.3] Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI under a three-year contract, EUR 1.43M to the consortium. Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/)
+- [for, floors at 3, S.3] Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium. Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/)
 - [for, informational, S.3] Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations. Quote: "The grant funds the evaluations FAR.AI is now developing for the EU AI Office's consortium on manipulation" Sources: Frontier AI grantmaking (https://www.founderspledge.com/research/frontier-ai-grantmaking)
 
 ### Publication rights: 2/4 (standard policy: 2)

@@ -28,10 +28,10 @@ Derivation: Capped at 1 by cais.01 (P.2): Director is a safety adviser to xAI wh
 - [against, caps at 1, P.2] Director is a safety adviser to xAI while the organization's benchmarks are used to grade xAI models. Quote: "have driven some of the bigger successes in AI policy and advise xAI" Sources: It looks like there are some good funding opportunities in AI safety right now (https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/); Center for AI Safety (https://safe.ai/)
 - Document request: Request to the Center for AI Safety: the terms of the director's advisory role at xAI (start date, compensation or equity if any) and any recusal or disclosure statement covering CAIS benchmark results on xAI models.
 
-### Access depth (lab-granted): 1/4 (standard policy: 1)
-Anchor 1: Pre-release API with safeguards on.
-Derivation: Capped at 1 by cais.06 (A.6): Public-model access.. Held: C15: a 0 needs a quoted span.
-- [against, caps at 0, A.6] Public-model access. Sources: Center for AI Safety (https://safe.ai/)
+### Access depth (lab-granted): 0/4 (standard policy: 0)
+Anchor 0: Public API only.
+Derivation: Capped at 0 by cais.06 (A.6): Public-model access..
+- [against, caps at 0, A.6] Public-model access. Quote: "We evaluate a range of leading LLMs" Sources: Center for AI Safety (https://safe.ai/); Research Projects | CAIS (https://safe.ai/research)
 
 ### Scope control: 3/4 (standard policy: 3)
 Anchor 3: Evaluator sets scope and can add questions.
