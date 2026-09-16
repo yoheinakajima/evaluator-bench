@@ -1,1 +1,16 @@
 evaluator,dimension,coder,value,agrees_with_stored,notes,date
+averi,A,Muse (second coder),0,yes,span verified verbatim in live fetch of averi-pilot (sha 75c7a18eac5a); pilot tested only Gemini 2.5 Flash-Lite in an enclave with no weights access -> cap 0 stands; stored 0 agreed,2026-09-15
+euaio,S,Muse (second coder),4,yes,span verified verbatim in AI Act Art 92 (sha 3c3415415373); Commission may request model access via APIs -> legal access power under S.4; stored 4 agreed,2026-09-15
+euaio,X,Muse (second coder),4,yes,span verified verbatim on AI Office page (sha c8dcb4a6edb3); Office enforces GPAI rules as a public body; no commercial products -> X.7 floor 4; stored 4 agreed,2026-09-15
+grayswan,X,Muse (second coder),0,yes,span verified verbatim in Series A announcement (sha 9c727043168e); Gray Swan sells Cygnal and Shade to the labs it evaluates -> X.1 cap 0; stored 0 agreed,2026-09-15
+metr,A,Muse (second coder),4,yes,span verified verbatim in METR investigation post (sha a113698311d0); two METR staff worked on premises at OpenAI over six days -> A.5 floor 4; stored 4 agreed,2026-09-15
+metr,X,Muse (second coder),4,yes,span verified verbatim on ProPublica nonprofit page (sha cab41da17a3a); FY2024 990 shows $0 program service revenue -> X.7 floor 4; stored 4 agreed,2026-09-15
+mlcommons,A,Muse (second coder),0,yes,span verified verbatim in averi pilot report (sha 75c7a18eac5a); parties could not see model weights; only documented engagement evaluated a released model -> A.1 cap 0; stored 0 agreed,2026-09-15
+msft,G,Muse (second coder),0,yes,"two binding spans verified verbatim: ms-redteam (sha 93f37088044d) names the Microsoft AI Red Team; ms-redteam-100 blog (sha f328cd18687a) dates it to 2018 internal function -> business unit of a frontier developer, G.6 cap 0; stored 0 agreed",2026-09-15
+msft,P,Muse (second coder),0,yes,span verified verbatim in ms-redteam (sha 93f37088044d); Microsoft AI Red Team is a Microsoft business unit -> P.7 cap 0; stored 0 agreed,2026-09-15
+palisade,R,Muse (second coder),4,yes,span verified verbatim on palisaderesearch.org (sha 0601ddf86087); publishes findings unwelcome to labs (shutdown resistance) -> R.5 floor 4; stored 4 agreed,2026-09-15
+redwood,A,Muse (second coder),4,yes,span verified verbatim in METR investigation post (sha a113698311d0); Redwood staff member contracted with METR for on-site OpenAI work -> A.5 floor 4; stored 4 agreed,2026-09-15
+scale,F,Muse (second coder),0,yes,span verified verbatim in CNBC article (sha 95512e5ec457); Meta holds 49% stake after $14.3B investment -> F.1 cap 0; stored 0 agreed,2026-09-15
+scale,G,Muse (second coder),0,yes,span verified verbatim in CNBC article (sha 95512e5ec457); Meta 49% stake and founder departure for Meta -> G.6 cap 0; stored 0 agreed,2026-09-15
+scale,P,Muse (second coder),0,yes,span verified verbatim in CNBC article (sha 95512e5ec457); founder Alexandr Wang departed Scale for Meta under the deal -> P.7 cap 0; stored 0 agreed,2026-09-15
+ukaisi,X,Muse (second coder),4,yes,"span verified verbatim in regulations.ai entry (sha d560159ea362); Institute is an advisory technical research body, not a formal regulator; no commercial products -> X.7 floor 4; stored 4 agreed",2026-09-15
