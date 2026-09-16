@@ -69,7 +69,7 @@
   .ghead{padding:12px 14px 6px;border-bottom:1px solid var(--rule);background:var(--paper)}
   .ghead h3{font-size:16px}
   .ghead p{font-size:13px;color:var(--muted);margin:2px 0 4px;max-width:78ch}
-  .lhead,.row-main{display:grid;grid-template-columns:34px minmax(180px,1.4fr) minmax(120px,1fr) 150px 118px 36px;gap:12px;align-items:center;padding:10px 14px}
+  .lhead,.row-main{display:grid;grid-template-columns:34px minmax(180px,1.4fr) 112px 150px 104px 72px;gap:12px;align-items:center;padding:10px 14px}
   .lhead{font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--rule);background:var(--paper)}
   .row{border-bottom:1px solid var(--rule-soft)}
   .row:last-child{border-bottom:none}
@@ -90,10 +90,8 @@
   .band{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.02em;border-radius:4px;padding:1px 6px;margin-bottom:2px}
   .band.clear{background:var(--teal-tint);color:var(--teal)} .band.conditional{background:var(--amber-tint);color:#7A4E0E} .band.disqualifying{background:var(--ox-tint);color:var(--ox)} .band.unevidenced{background:var(--rule-soft);color:var(--muted)}
   .caret{width:26px;height:26px;border:1px solid var(--rule);border-radius:50%;display:grid;place-items:center;color:var(--muted);font-size:14px;justify-self:end}
-  .row[aria-expanded="true"] .caret{transform:rotate(180deg);background:var(--ink);color:#fff;border-color:var(--ink)}
   .caret{transition:transform .2s ease}
   .row-detail{display:none;padding:6px 14px 20px 60px;border-top:1px dashed var(--rule-soft);background:#FBFCFA}
-  .row[aria-expanded="true"] .row-detail{display:block}
   .detail-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:18px 28px}
   .detail-grid>div{min-width:0}
   .sigsrc,.prov,.move{overflow-wrap:anywhere;word-wrap:break-word}
@@ -122,11 +120,12 @@
   .conf.high{background:var(--teal-tint);color:var(--teal)} .conf.med{background:var(--amber-tint);color:#7A4E0E} .conf.low{background:var(--ox-tint);color:var(--ox)}
   .empty{padding:28px 14px;color:var(--muted)}
 
+  .floorcol{font-size:13px;color:var(--muted)}
+  .openlink{font-size:13px;white-space:nowrap;justify-self:end;color:var(--teal)}
   @media (max-width:720px){
     .lhead{display:none}
-    .row-main{grid-template-columns:28px 1fr 96px 30px;grid-template-areas:"rank name score caret" "rank bar bar caret" "rank tags tags caret";gap:6px 10px;padding:12px}
-    .row-main .rank{grid-area:rank}.row-main .name{grid-area:name}.row-main .tags{grid-area:tags}.row-main .barwrap{grid-area:bar}.row-main .score{grid-area:score}.row-main .caret{grid-area:caret;align-self:center}
-    .row-detail{padding-left:12px}
+    .row-main{grid-template-columns:24px 1fr 92px;grid-template-areas:"rank name open" "rank band score" "rank floor score";gap:4px 10px;padding:12px}
+    .row-main .rank{grid-area:rank}.row-main .name{grid-area:name}.row-main .bandcol{grid-area:band}.row-main .floorcol{grid-area:floor}.row-main .score{grid-area:score;align-self:start}.row-main .openlink{grid-area:open;align-self:center}
     .dim{grid-template-columns:110px 1fr auto}
   }
 
