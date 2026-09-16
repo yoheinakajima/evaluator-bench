@@ -1,10 +1,11 @@
 # Evaluator Bench
-A curator's ledger of third-party AI-evaluator independence conflicts (funding, governance,
-personnel, role incompatibility, scope, publication, access, methods). Each evaluator gets 0-4
+A curator's ledger of third-party AI-evaluator independence: six structural-independence
+dimensions (funding, governance, personnel, role incompatibility, scope, publication) plus two
+evaluation-condition dimensions (access depth, method transparency). Each evaluator gets 0-4
 per dimension, derived as the tightest admissible cap (or highest admissible floor) from
 bounded public signals under written rules — re-derivable by anyone from the quoted spans.
-An entry is not an endorsement; a low score is not an accusation; a clear band means no
-disqualifying conflict is on file, not a pass. Curator: Yohei Nakajima (Untapped Capital).
+An entry is not an endorsement; a low score is not an accusation; a 'no floor triggered' band
+means no disqualifying conflict is on file, not a pass. Curator: Yohei Nakajima (Untapped Capital).
 
 ## Machine data
 - bench.json — everything: 27 evaluators, 370 signals,

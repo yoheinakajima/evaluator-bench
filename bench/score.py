@@ -6,7 +6,7 @@ A value may be None (unevidenced under the chosen evidence policy). The score is
 computed over the evidenced dimensions only, and the coverage says how many of
 the eight that is. Independence has floors: the band, not a numeric cap, carries
 them. Any evidenced 0 puts the organization in the disqualifying band, any 1 in
-the conditional band; otherwise it is clear. The number ranks within a band.
+the conditional band; otherwise no floor is triggered. The number ranks within a band.
 """
 from __future__ import annotations
 from decimal import Decimal, ROUND_HALF_UP
@@ -14,9 +14,9 @@ from .load import DIMS
 
 BANDS = ["clear", "conditional", "disqualifying", "unevidenced"]
 BAND_DIMS = ["F", "G", "P", "X", "S", "R"]   # the conflict dimensions; access and methods never set a band (D-002)
-BAND_LABEL = {"clear": "Clear", "conditional": "Conditional floor", "disqualifying": "Disqualifying floor", "unevidenced": "Unevidenced"}
+BAND_LABEL = {"clear": "No floor triggered", "conditional": "Conditional floor", "disqualifying": "Disqualifying floor", "unevidenced": "Unevidenced"}
 BAND_DESC = {
-    "clear": "No evidenced dimension below 2.",
+    "clear": "No evidenced dimension below 2 — not a pass.",
     "conditional": "At least one evidenced conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) at 1: usable with conditions the card names.",
     "disqualifying": "At least one evidenced conflict dimension at 0: not a candidate for an independence-critical role until the floor moves. Access and methods never set a band.",
     "unevidenced": "No conflict dimension is evidenced under this policy.",

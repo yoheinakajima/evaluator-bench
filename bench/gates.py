@@ -108,7 +108,7 @@ def gates(d: dict | None = None) -> list[dict]:
                  + ", ".join(extra)) if extra else ""
     out.append(dict(gate="Every ranked organization and every materially-named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} materially-named {'person' if len(people) == 1 else 'people'}){extra_txt}"))
     # 4. the default policy is standard and the primary-only view is live
-    out.append(dict(gate="Default policy is Standard and the Primary-only view is live", ok=DEFAULT_POLICY == "standard" and "primary" in POLICY_ORDER, detail=f"default {DEFAULT_POLICY}; policies {', '.join(POLICY_ORDER)}"))
+    out.append(dict(gate="Default policy is Retrieved and confirmed and the Primary-only view is live", ok=DEFAULT_POLICY == "standard" and "primary" in POLICY_ORDER, detail=f"default {DEFAULT_POLICY}; policies {', '.join(POLICY_ORDER)}"))
     # 5. RULES.md is published and every conflict cites a rule
     rules = (ROOT / "RULES.md").exists()
     bad = []

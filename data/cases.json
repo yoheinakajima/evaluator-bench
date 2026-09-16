@@ -2,12 +2,12 @@
  {
   "t": "METR and Redwood inside OpenAI",
   "v": "Mixed: deep access, lab-set scope",
-  "p": "Two METR staff and a Redwood contractor spent six days on OpenAI's premises investigating how roughly 700 agents coordinated a hack of Hugging Face. They took no payment, wrote their own report, and published a statement on what was redacted. OpenAI set the window (June 26 to July 13), could redact any non-public information, and gave feedback on emphasis and tone. The later breach of OpenAI's own research cluster fell outside scope. This is what the access and publication dimensions look like at their current best, and what the scope dimension looks like when the audited party still holds the pen.",
+  "p": "Two METR staff and a Redwood contractor spent six days on OpenAI's premises investigating how roughly 700 agents coordinated a hack of Hugging Face. They took no payment, wrote their own report, and published a statement on what was redacted. OpenAI set the window (June 26 to July 13), could redact any non-public information, and gave feedback on emphasis and tone. The later breach of OpenAI's own research cluster fell outside scope. This is what the access and publication dimensions look like at their current best, and what the scope dimension looks like when the audited party sets the scope.",
   "c": "Sources: METR, \"Brief independent investigation of agents' behavior in the OpenAI / Hugging Face incident,\" 26 Aug 2026; critique of the scope in the repo under paper/."
  },
  {
   "t": "Epoch AI and FrontierMath",
-  "v": "Failure: undisclosed funder with data access",
+  "v": "Finding: undisclosed commissioning funder with data access",
   "p": "OpenAI commissioned 300 problems, owned them, and saw the statements and solutions; a contract barred Epoch from saying so until the day o3's score was announced. More than sixty contributing mathematicians were not told. Epoch acknowledged the communication failure and built a 50-problem holdout OpenAI cannot see. Publication rights include the right to disclose who paid.",
   "c": "Sources: Epoch AI, \"Clarifying the creation and use of the FrontierMath benchmark,\" 23 Jan 2025."
  },
