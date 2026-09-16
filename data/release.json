@@ -1,7 +1,7 @@
 {
   "stage": "preview",
   "set_on": "2026-09-15",
-  "window_until": "2026-09-29",
+  "window_until": "2026-10-15",
   "tag": null,
   "note": "Update, 15 September: the re-derivation pass did not move values; earlier v0.1 rules and scope decisions did."
 }
