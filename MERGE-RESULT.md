@@ -61,3 +61,11 @@ All five PRs merged cleanly with the resolutions above. Nothing left blocked on 
 **Repair commit** `382bc9e0db94547be358fc69d2c5710a9f80942f` ("Rebuild dist/method/index.html after #20/#21 merge"): the #21 merge's committed `dist/method/index.html` was one sentence stale — it carried #21's branch build, which predated #20's disclosure copy. CI ("committed log and projection must match a clean build") failed on the merge; a fresh `python -m bench build` in a clean clone showed exactly the one-line funder-disclosure diff. Committed the rebuilt file only; CI re-ran on the repair commit.
 
 Both PRs auto-closed as merged (GitHub detected containment: merged_at set on both). No assessment values changed; no outreach touched. Review working files (this doc, plan) were kept out of the merge trees.
+
+## PR #24 — merged 2026-09-16 ~03:20 UTC
+
+- Branch `feat/agent-access` (remote `633c3f5236dbfacc09a58a55b671dc8eb9f7af31`), remote merge commit `68559795061e43bd2afa40bae7be76db522254ae` (parents `a630bf2a` + `633c3f52`), pushed via push-merge.py.
+- Contents: `/llms.txt` generated at build time (1817 bytes), `dist/evaluators/<slug>.json` per-entity JSONs (28 files incl. index.json; `metr.json` verified identical to bench.json METR record, 8 assessments / 26 signals), homepage Disclosures one-liner + Method "Agents" card.
+- Checks on merged HEAD (clean clone): verify ok (251 sources, 370 signals, 216 assessments, 27 evaluators), build ok, pytest 60/60, dist matches clean rebuild.
+- Pages: `pages` workflow completed success on `68559795`; live site confirmed: `/llms.txt` 200 (1817 bytes), `/evaluators/metr.json` 200.
+- PR #24 closed as merged by GitHub. No assessment-value changes; only the merge commit on main.
