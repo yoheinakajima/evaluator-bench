@@ -41,11 +41,13 @@ def _person_mentioned(text: str, name: str) -> bool:
 def material_people(d: dict | None = None, L: dict | None = None) -> list[str]:
     """Person entities in outreach scope under RULES 12.
 
-    A named individual is contacted when the bench publishes a claim about
-    them that binds to a score (named in the claim or quoted span of a signal
-    binding under the default policy), or when an assessment's open questions
-    name them in a document request. People named only in background role
-    mentions are covered by the public correction channel, not a cold email.
+    Personal outreach is reserved for the case where the bench's own claim
+    text names an individual in a signal binding under the default policy —
+    i.e. we publish an assertion about a person that moves a score. People
+    named only inside a quoted evidence span, in background role mentions,
+    or in document requests are covered by the public correction channel;
+    document requests are directed to the relevant organization, which can
+    route to the individual.
     """
     from .ledger import load_ledger
     d = d or load(strict=False)
@@ -56,16 +58,13 @@ def material_people(d: dict | None = None, L: dict | None = None) -> list[str]:
         if a["evaluator"] not in ranked:
             continue
         r = derive(a, d["signals"], d["sources"], DEFAULT_POLICY)
-        texts = []
         for sid in r["binding"]:
-            s = d["signals"][sid]
-            texts.append((s.get("claim") or "") + "\n" + (s.get("quote") or ""))
-        texts.extend(a.get("open_questions", []) or [])
-        for pid, e in L["entities"].items():
-            if e["kind"] != "person" or pid in found:
-                continue
-            if any(_person_mentioned(t, e["name"]) for t in texts):
-                found.add(pid)
+            claim = d["signals"][sid].get("claim") or ""
+            for pid, e in L["entities"].items():
+                if e["kind"] != "person" or pid in found:
+                    continue
+                if _person_mentioned(claim, e["name"]):
+                    found.add(pid)
     return sorted(found)
 
 
@@ -107,7 +106,7 @@ def gates(d: dict | None = None) -> list[dict]:
     extra_txt = ("; the log lists " + str(len(log)) + " recipients, including "
                  + str(len(extra)) + " outside the gate: "
                  + ", ".join(extra)) if extra else ""
-    out.append(dict(gate="Every ranked organization and every materially-named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} materially-named people){extra_txt}"))
+    out.append(dict(gate="Every ranked organization and every materially-named person has been contacted", ok=not unsent, detail=f"{len(need) - len(unsent)} of {len(need)} contacted ({len(ranked)} ranked organizations, {len(people)} materially-named {'person' if len(people) == 1 else 'people'}){extra_txt}"))
     # 4. the default policy is standard and the primary-only view is live
     out.append(dict(gate="Default policy is Standard and the Primary-only view is live", ok=DEFAULT_POLICY == "standard" and "primary" in POLICY_ORDER, detail=f"default {DEFAULT_POLICY}; policies {', '.join(POLICY_ORDER)}"))
     # 5. RULES.md is published and every conflict cites a rule

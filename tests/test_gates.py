@@ -25,11 +25,11 @@ def test_status_gates_table_uses_live_gates_output():
 def test_outreach_gate_reconciles_log_and_gate_population():
     gs = {g["gate"]: g for g in gates()}
     detail = gs["Every ranked organization and every materially-named person has been contacted"]["detail"]
-    # the gate population is 31 (24 ranked organizations + 7 materially-named people);
-    # the log lists 34 recipients, so the detail must name both numbers
-    assert "0 of 31 contacted" in detail
-    assert "24 ranked organizations, 7 materially-named people" in detail
-    assert "34 recipients" in detail
+    # the gate population is 25 (24 ranked organizations + 1 materially-named person);
+    # the log lists 28 recipients, so the detail must name both numbers
+    assert "0 of 25 contacted" in detail
+    assert "24 ranked organizations, 1 materially-named person" in detail
+    assert "28 recipients" in detail
     assert "outside the gate" in detail
 
 
