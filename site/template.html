@@ -265,6 +265,7 @@
       <label class="viewtoggle"><input type="checkbox" id="onelist"> One list instead of three</label>
     </div>
 
+    <p class="sparklegend" style="font-size:12.5px;color:var(--muted);margin:6px 0 0">Dimension bars: fill height is the 0–4 value (red 0–1, amber 2, teal 3–4, hatched = unevidenced). Hover any bar for the dimension and value.</p>
     <div id="groups"></div>
 
     <div class="ledger">
@@ -280,7 +281,7 @@
   <section class="alt read" id="howto">
     <div class="wrap">
       <h2>How to read this</h2>
-      <p><b>The band comes first.</b> An evidenced 0 on a conflict dimension, funding, governance, personnel, role incompatibility, scope, or publication, puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise it is clear. Access and methods count in the number but never set a band: a 0 there means the labs have not let the organization in, or it has not published its methods, not that it is compromised. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number.</p>
+      <p><b>The band comes first.</b> An evidenced 0 on a conflict dimension, funding, governance, personnel, role incompatibility, scope, or publication, puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise it is clear. Clear means no disqualifying conflict is on file, not a pass. Access and methods count in the number but never set a band: a 0 there means the labs have not let the organization in, or it has not published its methods, not that it is compromised. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number.</p>
       <p><b>The number is yours, so it is hidden until you choose weights.</b> By default each row shows the band, how many of the eight dimensions are evidenced, the weakest one, and the eight values themselves, none of which depend on anyone's priorities. Press "Score with these weights" after picking a preset and the weighted number appears. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.</p>
       <p><b>The evidence policy decides what counts.</b> Under the default, Standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible but count for nothing. Switch to Against interest and an organization's own statements count only when they are against its interest. Switch to Primary only and you see what can be verified from outside the field: not much, which is the finding.</p>
       <p><b>A dash is not a zero.</b> When no admissible signal sets a bound on a dimension, the card shows a dash and the score is computed over the dimensions that are evidenced, with the coverage count beside it. Silence earns nothing either way.</p>

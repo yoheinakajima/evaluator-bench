@@ -193,7 +193,7 @@
     "M": 9,
     "X": 5
    },
-   "derivation": "Persona: a lab procurement lead choosing an outside evaluator whose report will be cited in a system card. Weights follow what a reader of that card will test the report against: access depth (20) and scope control (16) because a shallow or lab-scoped engagement is the first thing a critic checks; funding (18) and publication rights (14) because AEF-1's operating conditions and Illinois SB 315's financial-interest test both turn on them; personnel (10), method transparency (9), governance (8), and role incompatibility (5) round it out. Fixed in bench/seed_v0.py on 15 September 2026 before the population pass of the same day; not registered outside this repository, so it is the confirmatory preset, not a pre-registered one."
+   "derivation": "Persona: a lab procurement lead choosing an outside evaluator whose report will be cited in a system card. Access depth (20) and scope control (16) lead, because a shallow or lab-scoped engagement is the first thing a critic checks; funding (18) and publication rights (14) follow; personnel (10), method transparency (9), governance (8), and role incompatibility (5) round it out. Fixed in bench/seed_v0.py on 15 September 2026 before the population pass of the same day; not registered outside this repository, so it is the confirmatory preset, not a pre-registered one."
   },
   "regulator": {
    "label": "Regulator or auditor",
