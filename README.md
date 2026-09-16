@@ -1,6 +1,6 @@
 # Evaluator Bench
 
-Status: v0.1 candidate, preview window through 29 Sep 2026. See `CHANGELOG.md` for what changed, `RULES.md` for how a value is made, `paper/PLAN-v0.1.md` for the plan this release follows, and `LAUNCH.md` for the operator steps.
+Status: v0.1 candidate, preview window through 15 Oct 2026. See `CHANGELOG.md` for what changed, `RULES.md` for how a value is made, `paper/PLAN-v0.1.md` for the plan this release follows, and `LAUNCH.md` for the operator steps.
 
 An evidence-linked, event-sourced directory of third-party evaluators of frontier AI for safety-relevant properties: 27 organizations on file, 24 ranked, 1 expected entrant on a watchlist, 2 retained out of scope as capability benchmarks. Each carries an independence score you can take apart, under an evidence policy you choose, with a row-level ledger of who pays whom. Scope and every change to it are recorded in `DECISIONS.md`.
 
@@ -14,9 +14,9 @@ Labs now cite the same six or seven outside groups in every system card. Regulat
 
 Nobody types a value. Every signal carries a `bound` (an against-signal caps the value on its dimension, a for-signal floors it) and the `RULES.md` rule code that says so. The value is the smallest admissible cap or, with no cap, the largest admissible floor. Where a floor and a cap disagree, the assessment carries a resolution naming the rule, and the card shows the conflict. A 0 needs a quoted span; a 4 needs a span and a tier-1 or tier-2 source or two independent sources with one not self-published; a bound from sources that were not all confirmed cannot set an extreme. The verifier fails if a stored value disagrees with its derivation.
 
-The reader chooses what counts. Under the default policy, standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible and count for nothing. Against interest admits an organization's own statements only when they are against its interest. Verified spans requires a quoted span. Primary only admits confirmed filings, indexes, and third-party ledgers with a span: what can be verified from outside the field. A dimension with no admissible signal renders as a dash and is excluded from the score; the coverage count sits beside every score.
+The reader chooses what counts. Under the default policy, Retrieved & confirmed, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible and count for nothing. Against interest admits an organization's own statements only when they are against its interest. Verified spans requires a quoted span. Primary only admits confirmed filings, indexes, and third-party ledgers with a span: what can be verified from outside the field. A dimension with no admissible signal renders as a dash and is excluded from the score; the coverage count sits beside every score.
 
-Independence has floors, so the band comes first: an evidenced 0 on a conflict dimension (funding, governance, personnel, role incompatibility, scope, publication) is a disqualifying floor, a 1 a conditional floor, otherwise clear. Access and methods count in the number but never set a band. On the directory the number is hidden until the reader chooses weights; the band, the coverage, and the eight values show by default.
+Independence has floors, so the band comes first: an evidenced 0 on a structural-independence dimension (funding, governance, personnel, scope control, publication rights, role incompatibility) is a disqualifying floor, a 1 a conditional floor, otherwise no floor triggered. The two evaluation conditions (access depth, method transparency) count in the number but never set a band. On the directory the number is hidden until the reader chooses weights; the band, the coverage, and the eight values show by default.
 
 ## How it is built
 
@@ -56,7 +56,7 @@ python -m bench release --stage published --tag v0.1   # refused until `bench ga
 
 ## The rubric
 
-Eight dimensions, each 0 to 4 with written anchors in `data/dimensions.json`: funding, governance, personnel, access depth (lab-granted), scope control, publication rights, method transparency, role incompatibility. Presets in `data/presets.json` weight them for lab procurement, regulator selection, or public trust, each with a written derivation. The site lets a reader move the weights and switch the evidence policy and watch the ranking change.
+Eight dimensions, each 0 to 4 with written anchors in `data/dimensions.json`: six structural-independence dimensions (funding, governance, personnel, scope control, publication rights, role incompatibility) and two evaluation conditions (access depth, lab-granted; method transparency). Presets in `data/presets.json` weight them for lab procurement, regulator selection, or public trust, each with a written derivation. The site lets a reader move the weights and switch the evidence policy and watch the ranking change.
 
 The rubric draws on the AI Evaluator Forum's AEF-1 operating conditions, the auditor-independence rules Illinois SB 315 imports from financial audit, and the Charnock et al. access taxonomy. Two dimensions the field tends to skip are included: who owns the evaluator, and whether it sells remediation to the companies it grades. The tie-breaks that turn a claim into an anchor are in `RULES.md`; roles (referee, government, vendor, first-party, benchmark) are derived from the same rules, and the population criteria and every candidate checked are in `data/exclusions.json`.
 
