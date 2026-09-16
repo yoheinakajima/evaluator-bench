@@ -1,17 +1,27 @@
 # Right of reply: Irregular (formerly Pattern Labs)
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Irregular (formerly Pattern Labs); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Irregular (formerly Pattern Labs); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/irregular.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 1/4 (standard policy: 1)
+### Funding: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Material revenue or investment from evaluated labs or their investors.
 Derivation: Capped at 1 by irregular.01 (F.4): $80M raised in 2025 at a $450M valuation, led by Sequoia and Redpoint; Sequoia is also a major OpenAI investor.; capped at 1 by irregular.02 (F.5): Millions in annual revenue from the labs it evaluates.. Floors up to 1 from irregular.06 do not exceed the cap. Not counted under this policy: irregular.11 (superseded).
 Curator note: Anchor 1: a $6.8M Coefficient Giving grant appears in the index under the former name Pattern Labs (irregular.11; ledger T09 marked differs, unreconciled). A name-search under ‘Irregular’ found nothing (irregular.12), which does not rebut the old-name row — the project treats the two names as the same company. Material lab-adjacent funding with disputed attribution.
@@ -23,38 +33,38 @@ Curator note: Anchor 1: a $6.8M Coefficient Giving grant appears in the index un
 - [against, caps at 3, F.6] Good Ventures Foundation, Coefficient's principal funder and an Anthropic investor's foundation, paid Pattern Labs Tech Inc $4,533,333 (grant dated 5 March 2024) and $2,266,667 (FY2025) for developing software tools, products and analysis focused on global security, and held a $3,000,000 stake in the company at 30 June 2024 per its 990-PF. Quote: "PATTERN LABS TECH INC 108 W 13TH ST STE 100 WILMINGTON DE 19801 2024-03-05 4533333" Sources: Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML) (https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml); Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render) (https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF); Site search (https://coefficientgiving.org/search/); evaluators.csv (row EV07) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv)
 - Document request: Re-run the Coefficient index search under both Irregular and Pattern Labs and record the snapshot.
 
-### Governance: 1/4 (standard policy: 1)
+### Governance: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by irregular.03 (G.2): Venture-backed for-profit; no published COI or recusal policy found..
 - [against, caps at 1, G.2] Venture-backed for-profit; no published COI or recusal policy found. Quote: "a round led by Sequoia Capital and Redpoint Ventures" Sources: Irregular raises $80M to secure frontier AI models (https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by irregular.10 (P.5): Markets itself as embedded with the labs; no recusal or cooling-off policy found..
 - [against, caps at 2, P.5] Markets itself as embedded with the labs; no recusal or cooling-off policy found. Quote: "By embedding directly with these cutting-edge research labs" Sources: Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/)
 
-### Access depth (lab-granted): 2/4 (standard policy: 2)
+### Access depth (lab-granted): 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Pre-release with safeguards off or extended time.
 Derivation: Floored at 2 by irregular.05 (A.1): Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs.. No admissible signal caps it.
 - [for, floors at 2, A.1] Deep, repeated pre-deployment access at OpenAI, Anthropic and Google DeepMind; embedded with labs. Quote: "By embedding directly with these cutting-edge research labs" Sources: Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/)
 
-### Scope control: 2/4 (standard policy: 2)
+### Scope control: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Scope negotiated per engagement.
 Derivation: Capped at 2 by irregular.09 (S.2; S.6): Scope set by lab engagements; no public account of evaluator-set scope..
 - [against, caps at 2, S.2; S.6] Scope set by lab engagements; no public account of evaluator-set scope. Quote: "The company also co-authored a whitepaper with Anthropic" Sources: Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/); Irregular Raises $80 Million (https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Capped at 2 by irregular.14 (R.3): Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper).. Floors up to 1 from irregular.08 do not exceed the cap.
 - [for, floors at 1, R.3 (anchor 1)] Findings appear in system cards for o3, o4-mini, GPT-5 and Claude models. Quote: "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5" Sources: Irregular raises $80M to secure frontier AI models (https://techcrunch.com/2025/09/17/irregular-raises-80-million-to-secure-frontier-ai-models); Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/)
 - [against, caps at 2, R.3] Findings on lab models reach the public only as lab-authored system-card citations; the company publishes its own research on other work (a RAND co-authored paper and an Anthropic co-authored whitepaper). Quote: "Irregular’s evaluations are cited (under their former name, Pattern Labs) in system cards for GPT-4, o3, o4 mini and 5" Sources: Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/); Irregular Raises $80 Million (https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by irregular.07 (M.2): Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic.. No admissible signal caps it.
 - [for, floors at 2, M.2] Publishes some method papers; SOLVE framework adopted by UK AISI and Anthropic. Quote: "the UK government and Anthropic both use the company’s SOLVE framework" Sources: Partnering with Irregular (https://sequoiacap.com/article/partnering-with-irregular-ahead-of-the-curve/)
 
-### Role incompatibility: 1/4 (standard policy: 1)
+### Role incompatibility: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Sells products or services other than the evaluation itself to labs or to their customers.
 Derivation: Capped at 1 by irregular.13 (X.2): Delivers paid evaluation services to OpenAI and Anthropic; lab partnerships are the only revenue the company discloses..
 - [against, caps at 2, X.1 (second sentence)] Growth plan is to sell runtime security controls into the same customers it evaluates. Quote: "to develop the defenses needed before deployment" Sources: Irregular Raises $80 Million (https://www.newswire.com/news/irregular-raises-80-million-to-set-the-security-standards-for-frontier-ai)

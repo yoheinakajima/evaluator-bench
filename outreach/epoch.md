@@ -1,17 +1,27 @@
 # Right of reply: Epoch AI
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Epoch AI; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Epoch AI; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/epoch.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 2/4 (standard policy: 2)
+### Funding: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Labs pay per engagement; otherwise diversified.
 Derivation: Conflict: floor 3 from epoch.05 (F.6) against cap 2 from epoch.01, epoch.11, epoch.13 (F.3, F.3, F.3); resolved at 2 by F.3: F.3 fee cap decides; the philanthropic floor is itself limited to 3 by F.6.
 Curator note: Anchor 2 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (contract row T35). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.
@@ -22,41 +32,41 @@ Resolution: F.3 decides 2: F.3 fee cap decides; the philanthropic floor is itsel
 - [against, caps at 2, F.3] Transparency page lists eight Coefficient grants (largest $8,500,000 in April 2025; about $25M cumulative), a $600,000 Tallinn DAF gift, $195,000 from SFF, and paying clients including OpenAI, Google DeepMind, xAI, an Anthropic pilot, the EU AI Office, Sequoia Capital Global Equities and Bridgewater. Quote: "xAI 2025 Model Evaluations Anthropic 2024 Small pilot for new benchmark" Sources: Transparency (https://epoch.ai/about/transparency)
 - [for, floors at 2, F.3] Epoch says it charges lab and industry clients at least industry-consultant rates so it is not subsidising their work, and commits to disclosing sponsorship and data-access agreements; its eight Coefficient grants sum to $25.1M by its own list. Quote: "We aim to charge prices at least on par with industry consultants" Sources: Transparency (https://epoch.ai/about/transparency)
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Floored at 2 by epoch.06 (G.1): Nonprofit.. No admissible signal caps it.
 - [for, floors at 2, G.1] Nonprofit. Quote: "Epoch AI, a nonprofit primarily funded by Open Philanthropy" Sources: AI benchmarking organization criticized for waiting to disclose funding from OpenAI (https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Floored at 2 by epoch.09 (P.6): No lab roles found.. No admissible signal caps it.
 - [for, floors at 2, P.6] No lab roles found. Sources: AI benchmarking organization criticized for waiting to disclose funding from OpenAI (https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai)
 
-### Access depth (lab-granted): 1/4 (standard policy: 1)
+### Access depth (lab-granted): 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Pre-release API with safeguards on.
 Derivation: Capped at 1 by epoch.07 (A.1): Cannot share the commissioned set with other labs without OpenAI's permission.. Floors up to 1 from epoch.18 do not exceed the cap.
 - [against, caps at 1, A.1] Cannot share the commissioned set with other labs without OpenAI's permission. Quote: "we cannot share the questions and answers with other parties without written permission from OpenAI" Sources: Clarifying the creation and use of the FrontierMath benchmark (https://epoch.ai/latest/openai-and-frontiermath)
 - [for, floors at 1, A.1] Epoch reports pre-release access to evaluate GPT-5.4 (March 2026) and Meta's Muse Spark on FrontierMath. Quote: "We had pre-release access to evaluate the model" Sources: GPT-5.4 set a new record on FrontierMath (https://epochai.substack.com/p/gpt-54-set-a-new-record-on-frontiermath); Epoch AI on X: pre-release access to Meta's Muse Spark (https://x.com/EpochAIResearch/status/2041947954202988757)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by epoch.17 (S.6): FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout.. Floors up to 3 from epoch.08 do not exceed the cap.
 - [for, floors at 3, S.5] Evaluates any model on FrontierMath at its discretion. Quote: "Epoch AI is free to conduct and publish evaluations of any models using the FrontierMath problem set" Sources: Clarifying the creation and use of the FrontierMath benchmark (https://epoch.ai/latest/openai-and-frontiermath)
 - [against, caps at 3, S.6] FrontierMath, the asset on which Epoch evaluates OpenAI and other labs, was commissioned and is owned by OpenAI, which holds the problems and solutions outside the 50-problem holdout. Quote: "OpenAI commissioned Epoch AI to produce 300 advanced math problems for AI evaluation" Sources: Clarifying the creation and use of the FrontierMath benchmark (https://epoch.ai/latest/openai-and-frontiermath)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Capped at 2 by epoch.02 (R.2): Contributors were not told the funder; disclosure came after the fact.. Floors up to 2 from epoch.03 do not exceed the cap.
 - [against, caps at 2, R.2] Contributors were not told the funder; disclosure came after the fact. Quote: "Per our agreement, we needed OpenAI’s permission before publicly disclosing their involvement" Sources: AI benchmarking organization criticized for waiting to disclose funding from OpenAI (https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai); Clarifying the creation and use of the FrontierMath benchmark (https://epoch.ai/latest/openai-and-frontiermath)
 - [for, floors at 2, R.1] After the disclosure failure, created a 50-problem holdout OpenAI cannot see. Quote: "We are finalizing a 50-problem set for which OpenAI will only receive the problem statements and not the solutions" Sources: Clarifying the creation and use of the FrontierMath benchmark (https://epoch.ai/latest/openai-and-frontiermath)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by epoch.04 (M.1): Rigorous public data on compute, training runs and capability trends.. No admissible signal caps it.
 - [for, floors at 3, M.1] Rigorous public data on compute, training runs and capability trends. Sources: AI benchmarking organization criticized for waiting to disclose funding from OpenAI (https://techcrunch.com/2025/01/19/ai-benchmarking-organization-criticized-for-waiting-to-disclose-funding-from-openai)
 - [for, informational, M.2] Publishes a transparency page listing donations above $70K and paying clients. Quote: "Here, we list only donations of $70,000 USD or more" Sources: Transparency (https://epoch.ai/about/transparency)
 
-### Role incompatibility: 2/4 (standard policy: 2)
+### Role incompatibility: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Consults for labs.
 Derivation: Conflict: floor 3 from epoch.10 (X.7) against cap 2 from epoch.16 (X.3); resolved at 2 by X.3: epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page.
 Resolution: X.3 decides 2: epoch.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.3 cap of 2; X.3 decides because the client list is on Epoch's own page.

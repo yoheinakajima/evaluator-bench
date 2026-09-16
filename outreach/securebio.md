@@ -1,17 +1,27 @@
 # Right of reply: SecureBio
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about SecureBio; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about SecureBio; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/securebio.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 1/4 (standard policy: 1)
+### Funding: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Material revenue or investment from evaluated labs or their investors.
 Derivation: Conflict: floor 3 from securebio.13 (F.9) against cap 1 from securebio.02, securebio.11 (F.5, F.5); resolved at 1 by F.5: F.5 (material revenue from a lab investor) decides over the F.9 public-contract floor; the floor describes the remainder of the base.
 Resolution: F.5 decides 1: F.5 (material revenue from a lab investor) decides over the F.9 public-contract floor; the floor describes the remainder of the base.
@@ -25,7 +35,7 @@ Resolution: F.5 decides 1: F.5 (material revenue from a lab investor) decides ov
 - [against, caps at 3, F.6] Coefficient / Open Philanthropy recommended six grants to SecureBio totaling about $9.48M from November 2022 to March 2025, including $4,000,000 general support over three years, paid by Good Ventures Foundation (an Anthropic investor's foundation) per its 990-PFs; only $55,548 of it sits in the AI focus area. Quote: "Open Philanthropy recommended a grant of $4,000,000 over three years to SecureBio for general support." Sources: SecureBio — General Support (Wayback capture 2025-05-13) (https://web.archive.org/web/20250513041511/https://www.openphilanthropy.org/grants/securebio-general-support/); SecureBio — AI Benchmark Improvements (Wayback capture 2025-07-11) (https://web.archive.org/web/20250711085512/https://www.openphilanthropy.org/grants/securebio-ai-benchmark-improvements/); Good Ventures Foundation 990-PF, tax period 2022-07-01 to 2023-06-30 (IRS e-file XML) (https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202441369349105564_public.xml); Good Ventures Foundation 990-PF, tax period 2023-07-01 to 2024-06-30 (IRS e-file XML) (https://gt990datalake-rawdata.s3.amazonaws.com/EfileData/XmlFiles/202501349349105365_public.xml); Good Ventures Foundation 990-PF, fiscal year ending June 2025 (ProPublica full-text render) (https://projects.propublica.org/nonprofits/full_text/202641359349102829/IRS990PF); SecureBio — Biosecurity Research (Wayback capture 2023-05-28) (https://web.archive.org/web/20230528163412/https://www.openphilanthropy.org/grants/securebio-biosecurity-research/); SecureBio — Pathogen Early Warning Project (Wayback capture 2025-06-19) (https://web.archive.org/web/20250619192437/https://www.openphilanthropy.org/grants/securebio-pathogen-early-warning-project/); SecureBio — Nucleic Acid Observatory (Wayback capture 2025-04-26) (https://web.archive.org/web/20250426075953/https://www.openphilanthropy.org/grants/securebio-nucleic-acid-observatory/); SecureBio — AI Biological Capabilities Dashboard (Wayback capture 2025-07-11) (https://web.archive.org/web/20250711091335/https://www.openphilanthropy.org/grants/securebio-ai-biological-capabilities-dashboard/)
 - Document request: Coefficient grant amount to SecureBio.
 
-### Governance: 3/4 (standard policy: 3)
+### Governance: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Nonprofit or public body with a COI policy.
 Derivation: Floored at 3 by securebio.17 (G.2): SecureBio publishes a conflicts-of-interest policy requiring recusal for financial interests or recent employment at the assessed entity and barring results-contingent funding.. No admissible signal caps it.
 - [for, floors at 2, G.1] Two-division structure with a stated firewall; leadership committed publicly to resign and disclose if the grant were used as leverage on evaluations. Quote: "I'll say so publicly and use whatever leverage I have to stop it (up to and including resignation)" Sources: Building a three-day early-warning system for novel pathogens (https://securebio.org/blog/three-day-early-warning-system/); Thoughts on taking OpenAI Foundation funding (https://forum.effectivealtruism.org/posts/dMfgJQ2rGX8GmzdMm/thoughts-on-taking-openai-foundation-funding)
@@ -33,37 +43,37 @@ Derivation: Floored at 3 by securebio.17 (G.2): SecureBio publishes a conflicts-
 - [for, floors at 2, G.1] The grant is restricted to Detection work; the AI evaluation team has separate leadership, budgets and deliverables. Quote: "This grant is restricted to where it may only fund our Detection work" Sources: Building a three-day early-warning system for novel pathogens (https://securebio.org/blog/three-day-early-warning-system/); Building a three-day early-warning system for novel pathogens (https://securebio.substack.com/p/building-a-three-day-early-warning)
 - [for, floors at 3, G.2] SecureBio publishes a conflicts-of-interest policy requiring recusal for financial interests or recent employment at the assessed entity and barring results-contingent funding. Quote: "Staff will be required to recuse themselves from engagements where an actual or perceived conflict of interest exists" Sources: Conflicts of Interest Policy (https://securebio.org/ai/conflicts-of-interest/); SecureBio's principles and practices for model assessment (https://securebio.org/ai/principles/)
 
-### Personnel: 3/4 (standard policy: 3)
+### Personnel: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Recusal policy and disclosure of lab ties.
 Derivation: Floored at 3 by securebio.19 (P.5): SecureBio's COI policy makes disclosure of conflicts mandatory for all AI-team staff at hiring and every six months, requires recusal, and its reports disclose conflicts relevant to each assessment.. No admissible signal caps it.
 - [for, floors at 2, P.6] Staff pipeline disclosed through philanthropic career grants; no lab board roles found. Sources: It looks like there are some good funding opportunities in AI safety right now (https://80000hours.org/2025/01/it-looks-like-there-are-some-good-funding-opportunities-in-ai-safety-right-now/)
 - [for, floors at 3, P.5] SecureBio's COI policy makes disclosure of conflicts mandatory for all AI-team staff at hiring and every six months, requires recusal, and its reports disclose conflicts relevant to each assessment. Quote: "All staff and contractors on our AI team must disclose potential conflicts of interest" Sources: Conflicts of Interest Policy (https://securebio.org/ai/conflicts-of-interest/); SecureBio's principles and practices for model assessment (https://securebio.org/ai/principles/)
 
-### Access depth (lab-granted): 2/4 (standard policy: 2)
+### Access depth (lab-granted): 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Pre-release with safeguards off or extended time.
 Derivation: Floored at 2 by securebio.20 (A.1): For the GPT-5.5 pre-release assessment, OpenAI disabled API-level biological content filtering on the checkpoints SecureBio tested.. No admissible signal caps it.
 - [for, floors at 1, A.1] Pre-deployment access across the major Western labs. Quote: "including pre-release assessments for biosecurity risk" Sources: Building a three-day early-warning system for novel pathogens (https://securebio.org/blog/three-day-early-warning-system/)
 - [for, floors at 2, A.1] For the GPT-5.5 pre-release assessment, OpenAI disabled API-level biological content filtering on the checkpoints SecureBio tested. Quote: "API-level biological content filtering was disabled on these checkpoints" Sources: SecureBio's pre-release assessment of OpenAI's GPT-5.5 (https://securebio.org/blog/gpt-5-5-pre-release-assessment/)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by securebio.21 (S.1): The GPT-5.5 pre-release window was set by the lab: access ran from April 2 to April 9, 2026.. Floors up to 3 from securebio.05 do not exceed the cap.
 - [for, floors at 3, S.3] Evaluates models from many developers; consortium member on the EU AI Office CBRN contract. Quote: "FAR AI leads a consortium including SecureBio" Sources: FAR AI (https://www.longtermwiki.com/wiki/E138)
 - [for, floors at 2, S.5] SecureBio states the OpenAI Foundation grant places no constraints on what any part of SecureBio can research, publish or say, and its AI team's policy is to evaluate models solely on their merits. Quote: "it places no constraints on what any part of SecureBio can research, publish, or say" Sources: Building a three-day early-warning system for novel pathogens (https://securebio.org/blog/three-day-early-warning-system/)
 - [against, caps at 3, S.1] The GPT-5.5 pre-release window was set by the lab: access ran from April 2 to April 9, 2026. Quote: "We had access to these checkpoints from April 2nd through April 9th, 2026" Sources: SecureBio's pre-release assessment of OpenAI's GPT-5.5 (https://securebio.org/blog/gpt-5-5-pre-release-assessment/)
 
-### Publication rights: 3/4 (standard policy: 3)
+### Publication rights: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Publishes; redaction limited to security; redactions disclosed.
 Derivation: Floored at 3 by securebio.18 (R.1): SecureBio's principles state developers have no authority to redact results to conceal unfavorable findings, that redactions are limited to infohazards and confidential business information, and that reports say whether redactions affect conclusions.. No admissible signal caps it.
 - [for, floors at 2, R.1] Publishes pre-release biological assessments and the Virology Capabilities Test. Quote: "SecureBio’s model evaluations, including pre-release assessments for biosecurity risk, are under our AI team" Sources: Building a three-day early-warning system for novel pathogens (https://securebio.org/blog/three-day-early-warning-system/); AI Evaluator Forum launch and AEF-1 (https://aievaluatorforum.org/)
 - [for, floors at 3, R.1] SecureBio's principles state developers have no authority to redact results to conceal unfavorable findings, that redactions are limited to infohazards and confidential business information, and that reports say whether redactions affect conclusions. Quote: "AI developers have no authority to redact our results to conceal performance or unfavorable findings" Sources: SecureBio's principles and practices for model assessment (https://securebio.org/ai/principles/)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by securebio.09 (M.2): Methods published; VCT is documented.. No admissible signal caps it.
 - [for, floors at 2, M.2] Methods published; VCT is documented. Quote: "VCT comprises 322 questions on fundamental, tacit, and visual knowledge" Sources: AI Evaluator Forum launch and AEF-1 (https://aievaluatorforum.org/); SecureBio's pre-release assessment of OpenAI's GPT-5.5 (https://securebio.org/blog/gpt-5-5-pre-release-assessment/)
 
-### Role incompatibility: 1/4 (standard policy: 1)
+### Role incompatibility: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Sells products or services other than the evaluation itself to labs or to their customers.
 Derivation: Conflict: floor 3 from securebio.10 (X.7) against cap 1 from securebio.15 (X.2); resolved at 1 by X.2: securebio.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.2 cap; X.2 decides because the licensing statement is on SecureBio's own page.
 Resolution: X.2 decides 1: securebio.10's raw floor of 4 is held to 3 by C15/C16 and still exceeds the X.2 cap; X.2 decides because the licensing statement is on SecureBio's own page.

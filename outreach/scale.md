@@ -1,57 +1,67 @@
 # Right of reply: Scale AI (SEAL / Scale Labs)
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Scale AI (SEAL / Scale Labs); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Scale AI (SEAL / Scale Labs); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/scale.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 0/4 (standard policy: 0)
+### Funding: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Owned or controlled by a frontier developer or a lab investor: a stake of 20% or more, or a business unit.
 Derivation: Capped at 0 by scale.01 (F.1): Nearly half owned by Meta, itself a frontier developer..
 Curator note: Anchor 0 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Meta (investment row T52). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.
 - [against, caps at 0, F.1] Nearly half owned by Meta, itself a frontier developer. Quote: "Meta has a 49% stake in Scale after its $14.3 billion investment" Sources: Third-Party Model Auditing (https://www.longtermwiki.com/wiki/E450); Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security); Scale AI not winding down following Meta deal, interim CEO says (https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html); Scale AI Announces Next Phase of Company’s Evolution (https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution)
 - [against, caps at 0, F.1] Meta paid $14.3B for a 49% non-voting stake in June 2025; the founder moved to Meta. Quote: "Meta has a 49% stake in Scale after its $14.3 billion investment" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Scale AI not winding down following Meta deal, interim CEO says (https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html)
 
-### Governance: 0/4 (standard policy: 0)
+### Governance: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Unit or subsidiary of a lab or a lab's investor.
 Derivation: Capped at 0 by scale.10 (G.6): Meta holds a 49% stake after a $14.3B investment; the founder left for Meta and an interim CEO was named; Google, OpenAI and xAI reportedly reduced engagements..
 - [against, caps at 1, G.2] Primary business is selling data and evaluation services to the labs; no public COI policy addressing the Meta relationship. Quote: "Scale has worked with the world's leading AI model builders" Sources: Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security)
 - [against, caps at 0, G.6] Meta holds a 49% stake after a $14.3B investment; the founder left for Meta and an interim CEO was named; Google, OpenAI and xAI reportedly reduced engagements. Quote: "Meta has a 49% stake in Scale AI after investing $14.3 billion" Sources: Scale AI not winding down following Meta deal, interim CEO says (https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html)
 
-### Personnel: 0/4 (standard policy: 0)
+### Personnel: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Leaders hold governance roles at an evaluated lab, no recusal.
 Derivation: Capped at 0 by scale.05 (P.7 (via P.1)): Leadership moved to Meta with the 2025 investment..
 - [against, caps at 0, P.7 (via P.1)] Leadership moved to Meta with the 2025 investment. Quote: "a deal that included the departure of Scale AI founder Alexandr Wang for the social media company" Sources: Third-Party Model Auditing (https://www.longtermwiki.com/wiki/E450); Scale AI not winding down following Meta deal, interim CEO says (https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html); Scale AI Announces Next Phase of Company’s Evolution (https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution)
 - [against, caps at 2, P.4] After joining Meta, the founder continues to serve as a director on Scale's board, per Scale's own announcement of the investment. Quote: "Wang will continue to serve as a director on the Scale Board of Directors" Sources: Scale AI Announces Next Phase of Company’s Evolution (https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution)
 - Document request: Request from Scale AI the board-recusal terms, if any, that apply to Alexandr Wang's continuing directorship while he is employed by Meta (Scale announcement, 12 June 2025), and whether he sits on any committee reviewing evaluation work. Per RULES 12 this goes to the person before publication.
 
-### Access depth (lab-granted): 3/4 (standard policy: 3)
+### Access depth (lab-granted): 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Helpful-only or weights-level access, chain of thought, logs, on-site.
 Derivation: Floored at 3 by scale.03 (A.4): Government-defined risk domains and access agreements; first private evaluator authorized by the US institute.. No admissible signal caps it.
 - [for, floors at 3, A.4] Government-defined risk domains and access agreements; first private evaluator authorized by the US institute. Quote: "Scale AI SEAL : Safety, Evaluation, and Alignment Lab; first third-party evaluator authorized by US AISI" Sources: Third-Party Model Auditing (https://www.longtermwiki.com/wiki/E450); Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security)
 
-### Scope control: 2/4 (standard policy: 2)
+### Scope control: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Scope negotiated per engagement.
 Derivation: Capped at 2 by scale.06 (S.2): Scope set by government or lab clients..
 - [against, caps at 2, S.2] Scope set by government or lab clients. Quote: "The government defines the risk domains it wants evaluated" Sources: Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Capped at 2 by scale.07 (R.4 (by analogy)): Results for governments not public..
 - [against, caps at 2, R.4 (by analogy)] Results for governments not public. Quote: "The government provides subject matter expertise and interprets the results for policy and standards" Sources: Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Capped at 2 by scale.08 (M.2): Benchmarks partly public (SEAL leaderboards); government evaluations closed..
 - [against, caps at 2, M.2] Benchmarks partly public (SEAL leaderboards); government evaluations closed. Quote: "Scale Labs builds the benchmarks and conducts the technical testing" Sources: Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security)
 
-### Role incompatibility: 1/4 (standard policy: 1)
+### Role incompatibility: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Sells products or services other than the evaluation itself to labs or to their customers.
 Derivation: Capped at 1 by scale.04 (X.2): Sells data and evaluation services to labs..
 - [against, caps at 1, X.2] Sells data and evaluation services to labs. Quote: "Meta has been one of Scale AI's biggest customers" Sources: Why the U.S. Needs an Independent AI Evaluation Framework for National Security (https://scale.com/blog/ai-evaluation-framework-national-security); Scale AI not winding down following Meta deal, interim CEO says (https://www.cnbc.com/2025/06/18/scale-ai-not-winding-down-following-meta-deal-interim-ceo-says.html)

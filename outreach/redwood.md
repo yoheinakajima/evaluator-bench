@@ -1,17 +1,27 @@
 # Right of reply: Redwood Research
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Redwood Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Redwood Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/redwood.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 3/4 (standard policy: 3)
+### Funding: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by redwood.02 (F.6): Funding concentration: revenue nearly disappeared in one year when a few large grants ended.; capped at 3 by redwood.11 (F.6): Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022.. Floors up to 3 from redwood.01 do not exceed the cap. Not counted under this policy: redwood.10 (no confirmed source (imported)).
 - [for, floors at 3, F.12] No lab revenue; historically about $25M from Open Philanthropy. Quote: "Open Philanthropy's grants database shows approximately $25 million in historical funding to Redwood Research" Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs)
@@ -19,41 +29,41 @@ Derivation: Capped at 3 by redwood.02 (F.6): Funding concentration: revenue near
 - [against, caps at 3, F.6] Coefficient grants of about $63M across five grants dominate income; SFF about $2.4M and a $1.33M Tallinn gift; both funders sit one to two steps from an Anthropic investor. Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Coefficient Giving grants index (https://coefficientgiving.org/grants/)
 - [against, caps at 3, F.6] Largest single grant: $36,566,000 from Coefficient Giving in November 2025 for AI control and alignment-faking work, after $10M in 2021 and $10M in 2022. Quote: "listed in grant records at $36,566,000 for work on AI control and alignment faking" Sources: Redwood Research General Support (https://www.openphilanthropy.org/grants/redwood-research-general-support/); The nonprofit that investigated OpenAI's rogue agents runs on a $36m grant (https://thenextweb.com/news/coefficient-giving-ai-safety-funding-ipo-correlation)
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Floored at 2 by redwood.06 (G.1): Nonprofit.. No admissible signal caps it.
 - [for, floors at 2, G.1] Nonprofit. Quote: "Designated as a 501(c)(3)" Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs); Redwood Research Group Inc - Nonprofit Explorer (https://projects.propublica.org/nonprofits/organizations/871702255)
 
-### Personnel: 2/4 (standard policy: unevidenced)
+### Personnel: 2/4 (Retrieved & confirmed: unevidenced)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Unevidenced under this policy: no admissible signal sets a bound.
 Curator note: Anchor 2 on personnel given the cited signals.
 - [against, informational, P.3] Co-authored alignment research with Anthropic; close talent flow with lab safety teams. Quote: "in collaboration with Redwood Research , provides the first empirical example of a large language model" Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs); Alignment faking in large language models (https://www.anthropic.com/research/alignment-faking)
 
-### Access depth (lab-granted): 4/4 (standard policy: 4)
+### Access depth (lab-granted): 4/4 (Retrieved & confirmed: 4)
 Anchor 4: Embedded, training-time, or incident access.
 Derivation: Floored at 4 by redwood.03 (A.5): Contracted a staff member to METR for the on-site OpenAI investigation.. No admissible signal caps it.
 - [for, floors at 4, A.5] Contracted a staff member to METR for the on-site OpenAI investigation. Quote: "a Redwood Research staff member contracting with METR" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/); OpenAI Agents Formed Secret Swarm, Hacked Hugging Face (https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by redwood.14 (S.6): Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates.; capped at 3 by redwood.15 (S.1): In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope.. Floors up to 3 from redwood.07 do not exceed the cap.
 - [for, floors at 3, S.5] Sets its own research agenda; incident work under METR terms. Quote: "a Redwood Research staff member contracting with METR" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 - [against, caps at 3, S.6] Redwood co-authored the December 2024 alignment-faking paper with Anthropic's Alignment Science team, an evaluation of Claude 3 Opus carried out with the developer whose models Redwood also evaluates. Quote: "We have a new paper (done in collaboration with Anthropic)" Sources: Alignment Faking in Large Language Models (https://blog.redwoodresearch.org/p/alignment-faking-in-large-language); Alignment faking in large language models (https://www.anthropic.com/research/alignment-faking)
 - [against, caps at 3, S.1] In the OpenAI incident investigation, on which a Redwood staff member worked as a METR contractor, OpenAI defined the investigation period and the compromise of its own infrastructure was out of scope. Quote: "OpenAI defined the investigation period as June 26th through July 13th" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
-### Publication rights: 3/4 (standard policy: 3)
+### Publication rights: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Publishes; redaction limited to security; redactions disclosed.
 Derivation: Capped at 3 by redwood.16 (R.2): On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed.. Floors up to 2 from redwood.04 do not exceed the cap.
 - [for, floors at 2, R.7] Co-authored the incident report with a redaction statement. Quote: "OpenAI agreed at the outset with METR and Redwood that we would be able to describe high-level scope and terms" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 - [against, caps at 3, R.2] On the co-authored OpenAI incident report, OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone that the authors incorporated and disclosed. Quote: "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by redwood.08 (M.1): Publishes control methods and code.. No admissible signal caps it.
 - [for, floors at 3, M.1] Publishes control methods and code. Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs)
 
-### Role incompatibility: 3/4 (standard policy: 3)
+### Role incompatibility: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Capped at 3 by redwood.13 (X.8): ProPublica's extract of the Form 990 for Redwood Research Group Inc (EIN 87-1702255) shows program service revenue of $0 in FY2024; FY2023 shows $343,734 of program service revenue (3.4% of $10.0M) with the payer not identified in the summary.. Floors up to 3 from redwood.09, redwood.12 do not exceed the cap.
 - [for, floors at 3, X.7] No commercial products. Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs)

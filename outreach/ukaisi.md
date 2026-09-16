@@ -1,17 +1,27 @@
 # Right of reply: UK AI Security Institute
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about UK AI Security Institute; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about UK AI Security Institute; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/ukaisi.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 3/4 (standard policy: 3)
+### Funding: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by ukaisi.11 (F.9): AISI administers the Alignment Project, a GBP 27m grant pool that includes GBP 5.6m from OpenAI and money from Anthropic, Microsoft and AWS; core budget of about GBP 66m per year is public.; capped at 3 by ukaisi.12 (F.9): The Alignment Project took £5.6m from OpenAI. The £27m/£12m totals, the wider backer list, and OpenAI’s non-influence statement are per the cited sources; spans not yet captured.. Floors up to 3 from ukaisi.01, ukaisi.15 do not exceed the cap.
 Curator note: Anchor 3: public core budget, but the institute runs a lab-funded grant pool, which is lab money passing through it even if not into its evaluation budget.
@@ -21,42 +31,42 @@ Curator note: Anchor 3: public core budget, but the institute runs a lab-funded 
 - [for, floors at 3, F.9] Alignment Project grants are contracted and paid by each funder directly to the host organisation; DSIT/AISI's own grants are statutory grants under section 5 of the Science and Technology Act 1965 managed by an AISI research lead, and other funders issue their own terms, so OpenAI's £5.6m is not received into AISI's budget even though AISI runs the selection. Quote: "the Funding Agreement (GFA) will be between the funder(s) and the host organisation only" Sources: The Alignment Project - Clarification Questions V2.0 (PDF) (https://aisi.s3.eu-west-2.amazonaws.com/0825/The+Alignment+Project+-+Clarification+Questions+V2.0+(1).pdf); How to apply (https://alignmentproject.aisi.gov.uk/how-to-apply); Example of DSIT-AISI Grant Funding Agreement (PDF) (https://aisi.s3.eu-west-2.amazonaws.com/0825/Example+of+DSIT-AISI+Grant+Funding+Agreement.pdf)
 - Document request: Whether Alignment Project funds touch evaluation staff or infrastructure.
 
-### Governance: 3/4 (standard policy: 3)
+### Governance: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Nonprofit or public body with a COI policy.
 Derivation: Floored at 3 by ukaisi.08 (G.2): Public body with civil-service conflict rules.. No admissible signal caps it.
 Curator note: Anchor 3: public body with civil-service conflict rules (ukaisi.08). No tier-1 source for an independent board or external review, so 4 is unearned under the tier rule (C10).
 - [for, floors at 3, G.2] Public body with civil-service conflict rules. Quote: "The Institute is an advisory technical research body rather than a formal regulator" Sources: AI Security Institute (renaming) (https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025); The Civil Service Code (https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code)
 
-### Personnel: 3/4 (standard policy: 3)
+### Personnel: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Recusal policy and disclosure of lab ties.
 Derivation: Floored at 3 by ukaisi.13 (P.5): AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service.. No admissible signal caps it.
 - [against, informational, P.3] Staff move between the institute and labs in both directions. Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 - [for, floors at 3, P.5] AISI staff are civil servants in DSIT and are bound by the Civil Service Code (conflicts and gifts) and the Business Appointment Rules, a statutory post-employment rule that applies for one to two years after leaving Crown service. Quote: "two years after leaving Crown service, if you are grade SCS1 or SCS2" Sources: The Civil Service Code (https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code); Business Appointment Rules for Crown Servants: guidance (https://www.gov.uk/government/publications/business-appointment-rules-for-crown-servants/business-appointment-rules-for-crown-servants-guidance); About the AI Security Institute (https://www.aisi.gov.uk/about)
 
-### Access depth (lab-granted): 3/4 (standard policy: 3)
+### Access depth (lab-granted): 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Helpful-only or weights-level access, chain of thought, logs, on-site.
 Derivation: Floored at 3 by ukaisi.06 (A.4): Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested.. No admissible signal caps it.
 - [against, informational, A.3] No statutory powers; access rests on MOUs any lab could decline to renew; Frontier AI Bill not introduced as of September 2026. Quote: "the bill had not yet been introduced to Parliament" Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/); AI Security Institute (renaming) (https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025)
 - [for, floors at 3, A.4] Joint testing with the US institute; agreements with OpenAI, Anthropic, Google, Microsoft, Cohere; 30+ models tested. Quote: "running pre-deployment and post-deployment evaluations of the most capable models released by major AI developers" Sources: UK AI Security Institute (https://aiwiki.ai/wiki/uk_aisi); UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by ukaisi.14 (S.4): No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026.. Floors up to 3 from ukaisi.09 do not exceed the cap.
 - [for, floors at 3, S.4] Sets its own evaluation agenda within MOU terms. Quote: "AISI’s voluntary testing arrangements with frontier developers remain the primary mechanism" Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 - [against, caps at 3, S.4] No statutory power to define scope or compel testing; the institute operates through voluntary testing agreements backed by bilateral memoranda of understanding, and the Frontier AI Bill had not been introduced as of September 2026. Quote: "The institute cannot fine, audit, or directly penalise model developers" Sources: AI Security Institute (renaming) (https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025); UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Capped at 2 by ukaisi.04 (R.4): Most per-model results stay confidential; the public sees aggregated trends.. Floors up to 2 from ukaisi.03 do not exceed the cap.
 - [for, floors at 2, R.4] Found universal jailbreaks in every system tested and published that in the Frontier AI Trends Report. Quote: "AISI found universal jailbreaks across every tested system" Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 - [against, caps at 2, R.4] Most per-model results stay confidential; the public sees aggregated trends. Quote: "evaluation work that would otherwise remain confidential between the Institute and individual AI labs" Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by ukaisi.02 (M.1): Open-source Inspect framework and published methodology.. No admissible signal caps it.
 - [for, floors at 3, M.1] Open-source Inspect framework and published methodology. Quote: "An open-source framework for large language model evaluations" Sources: UK AISI's Frontier AI Trends Report: Security Implications (https://labs.cloudsecurityalliance.org/research/csa-research-note-aisi-frontier-ai-trends-report-20260712-cs/); Inspect: an open-source framework for large language model evaluations (https://inspect.aisi.org.uk/)
 
-### Role incompatibility: 4/4 (standard policy: 4)
+### Role incompatibility: 4/4 (Retrieved & confirmed: 4)
 Anchor 4: No commercial products.
 Derivation: Floored at 4 by ukaisi.10 (X.7): No commercial products.. No admissible signal caps it.
 - [for, floors at 4, X.7] No commercial products. Quote: "The Institute is an advisory technical research body rather than a formal regulator" Sources: AI Security Institute (renaming) (https://regulations.ai/regulations/RAI-GB-NA-ASIRRXX-2025); About the AI Security Institute (https://www.aisi.gov.uk/about)

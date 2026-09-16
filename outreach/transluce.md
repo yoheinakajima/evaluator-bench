@@ -1,17 +1,27 @@
 # Right of reply: Transluce
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Transluce; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Transluce; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/transluce.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 2/4 (standard policy: 2)
+### Funding: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Labs pay per engagement; otherwise diversified.
 Derivation: Conflict: floor 3 from transluce.03 (F.12) against cap 2 from transluce.09 (F.7); resolved at 2 by F.7: Transluce's disclosed FY2025 revenue includes 38% from the personal holdings of Anthropic and OpenAI employees, above the 10% threshold; F.7 caps at 2 despite the government and philanthropic base.
 Curator note: Anchor 2: no money from developers as organizations and no paid evaluations, but 38% of FY2025 revenue came from lab employees' personal holdings, which are lab equity. The disclosure is the best in the population; the exposure is still material.
@@ -21,14 +31,14 @@ Resolution: F.7 decides 2: Transluce's disclosed FY2025 revenue includes 38% fro
 - Document request: Whether employee donors are named or bounded in size.
 - Document request: How the 38% moves in FY2026.
 
-### Governance: 3/4 (standard policy: 3)
+### Governance: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Nonprofit or public body with a COI policy.
 Derivation: Floored at 3 by transluce.10 (G.2): Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline.. No admissible signal caps it.
 Curator note: Anchor 3: nonprofit with a published COI policy and disclosure duties; board of three includes the CEO, so independent-board evidence is thin.
 - [for, floors at 2, G.1] Wrote the field's independence standard (AEF-1) through the AI Evaluator Forum and applies it to itself. Quote: "Transluce organizes the   AI Evaluator Forum" Sources: AI Evaluator Forum launch and AEF-1 (https://aievaluatorforum.org/); Governance & Policy Fellow at Transluce (https://theeconomicmisfit.com/2026/04/18/governance-policy-fellow-at-transluce/); Evaluation Transparency Letter (https://t.co/Nm0RMxOWzw)
 - [for, floors at 3, G.2] Published independence policy aligned to AEF-1 2.3: annual disclosure of developer-linked revenue share, paid-evaluation disclosure, no organizational equity in developers, third-party ethics hotline. Quote: "consistent with requirement 2.3 of the AEF-1 standard" Sources: Independence and Transparency Policy (https://transluce.org/independence-and-transparency-policy); Company (https://transluce.org/about)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by transluce.12 (P.4): An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC.. Floors up to 2 from transluce.04 do not exceed the cap.
 Curator note: Anchor 2 (closest fit, provisional): the governance head previously led CAISI and no lab board roles were found (transluce.04), but a current advisor sits on Thinking Machines’ technical staff and a board member runs Halcyon Futures (transluce.12). Provisional readings are open to public correction through the contribution path.
@@ -36,27 +46,27 @@ Curator note: Anchor 2 (closest fit, provisional): the governance head previousl
 - [for, floors at 3, P.5] Mandatory recusal of any employee with a significant financial interest in, or employment by, a system provider from evaluating that provider. Quote: "Transluce recuses any employee with a significant financial interest" Sources: Independence and Transparency Policy (https://transluce.org/independence-and-transparency-policy)
 - [against, caps at 2, P.4] An advisor is on the technical staff of Thinking Machines; a board member runs Halcyon Futures, which funds AVERI and AIUC. Quote: "Thinking Machines Board of Directors Alex Allain Co-Founder, U.S. Digital Response Mike McCormick CEO, Halcyon Futures" Sources: Company (https://transluce.org/about)
 
-### Access depth (lab-granted): 2/4 (standard policy: 2)
+### Access depth (lab-granted): 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Pre-release with safeguards off or extended time.
 Derivation: Capped at 2 by transluce.06 (A.1): Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely..
 - [against, caps at 2, A.1] Mostly post-deployment access; used in Claude 4 pre-deployment analysis once rather than routinely. Quote: "It was also used as part of Claude 4's pre-deployment safety analysis" Sources: Transluce: Fund Scalable Democratic Oversight of AI (https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by transluce.07 (S.5): Sets its own evaluation questions.. No admissible signal caps it.
 - [for, floors at 3, S.5] Sets its own evaluation questions. Quote: "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises" Sources: Independent evaluation of model responses to mental health crises (https://transluce.org/)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Floored at 2 by transluce.02 (R.7): Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off.. No admissible signal caps it.
 - [for, floors at 2, R.7] Published the largest independent cross-vendor evaluation of responses to mental-health crises (77 variants) without lab sign-off. Quote: "The most expansive independent evaluation to date of how leading AI models respond to users in mental health crises" Sources: Independent evaluation of model responses to mental health crises (https://transluce.org/); Study: Chatbots are getting better at identifying suicide risk (https://www.axios.com/2026/08/31/chatbots-suicide-risks-identification)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by transluce.08 (M.1): Open tools (Docent) and published methods.. No admissible signal caps it.
 - [for, floors at 3, M.1] Open tools (Docent) and published methods. Quote: "Our open-source, AI-backed tools provide a technology stack that powers this public accountability" Sources: Transluce: Fund Scalable Democratic Oversight of AI (https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai)
 
-### Role incompatibility: 3/4 (standard policy: 3)
+### Role incompatibility: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Capped at 3 by transluce.05 (X.4): Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users..
 - [against, caps at 3, X.4] Docent is used inside Anthropic, DeepMind and Thinking Machines, so labs are also tool users. Quote: "has been used by over 25 organizations, including frontier AI labs (Anthropic, DeepMind, Thinking Machines" Sources: Transluce: Fund Scalable Democratic Oversight of AI (https://manifund.org/projects/transluce-fund-scalable-democratic-oversight-of-ai)

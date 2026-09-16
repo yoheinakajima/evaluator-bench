@@ -1,17 +1,27 @@
 # Right of reply: METR
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about METR; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about METR; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/metr.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 3/4 (standard policy: 3)
+### Funding: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by metr.15 (F.6): Traced inflows in the ledger: no direct grant from Coefficient Giving in its index, but the 2024 spin-out transfer from ARC (seeded by Coefficient and SFF), SFF recommendations funded by an Anthropic Series A investor, a Longview pooled-fund grant, and about $21M through donor-advised funds and the Audacious Project whose underlying donors are not public.; capped at 3 by metr.20 (F.6): The Audacious Project committed approximately $17M to METR for Canary work. The $38M combined figure and the funder-collective membership are per the cited sources; spans not yet captured.; capped at 3 by metr.25 (F.6): Vanguard Charitable, a donor-advised fund whose underlying donor is not public, paid METR $4,000,000 in its fiscal year to June 2025 per its 990 Schedule I (row 15424), the largest single filing-disclosed grant to METR; the same filing pays ARC $1,500,000.. Floors up to 3 from metr.01, metr.02, metr.16, metr.18, metr.19, metr.24 do not exceed the cap. Not counted under this policy: metr.14 (no confirmed source (unverifiable)); metr.21 (no confirmed source (unaudited)).
 Curator note: Anchor 3: mostly philanthropic, no direct lab cash, but pooled and donor-advised funds with non-public donors, recommendations funded by a lab investor, in-kind credits from a lab, and a donor rule that is under two years old and still moving. Anchor 4 requires a confirmed bounded negative in primary filings and a resolved funder-exposure computation; both are on file as imported rows only.
@@ -31,13 +41,13 @@ Curator note: Anchor 3: mostly philanthropic, no direct lab cash, but pooled and
 - Document request: Request from METR the date and vehicle of the gift acknowledged on metr.org/about under "many others, such as David Farhi", and the text of the donor rule in force on that date; request from the donor a copy of the acknowledgment letter. (Replaces the fourth F open question, which framed the timing of a named person's gift as unresolved.)
 - Document request: Request the Schedule I pages of the Vanguard Charitable and Audacious Project filings naming METR, and the Coefficient index rows checked, so that N01 to N05 can move from imported to confirmed.
 
-### Governance: 3/4 (standard policy: 3)
+### Governance: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Nonprofit or public body with a COI policy.
 Derivation: Floored at 3 by metr.10 (G.2): Nonprofit with a written independence policy and a no-lab-money rule.. No admissible signal caps it.
 Curator note: Anchor 3: nonprofit with a written independence policy and a no-lab-money rule (metr.10). Independent board and external review are not evidenced at tier 1, so 4 is unearned under the tier rule (C10).
 - [for, floors at 3, G.2] Nonprofit with a written independence policy and a no-lab-money rule. Quote: "Our current conflict of interest policy is here" Sources: About METR (https://metr.org/about); Conflict of interest policy (version 1.0) (https://metr.org/coi-policy.pdf)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Conflict: floor 3 from metr.23 (P.5) against cap 2 from metr.09, metr.17 (P.3, P.4); resolved at 2 by P.4: P.4 caps at 2 regardless of recusal; P.3 concurs because no cooling-off rule exists. The P.5 floor from the policy is real but the caps decide.
 Curator note: Anchor 2: two-way movement between METR and labs, and board or advisor seats one to two steps from labs; no published recusal or cooling-off policy found. Sources are imported and need re-derivation from metr.org/team captures and the FY2024 990.
@@ -47,30 +57,30 @@ Resolution: P.4 decides 2: P.4 caps at 2 regardless of recusal; P.3 concurs beca
 - [for, floors at 3, P.5] Published conflict-of-interest policy (version 1.0, 28 August 2026): staff under consideration for a company-identifying risk assessment must disclose conflicts, tiered conflicts require external disclosure in the report, provisional recusal applies during review, staff may not hold direct equity or debt in frontier AI companies, and frontier-company employees are ineligible for the board. No post-employment cooling-off period. Quote: "Do not invest in direct equity or debt of frontier AI companies or reasonable economic proxies for specific companies" Sources: Conflict of interest policy (version 1.0) (https://metr.org/coi-policy.pdf)
 - Document request: Request from METR the August 2026 policy's treatment of post-employment cooling-off for hires from frontier AI companies (none appears in version 1.0) and dated captures of the team page showing current versus former advisor roles.
 
-### Access depth (lab-granted): 4/4 (standard policy: 4)
+### Access depth (lab-granted): 4/4 (Retrieved & confirmed: 4)
 Anchor 4: Embedded, training-time, or incident access.
 Derivation: Floored at 4 by metr.04 (A.5): Investigated the OpenAI incident on site over six days with a Redwood contractor.. No admissible signal caps it.
 - [for, floors at 4, A.5] Investigated the OpenAI incident on site over six days with a Redwood contractor. Quote: "worked on premises at OpenAI over a total of six days" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/); OpenAI Agents Formed Secret Swarm, Hacked Hugging Face (https://www.techtimes.com/articles/325705/20260827/openai-agents-formed-secret-swarm-hacked-hugging-face-then-forged-their-own-logs.htm)
 - [for, informational, A.1] Named by Anthropic as the example embedded evaluator: an ongoing, employee-like-access commitment with publication without editorial control; OpenAI's chief executive said OpenAI would do the same on access, without naming an evaluator or publication rights. Quote: "a team of embedded third-party evaluators (such as METR )" Sources: Altman Says OpenAI Will Match Anthropic's Embedded Evaluator Pledge (https://www.unite.ai/altman-says-openai-will-match-anthropics-embedded-evaluator-pledge/); Anthropic's 3-Step 'Pace the Frontier' Plan (https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/); We Must Pace the Frontier (https://darioamodei.com/post/we-must-pace-the-frontier); Dario Amodei on X: 'We Must Pace the Frontier ... We'll provide third-party evaluators with permanent, employee-level access' (https://x.com/DarioAmodei/status/2098773920774074715); Sam Altman on X: 'I agree with Dario that we need to pace the frontier ... we will do the same' (https://x.com/sama/status/2098811563415150910)
 - [against, informational, A.3] Access remains voluntary; no law requires any lab to grant it. Quote: "that access is voluntary. Companies grant it because they choose to, not because any law or agreement requires it" Sources: Who Funds the AI Safety Watchdogs (https://itbb.substack.com/p/who-funds-the-watchdogs)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by metr.06 (S.1): OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope..
 - [against, caps at 3, S.1] OpenAI set the investigation window (June 26 to July 13); the lab's own cluster breach and three of METR's standard incident questions were out of scope. Quote: "OpenAI defined the investigation period as June 26th through July 13th" Sources: What METR's OpenAI Agent Investigation Left Out (https://blog.pebblous.ai/blog/openai-agent-incident-investigation-scope/en/); Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
-### Publication rights: 3/4 (standard policy: 3)
+### Publication rights: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Publishes; redaction limited to security; redactions disclosed.
 Derivation: Capped at 3 by metr.08 (R.2): OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated.. Floors up to 2 from metr.07 do not exceed the cap.
 - [for, floors at 2, R.7] Published its own 91-page report with a redaction summary statement; took no payment for the investigation. Quote: "Redaction summary statement: Except where explicitly noted in this post, OpenAI redacted no additional information" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/); Anthropic's 3-Step 'Pace the Frontier' Plan (https://www.marktechpost.com/2026/09/13/anthropics-3-step-pace-the-frontier-plan-wins-openai-xai-and-microsoft-support-is-it-too-late-to-slow-ai-down/)
 - [against, caps at 3, R.2] OpenAI could redact any non-public information and gave feedback on structure, emphasis, clarity and tone, which METR incorporated. Quote: "we made corrections and edits to structure, emphasis, clarity, and tone based on that feedback" Sources: Brief independent investigation of agents' behavior in the OpenAI / Hugging Face hacking incident (https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by metr.11 (M.1): Open task suites and published time-horizon methodology; results appear in system cards.. No admissible signal caps it.
 - [for, floors at 3, M.1] Open task suites and published time-horizon methodology; results appear in system cards. Quote: "This repo contains source code for a subset of the tasks used in the HCAST" Sources: About METR (https://metr.org/about); METR/hcast-public (GitHub README) (https://github.com/METR/hcast-public)
 
-### Role incompatibility: 4/4 (standard policy: 4)
+### Role incompatibility: 4/4 (Retrieved & confirmed: 4)
 Anchor 4: No commercial products.
 Derivation: Floored at 4 by metr.22 (X.7): FY2024 Form 990 (filed 16 November 2025) reports $0 program service revenue against $13.6M of contributions, and the August 2026 conflict-of-interest policy states METR has to date received no payment for work on company-identifying risk assessments; the only earned income named is a technical-assistance contract with the European AI Office.. No admissible signal caps it.
 - [for, floors at 3, X.7] No commercial products. Sources: About METR (https://metr.org/about)

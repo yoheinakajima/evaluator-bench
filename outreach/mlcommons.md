@@ -1,56 +1,66 @@
 # Right of reply: MLCommons (AILuminate)
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about MLCommons (AILuminate); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about MLCommons (AILuminate); nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/mlcommons.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 1/4 (standard policy: 1)
+### Funding: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Material revenue or investment from evaluated labs or their investors.
 Derivation: Capped at 1 by mlcommons.01 (F.5): Funded by member companies, including the labs whose models are benchmarked..
 Curator note: Anchor 1 on funding given the cited signals. Curator disclosure (2026-09-15): the curator holds small public-market shareholdings in Google and Meta. This evaluator has a confirmed ledger tie to Google (founding participation row T63; not a grant). Per the disclosure Rule, this assessment is flagged for public review: the rationale names the holding so readers can weigh it, and any reader can file a correction through the contribution path.
 - [against, caps at 1, F.5] Funded by member companies, including the labs whose models are benchmarked. Quote: "MLCommons is an industry consortium backed by several dozen tech firms" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); AILuminate (https://mlcommons.org/ailuminate/); MLCommons releases new AILuminate benchmark for measuring AI model safety (https://siliconangle.com/2024/12/04/mlcommons-releases-new-ailuminate-benchmark-measuring-llm-safety/)
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Capped at 2 by mlcommons.04 (G.4): Consortium governance by members..
 - [against, caps at 2, G.4] Consortium governance by members. Quote: "MLCommons is supported by over 125 members and affiliates" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); AILuminate (https://mlcommons.org/ailuminate/); Mlcommons Association - Nonprofit Explorer (https://projects.propublica.org/nonprofits/organizations/850546914)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by mlcommons.07 (P.4): Working groups staffed by member-company employees..
 - [against, caps at 2, P.4] Working groups staffed by member-company employees. Quote: "People from the following organizations have collaborated within the working group" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); AILuminate (https://mlcommons.org/ailuminate/)
 - [against, caps at 2, P.4] President is a Google senior staff engineer; members include the frontier developers whose models are benchmarked. Quote: "Peter Mattson is a senior staff engineer at Google. He founded and is President of MLCommons" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Leadership (https://mlcommons.org/about-us/leadership/)
 - Document request: Request from MLCommons the board conflict-of-interest and recusal policy that applies to directors employed by member companies whose systems are benchmarked, including any recusal recorded for the President on AILuminate grading decisions.
 
-### Access depth (lab-granted): 0/4 (standard policy: 0)
+### Access depth (lab-granted): 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Public API only.
 Derivation: Capped at 0 by mlcommons.10 (A.1): The only documented engagement evaluated a publicly released model inside an enclave; no pre-release access from a lab is documented.. Floors up to 0 from mlcommons.03 do not exceed the cap.
 - [for, floors at 0, A.1] Used as neutral ground in the AVERI double-blind pilot. Quote: "AVERI, OpenMined, and MLCommons were not able to see the model’s weights" Sources: AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model (https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval)
 - [against, caps at 0, A.1] The only documented engagement evaluated a publicly released model inside an enclave; no pre-release access from a lab is documented. Quote: "AVERI, OpenMined, and MLCommons were not able to see the model’s weights" Sources: AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model (https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by mlcommons.05 (S.5): Benchmark design set by working group.. No admissible signal caps it.
 - [for, floors at 3, S.5] Benchmark design set by working group. Quote: "designed and developed by the MLCommons AI Risk and Reliability working group" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github (https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Floored at 2 by mlcommons.06 (R.7): Publishes results.. No admissible signal caps it.
 - [for, floors at 2, R.7] Publishes results. Quote: "Public reports of 13 systems-under-test (SUTS)" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github (https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by mlcommons.02 (M.1): Open benchmark specification and methodology.. No admissible signal caps it.
 - [for, floors at 3, M.1] Open benchmark specification and methodology. Quote: "The Official Test dataset is private to avoid SUTs “gaming” the benchmark" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); AVERI Pilot Report: The World's First Double-Blind Evaluation of a Proprietary Language Model (https://www.averi.org/ourwork/averi-pilot-report-the-worlds-first-double-blind-eval); MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github (https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/)
 
-### Role incompatibility: 3/4 (standard policy: 3)
+### Role incompatibility: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Floored at 3 by mlcommons.08 (X.4): Benchmarks free to use.. No admissible signal caps it.
 - [for, floors at 3, X.4] Benchmarks free to use. Quote: "publicly released the AILuminate DEMO prompt dataset, a collection of 1,200 prompts" Sources: MLCommons AI Safety / AILuminate (https://mlcommons.org/); MLCommons Releases AILuminate Creative Commons DEMO Benchmark Prompt Dataset to Github (https://mlcommons.org/2025/01/ailuminate-demo-benchmark-prompt-dataset/)

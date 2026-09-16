@@ -1,17 +1,27 @@
 # Right of reply: Palisade Research
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Palisade Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Palisade Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/palisade.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 3/4 (standard policy: 3)
+### Funding: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by palisade.09 (F.6): About $3.8M in cumulative Coefficient Giving grants per the index snapshot; Coefficient's principal is an Anthropic Series A investor and board observer by his own account. No bounded negative on lab money is on file.; capped at 3 by palisade.13 (F.6): SFF recommended $1,133,000 to Palisade in 2025 (plus a $928,000 matching pledge); SFF's funder Jaan Tallinn led Anthropic's Series A.; capped at 3 by palisade.14 (F.6): Coefficient / Open Philanthropy recommended $1,680,000 (June 2024) and two grants totaling $2,123,463 (May 2025) to Palisade for general support per archived grant pages, $3,803,463 in all; Coefficient's principal funder is an Anthropic investor.. Floors up to 3 from palisade.01 do not exceed the cap. Not counted under this policy: palisade.11 (no confirmed source (imported, unaudited)).
 Curator note: Anchor 3: philanthropic, no lab contracts found, but the main traced funder is two steps from a lab investor and no primary-filing negative is on file.
@@ -23,12 +33,12 @@ Curator note: Anchor 3: philanthropic, no lab contracts found, but the main trac
 - Document request: Request to Palisade Research: the Form 990 Schedule B or a donor list naming contributors above $5,000 for 2024 and 2025, and any policy on accepting money from AI developers.
 - Document request: Request to Coefficient Giving: the grant pages for the two Palisade Research general-support grants ($1,680,000 June 2024; $2,123,463 May 2025) so the $2,123,463 figure can be verified against the superseded $3,803,463 index total.
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Floored at 2 by palisade.06 (G.1): Nonprofit.. No admissible signal caps it.
 - [for, floors at 2, G.1] Nonprofit. Quote: "Palisade Research is a nonprofit based in Berkeley, California" Sources: Palisade Research (https://palisaderesearch.org/); About Palisade Research (https://palisaderesearch.org/about)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by palisade.10 (P.3): Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M.. Floors up to 2 from palisade.07 do not exceed the cap.
 Curator note: Anchor 3 (provisional): no lab board roles found (palisade.07), but the founder and executive director previously worked on Anthropic’s security team (palisade.10) — a former, disclosed lab tie, not a current one. Provisional readings are open to public correction through the contribution path.
@@ -36,27 +46,27 @@ Curator note: Anchor 3 (provisional): no lab board roles found (palisade.07), bu
 - [against, caps at 2, P.3] Founder and executive director previously worked on Anthropic's security team; SFF recommendations of about $3.2M. Quote: "In 2022, Jeffrey was helping to build out the security team at Anthropic" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); About Palisade Research (https://palisaderesearch.org/about)
 - Document request: Request to Palisade Research: a written statement of any cooling-off or recusal rule for staff formerly employed by evaluated developers, and the start and end dates of the executive director's Anthropic employment as published on the about page.
 
-### Access depth (lab-granted): 1/4 (standard policy: 1)
+### Access depth (lab-granted): 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Pre-release API with safeguards on.
 Derivation: Capped at 1 by palisade.05 (A.1): Little pre-deployment access; most work is on released models..
 - [against, caps at 1, A.1] Little pre-deployment access; most work is on released models. Quote: "As the companies shipped model after model, Palisade kept finding what researchers had been warning about for years" Sources: Palisade Research (https://palisaderesearch.org/); About Palisade Research (https://palisaderesearch.org/about)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by palisade.02 (S.5): Sets its own questions and publishes without lab review.. No admissible signal caps it.
 - [for, floors at 3, S.5] Sets its own questions and publishes without lab review. Quote: "So Jeffrey assembled a team to investigate emerging AI behavior and strategic capabilities." Sources: Palisade Research (https://palisaderesearch.org/); About Palisade Research (https://palisaderesearch.org/about)
 
-### Publication rights: 4/4 (standard policy: 4)
+### Publication rights: 4/4 (Retrieved & confirmed: 4)
 Anchor 4: Full editorial control, record of adverse findings, redaction statements.
 Derivation: Floored at 4 by palisade.03 (R.5): Publishes findings unwelcome to labs, including shutdown resistance and self-replication.. No admissible signal caps it.
 - [for, floors at 4, R.5] Publishes findings unwelcome to labs, including shutdown resistance and self-replication. Quote: "the first time AI models have been observed preventing themselves from being shut down despite explicit instructions" Sources: Palisade Research (https://palisaderesearch.org/); OpenAI's Skynet moment: Models defy human commands, actively resist orders to shut down (https://www.computerworld.com/article/3999190/openais-skynet-moment-models-defy-human-commands-actively-resist-orders-to-shut-down.html); These AI Models From OpenAI Defy Shutdown Commands, Sabotage Scripts (https://www.techrepublic.com/article/news-openai-models-defy-shutdown-commands/)
 
-### Method transparency: 3/4 (standard policy: 3)
+### Method transparency: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tasks or code partly open.
 Derivation: Floored at 3 by palisade.04 (M.1): Publishes code and transcripts.. No admissible signal caps it.
 - [for, floors at 3, M.1] Publishes code and transcripts. Quote: "View Published Paper Code Access Paper" Sources: Palisade Research (https://palisaderesearch.org/); Shutdown resistance in reasoning models (https://palisaderesearch.org/research/shutdown-resistance); Language Models Can Autonomously Hack and Self-Replicate (https://palisaderesearch.org/research/self-replication)
 
-### Role incompatibility: 3/4 (standard policy: 3)
+### Role incompatibility: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Tools are open or free to the ecosystem.
 Derivation: Capped at 3 by palisade.12 (X.7): Palisade's FY2024 Form 990 reports $344,829 (10.7% of revenue) from program services; the counterparty is not disclosed.. Floors up to 3 from palisade.08 do not exceed the cap.
 - [for, floors at 4, X.7] No commercial products. Sources: Palisade Research (https://palisaderesearch.org/)

@@ -1,30 +1,40 @@
 # Right of reply: Gray Swan
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Gray Swan; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Gray Swan; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/gray-swan.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 1/4 (standard policy: 1)
+### Funding: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Material revenue or investment from evaluated labs or their investors.
 Derivation: Capped at 1 by grayswan.03 (F.5): $40M Series A in May 2026 at a $200M valuation; revenue from every major lab.. Floors up to 1 from grayswan.06 do not exceed the cap.
 - [against, caps at 1, F.5] $40M Series A in May 2026 at a $200M valuation; revenue from every major lab. Quote: "Gray Swan, The AI Security Company Trusted by Every Major Frontier Lab, Raises $40M Series A" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a); This AI Startup's Army of 15,000 Hackers (https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/)
 - [for, floors at 1, F.5 (anchor text)] Breadth across OpenAI, Anthropic, Google DeepMind, Meta, xAI and ByteDance, so no single lab dominates. Sources: This AI Startup's Army of 15,000 Hackers (https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/)
 
-### Governance: 1/4 (standard policy: 1)
+### Governance: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Private for-profit with no published COI policy.
 Derivation: Capped at 1 by grayswan.05 (G.2): Venture-backed for-profit; no published COI policy found..
 - [against, caps at 1, G.2] Venture-backed for-profit; no published COI policy found. Quote: "today announced a $40 million Series A round co-led by Wing Venture Capital and Madrona" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a)
 - [against, caps at 2, G.2 (anchor text); G.3 not triggered] Series A co-led by Wing and Madrona with Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next and Magarac; the co-lead's own post notes the chief scientist serves on OpenAI's board. Quote: "serves on the board of OpenAI" Sources: Why We Are Co-Leading Gray Swan's Series A (https://www.madrona.com/gray-swan-series-a/); Gray Swan raises $40M Series A to secure frontier AI (https://app.dealroom.co/news/note/gray-swan-raises-40m-series-a-to-secure-frontier-ai)
 - [for, informational, G.3] Snowflake, a Series A co-investor, announced a commercial agreement with Anthropic rather than an equity stake, so the co-investor is not a lab investor under F.4 or G.3. Sources: Snowflake and Anthropic Announce $200 Million Partnership to Bring Agentic AI to Global Enterprises (https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-announce-200-million-partnership-to-bring-agentic-ai-to-global-enterprises/)
 
-### Personnel: 1/4 (standard policy: 1)
+### Personnel: 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Leaders hold equity or advisory roles at labs; informal recusal.
 Derivation: Capped at 1 by grayswan.01 (P.1): Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board.; capped at 1 by grayswan.12 (P.1): Chief scientist appointed to OpenAI's board in 2024 and chairs its safety and security committee; also a 2025 Schmidt Sciences AI safety funding recipient.. Floors up to 1 from grayswan.02 do not exceed the cap.
 - [against, caps at 1, P.1] Co-founder and chief scientist chairs OpenAI's Safety and Security Committee and sits on its nonprofit board. Quote: "he chairs the Safety and Security Committee" Sources: Zico Kolter Joins OpenAI's Board of Directors (https://openai.com/index/zico-kolter-joins-openais-board-of-directors/); Bio (http://zkolter.github.io/bio/)
@@ -33,27 +43,27 @@ Derivation: Capped at 1 by grayswan.01 (P.1): Co-founder and chief scientist cha
 - Document request: Request from Gray Swan a copy or description of the recusal arrangement governing the chief scientist's role between Gray Swan and OpenAI's board and Safety and Security Committee (date adopted, scope, who administers it), as reported by Forbes on 29 October 2024. Per RULES 12 this goes to the person before publication.
 - Document request: Request from Gray Swan (or from the funds) a statement of whether Wing, Madrona, Obvious Ventures, Snowflake Ventures, Hudson River Trading, Samsung Next or Magarac Venture Partners hold equity in a frontier developer. The public record shows Snowflake's Anthropic tie as a $200M commercial partnership (3 Dec 2025), not equity.
 
-### Access depth (lab-granted): 2/4 (standard policy: 2)
+### Access depth (lab-granted): 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Pre-release with safeguards off or extended time.
 Derivation: Floored at 2 by grayswan.07 (A.1): Embedded in pre-release safety evaluation processes; cited in 11 system cards.. No admissible signal caps it.
 - [for, floors at 2, A.1] Embedded in pre-release safety evaluation processes; cited in 11 system cards. Quote: "Gray Swan’s benchmarks are embedded into the safety evaluation processes" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a); Why We Are Co-Leading Gray Swan's Series A (https://www.madrona.com/gray-swan-series-a/)
 
-### Scope control: 2/4 (standard policy: 2)
+### Scope control: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Scope negotiated per engagement.
 Derivation: Capped at 2 by grayswan.10 (S.2): Scope set by lab engagements..
 - [against, caps at 2, S.2] Scope set by lab engagements. Quote: "AI Red-Teaming Dedicated adversarial assessment, scoped to your deployment" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Capped at 2 by grayswan.09 (R.3): Findings appear as lab-summarized system-card citations rather than independent reports..
 - [against, caps at 2, R.3] Findings appear as lab-summarized system-card citations rather than independent reports. Quote: "Gray Swan is a leading security evaluator cited in 11 recent frontier model system cards" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by grayswan.08 (M.2): Founders wrote foundational jailbreak papers; Arena results partly public.. No admissible signal caps it.
 - [for, floors at 2, M.2] Founders wrote foundational jailbreak papers; Arena results partly public. Quote: "Research Published papers and findings from our research team" Sources: This AI Startup's Army of 15,000 Hackers (https://www.forbes.com/sites/rashishrivastava/2026/05/28/this-ai-startups-army-of-15000-hackers-pressure-test-claude-gpt-5-and-gemini/); Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a)
 
-### Role incompatibility: 0/4 (standard policy: 0)
+### Role incompatibility: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Sells defense or monitoring products to evaluated labs.
 Derivation: Capped at 0 by grayswan.04 (X.1): Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates..
 - [against, caps at 0, X.1] Sells Shade and Cygnal, the fixes, to the same labs whose models it evaluates. Quote: "Cygnal for real-time AI protection, Shade for continuous adversarial testing" Sources: Gray Swan announces Series A (https://www.grayswan.ai/news/gray-swan-announces-series-a); Why We Are Co-Leading Gray Swan's Series A (https://www.madrona.com/gray-swan-series-a/)

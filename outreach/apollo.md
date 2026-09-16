@@ -1,17 +1,27 @@
 # Right of reply: Apollo Research
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Apollo Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Apollo Research; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/apollo.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 2/4 (standard policy: 2)
+### Funding: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Labs pay per engagement; otherwise diversified.
 Derivation: Capped at 2 by apollo.02 (F.3): Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs.; capped at 2 by apollo.15 (F.4): Macroscopic Ventures, an investor in Anthropic's Series A and B, participated in Apollo's January 2026 seed round; 50Y led and no stake sizes were disclosed.. Floors up to 2 from apollo.12 do not exceed the cap. Not counted under this policy: apollo.11 (no confirmed source (imported)).
 - [against, caps at 2, F.3] Requests fair-market-value compensation from the parties it evaluates; revenue depends on evaluated labs. Quote: "we generally request that the parties for whom we conduct work compensate us at a fair market value for the work" Sources: Our Norms on Security, Science Communication and Conflicts of Interest (https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/)
@@ -22,7 +32,7 @@ Derivation: Capped at 2 by apollo.02 (F.3): Requests fair-market-value compensat
 - [against, caps at 3, F.10] The January 2026 seed round's size and each investor's stake, including Macroscopic Ventures' (an Anthropic Series A and B investor), are undisclosed: no Form D in EDGAR, no share allotment at Companies House, and the PBC is a Delaware entity with no public cap table. Quote: "The round was oversubscribed." Sources: Apollo Research is becoming a PBC (investment section) (https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc); EDGAR full-text search: "Apollo Research", form D, 2025-06-01 to 2026-09-15 (https://efts.sec.gov/LATEST/search-index?q=%22Apollo%20Research%22&forms=D&dateRange=custom&startdt=2025-06-01&enddt=2026-09-15); APOLLO RESEARCH AI LTD filing history (https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history); APOLLO RESEARCH AI LTD persons with significant control (https://find-and-update.company-information.service.gov.uk/company/15289159/persons-with-significant-control); APOLLO RESEARCH AI LTD (company 15289159), overview (https://find-and-update.company-information.service.gov.uk/company/15289159); MR01 Registration of charge 152891590001 (PDF) (https://find-and-update.company-information.service.gov.uk/company/15289159/filing-history/MzQ5MzM2MjM4NWFkaXF6a2N4/document?format=pdf&download=0)
 - Document request: Reconcile the self-reported $1.5M with the index total of $4.41M by date.
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Capped at 2 by apollo.03 (G.2): Converted from fiscally sponsored nonprofit to a public benefit corporation in January 2026.; capped at 2 by apollo.10 (G.3): January 2026 seed round led by 50Y with Juniper, Macroscopic Ventures (an Anthropic Series A and B investor), Common Metal, SAIF and individuals; amount not stated. Mission board seats designated as a governance safeguard.; capped at 2 by apollo.14 (G.3): Macroscopic Ventures, a participant in the seed round, lists Anthropic Series A and Series B among its investments.. Floors up to 2 from apollo.01, apollo.13 do not exceed the cap.
 Curator note: Anchor 2: for-profit PBC with a published COI policy and designated mission seats; investors include a lab investor. Previously mis-scored at 3 as if nonprofit.
@@ -35,32 +45,32 @@ Curator note: Anchor 2: for-profit PBC with a published COI policy and designate
 - Document request: Round size and Macroscopic's share.
 - Document request: Who holds the mission seats.
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Floored at 2 by apollo.05 (P.5): Recusal rule for any individual with a financial interest in an evaluated organization.. No admissible signal caps it.
 - [for, floors at 2, P.5] Recusal rule for any individual with a financial interest in an evaluated organization. Quote: "We recuse any individual who is considered to have a financial interest in an organization we are evaluating" Sources: Our Norms on Security, Science Communication and Conflicts of Interest (https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/)
 
-### Access depth (lab-granted): 2/4 (standard policy: 2)
+### Access depth (lab-granted): 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Pre-release with safeguards off or extended time.
 Derivation: Floored at 2 by apollo.06 (A.1): Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations.. No admissible signal caps it.
 - [for, floors at 2, A.1] Ran pre-deployment evaluations for all major labs; contracted by UK AISI for deception evaluations. Quote: "partnered with OpenAI to test their o1 model before public deployment" Sources: About (https://www.apolloresearch.ai/about); The First Year of Apollo Research (https://www.apolloresearch.ai/blog/the-first-year-of-apollo-research)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Capped at 3 by apollo.07 (S.6): Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator..
 - [against, caps at 3, S.6] Co-authored anti-scheming research with OpenAI while acting as its external scheming evaluator. Quote: "partnered with OpenAI to study anti-scheming interventions on frontier models" Sources: About (https://www.apolloresearch.ai/about)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Floored at 2 by apollo.04 (R.7): Record of adverse findings published, including in-context scheming and evaluation awareness.. No admissible signal caps it.
 - [for, floors at 2, R.7] Record of adverse findings published, including in-context scheming and evaluation awareness. Quote: "published the first evidence that frontier models can scheme in context" Sources: About (https://www.apolloresearch.ai/about)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by apollo.09 (M.2): Publishes evaluation methodology and papers; differential publishing policy documented.. No admissible signal caps it.
 - [for, floors at 2, M.2] Publishes evaluation methodology and papers; differential publishing policy documented. Quote: "We engage in differential publishing" Sources: Our Norms on Security, Science Communication and Conflicts of Interest (https://www.apolloresearch.ai/blog/our-norms-coi-security-science-communication/)
 
-### Role incompatibility: 2/4 (standard policy: 2)
+### Role incompatibility: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Consults for labs.
 Derivation: Capped at 2 by apollo.08 (X.1): Sells Watcher, a monitoring product, into the ecosystem it evaluates..
 - [against, caps at 2, X.1] Sells Watcher, a monitoring product, into the ecosystem it evaluates. Quote: "building an AI security tool to monitor frontier AI agents" Sources: About (https://www.apolloresearch.ai/about)

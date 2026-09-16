@@ -43,7 +43,28 @@ HOW = ["## How to reply", "",
        "- Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.",
        "- Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.",
        "- Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.",
+       "- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.",
        "- Silence is recorded as silence, not as agreement.", ""]
+
+AGENT_ISSUE = "https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md"
+AGENT_LLMS = "https://evaluatorbench.com/llms.txt"
+
+
+def _agent_section_org(slug: str) -> list[str]:
+    return ["## For your agent", "",
+            "If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:",
+            f"- Machine orientation: {AGENT_LLMS}",
+            f"- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/{slug}.json",
+            "- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.",
+            f"- Or file the right-of-reply issue, no PR needed: {AGENT_ISSUE}",
+            "- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).", ""]
+
+
+def _agent_section_person() -> list[str]:
+    return ["## For your agent", "",
+            f"If an AI agent is handling this reply, forward this packet as-is. Start at {AGENT_LLMS} for the machine-readable record.",
+            f"- Reply by email, or file the right-of-reply issue (no PR needed): {AGENT_ISSUE} — responses are filed as signals with the date received.",
+            "- Rules of evidence: public roles only, no motive or intent claims (RULES 12).", ""]
 
 
 def packet(eid: str, d: dict, L: dict) -> str:
@@ -52,12 +73,13 @@ def packet(eid: str, d: dict, L: dict) -> str:
     sig = [s for s in d["signals"].values() if s["evaluator"] == eid]
     ass = {a["dimension"]: a for a in d["assessments"] if a["evaluator"] == eid}
     lid = LEDGER_ALIAS.get(eid, eid)
+    slug = LEDGER_ALIAS.get(eid, eid)
     today = datetime.date.today().isoformat()
-    o = [f"# Right of reply: {e['name']}", "", f"Prepared {today}. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about {e['name']}; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).", ""]
-    o += HOW + ["## Current assessments", ""]
+    o = [f"# Right of reply: {e['name']}", "", f"Prepared {today}. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about {e['name']}; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.", ""]
+    o += HOW + _agent_section_org(slug) + ["## Current assessments", ""]
     for k in DIMS:
         a = ass[k]; r = derive(a, d["signals"], d["sources"], DEFAULT_POLICY)
-        o.append(f"### {dims[k]['label']}: {a['value']}/4 (standard policy: {'unevidenced' if r['value'] is None else r['value']})")
+        o.append(f"### {dims[k]['label']}: {a['value']}/4 (Retrieved & confirmed: {'unevidenced' if r['value'] is None else r['value']})")
         o.append(f"Anchor {a['value']}: {dims[k]['anchors'][a['value']]}")
         o.append(f"Derivation: {r['rationale']}")
         if a.get("rationale"): o.append(f"Curator note: {a['rationale']}")
@@ -80,7 +102,7 @@ def person_packet(pid: str, d: dict, L: dict) -> str:
     E = L["entities"]; p = E[pid]; today = datetime.date.today().isoformat()
     name = p["name"]
     o = [f"# Right of reply: {name}", "", f"Prepared {today}. Reply requested within 14 days of sending. Evaluator Bench records public roles only and asserts no motive (RULES.md section 12). This is everything the ledger and the signals say that names you.", ""]
-    o += HOW + ["## Ledger rows", ""] + ([_row_line(r) for r in _rows_naming(pid, L)] or ["- none"])
+    o += HOW + _agent_section_person() + ["## Ledger rows", ""] + ([_row_line(r) for r in _rows_naming(pid, L)] or ["- none"])
     mentions = []
     for s in d["signals"].values():
         if name.split(" (")[0] in s["claim"] or any(name.split(" (")[0] in q for a in d["assessments"] if a["evaluator"] == s["evaluator"] for q in a.get("open_questions", [])):

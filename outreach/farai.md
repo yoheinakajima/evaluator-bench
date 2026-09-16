@@ -1,17 +1,27 @@
 # Right of reply: FAR.AI
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about FAR.AI; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about FAR.AI; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/far-ai.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 3/4 (standard policy: 3)
+### Funding: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Mostly philanthropic or public money; some lab-linked pooled funds.
 Derivation: Capped at 3 by farai.02 (F.6): Also funded by the AI Safety Fund, financed by the Frontier Model Forum, the labs' industry body.; capped at 3 by farai.12 (F.6): Largest single grant: $28,675,000 over three years from Coefficient Giving (September 2025); over $30 million in 2025 commitments from Coefficient, Schmidt Sciences, SFF, CSET and the Frontier Model Forum's AI Safety Fund.; capped at 3 by farai.17 (F.6): Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations.; capped at 3 by farai.16 (F.3): FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total.. Floors up to 3 from farai.01, farai.10 do not exceed the cap. Not counted under this policy: farai.14 (no confirmed source (unaudited)).
 - [for, floors at 3, F.12] More than $30M in 2025 commitments from Coefficient Giving, Schmidt Sciences, SFF and CSET. Quote: "FAR.AI has secured over $30 million in funding commitments throughout 2025" Sources: FAR.AI Secures Over $30 Million in Multi-Funder Support (https://www.far.ai/blog/30m-multi-funder-support)
@@ -22,39 +32,39 @@ Derivation: Capped at 3 by farai.02 (F.6): Also funded by the AI Safety Fund, fi
 - [against, caps at 3, F.6] Founders Pledge, a donor-advised giving vehicle, granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations. Quote: "FAR.AI Integrity Team ($500,000)" Sources: Frontier AI grantmaking (https://www.founderspledge.com/research/frontier-ai-grantmaking)
 - [against, caps at 3, F.3] FAR.AI charges for-profit AI developers market rates for consulting and caps that revenue at 10% of total annual revenue; the transparency page reports TY2024 earned revenue of $429K against $24.3M total. Quote: "is capped at a maximum of 10% of FAR.AI's total annual revenue" Sources: Transparency (https://www.far.ai/transparency)
 
-### Governance: 2/4 (standard policy: 2)
+### Governance: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: For-profit or PBC with a published COI policy.
 Derivation: Floored at 2 by farai.05 (G.1): Nonprofit with diversified disclosed funders.. No admissible signal caps it.
 - [for, floors at 2, G.1] Nonprofit with diversified disclosed funders. Quote: "FAR.AI is an independent nonprofit research organization" Sources: FAR.AI Secures Over $30 Million in Multi-Funder Support (https://www.far.ai/blog/30m-multi-funder-support)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by farai.07 (P.3): Runs field-building programs that place researchers into labs..
 - [against, caps at 2, P.3] Runs field-building programs that place researchers into labs. Sources: FAR AI (https://www.longtermwiki.com/wiki/E138)
 
-### Access depth (lab-granted): 1/4 (standard policy: 1)
+### Access depth (lab-granted): 1/4 (Retrieved & confirmed: 1)
 Anchor 1: Pre-release API with safeguards on.
 Derivation: Floored at 1 by farai.06 (A.1): Pre- and post-deployment red teaming for labs and EU bodies.. No admissible signal caps it.
 - [for, floors at 1, A.1] Pre- and post-deployment red teaming for labs and EU bodies. Quote: "FAR AI began red-teaming leading language models for frontier labs in Q4 2023, including red-teaming of GPT-4" Sources: FAR AI (https://www.longtermwiki.com/wiki/E138)
 
-### Scope control: 3/4 (standard policy: 3)
+### Scope control: 3/4 (Retrieved & confirmed: 3)
 Anchor 3: Evaluator sets scope and can add questions.
 Derivation: Floored at 3 by farai.03 (S.3): Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client.; floored at 3 by farai.11 (S.3): Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium.. No admissible signal caps it.
 - [for, floors at 3, S.3] Selected by the European Commission to lead a three-year CBRN technical-assistance contract, with a regulator as client. Quote: "FAR AI was selected by the European Commission's AI Office to lead Lot 1 (CBRN Risk Modelling and Evaluation)" Sources: FAR AI (https://www.longtermwiki.com/wiki/E138)
 - [for, floors at 3, S.3] Leads EU AI Office Lot 1 (CBRN) with SecureBio and SaferAI, EUR 1.43M to the consortium. Sources: TED 864574-2025 Technical Assistance for AI Safety (https://ted.europa.eu/)
 - [for, informational, S.3] Founders Pledge granted $500,000 to the FAR.AI Integrity Team for EU AI Office manipulation evaluations. Quote: "The grant funds the evaluations FAR.AI is now developing for the EU AI Office's consortium on manipulation" Sources: Frontier AI grantmaking (https://www.founderspledge.com/research/frontier-ai-grantmaking)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Floored at 2 by farai.04 (R.7): Publishes jailbreak and stress-test results across vendors.. No admissible signal caps it.
 - [for, floors at 2, R.7] Publishes jailbreak and stress-test results across vendors. Quote: "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming" Sources: FAR.AI Secures Over $30 Million in Multi-Funder Support (https://www.far.ai/blog/30m-multi-funder-support)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by farai.08 (M.2): Publishes methods and papers.. No admissible signal caps it.
 - [for, floors at 2, M.2] Publishes methods and papers. Quote: "we've published groundbreaking research on adversarial robustness, interpretability, and red-teaming" Sources: FAR.AI Secures Over $30 Million in Multi-Funder Support (https://www.far.ai/blog/30m-multi-funder-support)
 
-### Role incompatibility: 2/4 (standard policy: 2)
+### Role incompatibility: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Consults for labs.
 Derivation: Conflict: floor 3 from farai.09 (X.4) against cap 2 from farai.15 (X.3); resolved at 2 by X.3: FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free.
 Resolution: X.3 decides 2: FAR.AI's transparency page records paid work for for-profit frontier developers at market rates; paid consulting for a lab caps role incompatibility at 2 whatever else is open or free.

@@ -1,54 +1,64 @@
 # Right of reply: Hugging Face Open Alignment Initiative
 
-Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Hugging Face Open Alignment Initiative; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the standard evidence policy (confirmed sources only).
+Prepared 2026-09-15. Reply requested within 14 days of sending. This is the complete record Evaluator Bench holds about Hugging Face Open Alignment Initiative; nothing else feeds the score. Values are derived from the signals' bounds under RULES.md; the default site view uses the Retrieved & confirmed evidence policy.
 
 ## How to reply
 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is — no separate upload or pasted link needed. Start here:
+- Machine orientation: https://evaluatorbench.com/llms.txt
+- This organization's full machine-readable record: https://evaluatorbench.com/evaluators/hfoai.json
+- Filing recipe (repo AGENTS.md, Recipe A): add the source you fetched yourself, then a signal with the exact quote (under 120 characters, copied verbatim), the anchor bound it sets (a cap or a floor), and the RULES.md rule code (e.g. F.3). Open a pull request; CI re-fetches every cited source and checks each quoted span appears verbatim.
+- Or file the right-of-reply issue, no PR needed: https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md
+- Rules of evidence: public sources only, quote-minimal spans, no motive or intent claims about any person (RULES 12).
 
 ## Current assessments
 
-### Funding: 0/4 (standard policy: 0)
+### Funding: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Owned or controlled by a frontier developer or a lab investor: a stake of 20% or more, or a business unit.
 Derivation: Capped at 0 by hfoai.10 (F.1): Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026..
 - [against, caps at 2, F.10] Who pays, who selects, and on what terms is unresolved. Quote: "Nobody has said who pays the embedded evaluators" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators); We Must Pace The Frontier (https://thezvi.substack.com/p/we-must-pace-the-frontier)
 - [against, caps at 0, F.1] Series D (2023) investors include Google, Amazon and Nvidia; Nvidia's reported acquisition would make a lab investor the owner. Quote: "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn" Sources: evaluators.csv (24 evaluators: Coefficient and SFF totals, lab money, government contracts, leadership) (https://raw.githubusercontent.com/kevinnbass/metr-money-figure/master/research/evaluators.csv); Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators)
 - [against, caps at 0, F.1] Nvidia agreed to acquire Hugging Face for $12,930,300,000 on 3 September 2026. Quote: "Nvidia has agreed to acquire Hugging Face for $12,930,300,000" Sources: Hugging Face goes from a scrappy startup to $13 billion Nvidia acquisition (https://fortune.com/2026/09/03/hugging-face-goes-from-a-scrappy-startup-named-after-an-emoji-to-13-billion-nvidia-acquisition/); Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators)
 
-### Governance: 0/4 (standard policy: 0)
+### Governance: 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Unit or subsidiary of a lab or a lab's investor.
 Derivation: Capped at 0 by hfoai.01 (G.6): Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap..
 - [against, caps at 0, G.6] Nvidia is acquiring Hugging Face for about $12.9B and is reported to be in talks to anchor Anthropic's IPO with up to $10B; nobody involved has addressed the overlap. Quote: "Nvidia confirmed on 3 September that it is buying Hugging Face for $12.93bn" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators)
 
-### Personnel: 2/4 (standard policy: 2)
+### Personnel: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Frequent two-way hiring; recusal on request.
 Derivation: Capped at 2 by hfoai.07 (P.4): Would be owned by a lab investor..
 - [against, caps at 2, P.4] Would be owned by a lab investor. Quote: "Nvidia was in talks to put up to $10bn into Anthropic’s IPO as an anchor investor" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators)
 
-### Access depth (lab-granted): 0/4 (standard policy: 0)
+### Access depth (lab-granted): 0/4 (Retrieved & confirmed: 0)
 Anchor 0: Public API only.
 Derivation: Capped at 0 by hfoai.02 (A.6): No track record as an evaluator; no access yet..
 - [against, caps at 0, A.6] No track record as an evaluator; no access yet. Quote: "Hugging Face has asked to become one of the outside auditors of the AI labs" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators); Hugging Face Open Alignment Initiative (https://www.techmeme.com/260912/p13)
 
-### Scope control: 2/4 (standard policy: 2)
+### Scope control: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Scope negotiated per engagement.
 Derivation: Capped at 2 by hfoai.06 (S.2 (anchor text)): Terms not announced..
 - [against, caps at 2, S.2 (anchor text)] Terms not announced. Quote: "Neither lab has said who gets in, on what terms, or who decides" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators)
 
-### Publication rights: 2/4 (standard policy: 2)
+### Publication rights: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Publishes; lab reviews with broad redaction.
 Derivation: Floored at 2 by hfoai.04 (9): States findings would be published openly; open-source culture.. No admissible signal caps it.
 - [for, floors at 2, 9] States findings would be published openly; open-source culture. Quote: "won't be solved behind the closed doors of a handful of frontier labs" Sources: Hugging Face Open Alignment Initiative (https://www.techmeme.com/260912/p13)
 
-### Method transparency: 2/4 (standard policy: 2)
+### Method transparency: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Methods described in prose.
 Derivation: Floored at 2 by hfoai.05 (9): Public tooling.. No admissible signal caps it.
 - [for, floors at 2, 9] Public tooling. Sources: Hugging Face Open Alignment Initiative (https://www.techmeme.com/260912/p13)
 
-### Role incompatibility: 2/4 (standard policy: 2)
+### Role incompatibility: 2/4 (Retrieved & confirmed: 2)
 Anchor 2: Consults for labs.
 Derivation: Capped at 2 by hfoai.08 (X.1 (second sentence)): Commercial platform..
 - [against, caps at 2, X.1 (second sentence)] Commercial platform. Quote: "Instant setup for growing teams $20 /month per user" Sources: Hugging Face's Open Alignment Initiative wants lab access (https://thenextweb.com/news/hugging-face-open-alignment-initiative-embedded-evaluators); Hugging Face – Pricing (https://huggingface.co/pricing)

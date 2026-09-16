@@ -7,7 +7,14 @@ Prepared 2026-09-15. Reply requested within 14 days of sending. Evaluator Bench 
 - Correct a fact: open a pull request adding a signal with a source, or reply with the rows and sources and we file them as a signal marked `source_type: self`.
 - Dispute an anchor: say which anchor text you believe applies and which rule in RULES.md decides it; the resolution field records the disagreement even if the value does not change.
 - Publish terms: contract terms on scope, access, and publication rights move the relevant dimensions on their own.
+- Hand this to your agent: forward this packet as-is — the agent section below links the machine-readable record and the filing recipe, so nothing else needs uploading or pasting.
 - Silence is recorded as silence, not as agreement.
+
+## For your agent
+
+If an AI agent is handling this reply, forward this packet as-is. Start at https://evaluatorbench.com/llms.txt for the machine-readable record.
+- Reply by email, or file the right-of-reply issue (no PR needed): https://github.com/yoheinakajima/evaluator-bench/issues/new?template=right-of-reply.md — responses are filed as signals with the date received.
+- Rules of evidence: public roles only, no motive or intent claims (RULES 12).
 
 ## Ledger rows
 
