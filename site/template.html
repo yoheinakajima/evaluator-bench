@@ -94,7 +94,7 @@
   .ghead{padding:12px 14px 6px;border-bottom:1px solid var(--rule);background:var(--paper)}
   .ghead h3{font-size:16px}
   .ghead p{font-size:13px;color:var(--muted);margin:2px 0 4px;max-width:78ch}
-  .lhead,.row-main{display:grid;grid-template-columns:34px minmax(180px,1.4fr) minmax(120px,1fr) 150px 118px 36px;gap:12px;align-items:center;padding:10px 14px}
+  .lhead,.row-main{display:grid;grid-template-columns:34px minmax(180px,1.4fr) 112px 150px 104px 72px;gap:12px;align-items:center;padding:10px 14px}
   .lhead{font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--rule);background:var(--paper)}
   .row{border-bottom:1px solid var(--rule-soft)}
   .row:last-child{border-bottom:none}
@@ -115,10 +115,8 @@
   .band{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.02em;border-radius:4px;padding:1px 6px;margin-bottom:2px}
   .band.clear{background:var(--teal-tint);color:var(--teal)} .band.conditional{background:var(--amber-tint);color:#7A4E0E} .band.disqualifying{background:var(--ox-tint);color:var(--ox)} .band.unevidenced{background:var(--rule-soft);color:var(--muted)}
   .caret{width:26px;height:26px;border:1px solid var(--rule);border-radius:50%;display:grid;place-items:center;color:var(--muted);font-size:14px;justify-self:end}
-  .row[aria-expanded="true"] .caret{transform:rotate(180deg);background:var(--ink);color:#fff;border-color:var(--ink)}
   .caret{transition:transform .2s ease}
   .row-detail{display:none;padding:6px 14px 20px 60px;border-top:1px dashed var(--rule-soft);background:#FBFCFA}
-  .row[aria-expanded="true"] .row-detail{display:block}
   .detail-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:18px 28px}
   .detail-grid>div{min-width:0}
   .sigsrc,.prov,.move{overflow-wrap:anywhere;word-wrap:break-word}
@@ -147,11 +145,12 @@
   .conf.high{background:var(--teal-tint);color:var(--teal)} .conf.med{background:var(--amber-tint);color:#7A4E0E} .conf.low{background:var(--ox-tint);color:var(--ox)}
   .empty{padding:28px 14px;color:var(--muted)}
 
+  .floorcol{font-size:13px;color:var(--muted)}
+  .openlink{font-size:13px;white-space:nowrap;justify-self:end;color:var(--teal)}
   @media (max-width:720px){
     .lhead{display:none}
-    .row-main{grid-template-columns:28px 1fr 96px 30px;grid-template-areas:"rank name score caret" "rank bar bar caret" "rank tags tags caret";gap:6px 10px;padding:12px}
-    .row-main .rank{grid-area:rank}.row-main .name{grid-area:name}.row-main .tags{grid-area:tags}.row-main .barwrap{grid-area:bar}.row-main .score{grid-area:score}.row-main .caret{grid-area:caret;align-self:center}
-    .row-detail{padding-left:12px}
+    .row-main{grid-template-columns:24px 1fr 92px;grid-template-areas:"rank name open" "rank band score" "rank floor score";gap:4px 10px;padding:12px}
+    .row-main .rank{grid-area:rank}.row-main .name{grid-area:name}.row-main .bandcol{grid-area:band}.row-main .floorcol{grid-area:floor}.row-main .score{grid-area:score;align-self:start}.row-main .openlink{grid-area:open;align-self:center}
     .dim{grid-template-columns:110px 1fr auto}
   }
 
@@ -282,11 +281,11 @@
     <div class="wrap">
       <h2>How to read this</h2>
       <p><b>The band comes first.</b> An evidenced 0 on a conflict dimension, funding, governance, personnel, role incompatibility, scope, or publication, puts an organization in the disqualifying-floor band; a 1 on one of those, in the conditional band; otherwise it is clear. Clear means no disqualifying conflict is on file, not a pass. Access and methods count in the number but never set a band: a 0 there means the labs have not let the organization in, or it has not published its methods, not that it is compromised. Independence has floors, not averages, so a lab-owned vendor with open methods does not average its way to a good number.</p>
-      <p><b>The number is yours, so it is hidden until you choose weights.</b> By default each row shows the band, how many of the eight dimensions are evidenced, the weakest one, and the eight values themselves, none of which depend on anyone's priorities. Press "Score with these weights" after picking a preset and the weighted number appears. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.</p>
+      <p><b>The number is yours, so it is hidden until you choose weights.</b> By default each row shows the band and the weakest evidenced dimension, neither of which depends on anyone's priorities. Press "Score with these weights" after picking a preset and the weighted number appears. Open a row to read the full card, derivation, dissent, and ledger on its entity page. Two readers with different presets will see different numbers, and both are right; a two-point gap means nothing.</p>
       <p><b>The evidence policy decides what counts.</b> Under the default, Standard, a signal moves a number only if at least one of its sources was re-fetched and confirmed; imported and unverifiable leads stay visible but count for nothing. Switch to Against interest and an organization's own statements count only when they are against its interest. Switch to Primary only and you see what can be verified from outside the field: not much, which is the finding.</p>
       <p><b>A dash is not a zero.</b> When no admissible signal sets a bound on a dimension, the card shows a dash and the score is computed over the dimensions that are evidenced, with the coverage count beside it. Silence earns nothing either way.</p>
-      <p><b>Every value is derived, not typed.</b> Each signal names the anchor it supports and the rule in <a href="rubric/index.html">RULES.md</a> that says so. The value is the tightest cap, or, with no cap, the highest floor. Where a floor and a cap disagree, the card shows the conflict and the rule that resolved it. Open any row to read the derivation, the binding signal, and the quoted span.</p>
-      <p><b>Independence is not competence.</b> A highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters beside the score, and read the dissent on each card: the strongest case that the weakest dimension should be one notch lower, and one notch higher.</p>
+      <p><b>Every value is derived, not typed.</b> Each signal names the anchor it supports and the rule in <a href="rubric/index.html">RULES.md</a> that says so. The value is the tightest cap, or, with no cap, the highest floor. Where a floor and a cap disagree, the card shows the conflict and the rule that resolved it. Open any row's entity page to read the derivation, the binding signal, and the quoted span.</p>
+      <p><b>Independence is not competence.</b> A highly independent evaluator with no cyber team is the wrong pick for a cyber evaluation. Use the domain filters beside the score, and read the dissent on each entity page: the strongest case that the weakest dimension should be one notch lower, and one notch higher.</p>
       <p><b>Scores move when evidence moves.</b> Send a contract term, a policy, or a correction and the entry updates with the source attached. Every organization and every named person receives their card before a tag is cut; the <a href="status/index.html">status page</a> tracks who has been contacted and what would make this release citable.</p>
     </div>
   </section>
@@ -314,7 +313,6 @@
 
 <script>
 const BENCH = /*__BENCH_JSON__*/null;
-const EXPOSURE = /*__EXPOSURE_JSON__*/null;
 const LEDGER_ID = /*__LEDGER_MAP__*/null || {};
 const DIMS = BENCH.dimensions.map(d=>({k:d.key,label:d.label,desc:d.desc,anchors:d.anchors}));
 const PRESETS = Object.fromEntries(Object.entries(BENCH.presets).map(([k,v])=>[k,v.weights]));
@@ -325,7 +323,6 @@ const POLICIES = BENCH.policies; const POLICY_ORDER = BENCH.policy_order;
 const BANDS = BENCH.bands; const BAND_ORDER = {clear:0, conditional:1, disqualifying:2, unevidenced:3};
 const DOMAINS = ["bio","cyber","autonomy","scheming","jailbreak","misuse","assurance","benchmarks","incident"];
 const DATA = BENCH.evaluators;
-const SRC = BENCH.sources;
 const REPO = "https://github.com/yoheinakajima/evaluator-bench/blob/main/";
 document.getElementById("stamp").textContent = "Evidence current to " + BENCH.built_at.slice(0,10);
 
@@ -333,7 +330,6 @@ let policy = BENCH.default_policy;
 let weights = {...PRESETS.lab}; let activePreset = "lab"; let bandFirst = true; let oneList = false; let scored = false;
 const BAND_DIMS = ["F","G","P","X","S","R"];   // the conflict dimensions; access and methods never set a band (D-002)
 let filters = {domain:new Set(), type:new Set(), role:new Set()}; let query = ""; let sortKey = "score";
-const expanded = new Set();
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmt = n => Number.isInteger(n)? String(n) : n.toFixed(1);
@@ -410,22 +406,14 @@ function visible(){
   });
 }
 function rowHTML({x:e,v,b},rank){
-  const cov=coverage(vals(e));
-  const row=document.createElement("div"); row.className="row"; row.setAttribute("aria-expanded", String(expanded.has(e.id)));
+  const row=document.createElement("div"); row.className="row row-main";
   row.innerHTML=`
-    <button class="row-main" aria-controls="d_${e.id}" aria-expanded="${expanded.has(e.id)}">
       <span class="rank">${scored?rank:"&middot;"}</span>
       <span class="name">${esc(e.name)}<small>${ROLES[e.role]||""} &middot; ${TYPES[e.type]}, ${esc(e.hq)}</small></span>
-      <span class="tags">${e.domains.map(d=>`<span class="tag">${d}</span>`).join("")}</span>
-      <span class="barwrap">${scored?`<span class="bar ${b}"><i style="width:${v==null?0:v}%"></i></span>`:`<span class="mini" aria-label="dimension values">${DIMS.map(d=>{const x=vals(e)[d.k]; return x==null?`<b class="dash" title="${d.label}: unevidenced"></b>`:`<b class="${x<=1?"low":(x==2?"mid":"")}" title="${d.label}: ${x}/4"><i style="height:${x*25}%"></i></b>`;}).join("")}</span>`}<span class="barnote">${cov}/8 evidenced &middot; floor ${floorOf(e)}</span></span>
-      <span class="score"><span class="band ${b}">${BANDS[b].label}</span><br>${scored?(v==null?"&ndash;":v):`<span class="scorenote">number hidden: choose weights</span>`}</span>
-      <span class="caret" aria-hidden="true">&#8964;</span>
-    </button>
-    <div class="row-detail" id="d_${e.id}">${detail(e)}</div>`;
-  row.querySelector(".row-main").addEventListener("click",()=>{
-    if(expanded.has(e.id)) expanded.delete(e.id); else expanded.add(e.id);
-    const on=expanded.has(e.id); row.setAttribute("aria-expanded",String(on)); row.querySelector(".row-main").setAttribute("aria-expanded",String(on));
-  });
+      <span class="bandcol"><span class="band ${b}" title="${esc(BANDS[b].desc)}">${BANDS[b].label}</span></span>
+      <span class="floorcol">${floorOf(e)}</span>
+      <span class="score">${scored?(v==null?"&ndash;":v):`<span class="scorenote">hidden: choose weights</span>`}</span>
+      <a class="openlink" href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html">Open&nbsp;&rarr;</a>`;
   return row;
 }
 function sortList(list){
@@ -449,7 +437,7 @@ function renderRows(){
     const list = sortList(oneList ? items : items.filter(t=>t.x.list_group===g));
     const box=document.createElement("div"); box.className="ledger";
     box.innerHTML=`<div class="ghead"><h3>${esc(meta.label)} <span class="gid">${list.length}</span></h3><p>${esc(meta.desc)}${scored?"":" Ordered by band, then by the weakest evidenced dimension; this is not a ranking until you score it."}</p></div>
-      <div class="lhead"><span></span><span>Evaluator</span><span>Domains</span><span>Independence</span><span style="text-align:right">Band and score</span><span></span></div><div class="rows"></div>`;
+      <div class="lhead"><span></span><span>Organization</span><span>Band</span><span>Weakest dimension</span><span style="text-align:right">Score</span><span></span></div><div class="rows"></div>`;
     const rows=box.querySelector(".rows");
     if(!list.length) rows.innerHTML=`<div class="empty">No organizations match in this list.</div>`;
     else { list.forEach((t,i)=>rows.appendChild(rowHTML(t,i+1))); any=true; }
@@ -462,50 +450,6 @@ function renderRows(){
   const ol = sortList(DATA.filter(e=>e.status==="out-of-scope").map(e=>({x:e, v:score(e), b:bandOf(vals(e))})));
   const oh=$("#outrows"); oh.innerHTML="";
   ol.forEach((t,i)=>oh.appendChild(rowHTML(t,"O"+(i+1))));
-}
-const TIER = {filing:"tier 1 filing",index:"tier 1 index",ledger:"tier 2 ledger",self:"tier 3 self",press:"tier 4 press",docket:"docket draft (not evidence)"};
-function tierBadge(x){ const tt = x.source_type ? TIER[x.source_type] + (x.press_kind?" ("+x.press_kind+")":"") + (x.self_of?" ("+x.self_of+")":"") : "tier not set"; const st = x.audit_status || "unaudited"; return `<span class="gid" style="${st==="confirmed"?"color:var(--teal)":(st==="imported"?"color:#7A4E0E":"")}">${esc(tt)}, ${esc(st)}</span>`; }
-function srcLine(s){
-  return `<span class="sigsrc">${s.sources.map((id,i)=>{const x=SRC[id]; if(!x) return esc(id); return `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a> (${esc(x.publisher)}${x.published?", "+esc(x.published):""}; retrieved ${esc(x.retrieved)})${tierBadge(x)}`;}).join(" ")}</span>`;
-}
-function boundText(s){ const b=s.bound; if(!b) return s.bound_note ? `informational (${esc(s.bound_note)})` : "informational"; return ("cap" in b ? `caps at ${b.cap}` : `floors at ${b.floor}`) + (s.rule?` by ${esc(s.rule)}`:""); }
-function derivedText(a){
-  const d=a.derived[policy];
-  if(policy===BENCH.default_policy) return a.rationale_derived;
-  if(policy==="leads") return a.rationale_leads;
-  if(d.u) return "Unevidenced under this policy: no admissible signal sets a bound." + (d.x.length?` Not counted: ${d.x.join(", ")}.`:"");
-  return `Value ${d.v} from ${d.b.join(", ")}${d.c?" (a floor and a cap disagree; see the resolution on the full page)":""}${d.h?" (held at a supportable anchor: see the full page for the rule)":""}.` + (d.x.length?` Not counted under this policy: ${d.x.join(", ")}.`:"");
-}
-function detail(e){
-  const v=vals(e);
-  const blocks = DIMS.map(d=>{
-    const a=e.assessments[d.k]; const dd=a.derived[policy]; const s=dd.v; const cls = s==null?"":(s>=3?"":(s==2?"mid":"low"));
-    const sigs=e.signals.filter(x=>x.dimension===d.k);
-    const leads = e.values[d.k];
-    return `<div class="dimblock">
-      <div class="dim ${cls}"><span><h4>${d.label}</h4></span><span class="meter" aria-label="${d.label} ${s==null?"unevidenced":s+" of 4"}">${[0,1,2,3].map(i=>`<b class="${s!=null&&i<s?"on":""}"></b>`).join("")}</span><span class="w">${s==null?"&ndash;":s+"/4"}, w ${fmt(weights[d.k])}${a.mechanism?`<span class="gid mech" title="Mechanism behind the value">${esc(a.mechanism)}</span>`:""}</span></div>
-      <div class="anchor">${s==null?"No admissible evidence under this policy.":"Anchor "+s+": "+esc(d.anchors[s])}${leads!==s && s!=null?` <span class="gid" title="The value with every lead included">leads: ${leads}</span>`:""}${dd.h?` <span class="gid" style="color:#7A4E0E;border-color:#7A4E0E" title="Held at the nearest supportable anchor by C14, C15 or C16">held</span>`:""}${dd.c?` <span class="gid" style="color:var(--ox);border-color:var(--ox)">conflict</span>`:""}</div>
-      <div class="derived ${s==null?"dark":""}">${esc(derivedText(a))}${a.rationale?` <span style="color:var(--muted)">Curator: ${esc(a.rationale)}</span>`:""}</div>
-      <div class="ev"><ul>${sigs.map(x=>{ const bind=dd.b.includes(x.id); const out=dd.x.includes(x.id); return `<li class="${x.direction}${bind?" binding":""}${out?" out":""}" style="--c:${x.direction==="for"?"var(--teal)":"var(--ox)"}"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${x.direction==="for"?"var(--teal)":"var(--ox)"};position:absolute;left:${bind?4:0}px;top:${bind?12:8}px"></span>${esc(x.claim)} <span class="gid">${boundText(x)}</span>${bind?`<span class="gid" style="color:var(--teal)">binding</span>`:""}${out?`<span class="gid">not counted</span>`:""}${x.quote?`<span class="quote">&ldquo;${esc(x.quote)}&rdquo;</span>`:""}${srcLine(x)}</li>`;}).join("")}</ul></div>
-    </div>`;
-  }).join("");
-  const ex = EXPOSURE && EXPOSURE.evaluators ? EXPOSURE.evaluators.find(x=>x.id===LEDGER_ID[e.id]) : null;
-  const oq = Object.values(e.assessments).flatMap(a=>(a.open_questions||[]).map(q=>`<li>${esc(a.dimension)}: ${esc(q)}</li>`));
-  const oqBlock = oq.length ? `<div class="move"><b>Document requests and pending checks.</b><ul>${oq.join("")}</ul></div>` : "";
-  const moves = scored ? whatMoves(e) : [];
-  const movesBlock = moves.length ? `<div class="move"><b>What would move the score, and by how much.</b> ${esc(e.what_would_move_the_score||"")}<ul>${moves.map(m=>`<li>${m.d.label} ${m.from} to ${m.to}: score ${m.s==null?"&ndash;":m.s}${m.bandUp?`, band becomes ${BANDS[m.b].label.toLowerCase()}`:""}</li>`).join("")}</ul></div>` : `<div class="move"><b>What would move the score.</b> ${esc(e.what_would_move_the_score||"")}${scored?"":" <span style=\"color:var(--muted)\">Choose weights and press Score to see how far each change moves the number.</span>"}</div>`;
-  const dissent = e.dissent ? `<div class="move"><b>Dissent.</b><ul><li><b>Lower:</b> ${esc(e.dissent.lower)}</li><li><b>Higher:</b> ${esc(e.dissent.higher)}</li></ul></div>` : "";
-  const money = ex && (ex.inflow_rows || ex.lab_tied_seats.length) ? `<div class="move"><b>Traced money and ties.</b> ${ex.inflow_rows} evidential inflow rows (${ex.confirmed_rows} confirmed; the remainder unaudited or imported). ${Object.entries(ex.buckets).map(([k,b])=>`${k==="unattributed"?"unattributed":(k==="public"?"public budget":"hop "+k.slice(3))}: ${b.rows} row${b.rows>1?"s":""}${Object.keys(b.by_measure).length?" ("+Object.entries(b.by_measure).map(([m,v])=>`${m} $${(v/1e6).toFixed(1)}M`).join(", ")+")":""}${b.undisclosed?" "+b.undisclosed+" undisclosed":""}`).join("; ")}.${ex.lab_tied_seats.length?" Seats and donors within two steps of a lab: "+ex.lab_tied_seats.map(s=>`${esc(s.via)} (${esc(s.role)}, ${s.distance})`).join(", ")+".":""}${ex.negatives.length?" Checked and not found: "+ex.negatives.length+".":""}${ex.credit_rows?" Evaluation credits recorded but not counted: "+ex.credit_rows+" row"+(ex.credit_rows>1?"s":"")+".":""} Second hop traced for ${ex.second_hop.traced} of ${ex.second_hop.sources} sources. <a href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html">Full page with ledger rows and focused graph</a>.</div>` : "";
-  const dataLinks = `<a href="${REPO}data/evaluators/${e.id}.json">evaluator</a>, <a href="${REPO}data/signals/${e.id}.json">signals</a>, <a href="${REPO}data/assessments/${e.id}.json">assessments</a>, <a href="${REPO}graph/events.jsonl">event log</a>`;
-  return `<div class="detail-grid">
-    <div>
-      <div class="meta">Confidence <span class="conf ${e.confidence}">${e.confidence}</span> <span class="band ${bandOf(v)}">${BANDS[bandOf(v)].label}</span> <span class="gid">${coverage(v)}/8 evidenced under ${esc(POLICIES[policy].label)}</span> <a href="entity/${esc(LEDGER_ID[e.id]||e.id)}.html" style="color:var(--muted);font-size:13px">Full page</a></div>
-      <p class="summary">${esc(e.summary)}</p>
-      ${movesBlock}${dissent}${money}${oqBlock}
-      <div class="prov">${scored?`Rank ${rankRange(e)} across the four presets under this policy; score range ${rangeOf(e)}. `:""}Weakest dimension: ${floorOf(e)}. ${BANDS[bandOf(v)].desc} Source files: ${dataLinks}. Run <code>python -m bench inspect ${e.id}</code> to walk the chain from the log.</div>
-    </div>
-    <div>${blocks}</div>
-  </div>`;
 }
 renderPolicyChips(); renderSliders(); renderFilterChips(); renderRows();
 </script>
