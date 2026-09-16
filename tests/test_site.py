@@ -13,14 +13,20 @@ def test_pages_exist():
     assert (DIST / "og.png").exists()
     assert (DIST / "style.css").exists() and (DIST / "site.js").exists()
 
-def test_focus_fades_non_neighbours():
+def test_focus_traces_paths_to_lab_and_evaluator():
     s = funding_graph(focus="coefficient")
     assert 'data-node="coefficient"' in s
     assert s.count('opacity="0.12"') > 20  # most nodes faded
-    assert 'data-node="moskovitz" data-tip' in s and 'data-node="moskovitz" data-tip="' in s
-    # neighbour is not faded
-    i = s.index('data-node="moskovitz"'); seg = s[i:i+200]
-    assert 'opacity="0.12"' not in seg.split("style")[0]
+    def faded(eid):
+        i = s.index(f'data-node="{eid}"')
+        return 'opacity="0.12"' in s[i:s.index(">", i)]
+    # nodes on a shortest path to a lab or an evaluator stay bright:
+    # coefficient -> apollo (evaluator); coefficient -> epoch -> anthropic (lab);
+    # coefficient -> moskovitz -> anthropic (lab); coefficient -> palisade (evaluator)
+    for eid in ("coefficient", "apollo", "epoch", "anthropic", "moskovitz", "palisade"):
+        assert not faded(eid), eid
+    # a node on no shortest path from the focus is faded
+    assert faded("tallinn")
 
 def test_build_is_deterministic_for_dist():
     import subprocess, hashlib
